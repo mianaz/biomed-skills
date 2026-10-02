@@ -1,4 +1,0 @@
-interface:
-  display_name: "Synthesize Biomedical Evidence"
-  short_description: "Review and synthesize biomedical literature"
-  default_prompt: "Use $synthesize-biomedical-evidence to answer this biomedical question with a reproducible, risk-of-bias-aware evidence synthesis."

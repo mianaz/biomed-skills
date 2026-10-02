@@ -1,0 +1,16 @@
+{
+  "id": "custom_teaching_protocol_v1",
+  "name": "Protocol export example — fictional teaching data",
+  "category": "protocol",
+  "status": "Teaching example; not an experimental protocol",
+  "usage": {"en": "Demonstrate ordered steps, provenance and a documented stop in a printable Labmate export."},
+  "ref": "Fictional teaching example supplied with biomed-skill (2026); no research paper",
+  "materials": [{"name": "Example input table", "amount": "1", "unit": "file", "note": "Synthetic teaching values only"}],
+  "detailedSteps": [
+    {"en": "Prepare inputs", "isHeader": true},
+    {"en": "Open the synthetic input table and confirm its column labels.", "source": "Teaching example, instruction 1"},
+    {"en": "Save an unchanged working copy and record its filename.", "source": "Teaching example, instruction 2"}
+  ],
+  "safeStops": [{"afterStep": 2, "note": {"en": "Resume from the saved working copy.", "zh": "从保存的工作副本继续。"}}],
+  "notes": {"en": "No biological procedure or published result is represented. Replace the example with sourced protocol content before real use."}
+}

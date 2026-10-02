@@ -1,4 +1,0 @@
-interface:
-  display_name: "Evaluate Biomedical Models"
-  short_description: "Evaluate predictive biomedical models rigorously"
-  default_prompt: "Use $evaluate-biomedical-models to assess discrimination, calibration, validation, leakage, and decision usefulness for this model."

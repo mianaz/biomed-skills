@@ -1,4 +1,0 @@
-interface:
-  display_name: "Annotate Single-Cell Types"
-  short_description: "Assign and verify cell-type identities"
-  default_prompt: "Use $annotate-single-cell-types to assign cell types and verify every label with independent marker evidence."

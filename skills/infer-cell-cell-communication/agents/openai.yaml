@@ -1,4 +1,0 @@
-interface:
-  display_name: "Infer Cell Communication"
-  short_description: "Estimate ligand-receptor communication patterns"
-  default_prompt: "Use $infer-cell-cell-communication to infer and critically interpret cell-cell signaling patterns."

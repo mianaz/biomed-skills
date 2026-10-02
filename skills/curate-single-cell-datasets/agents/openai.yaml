@@ -1,4 +1,0 @@
-interface:
-  display_name: "Curate Single-Cell Datasets"
-  short_description: "Discover and catalog public single-cell datasets"
-  default_prompt: "Use $curate-single-cell-datasets to find and curate suitable public single-cell datasets."

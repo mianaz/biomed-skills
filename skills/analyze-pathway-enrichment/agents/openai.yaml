@@ -1,4 +1,0 @@
-interface:
-  display_name: "Analyze Pathway Enrichment"
-  short_description: "Run defensible pathway and gene-set analyses"
-  default_prompt: "Use $analyze-pathway-enrichment to choose, run, and validate a pathway enrichment workflow."

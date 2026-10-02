@@ -1,4 +1,0 @@
-interface:
-  display_name: "Analyze Dose Response"
-  short_description: "Design and analyze dose-response experiments"
-  default_prompt: "Use $analyze-dose-response to validate controls, fit dose-response curves, and report potency or efficacy with uncertainty."

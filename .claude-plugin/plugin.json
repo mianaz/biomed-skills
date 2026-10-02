@@ -1,0 +1,11 @@
+{
+  "name": "biomed-skill",
+  "version": "0.3.0",
+  "description": "Biomedical figures, paper reading, protocols, Methods and submission preparation.",
+  "author": {
+    "name": "Miana"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mianaz/biomed-skills",
+  "repository": "https://github.com/mianaz/biomed-skills"
+}
