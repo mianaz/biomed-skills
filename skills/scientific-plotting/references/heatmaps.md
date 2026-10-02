@@ -47,7 +47,7 @@ p <- heat_df |>
 For a cell-type × marker matrix, input gene order is rarely readable and clustering genes
 scatters each type's markers. **Diagonalize** instead: order genes so high expression runs
 down the diagonal. Two strategies — pick by data shape.
-(source: sc-paper-distill/papers/2019-FCA-liver.md F3 — Popescu et al. Nature 2019; papers/2020-descartes-fetal-atlas.md F3, F4 — Cao et al. Science 2020, argmax staircase + Z-cap.)
+(source: https://doi.org/10.1038/s41586-019-1652-y; https://doi.org/10.1126/science.aba7721)
 
 **Scale before diagonalizing: Z-score each gene across types, then cap** (Cao capped to `[0, 3]`).
 Without a cap, one high-expression gene sets the color scale and flattens everything else to a single
@@ -76,7 +76,7 @@ reviewers can map one to the other. Save the computed order with the source data
 is reproducible. For the block version, feed `owner_block` to ComplexHeatmap `column_split`.
 
 ## pheatmap with significance stars overlay
-(source: sc-paper-distill/papers/2026-pan-cancer-TLS.md F3)
+(source: https://doi.org/10.1126/science.adz2742)
 
 For score-by-condition matrices with statistical testing (e.g. ICB response across
 cohorts, pathway activity across conditions), overlay significance stars on cells.
@@ -105,7 +105,7 @@ pheatmap(score_matrix, scale = "none",
 To show that annotations are separable (not over-clustered), plot the **predicted × actual recall
 matrix** from a cross-validated classifier as a heatmap, ordered so the diagonal reads, paired with an
 F1 box plot vs a permuted-label null. High on-diagonal recall + F1 ≫ permuted = trustworthy labels.
-(source: sc-paper-distill/papers/2020-descartes-fetal-atlas.md F2 — Cao et al. Science 2020; classifier recipe in sc-annotation/references/cluster-specificity.md)
+(source: https://doi.org/10.1126/science.aba7721)
 
 ```r
 # cm: rows = predicted, cols = actual (row-normalized to recall, 0..1). Order rows/cols the same way.

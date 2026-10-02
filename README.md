@@ -49,6 +49,6 @@ python3 skills/paper-evidence-map/scripts/render_map.py --self-test
 ```
 
 The protocol fixture is fictional teaching content, not an experimental recipe.
-Publisher instructions are refreshed when used; the source map identifies pages
-that were inaccessible during creation. No live protocol upload or journal
+Publisher instructions are retrieved for the target journal and submission stage
+when used. No live protocol upload or journal
 submission is performed by installation.

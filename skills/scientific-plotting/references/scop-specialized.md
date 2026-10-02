@@ -138,7 +138,7 @@ p_spot_pie <- scop::SpatialSpotPlot(
 Use spatial plots from `$sc-spatial` for method choice; use this reference for final rendering.
 
 ### Visium spatial dual-layer plot (continuous fill + categorical overlay)
-(source: sc-paper-distill/papers/2026-pan-cancer-TLS.md F1)
+(source: https://doi.org/10.1126/science.adz2742)
 
 For plots that show a continuous score across all spots AND highlight selected spots with
 a categorical marker (e.g. colocalization heatmap + candidate TLS spots). Uses ggplot2

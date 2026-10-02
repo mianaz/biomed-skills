@@ -24,7 +24,7 @@ Use `scop` for Seurat-centric single-cell, spatial, and omics plots. This is `me
 
 Lots of published figure code uses **SCP** or **scplotter** (same plot family, e.g. `CellDimPlot`,
 `FeatureDimPlot`). Our fork is `mengxu98/scop`; the *style values transfer*, only some arg names
-differ. (source: sc-paper-distill/papers/2026-human-pregastrula.md F1, M1 — Nature 2026)
+differ. (source: https://doi.org/10.1038/s41586-026-10698-y)
 
 | SCP / scplotter | scop fork |
 |---|---|
@@ -81,7 +81,7 @@ compartment (T/NK, B/plasma, myeloid, stromal, parenchymal) rather than one gian
 it doubles as the annotation rationale. Curated liver/TIME marker sets live in
 `sc-annotation/references/markers.md`. Seurat-native fallback when scop is unavailable:
 `Seurat::FeaturePlot(seu, features, ncol = 3, label = TRUE)`.
-(source: sc-paper-distill/papers/2022-scPLC.md F2)
+(source: https://doi.org/10.1038/s41586-022-05400-x)
 
 For a top-N marker dotplot straight from `FindAllMarkers`, prefer `FeatureStatPlot(plot_type="dot")`
 below; the Seurat-native fallback is `DotPlot(seu, features) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5))`.
@@ -91,7 +91,7 @@ NOTE: Seurat ≥4 uses `avg_log2FC` — older code (and some published scripts) 
 For atlas-scale figures, compute **one** UMAP and recolor the *same coordinates* by several metadata
 columns (species, stage, tissue, cell type) as a small-multiple — the reader compares panels directly
 because the geometry is fixed. Grey out the context and color only the focal set to spotlight one group.
-(source: sc-paper-distill/papers/2020-descartes-fetal-atlas.md F6, F5 — Cao et al. Science 2020)
+(source: https://doi.org/10.1126/science.aba7721)
 
 ```r
 # same embedding recolored by several columns (identical coords across panels)
@@ -117,7 +117,7 @@ scop::CellDimPlot(seu, group.by = "focal", reduction = "umap",
 ## Labeled per-group UMAP small-multiple grid (atlas "table of contents")
 A grid of per-organ (or per-compartment) UMAPs with **on-plot cluster text labels and no side legend** —
 each panel is self-documenting, and an empty grid cell can hold summary stats.
-(source: sc-paper-distill/papers/2020-descartes-fetal-atlas.md F1 — Cao et al. Science 2020)
+(source: https://doi.org/10.1126/science.aba7721)
 
 ```r
 organs <- levels(factor(seu$organ))

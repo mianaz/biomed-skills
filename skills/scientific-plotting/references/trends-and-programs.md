@@ -2,7 +2,7 @@
 
 For data with an **ordered categorical axis** (developmental stages, specification steps, dose) —
 not an inferred pseudotime (that's sc-trajectory / scop `DynamicHeatmap`). Always relevel the axis
-to its biological order first. (source: sc-paper-distill/papers/2020-human-macrophage-dev.md F1, F2, M1 — Bian, Gong et al. Nature 2020)
+to its biological order first. (source: https://doi.org/10.1038/s41586-020-2316-7)
 
 ## Single-gene trend: violin + mean-connecting segment
 

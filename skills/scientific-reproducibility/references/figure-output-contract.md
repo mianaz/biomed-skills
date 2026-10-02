@@ -20,7 +20,7 @@ reference for testing and display; do not infer independence from row order.
 When a panel drops observations before plotting — especially **composition / proportion / box plots**
 where a low-n group would read as a real zero — state the exclusion rule in the caption or subtitle
 (e.g. "samples with ≤200 blood cells excluded") and keep the dropped rows flagged in the source-data csv.
-(source: sc-paper-distill/papers/2020-descartes-fetal-atlas.md §4 — Cao et al. Science 2020)
+(source: https://doi.org/10.1126/science.aba7721)
 
 - **Why:** an unstated threshold makes a filtered plot indistinguishable from complete data — a reader
   can't tell an excluded group from a genuinely absent one. This is the concrete form of the data-fidelity
