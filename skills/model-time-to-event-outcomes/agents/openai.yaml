@@ -1,4 +1,0 @@
-interface:
-  display_name: "Model Time-to-Event Outcomes"
-  short_description: "Analyze survival and event-time outcomes"
-  default_prompt: "Use $model-time-to-event-outcomes to define time zero, censoring, estimands, and validated survival analyses for this cohort."

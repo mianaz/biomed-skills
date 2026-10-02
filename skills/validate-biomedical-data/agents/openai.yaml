@@ -1,4 +1,0 @@
-interface:
-  display_name: "Validate Biomedical Data"
-  short_description: "Audit biomedical data before analysis"
-  default_prompt: "Use $validate-biomedical-data to audit this dataset's structure, identity, missingness, units, and analysis readiness."

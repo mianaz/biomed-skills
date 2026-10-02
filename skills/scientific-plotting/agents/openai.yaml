@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Plotting"
+  short_description: "Design and verify biomedical research figures"
+  default_prompt: "Use $scientific-plotting to turn the supplied biomedical research data into a publication-ready figure, choosing the chart and statistical analysis, then inspecting and refining the exported result."

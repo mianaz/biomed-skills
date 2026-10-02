@@ -1,4 +1,0 @@
-interface:
-  display_name: "Analyze Single-Cell Data"
-  short_description: "Route an end-to-end single-cell workflow"
-  default_prompt: "Use $analyze-single-cell to route this dataset through the appropriate single-cell analysis stages."

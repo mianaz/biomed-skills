@@ -1,0 +1,13 @@
+{
+  "name": "biomed-skill",
+  "owner": {
+    "name": "Miana"
+  },
+  "plugins": [
+    {
+      "name": "biomed-skill",
+      "source": "./",
+      "description": "Biomedical figures, paper reading, protocols, Methods and submission preparation."
+    }
+  ]
+}

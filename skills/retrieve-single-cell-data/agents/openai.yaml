@@ -1,4 +1,0 @@
-interface:
-  display_name: "Retrieve Single-Cell Data"
-  short_description: "Validate and load a public single-cell accession"
-  default_prompt: "Use $retrieve-single-cell-data to validate this accession and load the best available single-cell data format."

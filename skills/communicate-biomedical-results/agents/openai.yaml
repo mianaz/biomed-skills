@@ -1,4 +1,0 @@
-interface:
-  display_name: "Communicate Biomedical Results"
-  short_description: "Shape evidence into clear audience-aware stories"
-  default_prompt: "Use $communicate-biomedical-results to turn these results into a clear, evidence-backed scientific story."

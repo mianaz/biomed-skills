@@ -1,145 +1,54 @@
-# Biomed Skills
+# biomed-skill
 
-32 portable biomedical research skills. See [what is developed](docs/developed-suite.md)
-for the complete inventory and implementation status.
+General biomedical workflows. Repository: [mianaz/biomed-skills](https://github.com/mianaz/biomed-skills).
+Single-cell analysis is maintained separately in [sc-skills](https://github.com/mianaz/sc-skills).
 
-## Start with a figure
-
-Give the agent a biomedical data table and get a PDF/PNG, editable source, direct
-plotting data and reported statistics. Optional `.pzfx` files open as editable
-Column, Grouped or XY tables in GraphPad Prism.
-
-From this repository, install only the figure skill into Codex:
-
-```bash
-python3 tools/install_skills.py \
-  --target "${CODEX_HOME:-$HOME/.codex}/skills" \
-  --skill create-scientific-figures
-```
-
-Start a new task and ask:
-
-> Use $create-scientific-figures on my CSV. Make a compact figure with individual
-> observations and appropriate statistics. Save PDF/PNG, editable source and
-> an editable GraphPad Prism file.
-
-The [figure quickstart](skills/create-scientific-figures/references/quickstart.md)
-lists runtime/font checks, portable examples and rendered color previews. The
-[visual gallery](skills/create-scientific-figures/references/visual-gallery.md)
-adds six analysis cases and a four-panel composition. R, Python and GraphPad
-Prism are separate execution choices; installing the skill does not install those
-applications or their dependencies.
-
-| Independent groups | Paired observations | Repeated trajectories |
-|---|---|---|
-| ![Synthetic independent-group example](skills/create-scientific-figures/examples/groups.png) | ![Synthetic paired example](skills/create-scientific-figures/examples/paired.png) | ![Synthetic repeated-trajectory example](skills/create-scientific-figures/examples/trajectory.png) |
-
-These examples use explicitly synthetic teaching data. Each ships with its CSV,
-rerunnable R code and editable Prism table.
-
-## The full suite
-
-Thirty-two portable, composable skills for reproducible biomedical research across
-agent harnesses. The suite now supports general biomedical work, clinical
-time-to-event analysis, medical-imaging model evaluation, dose-response experiments,
-and a complete single-cell pack without copying shared policy into every workflow.
-
-The figure skill covers biomedical research, including basic biology, experimental,
-omics, imaging, clinical and translational studies.
-
-The suite supports scientists rather than replacing scientific judgment. It
-automates routine execution and audit work, preserves evidence and limitations, and
-keeps consequential choices visible to the researcher.
-
-## Architecture
-
-```mermaid
-flowchart LR
-    U["Research request"] --> F["Foundation safeguards"]
-    F --> A["Cross-domain action"]
-    F --> D["Domain pack"]
-    A --> R["Run bundle + evidence"]
-    D --> R
-    R --> V["Independent verification"]
-    V --> C["Figures + communication"]
-
-    X["Optional adapters"] -. "tools, data, runtimes" .-> A
-    X -.-> D
-    G["Governance"] -. "tests and promotes reusable methods" .-> A
-    G -.-> D
-```
-
-The five logical layers are:
-
-| Layer | Responsibility |
+| Skill | Deliverable |
 |---|---|
-| Foundation | Modality-neutral planning, study design, provenance, data validation, verification, orchestration, figures, and communication |
-| Cross-domain action | Reusable scientific actions such as evidence synthesis, model evaluation, and pathway enrichment |
-| Domain pack | Domain-specific routing, QC, inference, and interpretation for single-cell, clinical, imaging, spatial, or experimental work |
-| Adapter | Optional tools, APIs, formats, runtimes, and compute capabilities with explicit fallbacks |
-| Governance | Controlled method distillation, testing, promotion, versioning, and retirement |
+| `scientific-plotting` | R/cowplot or Prism figures, editable source, direct plotting data and rendered checks |
+| `graphpad-prism` | Native Prism workflow, template editing and accurately labeled PZFX exports |
+| `scientific-reproducibility` | Shared analysis outputs, source data, parameters and Methods records |
+| `paper-distill` | Paper contribution, experimental logic, reusable methods and project-specific next steps |
+| `paper-evidence-map` | Editable claim–experiment–result graph, evidence tables and visual preview |
+| `paper-to-protocol` | Sourced step-by-step protocol, printable HTML/Markdown and Labmate import JSON |
+| `protocol-to-methods` | Publication-style Methods based on protocol plus actual experiment records |
+| `submission-check` | Current journal/stage checklist and organized submission files for Cell, Nature or Science journals |
 
-Skills remain flat under `skills/<skill-name>/`; logical composition lives in
-[`suite.json`](suite.json). Its bundles install coherent subsets without duplicating
-packages: `core`, `general`, `single-cell`, `spatial`, `clinical`, `imaging`,
-`experimental`, and `governance`.
+## Use
 
-## Suite contents
-
-| Group | Count | Contents |
-|---|---:|---|
-| Foundation and reusable actions | 12 | Shared safeguards, evidence synthesis, paper evidence maps, general model evaluation, and pathway enrichment |
-| Single-cell domain pack | 15 | Data discovery through preprocessing, inference, spatial/Perturb-seq analysis, and target prioritization |
-| Reference vertical slices | 3 | Clinical time-to-event, medical-imaging model evaluation, and experimental dose response |
-| Governance | 2 | Suite maintenance and biomedical-method distillation |
-| **Total** | **32** | Canonical packages registered in `suite.json` |
-
-The seven additions that broaden the original omics-oriented suite are
-`design-biomedical-study`, `validate-biomedical-data`,
-`synthesize-biomedical-evidence`, `evaluate-biomedical-models`,
-`model-time-to-event-outcomes`, `evaluate-medical-imaging-models`, and
-`analyze-dose-response`. Paper-method mining is now the modality-neutral
-`distill-biomedical-methods`; its former names remain discoverable through registry
-aliases and the [migration map](docs/migration-map.md).
-
-See the [developed-skills inventory](docs/developed-suite.md),
-[architecture](docs/architecture.md), and [installation guide](docs/install.md).
-
-For a single paper, [paper-evidence-map](skills/paper-evidence-map/SKILL.md) links
-its claims to experiments, controls and observed results, with figure references.
-It produces an editable Obsidian Canvas, a visual preview and linked evidence
-tables. Install it with `--skill paper-evidence-map`, then ask:
-
-> Use $paper-evidence-map on this PDF. Extract the paper's logic, subclaims,
-> experiments and supporting results into an editable evidence map.
-
-## Versioned analysis artifacts
-
-Analyses use one compact, platform-neutral run bundle:
-
-```text
-.ai-scientist/current/
-├── analysis-contract.json
-├── run-manifest.json
-├── evidence-index.json
-├── verification-report.json
-└── handoffs/<task_id>.json      # only when work crosses agents/contexts
-```
-
-Artifact schema version 1.1 adds nested analysis units, outcomes and analysis sets,
-research-governance flags, physical and computational resources, generic evidence
-denominators, verifier-independence assertions, and strict rerun records. Each
-artifact also has an `extensions` object. Named resource profiles connect a domain
-extension schema and verification catalog without weakening the common kernel. The
-current profiles cover single-cell analysis, clinical time-to-event analysis,
-medical-imaging model evaluation, and dose response.
-
-Superseded bundles may be moved to `.ai-scientist/archive/`; only the current bundle
-remains active.
-
-Run the dependency-free repository check with:
+For Claude Code:
 
 ```bash
-python tools/check_suite.py
+claude plugin marketplace add mianaz/biomed-skills
+claude plugin install biomed-skill@biomed-skill
 ```
 
+For Codex or Cursor, copy `skills/*` into your agent's skill directory. A Claude plugin manifest and
+local marketplace are included. There are no required code dependencies between
+this package and sc-skills. R, Prism and other execution tools are installed only
+when the requested work needs them. Academic-writing workflows use nature-writing,
+nature-polishing and humanizer when available, with self-contained prose guidance
+for environments without those optional skills.
+
+- “Use $paper-distill and $paper-evidence-map to explain this paper.”
+- “Use $paper-to-protocol to turn these Methods and supplements into a printable protocol and import it into Labmate.”
+- “Use $protocol-to-methods with this protocol and my completed Labmate experiment record.”
+- “Use $submission-check to prepare this manuscript for an initial Nature submission.”
+
+The protocol exporter uses Labmate's existing **Guide → Backup & restore → Import**
+workflow. It creates a local custom protocol. A new ID adds an item; the same ID
+replaces that item. The printable copy and import file come from one JSON source.
+
+## Runnable examples
+
+```bash
+python3 skills/paper-to-protocol/scripts/test_export.py
+python3 skills/paper-to-protocol/scripts/export_protocol.py \
+  skills/paper-to-protocol/assets/example.json /tmp/protocol-example
+python3 skills/paper-evidence-map/scripts/render_map.py --self-test
+```
+
+The protocol fixture is fictional teaching content, not an experimental recipe.
+Publisher instructions are refreshed when used; the source map identifies pages
+that were inaccessible during creation. No live protocol upload or journal
+submission is performed by installation.

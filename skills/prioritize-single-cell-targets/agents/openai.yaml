@@ -1,4 +1,0 @@
-interface:
-  display_name: "Prioritize Single-Cell Targets"
-  short_description: "Integrate cell states, genetics, and target evidence"
-  default_prompt: "Use $prioritize-single-cell-targets to rank disease-relevant cells and therapeutic targets from single-cell evidence."

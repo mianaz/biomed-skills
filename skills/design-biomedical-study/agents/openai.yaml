@@ -1,4 +1,0 @@
-interface:
-  display_name: "Design Biomedical Studies"
-  short_description: "Design rigorous biomedical studies and protocols"
-  default_prompt: "Use $design-biomedical-study to define the units, controls, endpoints, allocation, and analysis handoff for this study."

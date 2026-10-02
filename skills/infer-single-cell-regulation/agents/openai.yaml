@@ -1,4 +1,0 @@
-interface:
-  display_name: "Infer Single-Cell Regulation"
-  short_description: "Infer regulons and transcription-factor activity"
-  default_prompt: "Use $infer-single-cell-regulation to infer and validate transcriptional regulatory programs."

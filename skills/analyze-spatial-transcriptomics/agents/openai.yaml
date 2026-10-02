@@ -1,4 +1,0 @@
-interface:
-  display_name: "Analyze Spatial Transcriptomics"
-  short_description: "Analyze spatial expression and tissue context"
-  default_prompt: "Use $analyze-spatial-transcriptomics to analyze spatial expression, domains, neighborhoods, or deconvolution."

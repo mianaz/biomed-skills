@@ -1,4 +1,0 @@
-interface:
-  display_name: "Plan Biomedical Analysis"
-  short_description: "Turn research requests into testable contracts"
-  default_prompt: "Use $plan-biomedical-analysis to turn this research request into an executable analysis contract."
