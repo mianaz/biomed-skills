@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apply Single-Cell Conventions"
+  short_description: "Keep objects, names, bridges, and outputs consistent"
+  default_prompt: "Use $apply-single-cell-conventions to apply the shared single-cell object and naming conventions."

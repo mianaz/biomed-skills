@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-scientist-skills.local/schemas/single-cell-contract-extension-1.0.0.json",
+  "title": "Single-cell analysis contract extension",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "assay": {"type": "string", "minLength": 1},
+    "organism": {"type": "string", "minLength": 1},
+    "reference_build": {"type": "string", "minLength": 1},
+    "biological_unit": {"type": "string", "minLength": 1},
+    "sample_id_field": {"type": "string", "minLength": 1},
+    "cell_id_field": {"type": "string", "minLength": 1},
+    "extensions": {"type": "object"}
+  }
+}

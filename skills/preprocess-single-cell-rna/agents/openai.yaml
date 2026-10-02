@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preprocess Single-Cell RNA"
+  short_description: "Clean and quality-control single-cell RNA data"
+  default_prompt: "Use $preprocess-single-cell-rna to turn these raw counts into an analysis-ready single-cell object."

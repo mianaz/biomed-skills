@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Scientific Figures"
+  short_description: "Design and verify biomedical research figures"
+  default_prompt: "Use $create-scientific-figures to turn the supplied biomedical research data into a publication-ready figure, choosing the chart and statistical analysis, then inspecting and refining the exported result."

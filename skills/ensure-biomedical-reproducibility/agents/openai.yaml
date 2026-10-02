@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ensure Biomedical Reproducibility"
+  short_description: "Capture provenance, versions, choices, and lineage"
+  default_prompt: "Use $ensure-biomedical-reproducibility to make this analysis auditable and rerunnable."

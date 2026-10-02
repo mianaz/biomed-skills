@@ -1,0 +1,4 @@
+interface:
+  display_name: "Integrate Single-Cell Data"
+  short_description: "Correct batch effects while preserving biology"
+  default_prompt: "Use $integrate-single-cell-data to choose, run, and verify a suitable integration method."

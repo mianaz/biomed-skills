@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Single-Cell Expression"
+  short_description: "Run replicate-aware expression comparisons"
+  default_prompt: "Use $test-single-cell-expression to perform replicate-aware condition comparisons with pseudobulk inference."

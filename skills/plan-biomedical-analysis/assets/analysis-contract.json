@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "analysis_contract",
+  "contract_id": "ctr-example",
+  "profile": {
+    "analysis_mode": "exploratory",
+    "assurance": "standard",
+    "autonomy": "collaborative"
+  },
+  "objective": "State one biomedical decision or knowledge gap.",
+  "questions": [
+    {
+      "question_id": "q-primary",
+      "text": "State one question that the planned evidence can answer."
+    }
+  ],
+  "inputs": [
+    {
+      "input_id": "primary-data",
+      "role": "primary_data",
+      "required": true,
+      "description": "Describe the logical input without fixing a local path."
+    }
+  ],
+  "design": {
+    "study_type": "observational",
+    "analysis_unit": "sample",
+    "units": [
+      {
+        "unit_id": "sample",
+        "description": "Primary independent observational or experimental unit."
+      }
+    ],
+    "outcomes": [
+      {
+        "outcome_id": "primary-outcome",
+        "role": "primary",
+        "definition": "Define the primary observable outcome and its timing or measurement rule.",
+        "unit_id": "sample"
+      }
+    ],
+    "analysis_sets": [
+      {
+        "analysis_set_id": "primary-set",
+        "unit_id": "sample",
+        "definition": "Define which units are included in the primary analysis."
+      }
+    ],
+    "factors": [],
+    "contrasts": [],
+    "covariates": []
+  },
+  "governance": {
+    "human_subjects": "unknown",
+    "animals": "unknown",
+    "sensitive_data": "unknown",
+    "hazardous_materials": "unknown",
+    "approvals": [],
+    "restrictions": []
+  },
+  "steps": [
+    {
+      "step_id": "primary-analysis",
+      "purpose": "Answer q-primary.",
+      "selection_rule": "Use the applicable domain skill to select a method from the study design and data properties."
+    }
+  ],
+  "required_outputs": [
+    {
+      "output_id": "primary-results",
+      "kind": "table",
+      "description": "Structured results supporting the primary answer."
+    }
+  ],
+  "validation": [
+    {
+      "check_id": "required-output-present",
+      "criterion": "The primary-results artifact exists and is non-empty.",
+      "severity": "error"
+    }
+  ],
+  "constraints": [],
+  "audiences": [
+    "scientific_peer"
+  ],
+  "extensions": {
+    "profiles": {}
+  }
+}

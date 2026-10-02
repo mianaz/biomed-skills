@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Biomedical Analysis"
+  short_description: "Audit design, statistics, artifacts, and evidence"
+  default_prompt: "Use $verify-biomedical-analysis to independently check this analysis and its supporting artifacts."

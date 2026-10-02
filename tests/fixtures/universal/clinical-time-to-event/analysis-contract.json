@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "analysis_contract",
+  "contract_id": "ctr-clinical-survival",
+  "profile": {
+    "analysis_mode": "confirmatory",
+    "assurance": "standard",
+    "autonomy": "collaborative"
+  },
+  "objective": "Estimate the prespecified treatment-group difference in overall survival from treatment initiation.",
+  "questions": [
+    {
+      "question_id": "q-overall-survival",
+      "text": "What is the adjusted association between treatment group and overall survival?"
+    }
+  ],
+  "inputs": [
+    {
+      "input_id": "cohort-table",
+      "role": "primary_data",
+      "required": true,
+      "description": "One record per participant with treatment, entry, event, censoring, and covariate fields."
+    }
+  ],
+  "design": {
+    "study_type": "retrospective multicenter cohort",
+    "analysis_unit": "participant",
+    "units": [
+      {
+        "unit_id": "participant",
+        "description": "Independent eligible participant."
+      }
+    ],
+    "outcomes": [
+      {
+        "outcome_id": "overall-survival",
+        "role": "primary",
+        "definition": "Time from treatment initiation to death from any cause, censored at last known follow-up.",
+        "unit_id": "participant"
+      }
+    ],
+    "analysis_sets": [
+      {
+        "analysis_set_id": "eligible-cohort",
+        "unit_id": "participant",
+        "definition": "Eligible participants with a valid time origin and determinable event or censoring time."
+      }
+    ],
+    "factors": [
+      {
+        "factor_id": "treatment",
+        "levels": ["standard", "new-treatment"]
+      }
+    ],
+    "contrasts": [
+      {
+        "contrast_id": "new-vs-standard",
+        "definition": "New treatment compared with standard treatment."
+      }
+    ],
+    "covariates": ["age", "disease-stage", "center"]
+  },
+  "governance": {
+    "human_subjects": "yes",
+    "animals": "no",
+    "sensitive_data": "yes",
+    "hazardous_materials": "no",
+    "approvals": ["IRB approval or exemption must cover the secondary analysis."],
+    "restrictions": ["Analyze coded participant data only in the approved environment."]
+  },
+  "steps": [
+    {
+      "step_id": "construct-survival-cohort",
+      "purpose": "Apply eligibility, time-origin, delayed-entry, event, and censoring definitions.",
+      "method": "Prespecified cohort-construction rules with an auditable exclusion ledger."
+    },
+    {
+      "step_id": "fit-survival-model",
+      "purpose": "Estimate the adjusted treatment association and absolute survival summaries.",
+      "method": "Cox proportional-hazards model plus adjusted survival estimates and diagnostics."
+    }
+  ],
+  "required_outputs": [
+    {
+      "output_id": "survival-estimates",
+      "kind": "table",
+      "description": "Effect estimate, interval, event count, denominator, and adjusted survival summaries."
+    },
+    {
+      "output_id": "survival-diagnostics",
+      "kind": "report",
+      "description": "Censoring, proportional-hazards, influence, and sensitivity diagnostics."
+    }
+  ],
+  "validation": [
+    {
+      "check_id": "survival-time-valid",
+      "criterion": "Every analyzed participant has a nonnegative follow-up time and a valid event indicator.",
+      "severity": "error"
+    }
+  ],
+  "constraints": [],
+  "audiences": ["clinical_investigator", "statistical_reviewer"],
+  "extensions": {
+    "profiles": {
+      "clinical_time_to_event": {
+        "target_population": "Adults with the prespecified cancer receiving first-line standard or new treatment.",
+        "time_origin": "Date of first treatment administration.",
+        "time_scale": "Days since treatment initiation.",
+        "event_definition": "Death from any cause.",
+        "competing_events": [],
+        "censoring_definition": "Alive at the last documented clinical contact.",
+        "delayed_entry": "present",
+        "estimand": "Adjusted hazard ratio and 12-month survival probability difference in the eligible cohort.",
+        "follow_up_end": "Administrative database lock date.",
+        "recurrent_events": "absent",
+        "causal_target": false
+      }
+    }
+  }
+}

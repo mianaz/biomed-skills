@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Perturb-seq"
+  short_description: "Analyze pooled perturbations with single-cell readouts"
+  default_prompt: "Use $analyze-perturb-seq to quality-control and interpret a Perturb-seq or CROP-seq experiment."

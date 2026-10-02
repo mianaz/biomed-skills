@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "analysis_contract",
+  "contract_id": "ctr-minimal",
+  "profile": {
+    "analysis_mode": "confirmatory",
+    "assurance": "standard",
+    "autonomy": "autonomous"
+  },
+  "objective": "Test whether the prespecified feature differs between treated and control samples.",
+  "questions": [
+    {
+      "question_id": "q1",
+      "text": "Is feature geneA increased in treated samples?"
+    }
+  ],
+  "inputs": [
+    {
+      "input_id": "primary-data",
+      "role": "primary_data",
+      "required": true,
+      "description": "Small tabular test input."
+    }
+  ],
+  "design": {
+    "study_type": "controlled",
+    "analysis_unit": "sample",
+    "factors": [
+      {
+        "factor_id": "condition",
+        "levels": ["control", "treated"]
+      }
+    ],
+    "contrasts": [
+      {
+        "contrast_id": "treated-vs-control",
+        "definition": "treated minus control"
+      }
+    ],
+    "covariates": []
+  },
+  "steps": [
+    {
+      "step_id": "test-feature",
+      "purpose": "Estimate the prespecified feature contrast.",
+      "method": "Fixture calculation"
+    }
+  ],
+  "required_outputs": [
+    {
+      "output_id": "result-table",
+      "kind": "table",
+      "description": "One-row result table."
+    }
+  ],
+  "validation": [
+    {
+      "check_id": "required-output-present",
+      "criterion": "The result-table artifact exists and is non-empty.",
+      "severity": "error"
+    }
+  ],
+  "constraints": [],
+  "audiences": ["scientific_peer"],
+  "extensions": {}
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-scientist-skills.local/schemas/rerun-record-1.0.0.json",
+  "title": "Biomedical rerun comparison record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "artifact_type", "contract_id", "run_id", "performed_at", "tolerance_used", "comparisons", "extensions"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "artifact_type": {"const": "rerun_comparison"},
+    "contract_id": {"$ref": "#/$defs/id"},
+    "run_id": {"$ref": "#/$defs/id"},
+    "performed_at": {"type": "string", "format": "date-time"},
+    "tolerance_used": {"type": "number", "minimum": 0},
+    "comparisons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["comparison_id", "baseline_artifact_id", "metric", "observed_difference"],
+        "properties": {
+          "comparison_id": {"$ref": "#/$defs/id"},
+          "baseline_artifact_id": {"$ref": "#/$defs/id"},
+          "rerun_uri": {"$ref": "#/$defs/text"},
+          "metric": {"enum": ["max_absolute_difference", "max_relative_difference"]},
+          "observed_difference": {"type": "number", "minimum": 0},
+          "notes": {"$ref": "#/$defs/text"}
+        }
+      }
+    },
+    "extensions": {"type": "object"}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+    "text": {"type": "string", "minLength": 1, "pattern": ".*\\S.*"}
+  }
+}

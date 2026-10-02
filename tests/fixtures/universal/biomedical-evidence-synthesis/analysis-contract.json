@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "analysis_contract",
+  "contract_id": "ctr-evidence-synthesis",
+  "profile": {
+    "analysis_mode": "confirmatory",
+    "assurance": "standard",
+    "autonomy": "collaborative"
+  },
+  "objective": "Synthesize randomized-trial evidence for remote blood-pressure monitoring in adults with hypertension.",
+  "questions": [
+    {
+      "question_id": "q-systolic-bp",
+      "text": "What is the effect of remote monitoring on systolic blood pressure at approximately six months?"
+    }
+  ],
+  "inputs": [
+    {
+      "input_id": "search-results",
+      "role": "literature_records",
+      "required": true,
+      "description": "Deduplicated records from the prespecified bibliographic and trial-registry searches."
+    }
+  ],
+  "design": {
+    "study_type": "systematic review and meta-analysis of randomized trials",
+    "analysis_unit": "study",
+    "units": [
+      {
+        "unit_id": "study",
+        "description": "Independent randomized comparison, linked across multiple reports when necessary."
+      },
+      {
+        "unit_id": "report",
+        "description": "Publication or registry record nested within a study.",
+        "parent_unit_id": "study"
+      }
+    ],
+    "outcomes": [
+      {
+        "outcome_id": "systolic-bp-six-months",
+        "role": "primary",
+        "definition": "Between-group mean difference in systolic blood pressure nearest six months.",
+        "unit_id": "study"
+      }
+    ],
+    "analysis_sets": [
+      {
+        "analysis_set_id": "eligible-randomized-trials",
+        "unit_id": "study",
+        "definition": "Randomized trials in eligible adults comparing remote monitoring with usual care and reporting the primary outcome."
+      }
+    ],
+    "factors": [],
+    "contrasts": [
+      {
+        "contrast_id": "remote-vs-usual-care",
+        "definition": "Remote blood-pressure monitoring compared with usual care."
+      }
+    ],
+    "covariates": []
+  },
+  "governance": {
+    "human_subjects": "no",
+    "animals": "no",
+    "sensitive_data": "no",
+    "hazardous_materials": "no",
+    "approvals": [],
+    "restrictions": ["Do not treat publication count as independent study count."]
+  },
+  "steps": [
+    {
+      "step_id": "search-and-screen",
+      "purpose": "Identify eligible studies reproducibly.",
+      "method": "Prespecified database and registry searches with duplicate independent screening."
+    },
+    {
+      "step_id": "extract-and-synthesize",
+      "purpose": "Extract outcomes, assess bias, synthesize effects, and rate certainty.",
+      "method": "Duplicate extraction, domain-level risk-of-bias assessment, random-effects synthesis, and certainty grading."
+    }
+  ],
+  "required_outputs": [
+    {
+      "output_id": "study-flow",
+      "kind": "figure",
+      "description": "Study-selection flow with exclusion reasons."
+    },
+    {
+      "output_id": "evidence-summary",
+      "kind": "report",
+      "description": "Effect estimates, heterogeneity, risk of bias, and certainty for the primary outcome."
+    }
+  ],
+  "validation": [
+    {
+      "check_id": "study-report-linkage",
+      "criterion": "Multiple reports from the same trial are linked to one study before synthesis.",
+      "severity": "error"
+    }
+  ],
+  "constraints": [],
+  "audiences": ["clinical_guideline_team", "scientific_peer"],
+  "extensions": {
+    "profiles": {}
+  }
+}

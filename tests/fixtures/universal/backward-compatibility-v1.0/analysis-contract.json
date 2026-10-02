@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "analysis_contract",
+  "contract_id": "ctr-universal-v1-compatibility",
+  "profile": {
+    "analysis_mode": "exploratory",
+    "assurance": "basic",
+    "autonomy": "autonomous"
+  },
+  "objective": "Demonstrate that an existing version 1.0 modality-neutral analysis contract remains accepted.",
+  "questions": [
+    {
+      "question_id": "q-v1",
+      "text": "Can a version 1.0 contract still be validated after universal schema expansion?"
+    }
+  ],
+  "inputs": [],
+  "design": {
+    "study_type": "software compatibility fixture",
+    "analysis_unit": "contract",
+    "factors": [],
+    "contrasts": [],
+    "covariates": []
+  },
+  "steps": [
+    {
+      "step_id": "validate-v1",
+      "purpose": "Exercise the established version 1.0 contract shape.",
+      "method": "Run the canonical contract validator and schema checker."
+    }
+  ],
+  "required_outputs": [
+    {
+      "output_id": "validation-status",
+      "kind": "report",
+      "description": "Deterministic version 1.0 validation result."
+    }
+  ],
+  "validation": [
+    {
+      "check_id": "v1-accepted",
+      "criterion": "The canonical validator accepts the unextended version 1.0 shape.",
+      "severity": "error"
+    }
+  ],
+  "constraints": [],
+  "audiences": ["suite_maintainer"],
+  "extensions": {}
+}

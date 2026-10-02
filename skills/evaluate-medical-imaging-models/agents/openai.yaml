@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluate Medical Imaging Models"
+  short_description: "Audit imaging models without patient leakage"
+  default_prompt: "Use $evaluate-medical-imaging-models to evaluate this imaging model with patient-level splits, reference-standard checks, and external validation."

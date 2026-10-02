@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Single-Cell Abundance"
+  short_description: "Test replicate-aware cell population shifts"
+  default_prompt: "Use $test-single-cell-abundance to test whether cell-type or neighborhood abundance changes across conditions."

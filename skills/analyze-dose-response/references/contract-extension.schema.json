@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-scientist-skills.local/schemas/dose-response-extension-1.0.0.json",
+  "title": "Dose-response contract extension",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "independent_unit",
+    "dose_definition",
+    "dose_unit",
+    "exposure_time",
+    "response_definition",
+    "controls",
+    "planned_range",
+    "primary_estimand"
+  ],
+  "properties": {
+    "independent_unit": {"type": "string", "minLength": 1},
+    "dose_definition": {"type": "string", "minLength": 1},
+    "dose_unit": {"type": "string", "minLength": 1},
+    "exposure_time": {"type": "string", "minLength": 1},
+    "response_definition": {"type": "string", "minLength": 1},
+    "controls": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "planned_range": {"type": "string", "minLength": 1},
+    "primary_estimand": {"type": "string", "minLength": 1},
+    "curve_family": {"type": "string", "minLength": 1},
+    "toxicity_or_interference_rule": {"type": "string", "minLength": 1}
+  }
+}

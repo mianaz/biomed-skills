@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "clinical-time-to-event",
+  "scope": "clinical",
+  "contract_extension": {
+    "key": "clinical_time_to_event",
+    "schema": "contract-extension.schema.json"
+  },
+  "verification": {
+    "catalog": "verification-profile.md",
+    "required_categories": [
+      "cohort_construction",
+      "event_process",
+      "survival_model",
+      "sensitivity_and_claim"
+    ]
+  }
+}

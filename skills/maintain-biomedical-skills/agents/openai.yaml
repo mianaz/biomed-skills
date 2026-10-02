@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain Biomedical Skills"
+  short_description: "Audit, deduplicate, promote, and retire skills"
+  default_prompt: "Use $maintain-biomedical-skills to audit and evolve this biomedical skill suite without scope drift."

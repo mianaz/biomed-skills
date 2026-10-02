@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrate Biomedical Work"
+  short_description: "Coordinate planners, executors, and reviewers"
+  default_prompt: "Use $orchestrate-biomedical-work to coordinate this biomedical analysis with the right roles and safeguards."

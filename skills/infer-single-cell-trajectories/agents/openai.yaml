@@ -1,0 +1,4 @@
+interface:
+  display_name: "Infer Single-Cell Trajectories"
+  short_description: "Infer pseudotime, velocity, and cell fates"
+  default_prompt: "Use $infer-single-cell-trajectories to choose and validate an appropriate trajectory or fate-inference method."

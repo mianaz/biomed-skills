@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.1.0",
+  "artifact_type": "analysis_contract",
+  "contract_id": "ctr-dose-response",
+  "profile": {
+    "analysis_mode": "confirmatory",
+    "assurance": "standard",
+    "autonomy": "autonomous"
+  },
+  "objective": "Estimate compound potency and maximal response across independent experiments within the prespecified usable dose range.",
+  "questions": [
+    {
+      "question_id": "q-compound-potency",
+      "text": "What are the EC50 and maximal response after excluding cytotoxic or assay-interfering doses by rule?"
+    }
+  ],
+  "inputs": [
+    {
+      "input_id": "plate-readouts",
+      "role": "primary_data",
+      "required": true,
+      "description": "Well-level response, viability, dose, control, plate, and experiment records."
+    }
+  ],
+  "design": {
+    "study_type": "randomized controlled in-vitro dose-response experiment",
+    "analysis_unit": "experiment",
+    "units": [
+      {
+        "unit_id": "experiment",
+        "description": "Independent biological experiment performed on a different day."
+      },
+      {
+        "unit_id": "plate",
+        "description": "Assay plate nested within an experiment.",
+        "parent_unit_id": "experiment"
+      },
+      {
+        "unit_id": "well",
+        "description": "Technical well nested within a plate.",
+        "parent_unit_id": "plate"
+      }
+    ],
+    "outcomes": [
+      {
+        "outcome_id": "normalized-response",
+        "role": "primary",
+        "definition": "Response normalized to vehicle and positive controls after plate QC.",
+        "unit_id": "well"
+      }
+    ],
+    "analysis_sets": [
+      {
+        "analysis_set_id": "valid-experiments",
+        "unit_id": "experiment",
+        "definition": "Independent experiments whose vehicle and positive controls meet prespecified assay criteria."
+      }
+    ],
+    "factors": [
+      {
+        "factor_id": "dose",
+        "levels": ["0", "0.1", "0.3", "1", "3", "10", "30", "100"]
+      }
+    ],
+    "contrasts": [],
+    "covariates": ["experiment", "plate"]
+  },
+  "governance": {
+    "human_subjects": "no",
+    "animals": "no",
+    "sensitive_data": "no",
+    "hazardous_materials": "yes",
+    "approvals": ["Institutional chemical-safety procedures apply."],
+    "restrictions": ["Do not infer clinical dosing from this in-vitro assay."]
+  },
+  "steps": [
+    {
+      "step_id": "apply-assay-qc",
+      "purpose": "Apply control, range, cytotoxicity, and interference rules without inspecting the desired effect.",
+      "method": "Prespecified plate and dose exclusion criteria."
+    },
+    {
+      "step_id": "fit-dose-response",
+      "purpose": "Estimate potency and maximal response with between-experiment uncertainty.",
+      "method": "Four-parameter logistic model with experiment-aware uncertainty and prespecified fallback."
+    }
+  ],
+  "required_outputs": [
+    {
+      "output_id": "dose-response-estimates",
+      "kind": "table",
+      "description": "EC50, maximal response, uncertainty, experiment count, and model diagnostics."
+    },
+    {
+      "output_id": "dose-response-curve",
+      "kind": "figure",
+      "description": "Observed independent-experiment summaries and fitted curve with uncertainty."
+    }
+  ],
+  "validation": [
+    {
+      "check_id": "controls-pass",
+      "criterion": "Every included experiment satisfies the vehicle and positive-control criteria.",
+      "severity": "error"
+    }
+  ],
+  "constraints": [],
+  "audiences": ["experimental_scientist", "statistical_reviewer"],
+  "extensions": {
+    "profiles": {
+      "dose_response": {
+        "independent_unit": "experiment",
+        "dose_definition": "Nominal extracellular compound concentration.",
+        "dose_unit": "micromolar",
+        "exposure_time": "24 hours",
+        "response_definition": "Percent activation normalized to vehicle and positive controls.",
+        "controls": ["vehicle", "positive-control"],
+        "planned_range": "0.1 to 100 micromolar plus vehicle.",
+        "primary_estimand": "EC50 and maximal normalized response across valid independent experiments.",
+        "curve_family": "four-parameter logistic",
+        "toxicity_or_interference_rule": "Exclude doses with median viability below 70 percent before fitting the response curve."
+      }
+    }
+  }
+}

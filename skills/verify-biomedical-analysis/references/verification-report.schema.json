@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-scientist-skills.local/schemas/verification-report-1.1.0.json",
+  "title": "Biomedical verification report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "artifact_type", "report_id", "contract_id", "run_id", "generated_at", "verifier", "overall_status", "summary", "checks", "extensions"],
+  "properties": {
+    "schema_version": {"const": "1.1.0"},
+    "artifact_type": {"const": "verification_report"},
+    "report_id": {"$ref": "#/$defs/id"},
+    "contract_id": {"$ref": "#/$defs/id"},
+    "run_id": {"$ref": "#/$defs/id"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "verifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["verifier_id", "kind", "independent_of_executor", "independence_assertion"],
+      "properties": {
+        "verifier_id": {"$ref": "#/$defs/id"},
+        "kind": {"enum": ["agent", "script", "human", "hybrid"]},
+        "independent_of_executor": {"type": "boolean"},
+        "independence_assertion": {"enum": ["cli", "metadata_file", "not_asserted"]}
+      }
+    },
+    "overall_status": {"enum": ["pass", "pass_with_warnings", "fail"]},
+    "summary": {"$ref": "#/$defs/text"},
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["check_id", "category", "method", "severity", "status", "targets", "message", "supporting_refs"],
+        "properties": {
+          "check_id": {"$ref": "#/$defs/id"},
+          "contract_check_id": {"$ref": "#/$defs/id"},
+          "category": {"$ref": "#/$defs/id"},
+          "method": {"enum": ["deterministic", "review", "hybrid"]},
+          "severity": {"enum": ["error", "warning"]},
+          "status": {"enum": ["pass", "warn", "fail", "not_applicable"]},
+          "targets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["type", "id"],
+              "properties": {
+                "type": {"enum": ["input", "source", "resource", "step", "artifact", "claim", "evidence", "contract_check"]},
+                "id": {"$ref": "#/$defs/id"}
+              }
+            }
+          },
+          "message": {"$ref": "#/$defs/text"},
+          "supporting_refs": {"type": "array", "items": {"$ref": "#/$defs/text"}},
+          "remediation": {"$ref": "#/$defs/text"}
+        }
+      }
+    },
+    "strict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["context_isolated", "verifier_tools", "rerun"],
+      "properties": {
+        "context_isolated": {"type": "boolean"},
+        "verifier_tools": {"type": "array", "items": {"type": "object"}},
+        "rerun": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["required", "record_supplied", "status", "comparison_count"],
+          "properties": {
+            "required": {"type": "boolean"},
+            "record_supplied": {"type": "boolean"},
+            "status": {"enum": ["not_required", "missing", "pass", "fail"]},
+            "comparison_count": {"type": "integer", "minimum": 0},
+            "contract_tolerance": {"type": "number", "minimum": 0},
+            "maximum_observed_difference": {"type": "number", "minimum": 0},
+            "record_path": {"$ref": "#/$defs/text"}
+          }
+        }
+      }
+    },
+    "extensions": {"type": "object"}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+    "text": {"type": "string", "minLength": 1, "pattern": ".*\\S.*"}
+  }
+}

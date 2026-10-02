@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "medical-imaging-model-evaluation",
+  "scope": "medical-imaging",
+  "contract_extension": {
+    "key": "medical_imaging_model_evaluation",
+    "schema": "contract-extension.schema.json"
+  },
+  "verification": {
+    "catalog": "verification-profile.md",
+    "required_categories": [
+      "imaging_integrity",
+      "reference_standard",
+      "split_and_leakage",
+      "imaging_metrics_and_claims"
+    ]
+  }
+}

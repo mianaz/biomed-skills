@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "dose-response",
+  "scope": "experimental",
+  "contract_extension": {
+    "key": "dose_response",
+    "schema": "contract-extension.schema.json"
+  },
+  "verification": {
+    "catalog": "verification-profile.md",
+    "required_categories": [
+      "assay_and_controls",
+      "curve_and_model",
+      "comparisons_and_multiplicity",
+      "dose_response_claims"
+    ]
+  }
+}

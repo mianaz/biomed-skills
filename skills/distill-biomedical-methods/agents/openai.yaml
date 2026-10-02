@@ -1,0 +1,4 @@
+interface:
+  display_name: "Distill Biomedical Methods"
+  short_description: "Extract reusable methods from papers and code"
+  default_prompt: "Use $distill-biomedical-methods to extract reusable, provenance-rich methods and stage governance proposals from these sources."

@@ -1,0 +1,17 @@
+{
+  "scenario_id": "dose-response",
+  "prompt": "Estimate an EC50 and maximal response from an eight-dose compound assay across independent experiments, with vehicle and positive controls and an explicit cytotoxicity exclusion rule.",
+  "expected_scope": "experimental",
+  "bundle": "experimental",
+  "primary_skill": "analyze-dose-response",
+  "supporting_skills": [
+    "design-biomedical-study",
+    "validate-biomedical-data",
+    "verify-biomedical-analysis"
+  ],
+  "forbidden_skills": [
+    "analyze-perturb-seq"
+  ],
+  "resource_profile": "dose-response",
+  "extension_key": "dose_response"
+}

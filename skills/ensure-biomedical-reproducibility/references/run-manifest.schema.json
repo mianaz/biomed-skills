@@ -1,0 +1,357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-scientist-skills.local/schemas/run-manifest-1.1.0.json",
+  "title": "Biomedical run manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "artifact_type",
+    "contract_id",
+    "run_id",
+    "status",
+    "started_at",
+    "inputs",
+    "external_sources",
+    "environment",
+    "steps",
+    "artifacts",
+    "quality",
+    "deviations",
+    "extensions"
+  ],
+  "properties": {
+    "schema_version": {"enum": ["1.0.0", "1.1.0"]},
+    "artifact_type": {"const": "run_manifest"},
+    "contract_id": {"$ref": "#/$defs/id"},
+    "run_id": {"$ref": "#/$defs/id"},
+    "status": {"enum": ["running", "completed", "partial", "failed"]},
+    "started_at": {"$ref": "#/$defs/timestamp"},
+    "ended_at": {"$ref": "#/$defs/timestamp"},
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["input_id", "contract_input_id", "uri"],
+        "properties": {
+          "input_id": {"$ref": "#/$defs/id"},
+          "contract_input_id": {"$ref": "#/$defs/id"},
+          "locator_kind": {"$ref": "#/$defs/locator_kind"},
+          "uri": {"$ref": "#/$defs/text"},
+          "media_type": {"$ref": "#/$defs/text"},
+          "size_bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"$ref": "#/$defs/sha256"}
+        }
+      }
+    },
+    "external_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "kind", "name", "resource", "retrieved_at", "mutable"],
+        "properties": {
+          "source_id": {"$ref": "#/$defs/id"},
+          "kind": {"enum": ["database", "api", "literature", "reference", "other"]},
+          "name": {"$ref": "#/$defs/text"},
+          "resource": {"$ref": "#/$defs/text"},
+          "retrieved_at": {"$ref": "#/$defs/timestamp"},
+          "mutable": {"type": "boolean"},
+          "version": {"$ref": "#/$defs/text"},
+          "cache_artifact_id": {"$ref": "#/$defs/id"}
+        }
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["resource_id", "kind", "name"],
+        "properties": {
+          "resource_id": {"$ref": "#/$defs/id"},
+          "kind": {"enum": ["protocol", "instrument", "reagent", "calibration", "model", "reference-standard", "other"]},
+          "name": {"$ref": "#/$defs/text"},
+          "version": {"$ref": "#/$defs/text"},
+          "identifier": {"$ref": "#/$defs/text"},
+          "uri": {"$ref": "#/$defs/text"},
+          "lot": {"$ref": "#/$defs/text"},
+          "serial_number": {"$ref": "#/$defs/text"},
+          "sha256": {"$ref": "#/$defs/sha256"},
+          "details": {"type": "object"}
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["runtimes", "packages"],
+      "properties": {
+        "runtimes": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/versioned_component"}
+        },
+        "packages": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/versioned_component"}
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "execution_id",
+          "step_id",
+          "implementation",
+          "invocation",
+          "parameters",
+          "rationale",
+          "status",
+          "artifact_ids",
+          "stochastic"
+        ],
+        "properties": {
+          "execution_id": {"$ref": "#/$defs/id"},
+          "step_id": {"$ref": "#/$defs/id"},
+          "implementation": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "ref"],
+            "properties": {
+              "kind": {"enum": ["script", "notebook", "workflow", "command", "tool", "manual"]},
+              "ref": {"$ref": "#/$defs/text"},
+              "version": {"$ref": "#/$defs/text"}
+            }
+          },
+          "invocation": {"$ref": "#/$defs/text"},
+          "parameters": {"type": "object"},
+          "rationale": {"$ref": "#/$defs/text"},
+          "status": {"enum": ["completed", "failed", "skipped"]},
+          "input_ids": {"$ref": "#/$defs/id_array"},
+          "upstream_artifact_ids": {"$ref": "#/$defs/id_array"},
+          "resource_ids": {"$ref": "#/$defs/id_array"},
+          "artifact_ids": {"$ref": "#/$defs/id_array"},
+          "stochastic": {"type": "boolean"},
+          "random_seed": {"type": "integer", "minimum": 0}
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["artifact_id", "kind", "status"],
+        "properties": {
+          "artifact_id": {"$ref": "#/$defs/id"},
+          "output_id": {"$ref": "#/$defs/id"},
+          "kind": {"enum": ["table", "figure", "model", "data", "report", "log", "cache", "lockfile", "reference", "other"]},
+          "status": {"enum": ["produced", "empty", "missing", "failed"]},
+          "locator_kind": {"$ref": "#/$defs/locator_kind"},
+          "uri": {"$ref": "#/$defs/text"},
+          "media_type": {"$ref": "#/$defs/text"},
+          "size_bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"$ref": "#/$defs/sha256"}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"status": {"enum": ["produced", "empty"]}}, "required": ["status"]},
+            "then": {"required": ["uri"]}
+          }
+        ]
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_qc", "statistical_assumptions", "checks"],
+      "properties": {
+        "input_qc": {"$ref": "#/$defs/performance_status"},
+        "statistical_assumptions": {"$ref": "#/$defs/performance_status"},
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["check_id", "category", "status", "summary", "artifact_ids"],
+            "properties": {
+              "check_id": {"$ref": "#/$defs/id"},
+              "contract_check_id": {"$ref": "#/$defs/id"},
+              "category": {"$ref": "#/$defs/id"},
+              "status": {"enum": ["pass", "warn", "fail", "not_applicable"]},
+              "summary": {"$ref": "#/$defs/text"},
+              "artifact_ids": {"$ref": "#/$defs/id_array"}
+            }
+          }
+        }
+      }
+    },
+    "deviations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["deviation_id", "target_type", "target_id", "reason", "impact"],
+        "properties": {
+          "deviation_id": {"$ref": "#/$defs/id"},
+          "target_type": {"enum": ["input", "source", "resource", "step", "artifact", "output", "parameter", "other"]},
+          "target_id": {"$ref": "#/$defs/id"},
+          "reason": {"$ref": "#/$defs/text"},
+          "impact": {"$ref": "#/$defs/text"}
+        }
+      }
+    },
+    "strict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lockfiles", "references"],
+      "properties": {
+        "code_revision": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["repository", "commit", "dirty"],
+          "properties": {
+            "repository": {"$ref": "#/$defs/text"},
+            "commit": {"$ref": "#/$defs/text"},
+            "dirty": {"type": "boolean"}
+          }
+        },
+        "pipeline": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "version", "definition_sha256"],
+          "properties": {
+            "name": {"$ref": "#/$defs/text"},
+            "version": {"$ref": "#/$defs/text"},
+            "definition_sha256": {"$ref": "#/$defs/sha256"}
+          }
+        },
+        "procedure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "version", "ref", "definition_sha256"],
+          "properties": {
+            "name": {"$ref": "#/$defs/text"},
+            "version": {"$ref": "#/$defs/text"},
+            "ref": {"$ref": "#/$defs/text"},
+            "definition_sha256": {"$ref": "#/$defs/sha256"},
+            "resource_id": {"$ref": "#/$defs/id"}
+          }
+        },
+        "lockfiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["uri", "sha256"],
+            "properties": {
+              "uri": {"$ref": "#/$defs/text"},
+              "sha256": {"$ref": "#/$defs/sha256"}
+            }
+          }
+        },
+        "container": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["engine", "image", "digest"],
+          "properties": {
+            "engine": {"enum": ["docker", "apptainer", "other"]},
+            "image": {"$ref": "#/$defs/text"},
+            "digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["reference_id", "name", "release", "uri", "sha256"],
+            "properties": {
+              "reference_id": {"$ref": "#/$defs/id"},
+              "name": {"$ref": "#/$defs/text"},
+              "release": {"$ref": "#/$defs/text"},
+              "uri": {"$ref": "#/$defs/text"},
+              "sha256": {"$ref": "#/$defs/sha256"}
+            }
+          }
+        }
+      },
+      "anyOf": [
+        {"required": ["code_revision"]},
+        {"required": ["pipeline"]},
+        {"required": ["procedure"]}
+      ]
+    },
+    "extensions": {"type": "object"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"enum": ["completed", "partial", "failed"]}}, "required": ["status"]},
+      "then": {"required": ["ended_at"]}
+    },
+    {
+      "if": {"properties": {"schema_version": {"const": "1.1.0"}}, "required": ["schema_version"]},
+      "then": {
+        "required": ["resources"],
+        "properties": {
+          "inputs": {"items": {"required": ["locator_kind"]}},
+          "steps": {"items": {"required": ["input_ids", "upstream_artifact_ids", "resource_ids"]}},
+          "artifacts": {"items": {"required": ["locator_kind"]}}
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "locator_kind": {"enum": ["file", "collection", "remote", "physical"]},
+    "id_array": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/id"}
+    },
+    "versioned_component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"$ref": "#/$defs/text"},
+        "version": {"$ref": "#/$defs/text"}
+      }
+    },
+    "performance_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {"enum": ["performed", "not_performed", "not_applicable"]},
+        "reason": {"$ref": "#/$defs/text"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"status": {"enum": ["not_performed", "not_applicable"]}}, "required": ["status"]},
+          "then": {"required": ["reason"]}
+        }
+      ]
+    }
+  }
+}
