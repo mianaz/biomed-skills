@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Writing"
+  short_description: "Draft biomedical manuscript sections from evidence"
+  default_prompt: "Use $paper-writing to draft the requested manuscript text from my results and figures, explaining its scientific significance."

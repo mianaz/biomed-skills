@@ -1,6 +1,6 @@
 ---
 name: paper-distill
-description: Read a biomedical paper and its supplements or code to explain its scientific contribution, experimental logic, methods and reusable ideas. Use for general paper distillation or journal-club notes; use sc-paper-distill for single-cell-specific method curation.
+description: Read a biomedical paper and its supplements or code to explain its scientific contribution, experimental logic, methods and reusable ideas. Use for biomedical paper distillation, experimental logic and journal-club notes.
 ---
 # Paper Distill
 
@@ -33,5 +33,8 @@ Route requested outputs: `paper-evidence-map` for an editable argument graph,
 `paper-to-protocol` for executable steps, `protocol-to-methods` for manuscript
 Methods, and `scientific-plotting` for figures. Propose reusable skill changes
 only when requested; a paper-reading task does not require modifying the suite.
-For academic prose, apply nature-writing, nature-polishing and humanizer when
-available; write direct, specific sentences tied to the observed evidence.
+For the digest's scientific explanation, read
+[writing principles](../biomed-shared/writing-principles.md). Use
+[evidence and interpretation](../biomed-shared/evidence-and-interpretation.md)
+when judging contribution, mechanisms or proposed extensions. The deliverable
+remains the paper digest and the requested reusable results.

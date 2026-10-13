@@ -36,8 +36,7 @@ method, software/function/version, input layer/normalization, analysis unit and
 parameters; distinguish display scaling and group averaging. Specify z-score
 axis/reference and aggregation, or GSEA ranking statistic and contrast.
 
-Apply `nature-writing`, then `nature-polishing`, then `humanizer` when available.
-If unavailable, write precise academic prose directly. Remove audit-style,
-apologetic and defensive phrasing without changing scientific meaning or turning
-missing information into facts. Check every quantity and past-tense statement
-against the supplied records after polishing.
+Before drafting, read [writing principles](../biomed-shared/writing-principles.md).
+Apply [terminology and citations](../biomed-shared/terminology-and-citations.md)
+when revising the Methods. Check every quantity and past-tense statement against
+the execution records; put unresolved factual details in the author questions.
