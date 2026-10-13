@@ -33,10 +33,8 @@ Route requested outputs: `paper-evidence-map` for an editable argument graph,
 `paper-to-protocol` for executable steps, `protocol-to-methods` for manuscript
 Methods, and `scientific-plotting` for figures. Propose reusable skill changes
 only when requested; a paper-reading task does not require modifying the suite.
-For academic prose, lead with the discovery, conceptual advance and biological
-significance. Explain what changes in understanding and why the findings matter.
-Develop useful connections, proposed mechanisms and testable extensions, making
-their reasoning and authorship explicit. Use natural biomedical terminology and
-concrete verbs. State observed findings confidently, qualify the particular
-inference that needs it, and remove repeated apologies or defensive caveats.
-Preserve quantitative results, citations and consequential contradictory evidence.
+For the digest's scientific explanation, read
+[writing principles](../biomed-shared/writing-principles.md). Use
+[evidence and interpretation](../biomed-shared/evidence-and-interpretation.md)
+when judging contribution, mechanisms or proposed extensions. The deliverable
+remains the paper digest and the requested reusable results.

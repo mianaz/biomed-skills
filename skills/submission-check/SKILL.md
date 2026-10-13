@@ -46,12 +46,10 @@ inputs. Draft declarations from supplied facts; author agreement, approvals,
 consent and conflicts require author-provided information. Check figure labels,
 supplement references and data links against the final prepared files.
 
-For academic text, foreground the discovery, conceptual advance and biological
-significance. In a cover letter, explain the question answered, the decisive
-findings and why the journal's audience should care. Develop the scientific value
-through reasoning and verified literature comparisons. Use natural biomedical
-prose, preserve scientific ambition and qualify specific inferences locally.
-Keep facts, quantities, sources and administrative declarations exact.
+For academic text, read [writing principles](../biomed-shared/writing-principles.md).
+For cover-letter drafting or substantial manuscript text, use `paper-writing`
+with the verified journal requirements and source facts. Reuse existing prose
+for file preparation. This workflow owns requirements and package consistency.
 
 Present the package and a short prioritized action list. Preparing a package
 does not authorize submitting it, signing declarations or messaging editors.

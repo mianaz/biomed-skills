@@ -1,15 +1,14 @@
 # Changelog
 
-## 0.4.0 — 13 October 2026
+## 0.4.0 — 13 October 2026 (proposed)
 
-- Add a standalone paper-framing workflow for scientific interest, biological
-  significance, conceptual models, figure sequence and manuscript writing.
-- Include section guidance, fictional biomedical examples, a framing template,
-  agent metadata, a structural package check and behavioral review cases.
-- Adopt the author's biomedical writing principles in AGENTS.md and carry the
-  essential priorities inside the installed framing skill.
-- Replace external writing calls in paper-distill, paper-evidence-map,
-  protocol-to-methods and submission-check with native prose guidance.
-- Remove external reading, scheduling and code-revision skill references from
-  the affected entry points; include the scheduling instructions directly.
-- Record editorial source attribution in docs/writing-provenance.md.
+- Add dedicated paper-framing, paper-writing and paper-polishing task entries.
+- Centralize the author's original writing principles and common references in
+  biomed-shared. Installed writing workflows explicitly load the shared guidance.
+- Make AGENTS.md a short pointer to the governing source and task boundaries.
+- Move section guidance into paper-writing; retain conditional loading.
+- Replace external writing calls in the reading, evidence-map, Methods and
+  submission workflows with suite references.
+- Include a writing bundle builder, structure checks and agent evaluation cases.
+- Retain the preceding proposal's scheduling guidance within reproducibility.
+- Record editorial sources and the refactoring in docs/writing-provenance.md.

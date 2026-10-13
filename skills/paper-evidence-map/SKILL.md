@@ -97,15 +97,12 @@ again. Preserve edits to text, sources, positions and relationships. The rendere
 refuses to overwrite existing deliverables; use a new render directory while
 retaining the edited version.
 
-When prose is requested, write from the agreed nodes, relationships and order.
-Keep quantitative results and citations attached to their claims. Lead with the
-scientific discovery and explain the biological understanding it advances. Develop
-connections across findings into a substantive interpretation; identify proposed
-models and new predictions at their actual inferential status. Use clear subjects,
-concrete verbs and established terminology. State findings confidently, qualify
-specific inferences locally and remove repeated defensive caveats. Preserve
-consequential counterevidence. Map generation alone does not authorize rewriting
-a manuscript or vault.
+When prose is requested, read
+[writing principles](../biomed-shared/writing-principles.md) and write from the
+agreed nodes, relationships and order. Keep quantitative results and sources
+attached to their claims. Use [evidence and interpretation](../biomed-shared/evidence-and-interpretation.md)
+for the inferential distinctions. Map generation alone does not authorize
+rewriting a manuscript or vault.
 
 ## Example and check
 

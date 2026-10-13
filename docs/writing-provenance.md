@@ -3,12 +3,13 @@
 Reviewed on 13 October 2026. The framing workflow and examples are original
 instructions developed for this biomedical suite. The following materials
 informed the editorial design. This page records attribution for maintainers;
-it is outside the installed framing skill and is not a runtime instruction.
+it is outside the installed skills and is not a runtime instruction.
 
 ## Governing source
 
 The author supplied `AGENTS(1).md`, titled “Biomedical research writing”. Its
-content is retained as the repository's `AGENTS.md`. The primary commitments are
+content is retained verbatim in `skills/biomed-shared/writing-principles.md`.
+The root `AGENTS.md` points to that source. The primary commitments are
 scientific interest, biological significance, creative interpretation, positive
 scientific value, removal of defensive writing and exact reporting.
 
@@ -32,15 +33,22 @@ biomedical examples. The referenced projects are not installed, fetched or
 invoked by the writing workflow. Editorial guidance is distinct from official
 journal policy; current requirements are verified for the actual submission.
 
-## Standalone update
+## Architecture sources read for the refactoring
 
-The update adds `paper-framing`, embeds biomedical prose guidance in the reading,
-evidence-map, Methods and submission entry points, and supplies scheduling
-instructions within the reproducibility entry point. The scientific-plotting,
-GraphPad Prism and protocol-export entry points were read during the audit;
-their companion workflows are already included in the suite.
+- [Writing for agents](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents): SKILL.md and SKILL-MECHANICS.md. Used its guidance on independent invocation, conditional references, explicit completion and a single authoritative home for each rule.
+- [Nature Skills](https://github.com/Yuan1z0825/nature-skills): nature-writing/manifest.yaml, nature-polishing/SKILL.md, nature-shared/SKILL.md, nature-reviewer/SKILL.md, nature-response/SKILL.md and the README architecture/installation sections. Used its separation of task entries, section-specific references and shared support files.
 
-The framing directory can be installed on its own with its references, assets,
-agent metadata and validation script. The script checks packaging and local
-resource paths. The behavioral cases specify editorial expectations for human
-review; they are not an executed model evaluation.
+These sources were inspected in the preceding architecture review. The
+refactoring implements that agreed design in original instructions. It adds no
+runtime fetch or invocation of the source projects. No platform-specific invocation
+flags are inferred from a source project's recommendations.
+
+## Suite independence
+
+The dedicated framing, writing and polishing workflows use the bundled
+biomed-shared directory. Common guidance in four existing writing consumers now
+points to those same files. Section guidance is local to paper-writing. Shared
+support is distributed with the selected skills; the standalone boundary is the
+installed package. Source attribution remains here for maintainers.
+
+See writing-architecture.md for responsibility boundaries, migration and test scope.
