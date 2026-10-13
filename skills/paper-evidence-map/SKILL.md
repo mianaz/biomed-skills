@@ -14,7 +14,7 @@ Use the supplied PDF, text, DOI, or URL. Reuse readable local materials first.
 Read the main text, figures and captions, then the Methods and supplements tied
 to each consequential claim. Inspect the actual panels as well as their captions.
 Existing figure-led reading notes can orient the work; check their claims against
-the paper. If `paper-journal-club` is available, reuse its reading approach.
+the paper, including the relevant controls and Methods.
 
 First reconstruct the whole argument: starting question, central conclusion,
 subclaims, and the logical dependencies between them. Then map each subclaim to
@@ -98,9 +98,14 @@ refuses to overwrite existing deliverables; use a new render directory while
 retaining the edited version.
 
 When prose is requested, write from the agreed nodes, relationships and order.
-Keep quantitative results and citations attached to their claims. Apply
-`nature-writing`, `nature-polishing`, then `humanizer` when available for academic
-prose. Map generation alone does not authorize rewriting a manuscript or vault.
+Keep quantitative results and citations attached to their claims. Lead with the
+scientific discovery and explain the biological understanding it advances. Develop
+connections across findings into a substantive interpretation; identify proposed
+models and new predictions at their actual inferential status. Use clear subjects,
+concrete verbs and established terminology. State findings confidently, qualify
+specific inferences locally and remove repeated defensive caveats. Preserve
+consequential counterevidence. Map generation alone does not authorize rewriting
+a manuscript or vault.
 
 ## Example and check
 

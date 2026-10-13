@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Framing"
+  short_description: "Develop biomedical discovery, significance and manuscript story"
+  default_prompt: "Use $paper-framing to develop the strongest biological story supported by my results, explain its scientific significance, and draft the requested manuscript sections."

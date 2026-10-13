@@ -36,8 +36,10 @@ method, software/function/version, input layer/normalization, analysis unit and
 parameters; distinguish display scaling and group averaging. Specify z-score
 axis/reference and aggregation, or GSEA ranking statistic and contrast.
 
-Apply `nature-writing`, then `nature-polishing`, then `humanizer` when available.
-If unavailable, write precise academic prose directly. Remove audit-style,
-apologetic and defensive phrasing without changing scientific meaning or turning
-missing information into facts. Check every quantity and past-tense statement
-against the supplied records after polishing.
+Write concise biomedical Methods directly from the execution records. Use clear
+subjects, concrete verbs and established technical terminology. Explain design
+choices where they help the reader understand the scientific inference. State
+completed work confidently and place unresolved factual details in the author
+questions. Remove repeated apologies, defensive caveats and procedural clutter.
+Preserve the actual parameters and scientific meaning; check every quantity and
+past-tense statement against the supplied records after revision.
