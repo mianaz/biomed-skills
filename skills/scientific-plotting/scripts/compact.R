@@ -156,13 +156,18 @@ text_overlaps <- function(txt) {
 }
 
 # Export geometry once, then check the saved artifact. This does not replace viewing it.
-export_biomedical <- function(p, stem, width_mm, height_mm, placed_width_mm = 90) {
+export_biomedical <- function(p, stem, width_mm, height_mm, placed_width_mm = 90, dpi = 300) {
   stopifnot(width_mm > 0, height_mm > 0, placed_width_mm > 0)
   p <- p + ggplot2::theme(plot.background = ggplot2::element_rect(fill = "white", colour = NA),
                           panel.background = ggplot2::element_rect(fill = "white", colour = NA))
   built <- ggplot2::ggplot_build(p)
-  for (layer in built$data) {
-    for (field in intersect(c("x", "y", "xend", "yend", "ymin", "ymax"), names(layer))) {
+  for (i in seq_along(built$data)) {
+    layer <- built$data[[i]]
+    fields <- intersect(c("x", "y", "xend", "yend", "ymin", "ymax", "xmin", "xmax"), names(layer))
+    # Error bars draw endpoints; their unused center coordinate may be NA.
+    if (inherits(p$layers[[i]]$geom, "GeomErrorbar"))
+      fields <- setdiff(fields, if (isTRUE(layer$flipped_aes[1])) "x" else "y")
+    for (field in fields) {
       if (anyNA(layer[[field]])) stop("Missing or scale-dropped geometry in ", field,
                                      "; resolve exclusions or limits before export.")
     }
@@ -173,7 +178,7 @@ export_biomedical <- function(p, stem, width_mm, height_mm, placed_width_mm = 90
                   units = "mm", device = grDevices::cairo_pdf, bg = "white",
                   symbolfamily = grDevices::cairoSymbolFont("Arial", usePUA = FALSE))
   ggplot2::ggsave(paste0(stem, ".png"), p, width = width_mm, height = height_mm,
-                  units = "mm", dpi = 300, device = ragg::agg_png, bg = "white")
+                  units = "mm", dpi = dpi, device = ragg::agg_png, bg = "white")
   txt <- pdftools::pdf_data(paste0(stem, ".pdf"), font_info = TRUE)[[1]]
   page <- pdftools::pdf_pagesize(paste0(stem, ".pdf"))[1, ]
   effective <- txt$font_size * placed_width_mm / (page$width * 25.4 / 72)

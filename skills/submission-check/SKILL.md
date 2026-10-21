@@ -19,6 +19,9 @@ requirements unverified; do not substitute a sister journal or old blog silently
 
 ## Prepare the package
 
+For a manuscript figure sequence or editable main/supplemental PowerPoint decks,
+use [figure-plan](../figure-plan/SKILL.md) with the verified figure requirements.
+
 Read the actual manuscript, figures, supplements and supplied metadata. Distill
 only applicable requirements into `submission-checklist.tsv` with columns:
 `item`, `requirement`, `journal`, `article_type`, `stage`, `required_or_recommended`,

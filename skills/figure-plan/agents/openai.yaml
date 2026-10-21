@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figure Plan"
+  short_description: "Plan manuscript figures and editable PowerPoint decks"
+  default_prompt: "Use $figure-plan to plan main and supplemental figures from this manuscript, assemble separate PowerPoint decks from independent panels and labeled gaps, and inspect the final exports."

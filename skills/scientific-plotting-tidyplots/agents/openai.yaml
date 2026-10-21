@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Plotting · tidyplots"
+  short_description: "Build readable biomedical figures with tidyplots"
+  default_prompt: "Use $scientific-plotting-tidyplots to create the requested biomedical figure in R, then verify the saved figure at its final size and deliver editable source and data."

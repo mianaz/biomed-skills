@@ -17,6 +17,12 @@ script is helpful. A working environment does not need repeated setup.
 
 ## Set the task scope
 
+For manuscript-wide main/supplemental figure planning or PowerPoint figure
+assembly, use [figure-plan](../figure-plan/SKILL.md). In that workflow, this skill
+produces independent, letter-free panel assets; figure-plan owns the PowerPoint
+layout, separate letter text boxes and final whole-figure export. Its assembly
+contract takes precedence over the composite examples below.
+
 Use this skill for basic biological research (descriptive, functional or mechanistic),
 experimental biomedicine, omics, medical imaging, clinical or epidemiological studies,
 and translational research. Basic biology does not require a disease endpoint.
@@ -44,6 +50,10 @@ Honor an explicit language or an existing validated analysis. Otherwise use the
 project's environment; with no preference, start with R for conventional experimental
 tables and Python for an existing Python analysis. Read the shared controls and only
 the selected route in `references/r-and-python.md`.
+
+For a tidyplots-first R workflow, use the companion
+`scientific-plotting-tidyplots` variation and `references/tidyplots.md`.
+It shares the standards below and sets tidyplots construction and sizing defaults.
 
 For Prism-native workflows, use the companion `graphpad-prism` skill. Retained
 single-cell figure recipes include `references/volcano.md`,
