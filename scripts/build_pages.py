@@ -13,8 +13,13 @@ OUT = ROOT / '_site'
 if OUT.exists():
     shutil.rmtree(OUT)
 shutil.copytree(ROOT / 'site', OUT)
+showcase = json.loads((ROOT / 'site/showcase.json').read_text())
 tracked = subprocess.check_output(['git', 'ls-files', '-z', 'skills'], cwd=ROOT).decode().split('\0')
-for name in filter(None, tracked):
+old_pages = ('jinek2012', 'causal-models', 'biomed-icon-library', 'icon-atlas-template')
+web_files = [name for name in filter(None, tracked)
+             if not any(name.endswith('/' + old + '.html') for old in old_pages)
+             and '/examples/gallery/' not in name]
+for name in web_files:
     target = OUT / name
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(ROOT / name, target)
@@ -53,9 +58,22 @@ for stem, title, description in [
         files.append(('_statistics.csv', '统计'))
     links = ''.join(f'<a download href="examples/tidyplots/{stem}{suffix if suffix.startswith("_") else "." + suffix}">{label} ↓</a>' for suffix, label in files)
     plot_cards.append(f'<article class="plot-card"><a href="examples/tidyplots/{stem}.pdf"><img src="examples/tidyplots/{stem}.png" alt="{title}的实际 R 绘图导出" loading="lazy"></a><div class="plot-meta"><h3>{title}</h3><p>{description}</p><div class="file-links">{links}<a href="skills/scientific-plotting-tidyplots/examples/run.R" download>R 源码 ↓</a></div></div></article>')
-gallery = ''.join(f'<figure><a href="skills/scientific-plotting/examples/gallery/{name}.png"><img src="skills/scientific-plotting/examples/gallery/{name}.png" alt="{title}合成数据示例" loading="lazy"></a><figcaption>{title} · 合成数据</figcaption></figure>' for name, title in [('independent','独立组'),('paired','配对'),('repeated','重复测量'),('dose_response','剂量反应'),('survival','存活曲线'),('heatmap','热图')])
+icons_root = ROOT / 'skills/scientific-visual-explainer/assets/biomed-icons'
+icon_catalog = json.loads((icons_root / 'catalog.json').read_text())
+assert icon_catalog['version'] == showcase['visual_revision']
+current_icons = [icon for icon in icon_catalog['icons'] if icon['category'] in showcase['icon_families']]
+assert len(current_icons) == 16
+icon_cards = []
+for icon in current_icons:
+    assert icon['provenance']['mode'] == 'built-in-imagegen-traced'
+    base = 'skills/scientific-visual-explainer/assets/biomed-icons/'
+    anchors = ', '.join(icon['anchors'])
+    icon_cards.append(f"""<article class="current-icon-card"><span class="small-label">{html.escape(icon['category'])} · v{showcase['visual_revision']}</span><h2>{html.escape(icon['label'])}</h2><span class="skill-id">{html.escape(icon['id'])}</span><div class="icon-comparison"><figure><img loading="lazy" src="{base + icon['provenance']['source']}" alt="{html.escape(icon['label'])}原始生成图"><figcaption>原始生成图</figcaption></figure><figure><img loading="lazy" src="{base + icon['file']}" alt="{html.escape(icon['label'])}当前 SVG"><figcaption>当前可编辑 SVG</figcaption></figure></div><p>{html.escape(icon.get('description', ''))}</p><details><summary>部件、锚点与适用范围</summary><p>{html.escape(anchors)}</p><p>{html.escape(icon.get('scope', 'Teaching schematic.'))}</p></details><div class="file-links"><a download href="{base + icon['file']}">SVG ↓</a><a download href="{base + icon['provenance']['source']}">生成原图 ↓</a><a href="{base + icon['category']}/manifest.json">来源与元数据 ↗</a></div></article>""")
+(OUT / 'examples/current-icons.json').write_text(json.dumps({'version': showcase['visual_revision'], 'icons': current_icons}, ensure_ascii=False, indent=2) + '\n')
+icons_page = (OUT / 'icons.html').read_text().replace('{{VISUAL_REVISION}}', showcase['visual_revision']).replace('{{ICON_COUNT}}', str(len(current_icons))).replace('{{ICON_CARDS}}', ''.join(icon_cards))
+(OUT / 'icons.html').write_text(icons_page)
 p = OUT / 'index.html'
-text = p.read_text().replace('{{VERSION}}', version).replace('{{COMMIT}}', commit).replace('{{SKILL_CARDS}}', '\n'.join(cards)).replace('{{NOSCRIPT_GUIDES}}', ''.join(guides)).replace('{{PLOT_CARDS}}',''.join(plot_cards)).replace('{{GALLERY}}', gallery).replace('{{FIRST_CASE}}', html.escape(catalog[0]['example']))
+text = p.read_text().replace('{{VERSION}}', version).replace('{{COMMIT}}', commit).replace('{{SKILL_CARDS}}', '\n'.join(cards)).replace('{{NOSCRIPT_GUIDES}}', ''.join(guides)).replace('{{PLOT_CARDS}}',''.join(plot_cards)).replace('{{FIRST_CASE}}', html.escape(catalog[0]['example']))
 text = text.replace('</main>', '<script type="application/json" id="catalog-data">' + json.dumps(catalog, ensure_ascii=False).replace('</', '<\\/') + '</script></main>')
 p.write_text(text)
 (OUT / '.nojekyll').touch()
@@ -65,4 +83,38 @@ with zipfile.ZipFile(OUT / f'downloads/biomed-skill-{version}.zip', 'w', zipfile
         bundle.write(ROOT / name, name)
     bundle.write(ROOT / 'LICENSE', 'LICENSE')
     bundle.write(ROOT / 'README.md', 'README.md')
-print(f'Built {len(catalog)} skill guides, 7 demos and downloadable suite: {OUT}')
+with zipfile.ZipFile(OUT / 'downloads/current-examples.zip', 'w', zipfile.ZIP_DEFLATED) as bundle:
+    assets = ROOT / 'skills/scientific-visual-explainer/assets'
+    for name in ['tgfb-generated.html', 'egfr-generated.html', 'tgfb-storyboard.md']:
+        bundle.write(assets / name, 'mechanisms/' + name)
+    for family in showcase['icon_families']:
+        for source in sorted((icons_root / family).rglob('*')):
+            if source.is_file():
+                bundle.write(source, 'icons/' + source.relative_to(icons_root).as_posix())
+    bundle.writestr('icons/current-icons.json', json.dumps({'version': showcase['visual_revision'], 'icons': current_icons}, ensure_ascii=False, indent=2))
+    for source in sorted((ROOT / 'site/examples/tidyplots').iterdir()):
+        bundle.write(source, 'plots/outputs/' + source.name)
+    plotting = ROOT / 'skills/scientific-plotting'
+    for name in ['scripts/compact.R', 'examples/groups.csv', 'examples/paired.csv', 'examples/trajectory.csv']:
+        bundle.write(plotting / name, 'plots/scientific-plotting/' + name)
+    for name in ['scripts/tidyplots.R', 'examples/run.R']:
+        bundle.write(ROOT / 'skills/scientific-plotting-tidyplots' / name, 'plots/scientific-plotting-tidyplots/' + name)
+    bundle.write(ROOT / 'LICENSE', 'LICENSE')
+    bundle.writestr('README.md', """# Current showcase examples
+
+Mechanism assets: v0.7, continuous contours and unified scene line weights.
+Open mechanisms/tgfb-generated.html or mechanisms/egfr-generated.html directly.
+The HTML files embed their SVGs, model, runtime and source references.
+icons/ contains the 16 generated-and-traced assets used by the current showcase,
+with original PNGs, prompts, manifests and editable SVGs. Geometry is illustrative.
+The TGFbeta lesson also embeds its nuclear-pore support artwork.
+
+plots/outputs/ contains the current synthetic teaching plots, source tables,
+statistics and editable R objects. With the R dependencies installed, rerun:
+
+    Rscript --vanilla plots/scientific-plotting-tidyplots/examples/run.R new-plots
+
+Keep both plotting directories together. The complete skill installation is a
+separate download. All plotting data are synthetic teaching examples.
+""")
+print(f'Built {len(catalog)} skill guides, current mechanism demos, a 16-icon gallery and downloadable suite: {OUT}')

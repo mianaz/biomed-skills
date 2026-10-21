@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Curate Pages around the current v0.7 mechanism lessons and 16 generated icons;
+  remove early demos and the older plot gallery from the public showcase.
+
 - Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
   R plotting downloads, fictional study walkthroughs and automated deployment.
 

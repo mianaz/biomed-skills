@@ -88,8 +88,8 @@
       "R 源码 / RDS",
       "图注与渲染检查"
     ],
-    "example": "配对图保留每位供者的前后变化；独立组展示观测点及明确的汇总量。下方图集由包内 gallery.R 生成，包含六种合成数据示例。",
-    "source": "skills/scientific-plotting/examples/gallery.R"
+    "example": "当前示例使用独立组、供者配对和时间轨迹三种合成数据。图形来自当前 tidyplots 示例源码重跑，保留源数据、完整统计表与可编辑对象。",
+    "source": "skills/scientific-plotting/scripts/compact.R"
   },
   {
     "id": "scientific-plotting-tidyplots",
@@ -255,7 +255,7 @@
       "源模型 / SVG / JavaScript",
       "明确的来源与展示范围"
     ],
-    "example": "TGFβ 示例包含正常信号、ALK5 催化阻断、SMAD3 2SA 三种条件；机制模型区分受体 GS 磷酸化与下游 SMAD3 磷酸化。134 个图标可搜索、检查锚点并下载 SVG。",
+    "example": "TGFβ 示例包含正常信号、ALK5 催化阻断、SMAD3 2SA 三种条件；机制模型区分受体 GS 磷酸化与下游 SMAD3 磷酸化。当前机制资产页展示 16 个最新生成并转为路径的图标，原图与 SVG 并排，支持搜索和下载。",
     "source": "skills/scientific-visual-explainer/assets/tgfb-generated.html"
   },
   {

@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>当前机制图标 · biomed-skill</title><link rel="stylesheet" href="style.css"><link rel="icon" href="favicon.svg"></head><body>
+<header class="topbar"><a class="brand" href="./"><span class="mark">b.</span> biomed-skill</a><a href="./#demos">返回演示站 →</a></header>
+<main class="wrap current-icon-page"><p class="eyebrow">CURRENT MECHANISM ASSETS · v{{VISUAL_REVISION}}</p><h1>当前机制图标。</h1><p class="lead">{{ICON_COUNT}} 个生成后转为可编辑路径的图标，与当前 EGF–ERK 和 TGFβ–SMAD 演示来自同一批源资产。</p><p>保留原始生成图、SVG、语义部件和锚点。界面与比例用于机制教学；科学来源和适用范围见各图标记录。</p>
+<div class="skill-tools"><label class="search"><span>⌕</span><input id="icon-search" type="search" placeholder="搜索 EGFR、SMAD、DNA…" aria-label="搜索当前图标"></label><a href="examples/current-icons.json" download>下载本页图标目录 ↓</a></div><p class="small-label" id="icon-count" aria-live="polite">显示 {{ICON_COUNT}} 个图标</p><div class="current-icon-grid">{{ICON_CARDS}}</div>
+<p><a href="./#install">下载技能和源资产 →</a></p></main>
+<script>
+const search=document.querySelector('#icon-search');
+search.addEventListener('input',()=>{let count=0;const query=search.value.trim().toLowerCase();document.querySelectorAll('.current-icon-card').forEach(card=>{card.hidden=!card.textContent.toLowerCase().includes(query);if(!card.hidden)count++;});document.querySelector('#icon-count').textContent=`显示 ${count} 个图标`;});
+</script></body></html>
