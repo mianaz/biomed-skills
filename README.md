@@ -21,6 +21,20 @@ protocols and submission preparation. Version 0.5.0.
 | `protocol-to-methods` | Publication-style Methods based on protocol plus actual experiment records |
 | `submission-check` | Current journal/stage checklist and organized submission files for Cell, Nature or Science journals |
 
+## Demos and examples
+
+[Open the GitHub Pages demo site](https://mianaz.github.io/biomed-skills/).
+It includes detailed guides for all 14 skills, seven browser demos, nine plotting
+examples, copyable prompts, teaching data and a downloadable skill bundle.
+Writing and study examples are fictional; literature-based mechanism lessons
+include their sources and reading scope.
+
+Build the static site with `python3 scripts/build_pages.py`, then serve `_site/`
+with a local HTTP server. The build uses tracked skill resources and the explicit
+teaching fixtures in `site/`; local prototypes and benchmark outputs are excluded.
+GitHub Actions publishes the same build through `.github/workflows/pages.yml`.
+Set repository **Settings → Pages → Source → GitHub Actions** for first deployment.
+
 ## Use
 
 For Claude Code:

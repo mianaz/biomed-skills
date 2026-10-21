@@ -1,0 +1,364 @@
+[
+  {
+    "id": "paper-framing",
+    "title": "构思科学故事",
+    "group": "writing",
+    "summary": "把结果组织成一个值得发表的发现，明确它改变了什么理解。",
+    "inputs": [
+      "主要结果、图注与研究背景",
+      "已有主张、反例和目标读者"
+    ],
+    "prompt": "Use $paper-framing to develop the central contribution of this study. Reuse the existing figure IDs. Compare two story options and recommend the strongest biological argument.",
+    "steps": [
+      "找出最有信息量的发现与意外之处",
+      "比较可行故事，选择中心贡献与概念模型",
+      "将主张连接到决定性证据和整体图序"
+    ],
+    "outputs": [
+      "framing-brief.md",
+      "主张—证据表",
+      "推荐标题与整体图序"
+    ],
+    "example": "中心贡献：Protein X 支持类器官扩增；敲低与补回将生长表型连接到 X 的功能。\n概念意义：把表达相关性推进到可干预的生物学依赖。\n建议图序：Fig. 1 干预与补回；Fig. 2 机制检验。\n提出的 X–Y 结合模型仍可引导下一步实验；当前共免疫沉淀没有检出相互作用。",
+    "source": "skills/paper-framing/assets/framing-brief.md"
+  },
+  {
+    "id": "paper-writing",
+    "title": "写出发现及其意义",
+    "group": "writing",
+    "summary": "从证据写作或重组标题、摘要、Results、Discussion 和图注。",
+    "inputs": [
+      "选定故事、图版、实际数值与方法记录",
+      "目标段落、期刊、语言和篇幅"
+    ],
+    "prompt": "Use $paper-writing to draft a Results subsection from the supplied knockdown and rescue figures. Lead with the discovery, retain the donor-level design, and separate the proposed binding model from the measured phenotype.",
+    "steps": [
+      "沿用已有主张、图号和措辞约定",
+      "围绕发现写段落，连接结果及局部解释",
+      "核对所有数值、证据位置和重要反例"
+    ],
+    "outputs": [
+      "manuscript-section.md",
+      "核对后的图号和来源",
+      "需要作者补充的具体事实"
+    ],
+    "example": "Protein X supports organoid expansion\n\nX depletion reduced organoid area by 35% at 72 h in four paired donor cultures. Re-expression of a knockdown-resistant X construct restored area to 95% of control, linking the expansion phenotype to X function in this assay. These findings identify X as a functional dependency of organoid growth.\n\n以上为虚构示例；数值来自本站教学素材，不代表真实实验。",
+    "source": "skills/paper-writing/references/results.md"
+  },
+  {
+    "id": "paper-polishing",
+    "title": "保留科学力度的润色",
+    "group": "writing",
+    "summary": "改善已有文字的语言与结构，保留原意、科学兴趣和证据层级。",
+    "inputs": [
+      "需要润色、翻译或压缩的原文",
+      "保留事项与目标长度"
+    ],
+    "prompt": "Use $paper-polishing to improve this sentence: “We found that protein X was very important for the growth of organoids and rescue made them grow back.” Keep the functional contribution clear and retain the assay scope.",
+    "steps": [
+      "识别已有事实与最有价值的科学信息",
+      "修复冗余、逻辑和术语",
+      "对照原文检查数值、原意与科学力度"
+    ],
+    "outputs": [
+      "润色后的段落",
+      "必要时附简短修改说明"
+    ],
+    "example": "修改前：We found that protein X was very important for the growth of organoids and rescue made them grow back.\n\n修改后：Protein X supports organoid expansion, as X depletion reduced growth and re-expression restored it.\n\n变化：明确干预及补回逻辑，保留功能性结论。",
+    "source": "skills/paper-polishing/SKILL.md"
+  },
+  {
+    "id": "scientific-plotting",
+    "title": "从数据到可编辑图",
+    "group": "figures",
+    "summary": "为分组、配对、重复测量、剂量反应、存活和热图选择合适表达。",
+    "inputs": [
+      "保留独立单位 ID 的原始表",
+      "比较设计、统计问题与最终放置宽度"
+    ],
+    "prompt": "Use $scientific-plotting to show these paired observations. Match donors by ID, retain individual points, report the paired analysis, and save the direct data, editable R object and inspected PDF/PNG.",
+    "steps": [
+      "先辨认实验单位与比较设计",
+      "计算统计结果，再构造图层",
+      "检查最终字号、边界、单位、颜色与导出"
+    ],
+    "outputs": [
+      "PDF / PNG",
+      "CSV 与统计表",
+      "R 源码 / RDS",
+      "图注与渲染检查"
+    ],
+    "example": "配对图保留每位供者的前后变化；独立组展示观测点及明确的汇总量。下方图集由包内 gallery.R 生成，包含六种合成数据示例。",
+    "source": "skills/scientific-plotting/examples/gallery.R"
+  },
+  {
+    "id": "scientific-plotting-tidyplots",
+    "title": "默认使用 tidyplots",
+    "group": "figures",
+    "summary": "保持共享科学与交付标准，以 tidyplots 构造紧凑 R 图。",
+    "inputs": [
+      "tidy 数据表与实验设计",
+      "scientific-plotting 共享辅助文件"
+    ],
+    "prompt": "Use $scientific-plotting-tidyplots to compare the synthetic Control, Drug A and Drug B observations. Start from a 50 × 50 mm plot area, use Arial, retain planned comparisons and verify text at final placement.",
+    "steps": [
+      "以 tidyplots 建立原始点和汇总图层",
+      "显式设置 Arial 与字号；测量完整画布",
+      "导出 600 dpi PNG、PDF、RDS 和源数据"
+    ],
+    "outputs": [
+      "三个可运行示例",
+      "600 dpi PNG / PDF / RDS",
+      "数据、统计、配色与图注"
+    ],
+    "example": "50 × 50 mm 指绘图区；导出尺寸还包含坐标轴、图例与边距。本站示例从当前 run.R 重跑，包含独立组、配对观察和时间轨迹。",
+    "source": "skills/scientific-plotting-tidyplots/examples/run.R",
+    "downloads": [
+      {
+        "label": "数据和实际导出",
+        "path": "examples/tidyplots/groups_source.csv"
+      }
+    ]
+  },
+  {
+    "id": "figure-plan",
+    "title": "规划并组装完整图版",
+    "group": "figures",
+    "summary": "把整体图序落实为面板清单、主图/补图 PowerPoint 与整图导出。",
+    "inputs": [
+      "已有 framing brief、图注与面板资产",
+      "期刊要求、待补数据和目标放置尺寸"
+    ],
+    "prompt": "Use $figure-plan to turn this study into separate main and supplemental PowerPoint decks. Reuse the framing brief. Keep each panel and letter independently editable, label missing data, and inspect exports at manuscript size.",
+    "steps": [
+      "沿用科学故事，建立证据组和面板状态表",
+      "独立放置面板、图字母和缺数据占位",
+      "从保存的 PPTX 导出 PDF/PNG/TIFF 并检查"
+    ],
+    "outputs": [
+      "主图与补图 PPTX",
+      "figure-plan.md / 面板清单",
+      "每图 PDF / PNG / TIFF",
+      "最终字号与源分辨率记录"
+    ],
+    "example": "Fig. 1：A，配对敲低；B，补回；C，X 蛋白验证；D，待补剂量反应。主图以功能发现为中心。缺失数据用虚线框标明，不以绘图补造结果。\n\n下方浏览器排版示例展示面板状态；它不是 PPTX 导出器。",
+    "source": "skills/figure-plan/assets/figure-plan-template.md",
+    "downloads": [
+      {
+        "label": "已填写的计划",
+        "path": "examples/figure-plan.md"
+      }
+    ]
+  },
+  {
+    "id": "graphpad-prism",
+    "title": "交付 Prism 可编辑数据",
+    "group": "figures",
+    "summary": "保留原生项目、数据表与图的连接，也可导出明确标注的数据表 PZFX。",
+    "inputs": [
+      "Column / Grouped / XY 数据及配对 ID",
+      "现有 Prism 模板和可用软件版本"
+    ],
+    "prompt": "Use $graphpad-prism to populate a copy of my Column template with these values. Preserve table and graph links, inspect the saved project in Prism, and deliver the editable project plus source CSV and PDF.",
+    "steps": [
+      "确认表型、重复子列和缺失值",
+      "编辑模板副本并保留引用关系",
+      "在 Prism 中检查保存结果与实际图形"
+    ],
+    "outputs": [
+      "原生项目或 data-only PZFX",
+      "源数据 CSV",
+      "经 Prism 检查的图形与设置"
+    ],
+    "example": "本站提供的 groups-data-only.pzfx 使用包内 prism.R 生成，包含可编辑数据表；它没有嵌入图形、模板样式或统计分析。可下载到 Prism 打开后继续作图。",
+    "source": "skills/scientific-plotting/scripts/prism.R",
+    "downloads": [
+      {
+        "label": "数据表 PZFX",
+        "path": "examples/groups-data-only.pzfx"
+      }
+    ]
+  },
+  {
+    "id": "paper-distill",
+    "title": "读清论文的实验逻辑",
+    "group": "reading",
+    "summary": "围绕问题、比较、控制、观察和解释理解论文，并提取可迁移方法。",
+    "inputs": [
+      "论文正文、图注及可获得的补充材料",
+      "你的研究问题与期望阅读深度"
+    ],
+    "prompt": "Use $paper-distill to explain the supplied paper question by question. Cite exact figure panels, identify decisive controls, and distinguish reusable methods from proposed extensions to my project.",
+    "steps": [
+      "按问题串联正文、图注与 Methods",
+      "将每条主张连接到比较、控制与结果",
+      "给出适用的迁移思路和下一步实验"
+    ],
+    "outputs": [
+      "paper-digest.md",
+      "来源明确的方法记录",
+      "按需 gene-sets.tsv 与迁移建议"
+    ],
+    "example": "教学阅读卡\n问题：X 是否参与类器官扩增？\n关键比较：敲低 vs 对照；敲低 + 补回 vs 敲低 + 空载体。\n观察：面积下降，补回后恢复。\n可迁移设计：匹配供者，保留补回与载体对照。\n机制问题：X–Y 结合是否需要不同检验条件？",
+    "source": "skills/paper-distill/SKILL.md"
+  },
+  {
+    "id": "paper-evidence-map",
+    "title": "把论证变成证据图",
+    "group": "reading",
+    "summary": "将中心主张、实验、控制和结果组织为可编辑的来源图。",
+    "inputs": [
+      "论文或结构化证据 JSON",
+      "精确的面板、页码和读取范围"
+    ],
+    "prompt": "Use $paper-evidence-map to map this paper’s argument. Include rescue evidence and the negative interaction assay, preserve shared evidence IDs, and deliver editable Canvas, JSON, evidence table and HTML preview.",
+    "steps": [
+      "辨认问题、主张、实验、结果与提出的模型",
+      "连接支持、限定、反驳和依赖关系",
+      "核对来源与端点，渲染可编辑图和证据表"
+    ],
+    "outputs": [
+      "evidence-map.canvas",
+      "evidence-table.md / TSV",
+      "graph.json 与 HTML"
+    ],
+    "example": "已运行包内 example.json：同一补回结果连接两个相关主张；阴性相互作用实验限定提出的结合模型。所有节点和数值均为虚构教学内容。",
+    "source": "skills/paper-evidence-map/assets/example.json",
+    "downloads": [
+      {
+        "label": "可编辑 Canvas",
+        "path": "examples/evidence/evidence-map.canvas"
+      },
+      {
+        "label": "证据表 TSV",
+        "path": "examples/evidence/evidence-table.tsv"
+      }
+    ]
+  },
+  {
+    "id": "scientific-visual-explainer",
+    "title": "让机制可以看见",
+    "group": "reading",
+    "summary": "以源文献、独立图形资产和可拖动时间轴解释机制。",
+    "inputs": [
+      "概念或论文及目标受众",
+      "所需教学问题、语言与输出格式"
+    ],
+    "prompt": "Use $scientific-visual-explainer to teach the TGFβ–SMAD3/SMAD4 pathway in interactive HTML. Show receptor phosphorylation, 2:1 complex assembly and nuclear transport, with two perturbation comparisons and editable source assets.",
+    "steps": [
+      "读取来源并为每幕确定问题和结论",
+      "复用图标、部件和锚点构建静态机制图",
+      "加入可寻址动画并检查实际状态与对照"
+    ],
+    "outputs": [
+      "离线 HTML 与 storyboard.md",
+      "源模型 / SVG / JavaScript",
+      "明确的来源与展示范围"
+    ],
+    "example": "TGFβ 示例包含正常信号、ALK5 催化阻断、SMAD3 2SA 三种条件；机制模型区分受体 GS 磷酸化与下游 SMAD3 磷酸化。134 个图标可搜索、检查锚点并下载 SVG。",
+    "source": "skills/scientific-visual-explainer/assets/tgfb-generated.html"
+  },
+  {
+    "id": "paper-to-protocol",
+    "title": "从 Methods 到步骤",
+    "group": "protocols",
+    "summary": "将来源明确的方法转成可打印步骤与 Labmate 导入文件。",
+    "inputs": [
+      "Methods、补充材料与实际适配要求",
+      "材料、执行环境和已知缺失参数"
+    ],
+    "prompt": "Use $paper-to-protocol to turn these Methods into a sourced protocol. Preserve concentrations, durations and step order, identify missing parameters, and export printable HTML, Markdown and Labmate JSON.",
+    "steps": [
+      "读取所需原文并提取材料与步骤",
+      "保留单位、来源和已报告的暂停位置",
+      "从同一 JSON 导出 Markdown、HTML 和 Labmate"
+    ],
+    "outputs": [
+      "protocol.json / protocol.md",
+      "可打印 protocol.html",
+      "labmate-import.json"
+    ],
+    "example": "本站运行包内虚构导出样例：准备输入、核对列名、保存副本，随后从保存点继续。它用于检查步骤、来源和导入格式，不提供真实实验操作参数。",
+    "source": "skills/paper-to-protocol/assets/example.json",
+    "downloads": [
+      {
+        "label": "可打印 HTML",
+        "path": "examples/protocol/protocol.html"
+      },
+      {
+        "label": "Labmate JSON",
+        "path": "examples/protocol/labmate-import.json"
+      }
+    ]
+  },
+  {
+    "id": "protocol-to-methods",
+    "title": "从执行记录写 Methods",
+    "group": "protocols",
+    "summary": "根据实际完成的实验写方法，保留偏离原方案的操作。",
+    "inputs": [
+      "协议和实际执行记录",
+      "试剂版本、仪器、重复与分析记录"
+    ],
+    "prompt": "Use $protocol-to-methods to draft Methods from this protocol and execution log. Describe what was actually done, preserve parameter changes and biological units, and mark only facts missing from the record.",
+    "steps": [
+      "逐步核对方案与实际执行记录",
+      "按实验流程写材料、参数与分析",
+      "确认重复单位和发生的方案变更"
+    ],
+    "outputs": [
+      "methods.md",
+      "实际参数与来源记录",
+      "需要补齐的事实清单"
+    ],
+    "example": "方法片段（虚构）：Four independent donor-derived organoid cultures were evaluated in paired control, X-depletion and rescue conditions. Organoid area was quantified at 72 h and normalized to the matched donor control.\n\n若执行记录没有培养条件或试剂信息，保留明确待补字段。",
+    "source": "skills/protocol-to-methods/SKILL.md"
+  },
+  {
+    "id": "submission-check",
+    "title": "按目标期刊整理投稿",
+    "group": "protocols",
+    "summary": "从期刊、文章类型和阶段获取当前要求，核对材料并整理文件。",
+    "inputs": [
+      "目标期刊、文章类型与投稿阶段",
+      "稿件、图版、补充材料及作者信息"
+    ],
+    "prompt": "Use $submission-check to prepare the initial-submission files for my target journal. Retrieve its current official requirements, record the source and date, then check the manuscript, figures, supplements and metadata.",
+    "steps": [
+      "核对期刊与投稿阶段的官方要求",
+      "将适用要求逐项连接到实际文件",
+      "整理投稿包并记录具体待处理项"
+    ],
+    "outputs": [
+      "submission-checklist.tsv",
+      "整理好的投稿文件",
+      "来源 URL、日期与适用规则"
+    ],
+    "example": "教学检查表示例：正文与图号是否一致；图版是否达到目标放置尺寸；源数据与补充文件是否齐全；作者信息是否完整。期刊限制在实际使用时从官方来源获取，本站不固化上限。",
+    "source": "skills/submission-check/SKILL.md"
+  },
+  {
+    "id": "scientific-reproducibility",
+    "title": "让结果可重建",
+    "group": "protocols",
+    "summary": "保留直接数据、参数、模型、方法记录和可编辑输出。",
+    "inputs": [
+      "已有分析脚本、图形与结果对象",
+      "关键选择、软件环境和源数据位置"
+    ],
+    "prompt": "Use $scientific-reproducibility to package this analysis for reuse. Retain clean and titled figures, direct data, exact statistics, editable objects, parameters and a concise Methods record.",
+    "steps": [
+      "保存直接数据、统计结果和对象",
+      "记录软件版本、参数和有意义的选择",
+      "核对图形、文件名与说明可相互追溯"
+    ],
+    "outputs": [
+      "figures/",
+      "source_data/",
+      "objects/",
+      "methods.md"
+    ],
+    "example": "示例交付结构\nfigures/groups.pdf + groups.png\nsource_data/groups_source.csv\nsource_data/groups_statistics.csv\nobjects/groups.rds\nmethods.md：独立单位、比较族、校正方式、软件版本、参数与结果。",
+    "source": "skills/scientific-reproducibility/SKILL.md"
+  }
+]

@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
+  R plotting downloads, fictional study walkthroughs and automated deployment.
+
 ## 0.5.0 — 20 October 2026
 
 - Add figure-plan for panel inventories, editable figure decks and final-size export checks.

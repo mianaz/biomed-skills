@@ -1,0 +1,2 @@
+"comparison","n_pairs","difference","ci_low","ci_high","p","x1","x2","y","label"
+"After minus Before",6,-1.7,-2.34691557537895,-1.05308442462105,0.0010794848829542,1,2,10.8,"P = 0.0011"

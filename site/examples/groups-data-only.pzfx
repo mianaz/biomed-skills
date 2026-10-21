@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphPadPrismFile PrismXMLVersion="5.00">
+<Created>
+<OriginalVersion CreatedByProgram="GraphPad Prism" CreatedByVersion="6.0f.254" Login="" DateTime="2026-10-21T01:11:46+00:00">
+</OriginalVersion>
+</Created>
+<InfoSequence>
+<Ref ID="Info0" Selected="1">
+</Ref>
+</InfoSequence>
+<Info ID="Info0">
+<Title>Export details</Title>
+<Notes>
+<Font Face="Arial" Color="#000000">Editable data tables exported by scientific-plotting. Graphs and analyses are not embedded.</Font>
+</Notes>
+</Info>
+<TableSequence>
+<Ref ID="Table0" Selected="1">
+</Ref>
+</TableSequence>
+<Table ID="Table0" XFormat="none" YFormat="replicates" Replicates="1" TableType="OneWay" EVFormat="AsteriskAfterNumber">
+<Title>Synthetic groups — data only</Title>
+<YColumn Width="100" Decimals="6" Subcolumns="1">
+<Title>Control</Title>
+<Subcolumn>
+<d>10.199999999999999</d>
+<d>9.8000000000000007</d>
+<d>11.1</d>
+<d>10.5</d>
+<d>9.5</d>
+<d>10.800000000000001</d>
+</Subcolumn>
+</YColumn>
+<YColumn Width="100" Decimals="6" Subcolumns="1">
+<Title>Drug A</Title>
+<Subcolumn>
+<d>6.0999999999999996</d>
+<d>6.7999999999999998</d>
+<d>7.2000000000000002</d>
+<d>5.9000000000000004</d>
+<d>6.5</d>
+<d>7</d>
+</Subcolumn>
+</YColumn>
+<YColumn Width="100" Decimals="6" Subcolumns="1">
+<Title>Drug B</Title>
+<Subcolumn>
+<d>8.5</d>
+<d>9.1999999999999993</d>
+<d>8.0999999999999996</d>
+<d>8.9000000000000004</d>
+<d>9.4000000000000004</d>
+<d>8.6999999999999993</d>
+</Subcolumn>
+</YColumn>
+</Table>
+</GraphPadPrismFile>
