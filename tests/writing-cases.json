@@ -1,0 +1,180 @@
+{
+  "status": "not_run_on_agent",
+  "purpose": "Prompts and expected outcomes for an actual agent evaluation. Schema validation is not a routing benchmark.",
+  "cases": [
+    {
+      "id": "F1",
+      "prompt": "What is the most interesting biological story in these results?",
+      "primary": "paper-framing",
+      "completion": "Recommend the contribution and model, explain their significance and point to evidence.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md"
+      ],
+      "input": "Fictional: exposure induces a state persisting after washout; a later challenge elicits an altered response. Molecular persistence mechanism is untested."
+    },
+    {
+      "id": "F2",
+      "prompt": "Arrange the overall figures around our central discovery.",
+      "primary": "paper-framing",
+      "completion": "Assign each main figure a distinct inference and preserve material counterevidence.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "biomed-shared/main-text-and-supplement.md"
+      ]
+    },
+    {
+      "id": "W1",
+      "prompt": "Draft Results from these figures.",
+      "primary": "paper-writing",
+      "completion": "Return Results prose directly, with local interpretation and source correspondence.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "paper-writing/references/results.md",
+        "biomed-shared/main-text-and-supplement.md"
+      ],
+      "avoid": "Requiring a separate framing brief or approval before writing."
+    },
+    {
+      "id": "W2",
+      "prompt": "用这些中文实验笔记起草英文 Discussion。",
+      "primary": "paper-writing",
+      "completion": "Draft Discussion synthesizing the findings and clearly identifying a proposed mechanism.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "paper-writing/references/discussion.md"
+      ]
+    },
+    {
+      "id": "W3",
+      "prompt": "Write an abstract and three title options from our results.",
+      "primary": "paper-writing",
+      "completion": "Return the requested abstract and titles with consistent scientific meaning.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "paper-writing/references/abstract.md",
+        "paper-writing/references/title.md"
+      ]
+    },
+    {
+      "id": "P1",
+      "prompt": "Make this English more natural and forceful, preserving the science.",
+      "primary": "paper-polishing",
+      "completion": "Revise the passage; preserve numbers, direction and conceptual ambition.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md"
+      ],
+      "input": "Fictional: We merely observed a persistent cell state after washout. Cells in this state responded differently to a later challenge."
+    },
+    {
+      "id": "P2",
+      "prompt": "Translate this existing Chinese paragraph into English.",
+      "primary": "paper-polishing",
+      "completion": "Faithfully translate the supplied passage, preserving its claims and terms.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md"
+      ]
+    },
+    {
+      "id": "P3",
+      "prompt": "Shorten this Results paragraph while preserving all material findings.",
+      "primary": "paper-polishing",
+      "completion": "Return concise Results, retaining the scientific argument and consequential findings.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "biomed-shared/main-text-and-supplement.md"
+      ]
+    },
+    {
+      "id": "E1",
+      "prompt": "Map each claim in this paper to the experiments and results supporting it.",
+      "primary": "paper-evidence-map",
+      "completion": "Produce the editable evidence graph and sourced table.",
+      "required_resources": []
+    },
+    {
+      "id": "V1",
+      "prompt": "Fix the colors, fonts and statistical labels in this figure.",
+      "primary": "scientific-plotting",
+      "completion": "Produce and inspect the revised figure with accurate data and annotations.",
+      "required_resources": []
+    },
+    {
+      "id": "M1",
+      "prompt": "Write Methods from this protocol and our completed experiment records.",
+      "primary": "protocol-to-methods",
+      "completion": "Draft Methods traceable to actual execution and list unresolved factual details.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md"
+      ]
+    },
+    {
+      "id": "S1",
+      "prompt": "Check journal requirements and organize our submission files.",
+      "primary": "submission-check",
+      "completion": "Return the verified journal checklist and package, using supplied prose.",
+      "required_resources": []
+    },
+    {
+      "id": "X1",
+      "prompt": "Choose the strongest story, then draft the abstract.",
+      "primary": "paper-framing",
+      "completion": "Complete the framing and then the abstract; reuse the chosen claim.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md"
+      ],
+      "additional": [
+        "paper-writing"
+      ]
+    },
+    {
+      "id": "B1",
+      "prompt": "Improve this claim: our perturbation specifically acts through Q. The decisive specificity control gives the opposite result.",
+      "primary": "paper-polishing",
+      "completion": "Expose the contradiction and revise only to the supported finding; preserve remaining value.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "biomed-shared/evidence-and-interpretation.md"
+      ]
+    },
+    {
+      "id": "B2",
+      "prompt": "We cannot add experiments before submission. Draft a compelling Discussion from our current results.",
+      "primary": "paper-writing",
+      "completion": "Finish Discussion with an explicit biological model, identifying proposed links locally.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "paper-writing/references/discussion.md"
+      ],
+      "avoid": "Returning only a new experiment list or requiring a fixed validation inventory."
+    },
+    {
+      "id": "B3",
+      "prompt": "Develop a mechanism for this result: Q perturbation reduces R occupancy and transcription; recruitment order and direct binding were not measured.",
+      "primary": "paper-framing",
+      "completion": "Develop the proposed model and a discriminating prediction, with accurate inferential status.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "biomed-shared/evidence-and-interpretation.md"
+      ]
+    },
+    {
+      "id": "P4",
+      "prompt": "Polish this existing paper title.",
+      "primary": "paper-polishing",
+      "completion": "Improve the supplied title with its scientific meaning preserved.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md"
+      ]
+    },
+    {
+      "id": "W4",
+      "prompt": "Substantially restructure this Discussion so the reasoning follows our findings.",
+      "primary": "paper-writing",
+      "completion": "Return the reorganized Discussion with evidence and conceptual ambition preserved.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "paper-writing/references/discussion.md"
+      ]
+    }
+  ]
+}

@@ -49,6 +49,7 @@ model=dict(outputName='tgfb-smad',title='TGFβ1–ALK5–SMAD3/SMAD4 nuclear sig
 (P/'mechanism.json').write_text(json.dumps(model,ensure_ascii=False,indent=2)+'\n')
 refs=json.loads((P/'references.json').read_text());data=json.dumps(dict(model=model,icons=icons,references=refs),ensure_ascii=False).replace('</','<\\/')
 html=(P/'preview-template.html').read_text().replace('/*DATA*/','const DATA='+data+';').replace('/*ENGINE*/',(P.parent/'biomedical-manim/domain-motion.js').read_text()).replace('/*ARROWS*/',(S/'scripts/mechanism-arrows.js').read_text()).replace('/*ICON_STYLE*/',(L.parents[1]/'scripts/mechanism-icons.js').read_text()).replace('/*ANNOTATIONS*/',(S/'scripts/mechanism-annotations.js').read_text()).replace('/*SCENE*/',(P/'scene.js').read_text())
+(P.parent/'biomedical-manim/output').mkdir(parents=True, exist_ok=True)
 for out in [P/'preview.html',S/'assets/tgfb-generated.html',P.parent/'biomedical-manim/output/tgfb-generated.html']:out.write_text(html)
 shutil.copy2(P/'mechanism.json',F/'mechanism-example.json');shutil.copy2(P/'scene.js',F/'scene.js')
 print(json.dumps({'generatedIcons':8,'entities':len(entities),'RIIscale':sr,'RIscale':si,'assemblyX':[240,xIa,xIb,xII]},indent=2))

@@ -10,5 +10,6 @@ const same={point:[0,0],normal:[0,1]};assert.equal(arrows.route(same,same,true).
 assert.equal(arrows.route({point:[0,0],normal:[0,-1]},{point:[100,100],normal:[0,1]},true).d,'');
 const html=fs.readFileSync(path.join(__dirname,'preview.html'),'utf8');for(const block of html.matchAll(/<script>([\s\S]*?)<\/script>/g))new Function(block[1]);
 assert.match(html,/markerUnits="userSpaceOnUse"/);assert.match(html,/markerWidth="12"/);
+fs.mkdirSync(path.join(__dirname,'qa'),{recursive:true});
 fs.writeFileSync(path.join(__dirname,'qa/arrow-frames.json'),JSON.stringify(frames));
 console.log(JSON.stringify({samples:frames.length,directionAndPadding:'passed',hiddenAtContact:true,hiddenWhenInactive:true,arrowheadUnits:'userSpaceOnUse',htmlScriptSyntax:'passed'}));

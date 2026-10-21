@@ -32,6 +32,7 @@ for(const f of frames){
  }
 }
 if(maxContourGap>1e-5)throw Error('Mating contours do not coincide: '+maxContourGap);
+fs.mkdirSync(path.join(__dirname,'qa'),{recursive:true});
 fs.writeFileSync(path.join(__dirname,'qa/interface-check.json'),JSON.stringify({pairs:interfaces.pairs.length,matchedSamples,maxContourGap,scope:'Shared illustrative curves, not atomic structures.'},null,2)+'\n');
 fs.writeFileSync(path.join(__dirname,'qa/layout-frames.json'),JSON.stringify(frames));
 console.log(frames.length+' normal and kinase-block frames prepared.');

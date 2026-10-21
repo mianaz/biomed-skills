@@ -15,6 +15,12 @@ become labeled spaces in the plan, so they do not prevent a useful draft.
 
 ## 1. Establish the story and figure count
 
+Use [the shared writing principles](../biomed-shared/writing-principles.md) for
+scientific framing. Reuse an existing `paper-framing` brief, claim IDs and overall
+figure order. This skill owns panel evidence, grouping, layout, deck assembly
+and export. If no framing brief exists, develop the argument needed for the plan
+from the available findings.
+
 Read the full available manuscript, figure legends and existing figure/data
 inventory. Start from the current files. If the manuscript is incomplete, build
 a proposed story from the supplied findings and identify the unread sections.

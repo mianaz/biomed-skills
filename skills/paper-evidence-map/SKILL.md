@@ -14,7 +14,7 @@ Use the supplied PDF, text, DOI, or URL. Reuse readable local materials first.
 Read the main text, figures and captions, then the Methods and supplements tied
 to each consequential claim. Inspect the actual panels as well as their captions.
 Existing figure-led reading notes can orient the work; check their claims against
-the paper. If `paper-journal-club` is available, reuse its reading approach.
+the paper, including the relevant controls and Methods.
 
 First reconstruct the whole argument: starting question, central conclusion,
 subclaims, and the logical dependencies between them. Then map each subclaim to
@@ -97,10 +97,12 @@ again. Preserve edits to text, sources, positions and relationships. The rendere
 refuses to overwrite existing deliverables; use a new render directory while
 retaining the edited version.
 
-When prose is requested, write from the agreed nodes, relationships and order.
-Keep quantitative results and citations attached to their claims. Apply
-`nature-writing`, `nature-polishing`, then `humanizer` when available for academic
-prose. Map generation alone does not authorize rewriting a manuscript or vault.
+When prose is requested, read
+[writing principles](../biomed-shared/writing-principles.md) and write from the
+agreed nodes, relationships and order. Keep quantitative results and sources
+attached to their claims. Use [evidence and interpretation](../biomed-shared/evidence-and-interpretation.md)
+for the inferential distinctions. Map generation alone does not authorize
+rewriting a manuscript or vault.
 
 ## Example and check
 

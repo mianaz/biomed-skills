@@ -14,4 +14,5 @@ const blocked=structuredClone(model);blocked.events=blocked.events.filter(e=>['b
 const stopped=DomainMotion.make(blocked,icons);const blockedFinal=stopped.frame(stopped.duration);
 assert.equal(blockedFinal.states.ras,'GDP');assert.equal(blockedFinal.states.erk,undefined);
 const report={samples:geometry.samples,maxContactGap:geometry.maxGap,maxNormalError:geometry.maxNormalError,maxMembraneError:membraneError,maxExchangeGap:exchangeGap,finalStates:final.states,blockedStates:blockedFinal.states};
+fs.mkdirSync(path.join(__dirname,'qa'),{recursive:true});
 fs.writeFileSync(path.join(__dirname,'qa/model-check.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

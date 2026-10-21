@@ -1,7 +1,7 @@
 {
   "name": "biomed-skill",
-  "version": "0.3.1",
-  "description": "Biomedical figures, paper reading, protocols, Methods and submission preparation.",
+  "version": "0.5.0",
+  "description": "Biomedical framing, writing, polishing, figures, paper reading, protocols and submission preparation.",
   "author": {
     "name": "Miana"
   },

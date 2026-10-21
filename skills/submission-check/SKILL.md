@@ -49,6 +49,10 @@ inputs. Draft declarations from supplied facts; author agreement, approvals,
 consent and conflicts require author-provided information. Check figure labels,
 supplement references and data links against the final prepared files.
 
-For academic text use nature-writing, nature-polishing and humanizer when
-available. Present the package and a short prioritized action list. Preparing a
-package does not authorize submitting it, signing declarations or messaging editors.
+For academic text, read [writing principles](../biomed-shared/writing-principles.md).
+For cover-letter drafting or substantial manuscript text, use `paper-writing`
+with the verified journal requirements and source facts. Reuse existing prose
+for file preparation. This workflow owns requirements and package consistency.
+
+Present the package and a short prioritized action list. Preparing a package
+does not authorize submitting it, signing declarations or messaging editors.

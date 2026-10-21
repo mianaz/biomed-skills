@@ -8,14 +8,14 @@ Read `catalog.json`; select by entity role rather than by the name of a whole pa
 
 A docking operation aligns compatible contact points and opposing normals. A membrane anchor follows the local membrane position and normal. The optional `context_parts` field identifies static contextual drawing that can be omitted when a scene supplies its own membrane or DNA. These teaching anchors do not assert atomic geometry.
 
-The [offline icon gallery](../biomed-icon-library.html) can be opened directly. The executable gallery is built by `prototypes/biomedical-manim/build_icon_atlas.py` and saved as `prototypes/biomedical-manim/output/biomed-icon-library.html`. It contains search, categories, an anchor inspector, SVG downloads, binding/release and membrane-traffic demos. Its traffic demo reuses the existing event/camera kernel with new assets and anchor metadata.
+The [offline icon gallery](../biomed-icon-library.html) can be opened directly. Build it with the skill's `scripts/build_icon_atlas.py`; the result is saved as `assets/biomed-icon-library.html`. It contains search, categories, an anchor inspector, SVG downloads, binding/release and membrane-traffic demos. Its traffic demo reuses the existing event/camera kernel with new assets and anchor metadata.
 
 ## Extend
 
 1. Inspect a suitable public BioRender example as the sole visual reference. Use scientific literature separately to check biological features. Record both scopes in separate manifest fields.
 2. If no suitable icon exists, follow [the built-in imagegen → SVG workflow](../../references/generated-icons.md), or retain source attribution/license when adapting a requested native source.
 3. Register parts, anchors, context parts and scope in the matching group manifest.
-4. Review it beside the whole family and in an interaction, then run `validate_icon_family.py` and rebuild the gallery/catalog.
+4. Review it beside the whole family and in an interaction, check SVG structure, manifest paths and visible contacts, then rebuild the gallery/catalog.
 
 Keep a biological distinction only when it helps the explanation. Do not claim a generic receptor is a particular solved structure, a decorative notch is a measured interface, or an illustrative release route applies to every receptor.
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Polishing"
+  short_description: "Improve existing biomedical prose and preserve meaning"
+  default_prompt: "Use $paper-polishing to improve this passage while preserving its scientific meaning and conceptual ambition."

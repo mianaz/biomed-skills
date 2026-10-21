@@ -1,0 +1,120 @@
+{
+  "title": "LDL enters. Its receptor returns.",
+  "scope": "Selected LDL uptake and receptor-recycling route. The original BioArt receptor is a schematic LDLR symbol; LDL artwork is an LDL particle. Downstream LDL processing is outside this view.",
+  "entities": [
+    {
+      "id": "r",
+      "kind": "membrane_receptor",
+      "asset": "receptor",
+      "label": "Receptor (schematic LDLR)"
+    },
+    {
+      "id": "l",
+      "kind": "ligand",
+      "asset": "ligand",
+      "label": "LDL particle"
+    }
+  ],
+  "compartments": [
+    {
+      "id": "outside",
+      "kind": "external",
+      "label": "Extracellular"
+    },
+    {
+      "id": "cell",
+      "kind": "cytosol",
+      "label": "Cytosol"
+    },
+    {
+      "id": "sorting",
+      "kind": "lumen",
+      "label": "Endosome"
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "kind": "bind",
+      "title": "LDL binds",
+      "duration": 5,
+      "participants": [
+        "r",
+        "l"
+      ],
+      "depends_on": [],
+      "caption": "LDL docks at the receptor."
+    },
+    {
+      "id": "e2",
+      "kind": "bud",
+      "title": "Internalization",
+      "duration": 7,
+      "participants": [
+        "r",
+        "l"
+      ],
+      "depends_on": [
+        "e1"
+      ],
+      "caption": "Membrane bends and closes around the bound pair."
+    },
+    {
+      "id": "e3",
+      "kind": "deliver",
+      "title": "Endosome delivery",
+      "duration": 6,
+      "participants": [
+        "r",
+        "l"
+      ],
+      "target": "sorting",
+      "depends_on": [
+        "e2"
+      ],
+      "caption": "The carrier joins the endosome membrane."
+    },
+    {
+      "id": "e4",
+      "kind": "release",
+      "title": "LDL separates",
+      "duration": 5,
+      "participants": [
+        "l"
+      ],
+      "source": "sorting",
+      "depends_on": [
+        "e3"
+      ],
+      "caption": "Acidic conditions release LDL into the lumen."
+    },
+    {
+      "id": "e5",
+      "kind": "recycle",
+      "title": "Receptor recycling",
+      "duration": 7,
+      "participants": [
+        "r"
+      ],
+      "source": "sorting",
+      "depends_on": [
+        "e4"
+      ],
+      "caption": "A recycling carrier retains the empty receptor."
+    },
+    {
+      "id": "e6",
+      "kind": "fuse",
+      "title": "Surface return",
+      "duration": 8,
+      "participants": [
+        "r"
+      ],
+      "target": "outside",
+      "depends_on": [
+        "e5"
+      ],
+      "caption": "The carrier returns and fuses with the surface."
+    }
+  ]
+}

@@ -2,9 +2,8 @@
 
 A small ranker can select among existing layouts. Keep candidate generation,
 biological reasoning, source repair and figure acceptance as separate steps.
-Use the [R prototype](../../../prototypes/figure-layout-ranker/README.md) when a
-pairwise linear model is sufficient. The model consumes a feature table; it does
-not assemble or render figures.
+A pairwise linear model can consume a feature table and rank the candidates.
+Keep its fitting code with the study; it does not assemble or render figures.
 
 ## Freeze the study
 

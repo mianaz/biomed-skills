@@ -53,7 +53,7 @@ python scripts/trace_icon.py \
   --spec example-receptor.json
 ```
 
-This writes the SVG and an adjacent catalog-entry JSON for review. After review, add `--register assets/biomed-icons` to add or update the matching family manifest and root catalog entry. Registration does not change the model's scientific status. Rebuild the atlas after registration so the browser and catalog contain the same assets. The parent package's `prototypes/biomedical-manim/build_icon_atlas.py` supplies that atlas build.
+This writes the SVG and an adjacent catalog-entry JSON for review. After review, add `--register assets/biomed-icons` to add or update the matching family manifest and root catalog entry. Registration does not change the model's scientific status. Rebuild the atlas after registration so the browser and catalog contain the same assets. Run the bundled `python scripts/build_icon_atlas.py` to rebuild `assets/biomed-icon-library.html` from the registered family manifests.
 
 The [EGFR family](../assets/biomed-icons/egfr-imagegen/manifest.json) is a worked example. It retains original PNGs, fixed-palette tracing inputs, prompts, source specifications and the corrected domain-II dimerization arm.
 Its [interfaces.json](../assets/biomed-icons/egfr-imagegen/interfaces.json) pairs
