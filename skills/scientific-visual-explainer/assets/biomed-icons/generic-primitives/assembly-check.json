@@ -1,0 +1,16 @@
+[
+  {
+    "id": "y",
+    "samples": 9,
+    "maxGap": 0,
+    "maxNormalError": 0,
+    "errors": []
+  },
+  {
+    "id": "cup",
+    "samples": 9,
+    "maxGap": 0,
+    "maxNormalError": 0,
+    "errors": []
+  }
+]

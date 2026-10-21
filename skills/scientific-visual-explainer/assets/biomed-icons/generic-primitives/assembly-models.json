@@ -1,0 +1,80 @@
+[
+  {
+    "id": "y",
+    "layout": {
+      "width": 400,
+      "height": 250,
+      "pitch": 100,
+      "zones": {
+        "receptor": 135,
+        "ligand": 35
+      }
+    },
+    "entities": [
+      {
+        "id": "receptor",
+        "icon": "generic-receptor-y",
+        "slot": 1,
+        "zone": "receptor",
+        "scale": 1
+      },
+      {
+        "id": "ligand",
+        "icon": "generic-ligand-triangle",
+        "slot": 1,
+        "zone": "ligand",
+        "scale": 0.6
+      }
+    ],
+    "events": [
+      {
+        "id": "bind",
+        "kind": "dock",
+        "actor": "ligand",
+        "port": "receptor",
+        "target": "receptor",
+        "targetPort": "ligand",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "id": "cup",
+    "layout": {
+      "width": 400,
+      "height": 250,
+      "pitch": 100,
+      "zones": {
+        "receptor": 135,
+        "ligand": 35
+      }
+    },
+    "entities": [
+      {
+        "id": "receptor",
+        "icon": "generic-receptor-cup",
+        "slot": 1,
+        "zone": "receptor",
+        "scale": 1
+      },
+      {
+        "id": "ligand",
+        "icon": "generic-ligand-circle",
+        "slot": 1,
+        "zone": "ligand",
+        "scale": 0.7
+      }
+    ],
+    "events": [
+      {
+        "id": "bind",
+        "kind": "dock",
+        "actor": "ligand",
+        "port": "receptor",
+        "target": "receptor",
+        "targetPort": "ligand",
+        "duration": 2
+      }
+    ]
+  }
+]

@@ -1,10 +1,11 @@
 {
-  "visual_revision": "0.8",
+  "visual_revision": "0.9",
   "mechanism_demos": [
     "tgfb",
     "egfr"
   ],
   "icon_families": [
+    "generic-primitives",
     "pi3k-akt-imagegen",
     "egfr-imagegen",
     "tgfb-imagegen",

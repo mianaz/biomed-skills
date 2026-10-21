@@ -25,3 +25,9 @@ Prefer a small number of smooth, deliberate curves over many small segments. Rem
 ## Generated mechanism extensions
 
 Keep the flat mechanism-figure language above when extending the library with built-in image generation. Convert accepted images to true editable SVG paths, preserve source PNGs and prompts, and curate palette roles, contact anchors and membrane guides. Follow [generated-icons.md](../../references/generated-icons.md). A static figure should communicate the mechanism; animation adds the supported sequence and state changes. Color-traced parts need manual refinement before independent domain motion.
+
+## Generic diagram primitives
+
+When the user asks for simple protein boxes or other generic symbols, use native editable SVG primitives. The symbol name and consuming label identify the entity; a rounded rectangle does not need invented protein domains. Reuse the common palette and line weights. Keep labels as separate scene elements and leave canonical icon files text-free. See [generic-primitives](generic-primitives/preview.html).
+
+Use a single backbone for single-stranded RNA, one-sided teeth for an unpaired base comb, two backbones with rungs for duplex RNA, and one continuous looped backbone for a hairpin. Strand direction and sequence remain separate annotations. A Y-shaped receptor is a generic forked membrane-receptor symbol, not an antibody identity or a receptor-family assignment. Reuse the registered native contact scales for the example ligand pairings.

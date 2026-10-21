@@ -1,0 +1,1299 @@
+[
+  {
+    "id": "generic-protein-rounded",
+    "label": "Rounded protein",
+    "label_zh": "圆角矩形蛋白",
+    "category": "generic-primitives",
+    "group": "proteins",
+    "file": "generic-primitives/generic-protein-rounded.svg",
+    "preview": "generic-primitives/previews/generic-protein-rounded.png",
+    "description": "用圆角矩形表示任意蛋白；名称由图中的独立标签指定。",
+    "description_zh": "用圆角矩形表示任意蛋白；名称由图中的独立标签指定。",
+    "parts": [
+      "body"
+    ],
+    "anchors": {
+      "top": {
+        "point": [
+          80,
+          54
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "bottom": {
+        "point": [
+          80,
+          106
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "left": {
+        "point": [
+          20,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "right": {
+        "point": [
+          140,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5",
+    "label_box": [
+      27,
+      61,
+      106,
+      38
+    ]
+  },
+  {
+    "id": "generic-protein-capsule",
+    "label": "Capsule protein",
+    "label_zh": "胶囊形蛋白",
+    "category": "generic-primitives",
+    "group": "proteins",
+    "file": "generic-primitives/generic-protein-capsule.svg",
+    "preview": "generic-primitives/previews/generic-protein-capsule.png",
+    "description": "两端半圆的通用蛋白节点，适合较短的名称。",
+    "description_zh": "两端半圆的通用蛋白节点，适合较短的名称。",
+    "parts": [
+      "body"
+    ],
+    "anchors": {
+      "top": {
+        "point": [
+          80,
+          54
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "bottom": {
+        "point": [
+          80,
+          106
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "left": {
+        "point": [
+          20,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "right": {
+        "point": [
+          140,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5",
+    "label_box": [
+      38,
+      61,
+      84,
+      38
+    ]
+  },
+  {
+    "id": "generic-protein-circle",
+    "label": "Circular protein",
+    "label_zh": "圆形蛋白",
+    "category": "generic-primitives",
+    "group": "proteins",
+    "file": "generic-primitives/generic-protein-circle.svg",
+    "preview": "generic-primitives/previews/generic-protein-circle.png",
+    "description": "圆形通用蛋白节点，可添加独立名称与状态标记。",
+    "description_zh": "圆形通用蛋白节点，可添加独立名称与状态标记。",
+    "parts": [
+      "body"
+    ],
+    "anchors": {
+      "top": {
+        "point": [
+          80,
+          37
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "right": {
+        "point": [
+          123,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "bottom": {
+        "point": [
+          80,
+          123
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5",
+    "label_box": [
+      48,
+      63,
+      64,
+      34
+    ]
+  },
+  {
+    "id": "generic-protein-domains",
+    "label": "Two-domain protein",
+    "label_zh": "双结构域蛋白",
+    "category": "generic-primitives",
+    "group": "proteins",
+    "file": "generic-primitives/generic-protein-domains.svg",
+    "preview": "generic-primitives/previews/generic-protein-domains.png",
+    "description": "两个相连分区，可用于标出不同功能域。",
+    "description_zh": "两个相连分区，可用于标出不同功能域。",
+    "parts": [
+      "connector",
+      "domain-A",
+      "domain-B"
+    ],
+    "anchors": {
+      "left": {
+        "point": [
+          18,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "right": {
+        "point": [
+          142,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5",
+      "ligand": "#E4BE78"
+    },
+    "primary_color": "#69ADB5",
+    "label_box": [
+      24,
+      63,
+      112,
+      34
+    ]
+  },
+  {
+    "id": "generic-protein-complex",
+    "label": "Protein complex",
+    "label_zh": "蛋白复合物",
+    "category": "generic-primitives",
+    "group": "proteins",
+    "file": "generic-primitives/generic-protein-complex.svg",
+    "preview": "generic-primitives/previews/generic-protein-complex.png",
+    "description": "两种相邻蛋白组成的通用复合物占位图。",
+    "description_zh": "两种相邻蛋白组成的通用复合物占位图。",
+    "parts": [
+      "protein-A",
+      "protein-B"
+    ],
+    "anchors": {
+      "left": {
+        "point": [
+          18,
+          72
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "right": {
+        "point": [
+          142,
+          94
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5",
+      "ligand": "#E4BE78"
+    },
+    "primary_color": "#69ADB5"
+  },
+  {
+    "id": "generic-ligand-circle",
+    "label": "Circular ligand",
+    "label_zh": "圆形配体",
+    "category": "generic-primitives",
+    "group": "ligands",
+    "file": "generic-primitives/generic-ligand-circle.svg",
+    "preview": "generic-primitives/previews/generic-ligand-circle.png",
+    "description": "圆形配体，可与杯形受体组合。",
+    "description_zh": "圆形配体，可与杯形受体组合。",
+    "parts": [
+      "ligand"
+    ],
+    "anchors": {
+      "receptor": {
+        "point": [
+          80,
+          116
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "top": {
+        "point": [
+          80,
+          44
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "ligand": "#E4BE78"
+    },
+    "primary_color": "#E4BE78",
+    "label_box": [
+      56,
+      67,
+      48,
+      26
+    ]
+  },
+  {
+    "id": "generic-ligand-triangle",
+    "label": "Triangular ligand",
+    "label_zh": "圆角三角配体",
+    "category": "generic-primitives",
+    "group": "ligands",
+    "file": "generic-primitives/generic-ligand-triangle.svg",
+    "preview": "generic-primitives/previews/generic-ligand-triangle.png",
+    "description": "朝下的三角配体，可嵌入 Y 型受体的分叉处。",
+    "description_zh": "朝下的三角配体，可嵌入 Y 型受体的分叉处。",
+    "parts": [
+      "ligand"
+    ],
+    "anchors": {
+      "receptor": {
+        "point": [
+          80,
+          107
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "ligand": "#E4BE78"
+    },
+    "primary_color": "#E4BE78",
+    "label_box": [
+      57,
+      63,
+      46,
+      22
+    ]
+  },
+  {
+    "id": "generic-ligand-diamond",
+    "label": "Diamond ligand",
+    "label_zh": "圆角菱形配体",
+    "category": "generic-primitives",
+    "group": "ligands",
+    "file": "generic-primitives/generic-ligand-diamond.svg",
+    "preview": "generic-primitives/previews/generic-ligand-diamond.png",
+    "description": "用不同配体形状区分通路中的输入信号。",
+    "description_zh": "用不同配体形状区分通路中的输入信号。",
+    "parts": [
+      "ligand"
+    ],
+    "anchors": {
+      "receptor": {
+        "point": [
+          80,
+          128
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "ligand": "#E4BE78"
+    },
+    "primary_color": "#E4BE78",
+    "label_box": [
+      54,
+      67,
+      52,
+      26
+    ]
+  },
+  {
+    "id": "generic-receptor-y",
+    "label": "Y receptor",
+    "label_zh": "Y 型受体",
+    "category": "generic-primitives",
+    "group": "receptors",
+    "file": "generic-primitives/generic-receptor-y.svg",
+    "preview": "generic-primitives/previews/generic-receptor-y.png",
+    "description": "分叉的膜受体示意，受体身份由图中的标签指定。",
+    "description_zh": "分叉的膜受体示意，受体身份由图中的标签指定。",
+    "parts": [
+      "receptor"
+    ],
+    "anchors": {
+      "ligand": {
+        "point": [
+          80,
+          61
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          105
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "cytoplasmic": {
+        "point": [
+          80,
+          146
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5"
+  },
+  {
+    "id": "generic-receptor-cup",
+    "label": "Cup receptor",
+    "label_zh": "杯形受体",
+    "category": "generic-primitives",
+    "group": "receptors",
+    "file": "generic-primitives/generic-receptor-cup.svg",
+    "preview": "generic-primitives/previews/generic-receptor-cup.png",
+    "description": "U 形结合口连接跨膜杆，可接纳圆形配体。",
+    "description_zh": "U 形结合口连接跨膜杆，可接纳圆形配体。",
+    "parts": [
+      "receptor"
+    ],
+    "anchors": {
+      "ligand": {
+        "point": [
+          80,
+          75
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          105
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "cytoplasmic": {
+        "point": [
+          80,
+          146
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5"
+  },
+  {
+    "id": "generic-receptor-single",
+    "label": "Single-pass receptor",
+    "label_zh": "单杆膜受体",
+    "category": "generic-primitives",
+    "group": "receptors",
+    "file": "generic-primitives/generic-receptor-single.svg",
+    "preview": "generic-primitives/previews/generic-receptor-single.png",
+    "description": "圆角胞外头部与单根跨膜杆相连的通用受体。",
+    "description_zh": "圆角胞外头部与单根跨膜杆相连的通用受体。",
+    "parts": [
+      "receptor"
+    ],
+    "anchors": {
+      "ligand": {
+        "point": [
+          80,
+          25
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          105
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "cytoplasmic": {
+        "point": [
+          80,
+          146
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5"
+  },
+  {
+    "id": "generic-receptor-pair",
+    "label": "Paired receptors",
+    "label_zh": "成对膜受体",
+    "category": "generic-primitives",
+    "group": "receptors",
+    "file": "generic-primitives/generic-receptor-pair.svg",
+    "preview": "generic-primitives/previews/generic-receptor-pair.png",
+    "description": "两根并列受体杆，用于示意受体配对；具体组成由图注说明。",
+    "description_zh": "两根并列受体杆，用于示意受体配对；具体组成由图注说明。",
+    "parts": [
+      "receptor-A",
+      "receptor-B"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          81,
+          105
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "left-ligand": {
+        "point": [
+          48,
+          28
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "right-ligand": {
+        "point": [
+          112,
+          28
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5"
+  },
+  {
+    "id": "generic-rna-wave",
+    "label": "Single-stranded RNA",
+    "label_zh": "单链 RNA 波浪线",
+    "category": "generic-primitives",
+    "group": "nucleic-acids",
+    "file": "generic-primitives/generic-rna-wave.svg",
+    "preview": "generic-primitives/previews/generic-rna-wave.png",
+    "description": "一条连续波浪线，用于表示单链 RNA。",
+    "description_zh": "一条连续波浪线，用于表示单链 RNA。",
+    "parts": [
+      "backbone"
+    ],
+    "anchors": {
+      "five-prime": {
+        "point": [
+          17,
+          88
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "endpoint"
+      },
+      "three-prime": {
+        "point": [
+          143,
+          72
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "endpoint"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "nucleic": "#B2A6CD"
+    },
+    "primary_color": "#B2A6CD"
+  },
+  {
+    "id": "generic-rna-comb",
+    "label": "Single-strand RNA comb",
+    "label_zh": "单链 RNA 梯齿线",
+    "category": "generic-primitives",
+    "group": "nucleic-acids",
+    "file": "generic-primitives/generic-rna-comb.svg",
+    "preview": "generic-primitives/previews/generic-rna-comb.png",
+    "description": "一条骨架带单侧短齿，短齿表示未配对的碱基。",
+    "description_zh": "一条骨架带单侧短齿，短齿表示未配对的碱基。",
+    "parts": [
+      "bases",
+      "backbone"
+    ],
+    "anchors": {
+      "five-prime": {
+        "point": [
+          17,
+          88.5
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "endpoint"
+      },
+      "three-prime": {
+        "point": [
+          143,
+          88.5
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "endpoint"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "nucleic": "#B2A6CD"
+    },
+    "primary_color": "#B2A6CD"
+  },
+  {
+    "id": "generic-rna-duplex",
+    "label": "Double-stranded RNA ladder",
+    "label_zh": "双链 RNA 梯子",
+    "category": "generic-primitives",
+    "group": "nucleic-acids",
+    "file": "generic-primitives/generic-rna-duplex.svg",
+    "preview": "generic-primitives/previews/generic-rna-duplex.png",
+    "description": "两条平行骨架与中间横档表示双链 RNA；横档为碱基配对示意。",
+    "description_zh": "两条平行骨架与中间横档表示双链 RNA；横档为碱基配对示意。",
+    "parts": [
+      "base-pairs",
+      "strand-A",
+      "strand-B"
+    ],
+    "anchors": {
+      "strand-A-5": {
+        "point": [
+          17,
+          60.5
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "endpoint"
+      },
+      "strand-A-3": {
+        "point": [
+          143,
+          60.5
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "endpoint"
+      },
+      "strand-B-3": {
+        "point": [
+          17,
+          99.5
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "endpoint"
+      },
+      "strand-B-5": {
+        "point": [
+          143,
+          99.5
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "endpoint"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/1RNA",
+        "inspection": "Primary structure-record metadata read for strand topology; coordinates and artwork not copied."
+      }
+    ],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5",
+      "nucleic": "#B2A6CD"
+    },
+    "primary_color": "#B2A6CD"
+  },
+  {
+    "id": "generic-rna-hairpin",
+    "label": "RNA hairpin",
+    "label_zh": "RNA 发夹",
+    "category": "generic-primitives",
+    "group": "nucleic-acids",
+    "file": "generic-primitives/generic-rna-hairpin.svg",
+    "preview": "generic-primitives/previews/generic-rna-hairpin.png",
+    "description": "一条 RNA 在顶部成环，茎部包含配对横档，底部保留两个端点。",
+    "description_zh": "一条 RNA 在顶部成环，茎部包含配对横档，底部保留两个端点。",
+    "parts": [
+      "base-pairs",
+      "backbone"
+    ],
+    "anchors": {
+      "five-prime": {
+        "point": [
+          58,
+          141
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "endpoint"
+      },
+      "three-prime": {
+        "point": [
+          102,
+          141
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "endpoint"
+      },
+      "loop": {
+        "point": [
+          80,
+          17
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/1ZIH",
+        "inspection": "Primary structure-record metadata read for strand topology; coordinates and artwork not copied."
+      }
+    ],
+    "palette": {
+      "outline": "#3D5963",
+      "nucleic": "#B2A6CD"
+    },
+    "primary_color": "#B2A6CD"
+  },
+  {
+    "id": "generic-membrane",
+    "label": "Membrane segment",
+    "label_zh": "膜片段",
+    "category": "generic-primitives",
+    "group": "compartments",
+    "file": "generic-primitives/generic-membrane.svg",
+    "preview": "generic-primitives/previews/generic-membrane.png",
+    "description": "两层亲水头部朝外，疏水尾部朝向膜内部；可在组图中重复铺排。",
+    "description_zh": "两层亲水头部朝外，疏水尾部朝向膜内部；可在组图中重复铺排。",
+    "parts": [
+      "tails",
+      "heads"
+    ],
+    "anchors": {
+      "midplane": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "left-edge": {
+        "point": [
+          18,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "layout"
+      },
+      "right-edge": {
+        "point": [
+          142,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "layout"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "membrane": "#B3D7CC"
+    },
+    "primary_color": "#B3D7CC"
+  },
+  {
+    "id": "generic-vesicle",
+    "label": "Membrane vesicle",
+    "label_zh": "膜囊泡",
+    "category": "generic-primitives",
+    "group": "compartments",
+    "file": "generic-primitives/generic-vesicle.svg",
+    "preview": "generic-primitives/previews/generic-vesicle.png",
+    "description": "环形双层膜包围内腔，适合表示通用运输囊泡。",
+    "description_zh": "环形双层膜包围内腔，适合表示通用运输囊泡。",
+    "parts": [
+      "lumen",
+      "tails",
+      "heads"
+    ],
+    "anchors": {
+      "cargo": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "layout"
+      },
+      "membrane": {
+        "point": [
+          80,
+          31.5
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "surface": {
+        "point": [
+          80,
+          18
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "membrane": "#B3D7CC",
+      "interior": "#EDF5F1"
+    },
+    "primary_color": "#B3D7CC"
+  }
+]
