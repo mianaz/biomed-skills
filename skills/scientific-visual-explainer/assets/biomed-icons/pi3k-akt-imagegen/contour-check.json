@@ -1,0 +1,101 @@
+{
+  "method": "Complete closed cubic silhouettes; no contact overlays or cutting clips.",
+  "icons": [
+    {
+      "icon": "pi3k-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        12.349135674014967,
+        11.95718963736579,
+        147.51448120624326,
+        147.875
+      ]
+    },
+    {
+      "icon": "akt1-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        11.92169343241865,
+        21.021469559201357,
+        147.92986850898473,
+        138.89900610572963
+      ]
+    },
+    {
+      "icon": "pten-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        11.924641511140761,
+        35.83114911936717,
+        147.93952669433432,
+        123.9472598859625
+      ]
+    },
+    {
+      "icon": "pdpk1-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        11.97429823486106,
+        18.25465685982111,
+        147.93310487217562,
+        141.875
+      ]
+    },
+    {
+      "icon": "mtor-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        19.322510376435066,
+        11.938047851976933,
+        140.55660989798753,
+        147.8981262618394
+      ]
+    },
+    {
+      "icon": "raptor-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        19.7770062793948,
+        11.949292178934575,
+        140.25,
+        147.87526448961106
+      ]
+    },
+    {
+      "icon": "mlst8-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        11.916724367319937,
+        13.5,
+        147.88237011073875,
+        146.39105131733925
+      ]
+    },
+    {
+      "icon": "rheb-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        27.08088293618248,
+        11.961519943929488,
+        132.88363045340344,
+        147.8318171685154
+      ]
+    }
+  ]
+}

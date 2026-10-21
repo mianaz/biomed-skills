@@ -1,6 +1,8 @@
 # Biomed Icons
 
-A reusable family of flat SVG teaching icons. Version 0.7 has 134 entries: 118 earlier vector schematics, eight generated-and-traced EGF–ERK components, six generated-and-traced TGFβ–SMAD components and two generated DNA/RNA icons. The earlier entries cover proteins and interactions, membrane transport, cellular/nucleic-acid structures, signaling domains, immune cells, and organelles/cytoskeleton. Version 0.3 adds 42 Wnt, TGFβ, NF-κB and JAK–STAT/nuclear-transport icons. The family keeps a common palette, rounded outline and level of detail while retaining recognizable biological forms.
+A reusable family of flat SVG teaching icons. Version 0.8 has 142 entries: 118 earlier vector schematics, eight generated-and-traced EGF–ERK components, six generated-and-traced TGFβ–SMAD components two generated DNA/RNA icons, and eight PI3K–AKT–mTOR icons. The public current gallery contains 24 generated-and-traced assets; earlier schematics stay in the archive. The new family follows the v0.7 flat drawing contract. The earlier entries cover proteins and interactions, membrane transport, cellular/nucleic-acid structures, signaling domains, immune cells, and organelles/cytoskeleton. Version 0.3 adds 42 Wnt, TGFβ, NF-κB and JAK–STAT/nuclear-transport icons. The family keeps a common palette, rounded outline and level of detail while retaining recognizable biological forms.
+
+[PI3K–AKT–mTOR icons and contact preview](pi3k-akt-imagegen/preview.html) include eight original PNGs, editable SVGs, exact prompts and four pairwise assembly models.
 
 ## Use
 

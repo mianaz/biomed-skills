@@ -1,0 +1,501 @@
+[
+  {
+    "id": "pi3k-ig",
+    "label": "Class IA PI3K",
+    "label_zh": "PI3K",
+    "category": "pi3k-akt-imagegen",
+    "description": "Class IA p110α–p85α teaching complex; catalytic cleft and accessible regulatory edge.",
+    "palette": {
+      "outline": "#3D5963",
+      "p110-catalytic": "#69ADB5",
+      "p85-regulatory": "#E4BE78"
+    },
+    "anchors": {
+      "recruitment": {
+        "point": [
+          272,
+          193
+        ],
+        "normal": [
+          -1.0,
+          0.0
+        ],
+        "kind": "binding"
+      },
+      "lipid-substrate": {
+        "point": [
+          836,
+          650
+        ],
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/pi3k-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/2RD0",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "description_zh": "p110α 催化亚基与 p85α 调节亚基，保留可接近的催化与招募边缘。"
+  },
+  {
+    "id": "akt1-ig",
+    "label": "AKT1",
+    "label_zh": "AKT1",
+    "category": "pi3k-akt-imagegen",
+    "description": "PH domain, connected kinase and regulatory tail; T308/S473 are external annotation anchors.",
+    "palette": {
+      "outline": "#3D5963",
+      "kinase": "#69ADB5",
+      "PH": "#E4BE78",
+      "regulatory-tail": "#B2A6CD"
+    },
+    "anchors": {
+      "lipid-binding": {
+        "point": [
+          291,
+          242
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "binding"
+      },
+      "PDK1-contact": {
+        "point": [
+          685,
+          1098
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "T308": {
+        "point": [
+          772,
+          1081
+        ],
+        "normal": [
+          0.0,
+          1.0
+        ],
+        "kind": "annotation"
+      },
+      "S473": {
+        "point": [
+          1178,
+          991
+        ],
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "kind": "annotation"
+      }
+    },
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/akt1-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/3O96",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      },
+      {
+        "url": "https://www.rcsb.org/structure/1UNQ",
+        "inspection": "PH lipid-binding structure metadata read."
+      }
+    ],
+    "description_zh": "PH 结构域、激酶区和调节尾部相连；T308、S473 标记可在组图时另加。"
+  },
+  {
+    "id": "pten-ig",
+    "label": "PTEN",
+    "label_zh": "PTEN",
+    "category": "pi3k-akt-imagegen",
+    "description": "Connected phosphatase and C2 domains with a schematic regulatory tail.",
+    "palette": {
+      "outline": "#3D5963",
+      "phosphatase": "#69ADB5",
+      "C2": "#B3D7CC",
+      "tail": "#E4BE78"
+    },
+    "anchors": {
+      "lipid-substrate": {
+        "point": [
+          403,
+          436
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "binding"
+      },
+      "membrane-guide": {
+        "point": [
+          820,
+          357
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "surface-guide"
+      }
+    },
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/pten-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/1D5R",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "description_zh": "磷酸酶结构域与 C2 膜结合结构域相连，保留短调节尾部。"
+  },
+  {
+    "id": "pdpk1-ig",
+    "label": "PDPK1 (PDK1)",
+    "label_zh": "PDPK1",
+    "category": "pi3k-akt-imagegen",
+    "description": "PDPK1 kinase and C-terminal PH domain; this is protein kinase PDK1.",
+    "palette": {
+      "outline": "#3D5963",
+      "kinase": "#69ADB5",
+      "PH": "#E4BE78"
+    },
+    "anchors": {
+      "AKT-contact": {
+        "point": [
+          541,
+          165
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "lipid-binding": {
+        "point": [
+          1038,
+          693
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/pdpk1-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/5LVO",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      },
+      {
+        "url": "https://www.rcsb.org/structure/2VKI",
+        "inspection": "PH-domain lipid recruitment metadata read; mutant structure, not a wild-type atomic template."
+      }
+    ],
+    "description_zh": "左侧为激酶区，右侧为 C 端 PH 结构域。这里的 PDK1 指蛋白激酶 PDPK1。"
+  },
+  {
+    "id": "mtor-ig",
+    "label": "mTOR",
+    "label_zh": "mTOR",
+    "category": "pi3k-akt-imagegen",
+    "description": "Open HEAT-repeat scaffold and FAT–kinase region; RHEB site is distal to the substrate cleft.",
+    "palette": {
+      "outline": "#3D5963",
+      "HEAT-solenoid": "#69ADB5",
+      "FAT-kinase": "#B2A6CD"
+    },
+    "anchors": {
+      "RAPTOR-contact": {
+        "point": [
+          485,
+          77
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "RHEB-contact": {
+        "point": [
+          225,
+          955
+        ],
+        "normal": [
+          -1.0,
+          0.0
+        ],
+        "kind": "binding"
+      },
+      "mLST8-contact": {
+        "point": [
+          959,
+          1124
+        ],
+        "normal": [
+          0.0,
+          1.0
+        ],
+        "kind": "binding"
+      },
+      "substrate": {
+        "point": [
+          982,
+          887
+        ],
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions. One mTOR module; a complete mTORC1 dimer is not represented.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/mtor-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/6BCU",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "description_zh": "开放的 HEAT 重复支架连接 FAT–激酶区；RHEB 接触点与底物裂口分开。"
+  },
+  {
+    "id": "raptor-ig",
+    "label": "RAPTOR",
+    "label_zh": "RAPTOR",
+    "category": "pi3k-akt-imagegen",
+    "description": "RAPTOR scaffold with a distinct C-terminal WD40 region.",
+    "palette": {
+      "outline": "#3D5963",
+      "scaffold": "#69ADB5",
+      "WD40": "#E4BE78"
+    },
+    "anchors": {
+      "mTOR-contact": {
+        "point": [
+          134,
+          254
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "substrate-recruitment": {
+        "point": [
+          1022,
+          1158
+        ],
+        "normal": [
+          0.0,
+          1.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/raptor-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/5FLC",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "description_zh": "弯曲的支架连接 C 端 WD40 区，用于展示 mTORC1 的底物招募组分。"
+  },
+  {
+    "id": "mlst8-ig",
+    "label": "mLST8",
+    "label_zh": "mLST8",
+    "category": "pi3k-akt-imagegen",
+    "description": "Seven-bladed WD40 teaching propeller; the colored center is a visual region, not an extra domain.",
+    "palette": {
+      "outline": "#3D5963",
+      "WD40-propeller": "#B2A6CD",
+      "propeller-center": "#69ADB5"
+    },
+    "anchors": {
+      "mTOR-contact": {
+        "point": [
+          488,
+          218
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/mlst8-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/5FLC",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "description_zh": "七叶 WD40 螺旋桨形示意；中央配色用于辨形，不表示额外结构域。"
+  },
+  {
+    "id": "rheb-ig",
+    "label": "RHEB",
+    "label_zh": "RHEB",
+    "category": "pi3k-akt-imagegen",
+    "description": "RHEB GTPase with schematic prenylated tail; nucleotide and activity are separate scene state.",
+    "palette": {
+      "outline": "#3D5963",
+      "GTPase": "#69ADB5",
+      "prenyl-tail": "#E4BE78"
+    },
+    "anchors": {
+      "mTOR-contact": {
+        "point": [
+          994,
+          572
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "membrane-guide": {
+        "point": [
+          253,
+          118
+        ],
+        "normal": [
+          -0.7071067811865476,
+          -0.7071067811865476
+        ],
+        "kind": "surface-guide"
+      }
+    },
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/rheb-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/6BSX",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "description_zh": "小 GTP 酶与示意性异戊二烯化尾部相连；GDP/GTP 状态由场景另加。"
+  }
+]

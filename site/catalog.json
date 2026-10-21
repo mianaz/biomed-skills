@@ -255,7 +255,7 @@
       "源模型 / SVG / JavaScript",
       "明确的来源与展示范围"
     ],
-    "example": "TGFβ 示例包含正常信号、ALK5 催化阻断、SMAD3 2SA 三种条件；机制模型区分受体 GS 磷酸化与下游 SMAD3 磷酸化。当前机制资产页展示 16 个最新生成并转为路径的图标，原图与 SVG 并排，支持搜索和下载。",
+    "example": "TGFβ 示例包含正常信号、ALK5 催化阻断、SMAD3 2SA 三种条件；机制模型区分受体 GS 磷酸化与下游 SMAD3 磷酸化。新增 PI3K–AKT–mTOR 八个图标与四组接触预览。当前机制资产页展示 24 个最新生成并转为路径的图标，原图与 SVG 并排，支持搜索和下载。",
     "source": "skills/scientific-visual-explainer/assets/tgfb-generated.html"
   },
   {

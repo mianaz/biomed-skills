@@ -1,7 +1,7 @@
 const demos = {
   tgfb: {title:'从受体磷酸化到核内转录',type:'机制教学 · 文献来源',description:'观察两对受体、两个磷酸化 SMAD3 与一个 SMAD4 的组装、核孔通行和转录响应。',features:['正常信号、ALK5 阻断、SMAD3 2SA','58 秒可寻址时间轴','独立 SVG 图标与磷酸化标记'],scope:'示意比例、界面和时间用于教学；每幕附来源。不是原子结构或实测动力学。',url:'skills/scientific-visual-explainer/assets/tgfb-generated.html',source:'skills/scientific-visual-explainer/assets/biomed-icons/tgfb-imagegen/mechanism-example.json'},
   egfr: {title:'把结合、交换与激酶反应分开看',type:'机制教学 · 文献来源',description:'从 EGF 结合到 EGFR 二聚化，继续观察 GRB2–SOS1、RAS 核苷酸交换和 RAF–MEK–ERK 反应。',features:['正常与激酶阻断条件','8 个生成后转为路径的 SVG 组分','锚点、配对轮廓、可编辑状态标记'],scope:'图形界面与教学时间线为示意；表达、结合、磷酸化和核苷酸交换以不同状态表示。',url:'skills/scientific-visual-explainer/assets/egfr-generated.html',source:'skills/scientific-visual-explainer/assets/biomed-icons/egfr-imagegen/mechanism-example.json'},
-  icons: {title:'当前机制资产：16 个图标',type:'当前资产 · v0.7',description:'只展示当前生成并转为可编辑路径的 EGF–ERK、TGFβ–SMAD 与 DNA/RNA 图标。原始生成图与最新 SVG 并排检查。',features:['与当前机制演示共享 SVG 源文件','16 个图标，三个当前生成家族','可下载 SVG、原始生成图和锚点目录'],scope:'形态、比例与接触轮廓用于机制教学；部件与来源见图标记录。',url:'icons.html',source:'examples/current-icons.json'},
+  icons: {title:'当前机制资产：24 个图标',type:'当前资产 · v0.8',description:'新增 PI3K–AKT–mTOR 8 个图标，连同 EGF–ERK、TGFβ–SMAD 与 DNA/RNA 当前资产。原始生成图与最新 SVG 并排检查。',features:['与当前机制演示共享 SVG 源文件','24 个图标，四个当前生成家族','可下载 SVG、原始生成图和锚点目录'],scope:'形态、比例与接触轮廓用于机制教学；部件与来源见图标记录。',url:'icons.html',source:'examples/current-icons.json'},
 };
 const $ = selector => document.querySelector(selector);
 const escapeHTML = text => String(text).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));

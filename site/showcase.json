@@ -1,6 +1,18 @@
 {
-  "visual_revision": "0.7",
-  "mechanism_demos": ["tgfb", "egfr"],
-  "icon_families": ["egfr-imagegen", "tgfb-imagegen", "nucleic-imagegen"],
-  "plot_examples": ["groups", "paired", "trajectory"]
+  "visual_revision": "0.8",
+  "mechanism_demos": [
+    "tgfb",
+    "egfr"
+  ],
+  "icon_families": [
+    "pi3k-akt-imagegen",
+    "egfr-imagegen",
+    "tgfb-imagegen",
+    "nucleic-imagegen"
+  ],
+  "plot_examples": [
+    "groups",
+    "paired",
+    "trajectory"
+  ]
 }

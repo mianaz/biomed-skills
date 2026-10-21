@@ -1,0 +1,190 @@
+[
+  {
+    "id": "mTOR-RAPTOR",
+    "title": "mTOR-RAPTOR",
+    "layout": {
+      "width": 700,
+      "height": 480,
+      "pitch": 200,
+      "zones": {
+        "target": 240,
+        "actor": -75.94689801665133
+      }
+    },
+    "entities": [
+      {
+        "id": "target",
+        "icon": "mtor-ig",
+        "slot": 1,
+        "zone": "target",
+        "scale": 2
+      },
+      {
+        "id": "actor",
+        "icon": "raptor-ig",
+        "slot": 1.0482203250510689,
+        "zone": "actor",
+        "scale": 1,
+        "angle": -1.5707963267948966
+      }
+    ],
+    "events": [
+      {
+        "id": "assemble",
+        "kind": "dock",
+        "actor": "actor",
+        "port": "mTOR-contact",
+        "target": "target",
+        "targetPort": "RAPTOR-contact",
+        "duration": 3
+      }
+    ],
+    "preview_viewBox": [
+      220,
+      -175.94689801665135,
+      360,
+      595.9468980166514
+    ]
+  },
+  {
+    "id": "mTOR-mLST8",
+    "title": "mTOR-mLST8",
+    "layout": {
+      "width": 700,
+      "height": 480,
+      "pitch": 200,
+      "zones": {
+        "target": 240,
+        "actor": 513.8806058781535
+      }
+    },
+    "entities": [
+      {
+        "id": "target",
+        "icon": "mtor-ig",
+        "slot": 1,
+        "zone": "target",
+        "scale": 2
+      },
+      {
+        "id": "actor",
+        "icon": "mlst8-ig",
+        "slot": 1.4601306233388671,
+        "zone": "actor",
+        "scale": 0.6,
+        "angle": -4.898587196589413e-16
+      }
+    ],
+    "events": [
+      {
+        "id": "assemble",
+        "kind": "dock",
+        "actor": "actor",
+        "port": "mTOR-contact",
+        "target": "target",
+        "targetPort": "mLST8-contact",
+        "duration": 3
+      }
+    ],
+    "preview_viewBox": [
+      220,
+      60,
+      360,
+      521.8806058781535
+    ]
+  },
+  {
+    "id": "mTOR-RHEB",
+    "title": "mTOR-RHEB",
+    "layout": {
+      "width": 700,
+      "height": 480,
+      "pitch": 200,
+      "zones": {
+        "target": 240,
+        "actor": 325.15545210202623
+      }
+    },
+    "entities": [
+      {
+        "id": "target",
+        "icon": "mtor-ig",
+        "slot": 1,
+        "zone": "target",
+        "scale": 2
+      },
+      {
+        "id": "actor",
+        "icon": "rheb-ig",
+        "slot": -0.2747622249944536,
+        "zone": "actor",
+        "scale": 0.7,
+        "angle": -4.898587196589413e-16
+      }
+    ],
+    "events": [
+      {
+        "id": "assemble",
+        "kind": "dock",
+        "actor": "actor",
+        "port": "mTOR-contact",
+        "target": "target",
+        "targetPort": "RHEB-contact",
+        "duration": 3
+      }
+    ],
+    "preview_viewBox": [
+      69.04755500110929,
+      60,
+      510.9524449988907,
+      360
+    ]
+  },
+  {
+    "id": "PDPK1-AKT1",
+    "title": "PDPK1-AKT1",
+    "layout": {
+      "width": 700,
+      "height": 480,
+      "pitch": 200,
+      "zones": {
+        "target": 240,
+        "actor": 468.1706246300306
+      }
+    },
+    "entities": [
+      {
+        "id": "target",
+        "icon": "akt1-ig",
+        "slot": 1,
+        "zone": "target",
+        "scale": 0.9
+      },
+      {
+        "id": "actor",
+        "icon": "pdpk1-ig",
+        "slot": 1.08405254579512,
+        "zone": "actor",
+        "scale": 0.9,
+        "angle": -4.898587196589413e-16
+      }
+    ],
+    "events": [
+      {
+        "id": "assemble",
+        "kind": "dock",
+        "actor": "actor",
+        "port": "AKT-contact",
+        "target": "target",
+        "targetPort": "PDK1-contact",
+        "duration": 3
+      }
+    ],
+    "preview_viewBox": [
+      308,
+      148,
+      200.81050915902404,
+      412.1706246300306
+    ]
+  }
+]

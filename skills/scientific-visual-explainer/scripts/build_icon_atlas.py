@@ -5,10 +5,11 @@ import xml.etree.ElementTree as ET
 ET.register_namespace('', 'http://www.w3.org/2000/svg')
 P=Path(__file__).resolve().parent
 LIB=P.parent/'assets/biomed-icons'
+version=json.loads((LIB/'catalog.json').read_text())['version']
 items=[]
 for manifest in sorted(LIB.glob('*/manifest.json')):
     items.extend(json.loads(manifest.read_text()))
-(LIB/'catalog.json').write_text(json.dumps({'version':'0.7','style':'STYLE.md','icons':items},ensure_ascii=False,indent=2)+'\n')
+(LIB/'catalog.json').write_text(json.dumps({'version':version,'style':'STYLE.md','icons':items},ensure_ascii=False,indent=2)+'\n')
 for item in items:
     item['svg']=(LIB/item['file']).read_text()
     item['uri']='data:image/svg+xml;base64,'+base64.b64encode(item['svg'].encode()).decode()
@@ -39,6 +40,6 @@ rigs['lipid']['tailTip']=itemmap['phospholipid']['anchors']['tail']['point']
 rigs['lipid']['pitch']=8.1
 runtime=(P/'asset-recycling.js').read_text()
 data=json.dumps({'icons':items,'model':model,'rigs':rigs},ensure_ascii=False).replace('</',r'<\/')
-template=(P.parent/'assets/icon-atlas-template.html').read_text().replace('/*ICON_DATA*/','const DATA='+data+';').replace('/*SHARED_RUNTIME*/',runtime).replace('{{ICON_COUNT}}',str(len(items))).replace('{{ICON_VERSION}}','0.7')
+template=(P.parent/'assets/icon-atlas-template.html').read_text().replace('/*ICON_DATA*/','const DATA='+data+';').replace('/*SHARED_RUNTIME*/',runtime).replace('{{ICON_COUNT}}',str(len(items))).replace('{{ICON_VERSION}}',version)
 (P.parent/'assets/biomed-icon-library.html').write_text(template)
 print(f'Built {len(items)} reusable icons and two demos: assets/biomed-icon-library.html')

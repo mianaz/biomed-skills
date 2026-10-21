@@ -62,13 +62,13 @@ icons_root = ROOT / 'skills/scientific-visual-explainer/assets/biomed-icons'
 icon_catalog = json.loads((icons_root / 'catalog.json').read_text())
 assert icon_catalog['version'] == showcase['visual_revision']
 current_icons = [icon for icon in icon_catalog['icons'] if icon['category'] in showcase['icon_families']]
-assert len(current_icons) == 16
+current_icons.sort(key=lambda icon: showcase['icon_families'].index(icon['category']))
 icon_cards = []
 for icon in current_icons:
     assert icon['provenance']['mode'] == 'built-in-imagegen-traced'
     base = 'skills/scientific-visual-explainer/assets/biomed-icons/'
     anchors = ', '.join(icon['anchors'])
-    icon_cards.append(f"""<article class="current-icon-card"><span class="small-label">{html.escape(icon['category'])} · v{showcase['visual_revision']}</span><h2>{html.escape(icon['label'])}</h2><span class="skill-id">{html.escape(icon['id'])}</span><div class="icon-comparison"><figure><img loading="lazy" src="{base + icon['provenance']['source']}" alt="{html.escape(icon['label'])}原始生成图"><figcaption>原始生成图</figcaption></figure><figure><img loading="lazy" src="{base + icon['file']}" alt="{html.escape(icon['label'])}当前 SVG"><figcaption>当前可编辑 SVG</figcaption></figure></div><p>{html.escape(icon.get('description', ''))}</p><details><summary>部件、锚点与适用范围</summary><p>{html.escape(anchors)}</p><p>{html.escape(icon.get('scope', 'Teaching schematic.'))}</p></details><div class="file-links"><a download href="{base + icon['file']}">SVG ↓</a><a download href="{base + icon['provenance']['source']}">生成原图 ↓</a><a href="{base + icon['category']}/manifest.json">来源与元数据 ↗</a></div></article>""")
+    icon_cards.append(f"""<article class="current-icon-card"><span class="small-label">{html.escape(icon['category'])} · v{showcase['visual_revision']}</span><h2>{html.escape(icon['label'])}</h2><span class="skill-id">{html.escape(icon['id'])}</span><div class="icon-comparison"><figure><img loading="lazy" src="{base + icon['provenance']['source']}" alt="{html.escape(icon['label'])}原始生成图"><figcaption>原始生成图</figcaption></figure><figure><img loading="lazy" src="{base + icon['file']}" alt="{html.escape(icon['label'])}当前 SVG"><figcaption>当前可编辑 SVG</figcaption></figure></div><p>{html.escape(icon.get('description_zh', icon.get('description', '')))}</p><details><summary>部件、锚点与适用范围</summary><p>{html.escape(anchors)}</p><p>{html.escape(icon.get('scope', 'Teaching schematic.'))}</p></details><div class="file-links"><a download href="{base + icon['file']}">SVG ↓</a><a download href="{base + icon['provenance']['source']}">生成原图 ↓</a><a href="{base + icon['category']}/manifest.json">来源与元数据 ↗</a></div></article>""")
 (OUT / 'examples/current-icons.json').write_text(json.dumps({'version': showcase['visual_revision'], 'icons': current_icons}, ensure_ascii=False, indent=2) + '\n')
 icons_page = (OUT / 'icons.html').read_text().replace('{{VISUAL_REVISION}}', showcase['visual_revision']).replace('{{ICON_COUNT}}', str(len(current_icons))).replace('{{ICON_CARDS}}', ''.join(icon_cards))
 (OUT / 'icons.html').write_text(icons_page)
@@ -100,12 +100,12 @@ with zipfile.ZipFile(OUT / 'downloads/current-examples.zip', 'w', zipfile.ZIP_DE
     for name in ['scripts/tidyplots.R', 'examples/run.R']:
         bundle.write(ROOT / 'skills/scientific-plotting-tidyplots' / name, 'plots/scientific-plotting-tidyplots/' + name)
     bundle.write(ROOT / 'LICENSE', 'LICENSE')
-    bundle.writestr('README.md', """# Current showcase examples
+    bundle.writestr('README.md', f"""# Current showcase examples
 
-Mechanism assets: v0.7, continuous contours and unified scene line weights.
+Mechanism assets: v{showcase['visual_revision']}, continuous contours and unified scene line weights.
 Open mechanisms/tgfb-generated.html or mechanisms/egfr-generated.html directly.
 The HTML files embed their SVGs, model, runtime and source references.
-icons/ contains the 16 generated-and-traced assets used by the current showcase,
+icons/ contains the {len(current_icons)} generated-and-traced assets used by the current showcase,
 with original PNGs, prompts, manifests and editable SVGs. Geometry is illustrative.
 The TGFbeta lesson also embeds its nuclear-pore support artwork.
 
@@ -117,4 +117,4 @@ statistics and editable R objects. With the R dependencies installed, rerun:
 Keep both plotting directories together. The complete skill installation is a
 separate download. All plotting data are synthetic teaching examples.
 """)
-print(f'Built {len(catalog)} skill guides, current mechanism demos, a 16-icon gallery and downloadable suite: {OUT}')
+print(f'Built {len(catalog)} skill guides, current mechanism demos, a {len(current_icons)}-icon gallery and downloadable suite: {OUT}')

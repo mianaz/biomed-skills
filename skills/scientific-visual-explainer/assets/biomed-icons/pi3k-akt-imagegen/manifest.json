@@ -1,0 +1,783 @@
+[
+  {
+    "id": "pi3k-ig",
+    "label": "Class IA PI3K",
+    "label_zh": "PI3K",
+    "category": "pi3k-akt-imagegen",
+    "description": "Class IA p110α–p85α teaching complex; catalytic cleft and accessible regulatory edge.",
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/pi3k-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/2RD0",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "file": "pi3k-akt-imagegen/pi3k-ig.svg",
+    "parts": [
+      "p110-catalytic",
+      "p85-regulatory",
+      "structural-seams",
+      "outline"
+    ],
+    "anchors": {
+      "recruitment": {
+        "point": [
+          28.137931034482754,
+          20.275862068965523
+        ],
+        "normal": [
+          -1.0,
+          0.0
+        ],
+        "kind": "binding"
+      },
+      "lipid-substrate": {
+        "point": [
+          105.93103448275862,
+          83.3103448275862
+        ],
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "p110-catalytic": "#69ADB5",
+      "p85-regulatory": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.13793103448275862,
+      "translate": [
+        -9.379310344827587,
+        -6.34482758620689
+      ]
+    },
+    "parts_note": "Semantic fill regions plus curated domain seams and one continuous body outline. They support recoloring; independently moving domains requires rigging the shared contour.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1,
+      "patches": false,
+      "source_preserved": true
+    },
+    "description_zh": "p110α 催化亚基与 p85α 调节亚基，保留可接近的催化与招募边缘。"
+  },
+  {
+    "id": "akt1-ig",
+    "label": "AKT1",
+    "label_zh": "AKT1",
+    "category": "pi3k-akt-imagegen",
+    "description": "PH domain, connected kinase and regulatory tail; T308/S473 are external annotation anchors.",
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/akt1-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/3O96",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      },
+      {
+        "url": "https://www.rcsb.org/structure/1UNQ",
+        "inspection": "PH lipid-binding structure metadata read."
+      }
+    ],
+    "file": "pi3k-akt-imagegen/akt1-ig.svg",
+    "parts": [
+      "kinase",
+      "PH",
+      "regulatory-tail",
+      "structural-seams",
+      "outline"
+    ],
+    "anchors": {
+      "lipid-binding": {
+        "point": [
+          38.80828082808281,
+          33.666966696669675
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "binding"
+      },
+      "PDK1-contact": {
+        "point": [
+          87.03870387038704,
+          138.89900610572963
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "PDPK1-AKT1",
+          "shape": "socket",
+          "halfWidth": 3.333333333333333,
+          "depth": 0.5555555555555556,
+          "profile": "continuous-body",
+          "framePoint": [
+            87.03870387038704,
+            138.45184518451845
+          ],
+          "schematic": true
+        }
+      },
+      "T308": {
+        "point": [
+          97.68856885688568,
+          136.37083708370835
+        ],
+        "normal": [
+          0.0,
+          1.0
+        ],
+        "kind": "annotation"
+      },
+      "S473": {
+        "point": [
+          147.38793879387936,
+          125.35373537353736
+        ],
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "kind": "annotation"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "kinase": "#69ADB5",
+      "PH": "#E4BE78",
+      "regulatory-tail": "#B2A6CD"
+    },
+    "source_to_svg": {
+      "scale": 0.1224122412241224,
+      "translate": [
+        3.1863186318631875,
+        4.043204320432054
+      ]
+    },
+    "parts_note": "Semantic fill regions plus curated domain seams and one continuous body outline. They support recoloring; independently moving domains requires rigging the shared contour.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 0.9,
+      "patches": false,
+      "source_preserved": true
+    },
+    "description_zh": "PH 结构域、激酶区和调节尾部相连；T308、S473 标记可在组图时另加。"
+  },
+  {
+    "id": "pten-ig",
+    "label": "PTEN",
+    "label_zh": "PTEN",
+    "category": "pi3k-akt-imagegen",
+    "description": "Connected phosphatase and C2 domains with a schematic regulatory tail.",
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/pten-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/1D5R",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "file": "pi3k-akt-imagegen/pten-ig.svg",
+    "parts": [
+      "phosphatase",
+      "C2",
+      "tail",
+      "structural-seams",
+      "outline"
+    ],
+    "anchors": {
+      "lipid-substrate": {
+        "point": [
+          53.135802469135804,
+          56.19400352733687
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "binding"
+      },
+      "membrane-guide": {
+        "point": [
+          103.14638447971781,
+          46.71957671957672
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "surface-guide"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "phosphatase": "#69ADB5",
+      "C2": "#B3D7CC",
+      "tail": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.11992945326278659,
+      "translate": [
+        4.804232804232811,
+        3.904761904761912
+      ]
+    },
+    "parts_note": "Semantic fill regions plus curated domain seams and one continuous body outline. They support recoloring; independently moving domains requires rigging the shared contour.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1,
+      "patches": false,
+      "source_preserved": true
+    },
+    "description_zh": "磷酸酶结构域与 C2 膜结合结构域相连，保留短调节尾部。"
+  },
+  {
+    "id": "pdpk1-ig",
+    "label": "PDPK1 (PDK1)",
+    "label_zh": "PDPK1",
+    "category": "pi3k-akt-imagegen",
+    "description": "PDPK1 kinase and C-terminal PH domain; this is protein kinase PDK1.",
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/pdpk1-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/5LVO",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      },
+      {
+        "url": "https://www.rcsb.org/structure/2VKI",
+        "inspection": "PH-domain lipid recruitment metadata read; mutant structure, not a wild-type atomic template."
+      }
+    ],
+    "file": "pi3k-akt-imagegen/pdpk1-ig.svg",
+    "parts": [
+      "kinase",
+      "PH",
+      "structural-seams",
+      "outline"
+    ],
+    "anchors": {
+      "AKT-contact": {
+        "point": [
+          68.36036036036036,
+          18.70942318347342
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "PDPK1-AKT1",
+          "shape": "tab",
+          "halfWidth": 3.333333333333333,
+          "depth": 0.5555555555555556,
+          "profile": "continuous-body",
+          "framePoint": [
+            68.36036036036036,
+            18.26226226226225
+          ],
+          "schematic": true
+        }
+      },
+      "lipid-binding": {
+        "point": [
+          136.02002002002,
+          90.14214214214213
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "kinase": "#69ADB5",
+      "PH": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.13613613613613615,
+      "translate": [
+        -5.2892892892893,
+        -4.200200200200214
+      ]
+    },
+    "parts_note": "Semantic fill regions plus curated domain seams and one continuous body outline. They support recoloring; independently moving domains requires rigging the shared contour.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 0.9,
+      "patches": false,
+      "source_preserved": true
+    },
+    "description_zh": "左侧为激酶区，右侧为 C 端 PH 结构域。这里的 PDK1 指蛋白激酶 PDPK1。"
+  },
+  {
+    "id": "mtor-ig",
+    "label": "mTOR",
+    "label_zh": "mTOR",
+    "category": "pi3k-akt-imagegen",
+    "description": "Open HEAT-repeat scaffold and FAT–kinase region; RHEB site is distal to the substrate cleft.",
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions. One mTOR module; a complete mTORC1 dimer is not represented.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/mtor-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/6BCU",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "file": "pi3k-akt-imagegen/mtor-ig.svg",
+    "parts": [
+      "HEAT-solenoid",
+      "FAT-kinase",
+      "structural-seams",
+      "outline"
+    ],
+    "anchors": {
+      "RAPTOR-contact": {
+        "point": [
+          62.04355716878403,
+          11.938047851976933
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "mTOR-RAPTOR",
+          "shape": "socket",
+          "halfWidth": 1.5,
+          "depth": 0.25,
+          "profile": "continuous-body",
+          "framePoint": [
+            62.04355716878403,
+            12.123411978221416
+          ],
+          "schematic": true
+        }
+      },
+      "RHEB-contact": {
+        "point": [
+          29.788066264354594,
+          120.47912885662433
+        ],
+        "normal": [
+          -1.0,
+          0.0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "mTOR-RHEB",
+          "shape": "socket",
+          "halfWidth": 1.5,
+          "depth": 0.25,
+          "profile": "continuous-body",
+          "framePoint": [
+            29.95644283121597,
+            120.47912885662433
+          ],
+          "schematic": true
+        }
+      },
+      "mLST8-contact": {
+        "point": [
+          120.54083484573503,
+          141.58383846414452
+        ],
+        "normal": [
+          0.0,
+          1.0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "mTOR-mLST8",
+          "shape": "socket",
+          "halfWidth": 1.5,
+          "depth": 0.25,
+          "profile": "continuous-body",
+          "framePoint": [
+            120.54083484573503,
+            141.33575317604357
+          ],
+          "schematic": true
+        }
+      },
+      "substrate": {
+        "point": [
+          123.37931034482759,
+          112.08711433756807
+        ],
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "HEAT-solenoid": "#69ADB5",
+      "FAT-kinase": "#B2A6CD"
+    },
+    "source_to_svg": {
+      "scale": 0.12341197822141561,
+      "translate": [
+        2.1887477313974557,
+        2.620689655172413
+      ]
+    },
+    "parts_note": "Semantic fill regions plus curated domain seams and one continuous body outline. They support recoloring; independently moving domains requires rigging the shared contour.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 2,
+      "patches": false,
+      "source_preserved": true
+    },
+    "description_zh": "开放的 HEAT 重复支架连接 FAT–激酶区；RHEB 接触点与底物裂口分开。"
+  },
+  {
+    "id": "raptor-ig",
+    "label": "RAPTOR",
+    "label_zh": "RAPTOR",
+    "category": "pi3k-akt-imagegen",
+    "description": "RAPTOR scaffold with a distinct C-terminal WD40 region.",
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/raptor-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/5FLC",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "file": "pi3k-akt-imagegen/raptor-ig.svg",
+    "parts": [
+      "scaffold",
+      "WD40",
+      "structural-seams",
+      "outline"
+    ],
+    "anchors": {
+      "mTOR-contact": {
+        "point": [
+          20.177006279394803,
+          34.44304932735427
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "mTOR-RAPTOR",
+          "shape": "tab",
+          "halfWidth": 3.0,
+          "depth": 0.5,
+          "profile": "continuous-body",
+          "framePoint": [
+            19.806278026905836,
+            34.44304932735427
+          ],
+          "schematic": true
+        }
+      },
+      "substrate-recruitment": {
+        "point": [
+          128.11838565022424,
+          144.7067264573991
+        ],
+        "normal": [
+          0.0,
+          1.0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "scaffold": "#69ADB5",
+      "WD40": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.12197309417040358,
+      "translate": [
+        3.461883408071756,
+        3.461883408071756
+      ]
+    },
+    "parts_note": "Semantic fill regions plus curated domain seams and one continuous body outline. They support recoloring; independently moving domains requires rigging the shared contour.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1,
+      "patches": false,
+      "source_preserved": true
+    },
+    "description_zh": "弯曲的支架连接 C 端 WD40 区，用于展示 mTORC1 的底物招募组分。"
+  },
+  {
+    "id": "mlst8-ig",
+    "label": "mLST8",
+    "label_zh": "mLST8",
+    "category": "pi3k-akt-imagegen",
+    "description": "Seven-bladed WD40 teaching propeller; the colored center is a visual region, not an extra domain.",
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/mlst8-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/5FLC",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "file": "pi3k-akt-imagegen/mlst8-ig.svg",
+    "parts": [
+      "WD40-propeller",
+      "propeller-center",
+      "structural-seams",
+      "outline"
+    ],
+    "anchors": {
+      "mTOR-contact": {
+        "point": [
+          61.759241706161134,
+          28.811785083559258
+        ],
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "mTOR-mLST8",
+          "shape": "tab",
+          "halfWidth": 5.0,
+          "depth": 0.8333333333333334,
+          "profile": "continuous-body",
+          "framePoint": [
+            61.759241706161134,
+            27.984834123222747
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "WD40-propeller": "#B2A6CD",
+      "propeller-center": "#69ADB5"
+    },
+    "source_to_svg": {
+      "scale": 0.12890995260663507,
+      "translate": [
+        -1.1488151658767833,
+        -0.11753554502369923
+      ]
+    },
+    "parts_note": "Semantic fill regions plus curated domain seams and one continuous body outline. They support recoloring; independently moving domains requires rigging the shared contour.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 0.6,
+      "patches": false,
+      "source_preserved": true
+    },
+    "description_zh": "七叶 WD40 螺旋桨形示意；中央配色用于辨形，不表示额外结构域。"
+  },
+  {
+    "id": "rheb-ig",
+    "label": "RHEB",
+    "label_zh": "RHEB",
+    "category": "pi3k-akt-imagegen",
+    "description": "RHEB GTPase with schematic prenylated tail; nucleotide and activity are separate scene state.",
+    "scope": "Domain-level educational schematic; contacts and residue anchors are illustrative, not atomic positions.",
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "pi3k-akt-imagegen/sources/rheb-ig.png",
+      "prompt": "pi3k-akt-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/pi3k-pathway-in-cancer",
+        "inspection": "Public preview visually inspected; flat pathway style only. No art copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://www.rcsb.org/structure/6BSX",
+        "inspection": "Structure metadata and primary-publication summary read; coordinates not used to trace geometry."
+      }
+    ],
+    "file": "pi3k-akt-imagegen/rheb-ig.svg",
+    "parts": [
+      "GTPase",
+      "prenyl-tail",
+      "structural-seams",
+      "outline"
+    ],
+    "anchors": {
+      "mTOR-contact": {
+        "point": [
+          129.3265393251427,
+          74.00400801603206
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "mTOR-RHEB",
+          "shape": "tab",
+          "halfWidth": 4.285714285714286,
+          "depth": 0.7142857142857143,
+          "profile": "continuous-body",
+          "framePoint": [
+            129.80761523046093,
+            74.00400801603206
+          ],
+          "schematic": true
+        }
+      },
+      "membrane-guide": {
+        "point": [
+          28.82965931863727,
+          12.13627254509018
+        ],
+        "normal": [
+          -0.7071067811865476,
+          -0.7071067811865476
+        ],
+        "kind": "surface-guide"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "GTPase": "#69ADB5",
+      "prenyl-tail": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.13627254509018036,
+      "translate": [
+        -5.647294589178358,
+        -3.9438877755511044
+      ]
+    },
+    "parts_note": "Semantic fill regions plus curated domain seams and one continuous body outline. They support recoloring; independently moving domains requires rigging the shared contour.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 0.7,
+      "patches": false,
+      "source_preserved": true
+    },
+    "description_zh": "小 GTP 酶与示意性异戊二烯化尾部相连；GDP/GTP 状态由场景另加。"
+  }
+]
