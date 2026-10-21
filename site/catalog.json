@@ -239,7 +239,7 @@
     "id": "scientific-visual-explainer",
     "title": "让机制可以看见",
     "group": "reading",
-    "summary": "以源文献、独立图形资产和可拖动时间轴解释机制。",
+    "summary": "默认用胶囊蛋白、Y/U 受体与二聚体，生成完整机制图和可交互动画。",
     "inputs": [
       "概念或论文及目标受众",
       "所需教学问题、语言与输出格式"
@@ -255,8 +255,8 @@
       "源模型 / SVG / JavaScript",
       "明确的来源与展示范围"
     ],
-    "example": "TGFβ 示例包含正常信号、ALK5 催化阻断、SMAD3 2SA 三种条件；机制模型区分受体 GS 磷酸化与下游 SMAD3 磷酸化。新增 PI3K–AKT–mTOR 八个图标与四组接触预览。当前图库展示 42 个可编辑图标，其中 18 个通用蛋白、配体、受体、RNA 和膜形状可直接添加名称与改色。",
-    "source": "skills/scientific-visual-explainer/assets/tgfb-generated.html"
+    "example": "基础版提供三组完整示例：Y 型受体磷酸化级联、U 型受体触发复合物入核与 RNA 生成、Y/U 两路输入汇合。generic 蛋白统一为胶囊；P 圈、箭头和标签单独编辑。结构域细节为可选模式。",
+    "source": "skills/scientific-visual-explainer/assets/basic-mechanisms/index.html"
   },
   {
     "id": "paper-to-protocol",

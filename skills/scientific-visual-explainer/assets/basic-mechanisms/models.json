@@ -1,0 +1,261 @@
+{
+  "style": "basic",
+  "protein_icon": "generic-protein-capsule",
+  "scope": "Illustrative teaching models. Node names, timings and causal rules are specified examples, not experimental results.",
+  "visual_references": [
+    {
+      "url": "https://www.biorender.com/template/blank-pathway-linear",
+      "inspection": "Public lightbox visually inspected for capsule nodes, Y/U receptors, arrows and compartment layout."
+    },
+    {
+      "url": "https://www.biorender.com/template/intracellular-layout-receptor-signaling-from-plasma-membrane-to-nucleus-2",
+      "inspection": "Public lightbox visually inspected for capsule complexes, separate P badges and nuclear import. Original SVG composition; no source art copied."
+    }
+  ],
+  "examples": [
+    {
+      "id": "cascade",
+      "title": "Y 型受体：磷酸化级联",
+      "question": "受体二聚后，信号怎样逐级传给下游蛋白？",
+      "receptors": [
+        {
+          "kind": "y",
+          "x": 250
+        }
+      ],
+      "proteins": [
+        {
+          "id": "A",
+          "x": 250,
+          "y": 325,
+          "time": 6
+        },
+        {
+          "id": "B",
+          "x": 500,
+          "y": 325,
+          "time": 10
+        },
+        {
+          "id": "C",
+          "x": 750,
+          "y": 455,
+          "time": 14
+        }
+      ],
+      "edges": [
+        {
+          "d": "M250 251V292",
+          "time": 5
+        },
+        {
+          "d": "M310 325H440",
+          "time": 9
+        },
+        {
+          "d": "M560 325H750V422",
+          "time": 13
+        }
+      ],
+      "duration": 18,
+      "steps": [
+        [
+          0,
+          "配体结合"
+        ],
+        [
+          2,
+          "Y 型单体靠近并组成二聚体"
+        ],
+        [
+          4,
+          "受体胞内尾部磷酸化"
+        ],
+        [
+          6,
+          "蛋白 A 磷酸化"
+        ],
+        [
+          10,
+          "A → B"
+        ],
+        [
+          14,
+          "B → C"
+        ]
+      ]
+    },
+    {
+      "id": "import",
+      "title": "U 型受体：复合物入核与 RNA 生成",
+      "question": "活化后的蛋白怎样组装、入核并启动转录？",
+      "receptors": [
+        {
+          "kind": "u",
+          "x": 250
+        }
+      ],
+      "proteins": [
+        {
+          "id": "A",
+          "x": 220,
+          "y": 325,
+          "time": 6
+        },
+        {
+          "id": "B",
+          "x": 410,
+          "y": 325,
+          "time": 6
+        }
+      ],
+      "edges": [
+        {
+          "d": "M250 251V275H220V292",
+          "time": 5
+        },
+        {
+          "d": "M250 275H410V292",
+          "time": 5
+        },
+        {
+          "d": "M220 358V440H365",
+          "time": 8
+        },
+        {
+          "d": "M410 358V386",
+          "time": 8
+        },
+        {
+          "d": "M488 440H650",
+          "time": 12
+        },
+        {
+          "d": "M750 492V514",
+          "time": 16
+        },
+        {
+          "d": "M870 512V423",
+          "time": 17
+        }
+      ],
+      "duration": 20,
+      "steps": [
+        [
+          0,
+          "配体结合"
+        ],
+        [
+          2,
+          "U 型单体组成二聚体"
+        ],
+        [
+          4,
+          "受体尾部磷酸化"
+        ],
+        [
+          6,
+          "A 与 B 磷酸化"
+        ],
+        [
+          8,
+          "A/B 复合物形成"
+        ],
+        [
+          12,
+          "复合物向核膜移动"
+        ],
+        [
+          14,
+          "复合物通过核膜开口"
+        ],
+        [
+          17,
+          "靶基因产生 RNA"
+        ]
+      ]
+    },
+    {
+      "id": "convergence",
+      "title": "Y/U 两路输入：汇合与阻断",
+      "question": "阻断左路 A 后，右路 B 能否继续传递信号？",
+      "receptors": [
+        {
+          "kind": "y",
+          "x": 270
+        },
+        {
+          "kind": "u",
+          "x": 730
+        }
+      ],
+      "proteins": [
+        {
+          "id": "A",
+          "x": 270,
+          "y": 330,
+          "time": 6
+        },
+        {
+          "id": "B",
+          "x": 730,
+          "y": 330,
+          "time": 8
+        },
+        {
+          "id": "C",
+          "x": 500,
+          "y": 495,
+          "time": 13
+        }
+      ],
+      "edges": [
+        {
+          "d": "M270 251V297",
+          "time": 5
+        },
+        {
+          "d": "M730 251V297",
+          "time": 7
+        },
+        {
+          "d": "M270 363V420H465V463",
+          "time": 12,
+          "branch": "A"
+        },
+        {
+          "d": "M730 363V420H535V463",
+          "time": 12,
+          "branch": "B"
+        }
+      ],
+      "duration": 18,
+      "steps": [
+        [
+          0,
+          "两类配体分别结合 Y/U 型受体"
+        ],
+        [
+          2,
+          "两路受体分别二聚"
+        ],
+        [
+          4,
+          "两路受体尾部磷酸化"
+        ],
+        [
+          6,
+          "左路 A 磷酸化"
+        ],
+        [
+          8,
+          "右路 B 磷酸化"
+        ],
+        [
+          13,
+          "任一路可维持 C 的磷酸化"
+        ]
+      ]
+    }
+  ]
+}

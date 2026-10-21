@@ -81,6 +81,8 @@
       "protein": "#69ADB5"
     },
     "primary_color": "#69ADB5",
+    "status": "archived",
+    "basic_default": false,
     "label_box": [
       27,
       61,
@@ -170,6 +172,8 @@
       "protein": "#69ADB5"
     },
     "primary_color": "#69ADB5",
+    "status": "current",
+    "basic_default": true,
     "label_box": [
       38,
       61,
@@ -248,6 +252,8 @@
       "protein": "#69ADB5"
     },
     "primary_color": "#69ADB5",
+    "status": "archived",
+    "basic_default": false,
     "label_box": [
       48,
       63,
@@ -318,6 +324,8 @@
       "ligand": "#E4BE78"
     },
     "primary_color": "#69ADB5",
+    "status": "archived",
+    "basic_default": false,
     "label_box": [
       24,
       63,
@@ -386,7 +394,9 @@
       "protein": "#69ADB5",
       "ligand": "#E4BE78"
     },
-    "primary_color": "#69ADB5"
+    "primary_color": "#69ADB5",
+    "status": "archived",
+    "basic_default": false
   },
   {
     "id": "generic-ligand-circle",
@@ -448,6 +458,8 @@
       "ligand": "#E4BE78"
     },
     "primary_color": "#E4BE78",
+    "status": "current",
+    "basic_default": true,
     "label_box": [
       56,
       67,
@@ -504,6 +516,8 @@
       "ligand": "#E4BE78"
     },
     "primary_color": "#E4BE78",
+    "status": "current",
+    "basic_default": true,
     "label_box": [
       57,
       63,
@@ -560,6 +574,8 @@
       "ligand": "#E4BE78"
     },
     "primary_color": "#E4BE78",
+    "status": "current",
+    "basic_default": true,
     "label_box": [
       54,
       67,
@@ -637,7 +653,9 @@
       "outline": "#3D5963",
       "protein": "#69ADB5"
     },
-    "primary_color": "#69ADB5"
+    "primary_color": "#69ADB5",
+    "status": "current",
+    "basic_default": true
   },
   {
     "id": "generic-receptor-cup",
@@ -709,7 +727,203 @@
       "outline": "#3D5963",
       "protein": "#69ADB5"
     },
-    "primary_color": "#69ADB5"
+    "primary_color": "#69ADB5",
+    "status": "current",
+    "basic_default": true
+  },
+  {
+    "id": "generic-receptor-dimer-y",
+    "label": "Y receptor dimer",
+    "label_zh": "Y 型受体二聚体",
+    "category": "generic-primitives",
+    "group": "receptors",
+    "file": "generic-primitives/generic-receptor-dimer-y.svg",
+    "preview": "generic-primitives/previews/generic-receptor-dimer-y.png",
+    "description": "两个Y 型受体单体并列组成二聚体，每个单体保留独立部件。",
+    "description_zh": "两个Y 型受体单体并列组成二聚体，每个单体保留独立部件。",
+    "parts": [
+      "receptor-A",
+      "receptor-B"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          80,
+          101
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "left-ligand": {
+        "point": [
+          47,
+          72.84
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "right-ligand": {
+        "point": [
+          113,
+          72.84
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "left-tail": {
+        "point": [
+          47,
+          127.24
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "right-tail": {
+        "point": [
+          113,
+          127.24
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5",
+    "status": "current",
+    "basic_default": true
+  },
+  {
+    "id": "generic-receptor-dimer-u",
+    "label": "U receptor dimer",
+    "label_zh": "U 型受体二聚体",
+    "category": "generic-primitives",
+    "group": "receptors",
+    "file": "generic-primitives/generic-receptor-dimer-u.svg",
+    "preview": "generic-primitives/previews/generic-receptor-dimer-u.png",
+    "description": "两个U 型受体单体并列组成二聚体，每个单体保留独立部件。",
+    "description_zh": "两个U 型受体单体并列组成二聚体，每个单体保留独立部件。",
+    "parts": [
+      "receptor-A",
+      "receptor-B"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          80,
+          101
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "left-ligand": {
+        "point": [
+          53,
+          81.8
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "right-ligand": {
+        "point": [
+          107,
+          81.8
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "left-tail": {
+        "point": [
+          53,
+          127.24
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "right-tail": {
+        "point": [
+          107,
+          127.24
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic diagram symbol; identity and state come from the consuming figure. Shape does not encode resolved structure or a specific receptor family.",
+    "provenance": {
+      "mode": "original-vector",
+      "source": "generic-primitives/build.py",
+      "license": "MIT",
+      "construction": "Native SVG geometry; PNG is a raster preview of this SVG."
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/blank-pathway-linear",
+        "inspection": "Public lightbox visually inspected for simple protein nodes and fork/cup receptor conventions; no artwork copied."
+      },
+      {
+        "url": "https://www.biorender.com/template/rna-secondary-structures",
+        "inspection": "Public lightbox visually inspected for single-strand, duplex and hairpin notation; original geometry authored below."
+      }
+    ],
+    "scientific_references": [],
+    "palette": {
+      "outline": "#3D5963",
+      "protein": "#69ADB5"
+    },
+    "primary_color": "#69ADB5",
+    "status": "current",
+    "basic_default": true
   },
   {
     "id": "generic-receptor-single",
@@ -781,7 +995,9 @@
       "outline": "#3D5963",
       "protein": "#69ADB5"
     },
-    "primary_color": "#69ADB5"
+    "primary_color": "#69ADB5",
+    "status": "archived",
+    "basic_default": false
   },
   {
     "id": "generic-receptor-pair",
@@ -854,7 +1070,9 @@
       "outline": "#3D5963",
       "protein": "#69ADB5"
     },
-    "primary_color": "#69ADB5"
+    "primary_color": "#69ADB5",
+    "status": "archived",
+    "basic_default": false
   },
   {
     "id": "generic-rna-wave",
@@ -915,7 +1133,9 @@
       "outline": "#3D5963",
       "nucleic": "#B2A6CD"
     },
-    "primary_color": "#B2A6CD"
+    "primary_color": "#B2A6CD",
+    "status": "current",
+    "basic_default": true
   },
   {
     "id": "generic-rna-comb",
@@ -977,7 +1197,9 @@
       "outline": "#3D5963",
       "nucleic": "#B2A6CD"
     },
-    "primary_color": "#B2A6CD"
+    "primary_color": "#B2A6CD",
+    "status": "current",
+    "basic_default": true
   },
   {
     "id": "generic-rna-duplex",
@@ -1068,7 +1290,9 @@
       "protein": "#69ADB5",
       "nucleic": "#B2A6CD"
     },
-    "primary_color": "#B2A6CD"
+    "primary_color": "#B2A6CD",
+    "status": "current",
+    "basic_default": true
   },
   {
     "id": "generic-rna-hairpin",
@@ -1146,7 +1370,9 @@
       "outline": "#3D5963",
       "nucleic": "#B2A6CD"
     },
-    "primary_color": "#B2A6CD"
+    "primary_color": "#B2A6CD",
+    "status": "current",
+    "basic_default": true
   },
   {
     "id": "generic-membrane",
@@ -1219,7 +1445,9 @@
       "outline": "#3D5963",
       "membrane": "#B3D7CC"
     },
-    "primary_color": "#B3D7CC"
+    "primary_color": "#B3D7CC",
+    "status": "current",
+    "basic_default": true
   },
   {
     "id": "generic-vesicle",
@@ -1294,6 +1522,8 @@
       "membrane": "#B3D7CC",
       "interior": "#EDF5F1"
     },
-    "primary_color": "#B3D7CC"
+    "primary_color": "#B3D7CC",
+    "status": "current",
+    "basic_default": true
   }
 ]

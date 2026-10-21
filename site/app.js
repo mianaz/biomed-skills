@@ -1,11 +1,12 @@
 const demos = {
+  basic: {title:'基础版：胶囊蛋白与 Y/U 型受体',type:'默认模式 · 三组完整机制图',description:'Y 型级联、U 型复合物入核、Y/U 两路汇合。静态机制图和动画共享胶囊蛋白、Y/U 单体与同型二聚体。',features:['完整静态机制图与可寻址动画','胶囊蛋白、独立 P 圈、Y/U 二聚体','正常与阻断 A 条件；SVG 当前帧导出'],scope:'A/B/C 与时间线为通用教学模型，具体因果规则见各示例。',url:'skills/scientific-visual-explainer/assets/basic-mechanisms/index.html',source:'skills/scientific-visual-explainer/assets/basic-mechanisms/models.json'},
   tgfb: {title:'从受体磷酸化到核内转录',type:'机制教学 · 文献来源',description:'观察两对受体、两个磷酸化 SMAD3 与一个 SMAD4 的组装、核孔通行和转录响应。',features:['正常信号、ALK5 阻断、SMAD3 2SA','58 秒可寻址时间轴','独立 SVG 图标与磷酸化标记'],scope:'示意比例、界面和时间用于教学；每幕附来源。不是原子结构或实测动力学。',url:'skills/scientific-visual-explainer/assets/tgfb-generated.html',source:'skills/scientific-visual-explainer/assets/biomed-icons/tgfb-imagegen/mechanism-example.json'},
   egfr: {title:'把结合、交换与激酶反应分开看',type:'机制教学 · 文献来源',description:'从 EGF 结合到 EGFR 二聚化，继续观察 GRB2–SOS1、RAS 核苷酸交换和 RAF–MEK–ERK 反应。',features:['正常与激酶阻断条件','8 个生成后转为路径的 SVG 组分','锚点、配对轮廓、可编辑状态标记'],scope:'图形界面与教学时间线为示意；表达、结合、磷酸化和核苷酸交换以不同状态表示。',url:'skills/scientific-visual-explainer/assets/egfr-generated.html',source:'skills/scientific-visual-explainer/assets/biomed-icons/egfr-imagegen/mechanism-example.json'},
-  icons: {title:'当前图形资产：42 个图标',type:'当前资产 · v0.9',description:'新增 18 个通用蛋白、配体、受体与 RNA 图形，提供名称和颜色编辑器；连同当前机制图标，共 42 个可编辑资产。',features:['与当前机制演示共享 SVG 源文件','18 个通用形状与 24 个机制图标','可下载 SVG、PNG 与锚点目录'],scope:'形态、比例与接触轮廓用于机制教学；部件与来源见图标记录。',url:'icons.html',source:'examples/current-icons.json'},
+  icons: {title:'基础图标：统一胶囊蛋白与 Y/U 受体',type:'默认基础版 · v1.0',description:'14 个基础符号，generic 蛋白统一使用胶囊；Y/U 受体各有单体与二聚体。详细结构域资产可按需查看。',features:['胶囊蛋白与多胶囊复合物','Y/U 单体和 Y/U 二聚体','标签编辑、SVG 与 PNG 下载'],scope:'形状、比例与时间用于机制教学。',url:'icons.html',source:'examples/current-icons.json'},
 };
 const $ = selector => document.querySelector(selector);
 const escapeHTML = text => String(text).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-let selectedDemo = 'tgfb';
+let selectedDemo = 'basic';
 function loadDemo(){
   const demo=demos[selectedDemo];
   $('#demo-stage').replaceChildren(Object.assign(document.createElement('iframe'), {src:demo.url,title:demo.title,loading:'lazy'}));

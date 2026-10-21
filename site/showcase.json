@@ -1,6 +1,7 @@
 {
-  "visual_revision": "0.9",
+  "visual_revision": "1.0",
   "mechanism_demos": [
+    "basic",
     "tgfb",
     "egfr"
   ],
@@ -15,5 +16,6 @@
     "groups",
     "paired",
     "trajectory"
-  ]
+  ],
+  "default_mode": "basic"
 }

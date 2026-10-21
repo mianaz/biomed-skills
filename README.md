@@ -24,7 +24,7 @@ protocols and submission preparation. Version 0.5.0.
 ## Demos and examples
 
 [Open the GitHub Pages demo site](https://mianaz.github.io/biomed-skills/).
-It includes detailed guides for all 14 skills, two current mechanism demos, a curated 42-icon gallery (18 native generic primitives and 24 mechanism assets) and three current plotting
+It includes detailed guides for all 14 skills, three basic mechanism examples (the default), two detailed mechanism demos, and a curated 38-icon gallery (14 basic symbols and 24 detailed assets) and three current plotting
 examples, copyable prompts, teaching data and a downloadable skill bundle.
 Writing and study examples are fictional; literature-based mechanism lessons
 include their sources and reading scope.

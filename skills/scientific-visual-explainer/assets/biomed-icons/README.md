@@ -1,8 +1,8 @@
 # Biomed Icons
 
-A reusable family of flat SVG teaching icons. Collection v0.9 has 160 entries: 118 earlier vector schematics, 24 current generated-and-traced mechanism icons, and 18 native generic primitives. The public current gallery contains the 42 current assets. Earlier schematics remain available for existing consumers. All current additions follow the shared v0.7 palette and flat drawing contract.
+The default is **basic mode**: generic proteins are capsules; Y/U receptors have matching Y/U dimers. [Three complete mechanism figures and animations](../basic-mechanisms/index.html) demonstrate this vocabulary. The [basic symbol editor](generic-primitives/preview.html) offers 14 current symbols. Detailed domain-bearing illustrations are optional.
 
-[Generic shape picker and label editor](generic-primitives/preview.html) include protein nodes, ligand shapes, four receptor symbols, four RNA notations, a bilayer segment and a vesicle. Native sources and PNG previews are included.
+Collection v1.0 contains 162 registered assets, including compatibility artwork. The current public gallery has 14 basic symbols and 24 detailed assets. Six older generic alternatives remain registered as archived; current basic scenes use the capsule protein exclusively.
 
 [PI3K–AKT–mTOR icons and contact preview](pi3k-akt-imagegen/preview.html) include eight original PNGs, editable SVGs, exact prompts and four pairwise assembly models.
 

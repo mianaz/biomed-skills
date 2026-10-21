@@ -1,0 +1,71 @@
+{
+  "states": [
+    {
+      "example": "cascade",
+      "condition": "normal",
+      "phosphorylation_badges": 5,
+      "protein_icon": "generic-protein-capsule",
+      "receptors": [
+        "y"
+      ],
+      "time": "18.00"
+    },
+    {
+      "example": "cascade",
+      "condition": "block",
+      "phosphorylation_badges": 2,
+      "protein_icon": "generic-protein-capsule",
+      "receptors": [
+        "y"
+      ],
+      "time": "18.00"
+    },
+    {
+      "example": "import",
+      "condition": "normal",
+      "phosphorylation_badges": 8,
+      "protein_icon": "generic-protein-capsule",
+      "receptors": [
+        "u"
+      ],
+      "time": "20.00"
+    },
+    {
+      "example": "import",
+      "condition": "block",
+      "phosphorylation_badges": 3,
+      "protein_icon": "generic-protein-capsule",
+      "receptors": [
+        "u"
+      ],
+      "time": "20.00"
+    },
+    {
+      "example": "convergence",
+      "condition": "normal",
+      "phosphorylation_badges": 7,
+      "protein_icon": "generic-protein-capsule",
+      "receptors": [
+        "y",
+        "u"
+      ],
+      "time": "18.00"
+    },
+    {
+      "example": "convergence",
+      "condition": "block",
+      "phosphorylation_badges": 6,
+      "protein_icon": "generic-protein-capsule",
+      "receptors": [
+        "y",
+        "u"
+      ],
+      "time": "18.00"
+    }
+  ],
+  "playback": {
+    "frames": 60,
+    "fps": 60,
+    "time": 1
+  }
+}

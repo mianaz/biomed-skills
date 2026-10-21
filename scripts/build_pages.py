@@ -61,7 +61,7 @@ for stem, title, description in [
 icons_root = ROOT / 'skills/scientific-visual-explainer/assets/biomed-icons'
 icon_catalog = json.loads((icons_root / 'catalog.json').read_text())
 assert icon_catalog['version'] == showcase['visual_revision']
-current_icons = [icon for icon in icon_catalog['icons'] if icon['category'] in showcase['icon_families']]
+current_icons = [icon for icon in icon_catalog['icons'] if icon['category'] in showcase['icon_families'] and icon.get('status') != 'archived']
 current_icons.sort(key=lambda icon: showcase['icon_families'].index(icon['category']))
 icon_cards = []
 for icon in current_icons:
@@ -70,7 +70,7 @@ for icon in current_icons:
     raster = icon['provenance']['source'] if generated else icon['preview']
     raster_label = '原始生成图' if generated else 'PNG 预览'
     anchors = ', '.join(icon['anchors'])
-    icon_cards.append(f"""<article class="current-icon-card"><span class="small-label">{html.escape(icon['category'])} · v{showcase['visual_revision']}</span><h2>{html.escape(icon.get('label_zh', icon['label']))}</h2><span class="skill-id">{html.escape(icon['id'])}</span><div class="icon-comparison"><figure><img loading="lazy" src="{base + raster}" alt="{html.escape(icon['label'])}{raster_label}"><figcaption>{raster_label}</figcaption></figure><figure><img loading="lazy" src="{base + icon['file']}" alt="{html.escape(icon['label'])}当前 SVG"><figcaption>当前可编辑 SVG</figcaption></figure></div><p>{html.escape(icon.get('description_zh', icon.get('description', '')))}</p><details><summary>部件、锚点与适用范围</summary><p>{html.escape(anchors)}</p><p>{html.escape(icon.get('scope', 'Teaching schematic.'))}</p></details><div class="file-links"><a download href="{base + icon['file']}">SVG ↓</a><a download href="{base + raster}">{raster_label} ↓</a><a href="{base + icon['category']}/manifest.json">来源与元数据 ↗</a></div></article>""")
+    icon_cards.append(f"""<article class="current-icon-card" data-mode="{'basic' if icon['category'] == 'generic-primitives' else 'detailed'}"><span class="small-label">{html.escape(icon['category'])} · v{showcase['visual_revision']}</span><h2>{html.escape(icon.get('label_zh', icon['label']))}</h2><span class="skill-id">{html.escape(icon['id'])}</span><div class="icon-comparison"><figure><img loading="lazy" src="{base + raster}" alt="{html.escape(icon['label'])}{raster_label}"><figcaption>{raster_label}</figcaption></figure><figure><img loading="lazy" src="{base + icon['file']}" alt="{html.escape(icon['label'])}当前 SVG"><figcaption>当前可编辑 SVG</figcaption></figure></div><p>{html.escape(icon.get('description_zh', icon.get('description', '')))}</p><details><summary>部件、锚点与适用范围</summary><p>{html.escape(anchors)}</p><p>{html.escape(icon.get('scope', 'Teaching schematic.'))}</p></details><div class="file-links"><a download href="{base + icon['file']}">SVG ↓</a><a download href="{base + raster}">{raster_label} ↓</a><a href="{base + icon['category']}/manifest.json">来源与元数据 ↗</a></div></article>""")
 (OUT / 'examples/current-icons.json').write_text(json.dumps({'version': showcase['visual_revision'], 'icons': current_icons}, ensure_ascii=False, indent=2) + '\n')
 icons_page = (OUT / 'icons.html').read_text().replace('{{VISUAL_REVISION}}', showcase['visual_revision']).replace('{{ICON_COUNT}}', str(len(current_icons))).replace('{{ICON_CARDS}}', ''.join(icon_cards))
 (OUT / 'icons.html').write_text(icons_page)
@@ -89,9 +89,13 @@ with zipfile.ZipFile(OUT / 'downloads/current-examples.zip', 'w', zipfile.ZIP_DE
     assets = ROOT / 'skills/scientific-visual-explainer/assets'
     for name in ['tgfb-generated.html', 'egfr-generated.html', 'tgfb-storyboard.md']:
         bundle.write(assets / name, 'mechanisms/' + name)
+    for source in sorted((assets / 'basic-mechanisms').rglob('*')):
+        if source.is_file():
+            bundle.write(source, 'mechanisms/basic-mechanisms/' + source.relative_to(assets / 'basic-mechanisms').as_posix())
+    archived = {str(icons_root / e[key]) for e in icon_catalog['icons'] if e.get('status') == 'archived' for key in ['file', 'preview']}
     for family in showcase['icon_families']:
         for source in sorted((icons_root / family).rglob('*')):
-            if source.is_file():
+            if source.is_file() and str(source) not in archived:
                 bundle.write(source, 'icons/' + source.relative_to(icons_root).as_posix())
     bundle.writestr('icons/current-icons.json', json.dumps({'version': showcase['visual_revision'], 'icons': current_icons}, ensure_ascii=False, indent=2))
     for source in sorted((ROOT / 'site/examples/tidyplots').iterdir()):
@@ -105,10 +109,12 @@ with zipfile.ZipFile(OUT / 'downloads/current-examples.zip', 'w', zipfile.ZIP_DE
     bundle.writestr('README.md', f"""# Current showcase examples
 
 Mechanism assets: v{showcase['visual_revision']}, continuous contours and unified scene line weights.
-Open mechanisms/tgfb-generated.html or mechanisms/egfr-generated.html directly.
+Default: open mechanisms/basic-mechanisms/index.html for three complete basic figures and animations.
+Detailed-mode examples: mechanisms/tgfb-generated.html and mechanisms/egfr-generated.html.
 The HTML files embed their SVGs, model, runtime and source references.
 icons/ contains the {len(current_icons)} editable SVG assets used by the current showcase,
-including 18 native generic primitives and 24 generated-and-traced mechanism assets.
+including 14 basic symbols and 24 detailed mechanism assets. Generic proteins
+use capsules; Y/U monomers have matching Y/U dimers.
 Native primitives include vector source and PNG previews; generated assets retain
 original PNGs and prompts. Every family includes metadata. Geometry is illustrative.
 Open icons/generic-primitives/preview.html for the generic picker and label editor.

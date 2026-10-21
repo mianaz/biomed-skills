@@ -1,6 +1,6 @@
 ---
 name: scientific-visual-explainer
-description: Explain scientific concepts, reviews and papers with source-linked figures and animated HTML lessons; extend biomedical icon libraries through built-in image generation and editable SVG conversion when needed.
+description: Build scientific mechanism figures and animated HTML lessons. Default to BioRender-referenced basic symbols: capsule proteins, Y/U receptors and matching dimers. Use structural illustration when requested.
 ---
 
 # Scientific Visual Explainer
@@ -44,9 +44,21 @@ For this unified icon family, use BioRender as the single visual reference
 standard. Inspect its actual public example before drawing. Use scientific
 literature separately to check biological structure and mechanism; label
 `visual_references` and `scientific_references` separately in each new manifest.
-For a request to use native open artwork, inspect the requested source first. Choose the asset mode with the user's visual goal:
+Choose the asset mode with the user's visual goal. **Basic mode is the default**
+for mechanism figures and animations. Read [basic-mode.md](references/basic-mode.md)
+and start from the [three complete basic examples](assets/basic-mechanisms/index.html).
 
-- **Native artwork:** preserve the chosen source's proportions, palette and details.
+- **Basic mode (default):** generic proteins use the same capsule symbol, with
+  separate names and state badges. Use Y/U receptors; draw a Y dimer from two Y
+  monomers and a U dimer from two U monomers. Complexes contain multiple capsules.
+  Use native SVG geometry, directional arrows, compartments and simple nucleic
+  acid symbols. Build the complete mechanism figure, then animate that figure.
+- **Detailed mode (on request):** use domain-bearing and structure-informed assets
+  when that detail explains the user's biological question.
+
+For detailed illustration, choose the relevant source route:
+
+- **Native artwork:** inspect the requested source and preserve its proportions, palette and details.
 - **Unified icon family:** use the reusable [Biomed Icons](assets/biomed-icons/README.md)
   first. If no suitable icon exists, use the **built-in image generation tool**,
   convert the result to editable SVG paths, curate parts and anchors, and add it
@@ -56,8 +68,8 @@ For a request to use native open artwork, inspect the requested source first. Ch
 
 Keep a contact sheet and per-asset source/license record. Distinguish reference-
 informed original drawings from adapted source vectors. Preserve recognizable
-biology, compartment topology and useful domain structure. Keep labels outside
-icons and artwork separate from the motion rig. Use anchors and membrane guides
+biology, compartment topology and useful domain structure. Keep labels as separate SVG text; names may be centered inside capsules. Keep
+artwork separate from the motion rig. Use anchors and membrane guides
 to animate registered assets or parts. For icon QC, compare distinguishing structures against a cited scientific figure
 or morphology atlas, and compare clarity/composition against an inspected BioRender
 public example. Record what was visually inspected versus text-only.
@@ -65,7 +77,7 @@ Treat illustration examples as design references, not mechanistic evidence.
 Compare the library contact sheet and actual interaction frames at viewing size; a source-fidelity request still
 requires the original source artwork.
 
-Design binding partners together: their visible contours must fit at the actual
+In detailed physical-contact scenes, design binding partners together: their visible contours must fit at the actual
 assembly scales, like complementary puzzle pieces. Matching anchor points alone
 is insufficient. Preserve one smooth, closed body contour through each contact;
 blend its shoulders with matching tangents. Do not paste separately outlined tabs
