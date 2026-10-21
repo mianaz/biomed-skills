@@ -1,0 +1,339 @@
+{
+  "title": "EGF–EGFR–RAS–RAF–MEK–ERK core cascade",
+  "layout": {
+    "width": 1180,
+    "height": 1090,
+    "pitch": 100,
+    "membraneY": 300,
+    "zones": {
+      "surface": 300,
+      "ligand": 90,
+      "adaptor": 520,
+      "ras": 382.2768539325843,
+      "raf": 570,
+      "mek": 720,
+      "erk": 915
+    }
+  },
+  "entities": [
+    {
+      "id": "r1",
+      "icon": "egfr-ig",
+      "label": "EGFR",
+      "slot": 1.6,
+      "zone": "surface",
+      "row": 0,
+      "scale": 2.8,
+      "surfaceAnchor": "membrane"
+    },
+    {
+      "id": "r2",
+      "icon": "egfr-ig",
+      "label": "EGFR",
+      "slot": 3.3,
+      "zone": "surface",
+      "row": 0,
+      "scale": 2.8,
+      "surfaceAnchor": "membrane",
+      "flipY": true,
+      "angle": 3.141592653589793
+    },
+    {
+      "id": "l1",
+      "icon": "egf-ig",
+      "label": "EGF",
+      "slot": 0.5,
+      "zone": "ligand",
+      "row": 0,
+      "scale": 0.6
+    },
+    {
+      "id": "l2",
+      "icon": "egf-ig",
+      "label": "EGF",
+      "slot": 5.2,
+      "zone": "ligand",
+      "row": 0,
+      "scale": 0.6
+    },
+    {
+      "id": "grb",
+      "icon": "grb2-ig",
+      "label": "GRB2",
+      "slot": 6.9,
+      "zone": "adaptor",
+      "row": 0,
+      "scale": 0.85
+    },
+    {
+      "id": "sos",
+      "icon": "sos1-ig",
+      "label": "SOS1",
+      "slot": 7.5,
+      "zone": "adaptor",
+      "row": 0,
+      "scale": 1.0094841785260673
+    },
+    {
+      "id": "ras",
+      "icon": "ras-ig",
+      "label": "RAS",
+      "slot": 4.3282934303525735,
+      "zone": "ras",
+      "row": 0,
+      "scale": 1.05,
+      "surfaceAnchor": "membrane"
+    },
+    {
+      "id": "raf",
+      "icon": "raf-ig",
+      "label": "RAF1",
+      "slot": 9.3,
+      "zone": "raf",
+      "row": 0,
+      "scale": 1.15
+    },
+    {
+      "id": "mek",
+      "icon": "mek-ig",
+      "label": "MEK1/2",
+      "slot": 6.35,
+      "zone": "mek",
+      "row": 0,
+      "scale": 1.05
+    },
+    {
+      "id": "erk",
+      "icon": "erk-ig",
+      "label": "ERK1/2",
+      "slot": 8.25,
+      "zone": "erk",
+      "row": 0,
+      "scale": 1.05
+    }
+  ],
+  "events": [
+    {
+      "id": "bind-a",
+      "kind": "dock",
+      "actor": "l1",
+      "port": "receptor-contact",
+      "target": "r1",
+      "targetPort": "EGF-binding",
+      "approach": [
+        [
+          135,
+          154
+        ]
+      ],
+      "duration": 4,
+      "title": "EGF 结合",
+      "caption": "每个 EGF 与一个 EGFR 的胞外区域结合；两个配体位于受体对的外侧。",
+      "source": "ogiso"
+    },
+    {
+      "id": "bind-b",
+      "kind": "dock",
+      "actor": "l2",
+      "port": "receptor-contact",
+      "target": "r2",
+      "targetPort": "EGF-binding",
+      "approach": [
+        [
+          550,
+          154
+        ]
+      ],
+      "duration": 4,
+      "title": "第二个 EGF 结合",
+      "caption": "展示配体结合的 2:2 EGF–EGFR 状态。",
+      "source": "ogiso",
+      "silent": true
+    },
+    {
+      "id": "dimer",
+      "kind": "dock",
+      "actor": "r2",
+      "port": "dimer-arm",
+      "target": "r1",
+      "targetPort": "dimer-arm",
+      "after": [
+        "bind-a",
+        "bind-b"
+      ],
+      "duration": 5,
+      "title": "EGFR 二聚",
+      "caption": "胞外 domain II 的二聚化臂使两个受体形成接触。胞内激活依赖非对称激酶二聚体。",
+      "source": "zhang"
+    },
+    {
+      "id": "phospho-a",
+      "kind": "state",
+      "actor": "r1",
+      "target": "r1",
+      "state": "pY",
+      "after": [
+        "dimer"
+      ],
+      "duration": 2,
+      "title": "尾部磷酸化",
+      "caption": "激酶激活与尾部酪氨酸磷酸化建立胞内衔接蛋白的结合位点。",
+      "source": "zhang"
+    },
+    {
+      "id": "phospho-b",
+      "kind": "state",
+      "actor": "r2",
+      "target": "r2",
+      "state": "pY",
+      "after": [
+        "dimer"
+      ],
+      "duration": 2,
+      "title": "尾部磷酸化",
+      "caption": "用代表性 pY 标记表示受体尾部的磷酸化状态。",
+      "source": "zhang",
+      "silent": true
+    },
+    {
+      "id": "recruit",
+      "kind": "dock",
+      "actor": "grb",
+      "port": "SH2",
+      "target": "r1",
+      "targetPort": "pY-tail",
+      "after": [
+        "phospho-a"
+      ],
+      "approach": [
+        [
+          290,
+          600
+        ]
+      ],
+      "duration": 6,
+      "title": "募集 GRB2–SOS1",
+      "caption": "GRB2 的 SH2 接触受体 pY；SH3 携带的 SOS1 随复合物一起到达膜附近。",
+      "source": "grb2"
+    },
+    {
+      "id": "exchange",
+      "kind": "reaction",
+      "actor": "ras",
+      "port": "SOS-contact",
+      "target": "sos",
+      "targetPort": "RAS-exchange",
+      "stateTarget": "ras",
+      "state": "GTP",
+      "after": [
+        "recruit"
+      ],
+      "duration": 6,
+      "title": "RAS 核苷酸交换",
+      "caption": "SOS1 促进 GDP 释放并允许 GTP 结合，增加活性 RAS–GTP。GDP 并未被磷酸化成 GTP。",
+      "source": "sos"
+    },
+    {
+      "id": "raf-recruit",
+      "kind": "dock",
+      "actor": "raf",
+      "port": "RAS-binding",
+      "target": "ras",
+      "targetPort": "RAF-contact",
+      "after": [
+        "exchange"
+      ],
+      "duration": 5,
+      "title": "募集 RAF1",
+      "caption": "RAS–GTP 与 RAF1 的调控区域结合，使 RAF1 到达膜上。",
+      "source": "rasraf"
+    },
+    {
+      "id": "raf-active",
+      "kind": "state",
+      "actor": "raf",
+      "target": "raf",
+      "state": "active",
+      "after": [
+        "raf-recruit"
+      ],
+      "duration": 2,
+      "title": "RAF 激活",
+      "caption": "膜上的 RAF 激活步骤在这里合并表示；RAF 二聚调控及相关辅因子未逐一展开。",
+      "source": "rafreg"
+    },
+    {
+      "id": "mek-p",
+      "kind": "reaction",
+      "actor": "mek",
+      "port": "RAF-substrate",
+      "target": "raf",
+      "targetPort": "MEK-substrate",
+      "stateTarget": "mek",
+      "state": "pS/pS",
+      "after": [
+        "raf-active"
+      ],
+      "duration": 6,
+      "title": "RAF → MEK",
+      "caption": "活性 RAF 磷酸化并激活 MEK；短暂接触结束后，MEK 保留活化状态。",
+      "source": "rafmek"
+    },
+    {
+      "id": "erk-p",
+      "kind": "reaction",
+      "actor": "erk",
+      "port": "MEK-substrate",
+      "target": "mek",
+      "targetPort": "ERK-substrate",
+      "stateTarget": "erk",
+      "state": "pT/pY",
+      "after": [
+        "mek-p"
+      ],
+      "duration": 6,
+      "title": "MEK → ERK",
+      "caption": "MEK 在 ERK 激活环的 Thr 与 Tyr 上磷酸化，完成这条主干级联。",
+      "source": "mekerK"
+    }
+  ],
+  "initialLinks": {
+    "sos": {
+      "port": "GRB2-contact",
+      "target": "grb",
+      "targetPort": "SH3-right"
+    }
+  },
+  "initialStates": {
+    "ras": "GDP"
+  },
+  "scope": "Evidence-linked canonical core. Teaching order, proportions and timing; selected regulation steps are collapsed.",
+  "surfaceEntities": [
+    "r1",
+    "r2",
+    "ras"
+  ],
+  "expectedSOSScale": 1.0094841785260673,
+  "calibratedFinal": {
+    "receptor": [
+      260,
+      270.59790104947524
+    ],
+    "GRB2": [
+      290.76341669590744,
+      468.9586354429169
+    ],
+    "SOS1": [
+      409.4453089207864,
+      426.9924222399233
+    ],
+    "RAS": [
+      532.8293430352574,
+      382.2768539325843
+    ],
+    "RAF1": [
+      525.9057723018237,
+      530.7537078651685
+    ]
+  }
+}

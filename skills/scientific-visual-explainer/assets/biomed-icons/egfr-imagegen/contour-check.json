@@ -1,0 +1,101 @@
+{
+  "method": "Complete closed cubic silhouettes; no contact overlays or cutting clips.",
+  "icons": [
+    {
+      "icon": "egfr-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        61.06462876895327,
+        11.969213268504717,
+        98.75862068965517,
+        148.07112299819465
+      ]
+    },
+    {
+      "icon": "egf-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        12.045949526690507,
+        46.25,
+        149.0132441761997,
+        113.56957466743542
+      ]
+    },
+    {
+      "icon": "grb2-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        11.942410180812322,
+        60.41361058893809,
+        149.11921063133002,
+        99.45788547864078
+      ]
+    },
+    {
+      "icon": "sos1-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        12.64521665221809,
+        17.963792351015123,
+        148.5604199589629,
+        142.05489599655175
+      ]
+    },
+    {
+      "icon": "ras-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        25.637519924987274,
+        12.0,
+        132.25646241481383,
+        148.6561092267933
+      ]
+    },
+    {
+      "icon": "raf-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        42.12920675907712,
+        12.302896481602462,
+        117.875,
+        150.381877599119
+      ]
+    },
+    {
+      "icon": "mek-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        31.67244986570452,
+        11.948559364904071,
+        128.27735856495326,
+        148.21213237777988
+      ]
+    },
+    {
+      "icon": "erk-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        26.141788827728107,
+        12.017021336632853,
+        133.77491956658935,
+        147.94552545552614
+      ]
+    }
+  ]
+}

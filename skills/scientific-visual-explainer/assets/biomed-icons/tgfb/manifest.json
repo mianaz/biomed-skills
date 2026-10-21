@@ -1,0 +1,491 @@
+[
+  {
+    "id": "tgfb-ligand-dimer",
+    "label": "TGFβ ligand dimer",
+    "label_zh": "TGFβ配体二聚体",
+    "file": "tgfb/tgfb-ligand-dimer.svg",
+    "category": "tgfb",
+    "description": "Mature TGFβ-family ligand dimer with paired cystine-knot subunits joined across a central disulfide interface.",
+    "parts": [
+      "cystine-knot-subunit-a",
+      "cystine-knot-subunit-b",
+      "interchain-disulfide-interface"
+    ],
+    "anchors": {
+      "type-ii-receptor-contact-a": {
+        "point": [
+          20,
+          50
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "type-ii-receptor-contact-b": {
+        "point": [
+          140,
+          50
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Mature TGFβ1-like homodimer cartoon; propeptide and latent-complex partners are omitted.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/tgf-beta-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800142/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4485443/"
+      ]
+    }
+  },
+  {
+    "id": "tgfbr1",
+    "label": "TGFβ receptor I (ALK5)",
+    "label_zh": "TGFβ受体I",
+    "file": "tgfb/tgfbr1.svg",
+    "category": "tgfb",
+    "description": "Single-pass type I receptor with a disulfide-rich ectodomain, membrane-proximal GS regulatory segment and bilobal serine/threonine kinase.",
+    "parts": [
+      "membrane",
+      "ligand-binding-ectodomain",
+      "transmembrane-helix",
+      "gs-regulatory-segment",
+      "kinase-n-lobe",
+      "kinase-c-lobe"
+    ],
+    "anchors": {
+      "ligand-receptor-interface": {
+        "point": [
+          90,
+          22
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "type-ii-gs-phosphorylation-site": {
+        "point": [
+          89,
+          101
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "smad-recruitment-surface": {
+        "point": [
+          127,
+          122
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "TGFβRI/ALK5 topology is schematic; ectodomain dimensions and kinase-lobe geometry are not atomic.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/tgf-beta-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800142/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4485443/"
+      ]
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "tgfbr2",
+    "label": "TGFβ receptor II",
+    "label_zh": "TGFβ受体II",
+    "file": "tgfb/tgfbr2.svg",
+    "category": "tgfb",
+    "description": "Single-pass type II receptor with an expanded ligand-binding ectodomain and constitutively active bilobal receptor kinase.",
+    "parts": [
+      "membrane",
+      "ligand-binding-ectodomain",
+      "transmembrane-helix",
+      "juxtamembrane-linker",
+      "kinase-n-lobe",
+      "kinase-c-lobe"
+    ],
+    "anchors": {
+      "ligand-binding-face": {
+        "point": [
+          80,
+          16
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "type-i-receptor-phosphorylation-face": {
+        "point": [
+          127,
+          128
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Representative TGFβRII topology; the receptor complex contains two type II and two type I chains, not shown here.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/tgf-beta-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800142/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4485443/"
+      ]
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "smad2",
+    "label": "SMAD2",
+    "label_zh": "SMAD2",
+    "file": "tgfb/smad2.svg",
+    "category": "tgfb",
+    "description": "Receptor-regulated SMAD with MH1, flexible linker and MH2 domains; full-length SMAD2 contains the exon-3 insertion that interrupts the DNA-binding β-hairpin.",
+    "parts": [
+      "mh1-domain",
+      "exon-3-insert-loop",
+      "proline-rich-linker",
+      "mh2-domain",
+      "c-terminal-ssxs-motif"
+    ],
+    "anchors": {
+      "receptor-activated-mh2-surface": {
+        "point": [
+          88,
+          82
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "smad4-mh2-interface": {
+        "point": [
+          137,
+          81
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "c-terminal-phosphorylation-motif": {
+        "point": [
+          125,
+          137
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Full-length SMAD2 schematic: exon-3 insertion is shown as a cap over the MH1 β-hairpin; short SMAD2Δexon3 is not represented.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/tgf-beta-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800142/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4485443/"
+      ]
+    }
+  },
+  {
+    "id": "smad3",
+    "label": "SMAD3",
+    "label_zh": "SMAD3",
+    "file": "tgfb/smad3.svg",
+    "category": "tgfb",
+    "description": "Receptor-regulated SMAD with an exposed MH1 DNA-binding β-hairpin, flexible regulatory linker, MH2 partner-binding domain and C-terminal SSXS motif.",
+    "parts": [
+      "mh1-domain",
+      "dna-binding-beta-hairpin",
+      "proline-rich-linker",
+      "mh2-domain",
+      "c-terminal-ssxs-motif"
+    ],
+    "anchors": {
+      "mh1-dna-binding-face": {
+        "point": [
+          24,
+          61
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "smad4-mh2-interface": {
+        "point": [
+          137,
+          81
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "c-terminal-phosphorylation-motif": {
+        "point": [
+          125,
+          137
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "SMAD3 domain architecture and DNA-binding hairpin are schematic; no phosphorylation or oligomeric state is implied.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/tgf-beta-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800142/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4485443/"
+      ]
+    }
+  },
+  {
+    "id": "smad4",
+    "label": "SMAD4",
+    "label_zh": "SMAD4",
+    "file": "tgfb/smad4.svg",
+    "category": "tgfb",
+    "description": "Common-mediator SMAD with an N-terminal DNA-binding MH1 domain, linker, transcriptionally active MH2 partner-binding domain and no R-SMAD SSXS activation tail.",
+    "parts": [
+      "mh1-domain",
+      "dna-binding-beta-hairpin",
+      "linker-activation-region",
+      "mh2-domain"
+    ],
+    "anchors": {
+      "mh1-dna-binding-face": {
+        "point": [
+          24,
+          61
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "r-smad-mh2-interface": {
+        "point": [
+          137,
+          81
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "transcriptional-cofactor-face": {
+        "point": [
+          120,
+          108
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "SMAD4 lacks the receptor-regulated C-terminal SSXS motif; the domain cartoon does not imply a specific DNA-bound complex.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/tgf-beta-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800142/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4485443/"
+      ]
+    }
+  },
+  {
+    "id": "smad7",
+    "label": "SMAD7",
+    "label_zh": "SMAD7",
+    "file": "tgfb/smad7.svg",
+    "category": "tgfb",
+    "description": "Inhibitory SMAD with an extended N-terminal PPXY motif-bearing region and a C-terminal MH2 domain that docks on activated type I receptors.",
+    "parts": [
+      "n-terminal-regulatory-tail",
+      "ppxy-smurf-docking-motif",
+      "mh2-domain"
+    ],
+    "anchors": {
+      "smurf-ww-ppxy-interface": {
+        "point": [
+          38,
+          55
+        ],
+        "normal": [
+          -0.45,
+          -0.893
+        ],
+        "kind": "binding"
+      },
+      "type-i-receptor-mh2-interface": {
+        "point": [
+          138,
+          83
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Inhibitory SMAD schematic emphasizes the extended PPXY-bearing N terminus and receptor-binding MH2 domain.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/tgf-beta-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800142/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4485443/"
+      ]
+    }
+  },
+  {
+    "id": "smurf2",
+    "label": "SMURF2",
+    "label_zh": "SMURF2",
+    "file": "tgfb/smurf2.svg",
+    "category": "tgfb",
+    "description": "HECT-type E3 ubiquitin ligase with an N-terminal C2 membrane-association domain, two PPXY-reading WW domains and a C-terminal bilobal HECT catalytic domain.",
+    "parts": [
+      "c2-domain",
+      "ww-domain-1",
+      "ww-domain-2",
+      "hect-n-lobe",
+      "hect-c-lobe",
+      "catalytic-cysteine"
+    ],
+    "anchors": {
+      "smad7-ppxy-ww-interface": {
+        "point": [
+          68,
+          43
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "hect-ubiquitin-transfer-face": {
+        "point": [
+          141,
+          104
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "c2-membrane-face": {
+        "point": [
+          20,
+          44
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Smurf2-like C2–WW–HECT domain architecture; catalytic Cys location is schematic and no reaction state is encoded.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/tgf-beta-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6800142/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4485443/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": [
+    {
+      "id": "tgfb1-ig",
+      "prompt": "Use case: scientific-educational. Create ONE original flat biomedical mechanism icon: mature TGF-beta1 ligand HOMODIMER, two smooth elongated cystine-knot finger-like subunits arranged as a symmetric horizontal butterfly pair joined in the middle. Broad simple organic lobes, approximately horizontal dumbbell, recognizable two-subunit form. SINGLE isolated object, centered, generous transparent padding. Style: polished minimal biomedical educational vector-like icon, like a clean publication pathway figure. Uniform thin dark slate outline #3D5963, solid warm gold #E4BE78 subunit and pale mint #B3D7CC alternate subunit, at most these colors. Front orthographic view. Preserve broad accessible left and right outside tips for later receptor contacts. No membrane. No text, letters, arrows, circles, highlights, gradients, shadows, texture, 3D or other objects. Transparent background, true alpha."
+    },
+    {
+      "id": "tgfbr2-ig",
+      "prompt": "Use case: scientific-educational. ONE isolated TGF-beta type II receptor, upright single-pass membrane receptor icon. A small rounded cysteine-rich extracellular globular domain at top, narrow straight transmembrane stalk in middle, one larger BILOBAL cytoplasmic serine/threonine kinase domain at bottom. Clearly just one extracellular domain and one connected bilobal kinase, no membrane drawn, no GS band. Overall slender vertical silhouette. Top extracellular lobe has an accessible shallow concave upper contact; kinase has a broad accessible right facing outer edge. Shared minimal biomedical family style: smooth rounded organic contour, thin uniform #3D5963 outline, solid flat teal #69ADB5 extracellular domain and stalk, pale purple #B2A6CD two kinase lobes. 2D front view, no perspective, shading, gradients, highlights, shadows, texture, text, arrows or badges. Generous padding, centered, truly transparent background."
+    },
+    {
+      "id": "tgfbr1-ig",
+      "prompt": "Use case: scientific-educational. ONE isolated TGF-beta type I receptor ALK5 upright single-pass membrane receptor icon. A SMALL rounded cysteine-rich extracellular globular domain at top, narrow straight transmembrane stalk in middle, a small gold GS regulatory band directly below the transmembrane stalk, then one larger connected BILOBAL cytoplasmic serine/threonine kinase domain at bottom. One top extracellular domain, one stalk, one bilobal kinase, no membrane drawn. Slender vertical silhouette. Exposed left-facing side of GS band for type-II receptor activation; broad right facing edge of bottom kinase for SMAD substrate contact. Shared minimal biomedical family style: smooth rounded organic contour, thin uniform dark slate #3D5963 outline, solid teal #69ADB5 extracellular domain and stalk, gold #E4BE78 GS band, pale purple #B2A6CD kinase lobes. 2D flat front view. No gradients, highlights, shadows, texture, 3D, text, arrows or badges. Generous padding, centered, truly transparent background."
+    },
+    {
+      "id": "smad3-ig",
+      "prompt": "Use case: scientific-educational. ONE isolated full-length SMAD3 protein cartoon for a flat molecular mechanism figure. Upright compact vertical protein with a small rounded MH1 domain on top, a SHORT visibly curved thin linker, and a larger broad rounded MH2 domain below. MH2 has exposed smooth LEFT and RIGHT lateral faces for assembling with other SMAD proteins. A tiny gold short C-terminal SSXS tail projects from bottom of MH2. Single continuous connected protein; no separate free pieces. MH1 teal #69ADB5, linker dark slate, MH2 pale purple #B2A6CD, tail gold #E4BE78. Clean uniform thin #3D5963 outline. Flat solid vector-like fills, broad simple curves, generous transparent padding. No text, letters, P circles, arrows, DNA, membrane, shading, glow, translucent halos, shadows, gradients, highlights, 3D or texture. Strictly hard transparent outside boundary; no colored pixels beyond the dark contour."
+    },
+    {
+      "id": "smad4-ig",
+      "prompt": "Use case: scientific-educational. ONE isolated full-length SMAD4 co-SMAD protein cartoon for a flat molecular mechanism figure, consistent with a SMAD3 family icon. Upright compact vertical connected protein: small rounded MH1 domain on top, short flexible curved linker, larger broad rounded MH2 domain below. MH2 has TWO accessible lateral binding surfaces, left and right, for a pair of phosphorylated R-SMAD molecules. One connected object, visibly two domains, no terminal SSXS phosphorylation tail. MH1 pale mint #B3D7CC, MH2 teal #69ADB5, linker dark slate #3D5963. Clean uniform thin #3D5963 outline. Flat SOLID vector-like fills, broad simple curves, generous transparent padding. No text, letters, P circles, arrows, DNA, membrane, shading, glow, halos, shadows, gradients, highlights, 3D or texture. Strictly transparent beyond contour."
+    },
+    {
+      "id": "smad2-ig",
+      "prompt": "Use case: scientific-educational. ONE isolated full-length SMAD2 protein cartoon for a flat molecular mechanism icon library. Upright compact vertical connected protein, small rounded MH1 domain on top with a tiny rounded insertion lobe on its side to distinguish SMAD2 from SMAD3, SHORT thin flexible linker, larger rounded MH2 domain below with smooth accessible left and right side binding surfaces. Small short gold C-terminal SSXS tail projects downward from MH2. Single continuous connected protein; no free pieces. MH1 pale teal #D7E8EC, linker dark slate, MH2 pale purple #B2A6CD, tail gold #E4BE78. Uniform thin #3D5963 outline; solid flat vector-like fills, smooth broad curves, generous padding. No text, arrows, P marks, DNA, other objects, 3D, shading, glow, halo, shadows, gradients, highlights or texture. Transparent background."
+    },
+    {
+      "id": "smad3-ig",
+      "action": "style-simplification",
+      "prompt": "Edit target Image 1 (SMAD3). Image 2 is STYLE REFERENCE ONLY (simple mechanism icon), not a second target. SIMPLIFY Image 1 completely into a sparse protein DOMAIN CARTOON matching Image 2. Keep upright architecture small upper MH1 domain, short thin curved connector, larger lower MH2 domain, tiny gold terminal tail. Replace ALL internal helix, ribbon, sheet, arrow and loop drawings inside both domains with a SINGLE SOLID SMOOTH ORGANIC LOBE PER DOMAIN. Upper lobe teal #69ADB5, lower lobe lavender #B2A6CD, tiny terminal tail gold #E4BE78. Each domain is a flat blank bean-shaped silhouette outlined in #3D5963 with no interior marks. Lower domain is smooth and broad with exposed left and right contours for later fitting. Make the connector short, about 15% of the total height. Preserve genuinely transparent background. Remove glow and halos. No text, P badges, shadows, gradients, texture or arrows. The result must read clearly at 64px. Whole icon with margin."
+    },
+    {
+      "id": "smad2-ig",
+      "action": "style-simplification",
+      "prompt": "Edit Image 1 (SMAD2 target) into the SAME SIMPLE FLAT DOMAIN-SILHOUETTE LANGUAGE as Image 2 (accepted SMAD3 style reference, preserve it only as reference). Remove all ribbon/helix/sheet/loop interior drawings from Image 1. Replace each domain by one blank rounded organic lobe: small upper MH1 in pale teal #D7E8EC, a tiny rounded side insertion on that upper lobe that distinguishes SMAD2, short thin curved connector, larger lower MH2 in pale lavender #B2A6CD, tiny gold #E4BE78 C-terminal tail below. Keep a clearly connected two-domain molecule. Uniform thin outline #3D5963. Solid flat fills only, transparent outside the outer contour, no glow or halo. No letters, arrows, P badges or extra objects. Sparse and readable at 64px; generous margin."
+    }
+  ]
+}

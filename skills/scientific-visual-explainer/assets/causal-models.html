@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Same observations. Different mechanisms.</title>
+<style>
+  @font-face { font-family:"CMU Serif"; src:url("fonts/cmunrm.woff") format("woff"); }
+  :root { color-scheme: dark; --bg:#000000; --ink:#edf3fb; --muted:#b6c3d6; --blue:#76c8ff; --gold:#ffd27a; --green:#81e3c1; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:22px/1.5 "CMU Serif",serif; }
+  main { max-width:1060px; padding:40px 28px; margin:auto; }
+  h1 { font-size:clamp(32px,5vw,52px); line-height:1.12; letter-spacing:-1px; margin:12px 0 20px; max-width:800px; }
+  h2 { font-size:27px; font-weight:400; line-height:1.3; margin:0 0 10px; }
+  p { margin:8px 0 18px; }
+  .eyebrow { font-size:15px; letter-spacing:2px; color:var(--green); text-transform:uppercase; }
+  .intro { max-width:760px; color:var(--muted); }
+  nav { display:flex; gap:10px; flex-wrap:wrap; margin:30px 0 22px; }
+  button { background:#202b3c; color:var(--ink); border:1px solid #64748b; border-radius:8px; padding:10px 16px; font:inherit; cursor:pointer; }
+  button[aria-pressed="true"] { background:var(--ink); color:var(--bg); border-color:var(--ink); }
+  :focus-visible { outline:3px solid var(--gold); outline-offset:4px; }
+  .question { padding:20px 24px; border-left:3px solid var(--gold); background:transparent; margin-bottom:24px; }
+  .question p { margin:6px 0 0; }
+  .models { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  article { padding:24px; border:0; border-radius:0; background:transparent; }
+  .model-label { color:var(--muted); font-size:16px; margin-bottom:8px; }
+  svg { display:block; width:100%; max-width:360px; margin:8px auto 20px; overflow:visible; }
+  svg text { fill:var(--ink); font:22px "CMU Serif",serif; text-anchor:middle; }
+  svg .node { fill:#000; stroke:#8292ad; stroke-width:1.5; }
+  svg .signal { stroke:var(--blue); } svg .marker { stroke:var(--gold); } svg .outcome { stroke:var(--green); }
+  .edge { fill:none; stroke:#c0cee0; stroke-width:2; marker-end:url(#arrow); }
+  .cut { opacity:.22; stroke-dasharray:5 5; }
+  .bar-track { height:12px; border-radius:6px; background:#354154; overflow:hidden; }
+  .bar { height:100%; background:var(--green); width:60%; transition:width .5s ease; }
+  .readout { display:flex; justify-content:space-between; gap:12px; margin:0 0 10px; font-size:18px; }
+  .readout strong { color:var(--green); }
+  .baseline { color:var(--muted); font-size:16px; margin:12px 0 0; }
+  .controls { padding:24px 0; display:flex; flex-wrap:wrap; gap:20px 32px; align-items:center; }
+  .slider { flex:1 1 320px; } input[type="range"] { width:100%; margin:16px 0 0; accent-color:var(--blue); }
+  .toggle { display:flex; align-items:center; gap:12px; } input[type="checkbox"] { width:24px; height:24px; accent-color:var(--gold); }
+  .insight { border-top:1px solid #445168; padding-top:22px; min-height:130px; }
+  .insight strong { color:var(--gold); }
+  details { border-top:1px solid #445168; padding:18px 0; }
+  summary { cursor:pointer; font-weight:bold; } details p, details li { color:var(--muted); }
+  a { color:var(--blue); } code { font-size:17px; color:var(--ink); }
+  footer { margin-top:20px; color:var(--muted); font-size:15px; }
+  @media(max-width:700px) { main { padding:24px 18px; } .models { grid-template-columns:1fr; } article { padding:20px; } }
+  @media(prefers-reduced-motion:reduce) { .bar { transition:none; } }
+</style>
+<main>
+  <div class="eyebrow">A visual lesson · illustrative models</div>
+  <h1>Same observations.<br>Different mechanisms.</h1>
+  <p class="intro">A marker and an outcome always appear together. Does the marker drive the outcome? Build two explanations, then change one thing.</p>
+  <nav aria-label="Lesson steps">
+    <button data-step="0" aria-pressed="true">1 · Observe</button>
+    <button data-step="1" aria-pressed="false">2 · Intervene</button>
+    <button data-step="2" aria-pressed="false">3 · Explain</button>
+  </nav>
+  <section class="question" aria-live="polite">
+    <h2 id="question">Can the observations choose a model?</h2>
+    <p id="prompt">Both models produce the same marker–outcome pairs. Predict what happens if we force the marker off.</p>
+  </section>
+  <div class="models">
+    <article>
+      <div class="model-label">MODEL A · A CHAIN</div>
+      <h2>The marker transmits the signal</h2>
+      <svg viewBox="0 0 320 220" role="img" aria-labelledby="chain-title chain-desc">
+        <title id="chain-title">Signal to marker to outcome</title>
+        <desc id="chain-desc">An assumed causal chain. Setting the marker off blocks the only path to the outcome.</desc>
+        <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c0cee0"/></marker></defs>
+        <path class="edge incoming" d="M160 51V85"/>
+        <path class="edge" d="M160 129V165"/>
+        <rect class="node signal" x="96" y="7" width="128" height="44" rx="9"/><text x="160" y="35">Signal U</text>
+        <rect class="node marker" x="96" y="85" width="128" height="44" rx="9"/><text class="marker-text" x="160" y="113">Marker X</text>
+        <rect class="node outcome" x="96" y="165" width="128" height="44" rx="9"/><text x="160" y="193">Outcome Y</text>
+      </svg>
+      <div class="readout"><span>Outcome active</span><strong id="chain-value">60%</strong></div>
+      <div class="bar-track"><div class="bar" id="chain-bar"></div></div>
+      <p class="baseline">Observation baseline: <span class="base-value">60%</span></p>
+    </article>
+    <article>
+      <div class="model-label">MODEL B · A SHARED CAUSE</div>
+      <h2>The signal drives both</h2>
+      <svg viewBox="0 0 320 220" role="img" aria-labelledby="fork-title fork-desc">
+        <title id="fork-title">Signal to marker and signal to outcome</title>
+        <desc id="fork-desc">An assumed common cause. Setting the marker off leaves the direct signal to outcome path intact.</desc>
+        <path class="edge incoming" d="M139 51L71 163"/>
+        <path class="edge" d="M181 51L249 163"/>
+        <rect class="node signal" x="96" y="7" width="128" height="44" rx="9"/><text x="160" y="35">Signal U</text>
+        <rect class="node marker" x="5" y="165" width="128" height="44" rx="9"/><text class="marker-text" x="69" y="193">Marker X</text>
+        <rect class="node outcome" x="187" y="165" width="128" height="44" rx="9"/><text x="251" y="193">Outcome Y</text>
+      </svg>
+      <div class="readout"><span>Outcome active</span><strong id="fork-value">60%</strong></div>
+      <div class="bar-track"><div class="bar" id="fork-bar"></div></div>
+      <p class="baseline">Observation baseline: <span class="base-value">60%</span></p>
+    </article>
+  </div>
+  <div class="controls">
+    <div class="slider">
+      <label for="prevalence">Fraction with signal U active: <strong id="prevalence-value">60%</strong></label>
+      <input id="prevalence" type="range" min="0" max="100" step="5" value="60">
+    </div>
+    <label class="toggle"><input id="intervention" type="checkbox">Force marker X off</label>
+    <button id="reset">Reset</button>
+  </div>
+  <section class="insight" aria-live="polite">
+    <h2 id="takeaway-title">A perfect match is not a unique explanation.</h2>
+    <p id="takeaway">In both models, X and Y equal U during observation. Change the fraction above: the models keep matching.</p>
+  </section>
+  <details>
+    <summary>The model behind the picture</summary>
+    <p>These are deterministic binary teaching models. Every variable is either 0 (off) or 1 (on). The slider sets p, the fraction with U = 1. All percentages are calculated expectations, not study results. Arrows denote causal assumptions within each toy model.</p>
+    <ul>
+      <li>Model A: <code>X = U; Y = X</code>.</li>
+      <li>Model B: <code>X = U; Y = U</code>.</li>
+      <li>Observation in either model: <code>P(Y = 1) = p</code>.</li>
+      <li>Intervention replaces the equation for X with <code>X = 0</code>. It leaves U unchanged. Then <code>P(Y = 1) = 0</code> in A and <code>P(Y = 1) = p</code> in B.</li>
+    </ul>
+    <p>For 0 &lt; p &lt; 1, X and Y are perfectly correlated during observation. At p = 0 or p = 1, correlation is undefined because there is no variation. At p = 0, this intervention cannot distinguish the two models.</p>
+  </details>
+  <details>
+    <summary>Connect the lesson to an experiment</summary>
+    <p>This ideal intervention changes X alone. A real perturbation may have incomplete action, off-target effects, feedback or additional routes to Y. Controls and context determine which explanation an experiment can support. The diagram does not establish a mechanism in a biological system.</p>
+  </details>
+  <details>
+    <summary>Sources and reading scope</summary>
+    <p>This original example follows the intervention-as-equation-replacement account in Judea Pearl, <a href="https://escholarship.org/content/qt36w8n7pg/qt36w8n7pg.pdf#page=12">Causal inference in statistics: An overview</a> (2009). Reading scope: section 3.2.1, pp. 107–109, equations 5–7. The binary models, layout and values here were created for teaching. No paper figures or experimental data are reproduced.</p>
+    <p>The teaching sequence is inspired by <a href="https://www.3blue1brown.com/about/">3Blue1Brown's visual teaching principles</a>. This is an independent example for the Scientific Visual Explainer skill.</p>
+  </details>
+  <noscript><p>Enable JavaScript to use the controls. The diagrams show the baseline: both models predict 60%. Forcing X off gives 0% in A and 60% in B.</p></noscript>
+  <footer>Scientific Visual Explainer · editable HTML + SVG · no external assets</footer>
+</main>
+<script>
+  const slider = document.querySelector('#prevalence');
+  const intervention = document.querySelector('#intervention');
+  const steps = [...document.querySelectorAll('[data-step]')];
+  let step = 0;
+  const questions = ['Can the observations choose a model?', 'What changes when we force X off?', 'What did the intervention add?'];
+  const prompts = [
+    'Both models produce the same marker–outcome pairs. Predict what happens if we force the marker off.',
+    'The intervention cuts the input to X. In which model can the signal still reach Y?',
+    'We created a comparison for which these two models make different predictions. Toggle the intervention to compare.'
+  ];
+  function draw() {
+    const p = Number(slider.value);
+    const forced = intervention.checked;
+    const a = forced ? 0 : p;
+    document.querySelector('#prevalence-value').textContent = p + '%';
+    document.querySelector('#chain-value').textContent = a + '%';
+    document.querySelector('#fork-value').textContent = p + '%';
+    document.querySelector('#chain-bar').style.width = a + '%';
+    document.querySelector('#fork-bar').style.width = p + '%';
+    document.querySelectorAll('.base-value').forEach(el => el.textContent = p + '%');
+    document.querySelectorAll('.incoming').forEach(el => el.classList.toggle('cut', forced));
+    document.querySelectorAll('.marker-text').forEach(el => el.textContent = forced ? 'X forced off' : 'Marker X');
+    steps.forEach((button, i) => button.setAttribute('aria-pressed', i === step));
+    document.querySelector('#question').textContent = questions[step];
+    document.querySelector('#prompt').textContent = prompts[step];
+    document.querySelector('#takeaway-title').textContent = forced && p > 0 ? 'Same observations. Different intervention predictions.' : 'A perfect match is not a unique explanation.';
+    document.querySelector('#takeaway').textContent = p === 0
+      ? 'With no active upstream signal, both outcomes stay off. This setting cannot separate the two models. Increase the signal fraction.'
+      : forced
+        ? `Model A falls from ${p}% to 0%. Model B stays at ${p}%. Under these assumptions, changing X reveals a difference that observing X could not.`
+        : 'In both models, X and Y equal U during observation. Change the fraction above: the models keep matching.';
+  }
+  steps.forEach((button, i) => button.addEventListener('click', () => { step = i; intervention.checked = i > 0; draw(); }));
+  slider.addEventListener('input', draw);
+  intervention.addEventListener('change', draw);
+  document.querySelector('#reset').addEventListener('click', () => { slider.value = 60; intervention.checked = false; step = 0; draw(); });
+  draw();
+</script>
+</html>

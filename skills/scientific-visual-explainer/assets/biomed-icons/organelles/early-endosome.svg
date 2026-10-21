@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="early-endosome" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="early-endosome-tubules" data-part="tubules">
+      <g stroke-width="10">
+        <path d="M48 54 C39 46 31 38 22 27 M111 55 C123 49 132 43 141 31 M46 103 C37 110 29 117 24 131 M112 104 C123 111 130 119 136 132"/>
+      </g>
+      <g stroke="#69ADB5" stroke-width="7">
+        <path d="M48 54 C39 46 31 38 22 27 M111 55 C123 49 132 43 141 31 M46 103 C37 110 29 117 24 131 M112 104 C123 111 130 119 136 132"/>
+      </g>
+      <g stroke="#EDF5F1" stroke-width="2">
+        <path d="M48 54 C39 46 31 38 22 27 M111 55 C123 49 132 43 141 31 M46 103 C37 110 29 117 24 131 M112 104 C123 111 130 119 136 132"/>
+      </g>
+    </g>
+    <g id="early-endosome-sorting-compartment" data-part="sorting-compartment">
+      <path d="M39 78 C38 58 52 44 72 41 C91 37 112 46 120 62 C128 77 122 98 109 110 C96 122 73 123 55 113 C44 106 39 93 39 78 Z" fill="#B3D7CC"/>
+      <path d="M47 78 C47 62 58 52 74 50 C90 47 106 54 112 66 C118 79 113 95 103 105 C92 114 75 115 61 108 C51 103 47 91 47 78 Z" fill="#EDF5F1" stroke="#69ADB5" stroke-width="1.6"/>
+    </g>
+    <g id="early-endosome-sorting-cargo" data-part="sorting-cargo" fill="#E4BE78" stroke-width="1.5">
+      <circle cx="64" cy="71" r="4"/><circle cx="81" cy="61" r="3.5"/><circle cx="99" cy="76" r="4"/>
+      <circle cx="67" cy="94" r="3.5"/><circle cx="91" cy="99" r="4"/>
+    </g>
+  </g>
+</svg>

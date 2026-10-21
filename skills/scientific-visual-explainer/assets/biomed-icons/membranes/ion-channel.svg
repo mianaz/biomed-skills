@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="ion-channel-membrane" data-part="membrane" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M24 91 C52 87 108 87 136 91 L136 112 C108 116 52 116 24 112 Z"/>
+</g>
+<g id="ion-channel-protein" data-part="channel-protein" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M55 42 C63 35 71 40 75 50 C78 58 77 68 77 76 L77 114 C72 123 61 125 53 120 C44 112 43 100 46 87 C43 72 44 55 55 42 Z"/>
+  <path d="M105 42 C97 35 89 40 85 50 C82 58 83 68 83 76 L83 114 C88 123 99 125 107 120 C116 112 117 100 114 87 C117 72 116 55 105 42 Z"/>
+</g>
+<g id="ion-channel-pore" data-part="pore" fill="#FFFFFF" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M75 48 C77 43 83 43 85 48 L85 112 C85 118 75 118 75 112 Z"/>
+</g>
+<g id="ion-channel-ions" data-part="ions" fill="#E4BE78" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="80" cy="63" r="4"/><circle cx="80" cy="81" r="4"/><circle cx="80" cy="99" r="4"/>
+</g>
+</svg>

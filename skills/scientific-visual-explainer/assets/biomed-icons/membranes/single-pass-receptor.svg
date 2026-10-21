@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="single-pass-receptor-membrane" data-part="membrane-context" fill="#D7E8EC" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M23 98 C53 93 107 93 137 98 L137 118 C106 123 54 123 23 118 Z"/>
+</g>
+<g id="single-pass-receptor-body" data-part="body" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M26 58 C22 48 27 34 38 27 C49 20 62 22 69 30 C73 36 76 36 80 36 C84 36 87 36 91 30 C98 22 111 20 122 27 C133 34 138 48 134 58 C130 70 119 75 102 78 C95 79 91 84 91 92 L91 122 C91 128 86 132 80 132 C74 132 69 128 69 122 L69 92 C69 84 65 79 58 78 C41 75 30 70 26 58 Z"/>
+</g>
+<g id="single-pass-receptor-tail" data-part="tail" fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M80 131 C75 136 84 139 80 145"/>
+</g>
+</svg>

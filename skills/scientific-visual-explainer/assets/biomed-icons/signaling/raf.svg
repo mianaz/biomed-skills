@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="raf-ras-binding-domain" data-part="ras-binding-domain"><path d="M17 41 C16 29 25 20 37 20 C49 18 58 27 56 39 C63 49 57 61 46 64 C35 70 23 63 21 55 C17 51 16 46 17 41 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M27 35 C34 28 44 31 47 38 C50 44 46 49 41 52" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="raf-cysteine-rich-domain" data-part="cysteine-rich-domain"><path d="M61 37 C67 28 78 28 84 36 C90 43 87 54 79 58 C72 63 63 58 61 51 Z" fill="#D7E8EC" stroke-width="2.5"/><path d="M68 40 L78 50 M78 39 L68 51" fill="none" stroke-width="1.5"/></g>
+<g id="raf-linker" data-part="linker"><path d="M54 43 C57 49 59 51 64 51" fill="none" stroke-width="8"/><path d="M54 43 C57 49 59 51 64 51" fill="none" stroke="#69ADB5" stroke-width="4.5"/></g>
+<g id="raf-kinase-n-lobe" data-part="kinase-n-lobe"><path d="M36 84 C33 72 41 61 53 59 C67 54 81 59 87 69 C94 80 90 92 81 98 C68 104 51 100 42 96 C38 94 36 89 36 84 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M48 73 C56 65 67 67 71 75 C74 81 70 86 65 89" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="raf-kinase-c-lobe" data-part="kinase-c-lobe"><path d="M52 103 C65 98 82 100 94 106 C107 113 115 126 117 141 C105 149 86 146 72 141 C60 136 53 122 52 103 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M70 113 C79 107 90 111 94 119 C97 126 92 132 86 135" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="raf-activation-loop" data-part="activation-loop"><path d="M84 99 C93 94 102 97 105 104" fill="none" stroke="#E4BE78" stroke-width="5"/></g>
+</svg>

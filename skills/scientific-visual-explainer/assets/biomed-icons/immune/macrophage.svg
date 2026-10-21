@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="macrophage" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <g id="macrophage-cell-body" data-part="cell-body">
+    <path d="M29 76 C24 65 34 56 46 60 C47 48 61 39 76 45 C87 35 103 41 110 49 C126 44 138 57 132 70 C145 76 144 91 134 100 C136 114 120 124 105 119 C95 131 77 129 68 121 C53 126 40 117 42 106 C29 102 22 91 29 76 Z" fill="#B3D7CC"/>
+  </g>
+  <g id="macrophage-nucleus" data-part="nucleus">
+    <path d="M54 73 C59 63 71 60 82 64 C91 67 97 74 93 82 C90 89 81 88 75 84 C68 80 63 84 62 91 C61 98 52 99 48 92 C44 85 47 78 54 73 Z" fill="#69ADB5"/>
+  </g>
+  <g id="macrophage-phagosome" data-part="phagosome">
+    <ellipse cx="113" cy="88" rx="11" ry="14" fill="#E4BE78"/>
+    <circle cx="113" cy="88" r="4" fill="#EDF5F1" stroke="#3D5963" stroke-width="1.5"/>
+  </g>
+  </g>
+</svg>

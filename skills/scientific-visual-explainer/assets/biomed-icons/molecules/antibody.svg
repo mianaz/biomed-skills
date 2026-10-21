@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="antibody-heavy-chains" data-part="heavy-chains">
+<path d="M80 133 L80 98 C69 87 52 69 36 50" fill="none" stroke-width="25"/>
+<path d="M80 133 L80 98 C91 87 108 69 124 50" fill="none" stroke-width="25"/>
+<path d="M80 133 L80 98 C69 87 52 69 36 50" fill="none" stroke="#69ADB5" stroke-width="20"/>
+<path d="M80 133 L80 98 C91 87 108 69 124 50" fill="none" stroke="#69ADB5" stroke-width="20"/>
+</g>
+<g id="antibody-light-chains" data-part="light-chains">
+<path d="M69 88 C58 77 47 65 39 56" fill="none" stroke-width="11"/>
+<path d="M91 88 C102 77 113 65 121 56" fill="none" stroke-width="11"/>
+<path d="M69 88 C58 77 47 65 39 56" fill="none" stroke="#D7E8EC" stroke-width="7"/>
+<path d="M91 88 C102 77 113 65 121 56" fill="none" stroke="#D7E8EC" stroke-width="7"/>
+</g>
+<g id="antibody-hinge" data-part="hinge"><path d="M71 91 C74 99 86 99 89 91" fill="none" stroke-width="5"/><path d="M71 91 C74 99 86 99 89 91" fill="none" stroke="#69ADB5" stroke-width="2.5"/></g>
+</svg>

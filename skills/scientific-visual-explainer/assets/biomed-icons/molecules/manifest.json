@@ -1,0 +1,490 @@
+[
+  {
+    "id": "protein-globular",
+    "label": "Protein Globular",
+    "label_zh": "球状蛋白",
+    "file": "molecules/protein-globular.svg",
+    "category": "molecules",
+    "description": "Globular folded protein schematic with an exposed binding surface.",
+    "parts": [
+      "body",
+      "fold-detail"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          121,
+          84
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "protein-two-domain",
+    "label": "Protein Two Domain",
+    "label_zh": "双结构域蛋白",
+    "file": "molecules/protein-two-domain.svg",
+    "category": "molecules",
+    "description": "Two linked folded domains with a flexible interdomain connection.",
+    "parts": [
+      "linker",
+      "domain-a",
+      "domain-b"
+    ],
+    "anchors": {
+      "domain-a-surface": {
+        "point": [
+          70,
+          29
+        ],
+        "normal": [
+          0.6,
+          -0.8
+        ],
+        "kind": "binding"
+      },
+      "domain-b-surface": {
+        "point": [
+          100,
+          40
+        ],
+        "normal": [
+          -0.19611613513818404,
+          -0.9805806756909202
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "transcription-factor",
+    "label": "Transcription Factor",
+    "label_zh": "转录因子",
+    "file": "molecules/transcription-factor.svg",
+    "category": "molecules",
+    "description": "DNA-bound transcription factor with paired recognition domains.",
+    "parts": [
+      "dna",
+      "base-pairs",
+      "dna-binding-domain",
+      "body"
+    ],
+    "anchors": {
+      "dna-contact-a": {
+        "point": [
+          68,
+          113
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "dna-contact-b": {
+        "point": [
+          100,
+          114
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "dna"
+    ]
+  },
+  {
+    "id": "coactivator",
+    "label": "Coactivator",
+    "label_zh": "共激活因子",
+    "file": "molecules/coactivator.svg",
+    "category": "molecules",
+    "description": "Modular scaffold protein with multiple interaction domains.",
+    "parts": [
+      "scaffold-linker",
+      "domain-a",
+      "domain-b",
+      "central-module"
+    ],
+    "anchors": {
+      "interaction-a": {
+        "point": [
+          23,
+          66
+        ],
+        "normal": [
+          -0.7071067811865476,
+          -0.7071067811865476
+        ],
+        "kind": "binding"
+      },
+      "interaction-b": {
+        "point": [
+          138,
+          75
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "enzyme",
+    "label": "Enzyme",
+    "label_zh": "酶",
+    "file": "molecules/enzyme.svg",
+    "category": "molecules",
+    "description": "Generic folded enzyme with a shallow right-facing substrate pocket.",
+    "parts": [
+      "body",
+      "fold-detail"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          112,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "substrate",
+    "label": "Substrate",
+    "label_zh": "底物",
+    "file": "molecules/substrate.svg",
+    "category": "molecules",
+    "description": "Generic molecular substrate with a matching shallow left-facing protrusion.",
+    "parts": [
+      "body",
+      "surface-detail"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          32,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "kinase",
+    "label": "Kinase",
+    "label_zh": "激酶",
+    "file": "molecules/kinase.svg",
+    "category": "molecules",
+    "description": "Bilobal kinase schematic with an ATP-like nucleotide in its active cleft.",
+    "parts": [
+      "n-lobe",
+      "c-lobe",
+      "atp"
+    ],
+    "anchors": {
+      "active-site": {
+        "point": [
+          94,
+          85
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "phosphatase",
+    "label": "Phosphatase",
+    "label_zh": "磷酸酶",
+    "file": "molecules/phosphatase.svg",
+    "category": "molecules",
+    "description": "Phosphatase schematic engaging a phosphate-bearing peptide segment.",
+    "parts": [
+      "body",
+      "substrate-tail",
+      "phosphate"
+    ],
+    "anchors": {
+      "active-site": {
+        "point": [
+          92,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "ubiquitin",
+    "label": "Ubiquitin",
+    "label_zh": "泛素",
+    "file": "molecules/ubiquitin.svg",
+    "category": "molecules",
+    "description": "Compact beta-grasp fold with a free C-terminal conjugation tail.",
+    "parts": [
+      "body",
+      "beta-sheet",
+      "helix",
+      "c-terminal-tail"
+    ],
+    "anchors": {
+      "conjugation-tail": {
+        "point": [
+          140.2,
+          117.2
+        ],
+        "normal": [
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        "kind": "attachment"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "antibody",
+    "label": "Antibody",
+    "label_zh": "抗体",
+    "file": "molecules/antibody.svg",
+    "category": "molecules",
+    "description": "Bivalent Y-shaped immunoglobulin with two antigen-binding arms.",
+    "parts": [
+      "heavy-chains",
+      "light-chains",
+      "hinge"
+    ],
+    "anchors": {
+      "antigen-binding-left": {
+        "point": [
+          23.5,
+          50
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "antigen-binding-right": {
+        "point": [
+          136.5,
+          50
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "antibody-fab",
+    "label": "Antibody Fab",
+    "label_zh": "抗体Fab片段",
+    "file": "molecules/antibody-fab.svg",
+    "category": "molecules",
+    "description": "Single antigen-binding antibody fragment with paired chains.",
+    "parts": [
+      "heavy-chain",
+      "light-chain",
+      "domain-junctions"
+    ],
+    "anchors": {
+      "antigen-binding": {
+        "point": [
+          19.16,
+          20.16
+        ],
+        "normal": [
+          -0.7071067811865476,
+          -0.7071067811865476
+        ],
+        "kind": "binding"
+      },
+      "hinge": {
+        "point": [
+          140.84,
+          142.84
+        ],
+        "normal": [
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        "kind": "attachment"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "protein-dimer",
+    "label": "Protein Dimer",
+    "label_zh": "蛋白二聚体",
+    "file": "molecules/protein-dimer.svg",
+    "category": "molecules",
+    "description": "Two protein protomers joined at a complementary interface.",
+    "parts": [
+      "protomer-a",
+      "protomer-b"
+    ],
+    "anchors": {
+      "interface-a": {
+        "point": [
+          78,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "interface-b": {
+        "point": [
+          78,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  }
+]

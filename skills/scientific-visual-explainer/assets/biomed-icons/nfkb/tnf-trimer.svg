@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="tnf-trimer-subunit-a" data-part="subunit-a"><g transform="rotate(0 80 80)">
+              <path d="M80 17 C92 17 102 25 103 37 C105 49 97 58 87 63 C83 68 82 74 80 80 C77 73 75 68 71 64 C61 59 55 50 57 38 C58 26 68 17 80 17 Z" fill="#69ADB5" stroke-width="2.5"/>
+              <path d="M67 34 L82 29 M66 41 L82 37 M68 48 L82 45" fill="none" stroke="#D7E8EC" stroke-width="1.8"/>
+            </g></g>
+<g id="tnf-trimer-subunit-b" data-part="subunit-b"><g transform="rotate(120 80 80)">
+              <path d="M80 17 C92 17 102 25 103 37 C105 49 97 58 87 63 C83 68 82 74 80 80 C77 73 75 68 71 64 C61 59 55 50 57 38 C58 26 68 17 80 17 Z" fill="#69ADB5" stroke-width="2.5"/>
+              <path d="M67 34 L82 29 M66 41 L82 37 M68 48 L82 45" fill="none" stroke="#D7E8EC" stroke-width="1.8"/>
+            </g></g>
+<g id="tnf-trimer-subunit-c" data-part="subunit-c"><g transform="rotate(240 80 80)">
+              <path d="M80 17 C92 17 102 25 103 37 C105 49 97 58 87 63 C83 68 82 74 80 80 C77 73 75 68 71 64 C61 59 55 50 57 38 C58 26 68 17 80 17 Z" fill="#69ADB5" stroke-width="2.5"/>
+              <path d="M67 34 L82 29 M66 41 L82 37 M68 48 L82 45" fill="none" stroke="#D7E8EC" stroke-width="1.8"/>
+            </g></g>
+</svg>

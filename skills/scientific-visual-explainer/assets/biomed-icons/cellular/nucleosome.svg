@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="nucleosome" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="nucleosome-core" data-part="core">
+      <path d="M57 50 C45 52 39 63 43 73 C34 82 39 97 50 101 C53 113 67 118 78 112 C89 119 105 113 108 102 C121 98 124 84 116 75 C120 62 108 51 96 53 C88 43 70 42 61 51 Z" fill="#69ADB5"/>
+      <path d="M62 61 C70 56 90 56 98 62 M55 79 C65 72 95 72 105 79 M56 96 C67 102 92 102 103 96" stroke="#EDF5F1" stroke-width="2"/>
+    </g>
+    <g id="nucleosome-dna" data-part="wrapped-dna">
+      <path d="M38 80 C34 52 56 30 82 31 C111 32 130 55 121 78 C115 94 100 105 81 106 C58 107 42 94 43 77 C44 60 60 49 80 49 C103 49 119 64 117 82 C115 100 95 116 74 119 C52 122 35 108 35 91" stroke="#B2A6CD" stroke-width="5.5"/>
+    </g>
+  </g>
+</svg>

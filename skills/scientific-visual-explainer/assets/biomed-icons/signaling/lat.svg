@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="lat-membrane" data-part="membrane"><rect x="14" y="18" width="132" height="11" rx="5.5" fill="#B3D7CC" stroke-width="2.5"/></g>
+<g id="lat-transmembrane-helix" data-part="transmembrane-helix"><path d="M80 24 L80 54" fill="none" stroke-width="13"/><path d="M80 24 L80 54" fill="none" stroke="#69ADB5" stroke-width="8"/></g>
+<g id="lat-intracellular-scaffold" data-part="intracellular-scaffold"><path d="M80 52 C76 66 84 77 79 91 C74 105 84 117 80 131 C78 135 79 138 81 139" fill="none" stroke-width="13"/><path d="M80 52 C76 66 84 77 79 91 C74 105 84 117 80 131 C78 135 79 138 81 139" fill="none" stroke="#69ADB5" stroke-width="8"/></g>
+<g id="lat-py132-site" data-part="pY132-site"><path d="M79 67 L90 67" fill="none" stroke-width="4"/><circle cx="95" cy="67" r="6.5" fill="#E4BE78" stroke-width="2.5"/></g>
+<g id="lat-py171-site" data-part="pY171-site"><path d="M78 96 L67 96" fill="none" stroke-width="4"/><circle cx="62" cy="96" r="6.5" fill="#E4BE78" stroke-width="2.5"/></g>
+<g id="lat-py191-226-sites" data-part="pY191-and-pY226-sites"><path d="M81 122 L92 122" fill="none" stroke-width="4"/><circle cx="98" cy="122" r="6.5" fill="#E4BE78" stroke-width="2.5"/><path d="M79 140 L68 140" fill="none" stroke-width="4"/><circle cx="62" cy="140" r="6.5" fill="#E4BE78" stroke-width="2.5"/></g>
+</svg>

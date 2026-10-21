@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="animal-cell" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="animal-cell-membrane" data-part="cell-membrane">
+      <path d="M80 17 C101 15 116 25 127 37 C140 50 143 68 141 84 C144 103 132 120 117 131 C104 143 84 145 68 140 C48 145 31 134 23 119 C14 106 17 91 16 77 C15 59 23 42 37 31 C49 21 64 17 80 17 Z" fill="#B3D7CC"/>
+      <path d="M80 23 C100 21 114 31 123 42 C135 55 137 69 135 84 C138 101 127 115 113 125 C101 135 84 138 69 133 C51 138 37 128 29 115 C22 104 24 91 23 77 C22 62 29 48 41 38 C52 29 66 23 80 23 Z" fill="#EDF5F1" stroke="#69ADB5" stroke-width="2"/>
+    </g>
+    <g id="animal-cell-nucleus" data-part="nucleus">
+      <ellipse cx="59" cy="75" rx="25" ry="22" fill="#69ADB5"/>
+      <ellipse cx="64" cy="74" rx="7" ry="6" fill="#B2A6CD" stroke="#3D5963" stroke-width="1.5"/>
+    </g>
+    <g id="animal-cell-mitochondria" data-part="mitochondria" fill="#69ADB5">
+      <path d="M98 52 C106 47 118 51 121 57 C123 63 116 69 107 68 C98 67 94 59 98 52 Z"/>
+      <path d="M96 103 C104 98 116 100 119 106 C121 112 114 117 105 116 C97 115 93 109 96 103 Z"/>
+      <path d="M104 57 L109 55 L107 60 L114 63 M102 106 L108 104 L107 110 L114 112" fill="none" stroke="#EDF5F1" stroke-width="1.5"/>
+    </g>
+    <g id="animal-cell-golgi" data-part="golgi">
+      <path d="M53 113 C63 106 76 106 84 111 C78 116 60 117 53 113 Z" fill="#B2A6CD"/>
+      <path d="M57 121 C67 116 78 117 84 121 C77 126 63 126 57 121 Z" fill="#B2A6CD"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,496 @@
+[
+  {
+    "id": "egfr-ig",
+    "label": "EGFR",
+    "label_zh": "表皮生长因子受体",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for EGFR; domain-level teaching schematic.",
+    "palette": {
+      "outline": "#3D5963",
+      "ectodomain-stem": "#69ADB5",
+      "kinase-domain": "#B2A6CD",
+      "C-terminal-tail": "#E4BE78"
+    },
+    "anchors": {
+      "EGF-binding": {
+        "point": [
+          523,
+          363
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "dimer-arm": {
+        "point": [
+          717,
+          328
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          505,
+          872
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "pY-tail": {
+        "point": [
+          644,
+          1434
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "kinase": {
+        "point": [
+          604,
+          1110
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12297050/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/egfr-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "egf-ig",
+    "label": "EGF",
+    "label_zh": "表皮生长因子",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for EGF; domain-level teaching schematic.",
+    "palette": {
+      "outline": "#3D5963",
+      "ligand": "#E4BE78"
+    },
+    "anchors": {
+      "receptor-contact": {
+        "point": [
+          1279,
+          557
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12297050/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/egf-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "grb2-ig",
+    "label": "GRB2",
+    "label_zh": "衔接蛋白 GRB2",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for GRB2; domain-level teaching schematic.",
+    "palette": {
+      "outline": "#3D5963",
+      "SH3-domains": "#69ADB5",
+      "SH2-domain": "#E4BE78"
+    },
+    "anchors": {
+      "SH2": {
+        "point": [
+          897,
+          333
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "SH3-right": {
+        "point": [
+          1536,
+          454
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8479541/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8479540/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/grb2-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "sos1-ig",
+    "label": "SOS1",
+    "label_zh": "鸟嘌呤核苷酸交换因子 SOS1",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for SOS1; domain-level teaching schematic.",
+    "palette": {
+      "outline": "#3D5963",
+      "catalytic-region": "#69ADB5",
+      "proline-rich-region": "#E4BE78"
+    },
+    "anchors": {
+      "GRB2-contact": {
+        "point": [
+          163,
+          905
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "RAS-exchange": {
+        "point": [
+          1182,
+          328
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8479541/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9690470/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/sos1-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "ras-ig",
+    "label": "RAS",
+    "label_zh": "膜上小 GTP 酶 RAS",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for RAS; domain-level teaching schematic.",
+    "palette": {
+      "outline": "#3D5963",
+      "GTPase-body": "#69ADB5",
+      "membrane-anchor": "#E4BE78"
+    },
+    "anchors": {
+      "membrane": {
+        "point": [
+          670,
+          103
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "SOS-contact": {
+        "point": [
+          337,
+          602
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "RAF-contact": {
+        "point": [
+          533,
+          979
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9690470/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8332195/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/ras-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "raf-ig",
+    "label": "RAF1",
+    "label_zh": "RAF1 丝氨酸苏氨酸激酶",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for RAF1; domain-level teaching schematic.",
+    "palette": {
+      "outline": "#3D5963",
+      "regulatory-region": "#69ADB5",
+      "kinase-region": "#B2A6CD"
+    },
+    "anchors": {
+      "RAS-binding": {
+        "point": [
+          388,
+          121
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "MEK-substrate": {
+        "point": [
+          718,
+          1386
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8332195/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1322500/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/raf-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "mek-ig",
+    "label": "MEK1/2",
+    "label_zh": "MEK 双特异性激酶",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for MEK1/2; domain-level teaching schematic.",
+    "palette": {
+      "outline": "#3D5963",
+      "N-lobe": "#69ADB5",
+      "C-lobe": "#B3D7CC"
+    },
+    "anchors": {
+      "RAF-substrate": {
+        "point": [
+          423,
+          131
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "ERK-substrate": {
+        "point": [
+          772,
+          1225
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1322500/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1411546/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/mek-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "erk-ig",
+    "label": "ERK1/2",
+    "label_zh": "ERK MAP 激酶",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for ERK1/2; domain-level teaching schematic.",
+    "palette": {
+      "outline": "#3D5963",
+      "N-lobe": "#B2A6CD",
+      "C-lobe": "#D7E8EC"
+    },
+    "anchors": {
+      "MEK-substrate": {
+        "point": [
+          438,
+          200
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1411546/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/erk-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  }
+]

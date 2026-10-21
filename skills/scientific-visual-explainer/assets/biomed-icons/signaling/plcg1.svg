@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="plcg1-domain-linkers" data-part="domain-linkers">
+<path d="M49 62 C54 65 58 70 62 74 M77 55 C77 60 76 63 74 67 M68 104 C65 101 62 98 60 95 M127 50 C124 56 120 62 117 70 M136 102 C128 108 118 114 108 120 M110 116 C113 112 116 107 118 101" fill="none" stroke-width="6"/>
+<path d="M49 62 C54 65 58 70 62 74 M77 55 C77 60 76 63 74 67 M68 104 C65 101 62 98 60 95 M127 50 C124 56 120 62 117 70 M136 102 C128 108 118 114 108 120 M110 116 C113 112 116 107 118 101" fill="none" stroke="#69ADB5" stroke-width="3.5"/>
+</g>
+<g id="plcg1-ph-domain" data-part="ph-domain"><path d="M18 42 C16 30 25 21 37 21 C49 19 58 28 56 40 C63 50 57 62 46 65 C35 71 23 64 21 56 C17 52 17 47 18 42 Z" fill="#D7E8EC" stroke-width="2.5"/><path d="M28 36 C35 29 45 32 48 39 C51 45 47 50 42 53" fill="none" stroke-width="1.5"/></g>
+<g id="plcg1-ef-hand" data-part="ef-hand-domain"><path d="M61 31 C70 23 81 27 83 37 C87 46 82 55 73 57 C65 60 58 53 59 45 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M65 39 C71 33 77 36 78 42" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="plcg1-c2-domain" data-part="c2-domain"><path d="M24 117 C20 104 29 92 42 90 C55 86 68 94 69 106 C76 117 69 129 58 132 C47 140 32 134 29 126 C25 124 23 121 24 117 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M34 108 C41 100 51 103 54 110 C57 116 53 121 48 124" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="plcg1-catalytic-x-domain" data-part="catalytic-x-domain"><path d="M54 67 C61 55 77 52 89 59 C100 65 103 78 97 89 C94 99 80 104 68 99 C57 97 50 82 54 67 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M63 70 C70 62 81 64 85 72 C88 79 84 84 78 87" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="plcg1-catalytic-y-domain" data-part="catalytic-y-domain"><path d="M86 65 C97 56 113 59 119 70 C128 78 124 94 114 101 C104 109 89 104 84 95 C78 86 79 73 86 65 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M96 72 C103 64 114 68 116 76 C118 83 113 88 108 91" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="plcg1-sh2-n" data-part="n-terminal-sh2-domain"><path d="M104 25 C113 17 126 20 130 29 C138 36 135 48 126 52 C118 59 106 55 103 47 C97 40 98 31 104 25 Z" fill="#D7E8EC" stroke-width="2.5"/></g>
+<g id="plcg1-sh2-c" data-part="c-terminal-sh2-domain"><path d="M120 75 C129 67 141 71 144 80 C147 87 145 98 136 101 C129 108 120 103 117 96 C111 89 114 80 120 75 Z" fill="#D7E8EC" stroke-width="2.5"/></g>
+<g id="plcg1-sh3-domain" data-part="sh3-domain"><path d="M84 116 C91 108 104 109 109 117 C117 123 114 135 106 139 C97 146 85 141 83 133 C78 128 80 120 84 116 Z" fill="#D7E8EC" stroke-width="2.5"/><path d="M90 122 C96 116 104 119 106 125 C108 130 104 134 99 136" fill="none" stroke-width="1.5"/></g>
+<g id="plcg1-catalytic-cleft" data-part="catalytic-cleft"><path d="M76 99 C80 106 82 112 81 119" fill="none" stroke="#E4BE78" stroke-width="5"/></g>
+</svg>

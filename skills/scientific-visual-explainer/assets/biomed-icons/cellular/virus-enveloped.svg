@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="virus-enveloped" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="virus-envelope" data-part="envelope">
+      <circle cx="80" cy="80" r="41" fill="#B3D7CC"/>
+      <circle cx="80" cy="80" r="34" fill="#EDF5F1" stroke="#69ADB5" stroke-width="2"/>
+    </g>
+    <g id="virus-spikes" data-part="spikes" stroke="#69ADB5" stroke-width="3">
+      <path d="M80 39 L80 27 M109 51 L118 42 M121 80 L134 80 M109 109 L118 118 M80 121 L80 134 M51 109 L42 118 M39 80 L26 80 M51 51 L42 42"/>
+    </g>
+    <g id="virus-spike-heads" data-part="spike-heads" fill="#69ADB5">
+      <circle cx="80" cy="25" r="5"/><circle cx="120" cy="40" r="5"/><circle cx="136" cy="80" r="5"/><circle cx="120" cy="120" r="5"/>
+      <circle cx="80" cy="136" r="5"/><circle cx="40" cy="120" r="5"/><circle cx="24" cy="80" r="5"/><circle cx="40" cy="40" r="5"/>
+    </g>
+    <g id="virus-nucleocapsid" data-part="nucleocapsid">
+      <path d="M62 68 C62 59 70 55 78 59 C86 54 97 60 96 69 C104 74 102 85 94 89 C91 98 80 101 73 95 C64 96 58 87 62 80 C57 76 58 71 62 68 Z" fill="#69ADB5"/>
+    </g>
+    <g id="virus-genome" data-part="genome">
+      <path d="M68 77 C73 68 78 86 83 77 C88 68 92 86 97 77" stroke="#B2A6CD" stroke-width="3.5"/>
+    </g>
+  </g>
+</svg>

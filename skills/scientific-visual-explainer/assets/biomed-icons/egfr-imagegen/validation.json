@@ -1,0 +1,19 @@
+{
+  "assetRevision": "v0.7 continuous cubic bodies",
+  "icons": 134,
+  "samples": 512,
+  "annotationOrArrowCollisions": 0,
+  "contactFillOverlapSummary": {
+    "normal/r1/l1": {
+      "first": 2.5,
+      "last": 42,
+      "maxArea": 40
+    },
+    "blocked/r1/l1": {
+      "first": 2.5,
+      "last": 9,
+      "maxArea": 40
+    }
+  },
+  "actualCurveCheck": "../contour-validation.json"
+}

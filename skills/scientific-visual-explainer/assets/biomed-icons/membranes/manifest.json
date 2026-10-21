@@ -1,0 +1,567 @@
+[
+  {
+    "id": "phospholipid",
+    "label": "Phospholipid",
+    "label_zh": "磷脂",
+    "file": "membranes/phospholipid.svg",
+    "category": "membranes",
+    "description": "Phospholipid with a polar head and two flexible hydrocarbon tails for bilayer assembly.",
+    "parts": [
+      "tails",
+      "head"
+    ],
+    "anchors": {
+      "head": {
+        "point": [
+          80,
+          45
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "head"
+      },
+      "tail": {
+        "point": [
+          67,
+          130
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "tail-tip"
+      }
+    },
+    "scope": "Generic schematic; geometry supports a reusable bilayer rig.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "membrane-patch",
+    "label": "Membrane patch",
+    "label_zh": "膜片",
+    "file": "membranes/membrane-patch.svg",
+    "category": "membranes",
+    "description": "A bilayer patch with polar head groups facing outward and hydrocarbon tails meeting at the core.",
+    "parts": [
+      "hydrophobic-core",
+      "lipid-tails",
+      "phospholipid-heads"
+    ],
+    "anchors": {
+      "upper-surface": {
+        "point": [
+          80,
+          37
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane-surface"
+      },
+      "midplane": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic bilayer schematic; individual lipid positions are illustrative.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "single-pass-receptor",
+    "label": "Single-pass receptor",
+    "label_zh": "单跨膜受体",
+    "file": "membranes/single-pass-receptor.svg",
+    "category": "membranes",
+    "description": "A single-pass receptor with a shallow extracellular binding cup and one cytosolic tail.",
+    "parts": [
+      "body",
+      "tail"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          80,
+          36
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          108
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure; binding contour is designed for teaching-scale docking.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane-context"
+    ]
+  },
+  {
+    "id": "ligand",
+    "label": "Ligand",
+    "label_zh": "配体",
+    "file": "membranes/ligand.svg",
+    "category": "membranes",
+    "description": "A soluble ligand with a narrow downward protrusion shaped to meet a receptor cup.",
+    "parts": [
+      "body"
+    ],
+    "anchors": {
+      "contact": {
+        "point": [
+          80,
+          124
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure; shares a complementary teaching-scale contact profile with the receptor icon.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "ion-channel",
+    "label": "Ion channel",
+    "label_zh": "离子通道",
+    "file": "membranes/ion-channel.svg",
+    "category": "membranes",
+    "description": "A membrane-spanning pore with a clear aqueous lumen and ions in transit.",
+    "parts": [
+      "membrane",
+      "channel-protein",
+      "pore",
+      "ions"
+    ],
+    "anchors": {
+      "pore": {
+        "point": [
+          80,
+          81
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "transport"
+      },
+      "membrane": {
+        "point": [
+          80,
+          102
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic; does not represent a specific channel family or gating state.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "gpcr",
+    "label": "GPCR",
+    "label_zh": "G蛋白偶联受体",
+    "file": "membranes/gpcr.svg",
+    "category": "membranes",
+    "description": "A seven-helix membrane receptor with extracellular and intracellular connecting loops.",
+    "parts": [
+      "membrane",
+      "extracellular-loops",
+      "helix-1",
+      "helix-2",
+      "helix-3",
+      "helix-4",
+      "helix-5",
+      "helix-6",
+      "helix-7",
+      "intracellular-loops"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          80,
+          39
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          84
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic seven-transmembrane schematic, not a named receptor or resolved structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "transporter",
+    "label": "Membrane transporter",
+    "label_zh": "膜转运体",
+    "file": "membranes/membrane-transporter.svg",
+    "category": "membranes",
+    "description": "Two carrier domains form a central substrate-binding cavity across a bilayer.",
+    "parts": [
+      "membrane",
+      "carrier-domains",
+      "substrate"
+    ],
+    "anchors": {
+      "substrate": {
+        "point": [
+          80,
+          82
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "substrate"
+      },
+      "membrane": {
+        "point": [
+          80,
+          90
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic alternating-access carrier schematic; no particular transport cycle state is implied.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "vesicle",
+    "label": "Vesicle",
+    "label_zh": "囊泡",
+    "file": "membranes/vesicle.svg",
+    "category": "membranes",
+    "description": "A membrane-bound vesicle with a clear lumen and a small cargo set.",
+    "parts": [
+      "membrane",
+      "lumen",
+      "cargo"
+    ],
+    "anchors": {
+      "surface": {
+        "point": [
+          80,
+          26
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane-surface"
+      },
+      "lumen": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "lumen"
+      }
+    },
+    "scope": "Generic schematic; size and cargo composition are illustrative.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "endosome",
+    "label": "Multivesicular endosome",
+    "label_zh": "多泡内体",
+    "file": "membranes/endosome.svg",
+    "category": "membranes",
+    "description": "A sorting endosome with a tubule and intraluminal vesicles carrying cargo.",
+    "parts": [
+      "membrane",
+      "lumen",
+      "intraluminal-vesicles",
+      "sorted-cargo"
+    ],
+    "anchors": {
+      "surface": {
+        "point": [
+          80,
+          27
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane-surface"
+      },
+      "lumen": {
+        "point": [
+          78,
+          82
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "lumen"
+      }
+    },
+    "scope": "A multivesicular endosome schematic with lumenal vesicles; not a universal early-endosome morphology.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "lysosome",
+    "label": "Lysosome",
+    "label_zh": "溶酶体",
+    "file": "membranes/lysosome.svg",
+    "category": "membranes",
+    "description": "A membrane-bound degradative compartment with enzymes and digestate fragments.",
+    "parts": [
+      "membrane",
+      "lumen",
+      "enzymes",
+      "digestate"
+    ],
+    "anchors": {
+      "surface": {
+        "point": [
+          80,
+          25
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane-surface"
+      },
+      "lumen": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "lumen"
+      }
+    },
+    "scope": "Generic schematic; enzyme and digestate symbols are illustrative.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "clathrin",
+    "label": "Clathrin triskelion",
+    "label_zh": "网格蛋白三足体",
+    "file": "membranes/clathrin.svg",
+    "category": "membranes",
+    "description": "A three-legged clathrin triskelion with curved legs and distal globular domains.",
+    "parts": [
+      "leg-1",
+      "leg-2",
+      "leg-3",
+      "hub"
+    ],
+    "anchors": {
+      "hub": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "assembly"
+      },
+      "leg-tip": {
+        "point": [
+          62,
+          19
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "interaction"
+      }
+    },
+    "scope": "Schematic triskelion unit, not a three-dimensional coat or a complete lattice.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "fusion-protein",
+    "label": "Fusion protein",
+    "label_zh": "膜融合蛋白",
+    "file": "membranes/fusion-protein.svg",
+    "category": "membranes",
+    "description": "A four-helix zipper bundle bridges two apposed membranes in a SNARE-like fusion schematic.",
+    "parts": [
+      "target-membrane",
+      "vesicle-membrane",
+      "bundle-helix-1",
+      "bundle-helix-2",
+      "bundle-helix-3",
+      "bundle-helix-4"
+    ],
+    "anchors": {
+      "bundle": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "interaction"
+      },
+      "target-membrane": {
+        "point": [
+          80,
+          38
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "vesicle-membrane": {
+        "point": [
+          80,
+          122
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic trans-SNARE-like teaching schematic; not a named complex or resolved structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  }
+]

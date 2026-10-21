@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="autophagosome" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="autophagosome-outer-membrane" data-part="outer-membrane">
+      <path d="M22 80 C22 53 40 34 66 29 C92 24 120 35 134 54 C146 71 140 99 124 116 C108 132 79 137 54 128 C34 121 22 103 22 80 Z" fill="#B3D7CC"/>
+    </g>
+    <g id="autophagosome-intermembrane-space" data-part="intermembrane-space">
+      <path d="M31 80 C31 59 46 44 68 39 C91 34 113 42 125 58 C134 72 130 93 116 107 C102 120 80 124 59 117 C42 111 31 98 31 80 Z" fill="#FFFFFF" stroke="#69ADB5" stroke-width="1.5"/>
+    </g>
+    <g id="autophagosome-inner-membrane" data-part="inner-membrane">
+      <path d="M39 80 C39 62 51 50 69 46 C88 42 106 49 116 62 C126 75 122 91 111 102 C100 113 81 116 63 110 C49 105 39 95 39 80 Z" fill="#B3D7CC"/>
+    </g>
+    <g id="autophagosome-lumen" data-part="lumen">
+      <path d="M47 80 C47 66 56 57 70 54 C85 50 100 56 108 66 C116 77 113 89 104 97 C94 106 80 108 66 103 C55 99 47 91 47 80 Z" fill="#EDF5F1" stroke="#69ADB5" stroke-width="1.5"/>
+    </g>
+    <g id="autophagosome-sequestered-cargo" data-part="sequestered-cargo">
+      <path d="M58 78 C59 68 68 64 77 67 C84 61 95 66 96 75 C104 81 99 92 91 94 C84 101 70 97 68 91 C60 90 56 84 58 78 Z" fill="#E4BE78"/>
+      <path d="M68 76 C73 71 79 72 82 76 M87 88 C91 84 96 85 98 88" stroke="#3D5963" stroke-width="1.8"/>
+    </g>
+  </g>
+</svg>

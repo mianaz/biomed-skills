@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="transporter-membrane" data-part="membrane" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M25 80 C53 75 107 75 135 80 L135 101 C107 106 53 106 25 101 Z"/>
+</g>
+<g id="transporter-carrier-domains" data-part="carrier-domains" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M64 36 C48 36 37 48 35 63 C33 76 41 85 49 91 C57 97 58 104 52 114 C47 122 51 130 60 129 C71 128 76 118 76 106 L70 106 L70 63 C69 47 73 38 64 36 Z"/>
+  <path d="M96 36 C112 36 123 48 125 63 C127 76 119 85 111 91 C103 97 102 104 108 114 C113 122 109 130 100 129 C89 128 84 118 84 106 L90 106 L90 63 C91 47 87 38 96 36 Z"/>
+</g>
+<g id="transporter-substrate" data-part="substrate" fill="#E4BE78" stroke="#3D5963" stroke-width="2.5">
+  <ellipse cx="80" cy="82" rx="7" ry="10"/>
+</g>
+</svg>

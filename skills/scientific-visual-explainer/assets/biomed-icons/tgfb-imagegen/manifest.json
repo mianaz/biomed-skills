@@ -1,0 +1,806 @@
+[
+  {
+    "id": "tgfb1-ig",
+    "label": "TGFβ1 dimer",
+    "label_zh": "TGFβ1 dimer",
+    "category": "tgfb-imagegen",
+    "description": "Mature ligand homodimer; latent-complex proteins omitted.",
+    "scope": "Mature ligand homodimer; latent-complex proteins omitted. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20207738/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/tgfb1-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "tgfb-imagegen/tgfb1-ig.svg",
+    "parts": [
+      "outline",
+      "subunit-a",
+      "subunit-b"
+    ],
+    "anchors": {
+      "II-left": {
+        "point": [
+          25.599999999999998,
+          80.36938386967074
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "TGFB-RII",
+          "shape": "tab",
+          "halfWidth": 9.090909090909092,
+          "depth": 0.30303030303030304,
+          "profile": "continuous-body",
+          "framePoint": [
+            25.599999999999998,
+            80.13963039014374
+          ],
+          "schematic": true
+        }
+      },
+      "II-right": {
+        "point": [
+          134.40000000000003,
+          80.36938386967074
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "TGFB-RII",
+          "shape": "tab",
+          "halfWidth": 9.090909090909092,
+          "depth": 0.30303030303030304,
+          "profile": "continuous-body",
+          "framePoint": [
+            134.40000000000003,
+            80.13963039014374
+          ],
+          "schematic": true
+        }
+      },
+      "I-left": {
+        "point": [
+          59.59999999999999,
+          96.29696629251794
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "TGFB-RI",
+          "shape": "tab",
+          "halfWidth": 0.9090909090909092,
+          "depth": 0.21212121212121213,
+          "profile": "continuous-body",
+          "framePoint": [
+            59.59999999999999,
+            96.10403832991102
+          ],
+          "schematic": true
+        }
+      },
+      "I-right": {
+        "point": [
+          100.4,
+          96.29696629251794
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "TGFB-RI",
+          "shape": "tab",
+          "halfWidth": 0.9090909090909092,
+          "depth": 0.21212121212121213,
+          "profile": "continuous-body",
+          "framePoint": [
+            100.4,
+            96.10403832991102
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "subunit-a": "#E4BE78",
+      "subunit-b": "#B3D7CC"
+    },
+    "source_to_svg": {
+      "scale": 0.09308692676249145,
+      "translate": [
+        -2.6146475017111612,
+        37.97125256673511
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 3.3,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "tgfbr2-ig",
+    "label": "TGFβRII",
+    "label_zh": "TGFβRII",
+    "category": "tgfb-imagegen",
+    "description": "Single-pass type II receptor with constitutive kinase activity; teaching domain proportions.",
+    "scope": "Single-pass type II receptor with constitutive kinase activity; teaching domain proportions. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8047140/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/tgfbr2-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "tgfb-imagegen/tgfbr2-ig.svg",
+    "parts": [
+      "outline",
+      "ectodomain-stalk",
+      "kinase"
+    ],
+    "anchors": {
+      "ligand": {
+        "point": [
+          80.0,
+          17.559553364128128
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "TGFB-RII",
+          "shape": "socket",
+          "halfWidth": 12.5,
+          "depth": 0.4166666666666667,
+          "profile": "continuous-body",
+          "framePoint": [
+            80.0,
+            17.243642329778506
+          ],
+          "schematic": true
+        }
+      },
+      "membrane": {
+        "point": [
+          80.0,
+          61.639999999999986
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "SMAD-substrate": {
+        "point": [
+          84.57424118129614,
+          116.72000000000001
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "GS-activation": {
+        "point": [
+          96.73502871205906,
+          99.03999999999999
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "ectodomain-stalk": "#69ADB5",
+      "kinase": "#B2A6CD"
+    },
+    "source_to_svg": {
+      "scale": 0.11156685808039377,
+      "translate": [
+        20.088597210828546,
+        -6.29696472518458
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 2.4,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "tgfbr1-ig",
+    "label": "TGFβRI / ALK5",
+    "label_zh": "TGFβRI / ALK5",
+    "category": "tgfb-imagegen",
+    "description": "Single-pass type I receptor, membrane-proximal GS region and Ser/Thr kinase.",
+    "scope": "Single-pass type I receptor, membrane-proximal GS region and Ser/Thr kinase. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8047140/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/tgfbr1-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "tgfb-imagegen/tgfbr1-ig.svg",
+    "parts": [
+      "outline",
+      "ectodomain-stalk",
+      "GS-region",
+      "kinase"
+    ],
+    "anchors": {
+      "ligand": {
+        "point": [
+          80.0,
+          13.548922589845048
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "TGFB-RI",
+          "shape": "socket",
+          "halfWidth": 2.710270080117064,
+          "depth": 0.6323963520273149,
+          "profile": "continuous-body",
+          "framePoint": [
+            80.0,
+            12.97374701670645
+          ],
+          "schematic": true
+        }
+      },
+      "membrane": {
+        "point": [
+          80.0,
+          61.640000000000015
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "SMAD-substrate": {
+        "point": [
+          90.73509883745918,
+          116.71999999999998
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "MH2-association",
+          "shape": "socket",
+          "halfWidth": 4.517116800195107,
+          "depth": 0.22585584000975537,
+          "profile": "continuous-body",
+          "framePoint": [
+            90.92760540970565,
+            116.71999999999998
+          ],
+          "schematic": true
+        }
+      },
+      "GS-activation": {
+        "point": [
+          89.08830548926014,
+          99.04
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "GS": {
+        "point": [
+          73.50835322195704,
+          86.80000000000001
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "ectodomain-stalk": "#69ADB5",
+      "GS-region": "#E4BE78",
+      "kinase": "#B2A6CD"
+    },
+    "source_to_svg": {
+      "scale": 0.10819411296738266,
+      "translate": [
+        23.198090692124104,
+        -4.337311058074775
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1.1069007557617363,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "smad3-ig",
+    "label": "SMAD3",
+    "label_zh": "SMAD3",
+    "category": "tgfb-imagegen",
+    "description": "MH1, linker, MH2 and C-terminal phosphorylation tail; not a solved surface.",
+    "scope": "MH1, linker, MH2 and C-terminal phosphorylation tail; not a solved surface. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15350224/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/smad3-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "tgfb-imagegen/smad3-ig.svg",
+    "parts": [
+      "outline",
+      "MH1",
+      "MH2",
+      "SSXS-tail"
+    ],
+    "anchors": {
+      "co-SMAD-right": {
+        "point": [
+          123.16835827941631,
+          99.04
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "MH2-association",
+          "shape": "tab",
+          "halfWidth": 7.692307692307692,
+          "depth": 0.3846153846153846,
+          "profile": "continuous-body",
+          "framePoint": [
+            122.84053417124903,
+            99.04
+          ],
+          "schematic": true
+        }
+      },
+      "co-SMAD-left": {
+        "point": [
+          36.7248074707801,
+          99.04
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "MH2-association",
+          "shape": "tab",
+          "halfWidth": 7.692307692307692,
+          "depth": 0.3846153846153846,
+          "profile": "continuous-body",
+          "framePoint": [
+            37.05263157894737,
+            99.04
+          ],
+          "schematic": true
+        }
+      },
+      "receptor-docking": {
+        "point": [
+          37.05263157894737,
+          104.48000000000002
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "DNA-binding": {
+        "point": [
+          80.0,
+          23.965435978004717
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "center": {
+        "point": [
+          80.0,
+          80.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "center"
+      },
+      "SSXS-tail": {
+        "point": [
+          80.0,
+          147.8931657501964
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "MH1": "#69ADB5",
+      "MH2": "#B2A6CD",
+      "SSXS-tail": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.10683424980361352,
+      "translate": [
+        25.30086410054988,
+        -2.2089552238805936
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 0.65,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "smad4-ig",
+    "label": "SMAD4",
+    "label_zh": "SMAD4",
+    "category": "tgfb-imagegen",
+    "description": "Co-SMAD with MH1/linker/MH2; no R-SMAD SSXS activation motif.",
+    "scope": "Co-SMAD with MH1/linker/MH2; no R-SMAD SSXS activation motif. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15350224/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/smad4-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "tgfb-imagegen/smad4-ig.svg",
+    "parts": [
+      "outline",
+      "MH1",
+      "MH2"
+    ],
+    "anchors": {
+      "co-SMAD-right": {
+        "point": [
+          123.29193637087462,
+          99.04
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "MH2-association",
+          "shape": "socket",
+          "halfWidth": 7.692307692307692,
+          "depth": 0.3846153846153846,
+          "profile": "continuous-body",
+          "framePoint": [
+            123.6197604790419,
+            99.04
+          ],
+          "schematic": true
+        }
+      },
+      "co-SMAD-left": {
+        "point": [
+          36.50447081475409,
+          99.04
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "MH2-association",
+          "shape": "socket",
+          "halfWidth": 7.692307692307692,
+          "depth": 0.3846153846153846,
+          "profile": "continuous-body",
+          "framePoint": [
+            36.17664670658682,
+            99.04
+          ],
+          "schematic": true
+        }
+      },
+      "receptor-docking": {
+        "point": [
+          35.05688622754491,
+          104.48
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "DNA-binding": {
+        "point": [
+          80.0,
+          12.50898203592815
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "center": {
+        "point": [
+          80.0,
+          80.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "center"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "MH1": "#B3D7CC",
+      "MH2": "#69ADB5"
+    },
+    "source_to_svg": {
+      "scale": 0.10179640718562874,
+      "translate": [
+        27.82934131736527,
+        1.7185628742515036
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 0.65,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "smad2-ig",
+    "label": "SMAD2",
+    "label_zh": "SMAD2",
+    "category": "tgfb-imagegen",
+    "description": "SMAD2-specific MH1 insertion shown schematically; library extension, not the SMAD3 lesson actor.",
+    "scope": "SMAD2-specific MH1 insertion shown schematically; library extension, not the SMAD3 lesson actor. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://doi.org/10.1074/jbc.272.44.28107",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/smad2-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "tgfb-imagegen/smad2-ig.svg",
+    "parts": [
+      "outline",
+      "MH1-insertion",
+      "MH2",
+      "SSXS-tail"
+    ],
+    "anchors": {
+      "co-SMAD-right": {
+        "point": [
+          121.42105263157895,
+          99.03999999999999
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "co-SMAD-left": {
+        "point": [
+          38.473684210526315,
+          99.03999999999999
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "receptor-docking": {
+        "point": [
+          37.631578947368425,
+          104.48
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "DNA-binding": {
+        "point": [
+          80.0,
+          24.21052631578947
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "center": {
+        "point": [
+          80.0,
+          80.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "center"
+      },
+      "SSXS-tail": {
+        "point": [
+          80.0,
+          147.68421052631578
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "MH1-insertion": "#D7E8EC",
+      "MH2": "#B2A6CD",
+      "SSXS-tail": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.10526315789473684,
+      "translate": [
+        26.05263157894737,
+        -3.05263157894737
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1,
+      "patches": false,
+      "source_preserved": true
+    }
+  }
+]

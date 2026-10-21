@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="b-cell" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <g id="b-cell-membrane" data-part="membrane">
+    <circle cx="80" cy="80" r="58" fill="#B3D7CC"/>
+  </g>
+  <g id="b-cell-cytoplasm" data-part="cytoplasm">
+    <circle cx="80" cy="80" r="53" fill="#EDF5F1" stroke="#69ADB5" stroke-width="2"/>
+  </g>
+  <g id="b-cell-nucleus" data-part="nucleus">
+    <ellipse cx="80" cy="81" rx="39" ry="38" fill="#69ADB5"/>
+  </g>
+  <g id="b-cell-surface-receptors" data-part="surface-receptors" fill="none" stroke="#69ADB5" stroke-width="3">
+    <path d="M43 40 L43 30 M43 36 L36 29 M43 36 L50 29 M119 51 L119 41 M119 47 L112 40 M119 47 L126 40"/>
+  </g>
+  </g>
+</svg>

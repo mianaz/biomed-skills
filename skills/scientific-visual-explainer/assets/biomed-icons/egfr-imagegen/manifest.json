@@ -1,0 +1,852 @@
+[
+  {
+    "id": "egfr-ig",
+    "label": "EGFR",
+    "label_zh": "表皮生长因子受体",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for EGFR; domain-level teaching schematic.",
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12297050/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/egfr-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "egfr-imagegen/egfr-ig.svg",
+    "parts": [
+      "outline",
+      "ectodomain-stem",
+      "kinase-domain",
+      "C-terminal-tail"
+    ],
+    "anchors": {
+      "EGF-binding": {
+        "point": [
+          79.22609331859881,
+          38.608695652173914
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "EGF-EGFR",
+          "shape": "socket",
+          "halfWidth": 1.4285714285714286,
+          "depth": 0.28571428571428575,
+          "profile": "continuous-body",
+          "framePoint": [
+            78.98050974512745,
+            38.608695652173914
+          ],
+          "schematic": true
+        }
+      },
+      "dimer-arm": {
+        "point": [
+          98.75862068965517,
+          35.040479760119936
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "EGFR-dimer",
+          "shape": "flat",
+          "halfWidth": 1.0714285714285714,
+          "depth": 0.0,
+          "profile": "continuous-body",
+          "framePoint": [
+            98.75862068965517,
+            35.040479760119936
+          ],
+          "schematic": true
+        }
+      },
+      "membrane": {
+        "point": [
+          77.14542728635683,
+          90.50074962518741
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "pY-tail": {
+        "point": [
+          91.31634182908547,
+          148.07112299819465
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "pY-SH2",
+          "shape": "tab",
+          "halfWidth": 0.5357142857142857,
+          "depth": 0.28571428571428575,
+          "profile": "continuous-body",
+          "framePoint": [
+            91.31634182908547,
+            147.7961019490255
+          ],
+          "schematic": true
+        }
+      },
+      "kinase": {
+        "point": [
+          87.23838080959521,
+          114.76461769115443
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "ectodomain-stem": "#69ADB5",
+      "kinase-domain": "#B2A6CD",
+      "C-terminal-tail": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.10194902548725637,
+      "translate": [
+        25.661169415292356,
+        1.6011994002998478
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 2.8,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "egf-ig",
+    "label": "EGF",
+    "label_zh": "表皮生长因子",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for EGF; domain-level teaching schematic.",
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12297050/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/egf-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "egfr-imagegen/egf-ig.svg",
+    "parts": [
+      "outline",
+      "ligand"
+    ],
+    "anchors": {
+      "receptor-contact": {
+        "point": [
+          149.0132441761997,
+          85.84375
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "EGF-EGFR",
+          "shape": "tab",
+          "halfWidth": 6.666666666666667,
+          "depth": 1.3333333333333335,
+          "profile": "continuous-body",
+          "framePoint": [
+            147.8671875,
+            85.84375
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "ligand": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.1328125,
+      "translate": [
+        -22.0,
+        11.8671875
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 0.6,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "grb2-ig",
+    "label": "GRB2",
+    "label_zh": "衔接蛋白 GRB2",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for GRB2; domain-level teaching schematic.",
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8479541/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8479540/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/grb2-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "egfr-imagegen/grb2-ig.svg",
+    "parts": [
+      "outline",
+      "SH3-domains",
+      "SH2-domain"
+    ],
+    "anchors": {
+      "SH2": {
+        "point": [
+          81.08510638297872,
+          70.86871764882748
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "pY-SH2",
+          "shape": "socket",
+          "halfWidth": 1.7647058823529411,
+          "depth": 0.9411764705882354,
+          "profile": "continuous-body",
+          "framePoint": [
+            81.08510638297872,
+            69.9627659574468
+          ],
+          "schematic": true
+        }
+      },
+      "SH3-right": {
+        "point": [
+          139.63329892616719,
+          80.90425531914893
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "SH3-SOS1",
+          "shape": "tab",
+          "halfWidth": 8.23529411764706,
+          "depth": 0.9411764705882354,
+          "profile": "continuous-body",
+          "framePoint": [
+            138.86702127659575,
+            80.90425531914893
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "SH3-domains": "#69ADB5",
+      "SH2-domain": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.09042553191489362,
+      "translate": [
+        -0.026595744680861344,
+        39.85106382978723
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 0.85,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "sos1-ig",
+    "label": "SOS1",
+    "label_zh": "鸟嘌呤核苷酸交换因子 SOS1",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for SOS1; domain-level teaching schematic.",
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8479541/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9690470/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/sos1-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "egfr-imagegen/sos1-ig.svg",
+    "parts": [
+      "outline",
+      "catalytic-region",
+      "proline-rich-region"
+    ],
+    "anchors": {
+      "GRB2-contact": {
+        "point": [
+          12.64521665221809,
+          122.33333333333334
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "SH3-SOS1",
+          "shape": "socket",
+          "halfWidth": 6.934234482228935,
+          "depth": 0.792483940826164,
+          "profile": "continuous-body",
+          "framePoint": [
+            12.0,
+            122.33333333333334
+          ],
+          "schematic": true
+        }
+      },
+      "RAS-exchange": {
+        "point": [
+          148.5281011489875,
+          45.400000000000006
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "SOS1-RAS",
+          "shape": "tab",
+          "halfWidth": 8.915444334294346,
+          "depth": 0.792483940826164,
+          "profile": "continuous-body",
+          "framePoint": [
+            147.86666666666667,
+            45.400000000000006
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "catalytic-region": "#69ADB5",
+      "proline-rich-region": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.13333333333333333,
+      "translate": [
+        -9.733333333333334,
+        1.6666666666666714
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1.0094841785260664,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "ras-ig",
+    "label": "RAS",
+    "label_zh": "膜上小 GTP 酶 RAS",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for RAS; domain-level teaching schematic.",
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9690470/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8332195/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/ras-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "egfr-imagegen/ras-ig.svg",
+    "parts": [
+      "outline",
+      "GTPase-body",
+      "membrane-anchor"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          78.6247191011236,
+          13.06966292134831
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "SOS-contact": {
+        "point": [
+          28.375237885586575,
+          89.32134831460674
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "SOS1-RAS",
+          "shape": "socket",
+          "halfWidth": 8.571428571428571,
+          "depth": 0.7619047619047619,
+          "profile": "continuous-body",
+          "framePoint": [
+            27.73932584269663,
+            89.32134831460674
+          ],
+          "schematic": true
+        }
+      },
+      "RAF-contact": {
+        "point": [
+          57.68988764044944,
+          147.53380548492223
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "RAS-RAF",
+          "shape": "tab",
+          "halfWidth": 4.761904761904762,
+          "depth": 0.7619047619047619,
+          "profile": "continuous-body",
+          "framePoint": [
+            57.68988764044944,
+            146.9303370786517
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "GTPase-body": "#69ADB5",
+      "membrane-anchor": "#E4BE78"
+    },
+    "source_to_svg": {
+      "scale": 0.15280898876404495,
+      "translate": [
+        -23.757303370786516,
+        -2.669662921348319
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1.05,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "raf-ig",
+    "label": "RAF1",
+    "label_zh": "RAF1 丝氨酸苏氨酸激酶",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for RAF1; domain-level teaching schematic.",
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8332195/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1322500/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/raf-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "egfr-imagegen/raf-ig.svg",
+    "parts": [
+      "outline",
+      "regulatory-region",
+      "kinase-region"
+    ],
+    "anchors": {
+      "RAS-binding": {
+        "point": [
+          65.6503937007874,
+          12.55099289268179
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "RAS-RAF",
+          "shape": "socket",
+          "halfWidth": 4.347826086956522,
+          "depth": 0.6956521739130436,
+          "profile": "continuous-body",
+          "framePoint": [
+            65.6503937007874,
+            11.999999999999996
+          ],
+          "schematic": true
+        }
+      },
+      "MEK-substrate": {
+        "point": [
+          100.98897637795275,
+          148.02629655352823
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "RAF-MEK",
+          "shape": "tab",
+          "halfWidth": 6.9565217391304355,
+          "depth": 0.6956521739130436,
+          "profile": "continuous-body",
+          "framePoint": [
+            100.98897637795275,
+            147.46456692913387
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "regulatory-region": "#69ADB5",
+      "kinase-region": "#B2A6CD"
+    },
+    "source_to_svg": {
+      "scale": 0.10708661417322834,
+      "translate": [
+        24.100787401574806,
+        -0.9574803149606339
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1.15,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "mek-ig",
+    "label": "MEK1/2",
+    "label_zh": "MEK 双特异性激酶",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for MEK1/2; domain-level teaching schematic.",
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1322500/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1411546/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/mek-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "egfr-imagegen/mek-ig.svg",
+    "parts": [
+      "outline",
+      "N-lobe",
+      "C-lobe"
+    ],
+    "anchors": {
+      "RAF-substrate": {
+        "point": [
+          59.62477231329691,
+          12.739089250345005
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "RAF-MEK",
+          "shape": "socket",
+          "halfWidth": 7.619047619047619,
+          "depth": 0.7619047619047619,
+          "profile": "continuous-body",
+          "framePoint": [
+            59.62477231329691,
+            12.12386156648451
+          ],
+          "schematic": true
+        }
+      },
+      "ERK-substrate": {
+        "point": [
+          102.85245901639345,
+          148.21213237777988
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "MEK-ERK",
+          "shape": "tab",
+          "halfWidth": 7.619047619047619,
+          "depth": 0.7619047619047619,
+          "profile": "continuous-body",
+          "framePoint": [
+            102.85245901639345,
+            147.62841530054644
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "N-lobe": "#69ADB5",
+      "C-lobe": "#B3D7CC"
+    },
+    "source_to_svg": {
+      "scale": 0.12386156648451731,
+      "translate": [
+        7.231329690346087,
+        -4.102003642987256
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1.05,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "erk-ig",
+    "label": "ERK1/2",
+    "label_zh": "ERK MAP 激酶",
+    "category": "egfr-imagegen",
+    "description": "Generated flat mechanism icon for ERK1/2; domain-level teaching schematic.",
+    "scope": "Generic teaching geometry. Domain regions and source-pixel contact anchors are curated; no atomic interface is claimed.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+        "scope": "Public preview visually inspected for composition and detail; no paths copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1411546/",
+        "scope": "Primary abstract/record for domain role and interaction."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "egfr-imagegen/sources/erk-ig.png",
+      "prompt": "egfr-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "egfr-imagegen/erk-ig.svg",
+    "parts": [
+      "outline",
+      "N-lobe",
+      "C-lobe"
+    ],
+    "anchors": {
+      "MEK-substrate": {
+        "point": [
+          60.88977159880834,
+          12.988880930262248
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding",
+        "interface": {
+          "id": "MEK-ERK",
+          "shape": "socket",
+          "halfWidth": 7.619047619047619,
+          "depth": 0.7619047619047619,
+          "profile": "continuous-body",
+          "framePoint": [
+            60.88977159880834,
+            12.405163853028796
+          ],
+          "schematic": true
+        }
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "N-lobe": "#B2A6CD",
+      "C-lobe": "#D7E8EC"
+    },
+    "source_to_svg": {
+      "scale": 0.13505461767626614,
+      "translate": [
+        1.7358490566037688,
+        -14.60575968222443
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1.05,
+      "patches": false,
+      "source_preserved": true
+    }
+  }
+]

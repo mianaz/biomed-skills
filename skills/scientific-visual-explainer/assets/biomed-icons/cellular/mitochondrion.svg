@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="mitochondrion" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="mitochondrion-outer-membrane" data-part="outer-membrane">
+      <path d="M25 82 C23 62 37 43 57 38 C79 32 105 39 124 52 C138 62 137 86 124 101 C109 118 82 124 58 117 C39 112 27 99 25 82 Z" fill="#B3D7CC"/>
+    </g>
+    <g id="mitochondrion-inner-membrane" data-part="inner-membrane">
+      <path d="M34 81 C33 65 44 51 60 47 C80 42 103 48 118 59 C129 67 128 84 118 96 C106 109 83 114 62 108 C46 104 35 94 34 81 Z" fill="#EDF5F1" stroke="#69ADB5" stroke-width="2"/>
+      <path d="M49 54 C57 61 63 68 68 75 C74 84 72 92 66 99 C62 103 66 107 73 109" stroke="#69ADB5" stroke-width="2.5"/>
+      <path d="M76 44 C82 53 85 61 80 69 C75 77 74 83 83 89 C92 95 94 103 89 112" stroke="#69ADB5" stroke-width="2.5"/>
+      <path d="M109 55 C101 62 99 69 106 76 C114 83 119 90 118 96" stroke="#69ADB5" stroke-width="2.5"/>
+    </g>
+    <g id="mitochondrion-mtdna" data-part="mtDNA">
+      <path d="M72 81 C75 73 87 72 91 80 C95 88 87 95 79 92 C73 90 72 85 77 82 C81 80 85 82 85 85" stroke="#B2A6CD" stroke-width="2.4"/>
+    </g>
+  </g>
+</svg>

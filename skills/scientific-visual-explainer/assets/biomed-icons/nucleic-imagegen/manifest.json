@@ -1,0 +1,163 @@
+[
+  {
+    "id": "dna-ig",
+    "label": "DNA duplex",
+    "label_zh": "双链 DNA",
+    "category": "nucleic-imagegen",
+    "description": "Generic double-stranded DNA with alternating ribbon occlusion and schematic base pairs; no specified sequence, handedness or atomic structure.",
+    "scope": "Generic double-stranded DNA with alternating ribbon occlusion and schematic base pairs; no specified sequence, handedness or atomic structure.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/icon/dna-2d-short",
+        "scope": "Public icon preview visually inspected for line weight, curvature and detail; original generated art, not copied."
+      }
+    ],
+    "scientific_references": [],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "nucleic-imagegen/sources/dna-ig.png",
+      "prompt": "nucleic-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "nucleic-imagegen/dna-ig.svg",
+    "parts": [
+      "outline",
+      "strand-a",
+      "strand-b",
+      "base-pairs"
+    ],
+    "anchors": {
+      "surface-contact": {
+        "point": [
+          62.80101781170484,
+          94.56895674300254
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "left-end": {
+        "point": [
+          12.000000000000007,
+          79.96539440203563
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "right-end": {
+        "point": [
+          147.93078880407126,
+          79.96539440203563
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "strand-a": "#69ADB5",
+      "strand-b": "#B2A6CD",
+      "base-pairs": "#B3D7CC"
+    },
+    "source_to_svg": {
+      "scale": 0.06921119592875317,
+      "translate": [
+        4.940458015267183,
+        54.73791348600509
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1,
+      "patches": false,
+      "source_preserved": true
+    }
+  },
+  {
+    "id": "rna-ig",
+    "label": "RNA transcript",
+    "label_zh": "单链 RNA",
+    "category": "nucleic-imagegen",
+    "description": "Generic single-stranded transcription output with unpaired nucleotide tabs; no specific sequence, cap, poly-A tail, secondary structure or mature-processing claim.",
+    "scope": "Generic single-stranded transcription output with unpaired nucleotide tabs; no specific sequence, cap, poly-A tail, secondary structure or mature-processing claim.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/icon/mrna",
+        "scope": "Public icon preview visually inspected for line weight, curvature and detail; original generated art, not copied."
+      }
+    ],
+    "scientific_references": [],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "nucleic-imagegen/sources/rna-ig.png",
+      "prompt": "nucleic-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    },
+    "file": "nucleic-imagegen/rna-ig.svg",
+    "parts": [
+      "outline",
+      "backbone",
+      "bases-a",
+      "bases-b"
+    ],
+    "anchors": {
+      "left-end": {
+        "point": [
+          12.38526912181304,
+          83.85269121813032
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "right-end": {
+        "point": [
+          147.53767705382435,
+          79.22946175637394
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "palette": {
+      "outline": "#3D5963",
+      "backbone": "#B2A6CD",
+      "bases-a": "#69ADB5",
+      "bases-b": "#B3D7CC"
+    },
+    "source_to_svg": {
+      "scale": 0.07705382436260623,
+      "translate": [
+        6.06685552407933,
+        48.870254957507086
+      ]
+    },
+    "parts_note": "Color-assisted semantic fill groups; shared outline paths retain paint order. Curate extra motion parts separately.",
+    "contour_refinement": {
+      "method": "closed-cubic-body",
+      "outer_line": 1.6,
+      "inner_line": 1.1,
+      "scale_at_assembly": 1,
+      "patches": false,
+      "source_preserved": true
+    }
+  }
+]

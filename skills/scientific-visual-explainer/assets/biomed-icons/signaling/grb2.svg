@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="grb2-linkers" data-part="linkers"><path d="M52 79 C61 73 67 73 75 79 M85 79 C93 73 100 73 108 79" fill="none" stroke-width="11"/><path d="M52 79 C61 73 67 73 75 79 M85 79 C93 73 100 73 108 79" fill="none" stroke="#69ADB5" stroke-width="6"/></g>
+<g id="grb2-n-sh3" data-part="n-terminal-sh3-domain"><path d="M18 75 C17 62 27 51 40 51 C53 50 61 60 59 72 C65 83 58 96 46 99 C34 104 22 97 20 88 C17 84 17 79 18 75 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M29 68 C36 60 46 63 49 70 C52 76 48 81 43 84" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="grb2-sh2" data-part="sh2-domain"><path d="M61 77 C60 64 69 55 81 55 C94 53 103 63 101 76 C107 86 100 98 88 101 C77 106 65 99 63 90 C60 86 60 81 61 77 Z" fill="#D7E8EC" stroke-width="2.5"/><path d="M71 72 C78 64 88 67 91 74 C94 80 90 85 85 88" fill="none" stroke="#3D5963" stroke-width="1.5"/></g>
+<g id="grb2-c-sh3" data-part="c-terminal-sh3-domain"><path d="M101 75 C100 62 110 51 123 51 C136 50 144 60 142 72 C148 83 141 96 129 99 C117 104 105 97 103 88 C100 84 100 79 101 75 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M112 68 C119 60 129 63 132 70 C135 76 131 81 126 84" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+</svg>

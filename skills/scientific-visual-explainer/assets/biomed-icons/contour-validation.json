@@ -1,0 +1,321 @@
+{
+  "icons": [
+    {
+      "icon": "egfr-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.0957261037995728,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "egf-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.006244128884592031,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "grb2-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.02880609768929152,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "sos1-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.0074050729239687006,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "ras-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.011061802247155786,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "raf-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.011378853576189434,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "mek-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.006693065319697835,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "erk-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.0062031412994206425,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "dna-ig",
+      "closedRings": 14,
+      "maxJoinAngleDegrees": 0.01678637387397579,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "rna-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.012652976879585626,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "tgfb1-ig",
+      "closedRings": 3,
+      "maxJoinAngleDegrees": 0.034591536764958554,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "tgfbr2-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.0062341940168394,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "tgfbr1-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.011472952111716363,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "smad3-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.01807383183345081,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "smad4-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.007005433937883449,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    },
+    {
+      "icon": "smad2-ig",
+      "closedRings": 1,
+      "maxJoinAngleDegrees": 0.013295963155391857,
+      "renderedBodyComponentsAbove1SquareUnit": 1,
+      "outerWeights": [
+        1.6
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "lesson": "tgfb-imagegen",
+      "contact": [
+        "ligand",
+        "II-left",
+        "r2a",
+        "ligand"
+      ],
+      "maxActualOutlineGap": 0.03821341745492646
+    },
+    {
+      "lesson": "tgfb-imagegen",
+      "contact": [
+        "r2b",
+        "ligand",
+        "ligand",
+        "II-right"
+      ],
+      "maxActualOutlineGap": 0.035897409250168266
+    },
+    {
+      "lesson": "tgfb-imagegen",
+      "contact": [
+        "r1a",
+        "ligand",
+        "ligand",
+        "I-left"
+      ],
+      "maxActualOutlineGap": 1.8296911378001823e-05
+    },
+    {
+      "lesson": "tgfb-imagegen",
+      "contact": [
+        "r1b",
+        "ligand",
+        "ligand",
+        "I-right"
+      ],
+      "maxActualOutlineGap": 1.8296911378001823e-05
+    },
+    {
+      "lesson": "tgfb-imagegen",
+      "contact": [
+        "sa",
+        "co-SMAD-left",
+        "r1a",
+        "SMAD-substrate"
+      ],
+      "maxActualOutlineGap": 0.0011675819814627175
+    },
+    {
+      "lesson": "tgfb-imagegen",
+      "contact": [
+        "sb",
+        "co-SMAD-left",
+        "r1b",
+        "SMAD-substrate"
+      ],
+      "maxActualOutlineGap": 0.0011675819813490307
+    },
+    {
+      "lesson": "tgfb-imagegen",
+      "contact": [
+        "sa",
+        "co-SMAD-right",
+        "s4",
+        "co-SMAD-left"
+      ],
+      "maxActualOutlineGap": 0.005938971924706493
+    },
+    {
+      "lesson": "tgfb-imagegen",
+      "contact": [
+        "sb",
+        "co-SMAD-right",
+        "s4",
+        "co-SMAD-right"
+      ],
+      "maxActualOutlineGap": 0.005942042550714177
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "sos",
+        "GRB2-contact",
+        "grb",
+        "SH3-right"
+      ],
+      "maxActualOutlineGap": 0.004819866322463895
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "l1",
+        "receptor-contact",
+        "r1",
+        "EGF-binding"
+      ],
+      "maxActualOutlineGap": 0.001316810832435067
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "l2",
+        "receptor-contact",
+        "r2",
+        "EGF-binding"
+      ],
+      "maxActualOutlineGap": 0.0012636307672551084
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "r2",
+        "dimer-arm",
+        "r1",
+        "dimer-arm"
+      ],
+      "maxActualOutlineGap": 0.001153827709572397
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "grb",
+        "SH2",
+        "r1",
+        "pY-tail"
+      ],
+      "maxActualOutlineGap": 0.0001984874306799611
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "ras",
+        "SOS-contact",
+        "sos",
+        "RAS-exchange"
+      ],
+      "maxActualOutlineGap": 0.02760442256061424
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "raf",
+        "RAS-binding",
+        "ras",
+        "RAF-contact"
+      ],
+      "maxActualOutlineGap": 0.0036101868939795168
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "mek",
+        "RAF-substrate",
+        "raf",
+        "MEK-substrate"
+      ],
+      "maxActualOutlineGap": 0.013481076815537563
+    },
+    {
+      "lesson": "egfr-imagegen",
+      "contact": [
+        "erk",
+        "MEK-substrate",
+        "mek",
+        "ERK-substrate"
+      ],
+      "maxActualOutlineGap": 0.0026756884938095027
+    }
+  ],
+  "scope": "Actual SVG cubic outlines and rendered connectivity; schematic geometry."
+}

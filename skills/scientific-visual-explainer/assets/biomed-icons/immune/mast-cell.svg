@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="mast-cell" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <g id="mast-cell-body" data-part="cell-body">
+    <ellipse cx="80" cy="80" rx="57" ry="52" fill="#B3D7CC"/>
+  </g>
+  <g id="mast-cell-nucleus" data-part="nucleus">
+    <ellipse cx="80" cy="80" rx="22" ry="26" fill="#69ADB5"/>
+  </g>
+  <g id="mast-cell-metachromatic-granules" data-part="metachromatic-granules" fill="#B2A6CD" stroke="#3D5963" stroke-width="1.2">
+    <circle cx="45" cy="62" r="4.5"/><circle cx="56" cy="48" r="4.5"/><circle cx="73" cy="43" r="4.5"/><circle cx="96" cy="45" r="4.5"/>
+    <circle cx="113" cy="55" r="4.5"/><circle cx="125" cy="71" r="4.5"/><circle cx="120" cy="91" r="4.5"/><circle cx="106" cy="108" r="4.5"/>
+    <circle cx="88" cy="118" r="4.5"/><circle cx="65" cy="116" r="4.5"/><circle cx="47" cy="101" r="4.5"/><circle cx="36" cy="81" r="4.5"/>
+    <circle cx="62" cy="68" r="4"/><circle cx="96" cy="69" r="4"/><circle cx="62" cy="91" r="4"/><circle cx="99" cy="91" r="4"/>
+  </g>
+  </g>
+</svg>

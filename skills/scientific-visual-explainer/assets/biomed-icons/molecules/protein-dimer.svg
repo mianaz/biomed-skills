@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="protein-dimer-protomer-a" data-part="protomer-a"><path d="M49 24 C34 25 24 37 25 52 C17 62 19 76 27 82 C20 95 25 110 37 117 C45 130 63 133 76 123 C86 115 90 103 94 95 C86 90 78 87 78 80 C78 73 86 70 94 65 C91 54 86 42 78 34 C69 25 59 22 49 24 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M43 48 C51 41 63 43 67 51 C71 58 66 64 60 68" fill="none" stroke-width="1.5"/><path d="M39 99 C49 92 61 95 65 104 C68 111 63 116 57 119" fill="none" stroke-width="1.5"/></g>
+<g id="protein-dimer-protomer-b" data-part="protomer-b"><path d="M94 65 C86 70 78 73 78 80 C78 87 86 90 94 95 C97 105 102 115 111 122 C124 131 140 124 142 110 C146 101 145 86 141 78 C146 65 144 50 133 45 C126 31 110 29 99 38 C92 45 91 54 94 65 Z" fill="#D7E8EC" stroke-width="2.5"/><path d="M108 53 C117 46 128 51 130 59 C132 66 127 72 121 75" fill="none" stroke-width="1.5"/><path d="M110 105 C120 98 132 101 136 110" fill="none" stroke-width="1.5"/></g>
+</svg>

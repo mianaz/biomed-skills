@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="endoplasmic-reticulum" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="endoplasmic-reticulum-connections-outline" data-part="connections" stroke="#3D5963" stroke-width="9.5">
+      <path d="M31 57 C22 51 19 43 25 35 C31 28 39 25 48 25 M26 35 C21 31 18 26 17 21"/>
+      <path d="M126 57 C140 68 141 83 135 97 M134 82 C138 80 140 76 139 70"/>
+      <path d="M49 117 C39 128 29 133 19 129"/>
+    </g>
+    <g id="endoplasmic-reticulum-connections-membrane" data-part="connections" stroke="#69ADB5" stroke-width="7">
+      <path d="M31 57 C22 51 19 43 25 35 C31 28 39 25 48 25 M26 35 C21 31 18 26 17 21"/>
+      <path d="M126 57 C140 68 141 83 135 97 M134 82 C138 80 140 76 139 70"/>
+      <path d="M49 117 C39 128 29 133 19 129"/>
+    </g>
+    <g id="endoplasmic-reticulum-cisternae" data-part="cisternae">
+      <path d="M28 56 C38 42 75 36 104 41 C117 43 127 48 129 54 C127 61 117 66 104 68 C75 74 41 69 29 62 C25 60 25 58 28 56 Z" fill="#B3D7CC"/>
+      <path d="M45 106 C54 91 88 82 115 87 C128 89 137 95 135 101 C133 107 123 113 110 117 C82 125 53 123 44 114 C42 112 43 109 45 106 Z" fill="#B3D7CC"/>
+    </g>
+    <g id="endoplasmic-reticulum-lumen" data-part="lumen" fill="#EDF5F1" stroke="#69ADB5" stroke-width="1.5">
+      <path d="M35 56 C50 47 79 43 103 47 C114 49 119 52 115 56 C105 62 75 66 53 63 C43 62 36 60 35 58 Z"/>
+      <path d="M52 106 C65 96 91 89 112 92 C122 94 128 97 125 101 C117 107 93 115 73 116 C62 116 55 113 52 110 Z"/>
+    </g>
+    <g id="endoplasmic-reticulum-connections-lumen" data-part="connections" stroke="#EDF5F1" stroke-width="2">
+      <path d="M31 57 C22 51 19 43 25 35 C31 28 39 25 48 25 M26 35 C21 31 18 26 17 21"/>
+      <path d="M126 57 C140 68 141 83 135 97 M134 82 C138 80 140 76 139 70"/>
+      <path d="M49 117 C39 128 29 133 19 129"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="membrane-core" data-part="hydrophobic-core" fill="#EDF5F1" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M20 55 C51 47 109 47 140 55 L140 105 C109 113 51 113 20 105 Z"/>
+</g>
+<g id="membrane-tails" data-part="lipid-tails" fill="none" stroke="#3D5963" stroke-width="1.5" stroke-linecap="round">
+  <path d="M26 53 C23 62 29 70 26 81 M31 53 C34 62 28 70 31 81 M52 53 C49 62 55 70 52 81 M57 53 C60 62 54 70 57 81 M78 53 C75 62 81 70 78 81 M83 53 C86 62 80 70 83 81 M104 53 C101 62 107 70 104 81 M109 53 C112 62 106 70 109 81 M130 53 C127 62 133 70 130 81 M135 53 C138 62 132 70 135 81"/>
+  <path d="M26 107 C23 98 29 90 26 79 M31 107 C34 98 28 90 31 79 M52 107 C49 98 55 90 52 79 M57 107 C60 98 54 90 57 79 M78 107 C75 98 81 90 78 79 M83 107 C86 98 80 90 83 79 M104 107 C101 98 107 90 104 79 M109 107 C112 98 106 90 109 79 M130 107 C127 98 133 90 130 79 M135 107 C138 98 132 90 135 79"/>
+</g>
+<g id="membrane-heads" data-part="phospholipid-heads" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="28" cy="45" r="8"/><circle cx="54" cy="45" r="8"/><circle cx="80" cy="45" r="8"/><circle cx="106" cy="45" r="8"/><circle cx="132" cy="45" r="8"/>
+  <circle cx="28" cy="115" r="8"/><circle cx="54" cy="115" r="8"/><circle cx="80" cy="115" r="8"/><circle cx="106" cy="115" r="8"/><circle cx="132" cy="115" r="8"/>
+</g>
+</svg>

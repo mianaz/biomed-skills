@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="phosphatase-body" data-part="body"><path d="M67 54 C74 41 87 35 99 36 C112 26 131 33 137 47 C149 59 145 77 136 86 C143 99 138 117 126 123 C116 136 98 134 88 126 C74 124 65 113 66 101 C77 96 86 90 92 80 C86 70 77 62 67 54 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M104 47 C115 43 126 50 128 60 C130 68 125 74 119 76" fill="none" stroke-width="1.5"/></g>
+<g id="phosphatase-substrate-tail" data-part="substrate-tail"><path d="M18 80 C33 78 44 82 58 80 C66 79 72 80 76 80" fill="none" stroke-width="10"/><path d="M18 80 C33 78 44 82 58 80 C66 79 72 80 76 80" fill="none" stroke="#69ADB5" stroke-width="6"/></g>
+<g id="phosphatase-phosphate" data-part="phosphate"><path d="M82 68 L88 75 L97 75 L92 82 L95 91 L86 87 L78 92 L78 83 L71 77 L80 76 Z" fill="#E4BE78" stroke-width="2.5"/></g>
+</svg>

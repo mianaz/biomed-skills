@@ -1,0 +1,29 @@
+{
+  "method": "Complete closed cubic silhouettes; no contact overlays or cutting clips.",
+  "icons": [
+    {
+      "icon": "dna-ig",
+      "body_components": 1,
+      "holes": 13,
+      "valid": true,
+      "bounds": [
+        11.97133139043266,
+        65.3715644843905,
+        147.95037815833572,
+        94.54670947477123
+      ]
+    },
+    {
+      "icon": "rna-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        11.939156472398214,
+        66.387328972413,
+        147.93580067839795,
+        93.5
+      ]
+    }
+  ]
+}

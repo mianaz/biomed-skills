@@ -1,0 +1,582 @@
+[
+  {
+    "id": "wnt-ligand",
+    "label": "Wnt ligand",
+    "label_zh": "Wnt配体",
+    "file": "wnt/wnt-ligand.svg",
+    "category": "wnt",
+    "description": "Secreted Wnt glycoprotein with an N-terminal palm, cysteine-rich C-terminal index and a palmitoleate-bearing thumb.",
+    "parts": [
+      "n-terminal-palm",
+      "palmitoleate-bearing-thumb",
+      "c-terminal-cysteine-rich-index",
+      "palmitoleate"
+    ],
+    "anchors": {
+      "frizzled-crd-contact": {
+        "point": [
+          134,
+          58
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "lrp6-linker-contact": {
+        "point": [
+          72,
+          107
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Wnt-family ligand cartoon informed by Wnt8–Frizzled structural topology; not a solved fold.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    }
+  },
+  {
+    "id": "frizzled",
+    "label": "Frizzled",
+    "label_zh": "卷曲受体",
+    "file": "wnt/frizzled.svg",
+    "category": "wnt",
+    "description": "Seven-pass Frizzled receptor with an extracellular cysteine-rich Wnt-binding domain and a cytoplasmic Dishevelled-binding tail.",
+    "parts": [
+      "membrane",
+      "cysteine-rich-domain",
+      "seven-transmembrane-helices",
+      "cytoplasmic-tail"
+    ],
+    "anchors": {
+      "wnt-binding-crd": {
+        "point": [
+          36,
+          17
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "dvl-tail": {
+        "point": [
+          126,
+          141
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          82
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic Frizzled topology; the CRD and seven membrane passes are schematic, not a particular isoform or atomic structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "lrp6",
+    "label": "LRP6",
+    "label_zh": "LRP6",
+    "file": "wnt/lrp6.svg",
+    "category": "wnt",
+    "description": "Single-pass Wnt coreceptor with four YWTD β-propeller–EGF repeats, three LDLR-A modules and a cytoplasmic PPPSP-rich tail.",
+    "parts": [
+      "extracellular-propeller-array",
+      "egf-like-linkers",
+      "ldlr-type-a-modules",
+      "membrane",
+      "transmembrane-helix",
+      "cytoplasmic-pppsp-tail"
+    ],
+    "anchors": {
+      "wnt-dkk-binding-face": {
+        "point": [
+          116,
+          21
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "axin-pppsp-tail": {
+        "point": [
+          82,
+          143
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          94
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "LRP6 ectodomain organization is compressed for a 160-unit icon; four propeller–EGF repeats and three LDLR-A modules remain distinct.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "dishevelled",
+    "label": "Dishevelled",
+    "label_zh": "DVL",
+    "file": "wnt/dishevelled.svg",
+    "category": "wnt",
+    "description": "Cytosolic Wnt adaptor with an N-terminal DIX self-assembly domain, central PDZ domain and C-terminal DEP membrane-recruitment domain.",
+    "parts": [
+      "dix-domain",
+      "pdz-domain",
+      "dep-domain",
+      "connecting-linkers"
+    ],
+    "anchors": {
+      "axin-dix-interface": {
+        "point": [
+          19,
+          52
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "frizzled-dep-interface": {
+        "point": [
+          141,
+          89
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "pdz-peptide-groove": {
+        "point": [
+          78,
+          51
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "DVL domain order and interaction surfaces are schematic; no phosphorylation state or polymer geometry is implied.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    }
+  },
+  {
+    "id": "axin",
+    "label": "Axin",
+    "label_zh": "Axin",
+    "file": "wnt/axin.svg",
+    "category": "wnt",
+    "description": "Scaffold with an N-terminal APC-binding RGS domain, central β-catenin and kinase docking regions, and a C-terminal DIX self-association domain.",
+    "parts": [
+      "rgs-domain",
+      "scaffold-linker",
+      "beta-catenin-docking-region",
+      "gsk3-ck1-docking-region",
+      "dix-domain"
+    ],
+    "anchors": {
+      "apc-rgs-interface": {
+        "point": [
+          17,
+          45
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "beta-catenin-docking": {
+        "point": [
+          67,
+          88
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "dvl-dix-interface": {
+        "point": [
+          146,
+          73
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Axin is represented as an elongated flexible scaffold with binding regions; linker geometry and stoichiometry are illustrative.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    }
+  },
+  {
+    "id": "apc",
+    "label": "APC",
+    "label_zh": "APC",
+    "file": "wnt/apc.svg",
+    "category": "wnt",
+    "description": "Large scaffold with an N-terminal oligomerization arm, central armadillo-repeat block, β-catenin-binding repeats, Axin-binding SAMP motifs and a C-terminal microtubule-binding region.",
+    "parts": [
+      "n-terminal-oligomerization-domain",
+      "continuous-scaffold-backbone",
+      "armadillo-repeat-block",
+      "beta-catenin-binding-repeats",
+      "samp-axin-binding-repeats",
+      "c-terminal-basic-region"
+    ],
+    "anchors": {
+      "beta-catenin-binding-repeats": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "axin-samp-interface": {
+        "point": [
+          136,
+          111
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "microtubule-binding-region": {
+        "point": [
+          141,
+          139
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "APC is drawn as a multidomain scaffold; the long central region is compressed and repeat counts are not literal.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    }
+  },
+  {
+    "id": "gsk3beta",
+    "label": "GSK3β",
+    "label_zh": "GSK3β",
+    "file": "wnt/gsk3beta.svg",
+    "category": "wnt",
+    "description": "Glycogen synthase kinase 3β with a compact N-terminal β-sheet lobe, helical C-terminal lobe and ATP/substrate cleft.",
+    "parts": [
+      "kinase-n-lobe",
+      "kinase-c-lobe",
+      "atp-substrate-cleft",
+      "activation-segment"
+    ],
+    "anchors": {
+      "atp-binding-cleft": {
+        "point": [
+          82,
+          78
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "substrate-interface": {
+        "point": [
+          137,
+          96
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic GSK3β kinase-domain schematic; no activation or inhibition state is encoded.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    }
+  },
+  {
+    "id": "ck1alpha",
+    "label": "CK1α",
+    "label_zh": "CK1α",
+    "file": "wnt/ck1alpha.svg",
+    "category": "wnt",
+    "description": "Casein kinase 1α catalytic domain shown as a compact bilobal serine/threonine kinase with a substrate-facing active-site cleft.",
+    "parts": [
+      "kinase-n-lobe",
+      "kinase-c-lobe",
+      "glycine-rich-loop",
+      "catalytic-cleft"
+    ],
+    "anchors": {
+      "substrate-binding-cleft": {
+        "point": [
+          72,
+          119
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "atp-pocket": {
+        "point": [
+          78,
+          75
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic CK1α kinase-domain schematic; regulatory tail and isoform-specific states are omitted.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    }
+  },
+  {
+    "id": "beta-catenin",
+    "label": "β-catenin",
+    "label_zh": "β-catenin",
+    "file": "wnt/beta-catenin.svg",
+    "category": "wnt",
+    "description": "Arm-repeat transcriptional coactivator with a curved central superhelix, N-terminal phosphodegron and C-terminal activation tail.",
+    "parts": [
+      "n-terminal-phosphodegron",
+      "armadillo-repeat-superhelix",
+      "tcf-binding-groove",
+      "c-terminal-activation-tail"
+    ],
+    "anchors": {
+      "tcf-lef-binding-groove": {
+        "point": [
+          66,
+          83
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "destruction-complex-contact": {
+        "point": [
+          67,
+          75
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "c-terminal-cofactor-interface": {
+        "point": [
+          141,
+          139
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Curved armadillo-repeat architecture is schematic; repeat count and atomic geometry are not represented.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    }
+  },
+  {
+    "id": "tcf-lef",
+    "label": "TCF/LEF",
+    "label_zh": "TCF/LEF",
+    "file": "wnt/tcf-lef.svg",
+    "category": "wnt",
+    "description": "HMG-box transcription factor with an L-shaped DNA-binding fold and an N-terminal β-catenin interaction segment.",
+    "parts": [
+      "beta-catenin-interaction-tail",
+      "hmg-box-domain",
+      "dna-contact-surface",
+      "dna-context"
+    ],
+    "anchors": {
+      "beta-catenin-interface": {
+        "point": [
+          23,
+          47
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "dna-groove-contact": {
+        "point": [
+          115,
+          78
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Representative TCF/LEF HMG-box topology; DNA is a removable composition guide, not a promoter sequence.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/wnt-beta-catenin-signaling-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8251975/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5727331/"
+      ]
+    },
+    "context_parts": [
+      "dna-context"
+    ]
+  }
+]

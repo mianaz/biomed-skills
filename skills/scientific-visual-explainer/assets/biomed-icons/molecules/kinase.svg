@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="kinase-n-lobe" data-part="n-lobe"><path d="M25 84 C21 67 29 48 44 39 C57 29 76 30 88 37 C100 44 106 56 105 69 C104 76 100 81 94 85 C80 89 63 96 49 97 C37 98 29 93 25 84 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M43 52 C51 44 64 44 70 52 C75 59 71 66 65 70" fill="none" stroke-width="1.5"/></g>
+<g id="kinase-c-lobe" data-part="c-lobe"><path d="M28 99 C43 94 60 94 76 98 C91 102 101 112 108 126 C96 136 78 137 64 132 C47 127 34 116 28 99 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M46 108 C55 103 67 106 71 114 C75 121 69 126 63 127" fill="none" stroke-width="1.5"/></g>
+<g id="kinase-atp" data-part="atp"><path d="M96 81 C99 76 107 76 110 81 L113 88 L109 95 L100 95 L95 89 Z" fill="#E4BE78" stroke-width="2.5"/><path d="M109 87 L119 87 L132 87 L139 87" fill="none" stroke="#E4BE78" stroke-width="5"/><circle cx="119" cy="87" r="5.5" fill="#E4BE78" stroke-width="2"/><circle cx="132" cy="87" r="5.5" fill="#E4BE78" stroke-width="2"/><circle cx="140" cy="87" r="5.5" fill="#E4BE78" stroke-width="2"/></g>
+</svg>

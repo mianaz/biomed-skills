@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="recycling-endosome" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="recycling-endosome-tubules" data-part="tubules">
+      <g stroke-width="10">
+      <path d="M21 89 C35 88 39 74 44 62 C50 46 62 42 73 50 C84 58 80 76 91 82 C105 89 112 74 118 61 C125 46 139 49 140 63 C141 75 129 83 120 91"/>
+      <path d="M44 62 C35 51 36 37 47 30 C58 23 70 29 73 50 M91 82 C86 98 92 113 105 120 C117 127 133 120 139 109"/>
+      <path d="M21 89 C31 101 39 113 52 116 C66 119 77 108 77 96 M120 91 C111 101 108 111 105 120"/>
+      <path d="M72 50 C83 41 96 39 106 47"/>
+      </g>
+      <g stroke="#69ADB5" stroke-width="7">
+      <path d="M21 89 C35 88 39 74 44 62 C50 46 62 42 73 50 C84 58 80 76 91 82 C105 89 112 74 118 61 C125 46 139 49 140 63 C141 75 129 83 120 91"/>
+      <path d="M44 62 C35 51 36 37 47 30 C58 23 70 29 73 50 M91 82 C86 98 92 113 105 120 C117 127 133 120 139 109"/>
+      <path d="M21 89 C31 101 39 113 52 116 C66 119 77 108 77 96 M120 91 C111 101 108 111 105 120"/>
+      <path d="M72 50 C83 41 96 39 106 47"/>
+      </g>
+    </g>
+    <g id="recycling-endosome-lumen-hints" data-part="lumen-hints" stroke="#EDF5F1" stroke-width="2">
+      <path d="M21 89 C35 88 39 74 44 62 C50 46 62 42 73 50 C84 58 80 76 91 82 C105 89 112 74 118 61 C125 46 139 49 140 63 C141 75 129 83 120 91"/>
+      <path d="M44 62 C35 51 36 37 47 30 C58 23 70 29 73 50 M91 82 C86 98 92 113 105 120 C117 127 133 120 139 109"/>
+      <path d="M21 89 C31 101 39 113 52 116 C66 119 77 108 77 96 M120 91 C111 101 108 111 105 120"/>
+      <path d="M72 50 C83 41 96 39 106 47"/>
+    </g>
+    <g id="recycling-endosome-cargo-vesicles" data-part="cargo-vesicles" fill="#EDF5F1" stroke="#3D5963" stroke-width="1.8">
+      <circle cx="23" cy="89" r="5"/><circle cx="139" cy="109" r="5"/><circle cx="47" cy="30" r="5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="antibody-fab-heavy-chain" data-part="heavy-chain"><path d="M28 29 C43 44 55 57 69 71 C84 86 102 105 132 134" fill="none" stroke-width="25"/><path d="M28 29 C43 44 55 57 69 71 C84 86 102 105 132 134" fill="none" stroke="#69ADB5" stroke-width="20"/></g>
+<g id="antibody-fab-light-chain" data-part="light-chain"><path d="M28 49 C43 62 55 76 67 89 C78 101 93 116 111 133" fill="none" stroke-width="17"/><path d="M28 49 C43 62 55 76 67 89 C78 101 93 116 111 133" fill="none" stroke="#D7E8EC" stroke-width="12"/></g>
+<g id="antibody-fab-domain-junctions" data-part="domain-junctions" fill="none" stroke-width="1.5"><path d="M49 49 L43 55"/><path d="M89 92 L82 98"/></g>
+</svg>

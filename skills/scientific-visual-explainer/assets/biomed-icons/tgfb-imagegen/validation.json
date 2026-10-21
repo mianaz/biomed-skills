@@ -1,0 +1,201 @@
+{
+  "date": "2026-10-20",
+  "icons": 134,
+  "samples": 1023,
+  "annotationOrArrowCollisions": 0,
+  "boundContourMaximumGap": 1.2710574864626038e-13,
+  "matchedContourSamples": 465654,
+  "membraneError": 0,
+  "passageErrors": [],
+  "temporaryIntendedContactOverlaps": [
+    [
+      "normal",
+      5.7,
+      "r2b",
+      "ligand",
+      44
+    ],
+    [
+      "normal",
+      5.8,
+      "r2b",
+      "ligand",
+      76
+    ],
+    [
+      "normal",
+      5.9,
+      "r2b",
+      "ligand",
+      108
+    ],
+    [
+      "normal",
+      6,
+      "r2b",
+      "ligand",
+      124
+    ],
+    [
+      "normal",
+      6.1,
+      "r2b",
+      "ligand",
+      128
+    ],
+    [
+      "normal",
+      6.2,
+      "r2b",
+      "ligand",
+      108
+    ],
+    [
+      "normal",
+      6.3,
+      "r2b",
+      "ligand",
+      76
+    ],
+    [
+      "normal",
+      6.4,
+      "r2b",
+      "ligand",
+      48
+    ],
+    [
+      "alk5-blocked",
+      5.7,
+      "r2b",
+      "ligand",
+      44
+    ],
+    [
+      "alk5-blocked",
+      5.8,
+      "r2b",
+      "ligand",
+      76
+    ],
+    [
+      "alk5-blocked",
+      5.9,
+      "r2b",
+      "ligand",
+      108
+    ],
+    [
+      "alk5-blocked",
+      6,
+      "r2b",
+      "ligand",
+      124
+    ],
+    [
+      "alk5-blocked",
+      6.1,
+      "r2b",
+      "ligand",
+      128
+    ],
+    [
+      "alk5-blocked",
+      6.2,
+      "r2b",
+      "ligand",
+      108
+    ],
+    [
+      "alk5-blocked",
+      6.3,
+      "r2b",
+      "ligand",
+      76
+    ],
+    [
+      "alk5-blocked",
+      6.4,
+      "r2b",
+      "ligand",
+      48
+    ],
+    [
+      "smad3-2SA",
+      5.7,
+      "r2b",
+      "ligand",
+      44
+    ],
+    [
+      "smad3-2SA",
+      5.8,
+      "r2b",
+      "ligand",
+      76
+    ],
+    [
+      "smad3-2SA",
+      5.9,
+      "r2b",
+      "ligand",
+      108
+    ],
+    [
+      "smad3-2SA",
+      6,
+      "r2b",
+      "ligand",
+      124
+    ],
+    [
+      "smad3-2SA",
+      6.1,
+      "r2b",
+      "ligand",
+      128
+    ],
+    [
+      "smad3-2SA",
+      6.2,
+      "r2b",
+      "ligand",
+      108
+    ],
+    [
+      "smad3-2SA",
+      6.3,
+      "r2b",
+      "ligand",
+      76
+    ],
+    [
+      "smad3-2SA",
+      6.4,
+      "r2b",
+      "ligand",
+      48
+    ]
+  ],
+  "readingScope": "See references.json",
+  "browserChecks": "See validation.md",
+  "assetRevision": "v0.7 continuous cubic bodies",
+  "contactFillOverlapSummary": {
+    "normal/r2b/ligand": {
+      "first": 5.8,
+      "last": 6.4,
+      "maxArea": 88
+    },
+    "alk5-blocked/r2b/ligand": {
+      "first": 5.8,
+      "last": 6.4,
+      "maxArea": 88
+    },
+    "smad3-2SA/r2b/ligand": {
+      "first": 5.8,
+      "last": 6.4,
+      "maxArea": 88
+    }
+  },
+  "actualCurveCheck": "../contour-validation.json"
+}

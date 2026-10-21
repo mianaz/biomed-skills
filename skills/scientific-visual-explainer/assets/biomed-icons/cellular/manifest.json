@@ -1,0 +1,444 @@
+[
+  {
+    "id": "dna",
+    "label": "DNA",
+    "label_zh": "DNA双链",
+    "file": "cellular/dna.svg",
+    "category": "cellular",
+    "description": "A generic double-stranded DNA helix with continuous strands and paired rungs.",
+    "parts": [
+      "strands",
+      "base-pairs"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          44,
+          22
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "surface-contact": {
+        "point": [
+          40.5,
+          22
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "mrna",
+    "label": "mRNA",
+    "label_zh": "信使RNA",
+    "file": "cellular/mrna.svg",
+    "category": "cellular",
+    "description": "A single RNA strand with outward nucleotide marks.",
+    "parts": [
+      "strand",
+      "bases"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          22,
+          108
+        ],
+        "normal": [
+          -0.928477,
+          0.371391
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "nucleosome",
+    "label": "Nucleosome",
+    "label_zh": "核小体",
+    "file": "cellular/nucleosome.svg",
+    "category": "cellular",
+    "description": "DNA wrapped around a simplified histone core.",
+    "parts": [
+      "core",
+      "wrapped-dna"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          35,
+          91
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "ribosome",
+    "label": "Ribosome",
+    "label_zh": "核糖体",
+    "file": "cellular/ribosome.svg",
+    "category": "cellular",
+    "description": "Large and small subunits with an RNA path through their interface.",
+    "parts": [
+      "large-subunit",
+      "small-subunit",
+      "mrna"
+    ],
+    "anchors": {
+      "rna-entry": {
+        "point": [
+          22,
+          94
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "rna-entry"
+      },
+      "rna-exit": {
+        "point": [
+          138,
+          94
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "rna-exit"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "nucleus",
+    "label": "Nucleus",
+    "label_zh": "细胞核",
+    "file": "cellular/nucleus.svg",
+    "category": "cellular",
+    "description": "A double-envelope nucleus with pores and a nucleolus.",
+    "parts": [
+      "envelope",
+      "pores",
+      "nucleolus"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          130,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "mitochondrion",
+    "label": "Mitochondrion",
+    "label_zh": "线粒体",
+    "file": "cellular/mitochondrion.svg",
+    "category": "cellular",
+    "description": "A double-membrane organelle with folded cristae and a small mitochondrial DNA loop.",
+    "parts": [
+      "outer-membrane",
+      "inner-membrane",
+      "mtDNA"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          135,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "golgi",
+    "label": "Golgi apparatus",
+    "label_zh": "高尔基体",
+    "file": "cellular/golgi.svg",
+    "category": "cellular",
+    "description": "A curved stack of separated cisternae with nearby vesicles.",
+    "parts": [
+      "cisternae",
+      "vesicles"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          47,
+          48
+        ],
+        "normal": [
+          -0.529999,
+          -0.847998
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "endoplasmic-reticulum",
+    "label": "Endoplasmic reticulum",
+    "label_zh": "内质网",
+    "file": "cellular/endoplasmic-reticulum.svg",
+    "category": "cellular",
+    "description": "Connected flattened cisternae joined into a continuous membrane network.",
+    "parts": [
+      "cisternae",
+      "lumen",
+      "connections"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          80,
+          39
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "animal-cell",
+    "label": "Animal cell",
+    "label_zh": "动物细胞",
+    "file": "cellular/animal-cell.svg",
+    "category": "cellular",
+    "description": "A generic animal cell with nucleus, mitochondria, and Golgi.",
+    "parts": [
+      "cell-membrane",
+      "nucleus",
+      "mitochondria",
+      "golgi"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          141,
+          82
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "bacterium",
+    "label": "Bacterium",
+    "label_zh": "细菌",
+    "file": "cellular/bacterium.svg",
+    "category": "cellular",
+    "description": "A generic rod-shaped bacterium with nucleoid, ribosomes, pili, and flagellum.",
+    "parts": [
+      "cell-envelope",
+      "nucleoid",
+      "ribosomes",
+      "pili",
+      "flagellum"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          131,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "virus-enveloped",
+    "label": "Enveloped virus",
+    "label_zh": "有包膜病毒",
+    "file": "cellular/virus-enveloped.svg",
+    "category": "cellular",
+    "description": "A generic enveloped virion with surface spikes and an internal nucleocapsid.",
+    "parts": [
+      "envelope",
+      "spikes",
+      "spike-heads",
+      "nucleocapsid",
+      "genome"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          121,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "extracellular-matrix",
+    "label": "Extracellular matrix",
+    "label_zh": "细胞外基质",
+    "file": "cellular/extracellular-matrix.svg",
+    "category": "cellular",
+    "description": "Crossing collagen-like fibers with a visibly branching matrix-fiber network.",
+    "parts": [
+      "collagen-fibers",
+      "branching-fibers"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          20,
+          52
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic schematic, not a named molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://bioart.niaid.nih.gov/",
+        "https://bioicons.com/"
+      ],
+      "license": "MIT"
+    }
+  }
+]

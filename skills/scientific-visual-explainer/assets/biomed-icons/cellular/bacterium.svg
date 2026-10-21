@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="bacterium" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="bacterium-cell-envelope" data-part="cell-envelope">
+      <path d="M48 45 C38 45 29 55 29 67 L29 92 C29 105 39 115 52 115 L108 115 C121 115 131 105 131 92 L131 68 C131 55 121 45 108 45 Z" fill="#B3D7CC"/>
+      <path d="M50 52 C42 52 36 59 36 68 L36 92 C36 101 43 108 52 108 L108 108 C117 108 124 101 124 92 L124 68 C124 59 117 52 108 52 Z" fill="#EDF5F1" stroke="#69ADB5" stroke-width="2"/>
+    </g>
+    <g id="bacterium-nucleoid" data-part="nucleoid">
+      <path d="M51 80 C56 65 66 64 69 78 C72 92 80 94 83 78 C86 63 97 64 99 79 C101 92 108 94 113 80" stroke="#B2A6CD" stroke-width="4.5"/>
+    </g>
+    <g id="bacterium-ribosomes" data-part="ribosomes" fill="#E4BE78">
+      <circle cx="48" cy="66" r="2.6"/><circle cx="61" cy="97" r="2.6"/><circle cx="76" cy="61" r="2.6"/>
+      <circle cx="91" cy="98" r="2.6"/><circle cx="108" cy="66" r="2.6"/><circle cx="110" cy="94" r="2.6"/>
+    </g>
+    <g id="bacterium-pili" data-part="pili" stroke="#69ADB5" stroke-width="2.5">
+      <path d="M44 45 L40 34 M60 45 L58 32 M78 45 L78 32 M96 45 L99 33 M115 48 L121 37 M43 115 L38 126 M62 115 L60 128 M85 115 L87 128 M108 115 L113 126"/>
+    </g>
+    <g id="bacterium-flagellum" data-part="flagellum" stroke="#69ADB5" stroke-width="3">
+      <path d="M131 78 C139 73 145 67 142 59 C139 52 133 56 136 62 C141 72 146 79 141 88 C138 94 134 96 131 95"/>
+    </g>
+  </g>
+</svg>

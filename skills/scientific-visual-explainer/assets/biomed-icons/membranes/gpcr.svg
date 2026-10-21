@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="gpcr-membrane" data-part="membrane" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M26 62 C52 57 108 57 134 62 L134 105 C108 110 52 110 26 105 Z"/>
+</g>
+<g id="gpcr-extracellular-loops" data-part="extracellular-loops" fill="none" stroke="#3D5963" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M43 49 C46 39 50 39 53 49 M57 49 C60 40 64 40 67 49 M71 49 C74 37 78 37 81 49 M85 49 C88 40 92 40 95 49 M99 49 C102 37 106 37 109 49 M113 49 C116 40 120 40 123 49"/>
+</g>
+<g id="gpcr-helix-1" data-part="helix-1" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round"><path d="M34 53 C32 48 35 44 39 44 C43 44 46 48 44 53 L45 109 C46 114 43 118 39 118 C35 118 32 114 33 109 Z"/></g>
+<g id="gpcr-helix-2" data-part="helix-2" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round"><path d="M48 53 C46 48 49 44 53 44 C57 44 60 48 58 53 L59 109 C60 114 57 118 53 118 C49 118 46 114 47 109 Z"/></g>
+<g id="gpcr-helix-3" data-part="helix-3" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round"><path d="M62 53 C60 48 63 44 67 44 C71 44 74 48 72 53 L73 109 C74 114 71 118 67 118 C63 118 60 114 61 109 Z"/></g>
+<g id="gpcr-helix-4" data-part="helix-4" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round"><path d="M76 53 C74 48 77 44 81 44 C85 44 88 48 86 53 L87 109 C88 114 85 118 81 118 C77 118 74 114 75 109 Z"/></g>
+<g id="gpcr-helix-5" data-part="helix-5" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round"><path d="M90 53 C88 48 91 44 95 44 C99 44 102 48 100 53 L101 109 C102 114 99 118 95 118 C91 118 88 114 89 109 Z"/></g>
+<g id="gpcr-helix-6" data-part="helix-6" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round"><path d="M104 53 C102 48 105 44 109 44 C113 44 116 48 114 53 L115 109 C116 114 113 118 109 118 C105 118 102 114 103 109 Z"/></g>
+<g id="gpcr-helix-7" data-part="helix-7" fill="#69ADB5" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round"><path d="M118 53 C116 48 119 44 123 44 C127 44 130 48 128 53 L129 109 C130 114 127 118 123 118 C119 118 116 114 117 109 Z"/></g>
+<g id="gpcr-intracellular-loops" data-part="intracellular-loops" fill="none" stroke="#3D5963" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M44 113 C47 124 51 124 58 113 M58 113 C61 122 65 122 72 113 M72 113 C75 126 79 126 86 113 M86 113 C89 122 93 122 100 113 M100 113 C103 126 107 126 114 113 M114 113 C117 122 121 122 128 113"/>
+</g>
+</svg>

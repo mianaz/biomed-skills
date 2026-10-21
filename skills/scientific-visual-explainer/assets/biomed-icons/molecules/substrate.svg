@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="substrate-body" data-part="body"><path d="M48 65 C49 54 54 43 63 37 C72 30 83 28 94 32 C107 27 120 35 123 46 C136 51 141 65 135 77 C142 89 136 103 125 109 C120 121 106 131 91 127 C75 132 60 122 56 111 C47 106 46 98 48 95 C39 91 32 86 32 80 C32 74 39 69 48 65 Z" fill="#E4BE78" stroke-width="2.5"/></g>
+<g id="substrate-surface-fold" data-part="surface-detail" fill="none" stroke-width="1.5"><path d="M72 47 C84 42 96 48 99 58 C102 66 97 72 91 76"/><path d="M83 111 C95 115 107 110 111 101"/></g>
+</svg>

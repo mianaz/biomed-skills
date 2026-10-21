@@ -1,0 +1,8 @@
+{
+  "icons": 134,
+  "sampledStates": 1023,
+  "annotationOrArrowCollisions": 0,
+  "vectorContract": "passed",
+  "browserFinal": "inspected",
+  "notes": "The pre-existing temporary ligand-RII overlap is unchanged; see tgfb-imagegen/validation.md."
+}

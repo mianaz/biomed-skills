@@ -1,0 +1,77 @@
+{
+  "method": "Complete closed cubic silhouettes; no contact overlays or cutting clips.",
+  "icons": [
+    {
+      "icon": "tgfb1-ig",
+      "body_components": 1,
+      "holes": 2,
+      "valid": true,
+      "bounds": [
+        11.941153835913767,
+        62.28616675833938,
+        147.8821258042251,
+        97.51834298473858
+      ]
+    },
+    {
+      "icon": "tgfbr2-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        59.438574130688,
+        11.961398003633711,
+        100.41081071511456,
+        147.8892121487039
+      ]
+    },
+    {
+      "icon": "tgfbr1-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        64.6185927126423,
+        12.726001727895794,
+        95.26506676974475,
+        147.91730091071827
+      ]
+    },
+    {
+      "icon": "smad3-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        36.7248074707801,
+        11.931947255484907,
+        123.16835827941631,
+        147.918372627763
+      ]
+    },
+    {
+      "icon": "smad4-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        36.19690035629256,
+        11.957971521833827,
+        123.59950682933616,
+        147.9219141912116
+      ]
+    },
+    {
+      "icon": "smad2-ig",
+      "body_components": 1,
+      "holes": 0,
+      "valid": true,
+      "bounds": [
+        37.56551308713274,
+        11.994958032533638,
+        122.29789081979025,
+        147.91818643785157
+      ]
+    }
+  ]
+}

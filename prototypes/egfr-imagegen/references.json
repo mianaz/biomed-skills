@@ -1,0 +1,59 @@
+{
+  "ogiso": {
+    "title": "Ogiso et al., Cell 2002",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12297050/",
+    "supports": "2:2 EGF–EGFR ectodomain complex; ligand between I/III and domain-II receptor contact",
+    "reading": "Primary abstract and record; diagram uses schematic domain regions, not a structural reconstruction."
+  },
+  "zhang": {
+    "title": "Zhang et al., Cell 2006",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16777603/",
+    "supports": "Asymmetric kinase-domain dimer activation of EGFR",
+    "reading": "Primary abstract and author-hosted PDF summary; tail phosphorylation is represented as an aggregate state, not a symmetric kinase mechanism."
+  },
+  "grb2": {
+    "title": "Li et al. and Rozakis-Adcock et al., Nature 1993",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8479541/",
+    "also": "https://pubmed.ncbi.nlm.nih.gov/8479540/",
+    "supports": "GRB2 SH2 receptor-pY binding and SH3 association with SOS proline-rich region",
+    "reading": "Both primary abstracts; preassembled GRB2–SOS association is retained in the model."
+  },
+  "sos": {
+    "title": "Boriack-Sjodin et al., Nature 1998",
+    "url": "https://www.nature.com/articles/28548",
+    "supports": "SOS-induced nucleotide release and rebinding in RAS",
+    "reading": "Primary abstract and figure index; no atomic contact geometry reproduced."
+  },
+  "rasraf": {
+    "title": "Warne et al., Nature 1993",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8332195/",
+    "supports": "Direct GTP-dependent RAS–RAF1 binding",
+    "reading": "Primary abstract; binding and later RAF activation are separate events."
+  },
+  "rafreg": {
+    "title": "Rajakulendran et al., Nature 2009",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19727074/",
+    "supports": "Dimerization-dependent RAF catalytic activation; this regulatory assembly is collapsed in the core diagram.",
+    "reading": "Primary abstract; Drosophila S2 RAF and oncogenic BRAF contexts. Omitted regulators are also mapped in the linked review.",
+    "also": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6311149/"
+  },
+  "rafmek": {
+    "title": "Kyriakis et al., Nature 1992",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1322500/",
+    "supports": "RAF1 activates MAP kinase kinase",
+    "reading": "Primary abstract and record."
+  },
+  "mekerK": {
+    "title": "Crews et al., Science and PNAS 1992",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/1411546/",
+    "also": "https://pubmed.ncbi.nlm.nih.gov/1381507/",
+    "supports": "MEK phosphorylates and activates ERK with threonine/tyrosine recognition",
+    "reading": "Primary abstracts; dual phospho state shown as pT/pY, without residue numbers."
+  },
+  "visual": {
+    "title": "BioRender public Simplified MAPK/ERK signalling preview",
+    "url": "https://www.biorender.com/template/simplified-mapkerk-signalling",
+    "supports": "Visual comparison: compartment bands, sparse silhouettes, external labels and cascade flow",
+    "reading": "Public preview viewed in browser. Its source art is neither traced nor embedded in the output."
+  }
+}

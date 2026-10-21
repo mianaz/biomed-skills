@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="dendritic-cell" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <g id="dendritic-cell-processes" data-part="processes" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 62 C78 47 83 35 82 19 M82 38 C73 33 67 26 64 18" stroke="#3D5963" stroke-width="10"/>
+    <path d="M95 66 C108 57 121 45 138 29 M120 47 C129 49 136 48 143 44" stroke="#3D5963" stroke-width="10"/>
+    <path d="M101 86 C116 91 128 102 140 119 M124 101 C131 96 137 94 143 94" stroke="#3D5963" stroke-width="10"/>
+    <path d="M80 100 C83 115 78 129 80 143 M80 128 C71 132 66 137 63 142" stroke="#3D5963" stroke-width="10"/>
+    <path d="M59 88 C45 97 33 108 20 123 M36 105 C29 101 23 99 17 99" stroke="#3D5963" stroke-width="10"/>
+    <path d="M61 67 C48 57 37 47 21 41 M39 50 C32 44 28 37 25 31" stroke="#3D5963" stroke-width="10"/>
+    <path d="M80 62 C78 47 83 35 82 19 M82 38 C73 33 67 26 64 18" stroke="#69ADB5" stroke-width="6"/>
+    <path d="M95 66 C108 57 121 45 138 29 M120 47 C129 49 136 48 143 44" stroke="#69ADB5" stroke-width="6"/>
+    <path d="M101 86 C116 91 128 102 140 119 M124 101 C131 96 137 94 143 94" stroke="#69ADB5" stroke-width="6"/>
+    <path d="M80 100 C83 115 78 129 80 143 M80 128 C71 132 66 137 63 142" stroke="#69ADB5" stroke-width="6"/>
+    <path d="M59 88 C45 97 33 108 20 123 M36 105 C29 101 23 99 17 99" stroke="#69ADB5" stroke-width="6"/>
+    <path d="M61 67 C48 57 37 47 21 41 M39 50 C32 44 28 37 25 31" stroke="#69ADB5" stroke-width="6"/>
+  </g>
+  <g id="dendritic-cell-body" data-part="cell-body">
+    <path d="M80 55 C93 55 103 65 104 78 C106 91 96 102 83 104 C69 106 58 97 56 84 C54 71 64 57 80 55 Z" fill="#B3D7CC"/>
+  </g>
+  <g id="dendritic-cell-nucleus" data-part="nucleus">
+    <ellipse cx="80" cy="80" rx="13" ry="15" fill="#69ADB5"/>
+  </g>
+  </g>
+</svg>

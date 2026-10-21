@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Visual Explainer"
+  short_description: "Teach concepts and papers with interactive visuals"
+  default_prompt: "Use $scientific-visual-explainer to explain this concept, review, or paper as an interactive HTML lesson with source-linked diagrams and a clear visual story. Reuse suitable icons; generate, vectorize and register missing biomedical icons with the built-in image tool."
