@@ -25,7 +25,7 @@ Keep a biological distinction only when it helps the explanation. Do not claim a
 
 ## Provenance
 
-Original SVG paths in this family use the parent package MIT license. They are reference-informed schematic drawings, not traced BioArt/Servier assets. Relevant visual references inspected during development include NIH BioArt [430](https://bioart.niaid.nih.gov/bioart/430), [473](https://bioart.niaid.nih.gov/bioart/473), [477](https://bioart.niaid.nih.gov/bioart/477), [481](https://bioart.niaid.nih.gov/bioart/481), and the open phospholipid/LDL source files recorded in `prototypes/biomedical-manim/assets/recycling/manifest.json`. That source collection keeps its own Public Domain/CC BY licensing. The v3 TF animation informed the restrained flat composition.
+Original SVG paths in this family use the parent package MIT license. They are reference-informed schematic drawings, not traced BioArt/Servier assets. Relevant visual references inspected during development include NIH BioArt [430](https://bioart.niaid.nih.gov/bioart/430), [473](https://bioart.niaid.nih.gov/bioart/473), [477](https://bioart.niaid.nih.gov/bioart/477), [481](https://bioart.niaid.nih.gov/bioart/481), and open phospholipid/LDL source files from a development collection that is not distributed with this package. That collection keeps its own Public Domain/CC BY licensing. The v3 TF animation informed the restrained flat composition.
 
 The library contains original diagrams, not experimental measurements. Broad coverage means these thirteen families; it does not imply complete anatomical or molecular coverage.
 
@@ -33,11 +33,11 @@ The library contains original diagrams, not experimental measurements. Broad cov
 
 The signaling, immune and organelles folders each contain `QC.md` with scientific
 references, public BioRender examples, actual visual-versus-text reading scope and
-per-icon criteria. Original drawings are not BioRender exports. The TCR–LAT–RAS/ERK
-HTML lesson (`prototypes/biomedical-manim/output/tcr-signalosome.html`) uses the
+per-icon criteria. Original drawings are not BioRender exports. A TCR–LAT–RAS/ERK
+development lesson, not distributed here, used the
 new domain icons with `domain-motion.js`, including nested docking, transient
 reaction, state change and branch-aware timing. The model remains separate from
-the shared operations; rename/reorder and branch-removal checks accompany it.
+the shared operations; rename/reorder and branch-removal checks accompanied it.
 
 ## v0.3 reference policy and nuclear transport
 

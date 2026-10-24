@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- Remove files unrelated to the installed skills: an external package's verification
+  log, learning roadmap and pilot protocol from scientific-visual-explainer, and
+  three browser screenshots from review sessions.
+- Point the EGFR and TGFβ prototype builds and checks at the skill's
+  `domain-motion.js`; drop the duplicate engine copy and the untracked output mirror.
+- Replace dead prototype paths in the icon README and ignore prototype build outputs.
+
 - Curate Pages around the current v0.7 mechanism lessons and 16 generated icons;
   remove early demos and the older plot gallery from the public showcase.
 

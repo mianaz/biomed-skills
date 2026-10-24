@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict');
-const motion=require('../biomedical-manim/domain-motion.js');
+const motion=require('../../skills/scientific-visual-explainer/scripts/domain-motion.js');
 const arrows=require('../../skills/scientific-visual-explainer/scripts/mechanism-arrows.js');
 const model=JSON.parse(fs.readFileSync(path.join(__dirname,'mechanism.json')));
 const icons=JSON.parse(fs.readFileSync(path.join(__dirname,'../../skills/scientific-visual-explainer/assets/biomed-icons/egfr-imagegen/manifest.json')));

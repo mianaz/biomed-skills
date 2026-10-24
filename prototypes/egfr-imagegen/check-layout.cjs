@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path');
-const motion=require('../biomedical-manim/domain-motion.js');
+const motion=require('../../skills/scientific-visual-explainer/scripts/domain-motion.js');
 const annotations=require('../../skills/scientific-visual-explainer/scripts/mechanism-annotations.js');
 const arrows=require('../../skills/scientific-visual-explainer/scripts/mechanism-arrows.js');
 const model=JSON.parse(fs.readFileSync(path.join(__dirname,'mechanism.json')));
