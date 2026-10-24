@@ -2,8 +2,9 @@
 __pycache__/
 *.py[cod]
 
-# Local maintainer instructions are not distributed.
-AGENTS.md
-
 # Generated GitHub Pages output.
 _site/
+
+# Local prototype build and check outputs.
+prototypes/*/preview.html
+prototypes/*/qa/

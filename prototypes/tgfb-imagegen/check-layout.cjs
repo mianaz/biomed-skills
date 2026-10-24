@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict');
-const motion=require('../biomedical-manim/domain-motion.js');require('../../skills/scientific-visual-explainer/scripts/mechanism-annotations.js');require('../../skills/scientific-visual-explainer/scripts/mechanism-arrows.js');const scene=require('./scene.js');
+const motion=require('../../skills/scientific-visual-explainer/scripts/domain-motion.js');require('../../skills/scientific-visual-explainer/scripts/mechanism-annotations.js');require('../../skills/scientific-visual-explainer/scripts/mechanism-arrows.js');const scene=require('./scene.js');
 const model=JSON.parse(fs.readFileSync(path.join(__dirname,'mechanism.json'))),catalog=JSON.parse(fs.readFileSync(path.join(__dirname,'../../skills/scientific-visual-explainer/assets/biomed-icons/catalog.json'))).icons;
 const frames=[],states={},geometry={},passageErrors=[];let membraneError=0;
 for(const condition of ['normal','alk5-blocked','smad3-2SA']){
