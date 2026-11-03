@@ -15,6 +15,10 @@
 - Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
   R plotting downloads, fictional study walkthroughs and automated deployment.
 
+## 0.5.5 — 3 November 2026
+
+- Keep heatmaps descriptive by default; add statistics or extra effect sizes only on request.
+
 ## 0.5.4 — 3 November 2026
 
 - Use numeric-only statistical labels; describe correction and sample sizes in captions.

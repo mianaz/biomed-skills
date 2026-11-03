@@ -16,12 +16,13 @@ Statistics belong to the requested scientific comparison, not to a decorative
 annotation pass after drawing. Do not return unlabeled summary bars or a matrix
 with no explanation of its comparison, scale or analysis.
 
-For a heatmap comparing groups, analyze independent samples before display scaling
-when inferential analysis is in scope. Keep effect sizes and adjusted P values in
-a readable row annotation or adjacent results table; do not print them inside each
-tile by default. For a descriptive heatmap, state its transformation, unit and
-purpose without fabricating inferential results. A supplied summary without the
-needed n/uncertainty cannot support an invented test.
+Heatmaps default to descriptive displays. Do not add statistical tests, P/q values,
+significance marks or extra effect-size annotations unless the user requests them.
+State the matrix unit, transformation and scale in the caption. This exception
+takes precedence over the comparison-figure annotation requirements above.
+When heatmap inference is requested, analyze independent samples before display
+scaling; place requested statistics outside the tiles. Add effect sizes only when
+requested. Do not invent tests from summaries lacking the necessary information.
 
 ## Identify the information available
 

@@ -67,7 +67,8 @@ Normal inspection of the saved figure remains part of delivery.
 
 ## Statistical content and exports
 
-Apply [statistics](statistics.md) to the primary comparison, including a
-nonsignificant result when that is the outcome. Follow [delivery](figure-delivery.md)
+Heatmaps omit statistical and extra effect-size annotations unless requested.
+For other comparison plots, apply [statistics](statistics.md) to the primary
+comparison, including a nonsignificant result when that is the outcome. Follow [delivery](figure-delivery.md)
 for the default PNG/PDF pair, numeric-only P labels, caption-based n and
 nonredundant titles without subtitles.
