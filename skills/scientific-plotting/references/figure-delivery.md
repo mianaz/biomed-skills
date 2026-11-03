@@ -11,10 +11,16 @@ PDF is resolution-independent, with any raster layers kept at suitable resolutio
 Do not add SVG, TIFF, JPEG, separate legend exports, or duplicate titled/clean
 versions by default. An explicitly requested HTML gallery links the PNG/PDF pair.
 
-A concise title is welcome when it identifies the dataset, gene, gene set or
-measurement. Use a short factual title such as “Beltran: AR activity” or “AXIN2
-expression”; avoid a long interpretation or workflow description. Keep essential
-statistical labels and a brief n/interval definition on the figure or its caption.
+Use a short factual title only when it adds dataset, gene/gene-set or measurement
+information absent from the axes. Omit a title that repeats the x/y labels. Do not
+add a subtitle or subheading by default. Put sample sizes (n and experimental unit),
+summary/interval definitions, test and correction method in the caption, not in
+plot titles, axis labels or group headers. Show n on the plot only when requested.
+
+Statistical annotations show numbers only by default: `0.013` or `<0.0001`, with
+no `P`, `padj`, `P adj.` or equals-sign prefix. The caption identifies whether these
+are raw or adjusted P values and names the correction and comparison family.
+Keep each number visibly linked to its comparison.
 
 Retain the plotting source/object, direct plotting data and full-precision
 statistics in the project's working analysis files for later tuning. Reuse existing
@@ -73,7 +79,7 @@ unknown, determine whether it can be established from the inputs. If not, state 
 specific inferential limitation; do not invent it from plotting-library defaults.
 
 For annotations selected by the visibility rule in `statistics.md`, prefer numeric
-P values (`P = 0.013` or `P adj. < 0.0001` at that reporting precision) over stars;
+P values (`0.013` or `<0.0001` at that reporting precision) over stars;
 `ns` mode uses `ns` for nonsignificant comparisons. Hidden comparisons retain their
 full-precision results in the statistical table. If a venue or user requires stars, provide the
 threshold legend and retain exact values in the panel report/source table. Make the

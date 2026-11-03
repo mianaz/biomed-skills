@@ -69,4 +69,5 @@ Normal inspection of the saved figure remains part of delivery.
 
 Apply [statistics](statistics.md) to the primary comparison, including a
 nonsignificant result when that is the outcome. Follow [delivery](figure-delivery.md)
-for the default PNG/PDF pair and optional short descriptive title.
+for the default PNG/PDF pair, numeric-only P labels, caption-based n and
+nonredundant titles without subtitles.

@@ -9,9 +9,10 @@ Read [reviewed-template and layout defaults](references/template-first-layout.md
 before selecting a template or drawing. Use a compatible reviewed template as the
 starting implementation; apply its settings before making data-specific changes.
 For new comparison figures, apply [statistics](references/statistics.md) before
-drawing and include the primary comparison, n and uncertainty definition. Default
-figure exports are one 600-dpi PNG and one vector PDF; short informative titles
-are allowed. See [delivery](references/figure-delivery.md).
+drawing. Show the primary comparison with numeric-only P labels; put n and
+uncertainty definitions in the caption. Default exports are one 600-dpi PNG and
+one vector PDF. Omit subtitles and titles that repeat axis labels; follow
+[delivery](references/figure-delivery.md) for compact text placement.
 
 
 Version 3.17.1 — portable visual examples, four-panel composition and rendered color previews.

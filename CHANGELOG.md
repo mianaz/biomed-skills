@@ -15,6 +15,12 @@
 - Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
   R plotting downloads, fictional study walkthroughs and automated deployment.
 
+## 0.5.4 — 3 November 2026
+
+- Use numeric-only statistical labels; describe correction and sample sizes in captions.
+- Omit subtitles and titles that duplicate axis labels.
+- Apply compact labels in the R and Python plotting helpers.
+
 ## 0.5.3 — 3 November 2026
 
 - Default to one 600-dpi PNG and one vector PDF, with concise informative titles.

@@ -105,7 +105,10 @@ Both R and Python helpers
 accept `nonsignificant="hide"` (default), `"ns"`, or `"value"`, and `alpha=0.05`.
 Use unrounded P < alpha for significance; P equal to alpha is nonsignificant. When
 correction applies, use the adjusted P column after correcting the complete family.
-The `adjusted` flag changes the label prefix; it does not calculate a correction.
+Labels omit the P/adjusted prefix and equals sign by default; identify the test and
+correction in the caption. `show_prefix=TRUE` (R) or `show_prefix=True` (Python)
+restores a prefix when requested. `adjusted` selects that optional prefix; it never
+calculates a correction.
 
 | Mode | Significant comparison | Nonsignificant comparison |
 |---|---|---|
@@ -119,15 +122,15 @@ classified as `ns` or silently hidden. Primary and requested contrasts use `valu
 regardless of significance; use `ns` only when explicitly requested. Secondary
 comparisons may remain in the complete results table.
 An absent annotation is not evidence of equivalence or absence of an effect.
-State the visibility rule in the caption, for example: "Only comparisons with Holm-
-adjusted P < 0.05 are annotated; all planned comparisons are in statistics.csv."
+State the visibility rule in the caption, for example: "Numbers show Holm-adjusted
+P values for the primary contrasts; all comparisons are in statistics.csv."
 
-For visible categorical comparisons, use `P adj.` or a short shared adjustment label;
-keep the full method in the caption. For `ns` mode, define `ns` and the threshold.
+For visible categorical comparisons, show numeric-only labels;
+keep the correction method in the caption. For `ns` mode, define `ns` and the threshold.
 Round only labels. Both helpers start with two significant digits and increase to
 six when rounding would change the value's relation to `alpha`, including rounding
-onto the threshold. If six digits remain ambiguous, use a truthful `P < alpha` or
-`P > alpha`; exact equality stays `P = alpha`. The small-value reporting bound is
+onto the threshold. If six digits remain ambiguous, use a truthful `< alpha` or
+`> alpha`; exact equality shows the numeric alpha value. The small-value reporting bound is
 `min(0.0001, alpha)`. Thus a custom threshold below 0.0001 remains interpretable.
 Never display a nonzero value as zero; keep the full value in the statistical table.
 Retain outcome, stratum, group pair, numeric P and rendered label in each comparison

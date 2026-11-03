@@ -52,7 +52,7 @@ biomedical_theme <- function(size = 14, x_angle = 0, aspect_ratio = 1) {
 }
 
 p_labels <- function(p, adjusted = FALSE, missing_label = NULL,
-                     nonsignificant = "hide", alpha = 0.05) {
+                     nonsignificant = "hide", alpha = 0.05, show_prefix = FALSE) {
   stopifnot(is.character(nonsignificant), length(nonsignificant) == 1,
             nonsignificant %in% c("hide", "ns", "value"),
             is.numeric(alpha), length(alpha) == 1, is.finite(alpha), alpha > 0, alpha < 1)
@@ -79,6 +79,7 @@ p_labels <- function(p, adjusted = FALSE, missing_label = NULL,
       }
       paste0(if (relation < 0) "< " else if (relation > 0) "> " else "= ", alpha_text)
     }, character(1)))
+  if (!show_prefix) labels[known] <- sub("^P (adj[.] )?(= )?", "", labels[known])
   if (nonsignificant != "value") labels[known & p >= alpha] <- if (nonsignificant == "hide") "" else "ns"
   names(labels) <- names(p)
   labels

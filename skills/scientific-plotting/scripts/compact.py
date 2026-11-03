@@ -58,7 +58,7 @@ def biomedical_theme(size=14):
     })
 
 
-def p_labels(p, adjusted=False, missing_label=None, nonsignificant="hide", alpha=0.05):
+def p_labels(p, adjusted=False, missing_label=None, nonsignificant="hide", alpha=0.05, show_prefix=False):
     """Preserve sequence positions or dictionary keys, including missing tests."""
     if not isinstance(nonsignificant, str) or nonsignificant not in ("hide", "ns", "value"):
         raise ValueError("nonsignificant must be hide, ns or value.")
@@ -96,7 +96,7 @@ def p_labels(p, adjusted=False, missing_label=None, nonsignificant="hide", alpha
                         break
                 else:
                     label = ("< " if relation < 0 else "> " if relation > 0 else "= ") + alpha_text
-            labels.append(("P adj. " if adjusted else "P ") + label)
+            labels.append(("P adj. " if adjusted else "P ") + label if show_prefix else label.removeprefix("= "))
     return dict(zip(p, labels)) if isinstance(p, Mapping) else labels
 
 
