@@ -64,3 +64,9 @@ and RdBu for continuous data. Keep category identities and meaningful scale limi
 consistent. Do not run a separate palette audit, grayscale/CVD simulation, color
 comparison sheet or color-approval step unless the user explicitly requests it.
 Normal inspection of the saved figure remains part of delivery.
+
+## Statistical content and exports
+
+Apply [statistics](statistics.md) to the primary comparison, including a
+nonsignificant result when that is the outcome. Follow [delivery](figure-delivery.md)
+for the default PNG/PDF pair and optional short descriptive title.

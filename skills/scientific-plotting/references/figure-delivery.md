@@ -5,39 +5,22 @@ diagnostics may use a single preview, but must be upgraded before they support a
 
 ## Package the figure
 
-Use one stable basename across artifacts. Adapt directories to project conventions;
-the default layout is:
+Unless another format is requested, deliver exactly one high-resolution PNG and
+one vector PDF per figure. Use 600 dpi at the final physical size for PNG; a vector
+PDF is resolution-independent, with any raster layers kept at suitable resolution.
+Do not add SVG, TIFF, JPEG, separate legend exports, or duplicate titled/clean
+versions by default. An explicitly requested HTML gallery links the PNG/PDF pair.
 
-```text
-figures/
-  <figure>_clean.pdf
-  <figure>_clean.png
-  <figure>_titled.pdf          # optional review preview, only when requested
-  <figure>_titled.png          # optional review preview, only when requested
-  <figure>_legend.pdf          # when assembly needs a separate legend
-source_data/
-  <figure>_<panel>.csv         # one clear table per quantitative panel
-  <figure>_<panel>_matrix.tsv  # exact plotted matrix when applicable
-  palette.csv                  # shared semantic color map, including single plots
-figure-notes/
-  <figure>.md                  # human-readable panel and display report
-```
+A concise title is welcome when it identifies the dataset, gene, gene set or
+measurement. Use a short factual title such as “Beltran: AR activity” or “AXIN2
+expression”; avoid a long interpretation or workflow description. Keep essential
+statistical labels and a brief n/interval definition on the figure or its caption.
 
-The clean version omits review titles and explanatory subtitles but keeps necessary
-axis, legend, panel, and statistical labels. Put explanatory text in the external
-caption. An optional titled review preview states the intended reading when requested.
-Keep the plotting script and editable source: `.rds` for R, the native Prism project,
-or a rerunnable `.py` script plus JSON figure settings for Python. A Python pickle
-may supplement these files but does not replace portable tables and source code.
-When Prism output is requested, also provide a `.pzfx` data table via
-`scripts/prism.R`, or a native Prism project with its verified graph/analysis sheets.
-State which was delivered: a fresh PZFX stores editable data without reproducing
-the R/Python graph's styling or transferring its statistical analyses. See
-`graphpad-prism.md` for pairing, replicate subcolumns and native-project delivery.
-Retain the first rendered attempt before optimization. Record the execution language
-and package versions; both routes deliver the same scientific content.
-For categorical color encodings, save the map and its provenance as described in
-`color-policy.md`. Reuse the full map across the figure set, including absent levels.
+Retain the plotting source/object, direct plotting data and full-precision
+statistics in the project's working analysis files for later tuning. Reuse existing
+records; keep these support files separate from the default figure-export folder.
+Share code/data packages or native Prism projects when requested. Preserve valid
+existing native sources rather than converting them just to create more formats.
 
 ## Save exact figure source data
 
@@ -155,10 +138,10 @@ comparable display ranges when panels are visually compared.
 
 ## Export at final physical size
 
-- Use vector PDF or SVG for plots and line art. Keep text selectable or embed fonts as
-  required by the target workflow.
-- Also create a lossless raster preview. Use PNG for ordinary review; use TIFF when the
-  venue or image workflow requires it. Do not introduce JPEG recompression into line
+- Use vector PDF for plots and line art; use SVG only when requested. Keep text
+  selectable and embed fonts where supported.
+- Also create a lossless PNG at 600 dpi. Use TIFF only when explicitly requested
+  or required for the specified submission. Do not introduce JPEG recompression into line
   art or quantitative images.
 - Specify width and height in mm or inches before DPI. A high DPI number does not fix
   an undersized or upsampled source image.

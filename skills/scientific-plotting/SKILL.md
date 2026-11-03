@@ -8,6 +8,10 @@ description: Turn biomedical research data into figures in R, Python or GraphPad
 Read [reviewed-template and layout defaults](references/template-first-layout.md)
 before selecting a template or drawing. Use a compatible reviewed template as the
 starting implementation; apply its settings before making data-specific changes.
+For new comparison figures, apply [statistics](references/statistics.md) before
+drawing and include the primary comparison, n and uncertainty definition. Default
+figure exports are one 600-dpi PNG and one vector PDF; short informative titles
+are allowed. See [delivery](references/figure-delivery.md).
 
 
 Version 3.17.1 — portable visual examples, four-panel composition and rendered color previews.
@@ -143,9 +147,8 @@ label a data-only PZFX accurately. Preserve paired IDs and replicate subcolumns.
   gray for an identified control. Blue and orange remain available for larger sets.
   Use comparable scales and one useful key across related panels.
 - Apply the annotation rule in `statistics.md`: choose visibility before reading
-  the P values; default to hiding nonsignificant text and brackets. Use
-  `nonsignificant="ns"` or `"value"` for a user request or a named scientific contrast
-  whose display is needed, recording that reason. Retain all
+  the P values. Use `nonsignificant="value"` for primary or requested comparisons;
+  hide secondary annotations when appropriate. Retain all
   comparisons, estimates and intervals in the full table; disclose the display rule.
   Keep comparison keys, numeric P and positions in the same table. Use `p_brackets()`
   with `p_col` for categorical contrasts or assign the full `p_labels()` result for
@@ -169,7 +172,7 @@ of their panels, use bold panel titles, and keep Arial or Helvetica throughout.
   a short definition does not fit the legend.
 - Make component plots in R or Python, export each as vector PDF, and assemble
   them in Illustrator, Inkscape or Affinity. Export the final figure as vector
-  PDF or SVG with editable text and RGB colors; a PNG may serve only as a preview.
+  PDF with editable text and RGB colors, plus a 600-dpi PNG.
 - Write the legend separately in the manuscript: one bold title sentence,
   followed by one sentence per panel in panel-letter order ("a, ... b, ...").
   Define all abbreviations and state `n` and its unit where relevant.
@@ -193,16 +196,14 @@ their checks differ and do not establish scientific correctness or detect every 
    and position in actual axes, legends and panels, including the final assembly.
 5. Check condition colors, group order, comparable scales and consistent summaries
    across panels. Investigate unmapped groups rendered gray and obscured observations.
-   For color-encoded groups or values, generate grayscale and color-vision views
-   with `scripts/color_preview.R` when its R dependencies are available, or an
-   equivalent installed tool. Inspect them using `references/color-policy.md`.
+   Do not run extra palette audits or color simulations unless requested.
 
 Fix evidence errors first, layout second and local formatting third. Rerun and view
 the affected export; usually one or two focused passes suffice. Retain revised
 attempts and report remaining defects. Do not claim visual inspection when viewing
 was unavailable.
 
-Deliver according to `references/figure-delivery.md`: clean vector PDF and PNG,
-editable plotting source/object, direct source tables, full statistics and a concise
-caption covering n, unit, summary, test, correction and exclusions. For image evidence,
+Deliver according to `references/figure-delivery.md`: one vector PDF and one
+600-dpi PNG with a concise caption covering n, unit, summary, test, correction and
+exclusions. Retain plotting sources, direct data and full statistics in working files. For image evidence,
 preserve originals and document crops, global adjustments and calibrated scale bars.

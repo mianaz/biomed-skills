@@ -15,6 +15,14 @@
 - Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
   R plotting downloads, fictional study walkthroughs and automated deployment.
 
+## 0.5.3 — 3 November 2026
+
+- Default to one 600-dpi PNG and one vector PDF, with concise informative titles.
+- Require primary comparisons, experimental units and uncertainty definitions;
+  retain nonsignificant primary results and report effects and intervals.
+- Keep heatmap statistics outside tiles and working sources separate from exports.
+- Remove remaining legacy palette-audit and export wording that conflicted with defaults.
+
 ## 0.5.2 — 3 November 2026
 
 - Start new plots from reviewed templates and adapt their existing settings.

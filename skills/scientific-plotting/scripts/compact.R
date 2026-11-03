@@ -46,7 +46,7 @@ biomedical_theme <- function(size = 14, x_angle = 0, aspect_ratio = 1) {
       legend.margin = ggplot2::margin(0, 0, 0, 0),
       panel.grid = ggplot2::element_blank(),
       strip.background = ggplot2::element_blank(),
-      plot.title = ggplot2::element_blank(),
+      plot.title = ggplot2::element_text(size = size, face = "plain"),
       plot.subtitle = ggplot2::element_blank(),
       plot.margin = ggplot2::margin(3, 4, 3, 3))
 }

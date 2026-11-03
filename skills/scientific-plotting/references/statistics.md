@@ -4,6 +4,25 @@ For a task requiring inference, use a supplied valid analysis or compute the ana
 warranted by the design. Appearance-only repairs preserve the existing valid analysis.
 Put the choice and comparison family in the analysis script before calculating results.
 
+## A comparison figure must carry its statistical meaning
+
+For new comparison figures, use the valid supplied analysis or perform the
+appropriate analysis from the available independent observations. State the
+experimental unit and n, show observations where useful, define the mean/median
+and SD/SEM/CI, and identify the primary contrast. Report its effect and uncertainty
+in the caption or linked results, and its numerical raw/adjusted P value on the
+figure when the design supports a test. Show a primary nonsignificant result too.
+Statistics belong to the requested scientific comparison, not to a decorative
+annotation pass after drawing. Do not return unlabeled summary bars or a matrix
+with no explanation of its comparison, scale or analysis.
+
+For a heatmap comparing groups, analyze independent samples before display scaling
+when inferential analysis is in scope. Keep effect sizes and adjusted P values in
+a readable row annotation or adjacent results table; do not print them inside each
+tile by default. For a descriptive heatmap, state its transformation, unit and
+purpose without fabricating inferential results. A supplied summary without the
+needed n/uncertainty cannot support an invented test.
+
 ## Identify the information available
 
 Record independent unit, outcome scale, groups, pairing/blocking, repeated measures,
@@ -79,7 +98,10 @@ confidence level, statistic/df when defined, test/sidedness, raw P, adjusted P,
 correction method/family, exclusions and software version. Keep full precision in CSV.
 A nominal effect CI is not a simultaneous CI merely because P values were adjusted.
 
-Choose annotation visibility before reading P values. Both R and Python helpers
+Choose annotation visibility before reading P values. Use `nonsignificant="value"`
+for primary or explicitly requested comparisons, so both positive and negative
+results remain visible. The helper default below applies to secondary annotations.
+Both R and Python helpers
 accept `nonsignificant="hide"` (default), `"ns"`, or `"value"`, and `alpha=0.05`.
 Use unrounded P < alpha for significance; P equal to alpha is nonsignificant. When
 correction applies, use the adjusted P column after correcting the complete family.
@@ -93,11 +115,9 @@ The `adjusted` flag changes the label prefix; it does not calculate a correction
 
 Keep the complete statistical table, estimates and intervals in every mode. Missing
 or untestable results require an explicit, explained `missing_label`; they are never
-classified as `ns` or silently hidden. A key negative comparison may use `value` or
-`ns` explicitly; name the contrast and why its result belongs on the figure, or cite
-the user's request. Apply that exception to the named rows. An all-nonsignificant
-family keeps the default; repeating every P value is not needed to preserve the
-complete results, which remain in the table.
+classified as `ns` or silently hidden. Primary and requested contrasts use `value`
+regardless of significance; use `ns` only when explicitly requested. Secondary
+comparisons may remain in the complete results table.
 An absent annotation is not evidence of equivalence or absence of an effect.
 State the visibility rule in the caption, for example: "Only comparisons with Holm-
 adjusted P < 0.05 are annotated; all planned comparisons are in statistics.csv."

@@ -2,7 +2,7 @@
 
 General biomedical workflows. Repository: [mianaz/biomed-skills](https://github.com/mianaz/biomed-skills).
 The suite includes scientific framing, manuscript writing, figures, paper reading,
-protocols and submission preparation. Version 0.5.2.
+protocols and submission preparation. Version 0.5.3.
 
 | Skill | Deliverable |
 |---|---|
