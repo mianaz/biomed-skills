@@ -22,13 +22,14 @@ not establish sample sizes, approvals or successful results.
    and applicable. Put missing information in `methods-questions.md`, with a clear
    draft placeholder only where necessary. Never fabricate approvals, catalog
    numbers, sample sizes or an analysis choice.
-4. Keep published method citations and describe the actual modifications. For a
-   Cell Press target, use the current STAR Methods template and Key Resources
-   Table; for Nature or Science use the requested journal's current structure.
+4. Keep published method citations and describe the actual modifications. Use STAR Methods and a Key Resources Table when the verified target journal,
+   article type and submission stage require them; otherwise use the applicable
+   manuscript structure.
    `submission-check` resolves journal/stage requirements.
-5. Deliver `methods.md`, a source-to-subsection mapping and the short questions
-   list. Produce Word or another requested manuscript format when the available
-   document tools support it.
+5. For a complete Methods deliverable, provide `methods.md`, a source-to-subsection
+   mapping and consequential author questions. For a requested paragraph or
+   subsection, return that text and only the questions needed to finish it.
+   Produce Word or another manuscript format when requested and supported.
 
 For gene sets, link a complete original/used gene table with species, omissions,
 additions and literature/database version. Report the actual scoring/enrichment
@@ -40,3 +41,8 @@ Before drafting, read [writing principles](../biomed-shared/writing-principles.m
 Apply [terminology and citations](../biomed-shared/terminology-and-citations.md)
 when revising the Methods. Check every quantity and past-tense statement against
 the execution records; put unresolved factual details in the author questions.
+
+Apply [section responsibilities](../biomed-shared/section-responsibilities.md):
+keep procedures and necessary design rationale here; place findings and biological
+interpretation in the relevant manuscript sections. Reconcile normalization and
+statistical comparison wording with supplied Results and legends.

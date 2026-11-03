@@ -12,7 +12,7 @@ scope determine the work; a skill name is optional in the user's request.
 | Polish, translate or tighten an existing passage | paper-polishing | Revised passage preserving meaning and scientific ambition |
 | Explain a published paper | paper-distill | Sourced digest and requested reusable ideas |
 | Map claims to experiments and results | paper-evidence-map | Editable graph and sourced evidence table |
-| Render data or repair figure appearance | scientific-plotting | Inspected figure, source data and plotting source |
+| Render, repair or audit scientific figures | scientific-plotting | Scientific review, measured and visually inspected exports, source data and plotting source |
 | Plan panels and assemble main/supplemental figure decks | figure-plan | Evidence inventory, independent panels and letters, inspected whole-figure exports |
 | Explain a concept or mechanism visually | scientific-visual-explainer | Source-linked HTML lesson and editable assets |
 | Create or edit a native Prism project | graphpad-prism | Verified native project or accurately labeled export |
@@ -30,7 +30,7 @@ explicitly requested. Each skill owns completion of its named deliverable.
 ## Reference loading
 
 All biomedical prose consumers load `biomed-shared/writing-principles.md`. It is
-the verbatim author source and governs scientific interest, biological significance
+the maintained author guidance and governs scientific interest, biological significance
 and preservation of conceptual ambition. `AGENTS.md` points to it. The support
 directory has no independent skill trigger and is distributed with its consumers.
 
@@ -43,24 +43,20 @@ A framing brief can supply the selected claim, model and figure order. An eviden
 map supplies source relationships and existing IDs. Writing and polishing reuse
 these records when present. Creating those artifacts is an optional task choice.
 
-## Migration from the first 0.4.0 proposal
+## Logic review
 
-- Narrow paper-framing to contribution, significance, conceptual explanation and
-  overall figure order.
-- Add paper-writing for manuscript text and paper-polishing for existing prose.
-- Move the original AGENTS content to biomed-shared/writing-principles.md without
-  changing its bytes. Replace AGENTS.md with a short conditional pointer.
-- Move the biomedical examples to shared references and split section guidance
-  into paper-writing references. Move paragraph revision into shared references.
-- Replace duplicated prose policy in paper-distill, paper-evidence-map,
-  protocol-to-methods and submission-check with explicit shared pointers.
-- Remove the old framing-only package checker, tests and section-writing file.
-  Check the installed writing package and its shared resources instead.
+Shared paragraph and section guidance defines clarity, forward movement and
+content placement. `biomed-shared/logic-review.md` defines one independent reviewer
+for substantive section drafting and broader structural work, with the primary writer owning
+all edits. This is an internal review role, not another user-facing skill or a
+mandatory pipeline for short edits. It uses available context and reports the
+scope actually reviewed. The writing bundle includes these shared references.
 
-Install the full suite with its support directory, or use the bundled writing
-subset. Replace the previous paper-framing directory as a unit after backing it
-up so retired references and tests do not remain in a local installation.
-The proposed package version stays 0.4.0 because the earlier PR was unreleased.
+## Distribution
+
+Install the full suite with its shared support directory, or use the focused
+writing bundle. Keep the shared references beside their consumers. The current
+plugin version is recorded in `.claude-plugin/plugin.json`.
 
 ## Verification
 

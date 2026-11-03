@@ -51,8 +51,9 @@ when choosing main figures or moving supporting detail.
 
 Complete this step when each proposed main figure has an identifiable role and
 the reader can follow the central argument through the figure sequence.
-Detailed graph construction belongs to `paper-evidence-map`; rendering, statistics
-and panel appearance belong to `scientific-plotting`.
+Detailed graph construction belongs to `paper-evidence-map`; panel inventory and
+whole-figure assembly belong to `figure-plan`; rendering, statistics and panel
+appearance belong to `scientific-plotting`.
 
 ## 4. Deliver the framing
 

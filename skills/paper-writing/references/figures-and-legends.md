@@ -2,7 +2,12 @@
 
 Reuse the established figure sequence and scientific role of each figure. Read
 the actual panels, source results and group definitions before writing captions.
-Identify the finding the legend should help the reader understand.
+A concise finding-led title can orient the reader. Panel descriptions explain
+the displayed experiment without retelling the Results argument. Include dose,
+time and normalization when needed to interpret a panel; put full protocols,
+reagent recipes and extended analysis descriptions in Methods. Define shared
+terms once per legend where clear. Retain the keys needed to read the figure
+without searching the main text.
 
 Orient the reader to the scientific comparison and explain panels in their
 existing order. Include group definitions, sample units, n, summaries, error bars,

@@ -9,7 +9,11 @@ supplements and code when accessible. Record title, authors/year, DOI/PMID or UR
 and the material actually read. Read figures and captions alongside the relevant
 Results and Methods. An abstract supports an abstract-level summary only.
 
-Produce a human-readable `paper-digest.md` with:
+For a full paper distillation, produce a human-readable `paper-digest.md` with
+the following content. For a focused reading question, answer that question from
+the relevant sources without requiring the full digest or extra artifacts.
+
+A full digest includes:
 
 - The question, main contribution and closest prior approaches discussed in the paper.
 - The argument, organized by question: claim → experiment/comparison and controls
@@ -23,7 +27,8 @@ Read full-text details of the closest prior work before making a firm novelty
 judgment. Preserve and strengthen a useful idea through its substantive addition;
 if the central contribution overlaps, identify the specific overlap directly.
 
-For signatures, deliver `gene-sets.tsv` containing all original and actually used
+When reusable signatures or reproduction are requested, or a claim depends on
+exact gene membership, deliver `gene-sets.tsv` containing all original and actually used
 genes, species, mapping/filtering changes, missing genes and literature/database
 identifier/version. Document scoring software/function/version, input layer and
 normalization, unit and parameters. Separate score calculation from display

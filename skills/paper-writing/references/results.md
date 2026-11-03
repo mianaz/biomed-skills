@@ -11,7 +11,8 @@ design features when the reader needs them to interpret the result; place
 routine execution detail in Methods. Tie citations and figure panels to the
 statements they support.
 
-Include local interpretation when it makes the experiment intelligible. For
+State the local scientific judgment supported by the experiment; a list of
+measurements leaves the reader to supply the reasoning. For
 example, a selective response can establish context dependence, and a controlled
 perturbation can support a regulatory role. Reserve extended integration with
 other studies and broad mechanistic proposals for Discussion when they require

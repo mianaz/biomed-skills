@@ -17,6 +17,10 @@ study design or stage. Do not apply final-production rules to an initial submiss
 If a page is inaccessible, use a supplied official checklist or mark the affected
 requirements unverified; do not substitute a sister journal or old blog silently.
 
+For a requirements-only request, return the applicable verified rules and sources
+at that scope. A figure-width lookup does not require a manuscript inventory or
+submission package. Continue below when checking or preparing submission files.
+
 ## Prepare the package
 
 For a manuscript figure sequence or editable main/supplemental PowerPoint decks,

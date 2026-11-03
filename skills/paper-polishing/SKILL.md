@@ -24,7 +24,9 @@ State internally the finding and interpretation the passage communicates. Identi
 phrasing that obscures the scientific value and information that must be retained.
 Complete this step when the edit can preserve both the factual meaning and the
 idea's ambition. Rebuilding a study's central story belongs to `paper-framing`;
-drafting a new section from results or notes belongs to `paper-writing`.
+drafting a new section or substantially rebuilding its argument belongs to
+`paper-writing`. Translation of developed prose stays here; constructing an
+English draft from fragmentary notes belongs to `paper-writing`.
 
 ## 2. Improve the prose
 
@@ -48,6 +50,10 @@ to explain the issue and revise only as far as the available facts support.
 Compare original and revision for numbers, effect directions, sample units,
 negation, causal meaning, scope, terminology and citation/figure references.
 Check that clearer language has preserved the positive scientific value.
+
+Apply [logic review](../biomed-shared/logic-review.md) when its substantive drafting
+or structural-revision trigger fits this task; resolve material findings before
+delivery.
 
 Return the revised passage, with brief notes for changes that affect meaning or
 need an author decision. For local editing, completion is that passage and its

@@ -69,6 +69,10 @@ Check numbers, terminology, citations and figure correspondence in the affected
 text. Make language improvements within this task. `paper-polishing` serves an
 independent request to improve existing prose; it is not a mandatory final stage.
 
+Apply [logic review](../biomed-shared/logic-review.md) when its substantive drafting
+or structural-revision trigger fits this task; resolve material findings before
+delivery.
+
 Return the draft and brief notes for consequential choices or unresolved facts.
 For a manuscript, verify alignment of the title, abstract, headings and figures.
 Completion is usable text at the scope requested by the user.

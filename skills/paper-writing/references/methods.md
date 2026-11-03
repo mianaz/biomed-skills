@@ -11,3 +11,9 @@ was performed. Keep missing factual details in author questions, using a draft
 placeholder where necessary. Explain a design choice when it is needed to
 understand the scientific inference. A conventional method can be essential to
 an original biological discovery without needing to be presented as a new method.
+
+Include brief rationale needed to understand a design or analysis choice. Keep
+observed effects, biological interpretations and therapeutic implications in the
+appropriate Results or Discussion passage. Distinguish outcomes from prespecified
+criteria and procedural quality checks. An analysis log may contain all of these;
+select only the content that belongs in manuscript Methods.

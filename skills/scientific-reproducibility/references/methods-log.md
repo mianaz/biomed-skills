@@ -1,6 +1,7 @@
 # methods.md discipline
 
-Maintain a running `methods.md` in the project root. For EVERY analytical step append:
+Maintain the project's existing analysis record; `methods.md` is a suitable
+default for a new project. For each consequential analysis step, record:
 
 ```markdown
 ## <date> — <step name>
@@ -11,7 +12,10 @@ Maintain a running `methods.md` in the project root. For EVERY analytical step a
 - **Troubleshooting:** for unexpected results, what was tried and the outcome.
 ```
 
-This is the manuscript methods section accruing in real time. Never defer it.
+This is an analysis record used to prepare manuscript sections. When drafting
+Methods, extract the procedures, parameters and analysis choices. Place findings
+and biological interpretations in Results or Discussion; retain troubleshooting
+in the analysis record unless it changes a procedure that must be reported.
 
 ## Self-documenting runs
 

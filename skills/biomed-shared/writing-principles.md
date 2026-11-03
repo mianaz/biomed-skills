@@ -68,9 +68,34 @@ qualification. Check for underselling as deliberately as for overstatement.
    access gaps that affect the task. In reviewer responses, answer the scientific
    concern directly and accurately describe the work and revisions completed.
 
+## Section purpose and editorial checks
+
+Use [paragraph revision](paragraphs-and-revision.md) for concrete subjects,
+explicit comparisons and paragraphs that advance the argument. Apply the relevant
+[section responsibilities](section-responsibilities.md) when drafting or editing
+Results, Discussion, Methods or legends. Clearer prose should retain strong
+scientific judgments and substantive biological interpretation.
+
+For substantive manuscript drafting or structural revision, apply the
+[independent logic review](logic-review.md) at the scope available.
+
 ## Before delivery
 
 Strengthen any overlooked insight, broader implication, or unnecessarily timid
 claim. Ensure the reader can identify what is new and why it matters. Verify
 factual and numerical accuracy. Return the requested writing, with brief notes
 for consequential editorial decisions or unresolved issues.
+
+## Document formatting
+
+For complete manuscript document exports, default to Times New Roman and numbered
+lines. Put the title, authors, affiliations and corresponding author on the first
+page, then the abstract on a separate page. Follow the supplied template and
+verified journal requirements when they specify otherwise. These document defaults
+do not apply to short passages, reading notes or figure artwork; figure typography
+follows the plotting workflow.
+
+Keep figure citations in sequence where feasible and bold references to figure
+panels, supplementary figures, data and tables in manuscript prose. Use correct
+punctuation, true superscripts/subscripts where the format supports them, and
+italic human gene symbols with upright protein names.

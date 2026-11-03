@@ -1,6 +1,6 @@
 ---
 name: scientific-visual-explainer
-description: Build scientific mechanism figures and animated HTML lessons. Default to BioRender-referenced basic symbols: capsule proteins, Y/U receptors and matching dimers. Use structural illustration when requested.
+description: "Build biomedical mechanism schematics, graphical abstracts, experimental workflows and visual explanations of papers or concepts. Use for pathway diagrams, static manuscript schematics, interactive HTML lessons or requested scientific animations. Data charts belong to scientific-plotting; manuscript figure assembly belongs to figure-plan."
 ---
 
 # Scientific Visual Explainer

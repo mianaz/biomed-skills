@@ -175,6 +175,42 @@
         "biomed-shared/writing-principles.md",
         "paper-writing/references/discussion.md"
       ]
+    },
+    {
+      "id": "P5",
+      "prompt": "Translate this complete Discussion into English without changing its argument or adding sources.",
+      "primary": "paper-polishing",
+      "completion": "Faithful prose translation with direct consistency checks; no new literature synthesis or mandatory separate reviewer.",
+      "required_resources": [
+        "biomed-shared/logic-review.md"
+      ]
+    },
+    {
+      "id": "M2",
+      "prompt": "Draft Methods from this analysis log.",
+      "primary": "protocol-to-methods",
+      "input": "Fictional log: A and vehicle groups, n=4 independent cultures each; counts divided by matched vehicle mean; two-sided Welch test. A reduced counts by 30%. Interpretation: Q may support survival. Troubleshooting: initial file import failed, then succeeded.",
+      "completion": "Keep actual normalization, independent n and test in Methods; retain finding and interpretation outside Methods; do not insert routine import troubleshooting.",
+      "required_resources": [
+        "biomed-shared/section-responsibilities.md"
+      ]
+    },
+    {
+      "id": "W5",
+      "prompt": "Substantially revise this Discussion and have an independent agent check its logic.",
+      "primary": "paper-writing",
+      "completion": "Draft a coherent argument, launch one non-delegating reviewer with supplied context, resolve material findings and deliver prose.",
+      "required_resources": [
+        "biomed-shared/logic-review.md",
+        "paper-writing/references/discussion.md"
+      ]
+    },
+    {
+      "id": "S2",
+      "prompt": "Find the main-figure width requirement for this journal and article type.",
+      "primary": "submission-check",
+      "completion": "Return verified applicable dimensions and source; do not start full submission-package preparation.",
+      "required_resources": []
     }
   ]
 }

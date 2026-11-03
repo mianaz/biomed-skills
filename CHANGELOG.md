@@ -15,6 +15,14 @@
 - Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
   R plotting downloads, fictional study walkthroughs and automated deployment.
 
+## 0.5.1 — 3 November 2026
+
+- Clarify manuscript comparisons, paragraph progression and section responsibilities.
+- Add a bounded independent logic reviewer for substantive writing and revision.
+- Separate analysis logs from manuscript Methods; narrow overbroad task triggers.
+- Consolidate reproducibility and plotting responsibilities and the tidyplots compatibility entry.
+- Fix visual-explainer metadata and document the skill scope review.
+
 ## 0.5.0 — 20 October 2026
 
 - Add figure-plan for panel inventories, editable figure decks and final-size export checks.
