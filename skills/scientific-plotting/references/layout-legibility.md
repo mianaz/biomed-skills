@@ -89,6 +89,9 @@ Use a light grey (`grey85`/`#E6E6E6`) for context, consistent with the volcano b
 
 ## Legends
 
+Use native ggplot scales, `guides()` and `theme()`. Keep the key vertical; do not
+default to a bottom horizontal key or construct a separate legend plot.
+
 - Put legends on the right for tall plots and on the bottom for wide plots.
 - For many groups, use multiple columns: `guides(color = guide_legend(ncol = 2, override.aes = list(size = 3)))`.
 - Remove redundant legends when direct labels or facet labels already identify groups.

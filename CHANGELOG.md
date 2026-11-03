@@ -15,6 +15,13 @@
 - Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
   R plotting downloads, fictional study walkthroughs and automated deployment.
 
+## 0.5.2 — 3 November 2026
+
+- Start new plots from reviewed templates and adapt their existing settings.
+- Prefer native in-panel or right-side legends and tall/square comparison panels.
+- Use square heatmap tiles without numeric overlays by default.
+- Remove routine palette audits and grayscale/color-vision simulations.
+
 ## 0.5.1 — 3 November 2026
 
 - Clarify manuscript comparisons, paragraph progression and section responsibilities.

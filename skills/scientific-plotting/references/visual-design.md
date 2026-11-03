@@ -133,8 +133,7 @@ plots at similar scales and size, but permit justified differences in aspect rat
   margin for required panel letters so they cannot collide with rotated axis titles.
 - Follow `color-policy.md` for fixed defaults, context inheritance and persistent
   category mappings. Match fill/color/shape guides so one variable does not acquire
-  two legends. Keep labels or shapes as redundant encoding and inspect grayscale
-  distinctions. Continuous magnitudes use a sequential scale; a diverging scale
+  two legends. Keep labels or shapes when they convey needed information. Continuous magnitudes use a sequential scale; a diverging scale
   needs a meaningful center. Preserve the same limits for comparable quantities.
 
 ## Scientific typography

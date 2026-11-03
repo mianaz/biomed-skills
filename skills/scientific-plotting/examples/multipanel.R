@@ -67,7 +67,7 @@ c <- ggplot(observed, aes(minute, signal, colour = condition)) +
   scale_y_continuous(breaks = c(1, 1.5, 2, 2.5), limits = c(.8, 2.5)) +
   labs(x = "Time (min)", y = "Fluorescence (a.u.)") + base
 h <- ggplot(analytes, aes(analyte, sample, fill = z)) +
-  geom_tile(colour = "white", linewidth = .4) + coord_fixed(ratio = .55) +
+  geom_tile(colour = "white", linewidth = .4) + coord_fixed(ratio = 1) +
   scale_fill_gradient2(low = "#2166AC", mid = "white", high = "#B2182B", midpoint = 0,
     limits = c(-2, 2), breaks = c(-2, 0, 2), name = "Z score") +
   scale_x_discrete(expand = expansion(0)) + scale_y_discrete(expand = expansion(0)) +
@@ -75,19 +75,6 @@ h <- ggplot(analytes, aes(analyte, sample, fill = z)) +
   theme(axis.line = element_blank(), axis.ticks = element_blank(), legend.position = "right",
     legend.title = element_text(size = 11), legend.key.height = grid::unit(6, "mm"),
     legend.key.width = grid::unit(3, "mm"))
-# Signed values retain direction in grayscale; choose ink from actual rendered tile fills.
-rgb <- t(grDevices::col2rgb(ggplot_build(h)$data[[1]]$fill) / 255)
-linear <- ifelse(rgb <= .04045, rgb / 12.92, ((rgb + .055) / 1.055)^2.4)
-luminance <- drop(linear %*% c(.2126, .7152, .0722))
-black_contrast <- (luminance + .05) / .05
-white_contrast <- 1.05 / (luminance + .05)
-labels <- transform(analytes, label = sprintf("%+.1f", round(z, 1)),
-                    ink = ifelse(black_contrast >= white_contrast, "black", "white"))
-h <- h + geom_text(data = labels, aes(label = label, colour = ink),
-                   family = "Arial", size = 11, size.unit = "pt") + scale_colour_identity()
-stopifnot(nrow(ggplot_build(h)$data[[2]]) == 24,
-          all(pmax(black_contrast, white_contrast) >= 4.5))
-
 # Check rendered pairing/points and the missing segment, not just input row counts.
 paired_lines <- ggplot_build(b)$data[[1]]
 expected <- d[order(d$donor, d$x), ]
@@ -126,8 +113,8 @@ writeLines(c(
   "Synthetic teaching example: one split-donor experiment, with four donors (D1-D4), each providing a Control (C1-C4) and Treated (T1-T4) aliquot. These are constructed values, not biological results.",
   "a, Initial cell counts in thousands, one observation per aliquot. b, Viability at 60 min; gray lines pair the same donor across conditions. Small horizontal offsets separate donor points without changing values.",
   "c, Fluorescence from the same aliquots at 0, 10, 20, 40 and 60 min. Points show all 39 available observations; individual lines preserve actual time spacing and break around the missing T3 value at 20 min. No interpolation or group averaging is applied.",
-  "d, Endpoint abundance of three generic analytes A-C, measured in arbitrary units in the same eight aliquots. Each analyte is centered by its mean across all eight aliquots and divided by its sample SD using base R scale(); colors show these analyte-wise z scores, not raw abundance. Signed values rounded to one decimal preserve direction and magnitude in grayscale; black or white text is selected for contrast against the actual tile fill. All 24 raw and full-precision display values are saved. Sample order is fixed; no clustering or gene set is used.",
-  "No inferential tests are performed. Conditions share a single gray/purple and circle/triangle key. The heatmap has its own diverging scale centered at zero; its cells use an intentional fixed y/x aspect ratio of 0.55.",
+  "d, Endpoint abundance of three generic analytes A-C, measured in arbitrary units in the same eight aliquots. Each analyte is centered by its mean across all eight aliquots and divided by its sample SD using base R scale(); colors show these analyte-wise z scores, not raw abundance. Tiles are square and have no numeric overlay. All 24 raw and full-precision display values are saved. Sample order is fixed; no clustering or gene set is used.",
+  "No inferential tests are performed. Conditions share a single gray/purple and circle/triangle key. The heatmap has its own diverging scale centered at zero; its cells use a fixed y/x aspect ratio of 1.",
   "The quantitative panels have matching left/right margins. The fixed-aspect heatmap is positioned independently so its geometry is retained. Composition is 180 x 145 mm and reviewed at 180 mm width; all text is Arial and exceeds 10 pt. The assembled PDF, PNG, RDS, individual panel objects, source tables and export measurements accompany this script."),
   file.path(out, "caption.txt"))
 writeLines(capture.output(sessionInfo()), file.path(out, "sessionInfo.txt"))

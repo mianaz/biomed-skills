@@ -5,6 +5,11 @@ description: Turn biomedical research data into figures in R, Python or GraphPad
 
 # Scientific Plotting
 
+Read [reviewed-template and layout defaults](references/template-first-layout.md)
+before selecting a template or drawing. Use a compatible reviewed template as the
+starting implementation; apply its settings before making data-specific changes.
+
+
 Version 3.17.1 — portable visual examples, four-panel composition and rendered color previews.
 
 Given data, deliver the requested figure with editable sources. Choose the encoding,

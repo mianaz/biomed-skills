@@ -46,7 +46,7 @@ descriptive panels with no inferential tests or gene sets.
 
 At 180 × 145 mm, the three quantitative panels share aligned margins and one
 condition key; the fixed-aspect heatmap retains its own diverging scale. Signed
-cell values preserve the heatmap's direction in grayscale, with contrasting text.
+square tiles show the heatmap values without a numeric overlay.
 The code
 uses cowplot directly and saves the assembled figure, individual panel objects,
 source/display tables and caption. Adapt the panel roles and dimensions to the

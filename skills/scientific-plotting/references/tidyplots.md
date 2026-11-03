@@ -174,8 +174,7 @@ Use [figure-delivery.md](figure-delivery.md). `export_tidyplots()` measures the
 complete canvas around the fixed panels, then calls the shared `export_biomedical()`
 to save PDF/PNG and `.rds` and check rendered fonts, sizes and some boundaries. Open the
 saved images at intended placement to check overlap, clipping, scientific glyphs,
-paired lines, summary endpoints and every P label. Inspect color-vision and grayscale
-views when color encodes groups or values. Check the final assembly too.
+paired lines, summary endpoints and every P label. Check the final assembly too.
 
 Save plotting code, direct geometry tables, full statistics, summaries, palette,
 versions and the caption. The variation's `examples/run.R` is a runnable starting

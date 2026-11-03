@@ -1,46 +1,8 @@
 # Heatmaps
 
-Use the simplest heatmap that answers the question. Save the exact plotted matrix as source data.
-
-## pheatmap for compact matrices
-
-Use this for pathway/activity matrices, marker z-scores, and simple clustered heatmaps.
-
-```r
-colors <- rev(RColorBrewer::brewer.pal(11, "RdBu"))
-colors_use <- grDevices::colorRampPalette(colors)(100)
-breaks <- c(seq(-2, 0, length.out = 51), seq(0.04, 2, length.out = 50))
-
-readr::write_csv(as.data.frame(mat) |> tibble::rownames_to_column("feature"),
-                 "source_data/heatmap_matrix.csv")
-
-png("figures/heatmap_clean.png", width = 7, height = 5, units = "in", res = 600)
-pheatmap::pheatmap(
-  mat,
-  color = colors_use,
-  breaks = breaks,
-  border_color = "white",
-  cluster_rows = TRUE,
-  cluster_cols = TRUE,
-  fontsize_row = 8,
-  fontsize_col = 8,
-  angle_col = 45
-)
-dev.off()
-
-pdf("figures/heatmap_clean.pdf", width = 7, height = 5)
-pheatmap::pheatmap(mat, color = colors_use, breaks = breaks, border_color = "white")
-dev.off()
-```
-
-## tidyplots heatmap for tidy tables
-
-```r
-p <- heat_df |>
-  tidyplots::tidyplot(x = condition, y = feature, color = value, width = 55, height = 70) |>
-  tidyplots::add_heatmap(scale = "row", rotate_labels = 45, rasterize = TRUE) |>
-  tidyplots::adjust_colors(tidyplots::colors_diverging_BuRd)
-```
+Use [ComplexHeatmap](complexheatmap.md) for new matrices, including small ones.
+Start with a reviewed template; keep tiles square and omit numeric overlays.
+Preserve the analysis transformation and save the exact matrix.
 
 ## Diagonalize gene order (readable marker matrices)
 
@@ -75,7 +37,7 @@ Reuse the **same** diagonalized order across the heatmap and its companion dotpl
 reviewers can map one to the other. Save the computed order with the source data so the figure
 is reproducible. For the block version, feed `owner_block` to ComplexHeatmap `column_split`.
 
-## pheatmap with significance stars overlay
+## Significance overlays only when explicitly requested
 (source: https://doi.org/10.1126/science.adz2742)
 
 For score-by-condition matrices with statistical testing (e.g. ICB response across

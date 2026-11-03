@@ -30,7 +30,7 @@ biomedical_palette <- function(groups, existing = character(), control = NULL) {
   pal
 }
 
-biomedical_theme <- function(size = 14, x_angle = 0) {
+biomedical_theme <- function(size = 14, x_angle = 0, aspect_ratio = 1) {
   cowplot::theme_cowplot(font_size = size, font_family = "Arial") +
     ggplot2::theme(
       text = ggplot2::element_text(family = "Arial", size = size),
@@ -40,6 +40,8 @@ biomedical_theme <- function(size = 14, x_angle = 0) {
                                         hjust = if (x_angle == 0) 0.5 else 1, vjust = 1),
       legend.text = ggplot2::element_text(size = size),
       legend.title = ggplot2::element_blank(),
+      legend.position = "right", legend.direction = "vertical",
+      aspect.ratio = aspect_ratio,
       legend.key.size = grid::unit(3, "mm"),
       legend.margin = ggplot2::margin(0, 0, 0, 0),
       panel.grid = ggplot2::element_blank(),

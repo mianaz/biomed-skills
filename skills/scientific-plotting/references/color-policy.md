@@ -30,9 +30,7 @@ win, including earlier blue/orange pairs; unused default colors extend the map w
 recoloring existing levels. R and Python use the same values. Supply the same complete
 level set and existing mapping to obtain the same assignments in both languages.
 When unused colors run out, supply a larger explicit named palette and additional
-visual encoding; never silently recycle colors. Inspect distinguishability at the
-actual size, including small marks and color-vision/grayscale views; add shape or
-line encoding when needed. The palette name alone does not establish accessibility.
+visual encoding; never silently recycle colors.
 
 Build the mapping from all conditions in the supplied dataset/figure set before
 filtering panels. Save it, and pass it back as `existing` for later figures. Two
@@ -85,31 +83,8 @@ in `source` or the notes. Retain the full known mapping, including levels absent
 from the current panel. A figure set shares this file instead of inventing separate
 maps for each panel. Existing project formats can be retained if equally explicit.
 
-Check actual plotted marks and legends against this map after rendering. In R,
-inspect `ggplot_build(p)$data` and the trained scales; an unknown level turning gray
-is a mapping failure even when export succeeds. Check cross-panel consistency by
-condition identity, not by the left-to-right sequence of colors.
+## Optional color diagnostics
 
-## Preview the rendered colors
-
-For color-encoded groups or values, run this on the final PNG from either plotting
-language. Paths are relative to the skill folder; the helper uses R packages `png`,
-`colorspace` and `ragg`. An equivalent installed simulation tool can be used in a
-Python-only environment; keep the plotting language and dependencies unchanged.
-
-```bash
-Rscript --vanilla scripts/color_preview.R output/figure.png output/figure-color
-```
-
-The helper preserves the original and writes grayscale, protan, deutan and tritan
-views plus a labelled comparison sheet. Individual views retain the input pixel
-dimensions; compare them at the figure's intended placement rather than shrinking
-the whole sheet to a single-panel width. Transparent pixels are composited on white
-for the diagnostic views, which assume sRGB input and use 8-bit RGB. CVD simulations
-use severity 1; they are viewing aids,
-not a certification of accessibility or a prediction of every reader's perception.
-
-Check actual overlapping curves, small points, heatmap ranges and their keys. When
-identity becomes unclear, use one targeted cue such as direct labels, distinguishable
-line types or point shapes, then inspect again. Preserve established colors unless
-the user requests a change. Keep these diagnostic images outside manuscript exports.
+Separate palette audits, grayscale/CVD simulations and comparison sheets are not
+part of ordinary plotting. Run `scripts/color_preview.R` only when the user asks
+for that specific diagnostic. Preserve the selected template or project mapping.
