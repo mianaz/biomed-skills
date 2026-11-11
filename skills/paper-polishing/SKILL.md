@@ -18,7 +18,7 @@ local growth target, meaningful negation and manuscript-version checks.
 Use [terminology and citations](../biomed-shared/terminology-and-citations.md) for
 scientific terms, quantities and references. Read
 [paragraph development](../biomed-shared/paragraphs-and-revision.md) when sentence
-relationships or paragraph organization need repair. For Results compression or
+relationships, focus, voice or rhythm need attention. For Results compression or
 moving material, read [result placement](../biomed-shared/main-text-and-supplement.md).
 Read [argument bridges](../biomed-shared/argument-bridges.md) for missing premises,
 detached cause-and-effect lists or summary terms without concrete support.

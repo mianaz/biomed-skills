@@ -49,7 +49,8 @@ Load only the requested sections:
 Read [result placement](../biomed-shared/main-text-and-supplement.md) for Results,
 whole-manuscript compression or content relocation. Read
 [paragraph development](../biomed-shared/paragraphs-and-revision.md) when building
-or restructuring paragraphs. Completion is the guidance needed for this request.
+or restructuring paragraphs, choosing subjects and voice, or varying sentence
+structure. Completion is the guidance needed for this request.
 Read [argument bridges](../biomed-shared/argument-bridges.md) when explaining how
 examples support a judgment, connecting experiments, or repairing a transition.
 

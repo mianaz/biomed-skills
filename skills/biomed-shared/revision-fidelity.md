@@ -8,7 +8,7 @@ stay unchanged; fluency edits should preserve the author's scientific voice.
 
 | Scope | Working approach |
 |---|---|
-| Minimal, the default for local polishing | Preserve accurate sentence backbones and order. Repair a missing link with a short clause, appositive or connected sentence. |
+| Minimal, the default for local polishing | Retain effective sentence structures and order. Vary wording, subject or voice when focus or flow benefits; repair a missing link with a short clause, appositive or connected sentence. |
 | Structural | Reorder sentences or paragraphs to develop the argument; give a scientific reason for consequential moves. |
 | Substantive | Develop the argument from supplied evidence. Identify new scientific claims or proposed explanations in the edit notes. |
 

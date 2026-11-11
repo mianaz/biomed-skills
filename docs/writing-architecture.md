@@ -90,12 +90,15 @@ only after that evaluation. Structural success does not certify manuscript quali
 closure, external skill links and retired external routes. Historical credits
 remain in maintainer documentation outside installed instructions.
 
-`writing-regression-cases.json` contains 12 self-contained fictional cases and
+`writing-regression-cases.json` contains 17 self-contained fictional cases and
 correct-text controls. Withhold assessor criteria from the writing agent, retain
 its outputs and resource report, and compare scientific fidelity, logic repairs,
 new claims, preservation, length and prose quality. A full comparison requires
 baseline, revised and no-skill conditions on the same cases.
 
 The [10 November smoke record](../tests/evaluations/writing-smoke-20261110.md)
-preserves all 12 outputs and a targeted retest. Comparative evaluation remains
+preserves the initial 12 outputs and a targeted retest. Comparative evaluation remains
 pending.
+
+The [style and flow follow-up](../tests/evaluations/style-flow-smoke-20261110.md)
+records six tasks covering focus-led voice, sentence variation and direct transitions.

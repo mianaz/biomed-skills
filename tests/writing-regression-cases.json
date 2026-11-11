@@ -3,9 +3,27 @@
   "status": "not_run_as_full_comparison",
   "purpose": "Fictional, self-contained editorial cases. Keep assessor criteria hidden from the writing agent. Record subset smoke runs separately from a baseline/revised/no-skill comparison.",
   "evaluation": {
-    "conditions": ["baseline skills", "revised skills", "no skill"],
-    "record": ["case ID", "model and runtime", "skill snapshot", "actual resources read", "output", "assessor and assessment"],
-    "assess": ["scientific proposition errors", "target problem resolved", "new unsupported claims", "correct content preserved", "word-count change for same-language edits", "natural prose and scientific contribution"],
+    "conditions": [
+      "baseline skills",
+      "revised skills",
+      "no skill"
+    ],
+    "record": [
+      "case ID",
+      "model and runtime",
+      "skill snapshot",
+      "actual resources read",
+      "output",
+      "assessor and assessment"
+    ],
+    "assess": [
+      "scientific proposition errors",
+      "target problem resolved",
+      "new unsupported claims",
+      "correct content preserved",
+      "word-count change for same-language edits",
+      "natural prose and scientific contribution"
+    ],
     "method": "Apply each prompt to its input without exposing assess criteria. Keep original outputs. Compare matched cases across conditions and use a separate human or agent assessor. A structural test or subset smoke run does not establish improvement."
   },
   "cases": [
@@ -139,6 +157,61 @@
         "repair": "Develop exposure history and durable response change as an informative biological story; assign assay performance an appropriate supporting role.",
         "preserve": "Open persistence mechanism, actual findings and conceptual ambition.",
         "watch": "A platform-only story or requiring mechanistic completion before offering a framing."
+      }
+    },
+    {
+      "id": "VOICE-01",
+      "primary": "paper-polishing",
+      "prompt": "Polish this paragraph about the fate of an antibody after binding. Read the supplied context and choose the wording and voice that best carry its focus forward. Preserve all reported steps.",
+      "input": "All evidence is fictional. The paragraph follows antibody A from the cell surface to its intracellular destination. Draft: Antibody A bound antigen T. Macropinocytosis internalized antibody A. Vesicular transport delivered antibody A to lysosomes. Lysosomal proteases released its payload. The payload damaged DNA. These are the complete source facts for this exercise.",
+      "assess": {
+        "repair": "Keep the antibody as the topic through uptake and delivery, using passive voice where it supports that continuity; move naturally to payload action.",
+        "preserve": "A, T, macropinocytosis, lysosomal delivery, protease-mediated payload release and DNA damage in the stated order.",
+        "watch": "A blanket active-voice rewrite, a fixed active/passive alternation, loss of a mechanistic agent or a new uptake route."
+      }
+    },
+    {
+      "id": "VOICE-02",
+      "primary": "paper-polishing",
+      "prompt": "Polish these two short passages. The first focuses on mechanistic action; the second focuses on which cells treatment reaches. Use the supplied focus and neighboring sentence to guide each sentence.",
+      "input": "All evidence is fictional. Passage 1: Payload P produced crosslinks. DNA replication was obstructed by these crosslinks. Passage 2: Neighboring antigen-negative cells lay outside the antigen-positive compartment. Conjugate A also killed these neighboring antigen-negative cells. Sources report exactly these facts in culture.",
+      "assess": {
+        "repair": "Use the cause as a useful subject for the crosslink–replication relationship, and foreground affected neighboring cells in the coverage passage. Active and passive choices should follow these distinct topics.",
+        "preserve": "P induces crosslinks; crosslinks obstruct replication; A kills the antigen-negative neighbors in the culture context.",
+        "watch": "Mechanical voice conversion, an inferred clinical benefit or loss of the identity of the killing agent."
+      }
+    },
+    {
+      "id": "FOCUS-01",
+      "primary": "paper-polishing",
+      "prompt": "Improve this passage about targets retained by a cell population. Keep the analytical method in its appropriate supporting role and preserve the scientific meaning.",
+      "input": "Fictional draft: Population M persisted during treatment. Profiling analysis revealed that population M retained targets T1 and T2. The same population lost target T3. Source notes confirm the population, timing and target observations; expression was measured, and functional dependence was not tested.",
+      "assess": {
+        "repair": "Continue the population focus with a natural subject and information order; place profiling in background context where useful.",
+        "preserve": "Population M, persistence during treatment, retention of T1/T2, loss of T3 and expression-level meaning.",
+        "watch": "Making the analysis method the repeated topic, converting every sentence to passive voice, or turning retained expression into dependency."
+      }
+    },
+    {
+      "id": "FLOW-01",
+      "primary": "paper-polishing",
+      "prompt": "Tighten this Results passage and improve progression between its paragraphs. Preserve its question, results and comparisons. Add wording only where it helps the reader follow the reasoning.",
+      "input": "All evidence is fictional. Paragraph 1: After washout, the induced state persisted for seven days. A later challenge reduced viability by 40% in previously exposed cultures and 10% in controls. Bridge paragraph: These observations show that exposure has lasting consequences and affects the later response. Paragraph 2: We next asked whether the altered response depended on receptor R. R depletion left the challenge response unchanged. These are the complete source facts for this exercise.",
+      "assess": {
+        "repair": "Remove the bridge that repeats the persistence and later-response findings; let the receptor-dependence question advance directly from them.",
+        "preserve": "Seven days, washout, 40% versus 10%, exposure history, the R-dependence question and the unchanged response after R depletion.",
+        "watch": "Replacing the removed bridge with another restatement, adding a stock transition, or claiming that R depletion establishes another mechanism."
+      }
+    },
+    {
+      "id": "STYLE-01",
+      "primary": "paper-polishing",
+      "prompt": "Make this repetitive passage read naturally while preserving its scientific meaning. Use the context to choose sentence structures, length, subjects and voice.",
+      "input": "All evidence is fictional. Draft: Treatment A reduced transcript X abundance in donor-matched cultures. Treatment A increased protein Y abundance in the same cultures. Treatment A did not alter receptor R activity. The two abundance changes persisted after washout. Source notes confirm these findings; the paragraph concerns a durable response across distinct readouts.",
+      "assess": {
+        "repair": "Vary repeated sentence openings and combine or separate information where it helps focus and rhythm, with no required voice ratio.",
+        "preserve": "A, transcript X abundance, protein Y abundance, unchanged R activity, donor matching and persistence of the two abundance changes after washout.",
+        "watch": "Synonym drift between abundance and activity, a new causal mechanism, added sample sizes or forced rewriting of every sentence."
       }
     }
   ]

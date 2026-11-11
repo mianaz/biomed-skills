@@ -57,7 +57,11 @@ qualification. Check for underselling as deliberately as for overstatement.
 
 7. **Write natural scientific prose.** Use concrete verbs, clear subjects, and
    established biomedical and statistical terminology. Convey importance through
-   substantive reasoning. Remove stock transitions, empty promotional adjectives,
+   substantive reasoning. Vary wording, sentence structure and length while
+   preserving scientific meaning. Choose active or passive voice from the
+   paragraph's focal object and its connection to the preceding text. Let the
+   developing argument set the rhythm and the need for a transition. Remove
+   stock transitions, empty promotional adjectives,
    forced contrasts, invented labels, decorative hyphenation, and repetitive
    summaries. Preserve quantitative information and necessary technical meaning.
 

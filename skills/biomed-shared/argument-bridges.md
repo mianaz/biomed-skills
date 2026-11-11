@@ -30,7 +30,10 @@ the pharmacological comparison.
 Ask what scientific premise connects the preceding finding to the next question.
 For a new experiment, state what it will distinguish or establish. For a review,
 explain why the biological change or treatment history changes the next problem.
-Use the smallest addition that makes that reasoning visible.
+First check whether subject choice and the existing information order already
+make the relationship clear. Keep a direct transition when they do. Add only the
+missing premise needed to make the reasoning visible, using a clause or sentence
+that fits the passage. Remove a bridge that merely repeats existing content.
 
 Separate a link reported in the current experiment, a relationship established
 in cited work, and an author's proposed explanation. Use

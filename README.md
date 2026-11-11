@@ -2,7 +2,7 @@
 
 General biomedical workflows. Repository: [mianaz/biomed-skills](https://github.com/mianaz/biomed-skills).
 The suite includes scientific framing, manuscript writing, figures, paper reading,
-protocols and submission preparation. Version 0.6.0.
+protocols and submission preparation. Version 0.6.1.
 
 | Skill | Deliverable |
 |---|---|
@@ -97,6 +97,8 @@ source attribution and consequential counterevidence remain exact. Shared checks
 cover argument bridges, measured objects, semantic fidelity and manuscript
 versions. Local polishing uses a 15–20% growth target; translation and substantial
 rewriting follow their requested scope. Review and audit are independent tasks.
+Subjects and voice follow paragraph focus and continuity. Equivalent wording and
+sentence rhythms can vary; transitions supply needed reasoning or orientation.
 
 Design provenance is recorded in [docs/writing-provenance.md](docs/writing-provenance.md).
 

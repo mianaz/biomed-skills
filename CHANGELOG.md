@@ -15,6 +15,13 @@
 - Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
   R plotting downloads, fictional study walkthroughs and automated deployment.
 
+## 0.6.1 — 10 November 2026
+
+- Choose subjects and active/passive voice from paragraph focus and information flow.
+- Allow meaning-preserving variation in wording, sentence structure and length.
+- Remove redundant transitions while retaining the reasoning needed for progression.
+- Add five fictional editorial cases for voice, focus, rhythm and direct transitions.
+
 ## 0.6.0 — 10 November 2026
 
 - Add scientific manuscript review and claim-to-source citation audit workflows.

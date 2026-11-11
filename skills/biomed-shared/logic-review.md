@@ -24,7 +24,10 @@ one section. Use this brief:
 > identify what each paragraph adds, whether the order develops the argument,
 > and where motivation, evidence or conclusions repeat. Within each paragraph,
 > check concrete subjects, timely comparators, observation-to-inference links,
-> and whether the ending advances the point. Use [argument bridges](argument-bridges.md)
+> and whether the ending advances the point. Apply the paragraph guidance to
+> subject and voice choices that affect focus and continuity. Accept a direct
+> transition when the progression is clear; identify redundant bridge sentences.
+> Use [argument bridges](argument-bridges.md)
 > for matched example/property/outcome relationships and earned synthesis, and
 > [scientific semantics](scientific-semantics.md) for assay and claim wording.
 > Check transitions for a real

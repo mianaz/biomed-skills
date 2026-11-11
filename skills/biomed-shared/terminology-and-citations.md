@@ -5,11 +5,14 @@ units and statistical terminology. For a substantial manuscript, maintain a shor
 term list from the source and apply it across text, figures and legends. A local
 edit needs a check of the affected terms and dependent statements.
 
-Use one stable term for one concept. Check concept collisions as well as synonym
+Keep scientific referents and technical distinctions stable. Equivalent wording,
+accepted short forms and varied sentence structures can improve natural prose
+when the reader can still follow the same entity and proposition. Check concept
+collisions as well as synonym
 drift: a term may refer to different measurements in adjacent sentences, and two
 terms may have been treated as interchangeable. For example, exposure duration
 and systemic drug exposure describe different quantities. Choose a replacement
-for its scientific meaning rather than to avoid repetition. Use
+for its meaning and fit within the passage. Use
 [scientific semantics](scientific-semantics.md) when the measured object or
 inference changes with the wording.
 
