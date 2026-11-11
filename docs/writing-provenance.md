@@ -33,6 +33,14 @@ biomedical examples. The referenced projects are not installed, fetched or
 invoked by the writing workflow. Editorial guidance is distinct from official
 journal policy; current requirements are verified for the actual submission.
 
+The graph-first editing idea also drew on
+[PaperGraph](https://github.com/wangyuer1-lang/papergraph). Its executable renderer,
+graph schema and instructions are supplied within this suite. Earlier plotting
+reporting guidance acknowledged the Nature Skills figure workflow; the current
+reporting reference is rewritten around this suite's own statistics, export and
+submission references. These historical credits are maintained here, outside
+installed runtime instructions.
+
 ## Architecture sources read for the refactoring
 
 - [Writing for agents](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents): SKILL.md and SKILL-MECHANICS.md. Used its guidance on independent invocation, conditional references, explicit completion and a single authoritative home for each rule.
@@ -52,3 +60,14 @@ support is distributed with the selected skills; the standalone boundary is the
 installed package. Source attribution remains here for maintainers.
 
 See writing-architecture.md for responsibility boundaries, migration and test scope.
+
+## Author-directed revision — 10 November 2026
+
+The author's cross-project discussion of AI-assisted academic writing supplied
+the requirements for argument bridges, scientific proposition fidelity, minimal
+revision and claim-to-source verification. The new review and citation-audit
+entries implement those requirements in original instructions. Shared guidance
+keeps scientific interest and biological significance central while checking
+the exact measured object, inference and source scope. Regression passages and
+source excerpts are fictional; they contain no manuscript data. Test records
+distinguish structural checks, subset agent smoke runs and comparative evaluation.

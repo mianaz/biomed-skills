@@ -11,13 +11,16 @@ from check_writing import SHARED, WRITING, check
 
 INSTALL = '''# Install the biomedical writing skills
 
-Copy the four complete directories under `skills/` into your agent's configured
-skill directory. Keep `biomed-shared/` beside `paper-framing/`, `paper-writing/`
-and `paper-polishing/`. The shared folder supplies references and is not a task.
+Copy the six complete directories under `skills/` into your agent's configured
+skill directory. Keep `biomed-shared/` beside `paper-framing/`, `paper-writing/`,
+`paper-polishing/`, `paper-review/` and `citation-audit/`. The shared folder
+supplies references and is not a task.
 
 Use paper-framing to develop the scientific story, paper-writing to draft text,
-and paper-polishing to improve existing prose. This package supplies the writing
-guidance. Related analysis and protocol workflows are in the complete suite.
+and paper-polishing to improve existing prose. Paper-review produces scientific
+review findings; citation-audit checks claims against cited sources. Each workflow
+can complete its own task. This package supplies the shared writing guidance.
+Related analysis and protocol workflows are in the complete suite.
 
 When replacing the earlier framing bundle, back up the old paper-framing folder
 and replace it with this complete folder. This removes the old section-writing

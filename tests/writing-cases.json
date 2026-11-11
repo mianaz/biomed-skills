@@ -211,6 +211,26 @@
       "primary": "submission-check",
       "completion": "Return verified applicable dimensions and source; do not start full submission-package preparation.",
       "required_resources": []
+    },
+    {
+      "id": "R1",
+      "prompt": "Review this biomedical manuscript for major scientific and logical issues.",
+      "primary": "paper-review",
+      "completion": "Return prioritized findings with manuscript and evidence locations, consequences, repairs and resolution checks; retain the scientific contribution.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "biomed-shared/scientific-semantics.md"
+      ]
+    },
+    {
+      "id": "C1",
+      "prompt": "Verify every claim in this paragraph against its cited sources.",
+      "primary": "citation-audit",
+      "completion": "Audit each claim-source relationship, report coverage and access, locate the source evidence and supply support verdicts and targeted repairs.",
+      "required_resources": [
+        "biomed-shared/writing-principles.md",
+        "biomed-shared/terminology-and-citations.md"
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "biomed-skill",
-  "version": "0.5.5",
-  "description": "Biomedical framing, writing, polishing, figures, paper reading, protocols and submission preparation.",
+  "version": "0.6.0",
+  "description": "Biomedical framing, writing, polishing, scientific review, citation audits, figures, paper reading, protocols and submission preparation.",
   "author": {
     "name": "Miana"
   },

@@ -41,7 +41,8 @@ scop::CellDimPlot(srt, group.by = "celltype", reduction = "umap", label = FALSE,
                   legend.position = "right", raster = FALSE, split.by = "sample")
 ```
 Dense-UMAP defaults from that paper: `theme_use="theme_blank"`, `pt.size=0.01`, `raster=FALSE`
-(see sc-conventions/references/figure-sizing-and-type.md for pt.size-by-density + save dims).
+Use [layout and legibility](layout-legibility.md) for point density and placement
+size, and [figure delivery](figure-delivery.md) for saved sources and exports.
 scop's first arg is `srt`; verify any unfamiliar arg with `?scop::CellDimPlot`.
 
 ## UMAP or embedding by group

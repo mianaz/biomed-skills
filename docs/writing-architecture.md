@@ -10,6 +10,8 @@ scope determine the work; a skill name is optional in the user's request.
 | Find the study's contribution, significance or strongest story | paper-framing | Recommended argument, model and overall figure sequence with sources |
 | Draft or substantially rebuild manuscript text from evidence | paper-writing | Requested prose with factual and cross-reference checks |
 | Polish, translate or tighten an existing passage | paper-polishing | Revised passage preserving meaning and scientific ambition |
+| Review manuscript logic or scientific support | paper-review | Prioritized, source-located findings, repairs and resolution checks |
+| Verify cited claims against sources | citation-audit | Claim–source audit with locators, coverage and targeted repairs |
 | Explain a published paper | paper-distill | Sourced digest and requested reusable ideas |
 | Map claims to experiments and results | paper-evidence-map | Editable graph and sourced evidence table |
 | Render, repair or audit scientific figures | scientific-plotting | Scientific review, measured and visually inspected exports, source data and plotting source |
@@ -39,6 +41,12 @@ links select the relevant evidence, manuscript placement, terminology, paragraph
 or biomedical example guidance. Writing keeps section-specific guidance under
 its own `references/` directory. A task reads the resources its decisions require.
 
+`argument-bridges.md` covers example-to-judgment links and transitions.
+`scientific-semantics.md` protects measured objects and proposition scope.
+`revision-fidelity.md` governs edit scope, semantic comparison and manuscript
+versions. Local polishing uses a 15–20% growth target within one language;
+translation and substantive restructuring follow their requested scope.
+
 A framing brief can supply the selected claim, model and figure order. An evidence
 map supplies source relationships and existing IDs. Writing and polishing reuse
 these records when present. Creating those artifacts is an optional task choice.
@@ -52,6 +60,11 @@ all edits. This is an internal review role, not another user-facing skill or a
 mandatory pipeline for short edits. It uses available context and reports the
 scope actually reviewed. The writing bundle includes these shared references.
 
+`paper-review` owns an explicit scientific manuscript review. It applies the
+shared checks directly and does not launch another reviewer. `citation-audit`
+checks claim–source relationships and retains unread sources as unverified.
+Both reuse claim IDs and source records; neither is a compulsory drafting stage.
+
 ## Distribution
 
 Install the full suite with its shared support directory, or use the focused
@@ -60,7 +73,7 @@ plugin version is recorded in `.claude-plugin/plugin.json`.
 
 ## Verification
 
-`check_writing.py` validates the three writing skill entry points and every local
+`check_writing.py` validates the five writing/review skill entry points and every local
 Markdown reference in those directories and biomed-shared. `--integration` also
 checks shared references in four existing consumers. Their other resources and
 runnable scientific code are outside this check. The bundle builder validates its
@@ -72,3 +85,17 @@ structure only. To evaluate behavior, run each prompt in an actual agent session
 record the selected skills and resources, retain its output, and assess the stated
 completion criteria. Record model, runtime and version. Report measured outcomes
 only after that evaluation. Structural success does not certify manuscript quality.
+
+`--suite` checks all entry points and instruction references for local resource
+closure, external skill links and retired external routes. Historical credits
+remain in maintainer documentation outside installed instructions.
+
+`writing-regression-cases.json` contains 12 self-contained fictional cases and
+correct-text controls. Withhold assessor criteria from the writing agent, retain
+its outputs and resource report, and compare scientific fidelity, logic repairs,
+new claims, preservation, length and prose quality. A full comparison requires
+baseline, revised and no-skill conditions on the same cases.
+
+The [10 November smoke record](../tests/evaluations/writing-smoke-20261110.md)
+preserves all 12 outputs and a targeted retest. Comparative evaluation remains
+pending.

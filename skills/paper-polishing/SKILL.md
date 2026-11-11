@@ -11,12 +11,17 @@ Read [writing principles](../biomed-shared/writing-principles.md) before editing
 Use the supplied passage, its nearby context and established terminology. Identify
 whether the user requests polishing, translation or compression, and retain the
 agreed language, audience and edit scope.
+Read [revision fidelity](../biomed-shared/revision-fidelity.md) to apply the
+default minimal edit and compare the original and revision. It includes the
+local growth target, meaningful negation and manuscript-version checks.
 
 Use [terminology and citations](../biomed-shared/terminology-and-citations.md) for
 scientific terms, quantities and references. Read
 [paragraph development](../biomed-shared/paragraphs-and-revision.md) when sentence
 relationships or paragraph organization need repair. For Results compression or
 moving material, read [result placement](../biomed-shared/main-text-and-supplement.md).
+Read [argument bridges](../biomed-shared/argument-bridges.md) for missing premises,
+detached cause-and-effect lists or summary terms without concrete support.
 
 ## 1. Identify the intended message
 
@@ -47,8 +52,11 @@ to explain the issue and revise only as far as the available facts support.
 
 ## 3. Check and deliver
 
-Compare original and revision for numbers, effect directions, sample units,
-negation, causal meaning, scope, terminology and citation/figure references.
+Compare original and revision proposition by proposition using revision fidelity
+and [scientific semantics](../biomed-shared/scientific-semantics.md). Check the
+measured object as well as numbers, conditions and inference. Keep correct prose
+unchanged where useful. A language edit does not certify unread cited sources;
+`citation-audit` handles a requested claim-to-source audit.
 Check that clearer language has preserved the positive scientific value.
 
 Apply [logic review](../biomed-shared/logic-review.md) when its substantive drafting

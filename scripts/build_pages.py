@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import zipfile
+from check_writing import SHARED, WRITING
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / '_site'
@@ -15,6 +16,10 @@ if OUT.exists():
 shutil.copytree(ROOT / 'site', OUT)
 showcase = json.loads((ROOT / 'site/showcase.json').read_text())
 tracked = subprocess.check_output(['git', 'ls-files', '-z', 'skills'], cwd=ROOT).decode().split('\0')
+tracked += [str(path.relative_to(ROOT)) for name in WRITING + (SHARED,)
+            for path in (ROOT / 'skills' / name).rglob('*')
+            if path.is_file() and '__pycache__' not in path.parts and path.suffix != '.pyc' and path.name != '.DS_Store']
+tracked = sorted(set(filter(None, tracked)))
 old_pages = ('jinek2012', 'causal-models', 'biomed-icon-library', 'icon-atlas-template')
 web_files = [name for name in filter(None, tracked)
              if not any(name.endswith('/' + old + '.html') for old in old_pages)
@@ -75,7 +80,7 @@ for icon in current_icons:
 icons_page = (OUT / 'icons.html').read_text().replace('{{VISUAL_REVISION}}', showcase['visual_revision']).replace('{{ICON_COUNT}}', str(len(current_icons))).replace('{{ICON_CARDS}}', ''.join(icon_cards))
 (OUT / 'icons.html').write_text(icons_page)
 p = OUT / 'index.html'
-text = p.read_text().replace('{{VERSION}}', version).replace('{{COMMIT}}', commit).replace('{{SKILL_CARDS}}', '\n'.join(cards)).replace('{{NOSCRIPT_GUIDES}}', ''.join(guides)).replace('{{PLOT_CARDS}}',''.join(plot_cards)).replace('{{FIRST_CASE}}', html.escape(catalog[0]['example']))
+text = p.read_text().replace('{{VERSION}}', version).replace('{{COMMIT}}', commit).replace('{{SKILL_COUNT}}', str(len(catalog))).replace('{{SKILL_CARDS}}', '\n'.join(cards)).replace('{{NOSCRIPT_GUIDES}}', ''.join(guides)).replace('{{PLOT_CARDS}}',''.join(plot_cards)).replace('{{FIRST_CASE}}', html.escape(catalog[0]['example']))
 text = text.replace('</main>', '<script type="application/json" id="catalog-data">' + json.dumps(catalog, ensure_ascii=False).replace('</', '<\\/') + '</script></main>')
 p.write_text(text)
 (OUT / '.nojekyll').touch()

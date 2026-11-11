@@ -57,7 +57,7 @@ ggplot(df, aes(DR1, DR2, color = lab)) +
   geom_point(size = 0.2) +
   geom_point(data = med, shape = 21, fill = "gray", color = "gray30", size = 6, alpha = .5) +
   geom_text(data = med, aes(label = idx), color = "black", size = 3) +
-  scale_color_manual(values = pal_many(nlevels(df$lab))) +   # sc-conventions pal_many
+  scale_color_manual(values = grDevices::hcl.colors(nlevels(df$lab), "Dark 3")) +
   theme_classic() + theme(legend.position = "none")          # key rendered separately
 ```
 
@@ -72,9 +72,11 @@ quantitative makeup matters. (source: https://doi.org/10.1038/s41586-020-2316-7)
 
 ```r
 df$grp <- ifelse(df$stage == "CS15", as.character(df$cluster), "others")
-df <- df[order(df$grp == "others", decreasing = TRUE), ]   # 'others' first → drawn underneath
+df <- df[order(df$grp == "others", decreasing = TRUE), ]   # context first
+keep <- sort(unique(df$grp[df$grp != "others"]))
+cols <- setNames(grDevices::hcl.colors(length(keep), "Dark 3"), keep)
 ggplot(df, aes(UMAP1, UMAP2, color = grp)) + geom_point(size = .8) +
-  scale_color_manual(values = c(pal_many(n), others = "grey85")) + theme_bw()
+  scale_color_manual(values = c(cols, others = "grey85")) + theme_bw()
 # composition pie: ggpubr::ggpie(counts, "n", fill="cluster") + ggrepel::geom_label_repel(...)
 ```
 Use a light grey (`grey85`/`#E6E6E6`) for context, consistent with the volcano background convention.
@@ -123,11 +125,11 @@ When you *do* assemble a panel:
 - Give each panel a unique job; progress overview → deviation → relationship so no two
   panels carry the same evidence.
 - Keep one restrained palette across the whole panel and reuse it semantically across
-  sub-panels (sc-conventions palettes); shared or direct labels beat one legend per
+  sub-panels; use [color policy](color-policy.md) for the mapping. Shared or direct labels beat one legend per
   sub-panel.
 - Panel tags: lowercase bold letters near the top-left, not large badges.
 
-(adapted from nature-figure archetypes / 2026 Nature sample observations)
+Use the bundled [figure-plan workflow](../../figure-plan/SKILL.md) for manuscript assembly.
 
 ## Final Audit
 

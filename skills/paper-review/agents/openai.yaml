@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Review"
+  short_description: "Review biomedical arguments and prioritize repairs"
+  default_prompt: "Use $paper-review to assess this manuscript's scientific argument and evidence, with source-located findings and concrete repairs."

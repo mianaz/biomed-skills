@@ -7,15 +7,15 @@ import re
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
-WRITING = ('paper-framing', 'paper-writing', 'paper-polishing')
+WRITING = ('paper-framing', 'paper-writing', 'paper-polishing', 'paper-review', 'citation-audit')
 SHARED = 'biomed-shared'
 CONSUMERS = ('paper-distill', 'paper-evidence-map', 'protocol-to-methods', 'submission-check')
 LINK = re.compile(r'\[[^\]]*\]\(([^)]+)\)')
-EXTERNAL_SKILL = re.compile(r'\b(?:nature-writing|nature-polishing|nature-shared|humanizer|paper-storycraft|paper-journal-club|sc-paper-distill)\b', re.I)
+EXTERNAL_SKILL = re.compile(r'\b(?:nature-writing|nature-polishing|nature-reviewer|nature-shared|nature-figure|humanizer|paper-storycraft|paper-journal-club|sc-paper-distill|sc-conventions|scientific-visualization|papergraph)\b', re.I)
 
 
-def check(skills: Path, integration: bool = False) -> list[str]:
-    """Check three writing skills; optionally check shared links in four consumers."""
+def check(skills: Path, integration: bool = False, suite: bool = False) -> list[str]:
+    """Check writing/review skills; optionally check shared links in consumers."""
     skills = skills.resolve()
     errors: list[str] = []
     for name in WRITING + (SHARED,):
@@ -28,13 +28,15 @@ def check(skills: Path, integration: bool = False) -> list[str]:
         errors.append('Shared references must not expose an independent SKILL.md')
 
     names = WRITING + (CONSUMERS if integration else ())
+    if suite:
+        names = tuple(p.parent.name for p in sorted(skills.glob('*/SKILL.md')))
     for name in names:
         entry = skills / name / 'SKILL.md'
         if not entry.is_file():
             errors.append(f'Missing entry point: {name}/SKILL.md')
             continue
         text = entry.read_text(encoding='utf-8')
-        if f'../{SHARED}/writing-principles.md' not in LINK.findall(text):
+        if name in WRITING + CONSUMERS and f'../{SHARED}/writing-principles.md' not in LINK.findall(text):
             errors.append(f'Missing explicit writing-principles pointer: {name}')
         if name in WRITING:
             front = re.match(r'\A---\n(.*?)\n---\n', text, re.S)
@@ -48,6 +50,10 @@ def check(skills: Path, integration: bool = False) -> list[str]:
     docs = [p for name in WRITING + (SHARED,) for p in (skills / name).rglob('*.md')]
     if integration:
         docs += [skills / name / 'SKILL.md' for name in CONSUMERS]
+    if suite:
+        docs = ([skills / name / 'SKILL.md' for name in names]
+                + list(skills.glob('*/references/**/*.md'))
+                + list((skills / SHARED).glob('*.md')))
     for path in docs:
         if not path.is_file():
             continue
@@ -62,13 +68,13 @@ def check(skills: Path, integration: bool = False) -> list[str]:
             address = link.strip().split(' ', 1)[0]
             parts = urlsplit(address)
             if parts.scheme or parts.netloc:
-                if parts.path.lower().endswith('/skill.md'):
+                if parts.path.lower().endswith('/skill.md') or re.search(r'/(?:skills|[^/]+-skills)(?:/|$)', parts.path, re.I):
                     errors.append(f'External skill link: {relative}: {link}')
                 continue
             if not parts.path:
                 continue
             # Existing consumers retain their other, separately maintained resources.
-            if path.parent.name in CONSUMERS and not parts.path.startswith(f'../{SHARED}/'):
+            if not suite and path.parent.name in CONSUMERS and not parts.path.startswith(f'../{SHARED}/'):
                 continue
             target = path.parent / unquote(parts.path)
             if target.is_symlink() or any(p.is_symlink() for p in target.parents if p != skills):
@@ -88,15 +94,16 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--skills-root', type=Path, default=Path(__file__).resolve().parents[1] / 'skills')
     parser.add_argument('--integration', action='store_true', help='Also check shared pointers in four existing consumers')
+    parser.add_argument('--suite', action='store_true', help='Check all suite entry points and instruction references')
     args = parser.parse_args()
     try:
-        errors = check(args.skills_root, args.integration)
+        errors = check(args.skills_root, args.integration, args.suite)
     except (OSError, UnicodeError, ValueError) as exc:
         errors = [str(exc)]
     for error in errors:
         print(f'ERROR: {error}')
     if not errors:
-        print('PASS: writing package structure and bundled reference paths')
+        print('PASS: suite instruction references' if args.suite else 'PASS: writing package structure and bundled reference paths')
     print('Agent routing and manuscript quality are not evaluated by this check.')
     return int(bool(errors))
 

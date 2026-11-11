@@ -1,81 +1,41 @@
-# Stats Reporting, Editable-Text Export, and Image Integrity
+# Statistical reporting, exports and image integrity
 
-The reporting and export contract a publication-ready figure must satisfy. Load when
-finalizing a manuscript/multi-panel figure, before delivery, or whenever a figure
-contains microscopy/spatial images, blots/gels, or a statistical claim.
-(adapted from nature-figure / Yuan1z0825/nature-skills; always verify the target
-journal's current author guide before submission.)
+Use this reference when a figure reports statistical results or contains
+microscopy, spatial images, blots or gels. The package supplies the reporting
+and export guidance through its own references.
 
-## Per-panel statistics block
+## Report the analysis actually performed
 
-For every quantitative panel, record — in the caption, methods, or a sidecar file:
+Use [statistics](statistics.md) for the comparison, independent unit, pairing,
+test and multiple-comparison correction. Keep the sample-size definition,
+summary statistic and variability or interval definition in the caption or
+Methods. Link the direct plotting data and the actual statistical results.
+Describe a supplied analysis at its performed scope. Descriptive panels follow
+their requested purpose; add inference when the question and design call for it.
 
-```text
-n definition:
-biological replicates:
-technical replicates:
-center statistic:                 # mean / median
-spread / interval:                # SD / SEM / 95% CI / IQR
-test:
-multiple-comparison correction:
-p-value display:                  # exact p preferred over stars
-source-data file:
-```
+For a model-performance panel, state the evaluation unit, data splits, metric,
+baseline and source of variability. Keep held-out evaluation separate from model
+fitting and tuning in both the analysis record and the claim.
 
-For model / machine-learning panels, also record:
+## Export and inspect
 
-```text
-train/validation/test split:
-number of seeds or folds:
-metric definition:
-confidence-interval or variability definition:
-baseline definition:
-```
+Use [figure delivery](figure-delivery.md) for editable sources, direct plotting
+data and PDF/PNG exports, and [layout and legibility](layout-legibility.md) for
+physical size and effective text size. Keep text editable where the export format
+supports it. Inspect the saved export at its intended placement size.
 
-This is the structured form of the "document the statistical test" non-negotiable — one
-filled block per panel, not a single line for the whole figure.
+For a journal-specific requirement, use the suite's
+[submission check](../../submission-check/SKILL.md) to retrieve the applicable
+official instructions. Apply the verified rule to the current article and stage.
 
-## Editable-text, font-embedded export (R)
+## Preserve image evidence
 
-Vector output must keep text **selectable** so a copyeditor can restyle labels without
-re-rendering. Size in mm (journals think in mm); convert with `mm / 25.4`.
+Keep the raw image and a record of the displayed file, crop, contrast or gamma
+adjustments, pseudocolor and any stitching. For a scale bar, retain the pixel-to-
+distance calibration. Mark splices and reused images when relevant, and link
+quantification to the source image and independent sample.
 
-```r
-w_mm <- 89; h_mm <- 70            # 89 mm ≈ single-column, 183 mm ≈ double-column
-
-svglite::svglite("fig.svg", width = w_mm/25.4, height = h_mm/25.4)      # editable text
-print(p); dev.off()
-
-grDevices::cairo_pdf("fig.pdf", width = w_mm/25.4, height = h_mm/25.4, family = "Arial")
-print(p); dev.off()
-
-ragg::agg_tiff("fig.tiff", width = w_mm/25.4, height = h_mm/25.4, units = "in", res = 600)
-print(p); dev.off()
-```
-
-Then **open the exported SVG/PDF** and confirm: text is selectable (not outlined),
-labels do not overlap, and the figure still reads at final printed size. This is the
-export half of render-then-verify — trusting the plotting code is not enough.
-
-For journal-template sizing beyond this (per-journal column widths, height caps, full
-spec tables), route to `scientific-visualization`; do not duplicate those tables here.
-
-## Image-integrity block (microscopy / spatial / blots)
-
-For each image panel, record:
-
-```text
-raw file:
-processed file:
-crop:
-brightness / contrast / gamma:
-pseudo-color:
-scale-bar calibration:            # calibrated units, not just a magnification factor
-stitching:
-reuse in other figures:
-quantification link:
-```
-
-Global adjustments (whole-image brightness/contrast) are safer than local selective
-edits. If an adjustment changes the visibility of relevant background or signal, flag it
-rather than silently normalizing it away. Every image panel needs a calibrated scale bar.
+Apply display adjustments consistently to comparable images and retain the
+biological signal and background needed to assess them. Explain a consequential
+processing choice beside its result. Preserve the source evidence through export
+and assembly so that each displayed panel can be traced to its original file.

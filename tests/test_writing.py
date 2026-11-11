@@ -37,6 +37,24 @@ class WritingPackageTests(unittest.TestCase):
     def test_integrated_consumers(self):
         self.assertEqual(check(self.skills, True), [])
 
+    def test_suite_instruction_closure(self):
+        self.assertEqual(check(self.skills, suite=True), [])
+
+    def test_suite_missing_peer(self):
+        p = self.skills / 'paper-evidence-map/SKILL.md'
+        p.write_text(p.read_text() + '\n[Required](../unbundled-review/SKILL.md)\n')
+        self.assertTrue(check(self.skills, suite=True))
+
+    def test_suite_external_skill_directory(self):
+        p = self.skills / 'paper-evidence-map/SKILL.md'
+        p.write_text(p.read_text() + '\n[Required](https://example.org/project/skills/reviewer)\n')
+        self.assertTrue(check(self.skills, suite=True))
+
+    def test_suite_legacy_route(self):
+        p = self.skills / 'scientific-plotting/references/stats-and-integrity.md'
+        p.write_text(p.read_text() + '\nRoute to `scientific-visualization`.\n')
+        self.assertTrue(check(self.skills, suite=True))
+
     def test_missing_shared_directory(self):
         shutil.rmtree(self.skills / 'biomed-shared')
         self.assertTrue(check(self.skills))
@@ -47,6 +65,10 @@ class WritingPackageTests(unittest.TestCase):
 
     def test_missing_section(self):
         (self.skills / 'paper-writing/references/results.md').unlink()
+        self.assertTrue(check(self.skills))
+
+    def test_missing_argument_reference(self):
+        (self.skills / 'biomed-shared/argument-bridges.md').unlink()
         self.assertTrue(check(self.skills))
 
     def test_parent_escape(self):
@@ -136,6 +158,16 @@ class WritingPackageTests(unittest.TestCase):
             for path in c.get('required_resources', []):
                 self.assertTrue((self.skills / path).is_file(), path)
         self.assertTrue(set(WRITING).issubset({c['primary'] for c in cases}))
+
+    def test_editorial_regression_cases(self):
+        data = json.loads((ROOT / 'tests/writing-regression-cases.json').read_text())
+        self.assertEqual(data['schema_version'], 1)
+        cases = data['cases']
+        self.assertEqual(len({c['id'] for c in cases}), len(cases))
+        for case in cases:
+            self.assertIn(case['primary'], WRITING)
+            self.assertTrue(case['prompt'] and case['input'])
+            self.assertTrue(case['assess']['repair'] and case['assess']['preserve'])
 
 
 if __name__ == '__main__':

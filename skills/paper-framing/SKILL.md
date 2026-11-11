@@ -35,7 +35,11 @@ Connect complementary observations into a biological model. Examine whether
 selectivity, heterogeneity or an apparent exception reveals a useful principle.
 State the reasoning from observation to interpretation. For an unresolved
 mechanism, develop the proposal and a prediction that distinguishes it from an
-informative alternative. Read the relevant [biomedical example](../biomed-shared/biomedical-examples.md)
+informative alternative. Use [argument bridges](../biomed-shared/argument-bridges.md)
+when the explanation needs an unstated premise or an example-to-judgment link,
+and [scientific semantics](../biomed-shared/scientific-semantics.md) when the
+model depends on the identity of a measured object or functional inference.
+Read the relevant [biomedical example](../biomed-shared/biomedical-examples.md)
 when the discovery is undersold or the mechanism is incomplete.
 
 Complete this step when the model explains the important findings and its

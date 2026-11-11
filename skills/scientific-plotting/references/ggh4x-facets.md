@@ -46,4 +46,5 @@ pretty_pathway <- function(x) x |>
                              "\\bCd(\\d+)\\b"="CD\\1"))
 # then stringr::str_wrap(..., width = 40) for axis fit
 ```
-Save dual-version + source data (sc-conventions).
+Save the editable source and direct plotting data with the exports, following
+[figure delivery](figure-delivery.md).

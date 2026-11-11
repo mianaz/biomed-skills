@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "status": "not_run_as_full_comparison",
+  "purpose": "Fictional, self-contained editorial cases. Keep assessor criteria hidden from the writing agent. Record subset smoke runs separately from a baseline/revised/no-skill comparison.",
+  "evaluation": {
+    "conditions": ["baseline skills", "revised skills", "no skill"],
+    "record": ["case ID", "model and runtime", "skill snapshot", "actual resources read", "output", "assessor and assessment"],
+    "assess": ["scientific proposition errors", "target problem resolved", "new unsupported claims", "correct content preserved", "word-count change for same-language edits", "natural prose and scientific contribution"],
+    "method": "Apply each prompt to its input without exposing assess criteria. Keep original outputs. Compare matched cases across conditions and use a separate human or agent assessor. A structural test or subset smoke run does not establish improvement."
+  },
+  "cases": [
+    {
+      "id": "BRIDGE-01",
+      "primary": "paper-polishing",
+      "prompt": "Polish this review paragraph with minimal changes. Use only the supplied source notes. Keep each example informative for the paragraph's conclusion.",
+      "input": "All agents and sources are fictional. Draft: Conjugate design shapes toxicity. Agent A and agent B both caused dose-limiting injury in early studies. Marrow suppression and epithelial injury restricted dosing. These observations show that target biology governs tolerability. Source A, Results paragraph 2: Agent A released its payload in plasma; the authors linked this exposure to marrow suppression. Source B, Results paragraph 4: Agent B retained its payload in plasma; uptake by antigen-positive normal epithelium was linked to epithelial injury.",
+      "assess": {
+        "repair": "Pair A with plasma release and marrow injury, and B with normal-tissue uptake and epithelial injury. Earn a synthesis about release and antigen distribution, or focus the conclusion accordingly.",
+        "preserve": "Two distinct source-reported explanatory paths and dose-limiting injury.",
+        "watch": "Invented payload class, DAR, a common mechanism, or claiming the example proves target biology alone. Assess growth against the local-edit target; a justified necessary repair can exceed it."
+      }
+    },
+    {
+      "id": "BRIDGE-02",
+      "primary": "paper-writing",
+      "prompt": "Revise the transition in this review using the supplied evidence. Retain its therapeutic significance.",
+      "input": "Fictional draft: Therapy-induced lineage change rewires transcription and chromatin. This creates an opportunity for antigen-directed delivery. Source C, Fig. 2 and Results paragraph 3: lineage-switched cells lose surface antigen L and acquire surface antigen N. Source D, Fig. 4: the N-directed conjugate enters antigen-N-positive cells and inhibits their growth in culture. The study did not test patients.",
+      "assess": {
+        "repair": "Connect lineage change to remodeled surface antigens and then to the new delivery opportunity.",
+        "preserve": "L loss, N gain, cultured-cell evidence and the therapeutic idea.",
+        "watch": "Clinical efficacy or a new mechanism absent from the notes; replacing the opportunity with generic caution."
+      }
+    },
+    {
+      "id": "SEMANTICS-01",
+      "primary": "paper-polishing",
+      "prompt": "Polish the passage without changing its science or adding sources.",
+      "input": "Fictional passage: At 10 nM for 24 h, compound C increased ARE-reporter activity in line M. This increase was not solely explained by more reporter-positive cells. Endogenous AR target transcripts were unchanged, and AR dependence was not tested.",
+      "assess": {
+        "repair": "Improve only language that benefits from an edit.",
+        "preserve": "Dose, time, cell line, reporter identity, partial negation, unchanged endogenous targets and untested dependence.",
+        "watch": "AR reactivation, restored androgen response or complete exclusion of cell-number effects."
+      }
+    },
+    {
+      "id": "SEMANTICS-02",
+      "primary": "paper-polishing",
+      "prompt": "Translate this paragraph into biomedical English, preserving its exact meaning.",
+      "input": "虚构研究：在所测试的剂量下，我们尚未观察到肝损伤的证据。该效应不只是由细胞数量变化引起。三个患者样本共测量了300个细胞，每位患者是一个独立生物学单位。",
+      "assess": {
+        "repair": "Produce natural English with accurate propositions.",
+        "preserve": "Tested-dose condition, absence-of-evidence meaning, partial negation and three independent patients with 300 total measured cells.",
+        "watch": "Safety established, cell-number contribution completely excluded, or 300 independent samples. Word-count ratios across languages are inapplicable."
+      }
+    },
+    {
+      "id": "CONTROL-01",
+      "primary": "paper-polishing",
+      "prompt": "Check this sentence for publication. Keep it unchanged if it is already clear and accurate.",
+      "input": "Fictional result: X depletion reduced colony number by 30% relative to vehicle in four independent cultures (two-sided Welch test, P = 0.01).",
+      "assess": {
+        "repair": "Accept accurate prose or make only a justified local correction.",
+        "preserve": "Endpoint, effect, comparator, four independent cultures, test and P value.",
+        "watch": "Forced sentence splitting, a new mechanism, changed metric or removal of statistics solely for style."
+      }
+    },
+    {
+      "id": "CONTROL-02",
+      "primary": "paper-polishing",
+      "prompt": "Polish only where needed. Preserve the statistical meaning and the sentence's connected comparison.",
+      "input": "Fictional result: Although treatment A significantly reduced colony number relative to vehicle in six donor-matched cultures (paired t-test, P = 0.004), treatment B preserved colony number while reducing colony area, indicating distinct effects on colony establishment and expansion under these conditions.",
+      "assess": {
+        "repair": "Retain a coherent comparison even though the sentence is long.",
+        "preserve": "Statistical significance, donor matching, endpoints, conditional interpretation and the informative contrast.",
+        "watch": "Mechanical sentence-length enforcement or treating all contrast/negation as defensive prose."
+      }
+    },
+    {
+      "id": "CONCEPT-01",
+      "primary": "paper-polishing",
+      "prompt": "Correct the scientific terminology using the assay notes, keeping the paragraph concise.",
+      "input": "Fictional draft: Drug A reduced genes X and Y and shortened systemic exposure. The treatment therefore eliminated pathway dependence. Notes: qPCR measured reduced X and Y transcript abundance; no genes were deleted. Dosing lasted 24 h rather than 48 h; systemic drug concentration was not measured. No dependence assay was performed.",
+      "assess": {
+        "repair": "Name reduced transcript abundance and shorter dosing duration; keep the conclusion at the measured scope.",
+        "preserve": "The expression changes and 24-versus-48-hour condition.",
+        "watch": "Gene deletion, measured systemic exposure or functional dependence inferred from expression alone."
+      }
+    },
+    {
+      "id": "REVIEW-01",
+      "primary": "paper-review",
+      "prompt": "Give a scientific review of this section with prioritized, source-located findings and feasible repairs. Do not rewrite the section.",
+      "input": "Fictional manuscript, complete material for this exercise. Abstract sentence 2: C restores receptor R-dependent transcription across tumors. Results paragraph 1: C increased an R-reporter signal by 40% in line M. Results paragraph 2: The response persisted after washout and altered the later challenge response. Fig. 1: three independent cultures in line M, reporter result and washout measurements. Fig. 2: endogenous R-target transcripts unchanged; R depletion leaves the reporter increase intact. Methods paragraph 3: one tumor-derived line M; no other tumor models. Discussion paragraph 1: The reporter increase establishes R reactivation; persistence is merely descriptive.",
+      "assess": {
+        "repair": "Identify the contradicted R-dependent inference and model generalization. Retain the reporter finding and develop the significance of persistent altered response.",
+        "preserve": "Locators, independent cultures, central scientific value and separation of contradiction from open persistence mechanism.",
+        "watch": "A blanket new-experiment list, full rewrite, a mandatory direct-binding assay, or another reviewer chain. Each material finding needs impact, repair and resolution check."
+      }
+    },
+    {
+      "id": "VERSION-01",
+      "primary": "paper-review",
+      "prompt": "Review consistency before submission using this designated source set. Identify what can be resolved now.",
+      "input": "Fictional current manuscript v3: Abstract sentence 3 reports nine active compounds. Results paragraph 4 reports eight. Fig. 3 legend reports eight. Designated source table v3 lists eight active compounds and one excluded positive control, with IDs A through H and PC. Old source table v2 counted PC among nine. File timestamps are not supplied. No journal-format review is requested.",
+      "assess": {
+        "repair": "Locate the abstract conflict and resolve eight actives from the designated v3 source, explaining the excluded control.",
+        "preserve": "Current source authority, control identity and correct Results/legend counts.",
+        "watch": "Nine chosen by majority or timestamp, a made-up ninth active, or launching full journal-package preparation."
+      }
+    },
+    {
+      "id": "CITATION-01",
+      "primary": "citation-audit",
+      "prompt": "Audit every cited claim below against the supplied fictional sources. Treat the status notes as the complete simulated current record; do not search the web. Return source locators and coverage, including unresolved entries.",
+      "input": "All sources are fictional. Manuscript I1: A improves survival in all patients [S1]. I2: A binds receptor R directly and suppresses reporter Q [S2]. I3: B is safe at every dose [S3]. I4: C reduces colony number by 20% [S4]. Bibliography and supplied source headers agree for S1, S2 and S4 (titles, authors, year and local IDs); S3 identity metadata is supplied but its content is inaccessible. S1 Results paragraph 2: A was associated with longer progression-free survival in a biomarker-selected cohort; no overall-survival result is reported. S2 Fig. 2 legend: A suppressed Q reporter; direct binding was not measured. S4 corrected Table 1: C reduced colony number by 12%. Simulated status record, checked 2026-11-10: S1 and S2 have no notices; S3 status is unavailable; S4 has a correction replacing the original 20% with 12% in Table 1.",
+      "assess": {
+        "repair": "Separate I2 binding and reporter components; match S1 population, endpoint and association; mark S3 support unverified; use S4 correction for 12%.",
+        "preserve": "Four cited sentences, five atomic claims and five claim–source relationships when I2 is split; exact locators, simulated status and access scope.",
+        "watch": "Certifying S3 safety from bibliographic identity, declaring an unread source unsupported, overlooking correction, or claiming real-world status verification."
+      }
+    },
+    {
+      "id": "CITATION-02",
+      "primary": "citation-audit",
+      "prompt": "Audit this cited sentence using the supplied fictional full texts. No external lookup is needed for this exercise; source status remains unverified.",
+      "input": "Manuscript Results paragraph 2: Across three independent studies, A increased response in 900 patients per study [R]. R is a review whose paragraph 5 cites primary studies P1, P2 and P3 and gives 900 patients in total. Supplied P1 Table 1: n=200; P2 Table 1: n=300; P3 Table 1: n=400. All three report increased response in their stated cohorts. Source headers match the cited identities; no publisher status records are supplied.",
+      "assess": {
+        "repair": "Correct per-study denominator to a combined total, retaining each primary cohort count and the review-to-primary attribution.",
+        "preserve": "Reported responses, total 900, original-source locators and unverified status checks.",
+        "watch": "Invented study counts or verifying source status from absence of a notice in the exercise."
+      }
+    },
+    {
+      "id": "STORY-01",
+      "primary": "paper-framing",
+      "prompt": "Choose a compelling framing from these results. We cannot add experiments now.",
+      "input": "Fictional organoid study: a transient exposure creates a state that persists after washout; that state changes sensitivity to a later challenge. The screen and reporter were technically reproducible. Molecular storage of the state is untested. The current outline spends two figures on assay performance before presenting persistence and challenge response.",
+      "assess": {
+        "repair": "Develop exposure history and durable response change as an informative biological story; assign assay performance an appropriate supporting role.",
+        "preserve": "Open persistence mechanism, actual findings and conceptual ambition.",
+        "watch": "A platform-only story or requiring mechanistic completion before offering a framing."
+      }
+    }
+  ]
+}

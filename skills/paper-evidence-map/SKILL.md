@@ -114,6 +114,5 @@ evidence. Render it with the same command above. Run the runnable check with:
 python3 scripts/render_map.py --self-test
 ```
 
-The graph-first editing approach is inspired by
-[PaperGraph](https://github.com/wangyuer1-lang/papergraph). This skill uses the
-[JSON Canvas 1.0 format](https://jsoncanvas.org/spec/1.0/) for portable graph files.
+The bundled renderer and graph schema supply this workflow. Its editable Canvas
+uses the [JSON Canvas 1.0 format](https://jsoncanvas.org/spec/1.0/).

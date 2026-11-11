@@ -24,13 +24,17 @@ one section. Use this brief:
 > identify what each paragraph adds, whether the order develops the argument,
 > and where motivation, evidence or conclusions repeat. Within each paragraph,
 > check concrete subjects, timely comparators, observation-to-inference links,
-> and whether the ending advances the point. Check transitions for a real
+> and whether the ending advances the point. Use [argument bridges](argument-bridges.md)
+> for matched example/property/outcome relationships and earned synthesis, and
+> [scientific semantics](scientific-semantics.md) for assay and claim wording.
+> Check transitions for a real
 > scientific connection. Identify both undersold insights and unsupported leaps.
 > For Discussion, assess synthesis and specific engagement with the supplied
 > literature. For Methods and legends, identify misplaced interpretation and
 > excess detail while retaining reproducibility and figure-reading essentials.
 > Return only actionable findings, with a section/paragraph locator, the logic
-> problem, why it matters and a concrete repair. Cite both locations for repeats.
+> problem, the relevant claim and evidence, why it matters, a concrete repair and
+> a check that would establish resolution. Cite both locations for repeats.
 > Give a short argument map when needed to explain a structural repair. Do not
 > rewrite the whole manuscript, invent evidence, or enforce a sentence template.
 
@@ -40,3 +44,8 @@ one review of the revised draft is usually sufficient. The primary writer
 resolves material findings and checks affected transitions and factual details.
 Repeat review only for a substantial restructuring or unresolved logic issue.
 Deliver the revised text and consequential notes, not an automatic audit dossier.
+
+For an explicit manuscript scientific review, `paper-review` owns the findings
+and their priorities. It can use these checks directly; launching another review
+agent from a review task adds no required stage. A systematic cited-source audit
+is the separate `citation-audit` task. Reuse existing claim IDs and source records.

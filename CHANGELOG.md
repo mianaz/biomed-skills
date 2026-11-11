@@ -15,6 +15,16 @@
 - Add a GitHub Pages demo site with 14 skill guides, seven interactive examples,
   R plotting downloads, fictional study walkthroughs and automated deployment.
 
+## 0.6.0 — 10 November 2026
+
+- Add scientific manuscript review and claim-to-source citation audit workflows.
+- Add argument bridges, scientific semantics and revision fidelity to writing,
+  polishing and framing, with 12 fictional agent smoke cases and a recorded retest.
+- Keep runtime instructions within the suite; replace the retired external
+  plotting route and add a whole-suite instruction-reference check.
+- Include all five writing/review entries and shared references in the focused
+  writing bundle and demo guides.
+
 ## 0.5.5 — 3 November 2026
 
 - Keep heatmaps descriptive by default; add statistics or extra effect sizes only on request.

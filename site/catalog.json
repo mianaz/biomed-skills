@@ -68,6 +68,52 @@
     "source": "skills/paper-polishing/SKILL.md"
   },
   {
+    "id": "paper-review",
+    "title": "审阅科学论证",
+    "group": "writing",
+    "summary": "检查稿件的科学主线、设计和证据，按结论影响排序并给出具体修复。",
+    "inputs": [
+      "当前稿件及配套图、图注、Methods 和补充材料",
+      "审阅范围、已有主张 ID 和证据记录"
+    ],
+    "prompt": "Use $paper-review to review this manuscript. Prioritize findings, cite the manuscript and evidence locations, and give a feasible repair and resolution check for each issue.",
+    "steps": [
+      "确定 logic、scientific 或 pre-submission 范围",
+      "核查论点、机制桥梁、实验设计和推断层级",
+      "保留科学贡献，输出有来源且可复核的修改建议"
+    ],
+    "outputs": [
+      "按 P0/P1/P2 排序的问题",
+      "主张与证据位置、影响、修复及复核条件",
+      "实际审阅范围和未解决的来源问题"
+    ],
+    "example": "虚构示例：摘要称处理恢复受体依赖性转录，但 Fig. 2 显示受体敲低后 reporter 响应仍存在。\nP0：该结果与受体依赖性解释冲突。修复：保留 reporter 发现并重述其意义。复核：摘要、Results 和 Discussion 均与 Fig. 2 一致，同时发展持续状态及后续响应的科学价值。",
+    "source": "skills/paper-review/SKILL.md"
+  },
+  {
+    "id": "citation-audit",
+    "title": "逐项核查引文支持",
+    "group": "writing",
+    "summary": "把正文主张对应到原始来源，核查对象、条件、数值、推断与版本。",
+    "inputs": [
+      "待核查的正文和参考文献",
+      "可用全文、补充材料及已有来源记录"
+    ],
+    "prompt": "Use $citation-audit to audit every cited claim in this passage. Locate the original supporting evidence, check scope and current source status, and report coverage with targeted repairs.",
+    "steps": [
+      "列出范围内的主张和引文关系",
+      "读取原始来源并核对身份、支持、范围和版本状态",
+      "保留未核实项，报告覆盖范围和具体修复"
+    ],
+    "outputs": [
+      "带来源位置和支持结论的核查表",
+      "必要时提供 TSV",
+      "已核查及未解决数量与修复建议"
+    ],
+    "example": "虚构示例：正文写“每项研究有 900 位患者”。综述 paragraph 5 和三篇原始研究的 Table 1 分别列出 200、300、400 人。\n结论：分母范围不符。修复：“三项研究合计 900 位患者”。保留每项研究的来源和各自人数。",
+    "source": "skills/citation-audit/SKILL.md"
+  },
+  {
     "id": "scientific-plotting",
     "title": "从数据到可编辑图",
     "group": "figures",

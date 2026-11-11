@@ -16,6 +16,11 @@ Use [evidence and interpretation](../biomed-shared/evidence-and-interpretation.m
 when judging claims or proposed mechanisms, and
 [terminology and citations](../biomed-shared/terminology-and-citations.md) when
 writing from sources or applying journal requirements.
+Read [scientific semantics](../biomed-shared/scientific-semantics.md) when the
+wording depends on an assay, biological entity, sample unit or causal inference.
+For developed prose being revised, use
+[revision fidelity](../biomed-shared/revision-fidelity.md) to set edit scope and
+compare scientific meaning and manuscript versions.
 
 ## 1. Establish the passage's scientific purpose
 
@@ -45,6 +50,8 @@ Read [result placement](../biomed-shared/main-text-and-supplement.md) for Result
 whole-manuscript compression or content relocation. Read
 [paragraph development](../biomed-shared/paragraphs-and-revision.md) when building
 or restructuring paragraphs. Completion is the guidance needed for this request.
+Read [argument bridges](../biomed-shared/argument-bridges.md) when explaining how
+examples support a judgment, connecting experiments, or repairing a transition.
 
 ## 3. Draft the requested text
 
@@ -66,7 +73,9 @@ An outline is the deliverable only when the user asks for an outline.
 
 Check scientific interest and biological significance alongside factual accuracy.
 Check numbers, terminology, citations and figure correspondence in the affected
-text. Make language improvements within this task. `paper-polishing` serves an
+text, using the designated manuscript and matching source version. Trace each
+dimension of a synthesis to the evidence developed in the passage. Make language
+improvements within this task. `paper-polishing` serves an
 independent request to improve existing prose; it is not a mandatory final stage.
 
 Apply [logic review](../biomed-shared/logic-review.md) when its substantive drafting
@@ -75,4 +84,7 @@ delivery.
 
 Return the draft and brief notes for consequential choices or unresolved facts.
 For a manuscript, verify alignment of the title, abstract, headings and figures.
+An explicit scientific manuscript assessment belongs to `paper-review`; a
+systematic cited-claim check belongs to `citation-audit`. Use them for those
+requested products rather than adding an automatic audit to every draft.
 Completion is usable text at the scope requested by the user.

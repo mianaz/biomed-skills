@@ -57,6 +57,9 @@ For academic text, read [writing principles](../biomed-shared/writing-principles
 For cover-letter drafting or substantial manuscript text, use `paper-writing`
 with the verified journal requirements and source facts. Reuse existing prose
 for file preparation. This workflow owns requirements and package consistency.
+An explicit scientific pre-submission critique belongs to `paper-review`; a
+systematic check of cited claim support belongs to `citation-audit`. Reuse their
+findings when supplied rather than treating file readiness as scientific review.
 
 Present the package and a short prioritized action list. Preparing a package
 does not authorize submitting it, signing declarations or messaging editors.
