@@ -1,0 +1,1 @@
+Supplied GSEA results ranked by NES. Point area shows actual genes per set; alpha shows minus log10 of raw P. Named highlight flags select pathways before drawing. Native rank labels link to a native pathway key; grey points are other gene sets. The legacy setSize/10 column is restored to gene count and the misleading proportion label is removed.

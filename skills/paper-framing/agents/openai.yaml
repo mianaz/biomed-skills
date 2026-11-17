@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Framing"
+  short_description: "Develop a biomedical contribution and scientific story"
+  default_prompt: "Use $paper-framing to identify the central discovery, develop its biological significance and recommend the overall figure sequence."

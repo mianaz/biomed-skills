@@ -1,0 +1,2 @@
+"group1","group2","n1","n2","estimate","low","high","p","statistic","df","method","p_holm","label"
+"Control","Treatment",4,4,26.0677256040206,13.2286786185527,38.9067725894886,0.00254498754142527,4.97191985380248,5.98094765623394,"Two-sided Welch; group2 minus group1",0.00254498754142527,"0.0025"

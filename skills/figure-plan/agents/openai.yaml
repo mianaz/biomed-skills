@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figure Plan"
+  short_description: "Plan manuscript figures and editable PowerPoint decks"
+  default_prompt: "Use $figure-plan to complete the requested figure plan, editable assembly or layout review, reusing the manuscript's accepted story and existing panels."

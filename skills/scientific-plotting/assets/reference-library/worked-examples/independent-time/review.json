@@ -1,0 +1,47 @@
+{
+  "template": "worked/independent-time",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Error-bar caps used a fixed width in time units; canvas was fixed.",
+  "native_controls": "Native lineranges, numeric ticks and panel measurement; preserve group/time means and SD.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        82.55,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 27,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        86.43055555555556,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 27,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        110.77222222222221,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 27,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

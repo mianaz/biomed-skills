@@ -1,0 +1,19 @@
+{
+  "case": "enrichment",
+  "checks": [
+    {
+      "variant": "original",
+      "width_mm": 107.95,
+      "height_mm": 75.85,
+      "min_text_pt": 11.2
+    },
+    {
+      "variant": "replacement",
+      "width_mm": 107.95,
+      "height_mm": 75.85,
+      "min_text_pt": 11.2
+    }
+  ],
+  "replacement": "Adjusted P values and a long term label changed",
+  "visual_review": "Saved original and replacement inspected on 2026-10-26"
+}

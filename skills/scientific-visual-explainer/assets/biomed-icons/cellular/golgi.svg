@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="golgi" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="golgi-cisternae" data-part="cisternae">
+      <path d="M47 48 C63 38 95 37 112 48 C106 54 59 56 47 48 Z" fill="#69ADB5"/>
+      <path d="M37 64 C58 52 103 52 123 64 C115 71 47 72 37 64 Z" fill="#69ADB5"/>
+      <path d="M32 81 C54 69 107 69 128 81 C119 88 43 89 32 81 Z" fill="#69ADB5"/>
+      <path d="M39 98 C59 87 102 87 120 98 C112 106 48 106 39 98 Z" fill="#69ADB5"/>
+      <path d="M51 114 C67 105 93 105 108 114 C101 121 58 122 51 114 Z" fill="#69ADB5"/>
+    </g>
+    <g id="golgi-vesicles" data-part="vesicles" fill="#E4BE78">
+      <circle cx="37" cy="43" r="4"/><circle cx="126" cy="53" r="4.5"/><circle cx="133" cy="102" r="4"/><circle cx="45" cy="123" r="3.5"/>
+    </g>
+  </g>
+</svg>

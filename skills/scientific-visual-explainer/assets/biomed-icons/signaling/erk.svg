@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="erk-docking-loop" data-part="docking-loop"><path d="M25 43 C16 35 19 24 28 19 C37 15 47 20 49 29 C52 36 47 42 41 47" fill="none" stroke-width="7"/><path d="M25 43 C16 35 19 24 28 19 C37 15 47 20 49 29 C52 36 47 42 41 47" fill="none" stroke="#69ADB5" stroke-width="4"/></g>
+<g id="erk-kinase-n-lobe" data-part="kinase-n-lobe"><path d="M43 70 C40 57 48 46 61 44 C75 39 90 45 96 56 C103 68 99 80 89 86 C76 92 59 88 50 83 C45 81 43 76 43 70 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M55 59 C63 51 74 53 78 61 C81 67 77 72 72 75" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="erk-kinase-c-lobe" data-part="kinase-c-lobe"><path d="M58 90 C71 85 88 87 101 94 C113 101 121 114 123 130 C111 138 92 135 78 130 C66 125 59 109 58 90 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M77 101 C86 95 97 99 101 107 C104 114 99 120 93 123" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="erk-tey-activation-loop" data-part="tey-activation-loop"><path d="M82 91 C76 100 76 109 83 115 C90 121 100 118 107 112" fill="none" stroke="#E4BE78" stroke-width="5"/><circle cx="84" cy="115" r="4.5" fill="#E4BE78" stroke-width="2"/></g>
+</svg>

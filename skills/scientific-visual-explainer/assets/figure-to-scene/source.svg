@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" font-family="Arial" font-size="22" fill="#243e44">
+  <g id="context">
+    <text x="70" y="30">Extracellular</text><text x="70" y="220">Cytoplasm</text>
+    <path d="M70 145H242 M278 145H930 M70 161H242 M278 161H930" stroke="#a3c5b6" stroke-width="5" fill="none"/>
+    <path d="M700 351V330Q700 315 715 315H910Q925 315 925 330V470Q925 485 910 485H715Q700 485 700 470V414" fill="#f3eff7" stroke="#a99bb8" stroke-width="3"/>
+    <text x="820" y="345" text-anchor="middle">Nucleus</text>
+    <path d="M805 379H890 M805 399H890 M810 379V399 M830 379V399 M850 379V399 M870 379V399 M889 379V399" fill="none" stroke="#8b7e9a" stroke-width="3"/>
+    <text x="848" y="426" text-anchor="middle">DNA</text>
+  </g>
+  <g id="relations" fill="#596c70" stroke="#596c70" stroke-width="2">
+    <path d="M160 80Q214 68 247 108 M275 207Q308 264 370 264 M491 264H565 M649 300Q660 355 724 383" fill="none"/>
+    <path d="M246 108L234 103L241 96Z M370 264L358 258L358 270Z M565 264L553 258L553 270Z M724 383L711 373L709 387Z" stroke="none"/>
+  </g>
+  <g id="ligand"><circle cx="130" cy="80" r="22" fill="#e8b281" stroke="#805e40" stroke-width="2"/><text x="172" y="60" text-anchor="middle">L</text></g>
+  <g id="receptor"><path d="M232 110L260 142L288 110 M260 142V205" fill="none" stroke="#648f9e" stroke-width="12"/><text x="300" y="188">R</text></g>
+  <g id="protein-a" transform="translate(435 264)"><rect x="-52" y="-25" width="104" height="50" rx="25" fill="#b8d5db" stroke="#648f9e" stroke-width="2"/><text x="0" y="8" text-anchor="middle">A</text></g>
+  <g id="phospho"><circle cx="485" cy="237" r="17" fill="#e8b281" stroke="#805e40" stroke-width="1.5"/><text x="485" y="245" text-anchor="middle">P</text></g>
+  <g id="tf" transform="translate(620 280)"><rect x="-40" y="-24" width="80" height="48" rx="24" fill="#b8d5db" stroke="#648f9e" stroke-width="2"/><text x="0" y="8" text-anchor="middle">TF</text></g>
+  <g id="rna"><path d="M786 450Q799 435 812 450T838 450T864 450T890 450" fill="none" stroke="#bd8b61" stroke-width="4"/><text x="756" y="458" text-anchor="end">RNA</text></g>
+</svg>

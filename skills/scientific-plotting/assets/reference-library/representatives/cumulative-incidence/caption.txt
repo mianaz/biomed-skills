@@ -1,0 +1,1 @@
+Synthetic demonstration data. Descriptive competing-risk cumulative incidence from cmprsk, with 0 denoting censoring. Exact group/event result keys preserve group names containing spaces. Estimates and variances are saved.

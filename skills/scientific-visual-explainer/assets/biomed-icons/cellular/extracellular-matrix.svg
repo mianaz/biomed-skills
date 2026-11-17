@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="extracellular-matrix" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="extracellular-matrix-collagen" data-part="collagen-fibers" stroke="#69ADB5" stroke-width="7">
+      <path d="M20 52 C48 42 67 47 88 58 C109 69 125 69 140 62"/>
+      <path d="M21 104 C44 111 66 108 87 96 C108 84 122 83 139 89"/>
+      <path d="M42 136 C54 113 65 91 77 72 C90 51 101 35 119 23"/>
+    </g>
+    <g id="extracellular-matrix-branching-fibers" data-part="branching-fibers" stroke="#B2A6CD" stroke-width="3.5">
+      <path d="M35 48 C43 59 49 69 54 81 C60 94 71 104 86 108 C98 112 111 110 126 102"/>
+      <path d="M52 72 C44 75 37 82 32 90 M64 96 C58 108 54 118 54 128 M90 58 C96 70 103 76 115 80 M79 71 C72 62 67 53 65 41 M101 108 C107 119 117 127 129 132"/>
+    </g>
+  </g>
+</svg>

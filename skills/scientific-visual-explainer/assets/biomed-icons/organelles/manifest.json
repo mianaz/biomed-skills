@@ -1,0 +1,425 @@
+[
+  {
+    "id": "rough-er",
+    "label": "Rough endoplasmic reticulum",
+    "label_zh": "粗面内质网",
+    "file": "organelles/rough-er.svg",
+    "category": "organelles",
+    "description": "Connected flattened ER cisternae carry ribosomes on their cytosolic surface.",
+    "parts": [
+      "cisternae",
+      "lumens",
+      "connections",
+      "ribosomes"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          80,
+          25
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic rough-ER schematic; ribosomes are shown on the cytosolic face. Not a resolved molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK9889/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK26841/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "smooth-er",
+    "label": "Smooth endoplasmic reticulum",
+    "label_zh": "滑面内质网",
+    "file": "organelles/smooth-er.svg",
+    "category": "organelles",
+    "description": "A connected tubular ER network without surface ribosomes.",
+    "parts": [
+      "tubules",
+      "lumen-hints"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          25,
+          51
+        ],
+        "normal": [
+          -0.707107,
+          -0.707107
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic smooth-ER schematic emphasizing connected tubules; morphology varies by cell type and function.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK9889/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "peroxisome",
+    "label": "Peroxisome",
+    "label_zh": "过氧化物酶体",
+    "file": "organelles/peroxisome.svg",
+    "category": "organelles",
+    "description": "A single-membrane organelle with a granular enzyme-rich matrix.",
+    "parts": [
+      "limiting-membrane",
+      "matrix"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          135,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic single-membrane peroxisome. A crystalline core is intentionally omitted because it is present only in some peroxisomes.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4060825/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "autophagosome",
+    "label": "Autophagosome",
+    "label_zh": "自噬体",
+    "file": "organelles/autophagosome.svg",
+    "category": "organelles",
+    "description": "A double-membrane vesicle encloses cytoplasmic cargo.",
+    "parts": [
+      "outer-membrane",
+      "intermembrane-space",
+      "inner-membrane",
+      "lumen",
+      "sequestered-cargo"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          141,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic closed macroautophagosome with two limiting membranes and enclosed cytoplasmic cargo.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7264243/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC1363699/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "autolysosome",
+    "label": "Autolysosome",
+    "label_zh": "自噬溶酶体",
+    "file": "organelles/autolysosome.svg",
+    "category": "organelles",
+    "description": "A single-limiting-membrane compartment contains fragmented cargo undergoing degradation.",
+    "parts": [
+      "limiting-membrane",
+      "degrading-cargo"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          142,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic post-fusion autolysosome with one limiting membrane and degrading cargo; contents vary with flux and cargo.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7264243/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5494474/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "early-endosome",
+    "label": "Early endosome",
+    "label_zh": "早期内体",
+    "file": "organelles/early-endosome.svg",
+    "category": "organelles",
+    "description": "A sorting compartment with a vacuolar body and tubular membrane extensions.",
+    "parts": [
+      "tubules",
+      "sorting-compartment",
+      "sorting-cargo"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          127,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Schematic vacuolar sorting body with tubular cues; morphology is variable and not diagnostic.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2810677/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176003/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "recycling-endosome",
+    "label": "Recycling endosome",
+    "label_zh": "回收内体",
+    "file": "organelles/recycling-endosome.svg",
+    "category": "organelles",
+    "description": "A tubulovesicular membrane network schematic for cargo recycling.",
+    "parts": [
+      "tubules",
+      "lumen-hints",
+      "cargo-vesicles"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          140,
+          63
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Schematic tubulovesicular recycling compartment; topology varies across cell types and assays and is not diagnostic.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176003/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4529760/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "centrosome",
+    "label": "Centrosome",
+    "label_zh": "中心体",
+    "file": "organelles/centrosome.svg",
+    "category": "organelles",
+    "description": "Pericentriolar material surrounds two centrioles oriented at right angles.",
+    "parts": [
+      "pericentriolar-material",
+      "centrioles",
+      "centriole-walls"
+    ],
+    "anchors": {
+      "nucleation": {
+        "point": [
+          124,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "nucleation"
+      }
+    },
+    "scope": "Generic animal-cell centrosome with two perpendicular centrioles in pericentriolar material; centrioles are not universal across eukaryotes.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK9932/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "microtubule",
+    "label": "Microtubule",
+    "label_zh": "微管",
+    "file": "organelles/microtubule.svg",
+    "category": "organelles",
+    "description": "A hollow tubulin polymer shown as a short tube with an open lumen.",
+    "parts": [
+      "polymer-wall",
+      "protofilaments"
+    ],
+    "anchors": {
+      "plus-end": {
+        "point": [
+          139,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "plus-end"
+      }
+    },
+    "scope": "Generic hollow microtubule polymer; protofilament details are simplified and not to scale.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26862/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK9932/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "actin-filament",
+    "label": "Actin filament",
+    "label_zh": "肌动蛋白丝",
+    "file": "organelles/actin-filament.svg",
+    "category": "organelles",
+    "description": "Two actin protofilaments twist around one another in a double-stranded polymer.",
+    "parts": [
+      "strands",
+      "subunits"
+    ],
+    "anchors": {
+      "plus-end": {
+        "point": [
+          66,
+          25.5
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "plus-end"
+      }
+    },
+    "scope": "Generic two-stranded F-actin schematic; subunit spacing and helical pitch are not to scale.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK26862/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "nuclear-pore",
+    "label": "Nuclear pore complex",
+    "label_zh": "核孔复合体",
+    "file": "organelles/nuclear-pore.svg",
+    "category": "organelles",
+    "description": "An annular scaffold and central channel are placed within nuclear-envelope membrane context.",
+    "parts": [
+      "envelope-context",
+      "annular-scaffold",
+      "spokes",
+      "channel"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          80,
+          38
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic nuclear pore complex schematic. The annular scaffold is embedded in envelope context; this is not a resolved molecular model.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9732903/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK9927/"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "envelope-context"
+    ]
+  },
+  {
+    "id": "nucleolus",
+    "label": "Nucleolus",
+    "label_zh": "核仁",
+    "file": "organelles/nucleolus.svg",
+    "category": "organelles",
+    "description": "A non-membrane-bound ribosome-biogenesis compartment with schematic internal subphases.",
+    "parts": [
+      "nuclear-context",
+      "granular-component",
+      "dense-fibrillar-component",
+      "fibrillar-center",
+      "granules"
+    ],
+    "anchors": {
+      "binding": {
+        "point": [
+          42,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic non-membrane-bound nucleolar condensate. Its irregular edge represents a condensate boundary, not a lipid bilayer; internal subphases are schematic and not a resolved molecular structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK9939/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4447046/"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "nuclear-context"
+    ]
+  }
+]

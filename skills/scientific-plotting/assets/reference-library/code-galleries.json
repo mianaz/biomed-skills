@@ -1,0 +1,2511 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-27",
+  "scope": "Selected code-backed examples; gallery links lead to each complete external collection.",
+  "galleries": [
+    {
+      "name": "tidyplots",
+      "url": "https://tidyplots.org/use-cases/",
+      "attribution": "Jan Broder Engler",
+      "indexed_examples": 6
+    },
+    {
+      "name": "ggplot2",
+      "url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "indexed_examples": 8
+    },
+    {
+      "name": "ComplexHeatmap",
+      "url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/",
+      "attribution": "Zuguang Gu",
+      "indexed_examples": 5
+    },
+    {
+      "name": "ggpubr",
+      "url": "https://rpkgs.datanovia.com/ggpubr/",
+      "attribution": "Alboukadel Kassambara and contributors",
+      "indexed_examples": 3
+    },
+    {
+      "name": "survminer",
+      "url": "https://rpkgs.datanovia.com/survminer/",
+      "attribution": "survminer authors",
+      "indexed_examples": 3
+    },
+    {
+      "name": "ggridges",
+      "url": "https://wilkelab.org/ggridges/articles/gallery.html",
+      "attribution": "Claus O. Wilke",
+      "indexed_examples": 2
+    },
+    {
+      "name": "ggalluvial",
+      "url": "https://corybrunson.github.io/ggalluvial/articles/ggalluvial.html",
+      "attribution": "Jason Cory Brunson",
+      "indexed_examples": 1
+    },
+    {
+      "name": "ComplexUpset",
+      "url": "https://krassowski.github.io/complex-upset/articles/Examples_R.html",
+      "attribution": "Michał Krassowski",
+      "indexed_examples": 1
+    },
+    {
+      "name": "circlize",
+      "url": "https://jokergoo.github.io/circlize_book/book/",
+      "attribution": "Zuguang Gu",
+      "indexed_examples": 1
+    },
+    {
+      "name": "R Graph Gallery",
+      "url": "https://r-graph-gallery.com/all-graphs",
+      "attribution": "R Graph Gallery contributors",
+      "indexed_examples": 6
+    },
+    {
+      "name": "Python Graph Gallery",
+      "url": "https://python-graph-gallery.com/all-charts/",
+      "attribution": "Python Graph Gallery contributors",
+      "indexed_examples": 3
+    },
+    {
+      "name": "seaborn",
+      "url": "https://seaborn.pydata.org/examples/index.html",
+      "attribution": "Michael Waskom and contributors",
+      "indexed_examples": 6
+    },
+    {
+      "name": "matplotlib",
+      "url": "https://matplotlib.org/stable/gallery/index.html",
+      "attribution": "Matplotlib contributors",
+      "indexed_examples": 6
+    },
+    {
+      "name": "Bizard",
+      "url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "indexed_examples": 11
+    }
+  ],
+  "records": [
+    {
+      "key": "external/tidyplots/add_mean_bar",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "tidyplots",
+      "title": "Mean bars with observations",
+      "chart": "Mean bars with observations",
+      "family": "mean-bars",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jbengler.github.io/tidyplots/reference/add_mean_bar.html",
+      "code_url": "https://jbengler.github.io/tidyplots/reference/add_mean_bar.html",
+      "preview_url": "https://jbengler.github.io/tidyplots/reference/add_mean_bar-1.png",
+      "gallery_url": "https://tidyplots.org/use-cases/",
+      "attribution": "Jan Broder Engler",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/tidyplots/add_boxplot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "tidyplots",
+      "title": "Boxplots",
+      "chart": "Boxplots",
+      "family": "boxplot",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jbengler.github.io/tidyplots/reference/add_boxplot.html",
+      "code_url": "https://jbengler.github.io/tidyplots/reference/add_boxplot.html",
+      "preview_url": "https://jbengler.github.io/tidyplots/reference/add_boxplot-1.png",
+      "gallery_url": "https://tidyplots.org/use-cases/",
+      "attribution": "Jan Broder Engler",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/tidyplots/add_violin",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "tidyplots",
+      "title": "Violin distributions",
+      "chart": "Violin distributions",
+      "family": "violin",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jbengler.github.io/tidyplots/reference/add_violin.html",
+      "code_url": "https://jbengler.github.io/tidyplots/reference/add_violin.html",
+      "preview_url": "https://jbengler.github.io/tidyplots/reference/add_violin-1.png",
+      "gallery_url": "https://tidyplots.org/use-cases/",
+      "attribution": "Jan Broder Engler",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/tidyplots/add_line",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "tidyplots",
+      "title": "Connected observations",
+      "chart": "Connected observations",
+      "family": "line",
+      "task": "time-course",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jbengler.github.io/tidyplots/reference/add_line.html",
+      "code_url": "https://jbengler.github.io/tidyplots/reference/add_line.html",
+      "preview_url": "https://jbengler.github.io/tidyplots/reference/add_line-1.png",
+      "gallery_url": "https://tidyplots.org/use-cases/",
+      "attribution": "Jan Broder Engler",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/tidyplots/add_heatmap",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "tidyplots",
+      "title": "Heatmap",
+      "chart": "Heatmap",
+      "family": "continuous-heatmap",
+      "task": "matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jbengler.github.io/tidyplots/reference/add_heatmap.html",
+      "code_url": "https://jbengler.github.io/tidyplots/reference/add_heatmap.html",
+      "preview_url": "https://jbengler.github.io/tidyplots/reference/add_heatmap-1.png",
+      "gallery_url": "https://tidyplots.org/use-cases/",
+      "attribution": "Jan Broder Engler",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/tidyplots/add_sem_errorbar",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "tidyplots",
+      "title": "Mean and SEM intervals",
+      "chart": "Mean and SEM intervals",
+      "family": "point-interval",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jbengler.github.io/tidyplots/reference/add_sem_errorbar.html",
+      "code_url": "https://jbengler.github.io/tidyplots/reference/add_sem_errorbar.html",
+      "preview_url": "https://jbengler.github.io/tidyplots/reference/add_sem_errorbar-1.png",
+      "gallery_url": "https://tidyplots.org/use-cases/",
+      "attribution": "Jan Broder Engler",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggplot2/geom_boxplot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggplot2",
+      "title": "Box and whisker plots",
+      "chart": "Box and whisker plots",
+      "family": "boxplot",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://ggplot2.tidyverse.org/reference/geom_boxplot.html",
+      "code_url": "https://ggplot2.tidyverse.org/reference/geom_boxplot.html",
+      "preview_url": "https://ggplot2.tidyverse.org/reference/geom_boxplot-1.png",
+      "gallery_url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggplot2/geom_violin",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggplot2",
+      "title": "Violin plots",
+      "chart": "Violin plots",
+      "family": "violin",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://ggplot2.tidyverse.org/reference/geom_violin.html",
+      "code_url": "https://ggplot2.tidyverse.org/reference/geom_violin.html",
+      "preview_url": "https://ggplot2.tidyverse.org/reference/figures/lifecycle-deprecated.svg",
+      "gallery_url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggplot2/geom_bar",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggplot2",
+      "title": "Count and supplied-value bars",
+      "chart": "Count and supplied-value bars",
+      "family": "plain-bars",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://ggplot2.tidyverse.org/reference/geom_bar.html",
+      "code_url": "https://ggplot2.tidyverse.org/reference/geom_bar.html",
+      "preview_url": "https://ggplot2.tidyverse.org/reference/geom_bar-1.png",
+      "gallery_url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggplot2/geom_hex",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggplot2",
+      "title": "Hexagonal binning",
+      "chart": "Hexagonal binning",
+      "family": "hexbin",
+      "task": "association",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://ggplot2.tidyverse.org/reference/geom_hex.html",
+      "code_url": "https://ggplot2.tidyverse.org/reference/geom_hex.html",
+      "preview_url": "https://ggplot2.tidyverse.org/reference/geom_hex-1.png",
+      "gallery_url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggplot2/stat_ecdf",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggplot2",
+      "title": "Empirical cumulative distributions",
+      "chart": "Empirical cumulative distributions",
+      "family": "ecdf",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://ggplot2.tidyverse.org/reference/stat_ecdf.html",
+      "code_url": "https://ggplot2.tidyverse.org/reference/stat_ecdf.html",
+      "preview_url": "https://ggplot2.tidyverse.org/reference/figures/lifecycle-superseded.svg",
+      "gallery_url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggplot2/geom_density_2d",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggplot2",
+      "title": "Two-dimensional density contours",
+      "chart": "Two-dimensional density contours",
+      "family": "density-2d",
+      "task": "association",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://ggplot2.tidyverse.org/reference/geom_density_2d.html",
+      "code_url": "https://ggplot2.tidyverse.org/reference/geom_density_2d.html",
+      "preview_url": "https://ggplot2.tidyverse.org/reference/geom_density_2d-1.png",
+      "gallery_url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggplot2/geom_smooth",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggplot2",
+      "title": "Fitted trends with uncertainty",
+      "chart": "Fitted trends with uncertainty",
+      "family": "regression",
+      "task": "association",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://ggplot2.tidyverse.org/reference/geom_smooth.html",
+      "code_url": "https://ggplot2.tidyverse.org/reference/geom_smooth.html",
+      "preview_url": "https://ggplot2.tidyverse.org/reference/geom_smooth-1.png",
+      "gallery_url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggplot2/geom_ribbon",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggplot2",
+      "title": "Ribbons and area plots",
+      "chart": "Ribbons and area plots",
+      "family": "line-ribbon",
+      "task": "time-course",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://ggplot2.tidyverse.org/reference/geom_ribbon.html",
+      "code_url": "https://ggplot2.tidyverse.org/reference/geom_ribbon.html",
+      "preview_url": "https://ggplot2.tidyverse.org/reference/geom_ribbon-1.png",
+      "gallery_url": "https://ggplot2.tidyverse.org/reference/",
+      "attribution": "ggplot2 authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/complexheatmap/a-single-heatmap",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ComplexHeatmap",
+      "title": "Clustered heatmap",
+      "chart": "Clustered heatmap",
+      "family": "continuous-heatmap",
+      "task": "matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/a-single-heatmap.html",
+      "code_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/a-single-heatmap.html",
+      "preview_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/02-single_heatmap_files/figure-html/default-1.png",
+      "gallery_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/",
+      "attribution": "Zuguang Gu",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/complexheatmap/heatmap-annotations",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ComplexHeatmap",
+      "title": "Heatmaps with annotations",
+      "chart": "Heatmaps with annotations",
+      "family": "annotated-heatmap",
+      "task": "matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/heatmap-annotations.html",
+      "code_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/heatmap-annotations.html",
+      "preview_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/03-heatmap_annotations_files/figure-html/unnamed-chunk-2-1.png",
+      "gallery_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/",
+      "attribution": "Zuguang Gu",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/complexheatmap/a-list-of-heatmaps",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ComplexHeatmap",
+      "title": "Aligned heatmap panels",
+      "chart": "Aligned heatmap panels",
+      "family": "annotated-heatmap",
+      "task": "matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/a-list-of-heatmaps.html",
+      "code_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/a-list-of-heatmaps.html",
+      "preview_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/04-a_list_of_heatmaps_files/figure-html/unnamed-chunk-2-1.png",
+      "gallery_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/",
+      "attribution": "Zuguang Gu",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/complexheatmap/oncoprint",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ComplexHeatmap",
+      "title": "OncoPrint alteration matrix",
+      "chart": "OncoPrint alteration matrix",
+      "family": "oncoprint",
+      "task": "genomic",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/oncoprint.html",
+      "code_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/oncoprint.html",
+      "preview_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/07-oncoprint_files/figure-html/unnamed-chunk-4-1.png",
+      "gallery_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/",
+      "attribution": "Zuguang Gu",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/complexheatmap/upset-plot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ComplexHeatmap",
+      "title": "UpSet intersections",
+      "chart": "UpSet intersections",
+      "family": "upset",
+      "task": "intersection",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/upset-plot.html",
+      "code_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/upset-plot.html",
+      "preview_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/08-upset_files/figure-html/unnamed-chunk-7-1.png",
+      "gallery_url": "https://jokergoo.github.io/ComplexHeatmap-reference/book/",
+      "attribution": "Zuguang Gu",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggpubr/ggpaired",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggpubr",
+      "title": "Paired observations",
+      "chart": "Paired observations",
+      "family": "paired",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggpaired.html",
+      "code_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggpaired.html",
+      "preview_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggpaired-1.png",
+      "gallery_url": "https://rpkgs.datanovia.com/ggpubr/",
+      "attribution": "Alboukadel Kassambara and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggpubr/ggbarplot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggpubr",
+      "title": "Bars, intervals and observations",
+      "chart": "Bars, intervals and observations",
+      "family": "mean-bars",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggbarplot.html",
+      "code_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggbarplot.html",
+      "preview_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggbarplot-1.png",
+      "gallery_url": "https://rpkgs.datanovia.com/ggpubr/",
+      "attribution": "Alboukadel Kassambara and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggpubr/ggscatter",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggpubr",
+      "title": "Correlation with marginal summaries",
+      "chart": "Correlation with marginal summaries",
+      "family": "regression",
+      "task": "association",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggscatter.html",
+      "code_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggscatter.html",
+      "preview_url": "https://rpkgs.datanovia.com/ggpubr/reference/ggscatter-1.png",
+      "gallery_url": "https://rpkgs.datanovia.com/ggpubr/",
+      "attribution": "Alboukadel Kassambara and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/survminer/ggsurvplot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "survminer",
+      "title": "Kaplan–Meier curves and risk table",
+      "chart": "Kaplan–Meier curves and risk table",
+      "family": "kaplan-meier",
+      "task": "survival",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://rpkgs.datanovia.com/survminer/reference/ggsurvplot.html",
+      "code_url": "https://rpkgs.datanovia.com/survminer/reference/ggsurvplot.html",
+      "preview_url": "https://rpkgs.datanovia.com/survminer/reference/ggsurvplot-1.png",
+      "gallery_url": "https://rpkgs.datanovia.com/survminer/",
+      "attribution": "survminer authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/survminer/ggforest",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "survminer",
+      "title": "Cox model forest plot",
+      "chart": "Cox model forest plot",
+      "family": "forest",
+      "task": "effect-estimates",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://rpkgs.datanovia.com/survminer/reference/ggforest.html",
+      "code_url": "https://rpkgs.datanovia.com/survminer/reference/ggforest.html",
+      "preview_url": "https://rpkgs.datanovia.com/survminer/reference/ggforest-1.png",
+      "gallery_url": "https://rpkgs.datanovia.com/survminer/",
+      "attribution": "survminer authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/survminer/ggcompetingrisks",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "survminer",
+      "title": "Competing-risk incidence curves",
+      "chart": "Competing-risk incidence curves",
+      "family": "cumulative-incidence",
+      "task": "survival",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://rpkgs.datanovia.com/survminer/reference/ggcompetingrisks.html",
+      "code_url": "https://rpkgs.datanovia.com/survminer/reference/ggcompetingrisks.html",
+      "preview_url": null,
+      "gallery_url": "https://rpkgs.datanovia.com/survminer/",
+      "attribution": "survminer authors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggridges/introduction",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggridges",
+      "title": "Density ridges and supplied ridgelines",
+      "chart": "Density ridges and supplied ridgelines",
+      "family": "ridgeline",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://wilkelab.org/ggridges/articles/introduction.html",
+      "code_url": "https://github.com/wilkelab/ggridges/blob/HEAD/vignettes/introduction.Rmd",
+      "preview_url": "https://wilkelab.org/ggridges/articles/introduction_files/figure-html/unnamed-chunk-2-1.png",
+      "gallery_url": "https://wilkelab.org/ggridges/articles/gallery.html",
+      "attribution": "Claus O. Wilke",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggridges/gallery",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggridges",
+      "title": "Ridgeline gallery variants",
+      "chart": "Ridgeline gallery variants",
+      "family": "ridgeline",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://wilkelab.org/ggridges/articles/gallery.html",
+      "code_url": "https://github.com/wilkelab/ggridges/blob/HEAD/vignettes/gallery.Rmd",
+      "preview_url": "https://wilkelab.org/ggridges/articles/gallery_files/figure-html/unnamed-chunk-2-1.png",
+      "gallery_url": "https://wilkelab.org/ggridges/articles/gallery.html",
+      "attribution": "Claus O. Wilke",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/ggalluvial/ggalluvial",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ggalluvial",
+      "title": "Alluvial categorical flows",
+      "chart": "Alluvial categorical flows",
+      "family": "alluvial",
+      "task": "composition",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://corybrunson.github.io/ggalluvial/articles/ggalluvial.html",
+      "code_url": "https://github.com/corybrunson/ggalluvial/blob/HEAD/vignettes/ggalluvial.rmd",
+      "preview_url": "https://corybrunson.github.io/ggalluvial/articles/ggalluvial_files/figure-html/example%20alluvial%20plot%20using%20Titanic%20dataset-1.png",
+      "gallery_url": "https://corybrunson.github.io/ggalluvial/articles/ggalluvial.html",
+      "attribution": "Jason Cory Brunson",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/complexupset/Examples_R",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "ComplexUpset",
+      "title": "UpSet with custom annotations",
+      "chart": "UpSet with custom annotations",
+      "family": "upset",
+      "task": "intersection",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://krassowski.github.io/complex-upset/articles/Examples_R.html",
+      "code_url": "https://krassowski.github.io/complex-upset/articles/Examples_R.html",
+      "preview_url": "https://krassowski.github.io/complex-upset/articles/Examples_R_files/Examples_R_12_0.png",
+      "gallery_url": "https://krassowski.github.io/complex-upset/articles/Examples_R.html",
+      "attribution": "Michał Krassowski",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/circlize/the-chorddiagram-function",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "circlize",
+      "title": "Weighted chord diagrams",
+      "chart": "Weighted chord diagrams",
+      "family": "chord",
+      "task": "network",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://jokergoo.github.io/circlize_book/book/the-chorddiagram-function.html",
+      "code_url": "https://jokergoo.github.io/circlize_book/book/the-chorddiagram-function.html",
+      "preview_url": "https://jokergoo.github.io/circlize_book/book/14-chord-diagram-simple_files/figure-html/chord-diagram-basic-1.png",
+      "gallery_url": "https://jokergoo.github.io/circlize_book/book/",
+      "attribution": "Zuguang Gu",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/r-graph-gallery/4-barplot-with-error-bar",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "R Graph Gallery",
+      "title": "Bars with error intervals",
+      "chart": "Bars with error intervals",
+      "family": "mean-bars",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://r-graph-gallery.com/4-barplot-with-error-bar.html",
+      "code_url": "https://r-graph-gallery.com/4-barplot-with-error-bar.html",
+      "preview_url": "https://r-graph-gallery.com/4-barplot-with-error-bar_files/figure-html/thecode-1.png",
+      "gallery_url": "https://r-graph-gallery.com/all-graphs",
+      "attribution": "R Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/r-graph-gallery/104-plot-lines-with-error-envelopes-ggplot2",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "R Graph Gallery",
+      "title": "Lines with error envelopes",
+      "chart": "Lines with error envelopes",
+      "family": "line-ribbon",
+      "task": "time-course",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://r-graph-gallery.com/104-plot-lines-with-error-envelopes-ggplot2.html",
+      "code_url": "https://r-graph-gallery.com/104-plot-lines-with-error-envelopes-ggplot2.html",
+      "preview_url": "https://r-graph-gallery.com/104-plot-lines-with-error-envelopes-ggplot2_files/figure-html/thecode-1.png",
+      "gallery_url": "https://r-graph-gallery.com/all-graphs",
+      "attribution": "R Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/r-graph-gallery/136-stacked-area-chart",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "R Graph Gallery",
+      "title": "Stacked area chart",
+      "chart": "Stacked area chart",
+      "family": "stacked-area",
+      "task": "composition",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://r-graph-gallery.com/136-stacked-area-chart.html",
+      "code_url": "https://r-graph-gallery.com/136-stacked-area-chart.html",
+      "preview_url": "https://r-graph-gallery.com/136-stacked-area-chart_files/figure-html/thecode-1.png",
+      "gallery_url": "https://r-graph-gallery.com/all-graphs",
+      "attribution": "R Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/r-graph-gallery/264-control-ggplot2-boxplot-colors",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "R Graph Gallery",
+      "title": "Grouped boxplot variants",
+      "chart": "Grouped boxplot variants",
+      "family": "boxplot",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://r-graph-gallery.com/264-control-ggplot2-boxplot-colors.html",
+      "code_url": "https://r-graph-gallery.com/264-control-ggplot2-boxplot-colors.html",
+      "preview_url": "https://r-graph-gallery.com/264-control-ggplot2-boxplot-colors_files/figure-html/unnamed-chunk-1-1.png",
+      "gallery_url": "https://r-graph-gallery.com/all-graphs",
+      "attribution": "R Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/r-graph-gallery/48-grouped-barplot-with-ggplot2",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "R Graph Gallery",
+      "title": "Grouped bars",
+      "chart": "Grouped bars",
+      "family": "grouped-bars",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://r-graph-gallery.com/48-grouped-barplot-with-ggplot2.html",
+      "code_url": "https://r-graph-gallery.com/48-grouped-barplot-with-ggplot2.html",
+      "preview_url": "https://r-graph-gallery.com/48-grouped-barplot-with-ggplot2_files/figure-html/thecode-1.png",
+      "gallery_url": "https://r-graph-gallery.com/all-graphs",
+      "attribution": "R Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/r-graph-gallery/271-ggplot2-animated-gif-chart-with-gganimate",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "R Graph Gallery",
+      "title": "Animated time series",
+      "chart": "Animated time series",
+      "family": "line",
+      "task": "time-course",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://r-graph-gallery.com/271-ggplot2-animated-gif-chart-with-gganimate.html",
+      "code_url": "https://r-graph-gallery.com/271-ggplot2-animated-gif-chart-with-gganimate.html",
+      "preview_url": "https://r-graph-gallery.com/img/graph/271-ggplot2-animated-gif-chart-with-gganimate1.gif",
+      "gallery_url": "https://r-graph-gallery.com/all-graphs",
+      "attribution": "R Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/seaborn/grouped_barplot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "seaborn",
+      "title": "Grouped bars and intervals",
+      "chart": "Grouped bars and intervals",
+      "family": "grouped-bars",
+      "task": "group-comparison",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://seaborn.pydata.org/examples/grouped_barplot.html",
+      "code_url": "https://seaborn.pydata.org/examples/grouped_barplot.html",
+      "preview_url": "https://seaborn.pydata.org/_images/grouped_barplot.png",
+      "gallery_url": "https://seaborn.pydata.org/examples/index.html",
+      "attribution": "Michael Waskom and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/seaborn/grouped_violinplots",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "seaborn",
+      "title": "Split violin distributions",
+      "chart": "Split violin distributions",
+      "family": "violin",
+      "task": "distribution",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://seaborn.pydata.org/examples/grouped_violinplots.html",
+      "code_url": "https://seaborn.pydata.org/examples/grouped_violinplots.html",
+      "preview_url": "https://seaborn.pydata.org/_images/grouped_violinplots.png",
+      "gallery_url": "https://seaborn.pydata.org/examples/index.html",
+      "attribution": "Michael Waskom and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/seaborn/paired_pointplots",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "seaborn",
+      "title": "Paired subject plots",
+      "chart": "Paired subject plots",
+      "family": "paired",
+      "task": "group-comparison",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://seaborn.pydata.org/examples/paired_pointplots.html",
+      "code_url": "https://seaborn.pydata.org/examples/paired_pointplots.html",
+      "preview_url": "https://seaborn.pydata.org/_images/paired_pointplots.png",
+      "gallery_url": "https://seaborn.pydata.org/examples/index.html",
+      "attribution": "Michael Waskom and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/seaborn/seaborn.heatmap",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "seaborn",
+      "title": "Annotated numeric heatmap",
+      "chart": "Annotated numeric heatmap",
+      "family": "continuous-heatmap",
+      "task": "matrix",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://seaborn.pydata.org/generated/seaborn.heatmap.html",
+      "code_url": "https://seaborn.pydata.org/generated/seaborn.heatmap.html",
+      "preview_url": "https://seaborn.pydata.org/_images/heatmap_1_0.png",
+      "gallery_url": "https://seaborn.pydata.org/examples/index.html",
+      "attribution": "Michael Waskom and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/seaborn/structured_heatmap",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "seaborn",
+      "title": "Clustered heatmap",
+      "chart": "Clustered heatmap",
+      "family": "annotated-heatmap",
+      "task": "matrix",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://seaborn.pydata.org/examples/structured_heatmap.html",
+      "code_url": "https://seaborn.pydata.org/examples/structured_heatmap.html",
+      "preview_url": "https://seaborn.pydata.org/_images/structured_heatmap.png",
+      "gallery_url": "https://seaborn.pydata.org/examples/index.html",
+      "attribution": "Michael Waskom and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/seaborn/kde_ridgeplot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "seaborn",
+      "title": "Overlapping density ridges",
+      "chart": "Overlapping density ridges",
+      "family": "ridgeline",
+      "task": "distribution",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://seaborn.pydata.org/examples/kde_ridgeplot.html",
+      "code_url": "https://seaborn.pydata.org/examples/kde_ridgeplot.html",
+      "preview_url": "https://seaborn.pydata.org/_images/kde_ridgeplot.png",
+      "gallery_url": "https://seaborn.pydata.org/examples/index.html",
+      "attribution": "Michael Waskom and contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/matplotlib/bar_label_demo",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "matplotlib",
+      "title": "Labelled bar charts",
+      "chart": "Labelled bar charts",
+      "family": "plain-bars",
+      "task": "group-comparison",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_label_demo.html",
+      "code_url": "https://matplotlib.org/stable/_downloads/a2b801f410afc3c47aa5b22d4e188707/bar_label_demo.py",
+      "preview_url": "https://matplotlib.org/stable/_images/sphx_glr_bar_label_demo_001.png",
+      "gallery_url": "https://matplotlib.org/stable/gallery/index.html",
+      "attribution": "Matplotlib contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/matplotlib/fill_between_demo",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "matplotlib",
+      "title": "Curves with shaded intervals",
+      "chart": "Curves with shaded intervals",
+      "family": "line-ribbon",
+      "task": "time-course",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://matplotlib.org/stable/gallery/lines_bars_and_markers/fill_between_demo.html",
+      "code_url": "https://matplotlib.org/stable/_downloads/264a8be4de96930763e780682bdaba2d/fill_between_demo.py",
+      "preview_url": "https://matplotlib.org/stable/_images/sphx_glr_fill_between_demo_001.png",
+      "gallery_url": "https://matplotlib.org/stable/gallery/index.html",
+      "attribution": "Matplotlib contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/matplotlib/boxplot_color",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "matplotlib",
+      "title": "Colored boxplots",
+      "chart": "Colored boxplots",
+      "family": "boxplot",
+      "task": "distribution",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://matplotlib.org/stable/gallery/statistics/boxplot_color.html",
+      "code_url": "https://matplotlib.org/stable/_downloads/38761f6a99c4cb7b7f91b79f2d3cbea4/boxplot_color.py",
+      "preview_url": "https://matplotlib.org/stable/_images/sphx_glr_boxplot_color_001.png",
+      "gallery_url": "https://matplotlib.org/stable/gallery/index.html",
+      "attribution": "Matplotlib contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/matplotlib/errorbar_features",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "matplotlib",
+      "title": "Asymmetric intervals",
+      "chart": "Asymmetric intervals",
+      "family": "point-interval",
+      "task": "group-comparison",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://matplotlib.org/stable/gallery/statistics/errorbar_features.html",
+      "code_url": "https://matplotlib.org/stable/_downloads/ca487dc8c2591cb27330da8e51e2a621/errorbar_features.py",
+      "preview_url": "https://matplotlib.org/stable/_images/sphx_glr_errorbar_features_001.png",
+      "gallery_url": "https://matplotlib.org/stable/gallery/index.html",
+      "attribution": "Matplotlib contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/matplotlib/hexbin_demo",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "matplotlib",
+      "title": "Hexagonal count maps",
+      "chart": "Hexagonal count maps",
+      "family": "hexbin",
+      "task": "association",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://matplotlib.org/stable/gallery/statistics/hexbin_demo.html",
+      "code_url": "https://matplotlib.org/stable/_downloads/0bc1dcea7f6f63c4a84c92bb99b984da/hexbin_demo.py",
+      "preview_url": "https://matplotlib.org/stable/_images/sphx_glr_hexbin_demo_001.png",
+      "gallery_url": "https://matplotlib.org/stable/gallery/index.html",
+      "attribution": "Matplotlib contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/matplotlib/image_annotated_heatmap",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "matplotlib",
+      "title": "Annotated heatmaps",
+      "chart": "Annotated heatmaps",
+      "family": "continuous-heatmap",
+      "task": "matrix",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html",
+      "code_url": "https://matplotlib.org/stable/_downloads/9d9e065de89f1666f743d014a09fc0b4/image_annotated_heatmap.py",
+      "preview_url": "https://matplotlib.org/stable/_images/sphx_glr_image_annotated_heatmap_001.png",
+      "gallery_url": "https://matplotlib.org/stable/gallery/index.html",
+      "attribution": "Matplotlib contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/python-graph-gallery/82-marginal-plot-with-seaborn",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Python Graph Gallery",
+      "title": "Scatter with marginal distributions",
+      "chart": "Scatter with marginal distributions",
+      "family": "regression",
+      "task": "association",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://python-graph-gallery.com/82-marginal-plot-with-seaborn/",
+      "code_url": "https://python-graph-gallery.com/82-marginal-plot-with-seaborn/",
+      "preview_url": "https://python-graph-gallery.com/posts/82-marginal-plot-with-seaborn/output-1-800.webp",
+      "gallery_url": "https://python-graph-gallery.com/all-charts/",
+      "attribution": "Python Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/python-graph-gallery/163-donut-plot-with-subgroups",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Python Graph Gallery",
+      "title": "Nested composition rings",
+      "chart": "Nested composition rings",
+      "family": "pie",
+      "task": "composition",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://python-graph-gallery.com/163-donut-plot-with-subgroups/",
+      "code_url": "https://python-graph-gallery.com/163-donut-plot-with-subgroups/",
+      "preview_url": "https://python-graph-gallery.com/posts/163-donut-plot-with-subgroups/output-1-800.webp",
+      "gallery_url": "https://python-graph-gallery.com/all-charts/",
+      "attribution": "Python Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/python-graph-gallery/503-waffle-chart-introduction",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Python Graph Gallery",
+      "title": "Waffle composition chart",
+      "chart": "Waffle composition chart",
+      "family": "waffle",
+      "task": "composition",
+      "languages": [
+        "python"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://python-graph-gallery.com/503-waffle-chart-introduction/",
+      "code_url": "https://python-graph-gallery.com/503-waffle-chart-introduction/",
+      "preview_url": "https://python-graph-gallery.com/posts/503-waffle-chart-introduction/output-1-800.webp",
+      "gallery_url": "https://python-graph-gallery.com/all-charts/",
+      "attribution": "Python Graph Gallery contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/RaincloudPlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Raincloud distributions",
+      "chart": "Raincloud distributions",
+      "family": "raincloud",
+      "task": "distribution",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Distribution/RaincloudPlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Distribution/RaincloudPlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Distribution/RaincloudPlot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/VolcanoPlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Volcano differential results",
+      "chart": "Volcano differential results",
+      "family": "volcano",
+      "task": "enrichment",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Omics/VolcanoPlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Omics/VolcanoPlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Omics/VolcanoPlot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/MultiVolcanoPlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Multiple volcano comparisons",
+      "chart": "Multiple volcano comparisons",
+      "family": "volcano",
+      "task": "enrichment",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Omics/MultiVolcanoPlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Omics/MultiVolcanoPlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Omics/MultiVolcanoPlot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/ManhattanPlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Genome-wide association Manhattan plot",
+      "chart": "Genome-wide association Manhattan plot",
+      "family": "manhattan",
+      "task": "genomic",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Omics/ManhattanPlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Omics/ManhattanPlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Omics/ManhattanPlot_city.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/GeneStructurePlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Gene structure tracks",
+      "chart": "Gene structure tracks",
+      "family": "genomic-tracks",
+      "task": "genomic",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Omics/GeneStructurePlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Omics/GeneStructurePlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Omics/GeneStructurePlot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/TextEnrichmentBarPlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Enrichment bars with pathway labels",
+      "chart": "Enrichment bars with pathway labels",
+      "family": "enrichment-bars",
+      "task": "enrichment",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Omics/TextEnrichmentBarPlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Omics/TextEnrichmentBarPlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Omics/TextEnrichmentBarPlot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/MetaForestPlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Meta-analysis forest plots",
+      "chart": "Meta-analysis forest plots",
+      "family": "forest",
+      "task": "effect-estimates",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Clinics/MetaForestPlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Clinics/MetaForestPlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Clinics/MetaForestPlot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/KaplanMeierPlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Kaplan–Meier survival",
+      "chart": "Kaplan–Meier survival",
+      "family": "kaplan-meier",
+      "task": "survival",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Clinics/KaplanMeierPlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Clinics/KaplanMeierPlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Clinics/KaplanMeierPlot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/ComplexHeatmap",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Annotated ComplexHeatmap recipes",
+      "chart": "Annotated ComplexHeatmap recipes",
+      "family": "annotated-heatmap",
+      "task": "matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Correlation/ComplexHeatmap.html",
+      "code_url": "https://openbiox.github.io/Bizard/Correlation/ComplexHeatmap.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Correlation/ComplexHeatmap_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/TernaryPlot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Ternary composition",
+      "chart": "Ternary composition",
+      "family": "ternary",
+      "task": "composition",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Correlation/TernaryPlot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Correlation/TernaryPlot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Correlation/TernaryPlot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    },
+    {
+      "key": "external/bizard/MutationOncoplot",
+      "collection": "External code",
+      "library": "web",
+      "gallery": "Bizard",
+      "title": "Mutation landscape",
+      "chart": "Mutation landscape",
+      "family": "oncoprint",
+      "task": "genomic",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [],
+      "contract_reviewed": false,
+      "status": "reference",
+      "review_note": "Example code and source page checked; local execution and replacement data remain untested.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "source_url": "https://openbiox.github.io/Bizard/Omics/MutationOncoplot.html",
+      "code_url": "https://openbiox.github.io/Bizard/Omics/MutationOncoplot.html",
+      "preview_url": "https://openbiox.github.io/Bizard/images/Omics/MutationOncoplot_demo.png",
+      "gallery_url": "https://openbiox.github.io/Bizard/GraphGallery.html",
+      "attribution": "openbiox / Bizard contributors",
+      "license": "Follow the source page and repository terms when reusing code or artwork.",
+      "verification": {
+        "checked_on": "2026-10-27",
+        "source_page": true,
+        "example_code": true,
+        "execution": false,
+        "replacement": false
+      },
+      "description": "Source-authored examples with linked plotting code. Open the recipe for data preparation and available variants."
+    }
+  ]
+}

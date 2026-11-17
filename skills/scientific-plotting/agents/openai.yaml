@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Plotting"
+  short_description: "Create plots and verify statistics, type and exports"
+  default_prompt: "Use $scientific-plotting to turn the supplied biomedical data into an editable figure. Read the study design and choose a chart that shows the biological comparison. Consult the publication, MedBioinform and Prism references as available, explain the choice, use tidyplots or ggplot2 for ordinary R figures, and verify necessary statistics, effective font size, export formats and DPI in the saved result at its intended size."

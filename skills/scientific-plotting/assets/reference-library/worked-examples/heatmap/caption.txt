@@ -1,0 +1,1 @@
+Synthetic demonstration data. 5 features x 6 samples; values standardized within feature using the sample SD; alphabetical order, no clustering; 5 mm square tiles and native right-side legends. Input rows: 30

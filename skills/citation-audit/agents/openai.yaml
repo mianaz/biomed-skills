@@ -1,0 +1,4 @@
+interface:
+  display_name: "Citation Audit"
+  short_description: "Check manuscript claims against their cited sources"
+  default_prompt: "Use $citation-audit to check these manuscript claims against their cited sources and return evidence locations, verdicts and targeted repairs."

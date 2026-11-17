@@ -1,0 +1,1 @@
+Synthetic demonstration data. Supplied adjusted P values shown as minus log10; term order follows input. Counts and unrounded source values are retained; no new tests are computed. Input rows: 4

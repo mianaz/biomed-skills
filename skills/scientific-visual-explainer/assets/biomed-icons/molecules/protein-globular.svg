@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="protein-globular-body" data-part="body"><path d="M35 71 C27 62 30 49 41 43 C42 32 55 25 67 31 C79 22 93 27 99 36 C113 34 122 43 120 55 C133 63 131 77 121 84 C126 96 117 108 106 109 C101 122 86 127 74 120 C62 128 48 122 47 111 C35 110 28 99 35 89 C27 83 29 75 35 71 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+<g id="protein-globular-folds" data-part="fold-detail" fill="none" stroke-width="1.5"><path d="M48 58 C55 49 66 49 71 57 C75 64 68 71 61 75"/><path d="M91 43 C82 48 81 56 88 61 C96 66 104 58 111 57"/><path d="M49 98 C59 89 72 91 76 101 C79 108 72 114 65 116"/><path d="M96 78 C86 80 82 89 89 95 C96 101 107 97 114 91"/></g>
+</svg>

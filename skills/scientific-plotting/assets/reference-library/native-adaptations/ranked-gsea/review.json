@@ -1,0 +1,48 @@
+{
+  "template": "native/medbio-80",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Ranks were fixed at 1:50; label colors followed row order and a gene-set-size legend was labeled as a proportion.",
+  "native_controls": "Ranks follow current results; named highlights link numeric rank labels to a native key; point area shows restored gene count.",
+  "data_basis": "Original: saved source result table. Replacement and stress: modified demonstrations, not additional study results.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        159.45555555555555,
+        110.41944444444444
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 7,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        154.8694444444444,
+        110.41944444444444
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 7,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        156.98611111111111,
+        110.41944444444444
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 7,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

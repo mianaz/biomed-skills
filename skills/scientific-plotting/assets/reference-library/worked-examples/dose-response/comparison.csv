@@ -1,0 +1,4 @@
+"model","n_records","n_doses","converged","rss","rmse","aicc","relative_ed50","ed50_low","ed50_high","midpoint_in_range","interval_in_range","covariance_ok","covariance_condition","note"
+"constant",24,8,TRUE,37066.9690681265,39.29958071666,248.898742966742,NA,NA,NA,FALSE,FALSE,TRUE,1,"Conditional assay-error approximation; inspect coverage, residuals and stability"
+"4PL",24,8,TRUE,20.6933333345666,0.928559218506612,77.8845690932018,1.59999978672469,1.52557564621624,1.67805465685587,TRUE,TRUE,TRUE,6.91149081814182,"Conditional assay-error approximation; inspect coverage, residuals and stability"
+"5PL",24,8,TRUE,20.6933333345666,0.928559218506612,81.4924122304567,1.59999978672274,1.52330723171872,1.68055351160146,TRUE,TRUE,TRUE,1306.91703806716,"Conditional assay-error approximation; inspect coverage, residuals and stability"

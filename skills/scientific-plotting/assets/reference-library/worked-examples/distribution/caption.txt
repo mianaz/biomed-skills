@@ -1,0 +1,1 @@
+Synthetic demonstration data. Descriptive independent-unit distributions; boxes show median and quartiles, whiskers extend to 1.5 IQR, and all units are shown with native ID dodge. Input rows: 16

@@ -1,0 +1,47 @@
+{
+  "template": "worked/composition",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Fixed full canvas and top legends constrained group/category changes.",
+  "native_controls": "Native position_fill and proportional facets; named sample totals remain saved.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        92.78055555555555,
+        73.73055555555555
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        92.78055555555555,
+        73.73055555555555
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        112.5361111111111,
+        93.13333333333333
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

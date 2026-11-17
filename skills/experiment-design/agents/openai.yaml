@@ -1,0 +1,4 @@
+interface:
+  display_name: "Experiment Design"
+  short_description: "Plan informative comparisons, controls and outcome decisions"
+  default_prompt: "Use $experiment-design to turn this working model into a feasible experiment plan with discriminating predictions and controls."

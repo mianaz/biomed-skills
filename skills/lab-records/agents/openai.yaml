@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lab Records"
+  short_description: "Connect experiment runs, materials, protocols and raw data"
+  default_prompt: "Use $lab-records to organize these experiment records and connect each result to its run, protocol version, materials and raw data."

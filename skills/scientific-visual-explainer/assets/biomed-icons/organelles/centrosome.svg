@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="centrosome" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="centrosome-pericentriolar-material" data-part="pericentriolar-material">
+      <ellipse cx="80" cy="80" rx="44" ry="37" fill="#EDF5F1" stroke="#B3D7CC" stroke-width="3"/>
+      <circle cx="80" cy="80" r="3.4" fill="#E4BE78" stroke-width="1.4"/>
+      <circle cx="49" cy="63" r="2.7" fill="#E4BE78" stroke-width="1.2"/><circle cx="113" cy="68" r="2.7" fill="#E4BE78" stroke-width="1.2"/>
+      <circle cx="54" cy="99" r="2.7" fill="#E4BE78" stroke-width="1.2"/><circle cx="108" cy="101" r="2.7" fill="#E4BE78" stroke-width="1.2"/>
+    </g>
+    <g id="centrosome-centrioles" data-part="centrioles">
+      <rect x="45" y="70" width="70" height="20" rx="9" fill="#B3D7CC"/>
+      <ellipse cx="47" cy="80" rx="5" ry="9" fill="#D7E8EC" stroke="#69ADB5" stroke-width="1.7"/>
+      <ellipse cx="113" cy="80" rx="5" ry="9" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.2"/>
+      <rect x="70" y="43" width="20" height="72" rx="9" fill="#B3D7CC"/>
+      <ellipse cx="80" cy="45" rx="9" ry="5" fill="#D7E8EC" stroke="#69ADB5" stroke-width="1.7"/>
+      <ellipse cx="80" cy="113" rx="9" ry="5" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.2"/>
+    </g>
+    <g id="centrosome-centriole-walls" data-part="centriole-walls" stroke="#69ADB5" stroke-width="1.5">
+      <path d="M54 73 L54 87 M62 73 L62 87 M98 73 L98 87 M106 73 L106 87"/>
+      <path d="M73 54 L87 54 M73 63 L87 63 M73 97 L87 97 M73 106 L87 106"/>
+    </g>
+  </g>
+</svg>

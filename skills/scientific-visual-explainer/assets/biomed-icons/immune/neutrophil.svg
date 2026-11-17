@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="neutrophil" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <g id="neutrophil-cell-body" data-part="cell-body">
+    <ellipse cx="80" cy="80" rx="58" ry="53" fill="#EDF5F1"/>
+  </g>
+  <g id="neutrophil-fine-granules" data-part="fine-granules" fill="#D7E8EC">
+    <circle cx="41" cy="62" r="3"/><circle cx="47" cy="97" r="3"/><circle cx="58" cy="45" r="2.8"/><circle cx="67" cy="118" r="3"/>
+    <circle cx="105" cy="47" r="2.8"/><circle cx="119" cy="63" r="3"/><circle cx="126" cy="84" r="2.8"/><circle cx="113" cy="110" r="3"/>
+    <circle cx="91" cy="119" r="2.8"/><circle cx="34" cy="81" r="2.8"/>
+  </g>
+  <g id="neutrophil-segmented-nucleus" data-part="segmented-nucleus">
+    <g fill="none" stroke="#3D5963" stroke-width="7" stroke-linecap="round">
+      <path d="M63 63 L69 61 M91 62 L97 64 M108 81 L107 87"/>
+    </g>
+    <g fill="none" stroke="#69ADB5" stroke-width="4" stroke-linecap="round">
+      <path d="M63 63 L69 61 M91 62 L97 64 M108 81 L107 87"/>
+    </g>
+    <g fill="#69ADB5" stroke="#3D5963" stroke-width="2.5">
+      <ellipse cx="52" cy="68" rx="12" ry="13"/>
+      <ellipse cx="80" cy="56" rx="12" ry="13"/>
+      <ellipse cx="108" cy="68" rx="12" ry="13"/>
+      <ellipse cx="107" cy="100" rx="12" ry="13"/>
+    </g>
+  </g>
+  </g>
+</svg>

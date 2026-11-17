@@ -1,0 +1,893 @@
+[
+  {
+    "id": "ifng-dimer",
+    "label": "IFN\u03b3 dimer",
+    "label_zh": "IFN\u03b3\u4e8c\u805a\u4f53",
+    "file": "jakstat/ifng-dimer.svg",
+    "category": "jakstat",
+    "description": "Compact IFN\u03b3 homodimer shown as two interlocking antiparallel protomers.",
+    "parts": [
+      "protomer-a",
+      "protomer-b",
+      "receptor-contact-surfaces"
+    ],
+    "anchors": {
+      "IFNGR1-contact-a": {
+        "point": [
+          58,
+          116
+        ],
+        "normal": [
+          -0.70710678,
+          0.70710678
+        ],
+        "kind": "binding"
+      },
+      "IFNGR1-contact-b": {
+        "point": [
+          102,
+          116
+        ],
+        "normal": [
+          0.70710678,
+          0.70710678
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "IFN\u03b3 homodimer schematic; full receptor complex stoichiometry is 2 IFN\u03b3:2 IFNGR1:2 IFNGR2. Contact markers are schematic, not atomic interfaces.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6561087/"
+      ]
+    }
+  },
+  {
+    "id": "ifngr1",
+    "label": "IFNGR1",
+    "label_zh": "IFNGR1",
+    "file": "jakstat/ifngr1.svg",
+    "category": "jakstat",
+    "description": "Single-pass receptor chain with two connected extracellular domains and a JAK-binding cytoplasmic tail.",
+    "parts": [
+      "ectodomain",
+      "ligand-binding-tip",
+      "transmembrane-helix",
+      "cytoplasmic-tail",
+      "jak-box"
+    ],
+    "anchors": {
+      "ligand-contact": {
+        "point": [
+          80,
+          14
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          106
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "jak-docking": {
+        "point": [
+          80,
+          141
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "One receptor chain only. The complete IFN\u03b3 signaling complex contains 2 IFN\u03b3, 2 IFNGR1 and 2 IFNGR2 chains.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6561087/"
+      ]
+    },
+    "context_parts": [
+      "transmembrane-helix"
+    ]
+  },
+  {
+    "id": "ifngr2",
+    "label": "IFNGR2",
+    "label_zh": "IFNGR2",
+    "file": "jakstat/ifngr2.svg",
+    "category": "jakstat",
+    "description": "Single-pass receptor chain with two connected extracellular domains and a JAK-binding cytoplasmic tail.",
+    "parts": [
+      "ectodomain",
+      "ligand-binding-tip",
+      "transmembrane-helix",
+      "cytoplasmic-tail",
+      "jak-box"
+    ],
+    "anchors": {
+      "ligand-contact": {
+        "point": [
+          80,
+          14
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          106
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "jak-docking": {
+        "point": [
+          80,
+          141
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "One receptor chain only. The complete IFN\u03b3 signaling complex contains 2 IFN\u03b3, 2 IFNGR1 and 2 IFNGR2 chains.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6561087/"
+      ]
+    },
+    "context_parts": [
+      "transmembrane-helix"
+    ]
+  },
+  {
+    "id": "jak1",
+    "label": "JAK1",
+    "label_zh": "JAK1",
+    "file": "jakstat/jak1.svg",
+    "category": "jakstat",
+    "description": "Receptor-associated JAK with connected FERM-SH2, pseudokinase and catalytic kinase regions.",
+    "parts": [
+      "domain-core",
+      "ferm-sh2-module",
+      "pseudokinase-domain",
+      "kinase-domain",
+      "receptor-binding-surface",
+      "active-site"
+    ],
+    "anchors": {
+      "receptor-tail": {
+        "point": [
+          27,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "trans-phosphorylation": {
+        "point": [
+          123,
+          91
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "stat-substrate": {
+        "point": [
+          80,
+          118
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Schematic JAK domain architecture; kinase activation state is not encoded.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6396335/"
+      ]
+    }
+  },
+  {
+    "id": "jak2",
+    "label": "JAK2",
+    "label_zh": "JAK2",
+    "file": "jakstat/jak2.svg",
+    "category": "jakstat",
+    "description": "Receptor-associated JAK with connected FERM-SH2, pseudokinase and catalytic kinase regions.",
+    "parts": [
+      "domain-core",
+      "ferm-sh2-module",
+      "pseudokinase-domain",
+      "kinase-domain",
+      "receptor-binding-surface",
+      "active-site"
+    ],
+    "anchors": {
+      "receptor-tail": {
+        "point": [
+          27,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "trans-phosphorylation": {
+        "point": [
+          123,
+          91
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "stat-substrate": {
+        "point": [
+          80,
+          118
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Schematic JAK domain architecture; kinase activation state is not encoded.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6396335/"
+      ]
+    }
+  },
+  {
+    "id": "stat1",
+    "label": "STAT1",
+    "label_zh": "STAT1",
+    "file": "jakstat/stat1.svg",
+    "category": "jakstat",
+    "description": "Continuous STAT monomer silhouette with DNA-binding, SH2 and Y701 activation-tail landmarks.",
+    "parts": [
+      "continuous-domain-contour",
+      "n-terminal-domain",
+      "coiled-coil-domain",
+      "dna-binding-domain",
+      "linker-domain",
+      "sh2-domain",
+      "pY-tail",
+      "pY-site"
+    ],
+    "anchors": {
+      "dimer-interface": {
+        "point": [
+          141,
+          78
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "sh2-interface": {
+        "point": [
+          129,
+          61
+        ],
+        "normal": [
+          0.8,
+          -0.6
+        ],
+        "kind": "binding"
+      },
+      "pY701-docking": {
+        "point": [
+          141,
+          81
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "dna-binding": {
+        "point": [
+          79,
+          129
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "importin-alpha5-binding-surface": {
+        "point": [
+          42,
+          106
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Continuous STAT monomer schematic with exposed SH2, pY-tail, DNA-binding, and importin-alpha5 surfaces; reciprocal pY\u2013SH2 dimer contact is summarized by dimer-interface.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://www.sciencedirect.com/science/article/pii/S0092867400814439",
+        "https://www.rcsb.org/structure/1BF5",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC125956/"
+      ]
+    }
+  },
+  {
+    "id": "stat3",
+    "label": "STAT3",
+    "label_zh": "STAT3",
+    "file": "jakstat/stat3.svg",
+    "category": "jakstat",
+    "description": "Continuous STAT monomer silhouette with DNA-binding, SH2 and Y705 activation-tail landmarks.",
+    "parts": [
+      "continuous-domain-contour",
+      "n-terminal-domain",
+      "coiled-coil-domain",
+      "dna-binding-domain",
+      "linker-domain",
+      "sh2-domain",
+      "pY-tail",
+      "pY-site"
+    ],
+    "anchors": {
+      "dimer-interface": {
+        "point": [
+          141,
+          78
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "sh2-interface": {
+        "point": [
+          129,
+          61
+        ],
+        "normal": [
+          0.8,
+          -0.6
+        ],
+        "kind": "binding"
+      },
+      "pY-tail-docking": {
+        "point": [
+          141,
+          81
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "dna-binding": {
+        "point": [
+          79,
+          129
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "importin-alpha5-binding-surface": {
+        "point": [
+          42,
+          106
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Continuous STAT monomer schematic with exposed SH2, pY-tail, DNA-binding, and importin-alpha5 surfaces; reciprocal pY\u2013SH2 dimer contact is summarized by dimer-interface.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://www.nature.com/articles/BF28101"
+      ]
+    }
+  },
+  {
+    "id": "stat5",
+    "label": "STAT5",
+    "label_zh": "STAT5",
+    "file": "jakstat/stat5.svg",
+    "category": "jakstat",
+    "description": "Continuous STAT monomer silhouette with DNA-binding, SH2 and Y694/699 activation-tail landmarks.",
+    "parts": [
+      "continuous-domain-contour",
+      "n-terminal-domain",
+      "coiled-coil-domain",
+      "dna-binding-domain",
+      "linker-domain",
+      "sh2-domain",
+      "pY-tail",
+      "pY-site"
+    ],
+    "anchors": {
+      "dimer-interface": {
+        "point": [
+          141,
+          78
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "sh2-interface": {
+        "point": [
+          129,
+          61
+        ],
+        "normal": [
+          0.8,
+          -0.6
+        ],
+        "kind": "binding"
+      },
+      "pY-tail-docking": {
+        "point": [
+          141,
+          81
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "dna-binding": {
+        "point": [
+          79,
+          129
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "importin-alpha5-binding-surface": {
+        "point": [
+          42,
+          106
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Continuous STAT monomer schematic with exposed SH2, pY-tail, DNA-binding, and importin-alpha5 surfaces; reciprocal pY\u2013SH2 dimer contact is summarized by dimer-interface.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://www.nature.com/articles/BF28101"
+      ]
+    }
+  },
+  {
+    "id": "importin-alpha",
+    "label": "Importin \u03b15",
+    "label_zh": "Importin \u03b15",
+    "file": "jakstat/importin-alpha.svg",
+    "category": "jakstat",
+    "description": "Curved armadillo-repeat solenoid presenting a STAT1-dimer cargo groove.",
+    "parts": [
+      "armadillo-solenoid",
+      "repeat-architecture",
+      "stat1-dimer-cargo-groove"
+    ],
+    "anchors": {
+      "STAT1-dimer-cargo-groove": {
+        "point": [
+          80,
+          42
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "importin-beta-contact": {
+        "point": [
+          122,
+          26
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Importin-\u03b15 cartoon; phospho-STAT1 recognizes a nonclassical import surface.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC125956/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2930068/"
+      ]
+    }
+  },
+  {
+    "id": "importin-beta",
+    "label": "Importin \u03b21",
+    "label_zh": "Importin \u03b21",
+    "file": "jakstat/importin-beta.svg",
+    "category": "jakstat",
+    "description": "Flexible helical-repeat solenoid linking importin \u03b1 cargo adaptor to nuclear-pore transport.",
+    "parts": [
+      "beta-solenoid",
+      "helical-repeat-architecture",
+      "importin-alpha-binding-surface",
+      "nuclear-pore-binding-surface"
+    ],
+    "anchors": {
+      "importin-alpha-binding": {
+        "point": [
+          82,
+          39
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "nuclear-pore-binding": {
+        "point": [
+          116,
+          132
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic importin-\u03b21 transport schematic; no transport cycle state is implied.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2683581/"
+      ]
+    }
+  },
+  {
+    "id": "gas-dna",
+    "label": "GAS DNA",
+    "label_zh": "GAS DNA",
+    "file": "jakstat/gas-dna.svg",
+    "category": "jakstat",
+    "description": "Double-stranded DNA with an illustrative central \u03b3-activated sequence contact region.",
+    "parts": [
+      "sense-strand",
+      "antisense-strand",
+      "base-pairs",
+      "GAS-response-element"
+    ],
+    "anchors": {
+      "STAT1-contact-a": {
+        "point": [
+          58,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "STAT1-contact-b": {
+        "point": [
+          102,
+          80
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Double-stranded GAS response element schematic; the central sequence is highlighted, and the opposing strands cross in this 2D helix convention.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6396335/",
+        "https://www.rcsb.org/structure/1BF5"
+      ]
+    }
+  },
+  {
+    "id": "rna-polymerase-ii",
+    "label": "RNA polymerase II",
+    "label_zh": "RNA\u805a\u5408\u9176II",
+    "file": "jakstat/rna-polymerase-ii.svg",
+    "category": "jakstat",
+    "description": "Compact asymmetric polymerase clamp with an explicit DNA cleft and nascent-transcription exit.",
+    "parts": [
+      "polymerase-core",
+      "clamp-domain",
+      "active-cleft",
+      "DNA-contact-platform"
+    ],
+    "anchors": {
+      "DNA-entry": {
+        "point": [
+          62,
+          89
+        ],
+        "normal": [
+          -0.8,
+          -0.6
+        ],
+        "kind": "binding"
+      },
+      "DNA-exit": {
+        "point": [
+          115,
+          92
+        ],
+        "normal": [
+          0.8,
+          0.6
+        ],
+        "kind": "binding"
+      },
+      "transcription": {
+        "point": [
+          80,
+          31
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Compact polymerase clamp with a DNA cleft. A short embedded DNA helix is contextual art and can be omitted when the scene supplies promoter DNA.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/type-2-interferon-ifng-canonical-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6396335/"
+      ]
+    },
+    "context_parts": [
+      "DNA-cleft"
+    ]
+  },
+  {
+    "id": "nuclear-pore-cutaway",
+    "label": "Nuclear pore cutaway",
+    "label_zh": "\u6838\u5b54\u622a\u9762",
+    "file": "jakstat/nuclear-pore-cutaway.svg",
+    "category": "jakstat",
+    "description": "Side-view pore cutaway with a compact ring-stack scaffold, double-membrane context and open central channel.",
+    "parts": [
+      "outer-membrane",
+      "inner-membrane",
+      "left-scaffold-column",
+      "right-scaffold-column",
+      "channel-lumen"
+    ],
+    "anchors": {
+      "channel-entry": {
+        "point": [
+          80,
+          28
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "transport"
+      },
+      "channel-exit": {
+        "point": [
+          80,
+          132
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "transport"
+      },
+      "channel-center": {
+        "point": [
+          80,
+          80
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "center"
+      },
+      "outer-membrane-midplane": {
+        "point": [
+          80,
+          52
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "inner-membrane-midplane": {
+        "point": [
+          80,
+          108
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "membrane"
+      },
+      "left-wall": {
+        "point": [
+          58,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "channel-wall"
+      },
+      "right-wall": {
+        "point": [
+          102,
+          80
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "channel-wall"
+      }
+    },
+    "scope": "Side-view nuclear pore cutaway with open 44-unit channel; membrane stubs are context and midplane anchors mark the source double-envelope coordinates.",
+    "provenance": {
+      "mode": "original-vector",
+      "license": "MIT",
+      "visual_references": [
+        "https://www.biorender.com/template/components-of-the-nuclear-pore-complex"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9732903/"
+      ]
+    },
+    "context_parts": [
+      "outer-membrane",
+      "inner-membrane"
+    ],
+    "geometry": {
+      "channel_width": 44,
+      "channel_y": [
+        28,
+        132
+      ],
+      "channel_axis": [
+        0,
+        1
+      ]
+    }
+  }
+]

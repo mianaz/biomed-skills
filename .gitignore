@@ -1,0 +1,30 @@
+# Publish the runnable package only; keep development work local.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/.claude-plugin/
+!/skills/
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Private overlays, source selections and development records.
+skills/scientific-plotting/assets/custom-library/
+skills/scientific-plotting/scripts/custom-library/
+skills/scientific-plotting/examples/custom-library.R
+skills/scientific-plotting/assets/template-database/groups.json
+skills/scientific-visual-explainer/biomedical-*.md
+skills/scientific-visual-explainer/assets/biomed-icons/local-registry.json
+skills/scientific-visual-explainer/assets/biomed-icons/library.local.html
+skills/scientific-visual-explainer/assets/biomed-icons/generic-primitives/reference-review.json
+skills/scientific-visual-explainer/assets/biomed-icons/*/QC.md
+skills/scientific-visual-explainer/assets/biomed-icons/*/validation.md
+skills/scientific-visual-explainer/assets/biomed-icons/*/contour-check.json
+skills/scientific-visual-explainer/assets/biomed-icons/contour-validation.json
+skills/scientific-visual-explainer/assets/biomed-icons/mechanism-extensions/
+skills/scientific-visual-explainer/assets/basic-mechanisms/state-check.json
+skills/scientific-visual-explainer/assets/biomed-icons/*/validation.json
+skills/scientific-visual-explainer/assets/contour-preview.png
+skills/scientific-visual-explainer/assets/nucleic-preview.png
+skills/scientific-visual-explainer/assets/tgfb-preview.png

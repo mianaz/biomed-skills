@@ -1,0 +1,165 @@
+{
+  "mechanical_status": "pass",
+  "contract": {
+    "placed_width_mm": 69.14444444444445,
+    "placed_height_mm": null,
+    "font": "Arial",
+    "font_floor_exclusive_pt": 10,
+    "raster_min_dpi": 600,
+    "embedded_image_min_dpi": 600,
+    "dpi_rounding_tolerance": 1,
+    "required_formats": [
+      "pdf",
+      "png"
+    ]
+  },
+  "failures": [],
+  "unchecked": [],
+  "files": [
+    {
+      "file": "outputs/template-curation-remaining-20261105/lollipop/original/figure.pdf",
+      "format": "PDF",
+      "pages": [
+        {
+          "page": 1,
+          "export_mm": [
+            69.14,
+            65.26
+          ],
+          "placed_mm": [
+            69.14444444444445,
+            65.26
+          ],
+          "min_effective_pt": 11.5,
+          "fonts": [
+            "ArialMT"
+          ],
+          "spans": [
+            {
+              "text": "Item 5",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Item 4",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Item 3",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Item 2",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Item 1",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "2",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "4",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "6",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Score",
+              "font": "ArialMT",
+              "native_pt": 12.0,
+              "effective_pt": 12.0,
+              "issues": []
+            },
+            {
+              "text": "A",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "B",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            }
+          ],
+          "raster_layers": []
+        }
+      ],
+      "failures": [],
+      "unchecked": []
+    },
+    {
+      "file": "outputs/template-curation-remaining-20261105/lollipop/original/figure.png",
+      "pages": [
+        {
+          "page": 1,
+          "pixels": [
+            1633,
+            1546
+          ],
+          "placed_mm": [
+            69.14444444444445,
+            65.46
+          ],
+          "effective_dpi": [
+            599.88,
+            599.88
+          ],
+          "metadata_dpi": [
+            599.9988,
+            599.9988
+          ],
+          "color_mode": "RGB",
+          "compression": null
+        }
+      ],
+      "failures": [],
+      "unchecked": [],
+      "format": "PNG"
+    }
+  ],
+  "manual_review": {
+    "statistics": "pending",
+    "visual_inspection": "pending",
+    "native_editability_and_source_data": "pending"
+  },
+  "completion": "Complete the scientific and visual review in references/figure-verification.md."
+}

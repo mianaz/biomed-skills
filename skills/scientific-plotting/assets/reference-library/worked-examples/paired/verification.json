@@ -1,0 +1,137 @@
+{
+  "mechanical_status": "pass",
+  "contract": {
+    "placed_width_mm": 51.50555555555555,
+    "placed_height_mm": null,
+    "font": "Arial",
+    "font_floor_exclusive_pt": 10,
+    "raster_min_dpi": 600,
+    "embedded_image_min_dpi": 600,
+    "dpi_rounding_tolerance": 1,
+    "required_formats": [
+      "pdf",
+      "png"
+    ]
+  },
+  "failures": [],
+  "unchecked": [],
+  "files": [
+    {
+      "file": "outputs/template-curation-remaining-20261105/paired/original/figure.pdf",
+      "format": "PDF",
+      "pages": [
+        {
+          "page": 1,
+          "export_mm": [
+            51.51,
+            67.03
+          ],
+          "placed_mm": [
+            51.50555555555555,
+            67.03
+          ],
+          "min_effective_pt": 11.5,
+          "fonts": [
+            "ArialMT"
+          ],
+          "spans": [
+            {
+              "text": "0.00049",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "6",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "8",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "10",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "12",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Before",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "After",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Response (a.u.)",
+              "font": "ArialMT",
+              "native_pt": 12.0,
+              "effective_pt": 12.0,
+              "issues": []
+            }
+          ],
+          "raster_layers": []
+        }
+      ],
+      "failures": [],
+      "unchecked": []
+    },
+    {
+      "file": "outputs/template-curation-remaining-20261105/paired/original/figure.png",
+      "pages": [
+        {
+          "page": 1,
+          "pixels": [
+            1223,
+            1587
+          ],
+          "placed_mm": [
+            51.50555555555555,
+            66.84
+          ],
+          "effective_dpi": [
+            603.12,
+            603.12
+          ],
+          "metadata_dpi": [
+            599.9988,
+            599.9988
+          ],
+          "color_mode": "RGB",
+          "compression": null
+        }
+      ],
+      "failures": [],
+      "unchecked": [],
+      "format": "PNG"
+    }
+  ],
+  "manual_review": {
+    "statistics": "pending",
+    "visual_inspection": "pending",
+    "native_editability_and_source_data": "pending"
+  },
+  "completion": "Complete the scientific and visual review in references/figure-verification.md."
+}

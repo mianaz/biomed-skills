@@ -1,0 +1,38 @@
+{
+  "title": "Fictional example: protein X and organoid growth",
+  "paper": {
+    "citation": "Synthetic teaching example. No published paper or real measurements.",
+    "source": "Fictional source references below demonstrate the mapping format.",
+    "read_scope": "Constructed question, three experiments and three observations."
+  },
+  "nodes": [
+    {"id": "Q1", "type": "question", "text": "Does protein X contribute to organoid growth?", "details": "A fictional experiment-design example.", "source": "Synthetic Introduction"},
+    {"id": "C0", "type": "main_claim", "text": "Protein X contributes to growth in this organoid assay.", "details": "The claim is scoped to the tested system and readout.", "source": "Synthetic Results", "y": 500},
+    {"id": "C1", "type": "subclaim", "text": "X knockdown reduces organoid expansion.", "details": "Perturbation result in the tested cultures; not a claim of direct molecular interaction.", "source": "Synthetic Fig. 1a"},
+    {"id": "C2", "type": "subclaim", "text": "Re-expression of X restores organoid expansion.", "details": "The rescue supports specificity within this construct and assay.", "source": "Synthetic Fig. 1b"},
+    {"id": "I1", "type": "inference", "text": "X may act through binding to protein Y.", "details": "An author's proposed mechanism. Direct binding has not been established.", "source": "Synthetic Discussion"},
+    {"id": "E1", "type": "experiment", "text": "Knockdown versus control", "details": "Human organoids; X knockdown versus non-targeting control; organoid area at 72 h; four independent donor cultures, paired across conditions.", "source": "Synthetic Fig. 1a; Methods"},
+    {"id": "E2", "type": "experiment", "text": "Knockdown with resistant-X rescue", "details": "Knockdown plus resistant X versus knockdown plus empty vector, with control cultures; area at 72 h; the same four independent donor cultures.", "source": "Synthetic Fig. 1b; Methods"},
+    {"id": "E3", "type": "experiment", "text": "X–Y interaction assay", "details": "Co-immunoprecipitation with input and IgG controls plus a positive detection control; assay conditions and sensitivity constrain the negative result.", "source": "Synthetic Fig. 2; Methods"},
+    {"id": "R1", "type": "result", "text": "Knockdown reduces area by 35% at 72 h.", "details": "Invented mean relative to paired controls. No uncertainty estimates or p-values were constructed.", "source": "Synthetic Fig. 1a"},
+    {"id": "R2", "type": "result", "text": "Rescue restores area to 95% of control.", "details": "Invented mean in the same donor cultures. This is not an independent donor cohort.", "source": "Synthetic Fig. 1b"},
+    {"id": "R3", "type": "result", "text": "No X–Y interaction is detected.", "details": "A fictional negative assay result. It leaves binding unestablished under the tested conditions.", "source": "Synthetic Fig. 2"}
+  ],
+  "edges": [
+    {"from": "C0", "to": "Q1", "relation": "addresses", "reason": "Answers the starting question within the tested organoid assay."},
+    {"from": "E1", "to": "C1", "relation": "tests", "reason": "Compares loss of X with a matched perturbation control."},
+    {"from": "E2", "to": "C2", "relation": "tests", "reason": "Tests whether resistant X restores the affected readout."},
+    {"from": "E3", "to": "I1", "relation": "tests", "reason": "Examines the proposed binding step under these assay conditions."},
+    {"from": "E1", "to": "R1", "relation": "produces", "reason": "Organoid area is the measured readout."},
+    {"from": "E2", "to": "R2", "relation": "produces", "reason": "The rescue experiment measures the same readout."},
+    {"from": "E3", "to": "R3", "relation": "produces", "reason": "No interaction signal is observed in this assay."},
+    {"from": "R1", "to": "C1", "relation": "supports", "reason": "The matched comparison shows reduced expansion after knockdown."},
+    {"from": "R2", "to": "C2", "relation": "supports", "reason": "Re-expression restores the measured expansion toward control."},
+    {"from": "R2", "to": "C1", "relation": "supports", "reason": "Rescue strengthens the attribution of the growth phenotype to the X perturbation."},
+    {"from": "R3", "to": "I1", "relation": "qualifies", "reason": "Binding remains unestablished; a negative assay does not exclude every interaction condition."},
+    {"from": "C1", "to": "C0", "relation": "supports", "reason": "Loss of X changes growth within the tested system."},
+    {"from": "C2", "to": "C0", "relation": "supports", "reason": "The rescue strengthens specificity in this assay."},
+    {"from": "I1", "to": "C0", "relation": "part_of", "reason": "The proposed molecular explanation is attached to the central claim without treating it as established evidence."},
+    {"from": "I1", "to": "C1", "relation": "depends_on", "reason": "The proposed growth mechanism presupposes the growth phenotype."}
+  ]
+}

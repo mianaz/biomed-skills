@@ -1,0 +1,21 @@
+"genotype","treatment","unit","value"
+"Genotype KO","Treated","F20",992.725
+"Genotype WT","Treated","F19",939.825
+"Genotype KO","Vehicle","F18",913.375
+"Genotype WT","Vehicle","F17",860.475
+"Genotype KO","Treated","F16",1032.4
+"Genotype WT","Treated","F15",979.5
+"Genotype KO","Vehicle","F14",953.05
+"Genotype WT","Vehicle","F13",900.15
+"Genotype KO","Treated","F12",1005.95
+"Genotype WT","Treated","F11",953.05
+"Genotype KO","Vehicle","F10",926.6
+"Genotype WT","Vehicle","F9",873.7
+"Genotype KO","Treated","F8",1019.175
+"Genotype WT","Treated","F7",966.275
+"Genotype KO","Vehicle","F6",939.825
+"Genotype WT","Vehicle","F5",886.925
+"Genotype KO","Treated","F4",979.5
+"Genotype WT","Treated","F3",926.6
+"Genotype KO","Vehicle","F2",900.15
+"Genotype WT","Vehicle","F1",847.25

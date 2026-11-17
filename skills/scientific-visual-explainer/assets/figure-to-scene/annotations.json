@@ -1,0 +1,29 @@
+{
+  "title": "Membrane signalling and nuclear output",
+  "scope": "Illustrative teaching model. L, R, A and TF are generic entities; the event order and durations are pedagogical.",
+  "timing_basis": "pedagogical",
+  "entities": [
+    {"id":"context","kind":"compartment","label":"Compartments and DNA"},
+    {"id":"relations","kind":"relation","label":"Relation arrows"},
+    {"id":"ligand","kind":"ligand","label":"L"},
+    {"id":"receptor","kind":"receptor","label":"R"},
+    {"id":"protein-a","kind":"protein","label":"A"},
+    {"id":"phospho","kind":"state-badge","label":"P badge","hidden":true},
+    {"id":"tf","kind":"protein","label":"TF"},
+    {"id":"rna","kind":"product","label":"RNA","hidden":true}
+  ],
+  "relations": [
+    {"from":"ligand","to":"receptor","kind":"binding"},
+    {"from":"receptor","to":"protein-a","kind":"activation"},
+    {"from":"protein-a","to":"tf","kind":"activation"},
+    {"from":"tf","to":"context","kind":"transport","target_compartment":"nucleus"}
+  ],
+  "events": [
+    {"id":"binding","kind":"move","actor":"ligand","to":[130,25],"duration":2,"title":"Ligand binding","caption":"L approaches R. Its label moves with the same component.","source":"Illustrative model: ligand–receptor relation"},
+    {"id":"activation","kind":"state","actor":"protein-a","fill":"#a3c5b6","after":["binding"],"duration":2,"title":"A changes state","caption":"A changes state downstream of R; an activation arrow does not imply physical docking.","source":"Illustrative model: R → A"},
+    {"id":"badge","kind":"reveal","actor":"phospho","after":["activation"],"duration":1,"title":"Phosphorylation marker","caption":"The separate P badge identifies the illustrated modification.","source":"Illustrative model: state badge"},
+    {"id":"import","kind":"move","actor":"tf","to":[140,105],"via":[[15,105]],"after":["badge"],"duration":4,"title":"TF enters the nucleus","caption":"TF and its name travel together through the visible nuclear opening.","source":"Illustrative model: transport relation"},
+    {"id":"output","kind":"reveal","actor":"rna","after":["import"],"duration":3,"title":"RNA output","caption":"RNA appears as the final output. Pause here to explain the result.","source":"Illustrative model: nuclear output"}
+  ],
+  "sources": [{"file":"source.svg","role":"Original local artwork and component geometry","license":"MIT"},{"file":"annotations.json","role":"Author-defined generic teaching rules; not experimental evidence"}]
+}

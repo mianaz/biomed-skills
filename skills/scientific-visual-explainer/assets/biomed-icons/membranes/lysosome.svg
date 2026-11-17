@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="lysosome-membrane" data-part="membrane" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5">
+  <path d="M80 25 C110 25 135 50 135 80 C135 110 110 135 80 135 C50 135 25 110 25 80 C25 50 50 25 80 25 Z"/>
+</g>
+<g id="lysosome-lumen" data-part="lumen" fill="#EDF5F1" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="80" cy="80" r="45"/>
+</g>
+<g id="lysosome-enzymes" data-part="enzymes" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="57" cy="61" r="6"/><circle cx="101" cy="61" r="5"/><circle cx="106" cy="93" r="7"/><circle cx="66" cy="101" r="5"/>
+</g>
+<g id="lysosome-digestate" data-part="digestate" fill="#E4BE78" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M77 55 C82 51 87 55 85 60 L81 66 C77 68 73 64 75 60 Z"/><path d="M45 82 C48 77 54 79 54 83 L51 89 C47 91 43 87 45 82 Z"/><path d="M82 111 C87 106 92 109 90 114 L86 119 C82 120 79 115 82 111 Z"/>
+</g>
+</svg>

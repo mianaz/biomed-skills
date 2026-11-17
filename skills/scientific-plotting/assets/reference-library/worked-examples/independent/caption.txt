@@ -1,0 +1,1 @@
+Synthetic demonstration data. Independent units; mean bars, SD and all sample points. n per group: Control = 8; Drug = 8 Two-sided Welch tests; Holm correction across the supplied comparison plan. All primary adjusted P values are shown. Estimates and nominal 95% CIs are group2 minus group1. Input rows: 16

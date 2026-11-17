@@ -1,0 +1,1 @@
+Supplied GO results, retaining all supplied terms and ontology identities. Values use minus log10 of adjusted P. The legacy source used natural logarithms with a log10 label; the adapter corrects that display mismatch.

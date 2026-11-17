@@ -1,0 +1,19 @@
+{
+  "case": "heatmap",
+  "checks": [
+    {
+      "variant": "original",
+      "width_mm": 93.84,
+      "height_mm": 93.84,
+      "min_text_pt": 11.02
+    },
+    {
+      "variant": "replacement",
+      "width_mm": 93.84,
+      "height_mm": 93.84,
+      "min_text_pt": 11.02
+    }
+  ],
+  "replacement": "One cell changed after global rescaling; groups renamed",
+  "visual_review": "Saved original and replacement inspected on 2026-10-26"
+}

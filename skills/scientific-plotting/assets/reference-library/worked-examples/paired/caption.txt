@@ -1,0 +1,1 @@
+Synthetic demonstration data. 6 matched units; native dodge preserves within-unit lines. Two-sided paired t test; one planned contrast; effect and nominal 95% CI are group2 minus group1. Input rows: 12

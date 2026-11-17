@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="dna" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="dna-strands" data-part="strands">
+      <path d="M44 20 C45 40 106 40 116 55 C126 70 53 76 44 89 C35 102 106 108 116 123 C126 138 90 141 80 142" stroke="#69ADB5" stroke-width="6"/>
+      <path d="M116 20 C115 40 54 40 44 55 C34 70 107 76 116 89 C125 102 54 108 44 123 C34 138 70 141 80 142" stroke="#B2A6CD" stroke-width="6"/>
+    </g>
+    <g id="dna-base-pairs" data-part="base-pairs" stroke="#E4BE78" stroke-width="1.8">
+      <path d="M47 30 L113 30"/><path d="M62 49 L98 49"/><path d="M45 69 L115 69"/>
+      <path d="M48 101 L112 101"/><path d="M62 120 L98 120"/><path d="M48 135 L112 135"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,1 @@
+Synthetic demonstration data. Descriptive repeated trajectories; actual time spacing, verified unit IDs and breaks at explicitly missing visits. Facets share scales. Input rows: 24

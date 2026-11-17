@@ -1,0 +1,1 @@
+Synthetic demonstration data. One independent subject per row; native survminer Kaplan–Meier curves, 95% log-log confidence limits and censor marks. Risk counts and estimates are saved. Input rows: 24

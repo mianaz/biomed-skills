@@ -1,0 +1,13 @@
+{
+  "name": "biomed-skill",
+  "owner": {
+    "name": "Miana"
+  },
+  "plugins": [
+    {
+      "name": "biomed-skill",
+      "source": "./",
+      "description": "Biomedical framing, writing, polishing, scientific review, citation audits, statistical design and analysis, figures, paper reading, protocols and submission preparation."
+    }
+  ]
+}

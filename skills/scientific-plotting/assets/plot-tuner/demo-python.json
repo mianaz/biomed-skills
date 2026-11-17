@@ -1,0 +1,1093 @@
+{
+  "schema": "bioinfospace.plot-tuner/2",
+  "editor_version": 3,
+  "engine": "matplotlib",
+  "name": "demo.py",
+  "source_file": "demo.py",
+  "object_name": "fig",
+  "canvas": {
+    "width": 78.0,
+    "height": 68.0
+  },
+  "stat_data": null,
+  "stat_object": null,
+  "panels": [
+    {
+      "id": "panel1",
+      "name": "panel1",
+      "x": 5,
+      "y": 5,
+      "width": 68.0,
+      "height": 57.99999999999999,
+      "region": {
+        "x": 17.68,
+        "y": 8.700000000000001,
+        "width": 47.599999999999994,
+        "height": 34.8,
+        "x_labels": [
+          "−1",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "x_positions": [
+          5.419393939393942,
+          19.843636363636364,
+          34.267878787878786,
+          48.69212121212121,
+          63.11636363636363,
+          77.54060606060605
+        ]
+      },
+      "legend_items": [
+        {
+          "label": "Control",
+          "color": "#a6cee3"
+        },
+        {
+          "label": "Treated",
+          "color": "#1f78b4"
+        }
+      ],
+      "layers": [
+        {
+          "id": "panel1/plot",
+          "role": "plot",
+          "x": 0,
+          "y": 0,
+          "width": 68.0,
+          "height": 57.99999999999999,
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:ns2=\"http://creativecommons.org/ns#\" xmlns:ns4=\"http://www.w3.org/1999/xlink\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" width=\"192.755906pt\" height=\"164.409449pt\" viewBox=\"0 0 192.755906 164.409449\" version=\"1.1\">\n <metadata>\n  <rdf:RDF>\n   <ns2:Work>\n    <dc:type rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" />\n    <dc:date>2026-11-03T16:35:44.516554</dc:date>\n    <dc:format>image/svg+xml</dc:format>\n    <dc:creator>\n     <ns2:Agent>\n      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>\n     </ns2:Agent>\n    </dc:creator>\n   </ns2:Work>\n  </rdf:RDF>\n </metadata>\n <defs>\n  <style type=\"text/css\">*{stroke-linejoin: round; stroke-linecap: butt}</style>\n </defs>\n <g id=\"panel1_figure_1\">\n  <g id=\"panel1_patch_1\">\n   <path d=\"M 0 164.409449  L 192.755906 164.409449  L 192.755906 0  L 0 0  z \" style=\"fill:#ffffff\" data-tuner-id=\"panel1/plot:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"graphic\" data-tuner-cx=\"0\" data-tuner-cy=\"0\" data-tuner-size=\"2\" />\n  </g>\n  <g id=\"panel1_axes_1\">\n   <g id=\"panel1_patch_2\">\n    <path d=\"M 50.116535 123.307087  L 185.045669 123.307087  L 185.045669 24.661417  L 50.116535 24.661417  z \" style=\"fill:#ffffff\" data-tuner-id=\"panel1/plot:node1\" data-tuner-leaf=\"1\" data-tuner-role=\"graphic\" data-tuner-cx=\"0\" data-tuner-cy=\"0\" data-tuner-size=\"2\" />\n   </g>\n   <g id=\"panel1/plot:axis0-bottom\" data-tuner-owner=\"panel1/plot:axis0-bottom\" data-tuner-group=\"panel1/plot:axis0-bottom\" data-tuner-role=\"axis-line\" data-tuner-group-label=\"X 坐标轴 1\" data-tuner-group-role=\"axis\">\n    <g id=\"panel1_xtick_1\">\n     <g id=\"panel1_line2d_1\">\n      <defs>\n       <path id=\"panel1_m613bd70d2a\" d=\"M 0 0  L 0 3.5  \" style=\"stroke: #000000; stroke-width: 0.8\" />\n      </defs>\n      <g>\n       <use ns4:href=\"#panel1_m613bd70d2a\" x=\"56.249678\" y=\"123.307087\" style=\"stroke:#000000;stroke-width:0.8\" data-tuner-id=\"panel1/plot:axis0-bottom:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"axis-line\" data-tuner-cx=\"56.249678\" data-tuner-cy=\"123.307087\" data-tuner-size=\"2\" />\n      </g>\n     </g>\n     <g id=\"panel1/plot:ax0-xtick1\" data-tuner-owner=\"panel1/plot:ax0-xtick1\" data-tuner-role=\"text-tick\">\n      <text style=\"font-size:10.5px;font-family:'Arial';text-anchor:middle\" x=\"56.249678\" y=\"137.951374\" transform=\"rotate(-0 56.249678 137.951374)\" data-tuner-id=\"panel1/plot:ax0-xtick1:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text-tick\" data-tuner-cx=\"56.249678\" data-tuner-cy=\"137.951374\" data-tuner-size=\"2\">0</text>\n     </g>\n    </g>\n    <g id=\"panel1_xtick_2\">\n     <g id=\"panel1_line2d_2\">\n      <g>\n       <use ns4:href=\"#panel1_m613bd70d2a\" x=\"97.137294\" y=\"123.307087\" style=\"stroke:#000000;stroke-width:0.8\" data-tuner-id=\"panel1/plot:axis0-bottom:node1\" data-tuner-leaf=\"1\" data-tuner-role=\"axis-line\" data-tuner-cx=\"97.137294\" data-tuner-cy=\"123.307087\" data-tuner-size=\"2\" />\n      </g>\n     </g>\n     <g id=\"panel1/plot:ax0-xtick2\" data-tuner-owner=\"panel1/plot:ax0-xtick2\" data-tuner-role=\"text-tick\">\n      <text style=\"font-size:10.5px;font-family:'Arial';text-anchor:middle\" x=\"97.137294\" y=\"137.951374\" transform=\"rotate(-0 97.137294 137.951374)\" data-tuner-id=\"panel1/plot:ax0-xtick2:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text-tick\" data-tuner-cx=\"97.137294\" data-tuner-cy=\"137.951374\" data-tuner-size=\"2\">1</text>\n     </g>\n    </g>\n    <g id=\"panel1_xtick_3\">\n     <g id=\"panel1_line2d_3\">\n      <g>\n       <use ns4:href=\"#panel1_m613bd70d2a\" x=\"138.024911\" y=\"123.307087\" style=\"stroke:#000000;stroke-width:0.8\" data-tuner-id=\"panel1/plot:axis0-bottom:node2\" data-tuner-leaf=\"1\" data-tuner-role=\"axis-line\" data-tuner-cx=\"138.024911\" data-tuner-cy=\"123.307087\" data-tuner-size=\"2\" />\n      </g>\n     </g>\n     <g id=\"panel1/plot:ax0-xtick3\" data-tuner-owner=\"panel1/plot:ax0-xtick3\" data-tuner-role=\"text-tick\">\n      <text style=\"font-size:10.5px;font-family:'Arial';text-anchor:middle\" x=\"138.024911\" y=\"137.951374\" transform=\"rotate(-0 138.024911 137.951374)\" data-tuner-id=\"panel1/plot:ax0-xtick3:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text-tick\" data-tuner-cx=\"138.024911\" data-tuner-cy=\"137.951374\" data-tuner-size=\"2\">2</text>\n     </g>\n    </g>\n    <g id=\"panel1_xtick_4\">\n     <g id=\"panel1_line2d_4\">\n      <g>\n       <use ns4:href=\"#panel1_m613bd70d2a\" x=\"178.912527\" y=\"123.307087\" style=\"stroke:#000000;stroke-width:0.8\" data-tuner-id=\"panel1/plot:axis0-bottom:node3\" data-tuner-leaf=\"1\" data-tuner-role=\"axis-line\" data-tuner-cx=\"178.912527\" data-tuner-cy=\"123.307087\" data-tuner-size=\"2\" />\n      </g>\n     </g>\n     <g id=\"panel1/plot:ax0-xtick4\" data-tuner-owner=\"panel1/plot:ax0-xtick4\" data-tuner-role=\"text-tick\">\n      <text style=\"font-size:10.5px;font-family:'Arial';text-anchor:middle\" x=\"178.912527\" y=\"137.951374\" transform=\"rotate(-0 178.912527 137.951374)\" data-tuner-id=\"panel1/plot:ax0-xtick4:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text-tick\" data-tuner-cx=\"178.912527\" data-tuner-cy=\"137.951374\" data-tuner-size=\"2\">3</text>\n     </g>\n    </g>\n    <g id=\"panel1/plot:ax0-xlabel\" data-tuner-owner=\"panel1/plot:ax0-xlabel\" data-tuner-role=\"text\">\n     <text style=\"font-size:11px;font-family:'Arial';text-anchor:middle\" x=\"117.581102\" y=\"152.169391\" transform=\"rotate(-0 117.581102 152.169391)\" data-tuner-id=\"panel1/plot:ax0-xlabel:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text\" data-tuner-cx=\"117.581102\" data-tuner-cy=\"152.169391\" data-tuner-size=\"2\">Time (days)</text>\n    </g>\n   </g>\n   <g id=\"panel1/plot:axis0-left\" data-tuner-owner=\"panel1/plot:axis0-left\" data-tuner-group=\"panel1/plot:axis0-left\" data-tuner-role=\"axis-line\" data-tuner-group-label=\"Y 坐标轴 1\" data-tuner-group-role=\"axis\">\n    <g id=\"panel1_ytick_1\">\n     <g id=\"panel1_line2d_5\">\n      <defs>\n       <path id=\"panel1_mfe65cc5d45\" d=\"M 0 0  L -3.5 0  \" style=\"stroke: #000000; stroke-width: 0.8\" />\n      </defs>\n      <g>\n       <use ns4:href=\"#panel1_mfe65cc5d45\" x=\"50.116535\" y=\"94.585927\" style=\"stroke:#000000;stroke-width:0.8\" data-tuner-id=\"panel1/plot:axis0-left:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"axis-line\" data-tuner-cx=\"50.116535\" data-tuner-cy=\"94.585927\" data-tuner-size=\"2\" />\n      </g>\n     </g>\n     <g id=\"panel1/plot:ax0-ytick1\" data-tuner-owner=\"panel1/plot:ax0-ytick1\" data-tuner-role=\"text-tick\">\n      <text style=\"font-size:10.5px;font-family:'Arial';text-anchor:end\" x=\"43.116535\" y=\"98.408071\" transform=\"rotate(-0 43.116535 98.408071)\" data-tuner-id=\"panel1/plot:ax0-ytick1:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text-tick\" data-tuner-cx=\"43.116535\" data-tuner-cy=\"98.408071\" data-tuner-size=\"2\">2</text>\n     </g>\n    </g>\n    <g id=\"panel1_ytick_2\">\n     <g id=\"panel1_line2d_6\">\n      <g>\n       <use ns4:href=\"#panel1_mfe65cc5d45\" x=\"50.116535\" y=\"46.111397\" style=\"stroke:#000000;stroke-width:0.8\" data-tuner-id=\"panel1/plot:axis0-left:node1\" data-tuner-leaf=\"1\" data-tuner-role=\"axis-line\" data-tuner-cx=\"50.116535\" data-tuner-cy=\"46.111397\" data-tuner-size=\"2\" />\n      </g>\n     </g>\n     <g id=\"panel1/plot:ax0-ytick2\" data-tuner-owner=\"panel1/plot:ax0-ytick2\" data-tuner-role=\"text-tick\">\n      <text style=\"font-size:10.5px;font-family:'Arial';text-anchor:end\" x=\"43.116535\" y=\"49.933541\" transform=\"rotate(-0 43.116535 49.933541)\" data-tuner-id=\"panel1/plot:ax0-ytick2:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text-tick\" data-tuner-cx=\"43.116535\" data-tuner-cy=\"49.933541\" data-tuner-size=\"2\">4</text>\n     </g>\n    </g>\n    <g id=\"panel1/plot:ax0-ylabel\" data-tuner-owner=\"panel1/plot:ax0-ylabel\" data-tuner-role=\"text\">\n     <text style=\"font-size:11px;font-family:'Arial';text-anchor:middle\" x=\"30.962395\" y=\"73.984252\" transform=\"rotate(-90 30.962395 73.984252)\" data-tuner-id=\"panel1/plot:ax0-ylabel:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text\" data-tuner-cx=\"30.962395\" data-tuner-cy=\"73.984252\" data-tuner-size=\"2\">Relative signal</text>\n    </g>\n   </g>\n   <g id=\"panel1/plot:line0-0\" data-tuner-owner=\"panel1/plot:line0-0\" data-tuner-group=\"panel1/plot:line0-0\" data-tuner-role=\"data-line\" data-tuner-group-label=\"Control\" data-tuner-group-role=\"series\">\n    <path d=\"M 56.249678 118.823193  L 97.137294 106.70456  L 138.024911 94.585927  L 178.912527 84.891021  \" clip-path=\"url(#panel1_p8fd691c133)\" style=\"fill:none;stroke:#a6cee3;stroke-linecap:square\" data-tuner-id=\"panel1/plot:line0-0:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"data-line\" data-tuner-cx=\"117.58110236220472\" data-tuner-cy=\"101.85710692797308\" data-tuner-size=\"1.0583333333333331\" />\n    <defs>\n     <path id=\"panel1_md619a70ed1\" d=\"M 0 1.5  C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066  C 1.341951 0.77937 1.5 0.397805 1.5 0  C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066  C 0.77937 -1.341951 0.397805 -1.5 0 -1.5  C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066  C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0  C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066  C -0.77937 1.341951 -0.397805 1.5 0 1.5  z \" style=\"stroke: #a6cee3\" />\n    </defs>\n    <g clip-path=\"url(#panel1_p8fd691c133)\">\n     <use ns4:href=\"#panel1_md619a70ed1\" x=\"56.249678\" y=\"118.823193\" style=\"fill:#a6cee3;stroke:#a6cee3\" data-tuner-id=\"panel1/plot:line0-0:node1\" data-tuner-leaf=\"1\" data-tuner-role=\"data-point\" data-tuner-cx=\"56.249678\" data-tuner-cy=\"118.823193\" data-tuner-size=\"1.0583333333333331\" />\n     <use ns4:href=\"#panel1_md619a70ed1\" x=\"97.137294\" y=\"106.70456\" style=\"fill:#a6cee3;stroke:#a6cee3\" data-tuner-id=\"panel1/plot:line0-0:node2\" data-tuner-leaf=\"1\" data-tuner-role=\"data-point\" data-tuner-cx=\"97.137294\" data-tuner-cy=\"106.70456\" data-tuner-size=\"1.0583333333333331\" />\n     <use ns4:href=\"#panel1_md619a70ed1\" x=\"138.024911\" y=\"94.585927\" style=\"fill:#a6cee3;stroke:#a6cee3\" data-tuner-id=\"panel1/plot:line0-0:node3\" data-tuner-leaf=\"1\" data-tuner-role=\"data-point\" data-tuner-cx=\"138.024911\" data-tuner-cy=\"94.585927\" data-tuner-size=\"1.0583333333333331\" />\n     <use ns4:href=\"#panel1_md619a70ed1\" x=\"178.912527\" y=\"84.891021\" style=\"fill:#a6cee3;stroke:#a6cee3\" data-tuner-id=\"panel1/plot:line0-0:node4\" data-tuner-leaf=\"1\" data-tuner-role=\"data-point\" data-tuner-cx=\"178.912527\" data-tuner-cy=\"84.891021\" data-tuner-size=\"1.0583333333333331\" />\n    </g>\n   </g>\n   <g id=\"panel1/plot:line0-1\" data-tuner-owner=\"panel1/plot:line0-1\" data-tuner-group=\"panel1/plot:line0-1\" data-tuner-role=\"data-line\" data-tuner-group-label=\"Treated\" data-tuner-group-role=\"series\">\n    <path d=\"M 56.249678 118.823193  L 97.137294 92.162201  L 138.024911 60.653756  L 178.912527 29.145311  \" clip-path=\"url(#panel1_p8fd691c133)\" style=\"fill:none;stroke:#1f78b4;stroke-linecap:square\" data-tuner-id=\"panel1/plot:line0-1:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"data-line\" data-tuner-cx=\"117.58110236220472\" data-tuner-cy=\"73.98425196850395\" data-tuner-size=\"1.0583333333333331\" />\n    <defs>\n     <path id=\"panel1_mc414032e37\" d=\"M 0 1.5  C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066  C 1.341951 0.77937 1.5 0.397805 1.5 0  C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066  C 0.77937 -1.341951 0.397805 -1.5 0 -1.5  C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066  C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0  C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066  C -0.77937 1.341951 -0.397805 1.5 0 1.5  z \" style=\"stroke: #1f78b4\" />\n    </defs>\n    <g clip-path=\"url(#panel1_p8fd691c133)\">\n     <use ns4:href=\"#panel1_mc414032e37\" x=\"56.249678\" y=\"118.823193\" style=\"fill:#1f78b4;stroke:#1f78b4\" data-tuner-id=\"panel1/plot:line0-1:node1\" data-tuner-leaf=\"1\" data-tuner-role=\"data-point\" data-tuner-cx=\"56.249678\" data-tuner-cy=\"118.823193\" data-tuner-size=\"1.0583333333333331\" />\n     <use ns4:href=\"#panel1_mc414032e37\" x=\"97.137294\" y=\"92.162201\" style=\"fill:#1f78b4;stroke:#1f78b4\" data-tuner-id=\"panel1/plot:line0-1:node2\" data-tuner-leaf=\"1\" data-tuner-role=\"data-point\" data-tuner-cx=\"97.137294\" data-tuner-cy=\"92.162201\" data-tuner-size=\"1.0583333333333331\" />\n     <use ns4:href=\"#panel1_mc414032e37\" x=\"138.024911\" y=\"60.653756\" style=\"fill:#1f78b4;stroke:#1f78b4\" data-tuner-id=\"panel1/plot:line0-1:node3\" data-tuner-leaf=\"1\" data-tuner-role=\"data-point\" data-tuner-cx=\"138.024911\" data-tuner-cy=\"60.653756\" data-tuner-size=\"1.0583333333333331\" />\n     <use ns4:href=\"#panel1_mc414032e37\" x=\"178.912527\" y=\"29.145311\" style=\"fill:#1f78b4;stroke:#1f78b4\" data-tuner-id=\"panel1/plot:line0-1:node4\" data-tuner-leaf=\"1\" data-tuner-role=\"data-point\" data-tuner-cx=\"178.912527\" data-tuner-cy=\"29.145311\" data-tuner-size=\"1.0583333333333331\" />\n    </g>\n   </g>\n   <g id=\"panel1/plot:spine0-left\" data-tuner-owner=\"panel1/plot:spine0-left\" data-tuner-group=\"panel1/plot:axis0-left\" data-tuner-role=\"axis-line\" data-tuner-group-label=\"Y 坐标轴 1\" data-tuner-group-role=\"axis\">\n    <path d=\"M 50.116535 123.307087  L 50.116535 24.661417  \" style=\"fill:none;stroke:#000000;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square\" data-tuner-id=\"panel1/plot:spine0-left:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"axis-line\" data-tuner-cx=\"48.36653543307087\" data-tuner-cy=\"73.98425196850395\" data-tuner-size=\"2\" />\n   </g>\n   <g id=\"panel1/plot:spine0-bottom\" data-tuner-owner=\"panel1/plot:spine0-bottom\" data-tuner-group=\"panel1/plot:axis0-bottom\" data-tuner-role=\"axis-line\" data-tuner-group-label=\"X 坐标轴 1\" data-tuner-group-role=\"axis\">\n    <path d=\"M 50.116535 123.307087  L 185.045669 123.307087  \" style=\"fill:none;stroke:#000000;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square\" data-tuner-id=\"panel1/plot:spine0-bottom:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"axis-line\" data-tuner-cx=\"117.58110236220472\" data-tuner-cy=\"125.05708661417322\" data-tuner-size=\"2\" />\n   </g>\n   <g id=\"panel1/plot:ax0-title\" data-tuner-owner=\"panel1/plot:ax0-title\" data-tuner-role=\"text-title\">\n    <text style=\"font-size:11.5px;font-family:'Arial';text-anchor:middle\" x=\"117.581102\" y=\"18.661417\" transform=\"rotate(-0 117.581102 18.661417)\" data-tuner-id=\"panel1/plot:ax0-title:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text-title\" data-tuner-cx=\"117.581102\" data-tuner-cy=\"18.661417\" data-tuner-size=\"2\">Time course</text>\n   </g>\n   <g id=\"panel1/plot:legend0\" data-tuner-owner=\"panel1/plot:legend0\" data-tuner-group=\"panel1/plot:legend0\" data-tuner-role=\"legend\" data-tuner-group-label=\"图例\" data-tuner-group-role=\"legend\">\n    <g id=\"panel1_line2d_7\">\n     <path d=\"M 59.566535 38.080704  L 64.816535 38.080704  L 70.066535 38.080704  \" style=\"fill:none;stroke:#a6cee3;stroke-linecap:square\" data-tuner-id=\"panel1/plot:legend0:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"legend\" data-tuner-cx=\"86.81966043307087\" data-tuner-cy=\"46.866134119709635\" data-tuner-size=\"2\" />\n     <g>\n      <use ns4:href=\"#panel1_md619a70ed1\" x=\"64.816535\" y=\"38.080704\" style=\"fill:#a6cee3;stroke:#a6cee3\" data-tuner-id=\"panel1/plot:legend0:node1\" data-tuner-leaf=\"1\" data-tuner-role=\"legend\" data-tuner-cx=\"64.816535\" data-tuner-cy=\"38.080704\" data-tuner-size=\"2\" />\n     </g>\n    </g>\n    <g id=\"panel1/plot:text13\" data-tuner-owner=\"panel1/plot:text13\" data-tuner-role=\"text\">\n     <text style=\"font-size:10.5px;font-family:'Arial';text-anchor:start\" x=\"78.466535\" y=\"41.755704\" transform=\"rotate(-0 78.466535 41.755704)\" data-tuner-id=\"panel1/plot:text13:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text\" data-tuner-cx=\"78.466535\" data-tuner-cy=\"41.755704\" data-tuner-size=\"2\">Control</text>\n    </g>\n    <g id=\"panel1_line2d_8\">\n     <path d=\"M 59.566535 53.184708  L 64.816535 53.184708  L 70.066535 53.184708  \" style=\"fill:none;stroke:#1f78b4;stroke-linecap:square\" data-tuner-id=\"panel1/plot:legend0:node2\" data-tuner-leaf=\"1\" data-tuner-role=\"legend\" data-tuner-cx=\"86.81966043307087\" data-tuner-cy=\"46.866134119709635\" data-tuner-size=\"2\" />\n     <g>\n      <use ns4:href=\"#panel1_mc414032e37\" x=\"64.816535\" y=\"53.184708\" style=\"fill:#1f78b4;stroke:#1f78b4\" data-tuner-id=\"panel1/plot:legend0:node3\" data-tuner-leaf=\"1\" data-tuner-role=\"legend\" data-tuner-cx=\"64.816535\" data-tuner-cy=\"53.184708\" data-tuner-size=\"2\" />\n     </g>\n    </g>\n    <g id=\"panel1/plot:text14\" data-tuner-owner=\"panel1/plot:text14\" data-tuner-role=\"text\">\n     <text style=\"font-size:10.5px;font-family:'Arial';text-anchor:start\" x=\"78.466535\" y=\"56.859708\" transform=\"rotate(-0 78.466535 56.859708)\" data-tuner-id=\"panel1/plot:text14:node0\" data-tuner-leaf=\"1\" data-tuner-role=\"text\" data-tuner-cx=\"78.466535\" data-tuner-cy=\"56.859708\" data-tuner-size=\"2\">Treated</text>\n    </g>\n   </g>\n  </g>\n </g>\n <defs>\n  <clipPath id=\"panel1_p8fd691c133\">\n   <rect x=\"50.116535\" y=\"24.661417\" width=\"134.929134\" height=\"98.645669\" />\n  </clipPath>\n </defs>\n</svg>",
+          "elements": [
+            {
+              "id": "panel1/plot:axis0-bottom",
+              "role": "axis",
+              "label": "X 坐标轴 1",
+              "group": "panel1/plot:axis0-bottom",
+              "anchor": [
+                0.0,
+                164.40944881889763
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:axis0-bottom:node0",
+                "panel1/plot:ax0-xtick1:node0",
+                "panel1/plot:axis0-bottom:node1",
+                "panel1/plot:ax0-xtick2:node0",
+                "panel1/plot:axis0-bottom:node2",
+                "panel1/plot:ax0-xtick3:node0",
+                "panel1/plot:axis0-bottom:node3",
+                "panel1/plot:ax0-xtick4:node0",
+                "panel1/plot:ax0-xlabel:node0",
+                "panel1/plot:spine0-bottom:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-xtick1",
+              "role": "text-tick",
+              "label": "0",
+              "group": null,
+              "anchor": [
+                56.249677881173945,
+                135.37194501261075
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-xtick1:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-xtick2",
+              "role": "text-tick",
+              "label": "1",
+              "group": null,
+              "anchor": [
+                97.13729420186112,
+                135.37194501261075
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-xtick2:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-xtick3",
+              "role": "text-tick",
+              "label": "2",
+              "group": null,
+              "anchor": [
+                138.0249105225483,
+                135.37194501261075
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-xtick3:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-xtick4",
+              "role": "text-tick",
+              "label": "3",
+              "group": null,
+              "anchor": [
+                178.9125268432355,
+                135.37194501261075
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-xtick4:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-xlabel",
+              "role": "text",
+              "label": "Time (days)",
+              "group": null,
+              "anchor": [
+                117.58110236220472,
+                149.59842450479826
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-xlabel:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:axis0-left",
+              "role": "axis",
+              "label": "Y 坐标轴 1",
+              "group": "panel1/plot:axis0-left",
+              "anchor": [
+                0.0,
+                164.40944881889763
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:axis0-left:node0",
+                "panel1/plot:ax0-ytick1:node0",
+                "panel1/plot:axis0-left:node1",
+                "panel1/plot:ax0-ytick2:node0",
+                "panel1/plot:ax0-ylabel:node0",
+                "panel1/plot:spine0-left:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-ytick1",
+              "role": "text-tick",
+              "label": "2",
+              "group": null,
+              "anchor": [
+                40.23653543307087,
+                95.69078577176646
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-ytick1:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-ytick2",
+              "role": "text-tick",
+              "label": "4",
+              "group": null,
+              "anchor": [
+                40.23653543307087,
+                47.21625540747231
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-ytick2:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-ylabel",
+              "role": "text",
+              "label": "Relative signal",
+              "group": null,
+              "anchor": [
+                28.194914339320864,
+                73.98425196850394
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-ylabel:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:line0-0",
+              "role": "data-line",
+              "label": "Control",
+              "group": "panel1/plot:line0-0",
+              "anchor": [
+                117.58110236220472,
+                101.85710692797308
+              ],
+              "size_mm": 1.0583333333333331,
+              "kind": "group",
+              "members": [
+                "panel1/plot:line0-0:node0",
+                "panel1/plot:line0-0:node1",
+                "panel1/plot:line0-0:node2",
+                "panel1/plot:line0-0:node3",
+                "panel1/plot:line0-0:node4"
+              ]
+            },
+            {
+              "id": "panel1/plot:line0-1",
+              "role": "data-line",
+              "label": "Treated",
+              "group": "panel1/plot:line0-1",
+              "anchor": [
+                117.58110236220472,
+                73.98425196850395
+              ],
+              "size_mm": 1.0583333333333331,
+              "kind": "group",
+              "members": [
+                "panel1/plot:line0-1:node0",
+                "panel1/plot:line0-1:node1",
+                "panel1/plot:line0-1:node2",
+                "panel1/plot:line0-1:node3",
+                "panel1/plot:line0-1:node4"
+              ]
+            },
+            {
+              "id": "panel1/plot:spine0-left",
+              "role": "axis-line",
+              "label": "轴线",
+              "group": "panel1/plot:axis0-left",
+              "anchor": [
+                48.36653543307087,
+                73.98425196850395
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:spine0-left:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:spine0-bottom",
+              "role": "axis-line",
+              "label": "轴线",
+              "group": "panel1/plot:axis0-bottom",
+              "anchor": [
+                117.58110236220472,
+                125.05708661417322
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:spine0-bottom:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:ax0-title",
+              "role": "text-title",
+              "label": "Time course",
+              "group": null,
+              "anchor": [
+                117.58110236220472,
+                15.551500330647134
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:ax0-title:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:legend0",
+              "role": "legend",
+              "label": "图例",
+              "group": "panel1/plot:legend0",
+              "anchor": [
+                86.81966043307087,
+                46.866134119709635
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:legend0:node0",
+                "panel1/plot:legend0:node1",
+                "panel1/plot:text13:node0",
+                "panel1/plot:legend0:node2",
+                "panel1/plot:legend0:node3",
+                "panel1/plot:text14:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:text13",
+              "role": "text",
+              "label": "Control",
+              "group": null,
+              "anchor": [
+                95.38653543307088,
+                39.17627572127215
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:text13:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:text14",
+              "role": "text",
+              "label": "Treated",
+              "group": null,
+              "anchor": [
+                96.26966043307087,
+                54.55599251814715
+              ],
+              "kind": "group",
+              "members": [
+                "panel1/plot:text14:node0"
+              ]
+            },
+            {
+              "id": "panel1/plot:node0",
+              "kind": "shape",
+              "tag": "path",
+              "role": "graphic",
+              "label": "graphic 1",
+              "groups": [],
+              "anchor": [
+                0,
+                0
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#ffffff",
+              "stroke": "none",
+              "parent_transform": "  "
+            },
+            {
+              "id": "panel1/plot:node1",
+              "kind": "shape",
+              "tag": "path",
+              "role": "graphic",
+              "label": "graphic 2",
+              "groups": [],
+              "anchor": [
+                0,
+                0
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#ffffff",
+              "stroke": "none",
+              "parent_transform": "   "
+            },
+            {
+              "id": "panel1/plot:axis0-bottom:node0",
+              "kind": "shape",
+              "tag": "use",
+              "role": "axis-line",
+              "label": "axis-line 3",
+              "groups": [
+                "panel1/plot:axis0-bottom"
+              ],
+              "anchor": [
+                56.249678,
+                123.307087
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": "      "
+            },
+            {
+              "id": "panel1/plot:ax0-xtick1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "0",
+              "groups": [
+                "panel1/plot:axis0-bottom",
+                "panel1/plot:ax0-xtick1"
+              ],
+              "anchor": [
+                56.249678,
+                137.951374
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "     "
+            },
+            {
+              "id": "panel1/plot:axis0-bottom:node1",
+              "kind": "shape",
+              "tag": "use",
+              "role": "axis-line",
+              "label": "axis-line 5",
+              "groups": [
+                "panel1/plot:axis0-bottom"
+              ],
+              "anchor": [
+                97.137294,
+                123.307087
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": "      "
+            },
+            {
+              "id": "panel1/plot:ax0-xtick2:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "1",
+              "groups": [
+                "panel1/plot:axis0-bottom",
+                "panel1/plot:ax0-xtick2"
+              ],
+              "anchor": [
+                97.137294,
+                137.951374
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "     "
+            },
+            {
+              "id": "panel1/plot:axis0-bottom:node2",
+              "kind": "shape",
+              "tag": "use",
+              "role": "axis-line",
+              "label": "axis-line 7",
+              "groups": [
+                "panel1/plot:axis0-bottom"
+              ],
+              "anchor": [
+                138.024911,
+                123.307087
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": "      "
+            },
+            {
+              "id": "panel1/plot:ax0-xtick3:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "2",
+              "groups": [
+                "panel1/plot:axis0-bottom",
+                "panel1/plot:ax0-xtick3"
+              ],
+              "anchor": [
+                138.024911,
+                137.951374
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "     "
+            },
+            {
+              "id": "panel1/plot:axis0-bottom:node3",
+              "kind": "shape",
+              "tag": "use",
+              "role": "axis-line",
+              "label": "axis-line 9",
+              "groups": [
+                "panel1/plot:axis0-bottom"
+              ],
+              "anchor": [
+                178.912527,
+                123.307087
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": "      "
+            },
+            {
+              "id": "panel1/plot:ax0-xtick4:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "3",
+              "groups": [
+                "panel1/plot:axis0-bottom",
+                "panel1/plot:ax0-xtick4"
+              ],
+              "anchor": [
+                178.912527,
+                137.951374
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "     "
+            },
+            {
+              "id": "panel1/plot:ax0-xlabel:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text",
+              "label": "Time (days)",
+              "groups": [
+                "panel1/plot:axis0-bottom",
+                "panel1/plot:ax0-xlabel"
+              ],
+              "anchor": [
+                117.581102,
+                152.169391
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:axis0-left:node0",
+              "kind": "shape",
+              "tag": "use",
+              "role": "axis-line",
+              "label": "axis-line 12",
+              "groups": [
+                "panel1/plot:axis0-left"
+              ],
+              "anchor": [
+                50.116535,
+                94.585927
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": "      "
+            },
+            {
+              "id": "panel1/plot:ax0-ytick1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "2",
+              "groups": [
+                "panel1/plot:axis0-left",
+                "panel1/plot:ax0-ytick1"
+              ],
+              "anchor": [
+                43.116535,
+                98.408071
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "     "
+            },
+            {
+              "id": "panel1/plot:axis0-left:node1",
+              "kind": "shape",
+              "tag": "use",
+              "role": "axis-line",
+              "label": "axis-line 14",
+              "groups": [
+                "panel1/plot:axis0-left"
+              ],
+              "anchor": [
+                50.116535,
+                46.111397
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": "      "
+            },
+            {
+              "id": "panel1/plot:ax0-ytick2:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "4",
+              "groups": [
+                "panel1/plot:axis0-left",
+                "panel1/plot:ax0-ytick2"
+              ],
+              "anchor": [
+                43.116535,
+                49.933541
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "     "
+            },
+            {
+              "id": "panel1/plot:ax0-ylabel:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text",
+              "label": "Relative signal",
+              "groups": [
+                "panel1/plot:axis0-left",
+                "panel1/plot:ax0-ylabel"
+              ],
+              "anchor": [
+                30.962395,
+                73.984252
+              ],
+              "angle_deg": -90.0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:line0-0:node0",
+              "kind": "shape",
+              "tag": "path",
+              "role": "data-line",
+              "label": "data-line 17",
+              "groups": [
+                "panel1/plot:line0-0"
+              ],
+              "anchor": [
+                117.58110236220472,
+                101.85710692797308
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "none",
+              "stroke": "#a6cee3",
+              "parent_transform": "   "
+            },
+            {
+              "id": "panel1/plot:line0-0:node1",
+              "kind": "shape",
+              "tag": "use",
+              "role": "data-point",
+              "label": "data-point 18",
+              "groups": [
+                "panel1/plot:line0-0"
+              ],
+              "anchor": [
+                56.249678,
+                118.823193
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "#a6cee3",
+              "stroke": "#a6cee3",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:line0-0:node2",
+              "kind": "shape",
+              "tag": "use",
+              "role": "data-point",
+              "label": "data-point 19",
+              "groups": [
+                "panel1/plot:line0-0"
+              ],
+              "anchor": [
+                97.137294,
+                106.70456
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "#a6cee3",
+              "stroke": "#a6cee3",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:line0-0:node3",
+              "kind": "shape",
+              "tag": "use",
+              "role": "data-point",
+              "label": "data-point 20",
+              "groups": [
+                "panel1/plot:line0-0"
+              ],
+              "anchor": [
+                138.024911,
+                94.585927
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "#a6cee3",
+              "stroke": "#a6cee3",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:line0-0:node4",
+              "kind": "shape",
+              "tag": "use",
+              "role": "data-point",
+              "label": "data-point 21",
+              "groups": [
+                "panel1/plot:line0-0"
+              ],
+              "anchor": [
+                178.912527,
+                84.891021
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "#a6cee3",
+              "stroke": "#a6cee3",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:line0-1:node0",
+              "kind": "shape",
+              "tag": "path",
+              "role": "data-line",
+              "label": "data-line 22",
+              "groups": [
+                "panel1/plot:line0-1"
+              ],
+              "anchor": [
+                117.58110236220472,
+                73.98425196850395
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "none",
+              "stroke": "#1f78b4",
+              "parent_transform": "   "
+            },
+            {
+              "id": "panel1/plot:line0-1:node1",
+              "kind": "shape",
+              "tag": "use",
+              "role": "data-point",
+              "label": "data-point 23",
+              "groups": [
+                "panel1/plot:line0-1"
+              ],
+              "anchor": [
+                56.249678,
+                118.823193
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "#1f78b4",
+              "stroke": "#1f78b4",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:line0-1:node2",
+              "kind": "shape",
+              "tag": "use",
+              "role": "data-point",
+              "label": "data-point 24",
+              "groups": [
+                "panel1/plot:line0-1"
+              ],
+              "anchor": [
+                97.137294,
+                92.162201
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "#1f78b4",
+              "stroke": "#1f78b4",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:line0-1:node3",
+              "kind": "shape",
+              "tag": "use",
+              "role": "data-point",
+              "label": "data-point 25",
+              "groups": [
+                "panel1/plot:line0-1"
+              ],
+              "anchor": [
+                138.024911,
+                60.653756
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "#1f78b4",
+              "stroke": "#1f78b4",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:line0-1:node4",
+              "kind": "shape",
+              "tag": "use",
+              "role": "data-point",
+              "label": "data-point 26",
+              "groups": [
+                "panel1/plot:line0-1"
+              ],
+              "anchor": [
+                178.912527,
+                29.145311
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 1.0583333333333331,
+              "fill": "#1f78b4",
+              "stroke": "#1f78b4",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:spine0-left:node0",
+              "kind": "shape",
+              "tag": "path",
+              "role": "axis-line",
+              "label": "axis-line 27",
+              "groups": [
+                "panel1/plot:spine0-left",
+                "panel1/plot:axis0-left"
+              ],
+              "anchor": [
+                48.36653543307087,
+                73.98425196850395
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": "   "
+            },
+            {
+              "id": "panel1/plot:spine0-bottom:node0",
+              "kind": "shape",
+              "tag": "path",
+              "role": "axis-line",
+              "label": "axis-line 28",
+              "groups": [
+                "panel1/plot:spine0-bottom",
+                "panel1/plot:axis0-bottom"
+              ],
+              "anchor": [
+                117.58110236220472,
+                125.05708661417322
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": "   "
+            },
+            {
+              "id": "panel1/plot:ax0-title:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-title",
+              "label": "Time course",
+              "groups": [
+                "panel1/plot:ax0-title"
+              ],
+              "anchor": [
+                117.581102,
+                18.661417
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 11.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "   "
+            },
+            {
+              "id": "panel1/plot:legend0:node0",
+              "kind": "shape",
+              "tag": "path",
+              "role": "legend",
+              "label": "legend 30",
+              "groups": [
+                "panel1/plot:legend0"
+              ],
+              "anchor": [
+                86.81966043307087,
+                46.866134119709635
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#a6cee3",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:legend0:node1",
+              "kind": "shape",
+              "tag": "use",
+              "role": "legend",
+              "label": "legend 31",
+              "groups": [
+                "panel1/plot:legend0"
+              ],
+              "anchor": [
+                64.816535,
+                38.080704
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#a6cee3",
+              "stroke": "#a6cee3",
+              "parent_transform": "     "
+            },
+            {
+              "id": "panel1/plot:text13:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text",
+              "label": "Control",
+              "groups": [
+                "panel1/plot:legend0",
+                "panel1/plot:text13"
+              ],
+              "anchor": [
+                78.466535,
+                41.755704
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:legend0:node2",
+              "kind": "shape",
+              "tag": "path",
+              "role": "legend",
+              "label": "legend 33",
+              "groups": [
+                "panel1/plot:legend0"
+              ],
+              "anchor": [
+                86.81966043307087,
+                46.866134119709635
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#1f78b4",
+              "parent_transform": "    "
+            },
+            {
+              "id": "panel1/plot:legend0:node3",
+              "kind": "shape",
+              "tag": "use",
+              "role": "legend",
+              "label": "legend 34",
+              "groups": [
+                "panel1/plot:legend0"
+              ],
+              "anchor": [
+                64.816535,
+                53.184708
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.0,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#1f78b4",
+              "stroke": "#1f78b4",
+              "parent_transform": "     "
+            },
+            {
+              "id": "panel1/plot:text14:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text",
+              "label": "Treated",
+              "groups": [
+                "panel1/plot:legend0",
+                "panel1/plot:text14"
+              ],
+              "anchor": [
+                78.466535,
+                56.859708
+              ],
+              "angle_deg": -0.0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": "    "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

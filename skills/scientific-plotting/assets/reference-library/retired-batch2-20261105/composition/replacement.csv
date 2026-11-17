@@ -1,0 +1,19 @@
+"sample","category","group","count"
+"S1","Type A","Vehicle",15
+"S2","Type A","Vehicle",17
+"S3","Type A","Vehicle",17
+"S4","Type A","Treated",10
+"S5","Type A","Treated",8
+"S6","Type A","Treated",12
+"S1","Type B","Vehicle",6
+"S2","Type B","Vehicle",3
+"S3","Type B","Vehicle",7
+"S4","Type B","Treated",10
+"S5","Type B","Treated",12
+"S6","Type B","Treated",12
+"S1","Type C","Vehicle",2
+"S2","Type C","Vehicle",2
+"S3","Type C","Vehicle",2
+"S4","Type C","Treated",3
+"S5","Type C","Treated",0
+"S6","Type C","Treated",3

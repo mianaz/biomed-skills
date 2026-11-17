@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Library"
+  short_description: "Build a question-led library and reading synthesis"
+  default_prompt: "Use $literature-library to organize the supplied papers around my research question and identify the most useful next readings."

@@ -1,0 +1,16 @@
+"ID","Description","GeneNumber","logP","type",".group","padj"
+"GO:0005179","hormone activity",36,37.0123709661844,"molecular function",1,8.42813585010925e-17
+"GO:0140297","DNA-binding transcription factor binding",73,42.1850305702837,"molecular function",1,4.77830650753915e-19
+"GO:0008083","growth factor activity",45,48.7887329020072,"molecular function",1,6.47623383993061e-22
+"GO:0005125","cytokine activity",80,107.199382057574,"molecular function",1,2.7790727062199e-47
+"GO:0005126","cytokine receptor binding",87,110.989973824932,"molecular function",1,6.27576714529538e-49
+"GO:0045121","membrane raft",48,32.2754923754541,"cellular component",2,9.614611950429e-15
+"GO:0034774","secretory granule lumen",53,35.9305664466448,"cellular component",2,2.48629845766839e-16
+"GO:0060205","cytoplasmic vesicle lumen",57,41.5028502587817,"cellular component",2,9.45237949389169e-19
+"GO:0031983","vesicle lumen",58,42.6365248920098,"cellular component",2,3.04223327266717e-19
+"GO:0009897","external side of plasma membrane",77,68.8249530855184,"cellular component",2,1.28736784586997e-30
+"GO:0007249","canonical NF-kappaB signal transduction",101,125.844315233261,"biological process",3,2.22079420389909e-55
+"GO:2001233","regulation of apoptotic signaling pathway",98,125.844315233261,"biological process",3,2.22079420389909e-55
+"GO:0001819","positive regulation of cytokine production",123,131.394311052287,"biological process",3,8.63327860965629e-58
+"GO:0032496","response to lipopolysaccharide",104,145.540782687057,"biological process",3,6.20070666983448e-64
+"GO:0002237","response to molecule of bacterial origin",109,151.469106127385,"biological process",3,1.65121273726825e-66

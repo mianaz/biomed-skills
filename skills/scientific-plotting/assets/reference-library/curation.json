@@ -1,0 +1,332 @@
+{
+  "cns-nature-20261023/P106-F2-c": {
+    "description": "Shows the WGD-status composition of pairs within retained cancer types and the composition across all supplied pairs. Counts and printed n labels are derived from the input rows. The aggregate includes all rows; the cancer-type panel applies the supplied cutoff rule.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P106-F2-e": {
+    "description": "Within each cancer type and displayed gene, each segment shows the supplied concordance-class count divided by the supplied pair_count denominator.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P106-F3-e": {
+    "description": "The panel compares displayed protein interaction networks and their supplied score profiles between tumour and model signatures.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-b": {
+    "description": "Ribbon widths and sector spans show the supplied relative display estimates. The diagram does not estimate clonotype counts, sample sizes, or biological effects.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-c": {
+    "description": "The bar shows supplied proportions stacked in CSV row order. Interval marks and P-value annotations reproduce supplied display results.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-d": {
+    "description": "Each mark is rendered at its supplied blood, progenitor, and unshared proportions. Group identifies its supplied display category. Gene callouts are annotations, not measurements. Replacements with legitimate upstream gene-level proportions can use the same columns; the scripts only plot those supplied results.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-g": {
+    "description": "Displays estimated scaled expression colors and expressed percentages across cell states, alongside supplied UCell-score tiles. It describes the displayed summaries only.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-h": {
+    "description": "Shows the estimated composition of shared PBMC cells across the displayed cell types. The displayed OR and P value are formatted from supplied upstream results.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-i": {
+    "description": "The curves reproduce visible population profiles from supplied display estimates. They do not represent recovered experimental observations or a new analysis.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-j": {
+    "description": "Shows the displayed BATF, TCF7 and FOXP1 expression profiles over pseudotime, with their supplied uncertainty bands.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-m": {
+    "description": "The point positions and enrichment colors reproduce a displayed embedding layout. They are source-image display estimates, not recovered experimental observations or new enrichment analyses.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-nature-20261023/P112-F2-n": {
+    "description": "Shows estimated cluster fold changes against -log10(FDR), with bubble area indicating supplied mean cluster frequency and color derived from supplied FDR cutoffs.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately."
+  },
+  "cns-author-20261025/P106-F2-d": {
+    "description": "Each point shows the supplied tumor and matched model consensus ploidy values for one source pair record, colored by its supplied WGD status. No fitted relationship or inferential statistic is added.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "designs": [
+      "paired",
+      "unspecified"
+    ],
+    "design_basis": "One row is a matched tumor-model case; x and y retain that case identity.",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        46.92,
+        44.45
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F1-D": {
+    "description": "The left panel shows author TLS-area values by cancer type, displayed in thousands of μm². The right panel shows supplied TLS counts per sample by cancer type.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        51.51,
+        40.92
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F1-E": {
+    "description": "The pie shows the location composition across supplied TLS records. Each stacked bar shows location fractions among records for one displayed cancer type. Star glyphs reproduce visible source annotations.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        63.85,
+        36.34
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F2-C": {
+    "description": "The panel compares TLS score and marker-expression distributions across E-TLS, P-TLS and S-TLS categories. The printed comparisons reproduce source display labels and are not recalculated tests.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        172.86,
+        33.51
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F2-E": {
+    "description": "Each bar shows the fraction of supplied TLS classification rows in each maturity class at a location. This is a descriptive composition of the supplied rows; it does not make a claim about biological independence or replicate structure.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        43.04,
+        32.1
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F2-G": {
+    "description": "Bars show the number of source-classified TLS by cancer type for each displayed TLS group. Pies show the cancer-type composition within that group, calculated from the same classification rows.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        84.67,
+        52.21
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F5-E": {
+    "description": "Each bar shows the supplied within-grade proportions for E-TLS, P-TLS, and S-TLS. The author summary excludes patients classified as No_TLS. The plotted values are supplied summaries, not newly inferred experimental observations.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "estimates",
+    "designs": [
+      "supplied-results",
+      "unspecified"
+    ],
+    "design_basis": "Renders supplied author-derived proportions; the source denominator and group definitions remain explicit.",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        44.45,
+        32.1
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F5-K": {
+    "description": "Each bar shows the author's mean per-sample fraction for E-TLS, P-TLS and S-TLS within an HBV status group. The component proportions sum to one in the supplied summaries.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "estimates",
+    "designs": [
+      "supplied-results",
+      "unspecified"
+    ],
+    "design_basis": "Renders supplied author-derived proportions; the source denominator and group definitions remain explicit.",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        25.05,
+        32.81
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F5-D": {
+    "description": "A displayed ratio above 1 means that TLS class and location occur more often than expected under the contingency-table independence calculation; a ratio below 1 means less often. The tiles are descriptive ratios, not significance tests.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "matrix",
+    "designs": [
+      "supplied-results",
+      "unspecified"
+    ],
+    "design_basis": "Renders a supplied observed-to-expected matrix and its author annotations.",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        55.39,
+        27.87
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F5-J": {
+    "description": "Each cell is the author-supplied observed/expected ratio for a TLS class and location. Values above 1 indicate more observed TLS than expected under the authors' contingency-table calculation; this figure does not display a P value.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "matrix",
+    "designs": [
+      "supplied-results",
+      "unspecified"
+    ],
+    "design_basis": "Renders a supplied observed-to-expected matrix and its author annotations.",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        44.45,
+        32.46
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F5-P": {
+    "description": "Each tile shows the supplied dimensionless Ro/e value for a displayed TLS group and location. Annotation rows are used to retain descriptive observed and expected counts in the output summary.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "matrix",
+    "designs": [
+      "supplied-results",
+      "unspecified"
+    ],
+    "design_basis": "Renders a supplied observed-to-expected matrix and its author annotations.",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        36.34,
+        29.99
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F6-B": {
+    "description": "Each bar shows the normalized composition of supplied mean TLS-class proportions for one cancer type, including No_TLS. The count above each bar is the number of distinct Sample_ID records in the linked author table.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "estimates",
+    "designs": [
+      "supplied-results",
+      "unspecified"
+    ],
+    "design_basis": "Renders supplied author-derived proportions; the source denominator and group definitions remain explicit.",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        35.45,
+        37.92
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F6-C": {
+    "description": "Each bar shows the supplied TLS maturation composition for one cancer and tumor stage, normalized to 100%. Brackets display the supplied image-transcribed comparisons.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        84.14,
+        39.16
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F6-D": {
+    "description": "The profiles show distributions of supplied TLS maturation fractions across tumor stages, pooled over the cancer types represented in the participant summary table. The plotted p values are displayed annotations from the panel.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        48.33,
+        37.39
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F6-G": {
+    "description": "The curves show supplied-record overall-survival profiles for TLS groups across the six cancer types. Legend counts are counts of rows in the supplied author-derived tables. The displayed P values are source-image annotations.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        78.67,
+        59.27
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F6-I": {
+    "description": "The plot displays pre-treatment TLS count distributions by PPP2R1A status and supplied overall-survival grouping, plus descriptive composition summaries across sample timepoints. It reproduces the plotted grouping and annotations without reanalyzing survival.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        87.84,
+        64.38
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F6-K": {
+    "description": "The bars show the response-group composition of TLS maturation categories. The matrix shows descriptive enrichment ratios for response by TLS group. The displayed p threshold is a source annotation and is not a result of the matrix calculation.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        58.21,
+        24.27
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F6-M": {
+    "description": "The bars show supplied TLS maturation fractions by response group. The matrix shows estimated relative enrichment for each response-group and TLS-Group cell. The displayed p value is retained as an image-transcribed annotation.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        58.21,
+        26.11
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  },
+  "cns-author-20261025/P130-F6-O": {
+    "description": "The left bars show the supplied mean fractions for each maturation category. The matrix shows each response-by-TLS-group cell count divided by the count expected from the corresponding marginal totals. R and NR are display labels. C1 is mapped to the source High group and C2 to Low in category_labels.csv.",
+    "source_design": "Inspect the source Methods; adapter row units are specified separately.",
+    "input_kind": "observations",
+    "layout": {
+      "tested_placements": [],
+      "source_crop_mm": [
+        58.21,
+        26.11
+      ],
+      "note": "Source crop dimensions describe the reference artwork. Readability at a new placement needs a render check."
+    }
+  }
+}

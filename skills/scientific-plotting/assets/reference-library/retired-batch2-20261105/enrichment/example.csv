@@ -1,0 +1,5 @@
+"term","count","padj"
+"Cell cycle",18,1e-05
+"DNA repair",12,1e-04
+"Stress response",9,0.001
+"Metabolism",6,0.03

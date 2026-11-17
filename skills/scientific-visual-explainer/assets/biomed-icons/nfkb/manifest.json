@@ -1,0 +1,585 @@
+[
+  {
+    "id": "tnf-trimer",
+    "label": "TNF trimer",
+    "label_zh": "TNF 三聚体",
+    "file": "nfkb/tnf-trimer.svg",
+    "category": "signaling",
+    "description": "Three-subunit TNF ligand arranged around its receptor-facing interface.",
+    "parts": [
+      "subunit-a",
+      "subunit-b",
+      "subunit-c"
+    ],
+    "anchors": {
+      "TNFR1-binding-face": {
+        "point": [
+          80,
+          82
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Trimeric ligand schematic; subunit contours and receptor-facing surface are illustrative, not a solved TNF structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "tnfr1",
+    "label": "TNFR1",
+    "label_zh": "TNFR1",
+    "file": "nfkb/tnfr1.svg",
+    "category": "signaling",
+    "description": "Single-pass TNFR1 with four extracellular cysteine-rich modules and a cytosolic death domain.",
+    "parts": [
+      "membrane",
+      "transmembrane-helix",
+      "cytosolic-linker",
+      "crd1",
+      "crd2",
+      "crd3",
+      "crd4",
+      "death-domain"
+    ],
+    "anchors": {
+      "TNF-binding-tip": {
+        "point": [
+          80,
+          16
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane-midplane": {
+        "point": [
+          80,
+          82
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "TRADD-RIPK1-death-domain": {
+        "point": [
+          78,
+          142
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Canonical TNFR1 topology schematic; cysteine-rich domains and death-domain geometry are simplified.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "tradd",
+    "label": "TRADD",
+    "label_zh": "TRADD",
+    "file": "nfkb/tradd.svg",
+    "category": "signaling",
+    "description": "TRADD adaptor with an N-terminal TRAF-interacting region linked to a C-terminal death-domain bundle.",
+    "parts": [
+      "traf-binding-domain",
+      "flexible-linker",
+      "death-domain"
+    ],
+    "anchors": {
+      "TRAF2-binding": {
+        "point": [
+          16,
+          78
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "TNFR1-death-domain": {
+        "point": [
+          119,
+          50
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "RIPK1-death-domain": {
+        "point": [
+          142,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Domain-order schematic of TRADD; the two interaction regions are not an atomic structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "ripk1",
+    "label": "RIPK1",
+    "label_zh": "RIPK1",
+    "file": "nfkb/ripk1.svg",
+    "category": "signaling",
+    "description": "RIPK1 domain map with N-terminal kinase, ubiquitin-modified intermediate region, and C-terminal death domain.",
+    "parts": [
+      "kinase-domain",
+      "intermediate-region",
+      "ubiquitin-chain",
+      "death-domain"
+    ],
+    "anchors": {
+      "kinase-active-site": {
+        "point": [
+          44,
+          47
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "ubiquitin-scaffold": {
+        "point": [
+          96,
+          34
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "death-domain-partner": {
+        "point": [
+          143,
+          81
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "RIPK1 architecture schematic. The attached ubiquitin chain is a TNFR1-signaling context cue, not a constitutive RIPK1 state.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "traf2",
+    "label": "TRAF2",
+    "label_zh": "TRAF2",
+    "file": "nfkb/traf2.svg",
+    "category": "signaling",
+    "description": "TRAF2 trimer schematic with N-terminal RING region, coiled-coil stalk, and C-terminal TRAF domains.",
+    "parts": [
+      "ring-finger",
+      "coiled-coil",
+      "traf-domain"
+    ],
+    "anchors": {
+      "RING-cIAP-interface": {
+        "point": [
+          66,
+          14
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "TRADD-interface": {
+        "point": [
+          28,
+          110
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "TRAF2 is shown as a three-chain adaptor assembly with domain order; subunit interfaces are illustrative.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "tak1",
+    "label": "TAK1",
+    "label_zh": "TAK1",
+    "file": "nfkb/tak1.svg",
+    "category": "signaling",
+    "description": "MAP3K7 schematic with a bilobal kinase domain, activation segment, and regulatory C-terminal region.",
+    "parts": [
+      "kinase-n-lobe",
+      "kinase-c-lobe",
+      "activation-loop",
+      "regulatory-region"
+    ],
+    "anchors": {
+      "TAB-regulatory-association": {
+        "point": [
+          146,
+          103
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "IKK-phosphorylation": {
+        "point": [
+          76,
+          96
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "TAK1/MAP3K7 domain schematic; activation-loop and regulatory-region geometry are illustrative.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "ikk-complex",
+    "label": "IKK complex",
+    "label_zh": "IKK 复合体",
+    "file": "nfkb/ikk-complex.svg",
+    "category": "signaling",
+    "description": "Canonical IKK complex with separate IKKα and IKKβ kinase subunits and a NEMO scaffold.",
+    "parts": [
+      "ikk-alpha",
+      "ikk-beta",
+      "nemo-scaffold",
+      "nemo-zinc-finger"
+    ],
+    "anchors": {
+      "TAK1-activation": {
+        "point": [
+          38,
+          27
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "ubiquitin-chain-binding": {
+        "point": [
+          143,
+          109
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "IkB-substrate": {
+        "point": [
+          76,
+          71
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Illustrative IKKα/IKKβ kinase pair on a NEMO scaffold; the arrangement communicates components, not exact stoichiometry or resolved geometry.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "ikba",
+    "label": "IκBα",
+    "label_zh": "IκBα",
+    "file": "nfkb/ikba.svg",
+    "category": "signaling",
+    "description": "IκBα with a curved ankyrin-repeat core, N-terminal phosphodegron, and flexible PEST tail.",
+    "parts": [
+      "n-terminal-phosphodegron",
+      "ankyrin-repeat-domain",
+      "pest-tail"
+    ],
+    "anchors": {
+      "NF-kB-binding-face": {
+        "point": [
+          38,
+          83
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "phosphodegron": {
+        "point": [
+          16,
+          22
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "IκBα domain schematic; ankyrin-repeat curvature and degron positions are illustrative, not residue-scale.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "rela",
+    "label": "RELA / p65",
+    "label_zh": "RELA / p65",
+    "file": "nfkb/rela.svg",
+    "category": "signaling",
+    "description": "RELA p65 with a two-lobe Rel homology domain, DNA-contact loops, and a flexible C-terminal transactivation region.",
+    "parts": [
+      "dna-binding-lobe",
+      "dimerization-lobe",
+      "dna-contact-loops",
+      "transactivation-region"
+    ],
+    "anchors": {
+      "p50-dimer-interface": {
+        "point": [
+          110,
+          85
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "DNA-binding-surface": {
+        "point": [
+          19,
+          58
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "transactivation-region": {
+        "point": [
+          145,
+          139
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "RELA/p65 schematic; the Rel homology domain is simplified and the disordered transactivation region is shown as a flexible tail.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "nfkb1-p50",
+    "label": "NFKB1 / p50",
+    "label_zh": "NFKB1 / p50",
+    "file": "nfkb/nfkb1-p50.svg",
+    "category": "signaling",
+    "description": "Mature NFKB1 p50 with paired Rel homology DNA-binding and dimerization lobes.",
+    "parts": [
+      "dna-binding-lobe",
+      "dimerization-lobe",
+      "dna-contact-loops"
+    ],
+    "anchors": {
+      "p65-dimer-interface": {
+        "point": [
+          112,
+          87
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "DNA-binding-surface": {
+        "point": [
+          19,
+          59
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Mature NFKB1 p50 schematic; the Rel homology domain is simplified. The p105 precursor and its processing are not depicted.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "proteasome-26s",
+    "label": "26S proteasome",
+    "label_zh": "26S 蛋白酶体",
+    "file": "nfkb/proteasome-26s.svg",
+    "category": "signaling",
+    "description": "Doubly capped 26S proteasome schematic with 19S regulators, a 20S core barrel, and a central substrate channel.",
+    "parts": [
+      "19s-top",
+      "20s-alpha-rings",
+      "20s-beta-rings",
+      "19s-bottom",
+      "substrate-channel"
+    ],
+    "anchors": {
+      "ubiquitinated-substrate-entry": {
+        "point": [
+          80,
+          17
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "peptide-release": {
+        "point": [
+          80,
+          143
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Doubly capped 26S proteasome schematic; subunit stoichiometry and molecular geometry are simplified.",
+    "provenance": {
+      "mode": "original-vector",
+      "visual_references": [
+        "https://www.biorender.com/template/tnf-pathway"
+      ],
+      "scientific_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5076853/"
+      ],
+      "license": "MIT"
+    }
+  }
+]

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>biomed-stats · 三个完整示例</title>
+<style>
+:root{--ink:#17323a;--muted:#5b6c73;--line:#d4e2dd;--accent:#176b63;--bg:#f3f6f4}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);font:16px/1.7 Arial,"PingFang SC",sans-serif}main{max-width:1040px;margin:auto;padding:40px 24px 64px}h1{font-size:clamp(28px,4vw,40px);line-height:1.3;margin:12px 0}h2{font-size:23px}h3{font-size:18px;margin:22px 0 8px}p{margin:10px 0 16px}a{color:var(--accent);text-underline-offset:3px;overflow-wrap:anywhere}.eyebrow{font-size:13px;font-weight:bold;letter-spacing:.08em;color:var(--accent)}.muted,small{color:var(--muted)}nav{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}button{border:1px solid var(--line);border-radius:8px;background:white;color:var(--accent);padding:11px 16px;font:inherit;cursor:pointer}button:hover,button:focus-visible{background:#e5f2e9}.case{background:white;border:1px solid var(--line);border-radius:15px;margin:20px 0;padding:24px}.case>summary{cursor:pointer;font-size:22px;font-weight:bold}.case>summary span{display:block;font-size:14px;font-weight:normal;color:var(--muted);margin:5px 0}.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}.step{padding:14px;background:#f0f5f2;border-radius:10px}.step b{display:block;color:var(--accent);font-size:22px}.step span{font-size:14px}.answer{background:#e7f3eb;border-left:4px solid var(--accent);padding:18px 20px;margin:20px 0}.answer p{margin:0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.data{overflow:auto;border:1px solid var(--line);border-radius:8px;margin:12px 0}table{border-collapse:collapse;width:100%;font-size:14px;text-align:left}td,th{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f0f5f2}code,pre{font:13px/1.65 Menlo,Consolas,monospace}pre{padding:16px;background:#f3f5f4;border-radius:8px;overflow:auto}blockquote{margin:12px 0;padding:12px 16px;border-left:3px solid #8ebca9;background:#f7faf8}.details{border-top:1px solid var(--line);margin-top:22px;padding-top:15px}.details>summary{cursor:pointer;font-weight:bold}.downloads{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;margin-top:16px}.note{font-size:14px;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:32px;padding-top:16px;font-size:14px;color:var(--muted)}@media(max-width:650px){main{padding:24px 14px 40px}.case{padding:18px 15px}.flow,.grid{grid-template-columns:1fr}.flow{gap:8px}.step b{font-size:20px}td,th{padding:8px}button{padding:9px 12px}.case>summary{font-size:20px}}
+</style></head><body><main>
+<header><div class="eyebrow">BIOMED-STATS · WORKED EXAMPLES</div><h1>看一个问题如何变成统计分析</h1><p>三个自编教学例，分别对应<strong>分析、规划、审查</strong>。数据与情景均为虚构；数值由随附 R 脚本实际计算。每例先看判断与结果，再展开数据和代码。</p><nav aria-label="选择示例"><button data-case="paired">1 · 配对与技术重复</button><button data-case="power">2 · 前瞻样本量</button><button data-case="diagnostic">3 · 罕见阳性分类器</button></nav></header>
+
+<details class="case" id="paired" open><summary>1 · 六位供者，每种条件三个技术孔<span>分析模式 · 目标是供者内平均变化 · 常规配对比较</span></summary>
+<h3>输入问题</h3><blockquote>6 位独立供者的类器官，每位都有对照和处理。每个条件的同次制备有 3 个等精度技术孔。处理是否改变活细胞比例？请给效应、区间和可复用分析。</blockquote>
+<div class="flow"><div class="step"><b>6 位供者</b><span>独立抽样与总体推断单位</span></div><div class="step"><b>12 个供者 × 条件</b><span>每个组合先汇总技术孔</span></div><div class="step"><b>36 个孔</b><span>保留原始读数和父级 ID</span></div></div>
+<div class="grid"><div><h3>为什么走这条路线</h3><p>同一供者提供两种条件，目标是“处理 − 对照”的平均差。平衡、等精度的技术孔先取均值，再按供者 ID 得到 6 个差值，供者之间等权。</p><p>设计假定条件在供者内随机分配、同批处理；配对 t 推断还需要独立供者，以及适合均值推断的差值分布。</p></div><div><h3>先检查什么</h3><p>核对每位供者的条件和孔数、缺失及排除；查看 6 个差值和影响程度。本例差值方向一致，没有单个极端差值。逐一留出供者后，均值变化为 −8 至 −6 个百分点。</p><p>小样本的分布假设仍依赖设计与测量依据；结果报告保留 n 和区间。</p></div></div>
+<div class="answer"><p><strong>{{PAIR_RESULT}}</strong></p><p>在这个教学例中，处理使平均活细胞比例降低 7 个百分点。差值单位是百分点；例如 80% 到 74% 的差为 −6 个百分点。</p></div>
+<p class="note">一个预先指定的主要对比，采用单个 95% CI 和双侧检验。若改为各组来自不同供者，选择独立组路线；若每位供者有多个随访时间，进入重复测量路线。</p>
+<details class="details"><summary>展开供者数据、关键代码与交付</summary><div class="data"><table><thead><tr><th>供者</th><th>对照均值（%）</th><th>处理均值（%）</th><th>差值（百分点）</th></tr></thead><tbody>{{PAIR_ROWS}}</tbody></table></div>
+<pre>means &lt;- aggregate(viability_percent ~ donor + condition, wells, mean)
+paired &lt;- reshape(means, idvar = "donor", timevar = "condition", direction = "wide")
+change &lt;- paired$viability_percent.treatment - paired$viability_percent.control
+t.test(change, mu = 0, alternative = "two.sided")</pre>
+<p>交付：原始孔数据、供者均值、完整检验结果、影响检查、R 对象和执行环境。对不平衡孔数、不同制备或更复杂误差结构，先重新判断汇总权重及层级模型。</p>
+<div class="downloads"><a href="results/paired-wells.csv">36 孔源数据</a><a href="results/paired-donor-means.csv">供者均值</a><a href="results/paired-result.csv">完整结果</a><a href="results/paired-influence.csv">影响检查</a></div></details>
+<p><a href="../../biomed-shared/statistical-analysis.md">对应方法：常规比较</a> · <a href="../references/design-and-power.md">层级设计</a></p></details>
+
+<details class="case" id="power"><summary>2 · 下次配对实验需要多少供者？<span>规划模式 · 预先指定效应和差值 SD · 双侧配对 t 功效</span></summary>
+<h3>输入问题</h3><blockquote>计划一个新的配对实验。我们关心 5 个百分点的平均变化，预期供者内差值 SD 为 8 个百分点。双侧 α = 0.05，目标功效 80%。需要多少供者？</blockquote>
+<p>这里的效应与 SD 是独立指定的规划情景。SD 指按计划技术重复方案汇总后，<strong>供者内差值</strong>的标准差。</p>
+<div class="flow"><div class="step"><b>5 个百分点</b><span>预先指定的有意义变化</span></div><div class="step"><b>SD = 8</b><span>差值的预期供者间变异</span></div><div class="step"><b>80% 功效</b><span>配对 t 模型下的规划目标</span></div></div>
+<div class="answer"><p><strong>{{PLAN_RESULT}}</strong></p></div>
+<p>n 的单位是供者人数，每位供者提供一对条件观测。招募量按预期损失率上调；这一步是资源规划。效应或 SD 不确定时，同时查看下面的情景范围。</p>
+<details class="details"><summary>展开九个规划情景与关键代码</summary><div class="data"><table><thead><tr><th>效应（百分点）</th><th>差值 SD</th><th>完整配对供者数</th><th>取整后功效</th><th>招募人数¹</th></tr></thead><tbody>{{PLAN_ROWS}}</tbody></table></div><p class="note">¹ 假定 10% 的供者配对数据不可用，按 n / 0.9 向上取整。所有情景均为双侧 α = 0.05、目标功效 80%。</p>
+<pre>plan &lt;- power.t.test(delta = 5, sd = 8, sig.level = 0.05,
+  power = 0.8, type = "paired", alternative = "two.sided", strict = TRUE)
+n_pairs &lt;- ceiling(plan$n)
+power.t.test(n = n_pairs, delta = 5, sd = 8, sig.level = 0.05,
+  type = "paired", alternative = "two.sided", strict = TRUE)</pre>
+<p>交付：效应与变异依据、错误率、目标功效、取整后结果及损失率假设。若使用聚类、多个主要对比或复杂纵向模型，功效计算随计划模型一起调整。</p><div class="downloads"><a href="results/prospective-power.csv">全部规划情景</a></div></details>
+<p><a href="../references/design-and-power.md">对应方法：设计与功效</a></p></details>
+
+<details class="case" id="diagnostic"><summary>3 · 99% 准确率能否发现罕见阳性？<span>审查模式 · 固定预测的留出集评价 · 分母、基率与基线</span></summary>
+<h3>输入问题</h3><blockquote>在 1,000 个独立留出样本中，有 10 个真阳性。固定分类器检出其中 9 个，同时误报 20 个。另一个“全部预测为阴性”的基线准确率为 99%。应如何评价？</blockquote>
+<p>模型和阈值在评价前固定。本例提供虚构真值与预测，直接计算性能；评价重点是检出阳性，同时报告误报和精度。</p>
+<div class="flow"><div class="step"><b>9 / 10</b><span>阳性检出：敏感度 90%</span></div><div class="step"><b>20 / 990</b><span>阴性误报：20 个</span></div><div class="step"><b>9 / 29</b><span>预测阳性中真阳性占 31.0%</span></div></div>
+<div class="answer"><p><strong>固定分类器准确率为 97.9%，检出 9 个阳性，并产生 20 个误报。</strong></p><p>99% 准确率基线的敏感度为 0%。评价由预设用途和错误代价驱动；这里只有 10 个真阳性，敏感度的不确定性需要一起报告。</p></div>
+<details class="details"><summary>展开分母、95% 区间与交付</summary><div class="data"><table><thead><tr><th>方法</th><th>指标</th><th>计数</th><th>估计（95% CI）</th></tr></thead><tbody>{{METRIC_ROWS}}</tbody></table></div><p class="note">classifier：固定分类器；all_negative_baseline：全部预测为阴性。使用独立单位的二项分布 Clopper–Pearson 区间；各指标区间单独计算。全阴性规则的敏感度和特异度由规则直接确定。PPV 的分母为预测阳性数，零个预测阳性时未定义。</p>
+<pre>sensitivity &lt;- TP / (TP + FN)
+PPV &lt;- TP / (TP + FP)
+binom.test(TP, TP + FN)$conf.int
+binom.test(TP, TP + FP)$conf.int</pre>
+<p>交付：逐样本真值和固定预测、混淆矩阵、用途相关指标及区间。若目标人群的基率改变，需要重新评估 PPV；训练或重选阈值则进入预测流程，保留新的独立评价。</p>
+<div class="downloads"><a href="results/diagnostic-predictions.csv">1,000 个虚构预测</a><a href="results/diagnostic-counts.csv">混淆矩阵计数</a><a href="results/diagnostic-metrics.csv">完整指标与区间</a></div></details>
+<p><a href="../references/binary-and-diagnostic.md">对应方法：二元结局与诊断</a> · <a href="../references/prediction-and-learning.md">预测与学习</a></p></details>
+
+<footer><p>三个例子使用同一份 <a href="run.R">R 源码</a>，仅依赖 R 自带的 stats。执行 <code>Rscript skills/biomed-stats/examples/run.R</code> 会更新本页及 results/。</p><div class="downloads"><a href="results/analysis.rds">分析对象</a><a href="results/session-info.txt">执行环境</a><a href="../references/worked-examples.md">示例使用说明</a><a href="../SKILL.md">biomed-stats 主入口</a></div><p>概念依据见各例的方法参考。它们是自编教学例；Points of Significance 原文附带工作簿的执行状态另行记录。</p></footer>
+</main><script>document.querySelectorAll('[data-case]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.case').forEach(item=>item.open=item.id===button.dataset.case);document.getElementById(button.dataset.case).scrollIntoView({behavior:'smooth',block:'start'});}));</script></body></html>

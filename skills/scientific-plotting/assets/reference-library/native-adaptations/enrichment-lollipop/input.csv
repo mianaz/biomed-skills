@@ -1,0 +1,13 @@
+"category","subcategory","ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"Human Diseases","Endocrine and metabolic disease","hsa04933","AGE-RAGE signaling pathway in diabetic complications","7/77","101/9436",1.70062121585439e-05,0.00161559015506167,0.00127994123087988,"1281/1277/1958/1282/4313/1286/3576",7
+"Cellular Processes","Cellular community - eukaryotes","hsa04510","Focal adhesion","9/77","203/9436",3.76305795353701e-05,0.00238327003724011,0.00188813083282734,"1277/824/1282/6696/3908/5154/2012/7058/1286",9
+"Environmental Information Processing","Signaling molecules and interaction","hsa04512","ECM-receptor interaction","6/77","89/9436",8.23295531515267e-05,0.00328680131144693,0.00260394785339009,"1277/1282/6696/3908/7058/1286",6
+"Organismal Systems","Endocrine system","hsa04926","Relaxin signaling pathway","7/77","130/9436",8.64947713538665e-05,0.00328680131144693,0.00260394785339009,"1281/1277/1282/4313/2353/1286/4318",7
+"Human Diseases","Infectious disease: parasitic","hsa05146","Amoebiasis","6/77","103/9436",0.000185100332625464,0.0058615105331397,0.00464374518691954,"1281/1277/1282/3908/1286/3576",6
+"Organismal Systems","Immune system","hsa04657","IL-17 signaling pathway","5/77","95/9436",0.00103774308909378,0.0281673124182596,0.0223153777053248,"3627/2353/4318/6364/3576",5
+"Organismal Systems","Digestive system","hsa04974","Protein digestion and absorption","5/77","105/9436",0.00162357005229318,0.038559788741963,0.0305487522997269,"1281/1277/1282/1286/1300",5
+"Organismal Systems","Immune system","hsa04620","Toll-like receptor signaling pathway","5/77","109/9436",0.00191537507741184,0.0404356960786945,0.0320349281953092,"6696/3627/2353/51284/3576",5
+"Human Diseases","Cardiovascular disease","hsa05416","Viral myocarditis","4/77","70/9436",0.00250072435453829,0.0415693282524819,0.0329330412194178,"3109/3908/1837/8082",4
+"Organismal Systems","Immune system","hsa04670","Leukocyte transendothelial migration","5/77","116/9436",0.00251597658694554,0.0415693282524819,0.0329330412194178,"4313/4688/5010/10686/4318",5
+"Environmental Information Processing","Signal transduction","hsa04151","PI3K-Akt signaling pathway","9/77","362/9436",0.00262543125805149,0.0415693282524819,0.0329330412194178,"1277/1282/6696/6850/3908/5979/5154/7058/1286",9
+"Human Diseases","Infectious disease: viral","hsa05171","Coronavirus disease - COVID-19","7/77","238/9436",0.00318988382808881,0.0466213790259134,0.0369354969568178,"3627/6850/719/2353/2212/51284/3576",7

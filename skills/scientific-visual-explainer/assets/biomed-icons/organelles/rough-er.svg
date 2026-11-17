@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="rough-er" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="rough-er-connections" data-part="connections">
+      <g stroke-width="9"><path d="M45 54 C40 60 39 65 42 71 M101 91 C106 97 108 103 105 110"/></g>
+      <g stroke="#69ADB5" stroke-width="6"><path d="M45 54 C40 60 39 65 42 71 M101 91 C106 97 108 103 105 110"/></g>
+      <g stroke="#EDF5F1" stroke-width="2"><path d="M45 54 C40 60 39 65 42 71 M101 91 C106 97 108 103 105 110"/></g>
+    </g>
+    <g id="rough-er-cisternae" data-part="cisternae">
+      <path d="M29 29 C43 23 80 23 106 28 C119 31 128 37 128 43 C128 49 118 54 105 56 C77 61 42 57 29 51 C22 48 22 34 29 29 Z" fill="#B3D7CC"/>
+      <path d="M30 69 C43 62 80 62 109 67 C124 70 133 76 133 82 C133 89 122 94 108 96 C78 100 43 97 30 91 C23 87 23 74 30 69 Z" fill="#B3D7CC"/>
+      <path d="M25 111 C38 104 70 104 96 108 C110 110 120 116 120 122 C120 128 109 134 96 136 C69 140 39 136 25 131 C18 128 18 115 25 111 Z" fill="#B3D7CC"/>
+    </g>
+    <g id="rough-er-lumens" data-part="lumens" fill="#EDF5F1" stroke="#69ADB5" stroke-width="1.6">
+      <path d="M33 34 C51 29 81 29 103 33 C111 35 117 38 117 42 C117 45 110 48 101 50 C76 54 48 51 34 46 C30 44 29 38 33 34 Z"/>
+      <path d="M34 74 C52 69 83 69 106 73 C116 75 122 78 122 82 C122 86 114 89 105 91 C78 95 49 92 35 87 C31 85 30 78 34 74 Z"/>
+      <path d="M29 116 C46 111 72 111 94 114 C103 116 109 119 109 122 C109 126 102 129 93 131 C68 135 42 132 29 127 C25 125 25 119 29 116 Z"/>
+    </g>
+    <g id="rough-er-ribosomes" data-part="ribosomes" fill="#69ADB5" stroke-width="1.2">
+      <circle cx="43" cy="25" r="3.2"/><circle cx="59" cy="22" r="3.2"/><circle cx="76" cy="22" r="3.2"/><circle cx="94" cy="24" r="3.2"/><circle cx="112" cy="29" r="3.2"/>
+      <circle cx="26" cy="63" r="3.2"/><circle cx="51" cy="60" r="3.2"/><circle cx="73" cy="60" r="3.2"/><circle cx="96" cy="61" r="3.2"/><circle cx="124" cy="64" r="3.2"/>
+      <circle cx="31" cy="101" r="3.2"/><circle cx="53" cy="101" r="3.2"/><circle cx="79" cy="101" r="3.2"/><circle cx="105" cy="103" r="3.2"/>
+      <circle cx="29" cy="137" r="3.2"/><circle cx="49" cy="141" r="3.2"/><circle cx="72" cy="142" r="3.2"/><circle cx="96" cy="140" r="3.2"/>
+    </g>
+  </g>
+</svg>

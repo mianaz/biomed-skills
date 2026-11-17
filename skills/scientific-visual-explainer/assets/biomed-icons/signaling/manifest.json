@@ -1,0 +1,964 @@
+[
+  {
+    "id": "tcr-cd3",
+    "label": "TCR–CD3",
+    "label_zh": "TCR-CD3",
+    "file": "signaling/tcr-cd3.svg",
+    "category": "signaling",
+    "description": "Paired TCRαβ ectodomains above a multisubunit CD3 signaling complex with cytosolic ITAM tails.",
+    "parts": [
+      "membrane",
+      "alpha-variable-domain",
+      "beta-variable-domain",
+      "constant-domains",
+      "transmembrane-helices",
+      "cytoplasmic-tails",
+      "itam-sites"
+    ],
+    "anchors": {
+      "pMHC-contact": {
+        "point": [
+          80,
+          12
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "CD3-ITAM-docking": {
+        "point": [
+          72,
+          140
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          82
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Canonical αβ TCR with CD3 signaling chains; schematic topology, not a resolved complex.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5801066/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2857167/",
+        "https://www.biorender.com/template/t-cell-signaling"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "peptide-mhc-ii",
+    "label": "Peptide–MHC II",
+    "label_zh": "肽-MHC II",
+    "file": "signaling/peptide-mhc-ii.svg",
+    "category": "signaling",
+    "description": "MHC class II peptide-binding groove with a bound peptide, paired Ig-like domains, and two membrane-spanning chains.",
+    "parts": [
+      "membrane",
+      "alpha1-groove",
+      "beta1-groove",
+      "peptide",
+      "beta-sheet-floor",
+      "alpha2-domain",
+      "beta2-domain",
+      "transmembrane-helices",
+      "cytoplasmic-tails"
+    ],
+    "anchors": {
+      "TCR-contact": {
+        "point": [
+          80,
+          19
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          124
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Generic MHC class II topology with peptide in the extracellular groove; rotate the full icon 180° to face an APC scene.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5801066/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2857167/",
+        "https://www.biorender.com/template/t-cell-signaling"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "cd4",
+    "label": "CD4",
+    "label_zh": "CD4",
+    "file": "signaling/cd4.svg",
+    "category": "signaling",
+    "description": "Four-domain CD4 coreceptor with an MHC-II-facing D1 tip, single transmembrane helix, and Lck-associated cytoplasmic tail.",
+    "parts": [
+      "membrane",
+      "d1-mhc-binding-domain",
+      "d2-domain",
+      "d3-domain",
+      "d4-domain",
+      "transmembrane-helix",
+      "cytoplasmic-tail"
+    ],
+    "anchors": {
+      "MHC-II-contact": {
+        "point": [
+          70,
+          17
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "Lck-tail-binding": {
+        "point": [
+          92,
+          135
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          70,
+          107
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Canonical CD4 coreceptor topology; domain shapes are educational and do not imply exact Ig-fold coordinates.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5801066/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2857167/",
+        "https://www.biorender.com/template/t-cell-signaling"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "lck",
+    "label": "Lck",
+    "label_zh": "Lck",
+    "file": "signaling/lck.svg",
+    "category": "signaling",
+    "description": "Membrane-tethered Src-family kinase schematic with SH3, SH2, and bilobal kinase domains.",
+    "parts": [
+      "membrane",
+      "membrane-tether",
+      "sh3-domain",
+      "sh2-domain",
+      "linker",
+      "kinase-n-lobe",
+      "kinase-c-lobe",
+      "activation-loop"
+    ],
+    "anchors": {
+      "membrane-tether": {
+        "point": [
+          48,
+          20
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "SH3-proline-binding": {
+        "point": [
+          28,
+          55
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "SH2-phosphotyrosine-binding": {
+        "point": [
+          125,
+          56
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "kinase-active-site": {
+        "point": [
+          107,
+          118
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Lck domain order and membrane tether are schematic; not a solved molecular conformation.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5801066/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2857167/",
+        "https://www.biorender.com/template/t-cell-signaling"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "zap70",
+    "label": "ZAP70",
+    "label_zh": "ZAP70",
+    "file": "signaling/zap70.svg",
+    "category": "signaling",
+    "description": "Tandem N-terminal SH2 domains linked to an autoinhibitory region and C-terminal tyrosine kinase domain.",
+    "parts": [
+      "n-terminal-sh2-domain",
+      "interdomain-a",
+      "c-terminal-sh2-domain",
+      "interdomain-b",
+      "kinase-n-lobe",
+      "kinase-c-lobe",
+      "kinase-active-cleft",
+      "activation-loop"
+    ],
+    "anchors": {
+      "tandem-SH2-ITAM-binding": {
+        "point": [
+          52,
+          17
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "kinase-active-site": {
+        "point": [
+          101,
+          116
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "Lck-activation-loop-target": {
+        "point": [
+          114,
+          126
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "ZAP70 is shown with two adjacent SH2 domains and one kinase domain; cartoon does not encode the autoinhibited atomic structure.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5801066/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2857167/",
+        "https://www.biorender.com/template/t-cell-signaling"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "lat",
+    "label": "LAT",
+    "label_zh": "LAT",
+    "file": "signaling/lat.svg",
+    "category": "signaling",
+    "description": "Single-pass transmembrane adaptor with an extended cytosolic scaffold and separated phosphotyrosine docking sites.",
+    "parts": [
+      "membrane",
+      "transmembrane-helix",
+      "intracellular-scaffold",
+      "pY132-site",
+      "pY171-site",
+      "pY191-and-pY226-sites"
+    ],
+    "anchors": {
+      "membrane": {
+        "point": [
+          80,
+          23
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "PLCγ1-pY132-site": {
+        "point": [
+          101,
+          67
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "GRB2-pY171-site": {
+        "point": [
+          55,
+          96
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "GRB2-GADS-pY191-site": {
+        "point": [
+          104,
+          122
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "GADS-pY226-site": {
+        "point": [
+          55,
+          140
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "LAT is drawn as a membrane-tethered intrinsically extended scaffold; phosphotyrosine locations are schematic and separated for scene docking.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5801066/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892427/",
+        "https://www.biorender.com/template/t-cell-signaling"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "grb2",
+    "label": "GRB2",
+    "label_zh": "GRB2",
+    "file": "signaling/grb2.svg",
+    "category": "signaling",
+    "description": "Three-domain adaptor arranged SH3–SH2–SH3, with terminal SH3 surfaces for proline-rich ligands and a central phosphotyrosine-binding SH2 domain.",
+    "parts": [
+      "linkers",
+      "n-terminal-sh3-domain",
+      "sh2-domain",
+      "c-terminal-sh3-domain"
+    ],
+    "anchors": {
+      "N-SH3-proline-binding": {
+        "point": [
+          16,
+          75
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "SH2-pY-binding": {
+        "point": [
+          81,
+          103
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "C-SH3-proline-binding": {
+        "point": [
+          144,
+          75
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Compact domain architecture schematic; domain outlines are not atomic structures.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5801066/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892427/",
+        "https://www.biorender.com/template/t-cell-signaling"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "sos",
+    "label": "SOS",
+    "label_zh": "SOS",
+    "file": "signaling/sos.svg",
+    "category": "signaling",
+    "description": "SOS-family Ras guanine-nucleotide exchange factor with REM and catalytic CDC25 homology domains and a Grb2-binding proline-rich tail.",
+    "parts": [
+      "n-terminal-helical-domain",
+      "rem-domain",
+      "cdc25-gef-domain",
+      "ras-binding-pocket",
+      "proline-rich-tail"
+    ],
+    "anchors": {
+      "Grb2-proline-rich-tail": {
+        "point": [
+          19,
+          132
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "Ras-GEF-face": {
+        "point": [
+          132,
+          89
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Representative SOS1 architecture; catalytic face and flexible tail are schematic.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5801066/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892427/",
+        "https://www.biorender.com/template/t-cell-signaling"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "ras",
+    "label": "Ras",
+    "label_zh": "Ras",
+    "file": "signaling/ras.svg",
+    "category": "signaling",
+    "description": "Small GTPase G-domain with switch regions, nucleotide pocket, and C-terminal membrane-targeting tail.",
+    "parts": [
+      "membrane",
+      "g-domain",
+      "switch-i",
+      "switch-ii",
+      "effector-facing-surface",
+      "nucleotide-pocket",
+      "hypervariable-tail"
+    ],
+    "anchors": {
+      "SOS-switch-interface": {
+        "point": [
+          121,
+          65
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "nucleotide-pocket": {
+        "point": [
+          85,
+          71
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          78,
+          139
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "Raf-effector-binding-site": {
+        "point": [
+          39,
+          93
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Generic Ras G-domain with nucleotide and switch regions; the separately placed GEF- and effector-facing docking points are schematic, not atomic interfaces.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5584742/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892427/"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "raf",
+    "label": "RAF",
+    "label_zh": "RAF",
+    "file": "signaling/raf.svg",
+    "category": "signaling",
+    "description": "Ras-effector kinase with N-terminal Ras-binding and cysteine-rich regions preceding its bilobal kinase domain.",
+    "parts": [
+      "ras-binding-domain",
+      "cysteine-rich-domain",
+      "linker",
+      "kinase-n-lobe",
+      "kinase-c-lobe",
+      "activation-loop"
+    ],
+    "anchors": {
+      "Ras-binding-domain": {
+        "point": [
+          16,
+          42
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "kinase-active-site": {
+        "point": [
+          115,
+          132
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "RAF-family architecture schematic; no isoform-specific regulatory state is implied.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5584742/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892427/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "mek",
+    "label": "MEK",
+    "label_zh": "MEK",
+    "file": "signaling/mek.svg",
+    "category": "signaling",
+    "description": "Dual-specificity MAPK kinase with an N-terminal ERK-docking segment, bilobal catalytic domain, and activation loop.",
+    "parts": [
+      "n-terminal-docking-tail",
+      "docking-groove",
+      "kinase-n-lobe",
+      "kinase-c-lobe",
+      "activation-loop"
+    ],
+    "anchors": {
+      "ERK-docking-site": {
+        "point": [
+          28,
+          37
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "kinase-active-site": {
+        "point": [
+          111,
+          105
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "activation-loop": {
+        "point": [
+          99,
+          105
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "MEK1/2-like schematic; docking segment and activation loop are simplified.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5584742/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892427/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "erk",
+    "label": "ERK",
+    "label_zh": "ERK",
+    "file": "signaling/erk.svg",
+    "category": "signaling",
+    "description": "MAP kinase bilobal fold with a docking surface and exposed TEY-containing activation loop.",
+    "parts": [
+      "docking-loop",
+      "kinase-n-lobe",
+      "kinase-c-lobe",
+      "tey-activation-loop"
+    ],
+    "anchors": {
+      "MEK-docking-site": {
+        "point": [
+          17,
+          35
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "kinase-active-site": {
+        "point": [
+          122,
+          114
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "activation-loop": {
+        "point": [
+          84,
+          119
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "ERK1/2-like kinase schematic; TEY loop shown as a phosphorylation-sensitive region.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5584742/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892427/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "plcg1",
+    "label": "PLCγ1",
+    "label_zh": "PLCγ1",
+    "file": "signaling/plcg1.svg",
+    "category": "signaling",
+    "description": "Multidomain phospholipase with PH, EF-hand, C2, split X/Y catalytic domains, tandem SH2 domains, and SH3 domain.",
+    "parts": [
+      "domain-linkers",
+      "ph-domain",
+      "ef-hand-domain",
+      "c2-domain",
+      "catalytic-x-domain",
+      "catalytic-y-domain",
+      "n-terminal-sh2-domain",
+      "c-terminal-sh2-domain",
+      "sh3-domain",
+      "catalytic-cleft"
+    ],
+    "anchors": {
+      "LAT-pY-SH2": {
+        "point": [
+          144,
+          88
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "PIP2-catalytic-cleft": {
+        "point": [
+          80,
+          119
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "SLP76-proline-SH3": {
+        "point": [
+          107,
+          142
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "PLCγ1 domain map is schematic; catalytic cleft and interaction domains are positioned for scene composition.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC102173/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5549626/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2740335/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "pip2",
+    "label": "PIP2",
+    "label_zh": "PIP2",
+    "file": "signaling/pip2.svg",
+    "category": "signaling",
+    "description": "Phosphatidylinositol-4,5-bisphosphate with two inositol phosphate groups, glycerol, and two membrane-inserted acyl tails.",
+    "parts": [
+      "membrane",
+      "acyl-tails",
+      "glycerol-backbone",
+      "inositol-ring",
+      "4-5-phosphate-groups"
+    ],
+    "anchors": {
+      "PLC-catalytic-headgroup": {
+        "point": [
+          80,
+          13
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          119
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Molecular lipid schematic; headgroup and tails are not a stereochemical rendering.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2740335/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC102173/"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  },
+  {
+    "id": "ip3",
+    "label": "IP3",
+    "label_zh": "IP3",
+    "file": "signaling/ip3.svg",
+    "category": "signaling",
+    "description": "Soluble inositol-1,4,5-trisphosphate with three phosphate substituents on an inositol ring.",
+    "parts": [
+      "inositol-ring",
+      "1-4-5-phosphate-groups",
+      "remaining-hydroxyl-groups"
+    ],
+    "anchors": {
+      "IP3-receptor-binding-face": {
+        "point": [
+          126,
+          87
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Second-messenger structure schematic; no stereochemical or conformational claim.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2740335/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC102173/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "dag",
+    "label": "DAG",
+    "label_zh": "DAG",
+    "file": "signaling/dag.svg",
+    "category": "signaling",
+    "description": "Diacylglycerol with a glycerol headgroup and two acyl chains retained in the membrane.",
+    "parts": [
+      "membrane",
+      "acyl-tails",
+      "glycerol-backbone",
+      "diacylglycerol-headgroup"
+    ],
+    "anchors": {
+      "C1-domain-binding-headgroup": {
+        "point": [
+          80,
+          32
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          80,
+          118
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      }
+    },
+    "scope": "Membrane-associated second-messenger schematic; lipid composition is not specified.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2740335/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC102173/"
+      ],
+      "license": "MIT"
+    },
+    "context_parts": [
+      "membrane"
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+Synthetic demonstration data. Supplied values with no scaling or added statistics. Named column-block metadata defines matrix panels; tracks join by row names. All matrix tiles are 5 mm squares. Native annotation axes follow count data; fractions retain the scientific 0–1 domain. RdBu is centered at 0 and saturates outside [-2, 2].

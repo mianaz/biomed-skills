@@ -1,0 +1,2589 @@
+{
+  "schema": "bioinfospace.plot-tuner/2",
+  "engine": "ggplot2",
+  "name": "demo.R",
+  "source_file": "demo.R",
+  "object_name": "plots",
+  "editor_version": 3,
+  "canvas": {
+    "width": 131,
+    "height": 68
+  },
+  "stat_data": {
+    "Response": [
+      {
+        "group": "Control",
+        "value": 2.5
+      },
+      {
+        "group": "Control",
+        "value": 3.1
+      },
+      {
+        "group": "Control",
+        "value": 2.8
+      },
+      {
+        "group": "Control",
+        "value": 3.4
+      },
+      {
+        "group": "Control",
+        "value": 2.9
+      },
+      {
+        "group": "Control",
+        "value": 3.3
+      },
+      {
+        "group": "Treated",
+        "value": 4.2
+      },
+      {
+        "group": "Treated",
+        "value": 4.9
+      },
+      {
+        "group": "Treated",
+        "value": 4.5
+      },
+      {
+        "group": "Treated",
+        "value": 5.2
+      },
+      {
+        "group": "Treated",
+        "value": 4.6
+      },
+      {
+        "group": "Treated",
+        "value": 5.1
+      }
+    ]
+  },
+  "stat_object": "stats_data",
+  "panels": [
+    {
+      "id": "Response",
+      "name": "Response",
+      "x": 5,
+      "y": 5,
+      "width": 58,
+      "height": 58,
+      "region": {
+        "x": 10.1217,
+        "y": 7.4444,
+        "width": 46.121,
+        "height": 35.6986,
+        "x_labels": [
+          "Control",
+          "Treated"
+        ],
+        "x_positions": [
+          22.7002,
+          43.6643
+        ]
+      },
+      "layers": [
+        {
+          "id": "Response/plot",
+          "role": "plot",
+          "x": 0,
+          "y": 0,
+          "width": 58,
+          "height": 58,
+          "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"164.41pt\" height=\"164.41pt\" viewBox=\"0 0 164.41 164.41\">\n  <g class=\"svglite\">\n    <defs>\n      <style type=\"text/css\"><![CDATA[\n    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {\n      fill: none;\n      stroke: #000000;\n      stroke-linecap: round;\n      stroke-linejoin: round;\n      stroke-miterlimit: 10.00;\n    }\n    .svglite text {\n      white-space: pre;\n    }\n    .svglite g.glyphgroup path {\n      fill: inherit;\n      stroke: none;\n    }\n  ]]><\/style>\n    <\/defs>\n    <rect width=\"100%\" height=\"100%\" style=\"stroke:none;fill:#FFFFFF\" data-tuner-id=\"Response/plot:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"50\" data-tuner-cy=\"50\" data-tuner-size=\"2\"/>\n    <defs>\n      <clipPath id=\"Response_plot_cpMC4wMHwxNjQuNDF8MC4wMHwxNjQuNDE=\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"164.41\" height=\"164.41\"/>\n      <\/clipPath>\n    <\/defs>\n    <g clip-path=\"url(#Response_plot_cpMC4wMHwxNjQuNDF8MC4wMHwxNjQuNDE=)\">\n      <rect x=\"-0.000000000000016\" y=\"0.00\" width=\"164.41\" height=\"164.41\" style=\"stroke-width:1.07;stroke:#FFFFFF;fill:#FFFFFF\" data-tuner-owner=\"Response/plot:root.g1\" data-tuner-role=\"background\" data-tuner-id=\"Response/plot:root.g1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"82.205\" data-tuner-cy=\"82.205\" data-tuner-size=\"2\"/>\n    <\/g>\n    <defs>\n      <clipPath id=\"Response_plot_cpMjguNjl8MTU5LjQzfDIxLjEwfDEyMi4zMA==\">\n        <rect x=\"28.69\" y=\"21.10\" width=\"130.74\" height=\"101.19\"/>\n      <\/clipPath>\n    <\/defs>\n    <g clip-path=\"url(#Response_plot_cpMjguNjl8MTU5LjQzfDIxLjEwfDEyMi4zMA==)\">\n      <rect x=\"28.69\" y=\"21.10\" width=\"130.74\" height=\"101.19\" style=\"stroke-width:1.07;stroke:none;fill:#FFFFFF\" data-tuner-owner=\"Response/plot:root.g6.c1.c1\" data-tuner-role=\"background\" data-tuner-id=\"Response/plot:root.g6.c1.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"94.06\" data-tuner-cy=\"71.695\" data-tuner-size=\"2\"/>\n      <rect x=\"48.00\" y=\"77.14\" width=\"32.68\" height=\"45.16\" style=\"stroke-width:1.07;stroke:none;stroke-linecap:butt;stroke-linejoin:miter;fill:#A6CEE3;fill-opacity:0.35\" data-tuner-owner=\"Response/plot:root.g6.c3\" data-tuner-role=\"data-bar\" data-tuner-group=\"Response/plot:series-root.g6.c3\" data-tuner-group-label=\"条形系列 6\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c3:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"64.34\" data-tuner-cy=\"99.72\" data-tuner-size=\"2\"/>\n      <rect x=\"107.43\" y=\"50.79\" width=\"32.68\" height=\"71.50\" style=\"stroke-width:1.07;stroke:none;stroke-linecap:butt;stroke-linejoin:miter;fill:#1F78B4;fill-opacity:0.35\" data-tuner-owner=\"Response/plot:root.g6.c3\" data-tuner-role=\"data-bar\" data-tuner-group=\"Response/plot:series-root.g6.c3\" data-tuner-group-label=\"条形系列 6\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c3:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"123.77\" data-tuner-cy=\"86.54\" data-tuner-size=\"2\"/>\n      <polyline points=\"59.00,72.10 69.70,72.10 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g6.c4\" data-tuner-role=\"data-line\" data-tuner-group=\"Response/plot:series-root.g6.c4\" data-tuner-group-label=\"线 / 误差线系列\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c4:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"64.35\" data-tuner-cy=\"72.1\" data-tuner-size=\"2\"/>\n      <polyline points=\"64.35,72.10 64.35,82.17 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g6.c4\" data-tuner-role=\"data-line\" data-tuner-group=\"Response/plot:series-root.g6.c4\" data-tuner-group-label=\"线 / 误差线系列\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c4:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"64.35\" data-tuner-cy=\"77.135\" data-tuner-size=\"2\"/>\n      <polyline points=\"59.00,82.17 69.70,82.17 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g6.c4\" data-tuner-role=\"data-line\" data-tuner-group=\"Response/plot:series-root.g6.c4\" data-tuner-group-label=\"线 / 误差线系列\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c4:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"64.35\" data-tuner-cy=\"82.17\" data-tuner-size=\"2\"/>\n      <polyline points=\"118.42,45.02 129.12,45.02 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g6.c4\" data-tuner-role=\"data-line\" data-tuner-group=\"Response/plot:series-root.g6.c4\" data-tuner-group-label=\"线 / 误差线系列\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c4:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"123.77\" data-tuner-cy=\"45.02\" data-tuner-size=\"2\"/>\n      <polyline points=\"123.77,45.02 123.77,56.56 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g6.c4\" data-tuner-role=\"data-line\" data-tuner-group=\"Response/plot:series-root.g6.c4\" data-tuner-group-label=\"线 / 误差线系列\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c4:node4\" data-tuner-leaf=\"1\" data-tuner-cx=\"123.77\" data-tuner-cy=\"50.79\" data-tuner-size=\"2\"/>\n      <polyline points=\"118.42,56.56 129.12,56.56 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g6.c4\" data-tuner-role=\"data-line\" data-tuner-group=\"Response/plot:series-root.g6.c4\" data-tuner-group-label=\"线 / 误差线系列\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c4:node5\" data-tuner-leaf=\"1\" data-tuner-cx=\"123.77\" data-tuner-cy=\"56.56\" data-tuner-size=\"2\"/>\n      <circle cx=\"67.80\" cy=\"84.14\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"67.8\" data-tuner-cy=\"84.14\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"67.98\" cy=\"75.93\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"67.98\" data-tuner-cy=\"75.93\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"62.57\" cy=\"80.19\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"62.57\" data-tuner-cy=\"80.19\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"67.10\" cy=\"70.59\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"67.1\" data-tuner-cy=\"70.59\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"65.53\" cy=\"78.07\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node4\" data-tuner-leaf=\"1\" data-tuner-cx=\"65.53\" data-tuner-cy=\"78.07\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"64.51\" cy=\"73.08\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node5\" data-tuner-leaf=\"1\" data-tuner-cx=\"64.51\" data-tuner-cy=\"73.08\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"125.74\" cy=\"59.10\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node6\" data-tuner-leaf=\"1\" data-tuner-cx=\"125.74\" data-tuner-cy=\"59.1\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"120.73\" cy=\"48.46\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node7\" data-tuner-leaf=\"1\" data-tuner-cx=\"120.73\" data-tuner-cy=\"48.46\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"125.08\" cy=\"54.07\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node8\" data-tuner-leaf=\"1\" data-tuner-cx=\"125.08\" data-tuner-cy=\"54.07\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"125.48\" cy=\"44.45\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node9\" data-tuner-leaf=\"1\" data-tuner-cx=\"125.48\" data-tuner-cy=\"44.45\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"123.42\" cy=\"52.46\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node10\" data-tuner-leaf=\"1\" data-tuner-cx=\"123.42\" data-tuner-cy=\"52.46\" data-tuner-size=\"1.30527777777778\"/>\n      <circle cx=\"125.60\" cy=\"44.99\" r=\"1.85\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Response/plot:root.g6.c5\" data-tuner-role=\"data-point\" data-tuner-group=\"Response/plot:series-root.g6.c5\" data-tuner-group-label=\"点系列 8\" data-tuner-group-role=\"series\" data-tuner-id=\"Response/plot:root.g6.c5:node11\" data-tuner-leaf=\"1\" data-tuner-cx=\"125.6\" data-tuner-cy=\"44.99\" data-tuner-size=\"1.30527777777778\"/>\n    <\/g>\n    <g clip-path=\"url(#Response_plot_cpMC4wMHwxNjQuNDF8MC4wMHwxNjQuNDE=)\">\n      <polyline points=\"28.69,122.30 28.69,21.10 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:square\" data-tuner-owner=\"Response/plot:root.g3.c1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"28.69\" data-tuner-cy=\"71.7\" data-tuner-size=\"2\"/>\n      <text x=\"23.76\" y=\"126.05\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Response/plot:root.g3.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c2.g2.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"23.76\" data-tuner-cy=\"126.05\" data-tuner-size=\"2\">0<\/text>\n      <text x=\"23.76\" y=\"95.95\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Response/plot:root.g3.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c2.g2.c1:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"23.76\" data-tuner-cy=\"95.95\" data-tuner-size=\"2\">2<\/text>\n      <text x=\"23.76\" y=\"65.84\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Response/plot:root.g3.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c2.g2.c1:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"23.76\" data-tuner-cy=\"65.84\" data-tuner-size=\"2\">4<\/text>\n      <text x=\"23.76\" y=\"35.74\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Response/plot:root.g3.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c2.g2.c1:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"23.76\" data-tuner-cy=\"35.74\" data-tuner-size=\"2\">6<\/text>\n      <polyline points=\"25.95,122.30 28.69,122.30 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g3.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c2.g1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"27.32\" data-tuner-cy=\"122.3\" data-tuner-size=\"2\"/>\n      <polyline points=\"25.95,92.19 28.69,92.19 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g3.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c2.g1:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"27.32\" data-tuner-cy=\"92.19\" data-tuner-size=\"2\"/>\n      <polyline points=\"25.95,62.08 28.69,62.08 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g3.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c2.g1:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"27.32\" data-tuner-cy=\"62.08\" data-tuner-size=\"2\"/>\n      <polyline points=\"25.95,31.98 28.69,31.98 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g3.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g3.c2.g1:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"27.32\" data-tuner-cy=\"31.98\" data-tuner-size=\"2\"/>\n      <polyline points=\"28.69,122.30 159.43,122.30 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:square\" data-tuner-owner=\"Response/plot:root.g7.c1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Response/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g7.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"94.06\" data-tuner-cy=\"122.3\" data-tuner-size=\"2\"/>\n      <polyline points=\"64.35,125.03 64.35,122.30 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g7.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Response/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g7.c2.g1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"64.35\" data-tuner-cy=\"123.665\" data-tuner-size=\"2\"/>\n      <polyline points=\"123.77,125.03 123.77,122.30 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Response/plot:root.g7.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Response/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g7.c2.g1:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"123.77\" data-tuner-cy=\"123.665\" data-tuner-size=\"2\"/>\n      <text transform=\"translate(69.66,132.54) rotate(-45)\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"33.86px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Response/plot:root.g7.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Response/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g7.c2.g2.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"69.66\" data-tuner-cy=\"132.54\" data-tuner-size=\"2\">Control<\/text>\n      <text transform=\"translate(129.09,132.54) rotate(-45)\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"35.81px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Response/plot:root.g7.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Response/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g7.c2.g2.c1:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"129.09\" data-tuner-cy=\"132.54\" data-tuner-size=\"2\">Treated<\/text>\n      <text transform=\"translate(12.86,71.70) rotate(-90)\" text-anchor=\"middle\" style=\"font-size:11.00px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"71.56px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Response/plot:root.g13.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Response/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Response/plot:root.g13.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"12.86\" data-tuner-cy=\"71.7\" data-tuner-size=\"2\">Relative signal<\/text>\n      <text x=\"28.69\" y=\"13.21\" style=\"font-size:11.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"51.77px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Response/plot:root.g21.c1\" data-tuner-role=\"text-title\" data-tuner-id=\"Response/plot:root.g21.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"28.69\" data-tuner-cy=\"13.21\" data-tuner-size=\"2\">Response<\/text>\n    <\/g>\n  <\/g>\n<\/svg>\n",
+          "elements": [
+            {
+              "id": "Response/plot:root.g1",
+              "label": "background",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g1:node0"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g3.c1",
+              "label": "axis-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g3.c1:node0"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g1",
+              "label": "axis-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g3.c2.g1:node0",
+                "Response/plot:root.g3.c2.g1:node1",
+                "Response/plot:root.g3.c2.g1:node2",
+                "Response/plot:root.g3.c2.g1:node3"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g2.c1",
+              "label": "0 · 2 · 4 · 6",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 10.5,
+              "members": [
+                "Response/plot:root.g3.c2.g2.c1:node0",
+                "Response/plot:root.g3.c2.g2.c1:node1",
+                "Response/plot:root.g3.c2.g2.c1:node2",
+                "Response/plot:root.g3.c2.g2.c1:node3"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g6.c1.c1",
+              "label": "background",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g6.c1.c1:node0"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g6.c3",
+              "label": "data-bar",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g6.c3:node0",
+                "Response/plot:root.g6.c3:node1"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g6.c4",
+              "label": "data-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g6.c4:node0",
+                "Response/plot:root.g6.c4:node1",
+                "Response/plot:root.g6.c4:node2",
+                "Response/plot:root.g6.c4:node3",
+                "Response/plot:root.g6.c4:node4",
+                "Response/plot:root.g6.c4:node5"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g6.c5",
+              "label": "data-point",
+              "kind": "group",
+              "role": "group",
+              "font_pt": [4.9283, 4.9283, 4.9283, 4.9283, 4.9283, 4.9283, 4.9283, 4.9283, 4.9283, 4.9283, 4.9283, 4.9283],
+              "members": [
+                "Response/plot:root.g6.c5:node0",
+                "Response/plot:root.g6.c5:node1",
+                "Response/plot:root.g6.c5:node2",
+                "Response/plot:root.g6.c5:node3",
+                "Response/plot:root.g6.c5:node4",
+                "Response/plot:root.g6.c5:node5",
+                "Response/plot:root.g6.c5:node6",
+                "Response/plot:root.g6.c5:node7",
+                "Response/plot:root.g6.c5:node8",
+                "Response/plot:root.g6.c5:node9",
+                "Response/plot:root.g6.c5:node10",
+                "Response/plot:root.g6.c5:node11"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g7.c1",
+              "label": "axis-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g7.c1:node0"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g7.c2.g1",
+              "label": "axis-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g7.c2.g1:node0",
+                "Response/plot:root.g7.c2.g1:node1"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g7.c2.g2.c1",
+              "label": "Control · Treated",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 10.5,
+              "members": [
+                "Response/plot:root.g7.c2.g2.c1:node0",
+                "Response/plot:root.g7.c2.g2.c1:node1"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g13.c1",
+              "label": "Relative signal",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Response/plot:root.g13.c1:node0"
+              ]
+            },
+            {
+              "id": "Response/plot:root.g21.c1",
+              "label": "Response",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11.5,
+              "members": [
+                "Response/plot:root.g21.c1:node0"
+              ]
+            },
+            {
+              "id": "Response/plot:series-root.g6.c3",
+              "kind": "group",
+              "role": "series",
+              "label": "条形系列 6",
+              "members": [
+                "Response/plot:root.g6.c3:node0",
+                "Response/plot:root.g6.c3:node1"
+              ]
+            },
+            {
+              "id": "Response/plot:series-root.g6.c4",
+              "kind": "group",
+              "role": "series",
+              "label": "线 / 误差线系列",
+              "members": [
+                "Response/plot:root.g6.c4:node0",
+                "Response/plot:root.g6.c4:node1",
+                "Response/plot:root.g6.c4:node2",
+                "Response/plot:root.g6.c4:node3",
+                "Response/plot:root.g6.c4:node4",
+                "Response/plot:root.g6.c4:node5"
+              ]
+            },
+            {
+              "id": "Response/plot:series-root.g6.c5",
+              "kind": "group",
+              "role": "series",
+              "label": "点系列 8",
+              "members": [
+                "Response/plot:root.g6.c5:node0",
+                "Response/plot:root.g6.c5:node1",
+                "Response/plot:root.g6.c5:node2",
+                "Response/plot:root.g6.c5:node3",
+                "Response/plot:root.g6.c5:node4",
+                "Response/plot:root.g6.c5:node5",
+                "Response/plot:root.g6.c5:node6",
+                "Response/plot:root.g6.c5:node7",
+                "Response/plot:root.g6.c5:node8",
+                "Response/plot:root.g6.c5:node9",
+                "Response/plot:root.g6.c5:node10",
+                "Response/plot:root.g6.c5:node11"
+              ]
+            },
+            {
+              "id": "Response/plot:axis-left",
+              "kind": "group",
+              "role": "axis",
+              "label": "Y 坐标轴",
+              "members": [
+                "Response/plot:root.g3.c1:node0",
+                "Response/plot:root.g3.c2.g2.c1:node0",
+                "Response/plot:root.g3.c2.g2.c1:node1",
+                "Response/plot:root.g3.c2.g2.c1:node2",
+                "Response/plot:root.g3.c2.g2.c1:node3",
+                "Response/plot:root.g3.c2.g1:node0",
+                "Response/plot:root.g3.c2.g1:node1",
+                "Response/plot:root.g3.c2.g1:node2",
+                "Response/plot:root.g3.c2.g1:node3",
+                "Response/plot:root.g13.c1:node0"
+              ]
+            },
+            {
+              "id": "Response/plot:axis-bottom",
+              "kind": "group",
+              "role": "axis",
+              "label": "X 坐标轴",
+              "members": [
+                "Response/plot:root.g7.c1:node0",
+                "Response/plot:root.g7.c2.g1:node0",
+                "Response/plot:root.g7.c2.g1:node1",
+                "Response/plot:root.g7.c2.g2.c1:node0",
+                "Response/plot:root.g7.c2.g2.c1:node1"
+              ]
+            },
+            {
+              "id": "Response/plot:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "background",
+              "label": "background 1",
+              "groups": [],
+              "anchor": [
+                50,
+                50
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g1:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "background",
+              "label": "background 2",
+              "groups": [
+                "Response/plot:root.g1"
+              ],
+              "anchor": [
+                82.205,
+                82.205
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "#FFFFFF",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c1.c1:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "background",
+              "label": "background 3",
+              "groups": [
+                "Response/plot:root.g6.c1.c1"
+              ],
+              "anchor": [
+                94.06,
+                71.695
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c3:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "data-bar",
+              "label": "data-bar 4",
+              "groups": [
+                "Response/plot:root.g6.c3",
+                "Response/plot:series-root.g6.c3"
+              ],
+              "anchor": [
+                64.34,
+                99.72
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#A6CEE3",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c3:node1",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "data-bar",
+              "label": "data-bar 5",
+              "groups": [
+                "Response/plot:root.g6.c3",
+                "Response/plot:series-root.g6.c3"
+              ],
+              "anchor": [
+                123.77,
+                86.54
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#1F78B4",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c4:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "data-line",
+              "label": "data-line 6",
+              "groups": [
+                "Response/plot:root.g6.c4",
+                "Response/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                64.35,
+                72.1
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c4:node1",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "data-line",
+              "label": "data-line 7",
+              "groups": [
+                "Response/plot:root.g6.c4",
+                "Response/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                64.35,
+                77.135
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c4:node2",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "data-line",
+              "label": "data-line 8",
+              "groups": [
+                "Response/plot:root.g6.c4",
+                "Response/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                64.35,
+                82.17
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c4:node3",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "data-line",
+              "label": "data-line 9",
+              "groups": [
+                "Response/plot:root.g6.c4",
+                "Response/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                123.77,
+                45.02
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c4:node4",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "data-line",
+              "label": "data-line 10",
+              "groups": [
+                "Response/plot:root.g6.c4",
+                "Response/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                123.77,
+                50.79
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c4:node5",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "data-line",
+              "label": "data-line 11",
+              "groups": [
+                "Response/plot:root.g6.c4",
+                "Response/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                123.77,
+                56.56
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node0",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 12",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                67.8,
+                84.14
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node1",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 13",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                67.98,
+                75.93
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node2",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 14",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                62.57,
+                80.19
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node3",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 15",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                67.1,
+                70.59
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node4",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 16",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                65.53,
+                78.07
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node5",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 17",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                64.51,
+                73.08
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node6",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 18",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                125.74,
+                59.1
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node7",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 19",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                120.73,
+                48.46
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node8",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 20",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                125.08,
+                54.07
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node9",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 21",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                125.48,
+                44.45
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node10",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 22",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                123.42,
+                52.46
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g6.c5:node11",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 23",
+              "groups": [
+                "Response/plot:root.g6.c5",
+                "Response/plot:series-root.g6.c5"
+              ],
+              "anchor": [
+                125.6,
+                44.99
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3053,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c1:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 24",
+              "groups": [
+                "Response/plot:root.g3.c1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                28.69,
+                71.7
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g2.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "0",
+              "groups": [
+                "Response/plot:root.g3.c2.g2.c1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                23.76,
+                126.05
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g2.c1:node1",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "2",
+              "groups": [
+                "Response/plot:root.g3.c2.g2.c1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                23.76,
+                95.95
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g2.c1:node2",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "4",
+              "groups": [
+                "Response/plot:root.g3.c2.g2.c1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                23.76,
+                65.84
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g2.c1:node3",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "6",
+              "groups": [
+                "Response/plot:root.g3.c2.g2.c1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                23.76,
+                35.74
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g1:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 29",
+              "groups": [
+                "Response/plot:root.g3.c2.g1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                27.32,
+                122.3
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g1:node1",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 30",
+              "groups": [
+                "Response/plot:root.g3.c2.g1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                27.32,
+                92.19
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g1:node2",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 31",
+              "groups": [
+                "Response/plot:root.g3.c2.g1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                27.32,
+                62.08
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g3.c2.g1:node3",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 32",
+              "groups": [
+                "Response/plot:root.g3.c2.g1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                27.32,
+                31.98
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g7.c1:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 33",
+              "groups": [
+                "Response/plot:root.g7.c1",
+                "Response/plot:axis-bottom"
+              ],
+              "anchor": [
+                94.06,
+                122.3
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g7.c2.g1:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 34",
+              "groups": [
+                "Response/plot:root.g7.c2.g1",
+                "Response/plot:axis-bottom"
+              ],
+              "anchor": [
+                64.35,
+                123.665
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g7.c2.g1:node1",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 35",
+              "groups": [
+                "Response/plot:root.g7.c2.g1",
+                "Response/plot:axis-bottom"
+              ],
+              "anchor": [
+                123.77,
+                123.665
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g7.c2.g2.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "Control",
+              "groups": [
+                "Response/plot:root.g7.c2.g2.c1",
+                "Response/plot:axis-bottom"
+              ],
+              "anchor": [
+                69.66,
+                132.54
+              ],
+              "angle_deg": -45,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g7.c2.g2.c1:node1",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "Treated",
+              "groups": [
+                "Response/plot:root.g7.c2.g2.c1",
+                "Response/plot:axis-bottom"
+              ],
+              "anchor": [
+                129.09,
+                132.54
+              ],
+              "angle_deg": -45,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g13.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "Relative signal",
+              "groups": [
+                "Response/plot:root.g13.c1",
+                "Response/plot:axis-left"
+              ],
+              "anchor": [
+                12.86,
+                71.7
+              ],
+              "angle_deg": -90,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Response/plot:root.g21.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-title",
+              "label": "Response",
+              "groups": [
+                "Response/plot:root.g21.c1"
+              ],
+              "anchor": [
+                28.69,
+                13.21
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            }
+          ]
+        }
+      ],
+      "legend_items": [
+        {
+          "label": "Control",
+          "color": "#A6CEE3"
+        },
+        {
+          "label": "Treated",
+          "color": "#1F78B4"
+        }
+      ]
+    },
+    {
+      "id": "Trajectory",
+      "name": "Trajectory",
+      "x": 68,
+      "y": 5,
+      "width": 58,
+      "height": 58,
+      "region": {
+        "x": 10.1217,
+        "y": 7.4444,
+        "width": 46.121,
+        "height": 39.0638,
+        "x_labels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "x_positions": [
+          12.2181,
+          26.1942,
+          40.1702,
+          54.1463
+        ]
+      },
+      "layers": [
+        {
+          "id": "Trajectory/plot",
+          "role": "plot",
+          "x": 0,
+          "y": 0,
+          "width": 58,
+          "height": 58,
+          "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"164.41pt\" height=\"164.41pt\" viewBox=\"0 0 164.41 164.41\">\n  <g class=\"svglite\">\n    <defs>\n      <style type=\"text/css\"><![CDATA[\n    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {\n      fill: none;\n      stroke: #000000;\n      stroke-linecap: round;\n      stroke-linejoin: round;\n      stroke-miterlimit: 10.00;\n    }\n    .svglite text {\n      white-space: pre;\n    }\n    .svglite g.glyphgroup path {\n      fill: inherit;\n      stroke: none;\n    }\n  ]]><\/style>\n    <\/defs>\n    <rect width=\"100%\" height=\"100%\" style=\"stroke:none;fill:#FFFFFF\" data-tuner-id=\"Trajectory/plot:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"50\" data-tuner-cy=\"50\" data-tuner-size=\"2\"/>\n    <defs>\n      <clipPath id=\"Trajectory_plot_cpMC4wMHwxNjQuNDF8MC4wMHwxNjQuNDE=\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"164.41\" height=\"164.41\"/>\n      <\/clipPath>\n    <\/defs>\n    <g clip-path=\"url(#Trajectory_plot_cpMC4wMHwxNjQuNDF8MC4wMHwxNjQuNDE=)\">\n      <rect x=\"-0.000000000000016\" y=\"0.00\" width=\"164.41\" height=\"164.41\" style=\"stroke-width:1.07;stroke:#FFFFFF;fill:#FFFFFF\" data-tuner-owner=\"Trajectory/plot:root.g1\" data-tuner-role=\"background\" data-tuner-id=\"Trajectory/plot:root.g1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"82.205\" data-tuner-cy=\"82.205\" data-tuner-size=\"2\"/>\n    <\/g>\n    <defs>\n      <clipPath id=\"Trajectory_plot_cpMjguNjl8MTU5LjQzfDIxLjEwfDEzMS44Mw==\">\n        <rect x=\"28.69\" y=\"21.10\" width=\"130.74\" height=\"110.73\"/>\n      <\/clipPath>\n    <\/defs>\n    <g clip-path=\"url(#Trajectory_plot_cpMjguNjl8MTU5LjQzfDIxLjEwfDEzMS44Mw==)\">\n      <rect x=\"28.69\" y=\"21.10\" width=\"130.74\" height=\"110.73\" style=\"stroke-width:1.07;stroke:none;fill:#FFFFFF\" data-tuner-owner=\"Trajectory/plot:root.g6.c1.c1\" data-tuner-role=\"background\" data-tuner-id=\"Trajectory/plot:root.g6.c1.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"94.06\" data-tuner-cy=\"76.465\" data-tuner-size=\"2\"/>\n      <polyline points=\"34.63,126.80 74.25,113.20 113.87,99.59 153.49,88.71 \" style=\"stroke-width:1.07;stroke:#A6CEE3;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g6.c3\" data-tuner-role=\"data-line\" data-tuner-group=\"Trajectory/plot:series-root.g6.c3\" data-tuner-group-label=\"线 / 误差线系列\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c3:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"94.06\" data-tuner-cy=\"107.755\" data-tuner-size=\"2\"/>\n      <polyline points=\"34.63,126.80 74.25,96.87 113.87,61.50 153.49,26.14 \" style=\"stroke-width:1.07;stroke:#1F78B4;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g6.c3\" data-tuner-role=\"data-line\" data-tuner-group=\"Trajectory/plot:series-root.g6.c3\" data-tuner-group-label=\"线 / 误差线系列\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c3:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"94.06\" data-tuner-cy=\"76.47\" data-tuner-size=\"2\"/>\n      <circle cx=\"34.63\" cy=\"126.80\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Trajectory/plot:root.g6.c4\" data-tuner-role=\"data-point\" data-tuner-group=\"Trajectory/plot:series-root.g6.c4\" data-tuner-group-label=\"点系列 7\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c4:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"34.63\" data-tuner-cy=\"126.8\" data-tuner-size=\"1.37583333333333\"/>\n      <circle cx=\"74.25\" cy=\"113.20\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Trajectory/plot:root.g6.c4\" data-tuner-role=\"data-point\" data-tuner-group=\"Trajectory/plot:series-root.g6.c4\" data-tuner-group-label=\"点系列 7\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c4:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"74.25\" data-tuner-cy=\"113.2\" data-tuner-size=\"1.37583333333333\"/>\n      <circle cx=\"113.87\" cy=\"99.59\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Trajectory/plot:root.g6.c4\" data-tuner-role=\"data-point\" data-tuner-group=\"Trajectory/plot:series-root.g6.c4\" data-tuner-group-label=\"点系列 7\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c4:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"113.87\" data-tuner-cy=\"99.59\" data-tuner-size=\"1.37583333333333\"/>\n      <circle cx=\"153.49\" cy=\"88.71\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Trajectory/plot:root.g6.c4\" data-tuner-role=\"data-point\" data-tuner-group=\"Trajectory/plot:series-root.g6.c4\" data-tuner-group-label=\"点系列 7\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c4:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"153.49\" data-tuner-cy=\"88.71\" data-tuner-size=\"1.37583333333333\"/>\n      <circle cx=\"34.63\" cy=\"126.80\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Trajectory/plot:root.g6.c4\" data-tuner-role=\"data-point\" data-tuner-group=\"Trajectory/plot:series-root.g6.c4\" data-tuner-group-label=\"点系列 7\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c4:node4\" data-tuner-leaf=\"1\" data-tuner-cx=\"34.63\" data-tuner-cy=\"126.8\" data-tuner-size=\"1.37583333333333\"/>\n      <circle cx=\"74.25\" cy=\"96.87\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Trajectory/plot:root.g6.c4\" data-tuner-role=\"data-point\" data-tuner-group=\"Trajectory/plot:series-root.g6.c4\" data-tuner-group-label=\"点系列 7\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c4:node5\" data-tuner-leaf=\"1\" data-tuner-cx=\"74.25\" data-tuner-cy=\"96.87\" data-tuner-size=\"1.37583333333333\"/>\n      <circle cx=\"113.87\" cy=\"61.50\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Trajectory/plot:root.g6.c4\" data-tuner-role=\"data-point\" data-tuner-group=\"Trajectory/plot:series-root.g6.c4\" data-tuner-group-label=\"点系列 7\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c4:node6\" data-tuner-leaf=\"1\" data-tuner-cx=\"113.87\" data-tuner-cy=\"61.5\" data-tuner-size=\"1.37583333333333\"/>\n      <circle cx=\"153.49\" cy=\"26.14\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Trajectory/plot:root.g6.c4\" data-tuner-role=\"data-point\" data-tuner-group=\"Trajectory/plot:series-root.g6.c4\" data-tuner-group-label=\"点系列 7\" data-tuner-group-role=\"series\" data-tuner-id=\"Trajectory/plot:root.g6.c4:node7\" data-tuner-leaf=\"1\" data-tuner-cx=\"153.49\" data-tuner-cy=\"26.14\" data-tuner-size=\"1.37583333333333\"/>\n    <\/g>\n    <g clip-path=\"url(#Trajectory_plot_cpMC4wMHwxNjQuNDF8MC4wMHwxNjQuNDE=)\">\n      <polyline points=\"28.69,131.83 28.69,21.10 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:square\" data-tuner-owner=\"Trajectory/plot:root.g3.c1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"28.69\" data-tuner-cy=\"76.465\" data-tuner-size=\"2\"/>\n      <text x=\"23.76\" y=\"130.56\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g3.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c2.g2.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"23.76\" data-tuner-cy=\"130.56\" data-tuner-size=\"2\">1<\/text>\n      <text x=\"23.76\" y=\"103.35\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g3.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c2.g2.c1:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"23.76\" data-tuner-cy=\"103.35\" data-tuner-size=\"2\">2<\/text>\n      <text x=\"23.76\" y=\"76.15\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g3.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c2.g2.c1:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"23.76\" data-tuner-cy=\"76.15\" data-tuner-size=\"2\">3<\/text>\n      <text x=\"23.76\" y=\"48.94\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g3.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c2.g2.c1:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"23.76\" data-tuner-cy=\"48.94\" data-tuner-size=\"2\">4<\/text>\n      <polyline points=\"25.95,126.80 28.69,126.80 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g3.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c2.g1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"27.32\" data-tuner-cy=\"126.8\" data-tuner-size=\"2\"/>\n      <polyline points=\"25.95,99.59 28.69,99.59 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g3.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c2.g1:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"27.32\" data-tuner-cy=\"99.59\" data-tuner-size=\"2\"/>\n      <polyline points=\"25.95,72.39 28.69,72.39 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g3.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c2.g1:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"27.32\" data-tuner-cy=\"72.39\" data-tuner-size=\"2\"/>\n      <polyline points=\"25.95,45.18 28.69,45.18 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g3.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g3.c2.g1:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"27.32\" data-tuner-cy=\"45.18\" data-tuner-size=\"2\"/>\n      <polyline points=\"28.69,131.83 159.43,131.83 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:square\" data-tuner-owner=\"Trajectory/plot:root.g7.c1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"94.06\" data-tuner-cy=\"131.83\" data-tuner-size=\"2\"/>\n      <polyline points=\"34.63,134.57 34.63,131.83 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g7.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c2.g1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"34.63\" data-tuner-cy=\"133.2\" data-tuner-size=\"2\"/>\n      <polyline points=\"74.25,134.57 74.25,131.83 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g7.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c2.g1:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"74.25\" data-tuner-cy=\"133.2\" data-tuner-size=\"2\"/>\n      <polyline points=\"113.87,134.57 113.87,131.83 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g7.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c2.g1:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"113.87\" data-tuner-cy=\"133.2\" data-tuner-size=\"2\"/>\n      <polyline points=\"153.49,134.57 153.49,131.83 \" style=\"stroke-width:1.07;stroke:#000000;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/plot:root.g7.c2.g1\" data-tuner-role=\"axis-line\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c2.g1:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"153.49\" data-tuner-cy=\"133.2\" data-tuner-size=\"2\"/>\n      <text x=\"34.63\" y=\"144.28\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g7.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c2.g2.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"34.63\" data-tuner-cy=\"144.28\" data-tuner-size=\"2\">0<\/text>\n      <text x=\"74.25\" y=\"144.28\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g7.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c2.g2.c1:node1\" data-tuner-leaf=\"1\" data-tuner-cx=\"74.25\" data-tuner-cy=\"144.28\" data-tuner-size=\"2\">1<\/text>\n      <text x=\"113.87\" y=\"144.28\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g7.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c2.g2.c1:node2\" data-tuner-leaf=\"1\" data-tuner-cx=\"113.87\" data-tuner-cy=\"144.28\" data-tuner-size=\"2\">2<\/text>\n      <text x=\"153.49\" y=\"144.28\" text-anchor=\"end\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"5.84px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g7.c2.g2.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g7.c2.g2.c1:node3\" data-tuner-leaf=\"1\" data-tuner-cx=\"153.49\" data-tuner-cy=\"144.28\" data-tuner-size=\"2\">3<\/text>\n      <text x=\"94.06\" y=\"157.11\" text-anchor=\"middle\" style=\"font-size:11.00px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"57.66px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g12.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-bottom\" data-tuner-group-label=\"X 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g12.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"94.06\" data-tuner-cy=\"157.11\" data-tuner-size=\"2\">Time (days)<\/text>\n      <text transform=\"translate(12.86,76.47) rotate(-90)\" text-anchor=\"middle\" style=\"font-size:11.00px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"71.56px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g13.c1\" data-tuner-role=\"text-tick\" data-tuner-group=\"Trajectory/plot:axis-left\" data-tuner-group-label=\"Y 坐标轴\" data-tuner-group-role=\"axis\" data-tuner-id=\"Trajectory/plot:root.g13.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"12.86\" data-tuner-cy=\"76.47\" data-tuner-size=\"2\">Relative signal<\/text>\n      <text x=\"28.69\" y=\"13.21\" style=\"font-size:11.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"62.83px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/plot:root.g21.c1\" data-tuner-role=\"text-title\" data-tuner-id=\"Trajectory/plot:root.g21.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"28.69\" data-tuner-cy=\"13.21\" data-tuner-size=\"2\">Time course<\/text>\n    <\/g>\n  <\/g>\n<\/svg>\n",
+          "elements": [
+            {
+              "id": "Trajectory/plot:root.g1",
+              "label": "background",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c1",
+              "label": "axis-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g3.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g1",
+              "label": "axis-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g3.c2.g1:node0",
+                "Trajectory/plot:root.g3.c2.g1:node1",
+                "Trajectory/plot:root.g3.c2.g1:node2",
+                "Trajectory/plot:root.g3.c2.g1:node3"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g2.c1",
+              "label": "1 · 2 · 3 · 4",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 10.5,
+              "members": [
+                "Trajectory/plot:root.g3.c2.g2.c1:node0",
+                "Trajectory/plot:root.g3.c2.g2.c1:node1",
+                "Trajectory/plot:root.g3.c2.g2.c1:node2",
+                "Trajectory/plot:root.g3.c2.g2.c1:node3"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c1.c1",
+              "label": "background",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g6.c1.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c3",
+              "label": "data-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g6.c3:node0",
+                "Trajectory/plot:root.g6.c3:node1"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4",
+              "label": "data-point",
+              "kind": "group",
+              "role": "group",
+              "font_pt": [5.2128, 5.2128, 5.2128, 5.2128, 5.2128, 5.2128, 5.2128, 5.2128],
+              "members": [
+                "Trajectory/plot:root.g6.c4:node0",
+                "Trajectory/plot:root.g6.c4:node1",
+                "Trajectory/plot:root.g6.c4:node2",
+                "Trajectory/plot:root.g6.c4:node3",
+                "Trajectory/plot:root.g6.c4:node4",
+                "Trajectory/plot:root.g6.c4:node5",
+                "Trajectory/plot:root.g6.c4:node6",
+                "Trajectory/plot:root.g6.c4:node7"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c1",
+              "label": "axis-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g7.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g1",
+              "label": "axis-line",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g7.c2.g1:node0",
+                "Trajectory/plot:root.g7.c2.g1:node1",
+                "Trajectory/plot:root.g7.c2.g1:node2",
+                "Trajectory/plot:root.g7.c2.g1:node3"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g2.c1",
+              "label": "0 · 1 · 2 · 3",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 10.5,
+              "members": [
+                "Trajectory/plot:root.g7.c2.g2.c1:node0",
+                "Trajectory/plot:root.g7.c2.g2.c1:node1",
+                "Trajectory/plot:root.g7.c2.g2.c1:node2",
+                "Trajectory/plot:root.g7.c2.g2.c1:node3"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g12.c1",
+              "label": "Time (days)",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g12.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g13.c1",
+              "label": "Relative signal",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/plot:root.g13.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:root.g21.c1",
+              "label": "Time course",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11.5,
+              "members": [
+                "Trajectory/plot:root.g21.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:series-root.g6.c3",
+              "kind": "group",
+              "role": "series",
+              "label": "线 / 误差线系列",
+              "members": [
+                "Trajectory/plot:root.g6.c3:node0",
+                "Trajectory/plot:root.g6.c3:node1"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:series-root.g6.c4",
+              "kind": "group",
+              "role": "series",
+              "label": "点系列 7",
+              "members": [
+                "Trajectory/plot:root.g6.c4:node0",
+                "Trajectory/plot:root.g6.c4:node1",
+                "Trajectory/plot:root.g6.c4:node2",
+                "Trajectory/plot:root.g6.c4:node3",
+                "Trajectory/plot:root.g6.c4:node4",
+                "Trajectory/plot:root.g6.c4:node5",
+                "Trajectory/plot:root.g6.c4:node6",
+                "Trajectory/plot:root.g6.c4:node7"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:axis-left",
+              "kind": "group",
+              "role": "axis",
+              "label": "Y 坐标轴",
+              "members": [
+                "Trajectory/plot:root.g3.c1:node0",
+                "Trajectory/plot:root.g3.c2.g2.c1:node0",
+                "Trajectory/plot:root.g3.c2.g2.c1:node1",
+                "Trajectory/plot:root.g3.c2.g2.c1:node2",
+                "Trajectory/plot:root.g3.c2.g2.c1:node3",
+                "Trajectory/plot:root.g3.c2.g1:node0",
+                "Trajectory/plot:root.g3.c2.g1:node1",
+                "Trajectory/plot:root.g3.c2.g1:node2",
+                "Trajectory/plot:root.g3.c2.g1:node3",
+                "Trajectory/plot:root.g13.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:axis-bottom",
+              "kind": "group",
+              "role": "axis",
+              "label": "X 坐标轴",
+              "members": [
+                "Trajectory/plot:root.g7.c1:node0",
+                "Trajectory/plot:root.g7.c2.g1:node0",
+                "Trajectory/plot:root.g7.c2.g1:node1",
+                "Trajectory/plot:root.g7.c2.g1:node2",
+                "Trajectory/plot:root.g7.c2.g1:node3",
+                "Trajectory/plot:root.g7.c2.g2.c1:node0",
+                "Trajectory/plot:root.g7.c2.g2.c1:node1",
+                "Trajectory/plot:root.g7.c2.g2.c1:node2",
+                "Trajectory/plot:root.g7.c2.g2.c1:node3",
+                "Trajectory/plot:root.g12.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/plot:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "background",
+              "label": "background 1",
+              "groups": [],
+              "anchor": [
+                50,
+                50
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g1:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "background",
+              "label": "background 2",
+              "groups": [
+                "Trajectory/plot:root.g1"
+              ],
+              "anchor": [
+                82.205,
+                82.205
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "#FFFFFF",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c1.c1:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "background",
+              "label": "background 3",
+              "groups": [
+                "Trajectory/plot:root.g6.c1.c1"
+              ],
+              "anchor": [
+                94.06,
+                76.465
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c3:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "data-line",
+              "label": "data-line 4",
+              "groups": [
+                "Trajectory/plot:root.g6.c3",
+                "Trajectory/plot:series-root.g6.c3"
+              ],
+              "anchor": [
+                94.06,
+                107.755
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c3:node1",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "data-line",
+              "label": "data-line 5",
+              "groups": [
+                "Trajectory/plot:root.g6.c3",
+                "Trajectory/plot:series-root.g6.c3"
+              ],
+              "anchor": [
+                94.06,
+                76.47
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4:node0",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 6",
+              "groups": [
+                "Trajectory/plot:root.g6.c4",
+                "Trajectory/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                34.63,
+                126.8
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4:node1",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 7",
+              "groups": [
+                "Trajectory/plot:root.g6.c4",
+                "Trajectory/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                74.25,
+                113.2
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4:node2",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 8",
+              "groups": [
+                "Trajectory/plot:root.g6.c4",
+                "Trajectory/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                113.87,
+                99.59
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4:node3",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 9",
+              "groups": [
+                "Trajectory/plot:root.g6.c4",
+                "Trajectory/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                153.49,
+                88.71
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4:node4",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 10",
+              "groups": [
+                "Trajectory/plot:root.g6.c4",
+                "Trajectory/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                34.63,
+                126.8
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4:node5",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 11",
+              "groups": [
+                "Trajectory/plot:root.g6.c4",
+                "Trajectory/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                74.25,
+                96.87
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4:node6",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 12",
+              "groups": [
+                "Trajectory/plot:root.g6.c4",
+                "Trajectory/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                113.87,
+                61.5
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g6.c4:node7",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "data-point",
+              "label": "data-point 13",
+              "groups": [
+                "Trajectory/plot:root.g6.c4",
+                "Trajectory/plot:series-root.g6.c4"
+              ],
+              "anchor": [
+                153.49,
+                26.14
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c1:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 14",
+              "groups": [
+                "Trajectory/plot:root.g3.c1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                28.69,
+                76.465
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g2.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "1",
+              "groups": [
+                "Trajectory/plot:root.g3.c2.g2.c1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                23.76,
+                130.56
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g2.c1:node1",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "2",
+              "groups": [
+                "Trajectory/plot:root.g3.c2.g2.c1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                23.76,
+                103.35
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g2.c1:node2",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "3",
+              "groups": [
+                "Trajectory/plot:root.g3.c2.g2.c1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                23.76,
+                76.15
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g2.c1:node3",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "4",
+              "groups": [
+                "Trajectory/plot:root.g3.c2.g2.c1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                23.76,
+                48.94
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g1:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 19",
+              "groups": [
+                "Trajectory/plot:root.g3.c2.g1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                27.32,
+                126.8
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g1:node1",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 20",
+              "groups": [
+                "Trajectory/plot:root.g3.c2.g1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                27.32,
+                99.59
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g1:node2",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 21",
+              "groups": [
+                "Trajectory/plot:root.g3.c2.g1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                27.32,
+                72.39
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g3.c2.g1:node3",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 22",
+              "groups": [
+                "Trajectory/plot:root.g3.c2.g1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                27.32,
+                45.18
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c1:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 23",
+              "groups": [
+                "Trajectory/plot:root.g7.c1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                94.06,
+                131.83
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g1:node0",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 24",
+              "groups": [
+                "Trajectory/plot:root.g7.c2.g1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                34.63,
+                133.2
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g1:node1",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 25",
+              "groups": [
+                "Trajectory/plot:root.g7.c2.g1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                74.25,
+                133.2
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g1:node2",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 26",
+              "groups": [
+                "Trajectory/plot:root.g7.c2.g1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                113.87,
+                133.2
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g1:node3",
+              "kind": "shape",
+              "tag": "polyline",
+              "role": "axis-line",
+              "label": "axis-line 27",
+              "groups": [
+                "Trajectory/plot:root.g7.c2.g1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                153.49,
+                133.2
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#000000",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g2.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "0",
+              "groups": [
+                "Trajectory/plot:root.g7.c2.g2.c1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                34.63,
+                144.28
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g2.c1:node1",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "1",
+              "groups": [
+                "Trajectory/plot:root.g7.c2.g2.c1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                74.25,
+                144.28
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g2.c1:node2",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "2",
+              "groups": [
+                "Trajectory/plot:root.g7.c2.g2.c1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                113.87,
+                144.28
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g7.c2.g2.c1:node3",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "3",
+              "groups": [
+                "Trajectory/plot:root.g7.c2.g2.c1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                153.49,
+                144.28
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g12.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "Time (days)",
+              "groups": [
+                "Trajectory/plot:root.g12.c1",
+                "Trajectory/plot:axis-bottom"
+              ],
+              "anchor": [
+                94.06,
+                157.11
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g13.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-tick",
+              "label": "Relative signal",
+              "groups": [
+                "Trajectory/plot:root.g13.c1",
+                "Trajectory/plot:axis-left"
+              ],
+              "anchor": [
+                12.86,
+                76.47
+              ],
+              "angle_deg": -90,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/plot:root.g21.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text-title",
+              "label": "Time course",
+              "groups": [
+                "Trajectory/plot:root.g21.c1"
+              ],
+              "anchor": [
+                28.69,
+                13.21
+              ],
+              "angle_deg": 0,
+              "font_pt": 11.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            }
+          ]
+        },
+        {
+          "id": "Trajectory/legend1",
+          "role": "legend",
+          "x": 11.9666,
+          "y": 9.007,
+          "width": 24.5289,
+          "height": 10.7291,
+          "svg": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"69.53pt\" height=\"30.41pt\" viewBox=\"0 0 69.53 30.41\">\n  <g class=\"svglite\">\n    <defs>\n      <style type=\"text/css\"><![CDATA[\n    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {\n      fill: none;\n      stroke: #000000;\n      stroke-linecap: round;\n      stroke-linejoin: round;\n      stroke-miterlimit: 10.00;\n    }\n    .svglite text {\n      white-space: pre;\n    }\n    .svglite g.glyphgroup path {\n      fill: inherit;\n      stroke: none;\n    }\n  ]]><\/style>\n    <\/defs>\n    <rect width=\"100%\" height=\"100%\" style=\"stroke:none;fill:#FFFFFF\" data-tuner-id=\"Trajectory/legend1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"50\" data-tuner-cy=\"50\" data-tuner-size=\"2\"/>\n    <defs>\n      <clipPath id=\"Trajectory_legend1_cpMC4wMHw2OS41M3wwLjAwfDMwLjQx\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"69.53\" height=\"30.41\"/>\n      <\/clipPath>\n    <\/defs>\n    <g clip-path=\"url(#Trajectory_legend1_cpMC4wMHw2OS41M3wwLjAwfDMwLjQx)\">\n      <rect x=\"0.00\" y=\"0.00\" width=\"69.53\" height=\"30.41\" style=\"stroke-width:1.07;stroke:none;fill:#FFFFFF\" data-tuner-owner=\"Trajectory/legend1:root.g1.g5\" data-tuner-role=\"background\" data-tuner-id=\"Trajectory/legend1:root.g1.g5:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"34.765\" data-tuner-cy=\"15.205\" data-tuner-size=\"2\"/>\n      <rect x=\"5.48\" y=\"5.48\" width=\"17.28\" height=\"9.73\" style=\"stroke-width:1.07;stroke:none;fill:#FFFFFF\" data-tuner-owner=\"Trajectory/legend1:root.g1.g1.c1\" data-tuner-role=\"graphic\" data-tuner-id=\"Trajectory/legend1:root.g1.g1.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"14.12\" data-tuner-cy=\"10.345\" data-tuner-size=\"2\"/>\n      <line x1=\"7.21\" y1=\"10.34\" x2=\"21.03\" y2=\"10.34\" style=\"stroke-width:1.07;stroke:#A6CEE3;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/legend1:root.g1.g1.c2\" data-tuner-role=\"graphic\" data-tuner-id=\"Trajectory/legend1:root.g1.g1.c2:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"14.12\" data-tuner-cy=\"10.34\" data-tuner-size=\"2\"/>\n      <circle cx=\"14.12\" cy=\"10.34\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#A6CEE3;fill:#A6CEE3\" data-tuner-owner=\"Trajectory/legend1:root.g1.g1.c3\" data-tuner-role=\"graphic\" data-tuner-id=\"Trajectory/legend1:root.g1.g1.c3:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"14.12\" data-tuner-cy=\"10.34\" data-tuner-size=\"1.37583333333333\"/>\n      <rect x=\"5.48\" y=\"15.21\" width=\"17.28\" height=\"9.73\" style=\"stroke-width:1.07;stroke:none;fill:#FFFFFF\" data-tuner-owner=\"Trajectory/legend1:root.g1.g2.c1\" data-tuner-role=\"graphic\" data-tuner-id=\"Trajectory/legend1:root.g1.g2.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"14.12\" data-tuner-cy=\"20.075\" data-tuner-size=\"2\"/>\n      <line x1=\"7.21\" y1=\"20.07\" x2=\"21.03\" y2=\"20.07\" style=\"stroke-width:1.07;stroke:#1F78B4;stroke-linecap:butt\" data-tuner-owner=\"Trajectory/legend1:root.g1.g2.c2\" data-tuner-role=\"graphic\" data-tuner-id=\"Trajectory/legend1:root.g1.g2.c2:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"14.12\" data-tuner-cy=\"20.07\" data-tuner-size=\"2\"/>\n      <circle cx=\"14.12\" cy=\"20.07\" r=\"1.95\" style=\"stroke-width:0.71;stroke:#1F78B4;fill:#1F78B4\" data-tuner-owner=\"Trajectory/legend1:root.g1.g2.c3\" data-tuner-role=\"graphic\" data-tuner-id=\"Trajectory/legend1:root.g1.g2.c3:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"14.12\" data-tuner-cy=\"20.07\" data-tuner-size=\"1.37583333333333\"/>\n      <text x=\"28.24\" y=\"14.10\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"33.86px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/legend1:root.g1.g3.c1\" data-tuner-role=\"text\" data-tuner-id=\"Trajectory/legend1:root.g1.g3.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"28.24\" data-tuner-cy=\"14.1\" data-tuner-size=\"2\">Control<\/text>\n      <text x=\"28.24\" y=\"23.83\" style=\"font-size:10.50px;fill:#000000;font-family:&quot;Arial&quot;\" textLength=\"35.81px\" lengthAdjust=\"spacingAndGlyphs\" data-tuner-owner=\"Trajectory/legend1:root.g1.g4.c1\" data-tuner-role=\"text\" data-tuner-id=\"Trajectory/legend1:root.g1.g4.c1:node0\" data-tuner-leaf=\"1\" data-tuner-cx=\"28.24\" data-tuner-cy=\"23.83\" data-tuner-size=\"2\">Treated<\/text>\n    <\/g>\n  <\/g>\n<\/svg>\n",
+          "elements": [
+            {
+              "id": "Trajectory/legend1:root.g1.g1.c1",
+              "label": "graphic",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/legend1:root.g1.g1.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g1.c2",
+              "label": "graphic",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/legend1:root.g1.g1.c2:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g1.c3",
+              "label": "graphic",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 5.2128,
+              "members": [
+                "Trajectory/legend1:root.g1.g1.c3:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g2.c1",
+              "label": "graphic",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/legend1:root.g1.g2.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g2.c2",
+              "label": "graphic",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/legend1:root.g1.g2.c2:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g2.c3",
+              "label": "graphic",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 5.2128,
+              "members": [
+                "Trajectory/legend1:root.g1.g2.c3:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g3.c1",
+              "label": "Control",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 10.5,
+              "members": [
+                "Trajectory/legend1:root.g1.g3.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g4.c1",
+              "label": "Treated",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 10.5,
+              "members": [
+                "Trajectory/legend1:root.g1.g4.c1:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g5",
+              "label": "background",
+              "kind": "group",
+              "role": "group",
+              "font_pt": 11,
+              "members": [
+                "Trajectory/legend1:root.g1.g5:node0"
+              ]
+            },
+            {
+              "id": "Trajectory/legend1:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "background",
+              "label": "background 1",
+              "groups": [],
+              "anchor": [
+                50,
+                50
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g5:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "background",
+              "label": "background 2",
+              "groups": [
+                "Trajectory/legend1:root.g1.g5"
+              ],
+              "anchor": [
+                34.765,
+                15.205
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g1.c1:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "graphic",
+              "label": "graphic 3",
+              "groups": [
+                "Trajectory/legend1:root.g1.g1.c1"
+              ],
+              "anchor": [
+                14.12,
+                10.345
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g1.c2:node0",
+              "kind": "shape",
+              "tag": "line",
+              "role": "graphic",
+              "label": "graphic 4",
+              "groups": [
+                "Trajectory/legend1:root.g1.g1.c2"
+              ],
+              "anchor": [
+                14.12,
+                10.34
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g1.c3:node0",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "graphic",
+              "label": "graphic 5",
+              "groups": [
+                "Trajectory/legend1:root.g1.g1.c3"
+              ],
+              "anchor": [
+                14.12,
+                10.34
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#A6CEE3",
+              "stroke": "#A6CEE3",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g2.c1:node0",
+              "kind": "shape",
+              "tag": "rect",
+              "role": "graphic",
+              "label": "graphic 6",
+              "groups": [
+                "Trajectory/legend1:root.g1.g2.c1"
+              ],
+              "anchor": [
+                14.12,
+                20.075
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g2.c2:node0",
+              "kind": "shape",
+              "tag": "line",
+              "role": "graphic",
+              "label": "graphic 7",
+              "groups": [
+                "Trajectory/legend1:root.g1.g2.c2"
+              ],
+              "anchor": [
+                14.12,
+                20.07
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.3775,
+              "size_mm": 2,
+              "fill": "none",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g2.c3:node0",
+              "kind": "shape",
+              "tag": "circle",
+              "role": "graphic",
+              "label": "graphic 8",
+              "groups": [
+                "Trajectory/legend1:root.g1.g2.c3"
+              ],
+              "anchor": [
+                14.12,
+                20.07
+              ],
+              "angle_deg": 0,
+              "font_pt": 11,
+              "font_family": "Arial",
+              "stroke_mm": 0.2505,
+              "size_mm": 1.3758,
+              "fill": "#1F78B4",
+              "stroke": "#1F78B4",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g3.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text",
+              "label": "Control",
+              "groups": [
+                "Trajectory/legend1:root.g1.g3.c1"
+              ],
+              "anchor": [
+                28.24,
+                14.1
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            },
+            {
+              "id": "Trajectory/legend1:root.g1.g4.c1:node0",
+              "kind": "text",
+              "tag": "text",
+              "role": "text",
+              "label": "Treated",
+              "groups": [
+                "Trajectory/legend1:root.g1.g4.c1"
+              ],
+              "anchor": [
+                28.24,
+                23.83
+              ],
+              "angle_deg": 0,
+              "font_pt": 10.5,
+              "font_family": "Arial",
+              "stroke_mm": 0.2469,
+              "size_mm": 2,
+              "fill": "#000000",
+              "stroke": "none",
+              "parent_transform": ""
+            }
+          ]
+        }
+      ],
+      "legend_items": [
+        {
+          "label": "Control",
+          "color": "#A6CEE3"
+        },
+        {
+          "label": "Treated",
+          "color": "#1F78B4"
+        }
+      ]
+    }
+  ]
+}

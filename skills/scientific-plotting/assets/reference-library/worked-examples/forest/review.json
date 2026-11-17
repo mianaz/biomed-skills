@@ -1,0 +1,49 @@
+{
+  "template": "worked/forest",
+  "date": "2026-11-05",
+  "data_basis": "synthetic",
+  "implementation": "examples/native-reference-cases.R",
+  "supersedes": "worked/forest-legacy-20261105",
+  "scientific_review": "complete",
+  "visual_review": "complete",
+  "native_editability": "complete",
+  "tested_cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        68.43888888888888,
+        50.44722222222222
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "all_contrasts_retained": true,
+        "intervals_valid": true
+      }
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        77.96388888888889,
+        50.44722222222222
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "all_contrasts_retained": true,
+        "intervals_valid": true
+      }
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        100.89444444444445,
+        50.44722222222222
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "all_contrasts_retained": true,
+        "intervals_valid": true
+      }
+    }
+  ],
+  "unresolved_items": []
+}

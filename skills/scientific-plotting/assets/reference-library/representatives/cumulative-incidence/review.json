@@ -1,0 +1,47 @@
+{
+  "template": "representative/cumulative-incidence",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Space-splitting the result key truncated group names; A/B colors and canvas were fixed.",
+  "native_controls": "Exact group/event keys, named palettes, native facets and native ticks.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        104.77499999999999,
+        66.675
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 14,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        130.88055555555556,
+        66.675
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 14,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        130.88055555555556,
+        66.675
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 14,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

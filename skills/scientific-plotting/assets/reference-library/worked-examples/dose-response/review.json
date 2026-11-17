@@ -1,0 +1,47 @@
+{
+  "template": "worked/dose-response",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Log-axis ticks and labels were fixed to the original dose range.",
+  "native_controls": "Native log ticks and short-number labels; original eligible-model selection is preserved.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        62.794444444444444,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 5,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        60.67777777777778,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 5,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        60.67777777777778,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 5,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

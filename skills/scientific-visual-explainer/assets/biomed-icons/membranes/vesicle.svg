@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="vesicle-membrane" data-part="membrane" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="80" cy="80" r="54"/>
+</g>
+<g id="vesicle-lumen" data-part="lumen" fill="#EDF5F1" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="80" cy="80" r="45"/>
+</g>
+<g id="vesicle-cargo" data-part="cargo" fill="#E4BE78" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="63" cy="73" r="7"/><circle cx="91" cy="67" r="6"/><circle cx="86" cy="96" r="8"/>
+</g>
+</svg>

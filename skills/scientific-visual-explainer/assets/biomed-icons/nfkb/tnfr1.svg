@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="tnfr1-membrane" data-part="membrane"><rect x="14" y="77" width="132" height="10" rx="5" fill="#B3D7CC" stroke-width="2.5"/></g>
+<g id="tnfr1-transmembrane-helix" data-part="transmembrane-helix"><path d="M77 60 C74 66 75 72 77 78 L77 96 C77 101 83 101 83 96 L83 78 C85 72 86 66 83 60 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+<g id="tnfr1-cytosolic-linker" data-part="cytosolic-linker"><path d="M80 96 C77 101 83 106 80 113" fill="none" stroke="#3D5963" stroke-width="9"/><path d="M80 96 C77 101 83 106 80 113" fill="none" stroke="#69ADB5" stroke-width="5"/></g>
+<g id="tnfr1-crd1" data-part="crd1"><path transform="translate(0 2)" d="M67 25 C64 20 68 16 74 17 C79 13 83 18 88 16 C95 16 97 22 92 27 C89 31 83 33 77 31 C72 31 69 29 67 25 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+<g id="tnfr1-crd2" data-part="crd2"><path transform="translate(0 2)" d="M68 38 C64 34 68 29 74 30 C79 26 84 31 89 29 C95 30 97 35 92 40 C88 44 82 45 77 43 C72 44 69 41 68 38 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+<g id="tnfr1-crd3" data-part="crd3"><path transform="translate(0 2)" d="M68 51 C64 47 68 42 74 43 C79 39 84 44 89 42 C95 43 97 48 92 53 C88 57 82 58 77 56 C72 57 69 54 68 51 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+<g id="tnfr1-crd4" data-part="crd4"><path transform="translate(0 2)" d="M68 64 C64 60 68 55 74 56 C79 52 84 57 89 55 C95 56 97 61 92 66 C88 70 82 71 77 69 C72 70 69 67 68 64 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+<g id="tnfr1-death-domain" data-part="death-domain"><path d="M63 119 C65 110 73 106 80 109 C88 105 97 112 97 121 C99 130 92 137 84 138 C76 146 65 141 63 133 C60 128 60 123 63 119 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+</svg>

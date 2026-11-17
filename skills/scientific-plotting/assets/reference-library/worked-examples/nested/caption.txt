@@ -1,0 +1,3 @@
+Nested measurements: observations are averaged within each subsample, then subsample means receive equal weight within each biological unit.
+Bars, SD, points and the Welch comparison use biological-unit means. n counts biological units.
+Independent units; mean bars, SD and all sample points. n per group: Control = 4; Treatment = 4 Two-sided Welch tests; Holm correction across the supplied comparison plan. All primary adjusted P values are shown. Estimates and nominal 95% CIs are group2 minus group1. Input rows: 8

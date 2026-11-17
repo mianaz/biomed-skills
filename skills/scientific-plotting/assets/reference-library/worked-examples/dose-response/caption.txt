@@ -1,0 +1,1 @@
+Synthetic demonstration data. Technical measurements from one synthetic assay; 4PL selected by minimum AICc among eligible fits. 95% model confidence band; native log ticks follow the tested range. Input rows: 24

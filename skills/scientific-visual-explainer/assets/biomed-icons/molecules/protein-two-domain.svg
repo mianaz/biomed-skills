@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="protein-two-domain-linker" data-part="linker"><path d="M66 76 C76 69 82 72 91 82" fill="none" stroke-width="14"/><path d="M66 76 C76 69 82 72 91 82" fill="none" stroke="#69ADB5" stroke-width="9"/></g>
+<g id="protein-two-domain-domain-a" data-part="domain-a"><path d="M22 82 C17 68 24 50 38 43 C41 29 57 23 70 29 C84 35 87 51 80 63 C86 75 80 91 68 97 C62 109 46 111 36 103 C24 101 19 93 22 82 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+<g id="protein-two-domain-domain-b" data-part="domain-b"><path d="M79 73 C74 58 85 43 100 40 C108 27 114 27 120 27 C126 27 130 32 133 39 C145 45 146 60 140 70 C146 82 142 99 132 105 C128 118 111 123 99 117 C83 117 74 105 78 92 C71 85 73 78 79 73 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M95 54 C104 46 116 47 121 56 C124 63 119 70 113 72" fill="none" stroke-width="1.5"/></g>
+</svg>

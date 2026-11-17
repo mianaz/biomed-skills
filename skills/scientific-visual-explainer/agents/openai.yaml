@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Visual Explainer"
+  short_description: "Explain mechanisms or animate a supplied static figure"
+  default_prompt: "Use $scientific-visual-explainer to explain this concept, paper or mechanism in the requested static, interactive or video format, with source-linked components and reusable assets."

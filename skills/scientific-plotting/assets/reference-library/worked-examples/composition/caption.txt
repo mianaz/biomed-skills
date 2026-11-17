@@ -1,0 +1,1 @@
+Synthetic demonstration data. Descriptive per-sample composition. Native position_fill uses each sample total as denominator; group facets have space proportional to sample counts. Input rows: 18

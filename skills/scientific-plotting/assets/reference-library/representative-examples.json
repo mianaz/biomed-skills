@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "key": "representative/lollipop",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/representatives/lollipop",
+      "title": "Grouped lollipops · illustrative R template",
+      "chart": "lollipop",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "feature",
+            "group",
+            "value"
+          ],
+          "row_unit": "One supplied value per category and group"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "display_status": "Native implementation · replacement tested",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "data_basis": "Synthetic first-party demonstration data.",
+      "source_evidence": {},
+      "script": "examples/native-representative-cases.R",
+      "preview": "assets/reference-library/representatives/lollipop/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 69.14444444444445,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 95.25,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 119.94444444444444,
+            "height_mm": 90.3111111111111,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native horizontal dodge and a palette keyed to current group names."
+      },
+      "description": "Synthetic demonstration data. Supplied scores by named category and group. Native horizontal dodge aligns each stem with its point and supports any supplied group names.",
+      "license": "First-party example; package license applies.",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "representative/lollipop-legacy-20261105",
+      "adaptation_note": "Native horizontal dodge and a palette keyed to current group names.",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-representative-cases.R",
+        "lollipop",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ]
+    },
+    {
+      "key": "representative/cumulative-incidence",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/representatives/cumulative-incidence",
+      "title": "Cumulative incidence · illustrative R template",
+      "chart": "cumulative incidence",
+      "task": "survival",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "id",
+            "time",
+            "status",
+            "group"
+          ],
+          "row_unit": "One unit with follow-up time, competing-event code and group"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "display_status": "Native implementation · replacement tested",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "data_basis": "Synthetic first-party demonstration data.",
+      "source_evidence": {},
+      "script": "examples/native-representative-cases.R",
+      "preview": "assets/reference-library/representatives/cumulative-incidence/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 104.77499999999999,
+            "height_mm": 66.675,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 130.88055555555556,
+            "height_mm": 66.675,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 130.88055555555556,
+            "height_mm": 66.675,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Exact group/event keys, named palettes, native facets and native ticks."
+      },
+      "description": "Synthetic demonstration data. Descriptive competing-risk cumulative incidence from cmprsk, with 0 denoting censoring. Exact group/event result keys preserve group names containing spaces. Estimates and variances are saved.",
+      "license": "First-party example; package license applies.",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "representative/cumulative-incidence-legacy-20261105",
+      "adaptation_note": "Exact group/event keys, named palettes, native facets and native ticks.",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-representative-cases.R",
+        "cumulative-incidence",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ]
+    },
+    {
+      "key": "representative/heatmap-composite",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/representatives/heatmap-composite",
+      "title": "Heatmap with quantitative tracks · illustrative R template",
+      "chart": "heatmap with linked quantitative tracks",
+      "task": "matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "matrix",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [],
+          "row_unit": "Named wide numeric matrix; feature names specified in columns.csv"
+        },
+        {
+          "file": "tracks.csv",
+          "columns": [
+            "count",
+            "fraction"
+          ],
+          "row_unit": "Named rows aligned by row identifiers"
+        },
+        {
+          "file": "columns.csv",
+          "columns": [
+            "feature",
+            "block"
+          ],
+          "row_unit": "One named matrix column and its explicit block"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "display_status": "Native implementation · replacement tested",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "data_basis": "Synthetic first-party demonstration data.",
+      "source_evidence": {},
+      "script": "examples/native-representative-cases.R",
+      "preview": "assets/reference-library/representatives/heatmap-composite/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 120.29722222222222,
+            "height_mm": 75.84722222222223,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 120.29722222222222,
+            "height_mm": 75.84722222222223,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 120.29722222222222,
+            "height_mm": 56.09166666666667,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Named block metadata, row-name joins, square tiles and native annotation axes; rotated column names prevent overlap."
+      },
+      "description": "Synthetic demonstration data. Supplied values with no scaling or added statistics. Named column-block metadata defines matrix panels; tracks join by row names. All matrix tiles are 5 mm squares. Native annotation axes follow count data; fractions retain the scientific 0–1 domain. RdBu is centered at 0 and saturates outside [-2, 2].",
+      "license": "First-party example; package license applies.",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "representative/heatmap-composite-legacy-20261105",
+      "adaptation_note": "Named block metadata, row-name joins, square tiles and native annotation axes; rotated column names prevent overlap.",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-representative-cases.R",
+        "heatmap-composite",
+        "INPUT.csv",
+        "OUTPUT_DIR",
+        "TRACKS.csv",
+        "COLUMNS.csv"
+      ]
+    }
+  ],
+  "superseded_records": [
+    {
+      "key": "representative/lollipop-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/lollipop",
+      "title": "Grouped lollipops · illustrative R template (retired implementation)",
+      "chart": "lollipop",
+      "task": "group-comparison",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "feature",
+            "group",
+            "value"
+          ],
+          "row_unit": "One supplied value per category and group"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "display_status": "Illustrative R template",
+      "review_note": "Synthetic demonstration; source execution and layout reviewed. Replacement-data testing is pending.",
+      "review": {
+        "date": "2026-10-28",
+        "example": true,
+        "visual": true,
+        "replacement": false
+      },
+      "data_basis": "Synthetic first-party demonstration data.",
+      "source_evidence": {},
+      "script": "assets/reference-library/retired-batch2-20261105/lollipop/template.R",
+      "preview": "assets/reference-library/retired-batch2-20261105/lollipop/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 89.96,
+            "height_mm": 79.73,
+            "min_text_pt": 11.0,
+            "passed": true
+          }
+        ]
+      },
+      "description": "Synthetic data illustrate this plot structure. Original source variants remain linked underneath. The source, input tables, PDF and native R object are editable.",
+      "license": "First-party example; package license applies.",
+      "successor": "representative/lollipop",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "The A/B conditional assigned two manual offsets and a fixed palette."
+    },
+    {
+      "key": "representative/cumulative-incidence-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/cumulative-incidence",
+      "title": "Cumulative incidence · illustrative R template (retired implementation)",
+      "chart": "cumulative incidence",
+      "task": "survival",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "id",
+            "time",
+            "status",
+            "group"
+          ],
+          "row_unit": "One unit with follow-up time, competing-event code and group"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "display_status": "Illustrative R template",
+      "review_note": "Synthetic demonstration; source execution and layout reviewed. Replacement-data testing is pending.",
+      "review": {
+        "date": "2026-10-28",
+        "example": true,
+        "visual": true,
+        "replacement": false
+      },
+      "data_basis": "Synthetic first-party demonstration data.",
+      "source_evidence": {},
+      "script": "assets/reference-library/retired-batch2-20261105/cumulative-incidence/template.R",
+      "preview": "assets/reference-library/retired-batch2-20261105/cumulative-incidence/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 124.88,
+            "height_mm": 84.67,
+            "min_text_pt": 11.0,
+            "passed": true
+          }
+        ]
+      },
+      "description": "Synthetic data illustrate this plot structure. Original source variants remain linked underneath. The source, input tables, PDF and native R object are editable.",
+      "license": "First-party example; package license applies.",
+      "successor": "representative/cumulative-incidence",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Space-splitting the result key truncated group names; A/B colors and canvas were fixed."
+    },
+    {
+      "key": "representative/heatmap-composite-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/heatmap-composite",
+      "title": "Heatmap with quantitative tracks · illustrative R template (retired implementation)",
+      "chart": "heatmap with linked quantitative tracks",
+      "task": "matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "matrix",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "Gene1",
+            "Gene2",
+            "Gene3",
+            "Gene4",
+            "Gene5",
+            "Path1",
+            "Path2",
+            "Path3"
+          ],
+          "row_unit": "One row category with supplied marker and pathway values"
+        },
+        {
+          "file": "tracks.csv",
+          "columns": [
+            "count",
+            "fraction"
+          ],
+          "row_unit": "Same row categories as input.csv"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "display_status": "Illustrative R template",
+      "review_note": "Synthetic demonstration; source execution and layout reviewed. Replacement-data testing is pending.",
+      "review": {
+        "date": "2026-10-28",
+        "example": true,
+        "visual": true,
+        "replacement": false
+      },
+      "data_basis": "Synthetic first-party demonstration data.",
+      "source_evidence": {},
+      "script": "assets/reference-library/retired-batch2-20261105/heatmap-composite/template.R",
+      "preview": "assets/reference-library/retired-batch2-20261105/heatmap-composite/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 159.81,
+            "height_mm": 104.77,
+            "min_text_pt": 11.0,
+            "passed": true
+          }
+        ]
+      },
+      "description": "Synthetic data illustrate this plot structure. Original source variants remain linked underneath. The source, input tables, PDF and native R object are editable.",
+      "license": "First-party example; package license applies.",
+      "successor": "representative/heatmap-composite",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Fixed columns 1:5 and 6:8, body dimensions and count ticks depended on the example."
+    }
+  ]
+}

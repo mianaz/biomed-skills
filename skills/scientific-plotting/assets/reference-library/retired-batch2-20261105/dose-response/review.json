@@ -1,0 +1,19 @@
+{
+  "case": "dose-response",
+  "checks": [
+    {
+      "variant": "original",
+      "width_mm": 75.85,
+      "height_mm": 73.73,
+      "min_text_pt": 12.02
+    },
+    {
+      "variant": "replacement",
+      "width_mm": 75.85,
+      "height_mm": 73.73,
+      "min_text_pt": 12.02
+    }
+  ],
+  "replacement": "Response values changed; models refitted over the measured range",
+  "visual_review": "Saved original and replacement inspected on 2026-10-26"
+}

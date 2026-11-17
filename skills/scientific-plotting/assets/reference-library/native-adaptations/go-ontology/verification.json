@@ -1,0 +1,298 @@
+{
+  "mechanical_status": "pass",
+  "contract": {
+    "placed_width_mm": 107.24444444444444,
+    "placed_height_mm": null,
+    "font": "Arial",
+    "font_floor_exclusive_pt": 10,
+    "raster_min_dpi": 600,
+    "embedded_image_min_dpi": 600,
+    "dpi_rounding_tolerance": 1,
+    "required_formats": [
+      "pdf",
+      "png"
+    ]
+  },
+  "failures": [],
+  "unchecked": [],
+  "files": [
+    {
+      "file": "outputs/template-curation-remaining-20261105/go-ontology/original/figure.pdf",
+      "format": "PDF",
+      "pages": [
+        {
+          "page": 1,
+          "export_mm": [
+            107.24,
+            216.25
+          ],
+          "placed_mm": [
+            107.24444444444444,
+            216.25
+          ],
+          "min_effective_pt": 11.5,
+          "fonts": [
+            "ArialMT"
+          ],
+          "spans": [
+            {
+              "text": "biological",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "process",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "cellular",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "component",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "molecular",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "function",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "20",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "40",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "60",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "cytokine receptor binding",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "cytokine activity",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "growth factor activity",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "DNA-binding transcription factor",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "binding",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "hormone activity",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "external side of plasma membrane",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "vesicle lumen",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "cytoplasmic vesicle lumen",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "secretory granule lumen",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "membrane raft",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "response to molecule of",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "bacterial origin",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "response to lipopolysaccharide",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "positive regulation of cytokine",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "production",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "regulation of apoptotic",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "signaling pathway",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "canonical NF-kappaB signal",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "transduction",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "−log10(adjusted P)",
+              "font": "ArialMT",
+              "native_pt": 12.0,
+              "effective_pt": 12.0,
+              "issues": []
+            }
+          ],
+          "raster_layers": []
+        }
+      ],
+      "failures": [],
+      "unchecked": []
+    },
+    {
+      "file": "outputs/template-curation-remaining-20261105/go-ontology/original/figure.png",
+      "pages": [
+        {
+          "page": 1,
+          "pixels": [
+            2536,
+            5112
+          ],
+          "placed_mm": [
+            107.24444444444444,
+            216.18
+          ],
+          "effective_dpi": [
+            600.63,
+            600.63
+          ],
+          "metadata_dpi": [
+            599.9988,
+            599.9988
+          ],
+          "color_mode": "RGB",
+          "compression": null
+        }
+      ],
+      "failures": [],
+      "unchecked": [],
+      "format": "PNG"
+    }
+  ],
+  "manual_review": {
+    "statistics": "pending",
+    "visual_inspection": "pending",
+    "native_editability_and_source_data": "pending"
+  },
+  "completion": "Complete the scientific and visual review in references/figure-verification.md."
+}

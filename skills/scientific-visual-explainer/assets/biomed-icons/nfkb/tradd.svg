@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="tradd-traf-binding-domain" data-part="traf-binding-domain"><path d="M20 58 C26 51 38 49 47 54 L60 62 L56 71 L61 81 L49 90 C40 97 28 93 23 86 C17 80 16 67 20 58 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M28 61 L44 57 M25 69 L47 65 M28 78 L49 73" fill="none" stroke="#D7E8EC" stroke-width="1.8"/></g>
+<g id="tradd-flexible-linker" data-part="flexible-linker"><path d="M59 71 C68 64 75 64 82 70 C88 75 91 82 99 82" fill="none" stroke="#69ADB5" stroke-width="8"/><path d="M59 71 C68 64 75 64 82 70 C88 75 91 82 99 82" fill="none" stroke="#3D5963" stroke-width="2.5"/></g>
+<g id="tradd-death-domain" data-part="death-domain"><path d="M99 57 C107 49 119 49 126 55 C138 56 145 67 141 77 C145 87 137 98 126 98 C117 105 103 100 99 92 C91 84 92 66 99 57 Z" fill="#D7E8EC" stroke-width="2.5"/><path d="M105 61 L111 76 M117 57 L123 74 M131 62 L135 77" fill="none" stroke="#69ADB5" stroke-width="3.2"/></g>
+</svg>

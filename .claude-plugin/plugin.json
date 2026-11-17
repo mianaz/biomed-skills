@@ -1,0 +1,11 @@
+{
+  "name": "biomed-skill",
+  "version": "0.1.0",
+  "description": "Biomedical framing, writing, polishing, scientific review, citation audits, statistical design and analysis, figures, paper reading, protocols and submission preparation.",
+  "author": {
+    "name": "Miana"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mianaz/biomed-skills",
+  "repository": "https://github.com/mianaz/biomed-skills"
+}

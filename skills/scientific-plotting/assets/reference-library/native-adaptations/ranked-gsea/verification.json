@@ -1,0 +1,361 @@
+{
+  "mechanical_status": "pass",
+  "contract": {
+    "placed_width_mm": 159.45555555555555,
+    "placed_height_mm": null,
+    "font": "Arial",
+    "font_floor_exclusive_pt": 10,
+    "raster_min_dpi": 600,
+    "embedded_image_min_dpi": 600,
+    "dpi_rounding_tolerance": 1,
+    "required_formats": [
+      "pdf",
+      "png"
+    ]
+  },
+  "failures": [],
+  "unchecked": [],
+  "files": [
+    {
+      "file": "outputs/template-curation-remaining-20261105/ranked-gsea/original/figure.pdf",
+      "format": "PDF",
+      "pages": [
+        {
+          "page": 1,
+          "export_mm": [
+            159.46,
+            110.42
+          ],
+          "placed_mm": [
+            159.45555555555555,
+            110.42
+          ],
+          "min_effective_pt": 11.5,
+          "fonts": [
+            "ArialMT"
+          ],
+          "spans": [
+            {
+              "text": "1",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "2",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "3",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "6",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "11",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "17",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "20",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "23",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "44",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "50",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "-2.5",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "0.0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "2.5",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "20",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "40",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Gene set rank",
+              "font": "ArialMT",
+              "native_pt": 12.0,
+              "effective_pt": 12.0,
+              "issues": []
+            },
+            {
+              "text": "Normalized enrichment score",
+              "font": "ArialMT",
+              "native_pt": 12.0,
+              "effective_pt": 12.0,
+              "issues": []
+            },
+            {
+              "text": "Gene set (rank)",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "1 · TNFA SIGNALING VIA NFKB",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "2 · IL6 JAK STAT3 SIGNALING",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "3 · INFLAMMATORY RESPONSE",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "6 · INTERFERON GAMMA RESPONSE",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "11 · HYPOXIA",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "17 · ANGIOGENESIS",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "20 · G2M CHECKPOINT",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "23 · E2F TARGETS",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "44 · FATTY ACID METABOLISM",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "50 · OXIDATIVE PHOSPHORYLATION",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Genes per set",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "50",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "100",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "150",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "200",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Significance",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "0.0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "2.5",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "5.0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "7.5",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "10.0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            }
+          ],
+          "raster_layers": []
+        }
+      ],
+      "failures": [],
+      "unchecked": []
+    },
+    {
+      "file": "outputs/template-curation-remaining-20261105/ranked-gsea/original/figure.png",
+      "pages": [
+        {
+          "page": 1,
+          "pixels": [
+            3771,
+            2609
+          ],
+          "placed_mm": [
+            159.45555555555555,
+            110.32
+          ],
+          "effective_dpi": [
+            600.69,
+            600.69
+          ],
+          "metadata_dpi": [
+            599.9988,
+            599.9988
+          ],
+          "color_mode": "RGB",
+          "compression": null
+        }
+      ],
+      "failures": [],
+      "unchecked": [],
+      "format": "PNG"
+    }
+  ],
+  "manual_review": {
+    "statistics": "pending",
+    "visual_inspection": "pending",
+    "native_editability_and_source_data": "pending"
+  },
+  "completion": "Complete the scientific and visual review in references/figure-verification.md."
+}

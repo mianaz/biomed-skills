@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biomed Stats"
+  short_description: "Plan, analyze and review biomedical statistics"
+  default_prompt: "Use $biomed-stats to complete the requested statistical plan, analysis or review, starting from the biological question and independent units and reusing valid existing methods."

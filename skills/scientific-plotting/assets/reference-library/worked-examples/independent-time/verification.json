@@ -1,0 +1,165 @@
+{
+  "mechanical_status": "pass",
+  "contract": {
+    "placed_width_mm": 82.55,
+    "placed_height_mm": null,
+    "font": "Arial",
+    "font_floor_exclusive_pt": 10,
+    "raster_min_dpi": 600,
+    "embedded_image_min_dpi": 600,
+    "dpi_rounding_tolerance": 1,
+    "required_formats": [
+      "pdf",
+      "png"
+    ]
+  },
+  "failures": [],
+  "unchecked": [],
+  "files": [
+    {
+      "file": "outputs/template-curation-remaining-20261105/independent-time/original/figure.pdf",
+      "format": "PDF",
+      "pages": [
+        {
+          "page": 1,
+          "export_mm": [
+            82.55,
+            65.26
+          ],
+          "placed_mm": [
+            82.55,
+            65.26
+          ],
+          "min_effective_pt": 11.5,
+          "fonts": [
+            "ArialMT"
+          ],
+          "spans": [
+            {
+              "text": "10",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "12",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "14",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "16",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "0.0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "2.5",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "5.0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "7.5",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Day",
+              "font": "ArialMT",
+              "native_pt": 12.0,
+              "effective_pt": 12.0,
+              "issues": []
+            },
+            {
+              "text": "Response (a.u.)",
+              "font": "ArialMT",
+              "native_pt": 12.0,
+              "effective_pt": 12.0,
+              "issues": []
+            },
+            {
+              "text": "Control",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Drug",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            }
+          ],
+          "raster_layers": []
+        }
+      ],
+      "failures": [],
+      "unchecked": []
+    },
+    {
+      "file": "outputs/template-curation-remaining-20261105/independent-time/original/figure.png",
+      "pages": [
+        {
+          "page": 1,
+          "pixels": [
+            1950,
+            1546
+          ],
+          "placed_mm": [
+            82.55,
+            65.45
+          ],
+          "effective_dpi": [
+            600.0,
+            600.0
+          ],
+          "metadata_dpi": [
+            599.9988,
+            599.9988
+          ],
+          "color_mode": "RGB",
+          "compression": null
+        }
+      ],
+      "failures": [],
+      "unchecked": [],
+      "format": "PNG"
+    }
+  ],
+  "manual_review": {
+    "statistics": "pending",
+    "visual_inspection": "pending",
+    "native_editability_and_source_data": "pending"
+  },
+  "completion": "Complete the scientific and visual review in references/figure-verification.md."
+}

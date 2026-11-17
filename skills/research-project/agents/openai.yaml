@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Project"
+  short_description: "Manage research priorities and a root HTML dashboard"
+  default_prompt: "Use $research-project to update this project’s top-level HTML dashboard, interpret recent results and recommend the next feasible work."

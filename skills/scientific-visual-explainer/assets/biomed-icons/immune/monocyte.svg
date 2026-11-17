@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="monocyte" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <g id="monocyte-membrane" data-part="membrane">
+    <path d="M26 78 C23 62 35 49 51 48 C62 37 80 39 91 45 C110 41 129 51 134 67 C146 80 138 99 127 106 C119 122 98 126 82 119 C64 127 43 118 39 105 C27 100 21 89 26 78 Z" fill="#B3D7CC"/>
+  </g>
+  <g id="monocyte-nucleus" data-part="nucleus">
+    <path d="M51 61 C57 51 74 47 88 52 C101 56 106 65 99 73 C94 79 84 79 79 86 C73 95 75 106 64 109 C51 112 42 102 42 88 C42 76 44 67 51 61 Z" fill="#69ADB5"/>
+  </g>
+  <g id="monocyte-cytoplasmic-vacuoles" data-part="cytoplasmic-vacuoles" fill="#EDF5F1" stroke="#3D5963" stroke-width="1.5">
+    <ellipse cx="113" cy="66" rx="4" ry="5"/><ellipse cx="119" cy="91" rx="3.5" ry="4.5"/><ellipse cx="100" cy="109" rx="3.5" ry="4"/>
+  </g>
+  </g>
+</svg>

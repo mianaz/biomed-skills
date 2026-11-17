@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="phospholipid-tails" data-part="tails" fill="#D7E8EC" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M68 55 C62 64 61 74 65 83 C69 93 68 105 60 122 L67 130 C78 115 78 101 73 89 C69 79 72 67 77 59 Z"/>
+  <path d="M91 55 C100 64 101 75 96 85 C91 96 93 111 103 127 L111 121 C104 107 102 96 107 84 C112 73 107 62 99 56 Z"/>
+</g>
+<g id="phospholipid-head" data-part="head" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="80" cy="45" r="15"/>
+</g>
+</svg>

@@ -1,0 +1,91 @@
+{
+  "palette": "Nord mist",
+  "construction": "Original native SVG geometry; public references inform visual grammar and biological topology. Local PDFs and third-party reference images remain outside the distributed package.",
+  "visual_references": {
+    "nucleic-acids": [
+      {
+        "url": "https://www.biorender.com/template/central-dogma"
+      }
+    ],
+    "chromatin": [
+      {
+        "url": "https://www.biorender.com/template/central-dogma"
+      }
+    ],
+    "machinery": [
+      {
+        "url": "https://www.biorender.com/template/txtl-a-cell-free-transcriptiontranslation-process"
+      },
+      {
+        "url": "https://www.biorender.com/template/ubiquitin-proteasome-system"
+      }
+    ],
+    "modifications": [
+      {
+        "url": "https://www.biorender.com/template/ubiquitin-proteasome-system"
+      }
+    ],
+    "compartments": [
+      {
+        "url": "https://www.biorender.com/template/generic-endocytic-pathway"
+      },
+      {
+        "url": "https://doi.org/10.1038/s41580-018-0052-8",
+        "title": "Giorgi, Marchi and Pinton, The machineries, regulation and cellular functions of mitochondrial calcium (2018)",
+        "figure": "Figures 1 and 2"
+      }
+    ],
+    "receptors": [
+      {
+        "url": "https://doi.org/10.1038/s41580-018-0052-8",
+        "title": "Giorgi, Marchi and Pinton, The machineries, regulation and cellular functions of mitochondrial calcium (2018)",
+        "figure": "Figures 1 and 2"
+      }
+    ],
+    "small-molecules": [
+      {
+        "url": "https://doi.org/10.1038/s41580-018-0052-8",
+        "title": "Giorgi, Marchi and Pinton, The machineries, regulation and cellular functions of mitochondrial calcium (2018)",
+        "figure": "Figures 1 and 2"
+      }
+    ]
+  },
+  "scientific_references": {
+    "generic-nucleosome": [
+      {
+        "url": "https://www.rcsb.org/sequence/1AOI"
+      }
+    ],
+    "generic-chromatin": [
+      {
+        "url": "https://www.rcsb.org/sequence/1AOI"
+      }
+    ],
+    "generic-proteasome": [
+      {
+        "url": "https://rcsb.org/experimental/1FNT"
+      }
+    ],
+    "generic-mitochondrion": [
+      {
+        "url": "https://doi.org/10.1038/s41580-018-0052-8",
+        "title": "Giorgi, Marchi and Pinton, The machineries, regulation and cellular functions of mitochondrial calcium (2018)",
+        "figure": "Figures 1 and 2"
+      }
+    ],
+    "generic-er": [
+      {
+        "url": "https://doi.org/10.1038/s41580-018-0052-8",
+        "title": "Giorgi, Marchi and Pinton, The machineries, regulation and cellular functions of mitochondrial calcium (2018)",
+        "figure": "Figures 1 and 2"
+      }
+    ],
+    "generic-ion-channel": [
+      {
+        "url": "https://doi.org/10.1038/s41580-018-0052-8",
+        "title": "Giorgi, Marchi and Pinton, The machineries, regulation and cellular functions of mitochondrial calcium (2018)",
+        "figure": "Figures 1 and 2"
+      }
+    ]
+  }
+}

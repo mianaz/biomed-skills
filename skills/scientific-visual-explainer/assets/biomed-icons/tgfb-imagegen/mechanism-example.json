@@ -1,0 +1,485 @@
+{
+  "outputName": "tgfb-smad",
+  "title": "TGFβ1–ALK5–SMAD3/SMAD4 nuclear signaling",
+  "layout": {
+    "width": 1180,
+    "height": 2000,
+    "pitch": 100,
+    "membraneY": 330,
+    "zones": {
+      "r2a": 330,
+      "r2b": 330,
+      "ligand": 110,
+      "r1a": 330,
+      "r1b": 330,
+      "sa": 680,
+      "sb": 680,
+      "s4": 850,
+      "npc": 1140,
+      "dna": 1590,
+      "rna": 1735,
+      "surface": 330,
+      "arrival": 1400
+    }
+  },
+  "entities": [
+    {
+      "id": "r2a",
+      "icon": "tgfbr2-ig",
+      "label": "TGFβRII",
+      "slot": 1.4,
+      "zone": "surface",
+      "row": 0,
+      "scale": 2.4,
+      "role": "receptor",
+      "surfaceAnchor": "membrane"
+    },
+    {
+      "id": "r2b",
+      "icon": "tgfbr2-ig",
+      "label": "TGFβRII",
+      "slot": 6.290400000000001,
+      "zone": "surface",
+      "row": 0,
+      "scale": 2.4,
+      "role": "receptor",
+      "angle": 3.141592653589793,
+      "flipY": true,
+      "surfaceAnchor": "membrane"
+    },
+    {
+      "id": "ligand",
+      "icon": "tgfb1-ig",
+      "label": "TGFβ1 dimer",
+      "slot": 3.5,
+      "zone": "ligand",
+      "row": 0,
+      "scale": 3.3,
+      "role": "ligand"
+    },
+    {
+      "id": "r1a",
+      "icon": "tgfbr1-ig",
+      "label": "TGFβRI",
+      "slot": 2.1719999999999993,
+      "zone": "surface",
+      "row": 0,
+      "scale": 1.1069007557617363,
+      "role": "receptor",
+      "surfaceAnchor": "membrane"
+    },
+    {
+      "id": "r1b",
+      "icon": "tgfbr1-ig",
+      "label": "TGFβRI",
+      "slot": 4.2184,
+      "zone": "surface",
+      "row": 0,
+      "scale": 1.1069007557617363,
+      "role": "receptor",
+      "angle": 3.141592653589793,
+      "flipY": true,
+      "surfaceAnchor": "membrane"
+    },
+    {
+      "id": "sa",
+      "icon": "smad3-ig",
+      "label": "SMAD3",
+      "slot": 7.4,
+      "zone": "sa",
+      "row": 0,
+      "scale": 0.65,
+      "role": "r-smad"
+    },
+    {
+      "id": "sb",
+      "icon": "smad3-ig",
+      "label": "SMAD3",
+      "slot": 9.4,
+      "zone": "sb",
+      "row": 0,
+      "scale": 0.65,
+      "role": "r-smad",
+      "angle": 3.141592653589793,
+      "flipY": true
+    },
+    {
+      "id": "s4",
+      "icon": "smad4-ig",
+      "label": "SMAD4",
+      "slot": 5.0,
+      "zone": "s4",
+      "row": 0,
+      "scale": 0.65,
+      "role": "co-smad"
+    },
+    {
+      "id": "npc",
+      "icon": "nuclear-pore-cutaway",
+      "label": "Nuclear pore",
+      "slot": 5.0,
+      "zone": "npc",
+      "row": 0,
+      "scale": 5,
+      "role": "pore"
+    },
+    {
+      "id": "dna",
+      "icon": "dna-ig",
+      "label": "Response element",
+      "slot": 5.85,
+      "zone": "dna",
+      "row": 0,
+      "scale": 1.5,
+      "role": "dna"
+    },
+    {
+      "id": "rna",
+      "icon": "rna-ig",
+      "label": "Target-gene RNA",
+      "slot": 9.0,
+      "zone": "rna",
+      "row": 0,
+      "scale": 1.1,
+      "role": "rna",
+      "hidden": true
+    }
+  ],
+  "events": [
+    {
+      "id": "ligand-bind",
+      "kind": "dock",
+      "actor": "ligand",
+      "target": "r2a",
+      "duration": 4,
+      "title": "TGFβ1 识别受体 II",
+      "caption": "成熟 TGFβ1 二聚体先与受体 II 结合；潜伏复合物的释放在此合并。",
+      "source": "receptor",
+      "after": [],
+      "port": "II-left",
+      "targetPort": "ligand"
+    },
+    {
+      "id": "pair-II",
+      "kind": "dock",
+      "actor": "r2b",
+      "target": "ligand",
+      "duration": 4,
+      "title": "配体组织受体对",
+      "caption": "第二个受体 II 结合配体另一端；两个受体始终保持跨膜位置。",
+      "source": "assembly",
+      "after": [
+        "ligand-bind"
+      ],
+      "port": "ligand",
+      "targetPort": "II-right"
+    },
+    {
+      "id": "pair-Ia",
+      "kind": "dock",
+      "actor": "r1a",
+      "target": "ligand",
+      "duration": 4,
+      "title": "募集两个受体 I",
+      "caption": "两个受体 I 与配体–受体 II 复合物协同组装，形成 2:2 受体复合物。",
+      "source": "assembly",
+      "after": [
+        "pair-II"
+      ],
+      "port": "ligand",
+      "targetPort": "I-left"
+    },
+    {
+      "id": "pair-Ib",
+      "kind": "dock",
+      "actor": "r1b",
+      "target": "ligand",
+      "duration": 4,
+      "title": "募集两个受体 I",
+      "caption": "展示第二个受体 I；顺序用于教学。",
+      "source": "assembly",
+      "after": [
+        "pair-II"
+      ],
+      "port": "ligand",
+      "targetPort": "I-right",
+      "silent": true
+    },
+    {
+      "id": "gs-a",
+      "kind": "state",
+      "actor": "r1a",
+      "target": "r1a",
+      "duration": 2,
+      "title": "受体 I 的 GS 区磷酸化",
+      "caption": "受体 II 的激酶作用于受体 I 的 GS 调控区；P 圆圈代表该磷酸化状态。",
+      "source": "gs",
+      "after": [
+        "pair-Ia",
+        "pair-Ib"
+      ],
+      "state": "GS-P"
+    },
+    {
+      "id": "gs-b",
+      "kind": "state",
+      "actor": "r1b",
+      "target": "r1b",
+      "duration": 2,
+      "title": "受体 I 的 GS 区磷酸化",
+      "caption": "两个受体 I 分别保留代表性 GS 磷酸化标记。",
+      "source": "gs",
+      "after": [
+        "pair-Ia",
+        "pair-Ib"
+      ],
+      "state": "GS-P",
+      "silent": true
+    },
+    {
+      "id": "phos-a",
+      "kind": "reaction",
+      "actor": "sa",
+      "target": "r1a",
+      "duration": 6,
+      "title": "磷酸化第一个 SMAD3",
+      "caption": "受体 I 识别 SMAD3 的 MH2 区，磷酸化其 C 端；两个 P 圆圈表示 S423/S425。",
+      "source": "smad-p",
+      "after": [
+        "gs-a",
+        "gs-b"
+      ],
+      "port": "co-SMAD-left",
+      "targetPort": "SMAD-substrate",
+      "stateTarget": "sa",
+      "state": "pS2",
+      "approach": [
+        [
+          414.21156416035336,
+          590
+        ],
+        [
+          414.21156416035336,
+          378.59209362735646
+        ]
+      ]
+    },
+    {
+      "id": "phos-b",
+      "kind": "reaction",
+      "actor": "sb",
+      "target": "r1b",
+      "duration": 6,
+      "title": "磷酸化第二个 SMAD3",
+      "caption": "第二个 SMAD3 获得相同的 C 端标记；反应结束后底物释放。",
+      "source": "smad-p",
+      "after": [
+        "phos-a"
+      ],
+      "port": "co-SMAD-left",
+      "targetPort": "SMAD-substrate",
+      "stateTarget": "sb",
+      "state": "pS2",
+      "approach": [
+        [
+          1040,
+          820
+        ],
+        [
+          720,
+          820
+        ],
+        [
+          720,
+          590
+        ],
+        [
+          424.8284358396466,
+          590
+        ],
+        [
+          424.8284358396466,
+          378.59209362735646
+        ]
+      ]
+    },
+    {
+      "id": "trimer-a",
+      "kind": "dock",
+      "actor": "sa",
+      "target": "s4",
+      "duration": 4,
+      "title": "磷酸化 SMAD3 结合 SMAD4",
+      "caption": "通过配对的 MH2 示意界面组装；P 圆圈随完整分子移动。",
+      "source": "trimer",
+      "after": [
+        "phos-b"
+      ],
+      "port": "co-SMAD-right",
+      "targetPort": "co-SMAD-left",
+      "approach": [
+        [
+          480,
+          650
+        ],
+        [
+          480,
+          850
+        ]
+      ]
+    },
+    {
+      "id": "trimer-b",
+      "kind": "dock",
+      "actor": "sb",
+      "target": "s4",
+      "duration": 4,
+      "title": "形成 2:1 SMAD 三聚体",
+      "caption": "复合物包含两个磷酸化 SMAD3 与一个 SMAD4。两个配对界面使用同一套轮廓规则。",
+      "source": "trimer",
+      "after": [
+        "trimer-a"
+      ],
+      "port": "co-SMAD-right",
+      "targetPort": "co-SMAD-right",
+      "approach": [
+        [
+          680,
+          760
+        ],
+        [
+          680,
+          850
+        ]
+      ]
+    },
+    {
+      "id": "import",
+      "kind": "move",
+      "actor": "s4",
+      "target": "npc",
+      "duration": 10,
+      "title": "完整复合物通过核孔",
+      "caption": "相连的三个组分与四个 P 标记一起通过核孔。图示合并核转运步骤，不指定唯一转运因子。",
+      "source": "import",
+      "after": [
+        "trimer-b"
+      ],
+      "to": {
+        "slot": 5,
+        "zone": "arrival"
+      }
+    },
+    {
+      "id": "dna-bind",
+      "kind": "dock",
+      "actor": "s4",
+      "target": "dna",
+      "duration": 6,
+      "title": "核内结合响应元件",
+      "caption": "SMAD3/SMAD4 的 MH1 功能连接到 DNA；此处用一般双链 DNA 表示响应元件，未指定碱基序列。",
+      "source": "dna",
+      "after": [
+        "import"
+      ],
+      "port": "DNA-binding",
+      "targetPort": "surface-contact",
+      "approach": [
+        [
+          440,
+          1400
+        ],
+        [
+          440,
+          1700
+        ],
+        [
+          604,
+          1700
+        ]
+      ]
+    },
+    {
+      "id": "transcribe",
+      "kind": "produce",
+      "actor": "rna",
+      "target": "dna",
+      "duration": 5,
+      "title": "启动转录响应",
+      "caption": "与共调控因子协作后产生转录输出；这里合并表示共因子和 RNA 聚合酶。",
+      "source": "transcription",
+      "after": [
+        "dna-bind"
+      ],
+      "stateTarget": "rna",
+      "state": "transcribed"
+    },
+    {
+      "id": "hold",
+      "kind": "state",
+      "actor": "s4",
+      "target": "s4",
+      "duration": 3,
+      "title": "信号已到达细胞核",
+      "caption": "受体、磷酸化状态、三聚体和核内响应共同构成完整主干。",
+      "source": "transcription",
+      "after": [
+        "transcribe"
+      ],
+      "state": "complex"
+    }
+  ],
+  "initialStates": {
+    "r2a": "active",
+    "r2b": "active"
+  },
+  "environment": {
+    "gate": "npc",
+    "cargo": [
+      "sa",
+      "s4",
+      "sb"
+    ],
+    "transit": "import",
+    "outerY": 1000,
+    "innerY": 1280,
+    "left": 490,
+    "right": 710
+  },
+  "reviewTimes": {
+    "normal": [
+      0,
+      4,
+      8,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      39,
+      42,
+      44,
+      46,
+      48,
+      50,
+      53,
+      55,
+      58
+    ],
+    "alk5-blocked": [
+      16
+    ],
+    "smad3-2SA": [
+      28
+    ]
+  },
+  "scope": "Canonical SMAD3 branch. Timings, scale and interface curves are teaching geometry; latent activation, SARA, feedback, explicit import factors and co-regulators are combined or omitted."
+}

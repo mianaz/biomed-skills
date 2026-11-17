@@ -1,0 +1,47 @@
+{
+  "template": "worked/distribution",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Fixed full canvas and point jitter were tied to the small original fixture.",
+  "native_controls": "Native ID dodge and a panel that grows with group count while preserving height.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        54.68055555555556,
+        67.73333333333332
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        51.50555555555555,
+        68.43888888888888
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        67.73333333333332,
+        84.66666666666667
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

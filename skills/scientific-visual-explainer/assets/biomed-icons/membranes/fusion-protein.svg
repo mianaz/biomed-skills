@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="fusion-target-membrane" data-part="target-membrane" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M25 25 C51 37 109 37 135 25 L135 39 C109 51 51 51 25 39 Z"/>
+</g>
+<g id="fusion-vesicle-membrane" data-part="vesicle-membrane" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M25 121 C51 109 109 109 135 121 L135 135 C109 123 51 123 25 135 Z"/>
+</g>
+<g id="fusion-bundle-helix-1" data-part="bundle-helix-1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M62 43 C73 52 73 61 62 70 C51 79 51 87 62 96 C73 105 73 114 62 121" stroke="#3D5963" stroke-width="10"/><path d="M62 43 C73 52 73 61 62 70 C51 79 51 87 62 96 C73 105 73 114 62 121" stroke="#69ADB5" stroke-width="7"/>
+</g>
+<g id="fusion-bundle-helix-2" data-part="bundle-helix-2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M73 43 C62 52 62 61 73 70 C84 79 84 87 73 96 C62 105 62 114 73 121" stroke="#3D5963" stroke-width="10"/><path d="M73 43 C62 52 62 61 73 70 C84 79 84 87 73 96 C62 105 62 114 73 121" stroke="#69ADB5" stroke-width="7"/>
+</g>
+<g id="fusion-bundle-helix-3" data-part="bundle-helix-3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M87 43 C98 52 98 61 87 70 C76 79 76 87 87 96 C98 105 98 114 87 121" stroke="#3D5963" stroke-width="10"/><path d="M87 43 C98 52 98 61 87 70 C76 79 76 87 87 96 C98 105 98 114 87 121" stroke="#69ADB5" stroke-width="7"/>
+</g>
+<g id="fusion-bundle-helix-4" data-part="bundle-helix-4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M98 43 C87 52 87 61 98 70 C109 79 109 87 98 96 C87 105 87 114 98 121" stroke="#3D5963" stroke-width="10"/><path d="M98 43 C87 52 87 61 98 70 C109 79 109 87 98 96 C87 105 87 114 98 121" stroke="#69ADB5" stroke-width="7"/>
+</g>
+</svg>

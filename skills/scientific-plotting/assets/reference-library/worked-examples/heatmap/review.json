@@ -1,0 +1,52 @@
+{
+  "template": "worked/heatmap",
+  "date": "2026-11-05",
+  "data_basis": "synthetic",
+  "implementation": "examples/native-reference-cases.R",
+  "supersedes": "worked/heatmap-legacy-20261105",
+  "scientific_review": "complete",
+  "visual_review": "complete",
+  "native_editability": "complete",
+  "tested_cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        75.14166666666667,
+        46.56666666666666
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "square_tiles": true,
+        "matrix_matches_row_scaling": true,
+        "no_heatmap_p_values": true
+      }
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        75.84722222222223,
+        46.56666666666666
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "square_tiles": true,
+        "matrix_matches_row_scaling": true,
+        "no_heatmap_p_values": true
+      }
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        72.67222222222222,
+        66.675
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "square_tiles": true,
+        "matrix_matches_row_scaling": true,
+        "no_heatmap_p_values": true
+      }
+    }
+  ],
+  "unresolved_items": []
+}

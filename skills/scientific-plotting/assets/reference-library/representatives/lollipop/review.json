@@ -1,0 +1,47 @@
+{
+  "template": "representative/lollipop",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "The A/B conditional assigned two manual offsets and a fixed palette.",
+  "native_controls": "Native horizontal dodge and a palette keyed to current group names.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        69.14444444444445,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 5,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        95.25,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 5,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        119.94444444444444,
+        90.3111111111111
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 5,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

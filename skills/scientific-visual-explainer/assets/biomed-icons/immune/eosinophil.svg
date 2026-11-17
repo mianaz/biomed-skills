@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="eosinophil" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <g id="eosinophil-cell-body" data-part="cell-body">
+    <ellipse cx="80" cy="80" rx="58" ry="53" fill="#EDF5F1"/>
+  </g>
+  <g id="eosinophil-coarse-granules" data-part="coarse-granules" fill="#E4BE78" stroke="#3D5963" stroke-width="1.2">
+    <circle cx="39" cy="63" r="5"/><circle cx="47" cy="89" r="4.5"/><circle cx="58" cy="47" r="4.5"/><circle cx="67" cy="111" r="5"/>
+    <circle cx="108" cy="49" r="4.5"/><circle cx="121" cy="65" r="5"/><circle cx="126" cy="91" r="4.5"/><circle cx="109" cy="111" r="5"/>
+    <circle cx="91" cy="120" r="4.5"/><circle cx="32" cy="79" r="4"/><circle cx="83" cy="42" r="4"/>
+  </g>
+  <g id="eosinophil-bilobed-nucleus" data-part="bilobed-nucleus">
+    <path d="M74 58 C65 49 53 54 51 67 C48 81 55 94 67 95 C76 96 78 88 82 82 C86 88 89 96 99 95 C112 94 118 81 113 67 C109 54 96 50 88 59 C84 63 83 69 81 73 C79 68 78 62 74 58 Z" fill="#69ADB5"/>
+  </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="autolysosome" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="autolysosome-limiting-membrane" data-part="limiting-membrane">
+      <path d="M24 79 C23 56 39 37 61 30 C85 23 112 31 129 48 C143 63 144 86 135 104 C124 126 100 136 76 134 C51 132 31 117 25 98 C23 92 23 85 24 79 Z" fill="#EDF5F1"/>
+    </g>
+    <g id="autolysosome-degrading-cargo" data-part="degrading-cargo">
+      <path d="M48 64 C53 57 62 59 65 65 L61 72 L53 74 Z" fill="#D98E83"/>
+      <path d="M75 56 C83 53 89 58 88 64 L82 70 L74 67 Z" fill="#E4BE78"/>
+      <path d="M101 68 C109 66 114 72 111 78 L104 81 L98 76 Z" fill="#69ADB5"/>
+      <path d="M61 88 C65 82 73 83 76 88 L72 96 L64 97 Z" fill="#E4BE78"/>
+      <path d="M91 91 C96 84 105 87 106 94 C106 100 99 103 94 100 Z" fill="#D98E83"/>
+      <path d="M77 111 C82 106 89 107 91 112 C93 117 88 121 82 120 Z" fill="#69ADB5"/>
+      <circle cx="51" cy="101" r="3.2" fill="#D98E83"/><circle cx="115" cy="99" r="2.8" fill="#E4BE78"/>
+    </g>
+  </g>
+</svg>

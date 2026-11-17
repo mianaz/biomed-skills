@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+<g id="endosome-membrane" data-part="membrane" fill="#B3D7CC" stroke="#3D5963" stroke-width="2.5" stroke-linejoin="round">
+  <path d="M53 34 C69 26 88 27 104 34 C110 37 115 41 119 46 C126 42 130 34 137 34 C142 34 143 38 141 42 C137 51 132 57 124 62 C130 77 129 93 119 106 C108 121 91 130 72 129 C52 128 36 116 29 100 C21 83 25 62 36 48 C41 42 47 37 53 34 Z"/>
+</g>
+<g id="endosome-lumen" data-part="lumen" fill="#EDF5F1" stroke="#3D5963" stroke-width="2.5">
+  <ellipse cx="78" cy="82" rx="43" ry="38"/>
+</g>
+<g id="endosome-intraluminal-vesicles" data-part="intraluminal-vesicles" fill="#EDF5F1" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="58" cy="68" r="10"/><circle cx="95" cy="91" r="13"/><circle cx="68" cy="105" r="8"/>
+</g>
+<g id="endosome-sorted-cargo" data-part="sorted-cargo" fill="#E4BE78" stroke="#3D5963" stroke-width="2.5">
+  <circle cx="58" cy="68" r="3.5"/><circle cx="95" cy="91" r="4"/><circle cx="68" cy="105" r="3"/>
+</g>
+</svg>

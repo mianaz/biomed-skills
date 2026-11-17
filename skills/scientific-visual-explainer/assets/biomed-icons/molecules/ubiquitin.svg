@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="ubiquitin-body" data-part="body"><path d="M42 65 C33 56 39 42 52 40 C59 30 75 28 83 35 C95 28 109 34 113 45 C126 47 132 60 125 70 C131 81 125 94 113 96 C111 108 98 117 85 112 C74 121 60 116 56 107 C43 108 34 98 38 86 C31 80 35 70 42 65 Z" fill="#69ADB5" stroke-width="2.5"/></g>
+<g id="ubiquitin-beta-sheet" data-part="beta-sheet">
+<path d="M49 60 L60 51 L64 57 L53 67 L63 78 L58 83 L46 69 Z" fill="#D7E8EC" stroke-width="1.5"/>
+<path d="M64 53 L75 45 L79 51 L68 60 L78 72 L73 77 L61 62 Z" fill="#D7E8EC" stroke-width="1.5"/>
+<path d="M80 48 L91 43 L94 50 L84 56 L93 67 L88 72 L77 58 Z" fill="#D7E8EC" stroke-width="1.5"/>
+</g>
+<g id="ubiquitin-helix" data-part="helix"><path d="M97 74 C104 67 113 70 116 77 C119 84 114 91 107 93 C100 95 94 89 94 83 C94 79 95 76 97 74 Z" fill="#D7E8EC" stroke-width="1.5"/></g>
+<g id="ubiquitin-c-terminal-tail" data-part="c-terminal-tail"><path d="M110 96 C120 100 128 106 136 113" fill="none" stroke-width="4"/><circle cx="137" cy="114" r="4.5" fill="#69ADB5" stroke-width="2.5"/></g>
+</svg>

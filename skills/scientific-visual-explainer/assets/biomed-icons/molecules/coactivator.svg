@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="coactivator-scaffold-linker" data-part="scaffold-linker"><path d="M53 83 C63 62 96 62 107 83" fill="none" stroke-width="18"/><path d="M53 83 C63 62 96 62 107 83" fill="none" stroke="#69ADB5" stroke-width="13"/></g>
+<g id="coactivator-domain-a" data-part="domain-a"><path d="M23 66 C27 53 40 48 51 55 C63 52 70 63 67 75 C74 86 67 100 55 103 C46 115 30 110 25 98 C15 91 16 75 23 66 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M30 71 C37 64 46 65 49 72 C52 79 47 84 41 87" fill="none" stroke-width="1.5"/></g>
+<g id="coactivator-domain-b" data-part="domain-b"><path d="M94 66 C98 53 111 48 122 55 C134 52 141 63 138 75 C145 86 138 100 126 103 C117 115 101 110 96 98 C86 91 87 75 94 66 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M111 71 C118 64 127 65 130 72 C133 79 128 84 122 87" fill="none" stroke-width="1.5"/></g>
+<g id="coactivator-central-module" data-part="central-module"><path d="M68 56 C74 49 86 49 92 56 C99 64 94 75 87 79 C81 85 71 80 67 73 C64 67 65 61 68 56 Z" fill="#D7E8EC" stroke-width="2.5"/></g>
+</svg>

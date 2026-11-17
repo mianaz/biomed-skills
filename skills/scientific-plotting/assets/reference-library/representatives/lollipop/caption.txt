@@ -1,0 +1,1 @@
+Synthetic demonstration data. Supplied scores by named category and group. Native horizontal dodge aligns each stem with its point and supports any supplied group names.

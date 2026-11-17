@@ -1,0 +1,1 @@
+Synthetic demonstration data. Supplied odds ratios and 95% confidence interval endpoints; log scale with native ticks; reference value is 1. Input rows: 3

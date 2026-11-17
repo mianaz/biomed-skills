@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="nucleolus" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="nucleolus-nuclear-context" data-part="nuclear-context" data-context="true">
+      <ellipse cx="80" cy="80" rx="64" ry="57" fill="#EDF5F1" stroke="#B3D7CC" stroke-width="2.5"/>
+    </g>
+    <g id="nucleolus-granular-component" data-part="granular-component">
+      <path d="M44 78 C42 65 50 53 61 48 C73 42 88 44 97 49 C110 50 118 62 116 75 C121 87 114 101 104 106 C96 118 82 120 69 116 C56 117 45 107 44 96 C39 91 40 83 44 78 Z" fill="#B2A6CD"/>
+    </g>
+    <g id="nucleolus-dense-fibrillar-component" data-part="dense-fibrillar-component">
+      <path d="M60 80 C60 69 68 61 80 60 C92 61 100 69 100 80 C100 92 92 100 80 101 C68 100 60 92 60 80 Z" fill="#D7E8EC" stroke="#69ADB5" stroke-width="1.8"/>
+      <path d="M55 72 C58 67 61 65 65 63 M96 98 C101 96 104 92 106 87 M55 94 C58 99 61 101 65 103" stroke="#69ADB5" stroke-width="1.5"/>
+    </g>
+    <g id="nucleolus-fibrillar-center" data-part="fibrillar-center">
+      <ellipse cx="80" cy="80" rx="10" ry="8" fill="#EDF5F1" stroke="#69ADB5" stroke-width="1.6"/>
+    </g>
+    <g id="nucleolus-granules" data-part="granules" fill="#69ADB5" stroke-width="1">
+      <circle cx="52" cy="83" r="2.2"/><circle cx="107" cy="69" r="2.2"/><circle cx="96" cy="108" r="2.2"/><circle cx="61" cy="108" r="2.2"/>
+    </g>
+  </g>
+</svg>

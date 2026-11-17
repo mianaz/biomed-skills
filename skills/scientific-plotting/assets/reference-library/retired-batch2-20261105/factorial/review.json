@@ -1,0 +1,19 @@
+{
+  "case": "factorial",
+  "checks": [
+    {
+      "variant": "original",
+      "width_mm": 85.72,
+      "height_mm": 73.73,
+      "min_text_pt": 11.04
+    },
+    {
+      "variant": "replacement",
+      "width_mm": 85.72,
+      "height_mm": 73.73,
+      "min_text_pt": 11.04
+    }
+  ],
+  "replacement": "Treatment labels and values changed",
+  "visual_review": "Saved original and replacement inspected on 2026-10-26"
+}

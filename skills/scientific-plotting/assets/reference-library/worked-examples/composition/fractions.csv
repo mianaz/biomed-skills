@@ -1,0 +1,19 @@
+"sample","category","group","count","denominator","fraction"
+"S1","Type A","Control",14,20,0.7
+"S2","Type A","Control",17,22,0.772727272727273
+"S3","Type A","Control",15,20,0.75
+"S4","Type A","Drug",9,20,0.45
+"S5","Type A","Drug",8,20,0.4
+"S6","Type A","Drug",10,21,0.476190476190476
+"S1","Type B","Control",5,20,0.25
+"S2","Type B","Control",3,22,0.136363636363636
+"S3","Type B","Control",5,20,0.25
+"S4","Type B","Drug",9,20,0.45
+"S5","Type B","Drug",12,20,0.6
+"S6","Type B","Drug",10,21,0.476190476190476
+"S1","Type C","Control",1,20,0.05
+"S2","Type C","Control",2,22,0.0909090909090909
+"S3","Type C","Control",0,20,0
+"S4","Type C","Drug",2,20,0.1
+"S5","Type C","Drug",0,20,0
+"S6","Type C","Drug",1,21,0.0476190476190476

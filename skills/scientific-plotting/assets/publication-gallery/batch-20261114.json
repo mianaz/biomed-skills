@@ -1,0 +1,216 @@
+{
+  "batch": "nature-source-20261114",
+  "panels": 200,
+  "papers": 24,
+  "prior_panels": 800,
+  "prior_papers": 58,
+  "overlapping_dois": [],
+  "code_status_counts": {
+    "panel-mapped": 58,
+    "partial-panel": 4,
+    "study-code": 112,
+    "method-code": 26
+  },
+  "family_counts": {
+    "distribution": 32,
+    "association": 24,
+    "composition": 24,
+    "genomic": 20,
+    "time-course": 19,
+    "matrix": 24,
+    "group-comparison": 14,
+    "intersection": 2,
+    "hierarchy": 3,
+    "enrichment": 4,
+    "dynamics": 1,
+    "flow": 2,
+    "embedding": 5,
+    "survival": 5,
+    "dose-response": 1,
+    "network": 7,
+    "prediction": 2,
+    "spatial": 11
+  },
+  "crop_review": "200 native-resolution original crops reviewed; full source figures retained.",
+  "execution": "36 panel-specific R/Python adapters validated with author data and isolated replacement fixtures; 72 source-data runs + 72 replacement runs passed. Two panels use a seeded rerun of the author stochastic model. Full upstream author pipelines were not rerun.",
+  "counting": "One published lettered quantitative panel counts once, including linked subplots; an unlettered complete quantitative figure counts once.",
+  "selection": "24 open-access Nature research articles with quantitative biomedical, genomic, spatial and statistical figures. Study code was prioritized. Existing catalogue DOI values were excluded.",
+  "source_policy": "Publisher artwork and author code retained locally with source/licence links. No images or source-code archives added to the distributable skill package.",
+  "catalog_total": 1000,
+  "sources": [
+    {
+      "paper_id": "N05",
+      "title": "Tracking clonal evolution during treatment in ovarian cancer using cell-free DNA.",
+      "doi": "10.1038/s41586-025-09580-0",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09580-0"
+    },
+    {
+      "paper_id": "N02",
+      "title": "Specificity, length and luck drive gene rankings in association studies.",
+      "doi": "10.1038/s41586-025-09703-7",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09703-7"
+    },
+    {
+      "paper_id": "N07",
+      "title": "Sperm sequencing reveals extensive positive selection in the male germline.",
+      "doi": "10.1038/s41586-025-09448-3",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09448-3"
+    },
+    {
+      "paper_id": "N08",
+      "title": "Polyclonal origins of human premalignant colorectal lesions.",
+      "doi": "10.1038/s41586-025-09930-y",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09930-y"
+    },
+    {
+      "paper_id": "N09",
+      "title": "Gut micro-organisms associated with health, nutrition and dietary interventions.",
+      "doi": "10.1038/s41586-025-09854-7",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09854-7"
+    },
+    {
+      "paper_id": "N10",
+      "title": "SARS-CoV-2 evolution on a dynamic immune landscape.",
+      "doi": "10.1038/s41586-024-08477-8",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-024-08477-8"
+    },
+    {
+      "paper_id": "N11",
+      "title": "Gene-specific selective sweeps are pervasive across human gut microbiomes.",
+      "doi": "10.1038/s41586-025-09798-y",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09798-y"
+    },
+    {
+      "paper_id": "N12",
+      "title": "Sustained HIV-1 remission after heterozygous CCR5Δ32 stem cell transplantation.",
+      "doi": "10.1038/s41586-025-09893-0",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09893-0"
+    },
+    {
+      "paper_id": "N13",
+      "title": "Clone copy number diversity is linked to survival in lung cancer.",
+      "doi": "10.1038/s41586-025-09398-w",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09398-w"
+    },
+    {
+      "paper_id": "N14",
+      "title": "Prevalence of Alzheimer's disease pathology in the community.",
+      "doi": "10.1038/s41586-025-09841-y",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09841-y"
+    },
+    {
+      "paper_id": "N16",
+      "title": "NSD2 targeting reverses plasticity and drug resistance in prostate cancer.",
+      "doi": "10.1038/s41586-025-09727-z",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09727-z"
+    },
+    {
+      "paper_id": "N20",
+      "title": "Multi-omic profiling reveals age-related immune dynamics in healthy adults.",
+      "doi": "10.1038/s41586-025-09686-5",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09686-5"
+    },
+    {
+      "paper_id": "N23",
+      "title": "A vaccine central in A(H5) influenza antigenic space confers broad immunity.",
+      "doi": "10.1038/s41586-025-09626-3",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09626-3"
+    },
+    {
+      "paper_id": "N24",
+      "title": "Hotspots of human mutation point to clonal expansions in spermatogonia.",
+      "doi": "10.1038/s41586-025-09579-7",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09579-7"
+    },
+    {
+      "paper_id": "N25",
+      "title": "The astrocytic ensemble acts as a multiday trace to stabilize memory.",
+      "doi": "10.1038/s41586-025-09619-2",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09619-2"
+    },
+    {
+      "paper_id": "N26",
+      "title": "Decay of driver mutations shapes the landscape of intestinal transformation.",
+      "doi": "10.1038/s41586-025-09762-w",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09762-w"
+    },
+    {
+      "paper_id": "N27",
+      "title": "Whole-genome landscapes of 1,364 breast cancers.",
+      "doi": "10.1038/s41586-025-09812-3",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09812-3"
+    },
+    {
+      "paper_id": "N28",
+      "title": "Tumour-reactive heterotypic CD8 T cell clusters from clinical samples.",
+      "doi": "10.1038/s41586-025-09754-w",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09754-w"
+    },
+    {
+      "paper_id": "N30",
+      "title": "Myeloperoxidase transforms chromatin into neutrophil extracellular traps.",
+      "doi": "10.1038/s41586-025-09523-9",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09523-9"
+    },
+    {
+      "paper_id": "N34",
+      "title": "Transient hepatic reconstitution of trophic factors enhances aged immunity.",
+      "doi": "10.1038/s41586-025-09873-4",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09873-4"
+    },
+    {
+      "paper_id": "N35",
+      "title": "Tumour evolution and microenvironment interactions in 2D and 3D space.",
+      "doi": "10.1038/s41586-024-08087-4",
+      "year": "2024",
+      "article_url": "https://www.nature.com/articles/s41586-024-08087-4"
+    },
+    {
+      "paper_id": "N37",
+      "title": "Spatial dynamics of brain development and neuroinflammation.",
+      "doi": "10.1038/s41586-025-09663-y",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09663-y"
+    },
+    {
+      "paper_id": "N38",
+      "title": "From genotype to phenotype with 1,086 near telomere-to-telomere yeast genomes.",
+      "doi": "10.1038/s41586-025-09637-0",
+      "year": "2025",
+      "article_url": "https://www.nature.com/articles/s41586-025-09637-0"
+    },
+    {
+      "paper_id": "N40",
+      "title": "Mapping the genetic landscape across 14 psychiatric disorders.",
+      "doi": "10.1038/s41586-025-09820-3",
+      "year": "2026",
+      "article_url": "https://www.nature.com/articles/s41586-025-09820-3"
+    }
+  ],
+  "adapters_reviewed": 36,
+  "reference_only": 164,
+  "mapped_code_pending": 22,
+  "replication_report": "replication/index.html",
+  "fidelity_pending": 0,
+  "source_fidelity_approved": 36
+}

@@ -1,0 +1,428 @@
+[
+  {
+    "id": "t-cell",
+    "label": "T cell",
+    "label_zh": "T细胞",
+    "file": "immune/t-cell.svg",
+    "category": "immune",
+    "description": "A resting lymphocyte with a large round nucleus and scant cytoplasm; a single surface receptor is a schematic lineage cue.",
+    "parts": [
+      "membrane",
+      "cytoplasm",
+      "nucleus",
+      "surface-receptor"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          139.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "T-cell lineage is not identifiable from naked cell morphology; the receptor mark is schematic context, not a diagnostic marker.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563148/",
+        "https://imagebank.hematology.org/collection/64070"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "b-cell",
+    "label": "B cell",
+    "label_zh": "B细胞",
+    "file": "immune/b-cell.svg",
+    "category": "immune",
+    "description": "A resting lymphocyte with a large round nucleus and scant cytoplasm; paired surface receptors cue B-cell context.",
+    "parts": [
+      "membrane",
+      "cytoplasm",
+      "nucleus",
+      "surface-receptors"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          139.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic B-lymphocyte schematic; the receptor symbols are contextual cues, not a diagnostic morphology claim.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563148/",
+        "https://imagebank.hematology.org/collection/64070"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "plasma-cell",
+    "label": "Plasma cell",
+    "label_zh": "浆细胞",
+    "file": "immune/plasma-cell.svg",
+    "category": "immune",
+    "description": "An antibody-secreting cell with eccentric round nucleus, cartwheel-like chromatin, abundant cytoplasm, and a perinuclear Golgi hof.",
+    "parts": [
+      "membrane",
+      "cytoplasm",
+      "golgi-hof",
+      "nucleus"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          141.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic mature plasma-cell schematic; simplified chromatin and Golgi clearing are educational cues.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK556082/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK603716/figure/article-145905.image.f5/?report=objectonly"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "nk-cell",
+    "label": "NK cell",
+    "label_zh": "自然杀伤细胞",
+    "file": "immune/nk-cell.svg",
+    "category": "immune",
+    "description": "A large granular lymphocyte with a round nucleus, expanded pale cytoplasm, and cytotoxic granules.",
+    "parts": [
+      "membrane",
+      "cytoplasm",
+      "nucleus",
+      "cytotoxic-granules"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          139.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic NK-cell schematic; granules are simplified and do not specify activation or target engagement.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK565844/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK563148/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "dendritic-cell",
+    "label": "Dendritic cell",
+    "label_zh": "树突状细胞",
+    "file": "immune/dendritic-cell.svg",
+    "category": "immune",
+    "description": "A central cell body with long, branching dendritic processes and a central nucleus.",
+    "parts": [
+      "processes",
+      "cell-body",
+      "nucleus"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          148,
+          94
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic dendritic-cell schematic; process geometry is simplified and not a specific subtype.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://ncbi.nlm.nih.gov/books/NBK26926/",
+        "https://www.biorender.com/template/adaptive-immunity",
+        "https://www.biorender.com/icon/dendritic-cell-1-01"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "macrophage",
+    "label": "Macrophage",
+    "label_zh": "巨噬细胞",
+    "file": "immune/macrophage.svg",
+    "category": "immune",
+    "description": "An irregular tissue phagocyte with broad cytoplasm, a folded nucleus, and one phagosome containing cargo.",
+    "parts": [
+      "cell-body",
+      "nucleus",
+      "phagosome"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          142.879,
+          84.243
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic tissue macrophage; engulfed cargo is schematic and does not show a specific pathogen.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563148/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK26926/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "monocyte",
+    "label": "Monocyte",
+    "label_zh": "单核细胞",
+    "file": "immune/monocyte.svg",
+    "category": "immune",
+    "description": "A circulating mononuclear cell with abundant cytoplasm, a kidney-shaped nucleus, and sparse vacuoles.",
+    "parts": [
+      "membrane",
+      "nucleus",
+      "cytoplasmic-vacuoles"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          141.229,
+          82.216
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic circulating monocyte; nuclear contour and cytoplasmic vacuoles are simplified.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563148/",
+        "https://imagebank.hematology.org/collection/64070"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "neutrophil",
+    "label": "Neutrophil",
+    "label_zh": "中性粒细胞",
+    "file": "immune/neutrophil.svg",
+    "category": "immune",
+    "description": "A granulocyte with a multilobed nucleus connected by narrow bridges and fine cytoplasmic granules.",
+    "parts": [
+      "cell-body",
+      "fine-granules",
+      "segmented-nucleus"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          139.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic mature neutrophil; segmentation and fine granules are simplified.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563148/",
+        "https://imagebank.hematology.org/collection/64070"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "eosinophil",
+    "label": "Eosinophil",
+    "label_zh": "嗜酸性粒细胞",
+    "file": "immune/eosinophil.svg",
+    "category": "immune",
+    "description": "A granulocyte with a bilobed nucleus and abundant coarse eosinophilic granules.",
+    "parts": [
+      "cell-body",
+      "coarse-granules",
+      "bilobed-nucleus"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          139.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic mature eosinophil; warm granule color represents staining convention, not molecular composition.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://imagebank.hematology.org/image/60933/eosinophil?type=atlas",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2847274/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "basophil",
+    "label": "Basophil",
+    "label_zh": "嗜碱性粒细胞",
+    "file": "immune/basophil.svg",
+    "category": "immune",
+    "description": "A granulocyte with an S-shaped nucleus partly obscured by coarse basophilic granules.",
+    "parts": [
+      "cell-body",
+      "s-shaped-nucleus",
+      "coarse-granules"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          139.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic mature basophil; granules are schematic and partially cover the nucleus.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK563148/",
+        "https://imagebank.hematology.org/collection/64070"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "mast-cell",
+    "label": "Mast cell",
+    "label_zh": "肥大细胞",
+    "file": "immune/mast-cell.svg",
+    "category": "immune",
+    "description": "A round tissue cell with a central mononuclear nucleus and dense metachromatic cytoplasmic granules.",
+    "parts": [
+      "cell-body",
+      "nucleus",
+      "metachromatic-granules"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          138.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Generic intact tissue mast cell; subtype, tissue location, and activation state are not specified.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK499904/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK12352/"
+      ],
+      "license": "MIT"
+    }
+  },
+  {
+    "id": "regulatory-t-cell",
+    "label": "Regulatory T cell",
+    "label_zh": "调节性T细胞",
+    "file": "immune/regulatory-t-cell.svg",
+    "category": "immune",
+    "description": "A lymphocyte with a large round nucleus and scant cytoplasm; repeated surface symbols cue a marker-rich regulatory phenotype.",
+    "parts": [
+      "membrane",
+      "cytoplasm",
+      "nucleus",
+      "surface-marker-cues"
+    ],
+    "anchors": {
+      "cell-contact": {
+        "point": [
+          139.25,
+          80
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "cell-contact"
+      }
+    },
+    "scope": "Treg identity cannot be inferred from naked morphology; repeated surface symbols are schematic marker cues only, not a diagnostic or quantitative phenotype.",
+    "provenance": {
+      "mode": "original-vector",
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2862733/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK532327/"
+      ],
+      "license": "MIT"
+    }
+  }
+]

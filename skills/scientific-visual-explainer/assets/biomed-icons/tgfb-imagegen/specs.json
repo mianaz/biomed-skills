@@ -1,0 +1,539 @@
+[
+  {
+    "id": "tgfb1-ig",
+    "label": "TGFβ1 dimer",
+    "label_zh": "TGFβ1 dimer",
+    "category": "tgfb-imagegen",
+    "description": "Mature ligand homodimer; latent-complex proteins omitted.",
+    "palette": {
+      "outline": "#3D5963",
+      "subunit-a": "#E4BE78",
+      "subunit-b": "#B3D7CC"
+    },
+    "anchors": {
+      "II-left": {
+        "point": [
+          303.1,
+          453.0
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "II-right": {
+        "point": [
+          1471.9,
+          453.0
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "I-left": {
+        "point": [
+          668.3499999999999,
+          624.5
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      },
+      "I-right": {
+        "point": [
+          1106.65,
+          624.5
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Mature ligand homodimer; latent-complex proteins omitted. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20207738/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/tgfb1-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "tgfbr2-ig",
+    "label": "TGFβRII",
+    "label_zh": "TGFβRII",
+    "category": "tgfb-imagegen",
+    "description": "Single-pass type II receptor with constitutive kinase activity; teaching domain proportions.",
+    "palette": {
+      "outline": "#3D5963",
+      "ectodomain-stalk": "#69ADB5",
+      "kinase": "#B2A6CD"
+    },
+    "anchors": {
+      "ligand": {
+        "point": [
+          537.0,
+          211.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          537.0,
+          608.935
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "SMAD-substrate": {
+        "point": [
+          578.0,
+          1102.63
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "GS-activation": {
+        "point": [
+          687.0,
+          944.16
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Single-pass type II receptor with constitutive kinase activity; teaching domain proportions. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8047140/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/tgfbr2-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "tgfbr1-ig",
+    "label": "TGFβRI / ALK5",
+    "label_zh": "TGFβRI / ALK5",
+    "category": "tgfb-imagegen",
+    "description": "Single-pass type I receptor, membrane-proximal GS region and Ser/Thr kinase.",
+    "palette": {
+      "outline": "#3D5963",
+      "ectodomain-stalk": "#69ADB5",
+      "GS-region": "#E4BE78",
+      "kinase": "#B2A6CD"
+    },
+    "anchors": {
+      "ligand": {
+        "point": [
+          525.0,
+          160.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "membrane": {
+        "point": [
+          525.0,
+          609.8050000000001
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "membrane"
+      },
+      "SMAD-substrate": {
+        "point": [
+          626.0,
+          1118.8899999999999
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "GS-activation": {
+        "point": [
+          609.0,
+          955.48
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "GS": {
+        "point": [
+          465.0,
+          842.35
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "Single-pass type I receptor, membrane-proximal GS region and Ser/Thr kinase. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8047140/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/tgfbr1-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "smad3-ig",
+    "label": "SMAD3",
+    "label_zh": "SMAD3",
+    "category": "tgfb-imagegen",
+    "description": "MH1, linker, MH2 and C-terminal phosphorylation tail; not a solved surface.",
+    "palette": {
+      "outline": "#3D5963",
+      "MH1": "#69ADB5",
+      "MH2": "#B2A6CD",
+      "SSXS-tail": "#E4BE78"
+    },
+    "anchors": {
+      "co-SMAD-right": {
+        "point": [
+          913.0,
+          947.72
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "co-SMAD-left": {
+        "point": [
+          110.0,
+          947.72
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "receptor-docking": {
+        "point": [
+          110.0,
+          998.6400000000001
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "DNA-binding": {
+        "point": [
+          512.0,
+          245.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "center": {
+        "point": [
+          512.0,
+          769.5
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "center"
+      },
+      "SSXS-tail": {
+        "point": [
+          512.0,
+          1405.0
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "MH1, linker, MH2 and C-terminal phosphorylation tail; not a solved surface. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15350224/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/smad3-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "smad4-ig",
+    "label": "SMAD4",
+    "label_zh": "SMAD4",
+    "category": "tgfb-imagegen",
+    "description": "Co-SMAD with MH1/linker/MH2; no R-SMAD SSXS activation motif.",
+    "palette": {
+      "outline": "#3D5963",
+      "MH1": "#B3D7CC",
+      "MH2": "#69ADB5"
+    },
+    "anchors": {
+      "co-SMAD-right": {
+        "point": [
+          941.0,
+          956.04
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "co-SMAD-left": {
+        "point": [
+          82.0,
+          956.04
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "receptor-docking": {
+        "point": [
+          71.0,
+          1009.48
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "DNA-binding": {
+        "point": [
+          512.5,
+          106.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "center": {
+        "point": [
+          512.5,
+          769.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "center"
+      }
+    },
+    "scope": "Co-SMAD with MH1/linker/MH2; no R-SMAD SSXS activation motif. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15350224/",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/smad4-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "smad2-ig",
+    "label": "SMAD2",
+    "label_zh": "SMAD2",
+    "category": "tgfb-imagegen",
+    "description": "SMAD2-specific MH1 insertion shown schematically; library extension, not the SMAD3 lesson actor.",
+    "palette": {
+      "outline": "#3D5963",
+      "MH1-insertion": "#D7E8EC",
+      "MH2": "#B2A6CD",
+      "SSXS-tail": "#E4BE78"
+    },
+    "anchors": {
+      "co-SMAD-right": {
+        "point": [
+          906.0,
+          969.88
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "co-SMAD-left": {
+        "point": [
+          118.0,
+          969.88
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "receptor-docking": {
+        "point": [
+          110.0,
+          1021.5600000000001
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "kind": "binding"
+      },
+      "DNA-binding": {
+        "point": [
+          512.5,
+          259.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "binding"
+      },
+      "center": {
+        "point": [
+          512.5,
+          789.0
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "kind": "center"
+      },
+      "SSXS-tail": {
+        "point": [
+          512.5,
+          1432.0
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "kind": "binding"
+      }
+    },
+    "scope": "SMAD2-specific MH1 insertion shown schematically; library extension, not the SMAD3 lesson actor. Contact contours are illustrative.",
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/template/tgf-beta-signaling-pathway",
+        "scope": "Public full preview visually inspected; no artwork copied."
+      }
+    ],
+    "scientific_references": [
+      {
+        "url": "https://doi.org/10.1074/jbc.272.44.28107",
+        "scope": "Primary abstract and available figure captions read."
+      }
+    ],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "tgfb-imagegen/sources/smad2-ig.png",
+      "prompt": "tgfb-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  }
+]

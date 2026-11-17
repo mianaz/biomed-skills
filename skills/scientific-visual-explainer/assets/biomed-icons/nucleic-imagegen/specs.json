@@ -1,0 +1,112 @@
+[
+  {
+    "id": "dna-ig",
+    "label": "DNA duplex",
+    "label_zh": "双链 DNA",
+    "category": "nucleic-imagegen",
+    "description": "Generic double-stranded DNA with alternating ribbon occlusion and schematic base pairs; no specified sequence, handedness or atomic structure.",
+    "scope": "Generic double-stranded DNA with alternating ribbon occlusion and schematic base pairs; no specified sequence, handedness or atomic structure.",
+    "palette": {
+      "outline": "#3D5963",
+      "strand-a": "#69ADB5",
+      "strand-b": "#B2A6CD",
+      "base-pairs": "#B3D7CC"
+    },
+    "anchors": {
+      "surface-contact": {
+        "point": [
+          836,
+          575.5
+        ],
+        "normal": [
+          0,
+          1
+        ]
+      },
+      "left-end": {
+        "point": [
+          102,
+          364.5
+        ],
+        "normal": [
+          -1,
+          0
+        ]
+      },
+      "right-end": {
+        "point": [
+          2066,
+          364.5
+        ],
+        "normal": [
+          1,
+          0
+        ]
+      }
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/icon/dna-2d-short",
+        "scope": "Public icon preview visually inspected for line weight, curvature and detail; original generated art, not copied."
+      }
+    ],
+    "scientific_references": [],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "nucleic-imagegen/sources/dna-ig.png",
+      "prompt": "nucleic-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  },
+  {
+    "id": "rna-ig",
+    "label": "RNA transcript",
+    "label_zh": "单链 RNA",
+    "category": "nucleic-imagegen",
+    "description": "Generic single-stranded transcription output with unpaired nucleotide tabs; no specific sequence, cap, poly-A tail, secondary structure or mature-processing claim.",
+    "scope": "Generic single-stranded transcription output with unpaired nucleotide tabs; no specific sequence, cap, poly-A tail, secondary structure or mature-processing claim.",
+    "palette": {
+      "outline": "#3D5963",
+      "backbone": "#B2A6CD",
+      "bases-a": "#69ADB5",
+      "bases-b": "#B3D7CC"
+    },
+    "anchors": {
+      "left-end": {
+        "point": [
+          82,
+          454.0
+        ],
+        "normal": [
+          -1,
+          0
+        ]
+      },
+      "right-end": {
+        "point": [
+          1836,
+          394.0
+        ],
+        "normal": [
+          1,
+          0
+        ]
+      }
+    },
+    "visual_references": [
+      {
+        "url": "https://www.biorender.com/icon/mrna",
+        "scope": "Public icon preview visually inspected for line weight, curvature and detail; original generated art, not copied."
+      }
+    ],
+    "scientific_references": [],
+    "provenance": {
+      "mode": "built-in-imagegen-traced",
+      "source": "nucleic-imagegen/sources/rna-ig.png",
+      "prompt": "nucleic-imagegen/prompts.json",
+      "license": "MIT",
+      "generator_model": "tool-managed; identifier not exposed"
+    }
+  }
+]

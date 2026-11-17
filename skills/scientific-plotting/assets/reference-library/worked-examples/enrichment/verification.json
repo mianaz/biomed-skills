@@ -1,0 +1,194 @@
+{
+  "mechanical_status": "pass",
+  "contract": {
+    "placed_width_mm": 75.14166666666667,
+    "placed_height_mm": null,
+    "font": "Arial",
+    "font_floor_exclusive_pt": 10,
+    "raster_min_dpi": 600,
+    "embedded_image_min_dpi": 600,
+    "dpi_rounding_tolerance": 1,
+    "required_formats": [
+      "pdf",
+      "png"
+    ]
+  },
+  "failures": [],
+  "unchecked": [],
+  "files": [
+    {
+      "file": "outputs/template-curation-remaining-20261105/enrichment/original/figure.pdf",
+      "format": "PDF",
+      "pages": [
+        {
+          "page": 1,
+          "export_mm": [
+            75.14,
+            56.44
+          ],
+          "placed_mm": [
+            75.14166666666667,
+            56.44
+          ],
+          "min_effective_pt": 11.199,
+          "fonts": [
+            "Arial-ItalicMT",
+            "ArialMT"
+          ],
+          "spans": [
+            {
+              "text": "Metabolism",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Stress response",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "DNA repair",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "Cell cycle",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "0",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "1",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "2",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "3",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "4",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "5",
+              "font": "ArialMT",
+              "native_pt": 11.5,
+              "effective_pt": 11.5,
+              "issues": []
+            },
+            {
+              "text": "−log",
+              "font": "ArialMT",
+              "native_pt": 16.0,
+              "effective_pt": 16.0,
+              "issues": []
+            },
+            {
+              "text": "10",
+              "font": "ArialMT",
+              "native_pt": 11.199,
+              "effective_pt": 11.199,
+              "issues": []
+            },
+            {
+              "text": "(",
+              "font": "ArialMT",
+              "native_pt": 20.0,
+              "effective_pt": 20.0,
+              "issues": []
+            },
+            {
+              "text": "P",
+              "font": "Arial-ItalicMT",
+              "native_pt": 16.0,
+              "effective_pt": 16.0,
+              "issues": []
+            },
+            {
+              "text": " adj",
+              "font": "ArialMT",
+              "native_pt": 11.199,
+              "effective_pt": 11.199,
+              "issues": []
+            },
+            {
+              "text": ")",
+              "font": "ArialMT",
+              "native_pt": 20.0,
+              "effective_pt": 20.0,
+              "issues": []
+            }
+          ],
+          "raster_layers": []
+        }
+      ],
+      "failures": [],
+      "unchecked": []
+    },
+    {
+      "file": "outputs/template-curation-remaining-20261105/enrichment/original/figure.png",
+      "pages": [
+        {
+          "page": 1,
+          "pixels": [
+            1777,
+            1333
+          ],
+          "placed_mm": [
+            75.14166666666667,
+            56.37
+          ],
+          "effective_dpi": [
+            600.68,
+            600.68
+          ],
+          "metadata_dpi": [
+            599.9988,
+            599.9988
+          ],
+          "color_mode": "RGB",
+          "compression": null
+        }
+      ],
+      "failures": [],
+      "unchecked": [],
+      "format": "PNG"
+    }
+  ],
+  "manual_review": {
+    "statistics": "pending",
+    "visual_inspection": "pending",
+    "native_editability_and_source_data": "pending"
+  },
+  "completion": "Complete the scientific and visual review in references/figure-verification.md."
+}

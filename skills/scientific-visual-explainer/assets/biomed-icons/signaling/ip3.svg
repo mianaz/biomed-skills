@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="ip3-inositol-ring" data-part="inositol-ring"><path d="M80 41 L101 53 L101 77 L80 89 L59 77 L59 53 Z" fill="#D7E8EC" stroke-width="2.5"/><path d="M80 41 L80 31 M101 77 L110 82 M59 53 L49 48" fill="none" stroke-width="4"/></g>
+<g id="ip3-phosphates" data-part="1-4-5-phosphate-groups"><circle cx="80" cy="24" r="10" fill="#E4BE78" stroke-width="2.5"/><circle cx="116" cy="87" r="10" fill="#E4BE78" stroke-width="2.5"/><circle cx="43" cy="44" r="10" fill="#E4BE78" stroke-width="2.5"/></g>
+<g id="ip3-hydroxyls" data-part="remaining-hydroxyl-groups" fill="none" stroke-width="2"><path d="M80 89 L80 101 M59 77 L49 83 M101 53 L111 47"/></g>
+</svg>

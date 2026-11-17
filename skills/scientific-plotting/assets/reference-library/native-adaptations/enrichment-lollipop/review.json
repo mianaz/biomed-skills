@@ -1,0 +1,48 @@
+{
+  "template": "native/medbio-78",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Count-axis limits were fixed at 0–12 and point size duplicated Count.",
+  "native_controls": "Native count ticks, equal-sized points and a native significance color key.",
+  "data_basis": "Original: saved source result table. Replacement and stress: modified demonstrations, not additional study results.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        130.52777777777777,
+        159.45555555555555
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        130.52777777777777,
+        159.45555555555555
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        130.175,
+        123.11944444444445
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

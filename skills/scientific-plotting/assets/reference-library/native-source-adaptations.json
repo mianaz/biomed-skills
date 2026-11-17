@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "key": "native/medbio-36",
+      "original_key": "medbio/36",
+      "collection": "Worked example",
+      "library": "bundled",
+      "title": "GO enrichment by ontology",
+      "chart": "enrichment bars",
+      "task": "enrichment",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "ID",
+            "Description",
+            "type",
+            "padj"
+          ],
+          "row_unit": "One supplied enrichment result"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "display_status": "Native implementation · replacement tested",
+      "directory": "assets/reference-library/native-adaptations/go-ontology",
+      "script": "examples/native-enrichment-cases.R",
+      "case": "go-ontology",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-enrichment-cases.R",
+        "go-ontology",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/native-adaptations/go-ontology/preview.png",
+      "data_basis": "Original: saved source result table. Replacement and stress: modified demonstrations, not additional study results.",
+      "source_evidence": {
+        "collection": "MedBioinform",
+        "original_key": "medbio/36",
+        "result_source": "Saved direct plotting data; upstream analysis not rerun."
+      },
+      "review_note": "Original, replacement and stress inputs executed; saved scientific values, native objects, final-size typography and rendered files reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 107.24444444444444,
+            "height_mm": 216.25277777777777,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 107.24444444444444,
+            "height_mm": 216.25277777777777,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 107.24444444444444,
+            "height_mm": 196.4972222222222,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ]
+      },
+      "description": "Supplied GO results, retaining all supplied terms and ontology identities. Values use minus log10 of adjusted P. The legacy source used natural logarithms with a log10 label; the adapter corrects that display mismatch.",
+      "adaptation_note": "Correct log10 values, named ontologies and native facets with height following current term counts.",
+      "implementation_version": "2026-11-05-native-batch2",
+      "license": "First-party adapter; original example inputs retain source collection terms.",
+      "supersedes": "medbio-compact/36-legacy-20261105"
+    },
+    {
+      "key": "native/medbio-78",
+      "original_key": "medbio/78",
+      "collection": "Worked example",
+      "library": "bundled",
+      "title": "KEGG gene counts and significance",
+      "chart": "enrichment lollipop",
+      "task": "enrichment",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "ID",
+            "Description",
+            "Count",
+            "pvalue"
+          ],
+          "row_unit": "One supplied enrichment result"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "display_status": "Native implementation · replacement tested",
+      "directory": "assets/reference-library/native-adaptations/enrichment-lollipop",
+      "script": "examples/native-enrichment-cases.R",
+      "case": "enrichment-lollipop",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-enrichment-cases.R",
+        "enrichment-lollipop",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/native-adaptations/enrichment-lollipop/preview.png",
+      "data_basis": "Original: saved source result table. Replacement and stress: modified demonstrations, not additional study results.",
+      "source_evidence": {
+        "collection": "MedBioinform",
+        "original_key": "medbio/78",
+        "result_source": "Saved direct plotting data; upstream analysis not rerun."
+      },
+      "review_note": "Original, replacement and stress inputs executed; saved scientific values, native objects, final-size typography and rendered files reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 130.52777777777777,
+            "height_mm": 159.45555555555555,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 130.52777777777777,
+            "height_mm": 159.45555555555555,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 130.175,
+            "height_mm": 123.11944444444445,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ]
+      },
+      "description": "Supplied KEGG results; stems and equal-sized points show gene counts. Color shows minus log10 of the supplied raw P values. Native ticks follow the current counts; the redundant Count size mapping is removed.",
+      "adaptation_note": "Native count ticks, equal-sized points and a native significance color key.",
+      "implementation_version": "2026-11-05-native-batch2",
+      "license": "First-party adapter; original example inputs retain source collection terms.",
+      "supersedes": "medbio-compact/78-legacy-20261105"
+    },
+    {
+      "key": "native/medbio-80",
+      "original_key": "medbio/80",
+      "collection": "Worked example",
+      "library": "bundled",
+      "title": "Ranked GSEA with named pathway key",
+      "chart": "ranked scatter with size and alpha",
+      "task": "enrichment",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "ID",
+            "NES",
+            "gene_set_size",
+            "pvalue",
+            "highlight"
+          ],
+          "row_unit": "One supplied enrichment result"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "display_status": "Native implementation · replacement tested",
+      "directory": "assets/reference-library/native-adaptations/ranked-gsea",
+      "script": "examples/native-enrichment-cases.R",
+      "case": "ranked-gsea",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-enrichment-cases.R",
+        "ranked-gsea",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/native-adaptations/ranked-gsea/preview.png",
+      "data_basis": "Original: saved source result table. Replacement and stress: modified demonstrations, not additional study results.",
+      "source_evidence": {
+        "collection": "MedBioinform",
+        "original_key": "medbio/80",
+        "result_source": "Saved direct plotting data; upstream analysis not rerun."
+      },
+      "review_note": "Original, replacement and stress inputs executed; saved scientific values, native objects, final-size typography and rendered files reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 159.45555555555555,
+            "height_mm": 110.41944444444444,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 154.8694444444444,
+            "height_mm": 110.41944444444444,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 156.98611111111111,
+            "height_mm": 110.41944444444444,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ]
+      },
+      "description": "Supplied GSEA results ranked by NES. Point area shows actual genes per set; alpha shows minus log10 of raw P. Named highlight flags select pathways before drawing. Native rank labels link to a native pathway key; grey points are other gene sets. The legacy setSize/10 column is restored to gene count and the misleading proportion label is removed.",
+      "adaptation_note": "Ranks follow current results; named highlights link numeric rank labels to a native key; point area shows restored gene count.",
+      "implementation_version": "2026-11-05-native-batch2",
+      "license": "First-party adapter; original example inputs retain source collection terms.",
+      "supersedes": "medbio-compact/80-legacy-20261105"
+    }
+  ],
+  "superseded_records": [
+    {
+      "key": "medbio-compact/36-legacy-20261105",
+      "collection": "MedBioinform compact",
+      "library": "medbio",
+      "directory": "assets/reference-library/retired-batch2-20261105/medbio-36",
+      "title": "转录组GO富集柱状图 · compact (retired implementation)",
+      "task": "enrichment",
+      "chart": "36_转录组GO富集柱状图",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [
+        {
+          "file": "TF_gene.csv",
+          "columns": [
+            "source",
+            "target"
+          ],
+          "row_unit": "Requires recipe-specific inspection"
+        },
+        {
+          "file": "双击Rproj打开工作环境.txt",
+          "columns": [],
+          "row_unit": "Requires recipe-specific inspection"
+        }
+      ],
+      "contract_reviewed": false,
+      "scripts": [
+        "GO.R"
+      ],
+      "packages": [
+        "clusterProfiler",
+        "ggsci",
+        "tidyverse"
+      ],
+      "previews": [
+        "GO.pdf"
+      ],
+      "status": "superseded",
+      "review_note": "Source files and CSV headers inventoried; analysis and native inputs need inspection.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "license": "Source collection terms must be checked before redistribution.",
+      "family": "enrichment-bars",
+      "family_title": "Enrichment and NES bars",
+      "template_group": "medbio/36",
+      "display_status": "Layout reviewed",
+      "description": "Appearance edition of 36_转录组GO富集柱状图. ",
+      "preview_note": "Rendered and visually reviewed at the saved size.",
+      "original_key": "medbio/36",
+      "source_folder": "36_转录组GO富集柱状图",
+      "main_script": "GO.R",
+      "notes": [],
+      "edition": {
+        "font_pt": 11.0,
+        "plot_width_mm": 50.0,
+        "plot_height_mm": 67.5,
+        "canvas_width_mm": 181.0,
+        "canvas_height_mm": 82.0,
+        "render_note": "Rendered and visually reviewed at the saved size."
+      },
+      "data_basis": "source inputs",
+      "plot_group": "enrichment-bars",
+      "plot_group_title": "Enrichment and NES bars",
+      "preview": "assets/reference-library/retired-batch2-20261105/medbio-36/preview.png",
+      "script": "assets/reference-library/retired-batch2-20261105/medbio-36/source-edited.R",
+      "successor": "native/medbio-36",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Natural logarithms were labeled log10; fixed five-row category blocks could misassign shortened results."
+    },
+    {
+      "key": "medbio-compact/78-legacy-20261105",
+      "collection": "MedBioinform compact",
+      "library": "medbio",
+      "directory": "assets/reference-library/retired-batch2-20261105/medbio-78",
+      "title": "转录组测序数据清洗+KEGG富集 · compact (retired implementation)",
+      "task": "enrichment",
+      "chart": "78_转录组测序数据清洗+KEGG富集",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [
+        {
+          "file": "SRA_KEGG_up.Rdata",
+          "columns": [],
+          "row_unit": "Requires recipe-specific inspection"
+        },
+        {
+          "file": "SRA_metadata.csv",
+          "columns": [
+            "sample",
+            "group"
+          ],
+          "row_unit": "Requires recipe-specific inspection"
+        },
+        {
+          "file": "alldiff.csv",
+          "columns": [
+            "",
+            "gene_id",
+            "baseMean",
+            "log2FoldChange",
+            "lfcSE",
+            "pvalue",
+            "padj"
+          ],
+          "row_unit": "Requires recipe-specific inspection"
+        },
+        {
+          "file": "counts_matrix.csv",
+          "columns": [
+            "Geneid",
+            "SRR26264811",
+            "SRR26264812",
+            "SRR26264813",
+            "SRR26264814",
+            "SRR26264815",
+            "SRR26264816",
+            "SRR26264817",
+            "SRR26264818",
+            "SRR26264819",
+            "SRR26264820",
+            "SRR26264821",
+            "SRR26264822",
+            "SRR26264823",
+            "SRR26264824",
+            "SRR26264825",
+            "SRR26264826",
+            "SRR26264827",
+            "SRR26264828"
+          ],
+          "row_unit": "Requires recipe-specific inspection"
+        },
+        {
+          "file": "双击Rproj打开工作环境.txt",
+          "columns": [],
+          "row_unit": "Requires recipe-specific inspection"
+        }
+      ],
+      "contract_reviewed": false,
+      "scripts": [
+        "data_clean.R"
+      ],
+      "packages": [
+        "DESeq2",
+        "RColorBrewer",
+        "biomaRt",
+        "clusterProfiler",
+        "tidyverse"
+      ],
+      "previews": [
+        "KEGG.png"
+      ],
+      "status": "superseded",
+      "review_note": "Source files and CSV headers inventoried; analysis and native inputs need inspection.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "license": "Source collection terms must be checked before redistribution.",
+      "family": "lollipop",
+      "family_title": "Lollipop and ranked effects",
+      "template_group": "medbio/78",
+      "display_status": "Layout reviewed",
+      "description": "Appearance edition of 78_转录组测序数据清洗+KEGG富集. ",
+      "preview_note": "Rendered and visually reviewed at the saved size.",
+      "original_key": "medbio/78",
+      "source_folder": "78_转录组测序数据清洗+KEGG富集",
+      "main_script": "data_clean.R",
+      "notes": [],
+      "edition": {
+        "font_pt": 11.0,
+        "plot_width_mm": 75.0,
+        "plot_height_mm": 126.17787342907,
+        "canvas_width_mm": 236.0,
+        "canvas_height_mm": 145.0,
+        "render_note": "Rendered and visually reviewed at the saved size."
+      },
+      "data_basis": "source inputs",
+      "plot_group": "enrichment-lollipop",
+      "plot_group_title": "Pathway lollipops and comet plots",
+      "preview": "assets/reference-library/retired-batch2-20261105/medbio-78/preview.png",
+      "script": "assets/reference-library/retired-batch2-20261105/medbio-78/source-edited.R",
+      "successor": "native/medbio-78",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Count-axis limits were fixed at 0–12 and point size duplicated Count."
+    },
+    {
+      "key": "medbio-compact/80-legacy-20261105",
+      "collection": "MedBioinform compact",
+      "library": "medbio",
+      "directory": "assets/reference-library/retired-batch2-20261105/medbio-80",
+      "title": "转录组GSEA富集气泡图 · compact (retired implementation)",
+      "task": "enrichment",
+      "chart": "80_转录组GSEA富集气泡图",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "unspecified"
+      ],
+      "input_kind": "unspecified",
+      "inputs": [
+        {
+          "file": "GSE7621_allDiff.Rdata",
+          "columns": [],
+          "row_unit": "Requires recipe-specific inspection"
+        },
+        {
+          "file": "双击Rproj打开工作环境.txt",
+          "columns": [],
+          "row_unit": "Requires recipe-specific inspection"
+        }
+      ],
+      "contract_reviewed": false,
+      "scripts": [
+        "GSEA.R"
+      ],
+      "packages": [
+        "RColorBrewer",
+        "clusterProfiler",
+        "ggplot2",
+        "ggrepel",
+        "tidyverse"
+      ],
+      "previews": [
+        "GSEA.png",
+        "a624a150a90905a9f4e2fce15650c788.png"
+      ],
+      "status": "superseded",
+      "review_note": "Source files and CSV headers inventoried; analysis and native inputs need inspection.",
+      "layout": {
+        "tested_placements": []
+      },
+      "source_evidence": {},
+      "license": "Source collection terms must be checked before redistribution.",
+      "family": "dot-matrix",
+      "family_title": "Dot and bubble matrices",
+      "template_group": "medbio/80",
+      "display_status": "Layout reviewed",
+      "description": "Appearance edition of 80_转录组GSEA富集气泡图. ",
+      "preview_note": "Rendered and visually reviewed at the saved size.",
+      "original_key": "medbio/80",
+      "source_folder": "80_转录组GSEA富集气泡图",
+      "main_script": "GSEA.R",
+      "notes": [],
+      "edition": {
+        "font_pt": 11.0,
+        "plot_width_mm": 140.0,
+        "plot_height_mm": 105.0,
+        "canvas_width_mm": 193.0,
+        "canvas_height_mm": 124.0,
+        "render_note": "Rendered and visually reviewed at the saved size."
+      },
+      "data_basis": "source inputs",
+      "plot_group": "enrichment-dots",
+      "plot_group_title": "Enrichment dots: effect, size and significance",
+      "preview": "assets/reference-library/retired-batch2-20261105/medbio-80/preview.png",
+      "script": "assets/reference-library/retired-batch2-20261105/medbio-80/source-edited.R",
+      "successor": "native/medbio-80",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Ranks were fixed at 1:50; label colors followed row order and a gene-set-size legend was labeled as a proportion."
+    }
+  ],
+  "replaced_editions": {
+    "medbio-compact/36": "native/medbio-36",
+    "medbio-compact/78": "native/medbio-78",
+    "medbio-compact/80": "native/medbio-80"
+  }
+}

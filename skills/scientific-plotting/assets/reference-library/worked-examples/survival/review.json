@@ -1,0 +1,47 @@
+{
+  "template": "worked/survival",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Confidence-step geometry was reconstructed through duplicated rows.",
+  "native_controls": "Native survminer curves, confidence steps and vector censor symbols; preserve survfit estimates.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        87.1361111111111,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 6,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        87.84166666666665,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 6,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        111.125,
+        65.26388888888889
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 6,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

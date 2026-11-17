@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="mek-n-terminal-docking-tail" data-part="n-terminal-docking-tail"><path d="M32 39 C27 31 34 22 46 20 C57 19 65 26 62 35 C59 43 52 46 46 50" fill="none" stroke-width="7"/><path d="M32 39 C27 31 34 22 46 20 C57 19 65 26 62 35 C59 43 52 46 46 50" fill="none" stroke="#69ADB5" stroke-width="4"/></g>
+<g id="mek-docking-groove" data-part="docking-groove"><path d="M53 46 C62 39 72 41 78 48" fill="none" stroke="#E4BE78" stroke-width="5"/></g>
+<g id="mek-kinase-n-lobe" data-part="kinase-n-lobe"><path d="M34 81 C31 68 39 57 52 55 C66 50 81 56 87 67 C94 79 90 91 80 97 C67 103 50 99 41 94 C36 92 34 87 34 81 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M46 70 C54 62 65 64 69 72 C72 78 68 83 63 86" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="mek-kinase-c-lobe" data-part="kinase-c-lobe"><path d="M50 101 C63 96 81 98 94 105 C106 112 114 125 116 141 C104 149 85 146 71 141 C59 136 51 120 50 101 Z" fill="#69ADB5" stroke-width="2.5"/><path d="M69 112 C78 106 89 110 93 118 C96 125 91 131 85 134" fill="none" stroke="#D7E8EC" stroke-width="1.5"/></g>
+<g id="mek-activation-loop" data-part="activation-loop"><path d="M80 98 C84 108 93 110 101 106" fill="none" stroke="#E4BE78" stroke-width="5"/></g>
+</svg>

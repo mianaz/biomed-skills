@@ -1,0 +1,47 @@
+{
+  "template": "worked/repeated",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Fixed wide canvas and top-legend styling limited compact reuse.",
+  "native_controls": "Native facets, gap-aware unit segments, shared scales and measured canvas; preserve numeric time.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        89.60555555555555,
+        71.61388888888888
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 11,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        92.78055555555555,
+        71.61388888888888
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 11,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        93.83888888888889,
+        75.84722222222223
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 11,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

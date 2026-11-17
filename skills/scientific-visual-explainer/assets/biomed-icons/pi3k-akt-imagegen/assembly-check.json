@@ -1,0 +1,50 @@
+[
+  {
+    "id": "mTOR-RAPTOR",
+    "max_overlap_px2_at_700x480": 18,
+    "bound_overlap_px2": 18,
+    "max_interior_overlap_px2": 0,
+    "engine": {
+      "samples": 13,
+      "maxGap": 5.684341886080802e-14,
+      "maxNormalError": 6.123233995736766e-17,
+      "errors": []
+    }
+  },
+  {
+    "id": "mTOR-mLST8",
+    "max_overlap_px2_at_700x480": 134,
+    "bound_overlap_px2": 134,
+    "max_interior_overlap_px2": 7,
+    "engine": {
+      "samples": 13,
+      "maxGap": 0,
+      "maxNormalError": 9.153901961775728e-17,
+      "errors": []
+    }
+  },
+  {
+    "id": "mTOR-RHEB",
+    "max_overlap_px2_at_700x480": 47,
+    "bound_overlap_px2": 47,
+    "max_interior_overlap_px2": 0,
+    "engine": {
+      "samples": 13,
+      "maxGap": 0,
+      "maxNormalError": 9.153901961775728e-17,
+      "errors": []
+    }
+  },
+  {
+    "id": "PDPK1-AKT1",
+    "max_overlap_px2_at_700x480": 22,
+    "bound_overlap_px2": 22,
+    "max_interior_overlap_px2": 0,
+    "engine": {
+      "samples": 13,
+      "maxGap": 0,
+      "maxNormalError": 9.153901961775728e-17,
+      "errors": []
+    }
+  }
+]

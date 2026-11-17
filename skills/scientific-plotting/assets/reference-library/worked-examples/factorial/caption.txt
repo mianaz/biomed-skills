@@ -1,0 +1,1 @@
+Synthetic demonstration data. Descriptive factorial display of independent units; bars are means, error bars are SD, points are units. No interaction or pairwise inference is added. Input rows: 20

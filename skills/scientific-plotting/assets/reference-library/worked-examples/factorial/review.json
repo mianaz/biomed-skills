@@ -1,0 +1,47 @@
+{
+  "template": "worked/factorial",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Fixed full canvas and a top legend required manual layout changes.",
+  "native_controls": "Native grouped summaries, points and zero baseline; panel size follows factor counts.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        77.61111111111111,
+        63.14722222222221
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        77.96388888888889,
+        63.14722222222221
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        82.19722222222222,
+        75.84722222222223
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

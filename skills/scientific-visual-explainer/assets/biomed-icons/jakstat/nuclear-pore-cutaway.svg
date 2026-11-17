@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="nuclear-pore-cutaway" width="160" height="160" viewBox="0 0 160 160">
+  <g id="nuclear-pore-cutaway-channel-lumen" data-part="channel-lumen">
+    <path d="M58 28 C70 24 90 24 102 28 L102 132 C90 136 70 136 58 132 Z" fill="none"/>
+  </g>
+  <g id="nuclear-pore-cutaway-outer-membrane" data-part="outer-membrane">
+    <path d="M12 47 C27 45 39 49 48 55 L48 62 C39 56 27 52 12 54 Z M112 55 C121 49 133 45 148 47 L148 54 C133 52 122 56 112 62 Z M12 105 C27 103 39 107 48 113 L48 120 C39 114 27 110 12 112 Z M112 113 C121 107 133 103 148 105 L148 112 C133 110 122 114 112 120 Z" fill="#B3D7CC" stroke="#3D5963" stroke-width="1.6" stroke-linejoin="round"/>
+  </g>
+  <g id="nuclear-pore-cutaway-inner-membrane" data-part="inner-membrane">
+    <path d="M12 51 C27 49 39 53 48 58 M112 58 C121 53 133 49 148 51 M12 109 C27 107 39 111 48 116 M112 116 C121 111 133 107 148 109" fill="none" stroke="#EDF5F1" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <g id="nuclear-pore-cutaway-left-scaffold-column" data-part="left-scaffold-column">
+    <path d="M48 52 L48 108" fill="none" stroke="#69ADB5" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="48" cy="52" rx="9.1" ry="7.8" fill="#B3D7CC" stroke="#3D5963" stroke-width="1.8"/>
+    <ellipse cx="48" cy="80" rx="9.1" ry="9.5" fill="#D7E8EC" stroke="#3D5963" stroke-width="1.8"/>
+    <ellipse cx="48" cy="108" rx="9.1" ry="7.8" fill="#B3D7CC" stroke="#3D5963" stroke-width="1.8"/>
+  </g>
+  <g id="nuclear-pore-cutaway-right-scaffold-column" data-part="right-scaffold-column">
+    <path d="M112 52 L112 108" fill="none" stroke="#69ADB5" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="112" cy="52" rx="9.1" ry="7.8" fill="#B3D7CC" stroke="#3D5963" stroke-width="1.8"/>
+    <ellipse cx="112" cy="80" rx="9.1" ry="9.5" fill="#D7E8EC" stroke="#3D5963" stroke-width="1.8"/>
+    <ellipse cx="112" cy="108" rx="9.1" ry="7.8" fill="#B3D7CC" stroke="#3D5963" stroke-width="1.8"/>
+  </g>
+</svg>

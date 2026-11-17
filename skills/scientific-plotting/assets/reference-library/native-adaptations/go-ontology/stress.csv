@@ -1,0 +1,13 @@
+"ID","Description","GeneNumber","logP","type",".group","padj"
+"GO:0002237","response to molecule of bacterial origin",109,151.469106127385,"Ontology biological process",3,3.39376540301238e-40
+"GO:0032496","response to lipopolysaccharide",104,145.540782687057,"Ontology biological process",3,1.18977465249431e-38
+"GO:0001819","positive regulation of cytokine production",123,131.394311052287,"Ontology biological process",3,5.77704105509048e-35
+"GO:2001233","regulation of apoptotic signaling pathway",98,125.844315233261,"Ontology biological process",3,1.61400542143342e-33
+"GO:0007249","canonical NF-kappaB signal transduction",101,125.844315233261,"Ontology biological process",3,1.61400542143342e-33
+"GO:0009897","external side of plasma membrane",77,68.8249530855184,"Ontology cellular component",2,1.16364791214994e-18
+"GO:0031983","vesicle lumen",58,42.6365248920098,"Ontology cellular component",2,7.76096110856733e-12
+"GO:0060205","cytoplasmic vesicle lumen",57,41.5028502587817,"Ontology cellular component",2,1.53223256965493e-11
+"GO:0034774","secretory granule lumen",53,35.9305664466448,"Ontology cellular component",2,4.33842362442611e-10
+"GO:0045121","membrane raft",48,32.2754923754541,"Ontology cellular component",2,3.88829365258345e-09
+"GO:0005126","cytokine receptor binding",87,110.989973824932,"Ontology molecular function",1,1.19839528800474e-29
+"GO:0005125","cytokine activity",80,107.199382057574,"Ontology molecular function",1,1.16503760945271e-28

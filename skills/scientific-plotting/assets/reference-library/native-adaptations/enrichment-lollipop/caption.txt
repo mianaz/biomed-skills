@@ -1,0 +1,1 @@
+Supplied KEGG results; stems and equal-sized points show gene counts. Color shows minus log10 of the supplied raw P values. Native ticks follow the current counts; the redundant Count size mapping is removed.

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="actin-filament" width="160" height="160" viewBox="0 0 160 160">
+  <g fill="none" stroke="#3D5963" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <g id="actin-filament-strands" data-part="strands" stroke-width="2">
+      <path d="M66 31 C103 43 57 56 94 68 C57 80 103 92 66 104 C103 116 57 128 94 138"/>
+      <path d="M94 31 C57 43 103 56 66 68 C103 80 57 92 94 104 C57 116 103 128 66 138"/>
+    </g>
+    <g id="actin-filament-subunits" data-part="subunits" fill="#69ADB5" stroke-width="1.7">
+      <ellipse cx="66" cy="31" rx="9" ry="5.5" transform="rotate(18 66 31)"/>
+      <ellipse cx="94" cy="43" rx="9" ry="5.5" transform="rotate(-18 94 43)"/>
+      <ellipse cx="94" cy="55" rx="9" ry="5.5" transform="rotate(18 94 55)"/>
+      <ellipse cx="66" cy="68" rx="9" ry="5.5" transform="rotate(-18 66 68)"/>
+      <ellipse cx="66" cy="80" rx="9" ry="5.5" transform="rotate(18 66 80)"/>
+      <ellipse cx="94" cy="92" rx="9" ry="5.5" transform="rotate(-18 94 92)"/>
+      <ellipse cx="94" cy="104" rx="9" ry="5.5" transform="rotate(18 94 104)"/>
+      <ellipse cx="66" cy="116" rx="9" ry="5.5" transform="rotate(-18 66 116)"/>
+      <ellipse cx="66" cy="128" rx="9" ry="5.5" transform="rotate(18 66 128)"/>
+      <ellipse cx="94" cy="138" rx="9" ry="5.5" transform="rotate(-18 94 138)"/>
+    </g>
+  </g>
+</svg>

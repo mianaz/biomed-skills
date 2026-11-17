@@ -1,0 +1,47 @@
+{
+  "template": "worked/paired",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Sample offsets and a two-position numeric axis were implemented by hand.",
+  "native_controls": "Native discrete positions and ID dodge; keyed paired test and numeric labels.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        51.50555555555555,
+        67.02777777777777
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 7,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        54.68055555555556,
+        70.90833333333333
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 7,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        53.62222222222222,
+        76.90555555555555
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 7,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

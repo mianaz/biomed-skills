@@ -1,0 +1,2 @@
+"group1","group2","n","estimate","low","high","statistic","df","p","method","label"
+"Before","After",6,2.66666666666667,1.8098060547879,3.52352727854544,8,5,0.000492906660572444,"Two-sided paired t; group2 minus group1","0.00049"

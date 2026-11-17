@@ -1,0 +1,48 @@
+---
+name: paper-distill
+description: Read a biomedical paper and its supplements or code to explain its scientific contribution, experimental logic, methods and reusable ideas. Use for biomedical paper distillation, experimental logic and journal-club notes.
+---
+# Paper Distill
+
+Read [shared principles](../biomed-shared/core-principles.md).
+
+Read supplied local assets first, then retrieve missing full text, relevant
+supplements and code when accessible. Record title, authors/year, DOI/PMID or URL
+and the material actually read. Read figures and captions alongside the relevant
+Results and Methods. An abstract supports an abstract-level summary only.
+
+For a full paper distillation, produce a human-readable `paper-digest.md` with
+the following content. For a focused reading question, answer that question from
+the relevant sources without requiring the full digest or extra artifacts.
+
+A full digest includes:
+
+- The question, main contribution and closest prior approaches discussed in the paper.
+- The argument, organized by question: claim → experiment/comparison and controls
+  → observed result → interpretation. Cite exact panels, pages or Methods sections.
+- The experimental/computational recipe: biological system, independent unit,
+  sample sizes, inputs, tools/versions, key parameters and source/code locators.
+- What transfers to the user's project, what must change, and the next concrete
+  analysis or experiment. Distinguish author findings from proposed extensions.
+
+For requested follow-up experiments or project priorities, use
+[next experiment](../biomed-shared/next-experiment.md) to choose comparisons that
+advance the biological explanation and explain what their outcomes would change.
+
+Read full-text details of the closest prior work before making a firm novelty
+judgment. Preserve and strengthen a useful idea through its substantive addition;
+if the central contribution overlaps, identify the specific overlap directly.
+
+When reusable signatures or reproduction are requested, or a claim depends on
+exact gene membership, apply [gene-set records](../biomed-shared/gene-set-records.md)
+and link the reusable table from the digest.
+
+Route requested outputs: `paper-evidence-map` for an editable argument graph,
+`paper-to-protocol` for executable steps, `protocol-to-methods` for manuscript
+Methods, and `scientific-plotting` for figures. Propose reusable skill changes
+only when requested; a paper-reading task does not require modifying the suite.
+For the digest's scientific explanation, read
+[writing principles](../biomed-shared/writing-principles.md). Use
+[evidence and interpretation](../biomed-shared/evidence-and-interpretation.md)
+when judging contribution, mechanisms or proposed extensions. The deliverable
+remains the paper digest and the requested reusable results.

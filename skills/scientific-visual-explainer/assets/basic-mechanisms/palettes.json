@@ -1,0 +1,239 @@
+{
+  "reviewed": "2026-10-23",
+  "default": "nord",
+  "recommended": "nord",
+  "roles": {
+    "text": "#28474b",
+    "outline": "#3d5963",
+    "secondary": "#577071",
+    "muted_text": "#738984",
+    "protein": "#69adb5",
+    "inactive": "#d7e8ec",
+    "ligand": "#e4be78",
+    "nucleic": "#b2a6cd",
+    "membrane": "#b3d7cc",
+    "interior": "#edf5f1",
+    "boundary": "#9db4ad",
+    "muted_arrow": "#c7d5d1",
+    "inhibition": "#bd776c"
+  },
+  "themes": [
+    {
+      "id": "current",
+      "name": "原版 · 青绿",
+      "description": "当前配色，保留作对照。",
+      "source": "原创基础色板",
+      "url": "../biomed-icons/STYLE.md",
+      "colors": {
+        "text": "#28474b",
+        "outline": "#3D5963",
+        "secondary": "#577071",
+        "muted_text": "#738984",
+        "protein": "#69ADB5",
+        "inactive": "#D7E8EC",
+        "ligand": "#E4BE78",
+        "nucleic": "#B2A6CD",
+        "membrane": "#B3D7CC",
+        "interior": "#EDF5F1",
+        "boundary": "#9db4ad",
+        "muted_arrow": "#c7d5d1",
+        "inhibition": "#bd776c"
+      }
+    },
+    {
+      "id": "nord",
+      "name": "Nord · 雾蓝",
+      "description": "推荐：蓝灰蛋白、鼠尾草绿膜、暖金配体。冷暖区分清楚，颜色较柔和。",
+      "source": "Nord 官方色板；膜与核酸加白 35%，内部加白 50%。",
+      "url": "https://www.nordtheme.com/docs/colors-and-palettes/",
+      "colors": {
+        "text": "#2e3440",
+        "outline": "#434c5e",
+        "secondary": "#4c566a",
+        "muted_text": "#4c566a",
+        "protein": "#88c0d0",
+        "inactive": "#e5e9f0",
+        "ligand": "#ebcb8b",
+        "nucleic": "#ceb6ca",
+        "membrane": "#c3d5b4",
+        "interior": "#f6f7fa",
+        "boundary": "#8fbcbb",
+        "muted_arrow": "#d8dee9",
+        "inhibition": "#bf616a"
+      }
+    },
+    {
+      "id": "radix",
+      "name": "Radix · 清浅",
+      "description": "浅青蛋白、灰绿膜、砂金配体。色阶完整，便于以后加入悬停、选择与动画状态。",
+      "source": "Radix：cyan6、sage6、gold7、plum7；文字 sage12，轮廓 gray11。 阻断 ruby11。",
+      "url": "https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale",
+      "colors": {
+        "text": "#1a211e",
+        "outline": "#646464",
+        "secondary": "#5f6563",
+        "muted_text": "#5f6563",
+        "protein": "#9ddde7",
+        "inactive": "#eef1f0",
+        "ligand": "#cbc0aa",
+        "nucleic": "#deade3",
+        "membrane": "#d7dad9",
+        "interior": "#f7f9f8",
+        "boundary": "#b8bcba",
+        "muted_arrow": "#d7dad9",
+        "inhibition": "#ca244d"
+      }
+    },
+    {
+      "id": "rose",
+      "name": "Rosé Pine · 暖雾",
+      "description": "暖白氛围，灰青蛋白、灰紫核酸。适合柔和的讲解图。",
+      "source": "Rosé Pine Dawn 改编：foam、leaf、gold、iris 加白 45%；内部使用 base。轮廓采用 text。",
+      "url": "https://github.com/rose-pine/neovim/blob/main/lua/rose-pine/palette.lua",
+      "colors": {
+        "text": "#464261",
+        "outline": "#464261",
+        "secondary": "#797593",
+        "muted_text": "#797593",
+        "protein": "#a2c4ca",
+        "inactive": "#f2e9e1",
+        "ligand": "#f3c98f",
+        "nucleic": "#c2b6d0",
+        "membrane": "#afc1be",
+        "interior": "#faf4ed",
+        "boundary": "#cecacd",
+        "muted_arrow": "#dfdad9",
+        "inhibition": "#b4637a"
+      }
+    },
+    {
+      "id": "review-slate",
+      "name": "Review Slate · 候补",
+      "description": "参考 Nature Reviews 自噬图的蓝灰结构、珊瑚红区室和暖金标记。",
+      "source": "从本地原尺寸来源图取样，再按机制图角色组合；并非期刊官方色板。",
+      "url": "https://www.nature.com/articles/s41580-023-00585-z/figures/1",
+      "status": "candidate",
+      "visual_sources": [
+        "https://www.nature.com/articles/s41580-023-00585-z/figures/1",
+        "https://www.nature.com/articles/s41580-021-00392-4/figures/1",
+        "https://www.nature.com/articles/s41580-025-00881-w/figures/5"
+      ],
+      "colors": {
+        "text": "#303b4a",
+        "outline": "#3f495a",
+        "secondary": "#63728b",
+        "muted_text": "#63728b",
+        "protein": "#bcc4d3",
+        "inactive": "#e2e6ed",
+        "ligand": "#f3d78a",
+        "nucleic": "#b37ea7",
+        "membrane": "#8b96ad",
+        "interior": "#f5f6f9",
+        "boundary": "#aeb9ca",
+        "muted_arrow": "#d6dce6",
+        "inhibition": "#ee9e9f"
+      },
+      "sampled_roles": {
+        "protein": "nrm04-f1-e02: quantized dominant #bcc4d3",
+        "membrane": "nrm04-f1-e02: quantized dominant #8b96ad",
+        "ligand": "nrm01-f5-e03: quantized dominant #f3d78a",
+        "nucleic": "nrm01-f5-e03: quantized hinge #b37ea7",
+        "inhibition": "nrm11-f1-e04: quantized dominant #ee9e9f"
+      },
+      "adapted_roles": [
+        "text",
+        "outline",
+        "secondary",
+        "muted_text",
+        "inactive",
+        "interior",
+        "boundary",
+        "muted_arrow"
+      ]
+    },
+    {
+      "id": "template-sage",
+      "name": "Template Sage · 候补",
+      "description": "参考 BioRender 翻译模板的浅绿亚基、浅蓝伙伴和奶油色轨道。",
+      "source": "浅绿、浅蓝和轨道色来自公开模板取样；描边绿按取样色调暗，以保持红色区室内的轮廓对比。暖金、紫、红和文字色为项目配套色。",
+      "url": "https://www.biorender.com/template/ribosomal-stalling",
+      "status": "candidate",
+      "visual_sources": [
+        "https://www.biorender.com/template/ribosomal-stalling",
+        "https://www.biorender.com/template/central-dogma"
+      ],
+      "colors": {
+        "text": "#31493e",
+        "outline": "#31493e",
+        "secondary": "#587562",
+        "muted_text": "#587562",
+        "protein": "#b9dde8",
+        "inactive": "#e4eeea",
+        "ligand": "#e8cd7c",
+        "nucleic": "#aaa4cb",
+        "membrane": "#b9dbbc",
+        "interior": "#f7faf5",
+        "boundary": "#98c892",
+        "muted_arrow": "#dce6dc",
+        "inhibition": "#cf7b85",
+        "track": "#f6f4d6"
+      },
+      "sampled_roles": {
+        "protein": "br-ribosomal-stalling-e04: quantized #b9dde8",
+        "membrane": "br-ribosomal-stalling-e04: quantized #b9dbbc",
+        "boundary": "br-ribosomal-stalling-e04: quantized #98c892",
+        "track": "br-ribosomal-stalling-e04: quantized #f6f4d6"
+      },
+      "adapted_roles": [
+        "text",
+        "outline",
+        "secondary",
+        "muted_text",
+        "inactive",
+        "ligand",
+        "nucleic",
+        "interior",
+        "muted_arrow",
+        "inhibition"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "Radix Colors",
+      "url": "https://www.radix-ui.com/colors",
+      "kind": "UI 色阶",
+      "note": "12 级色阶；按背景、边框、强调色和文字分工。推荐作为长期系统。"
+    },
+    {
+      "name": "Tailwind CSS",
+      "url": "https://tailwindcss.com/docs/colors",
+      "kind": "UI 色阶",
+      "note": "每色 11 级，提供 OKLCH；可用 slate、stone 与较浅色阶搭配。"
+    },
+    {
+      "name": "Open Color",
+      "url": "https://yeun.github.io/open-color/",
+      "kind": "UI 色阶",
+      "note": "可下载 CSS、设计软件色板。浅色阶适合填充；全套并非低饱和度。"
+    },
+    {
+      "name": "Nord",
+      "url": "https://www.nordtheme.com/docs/colors-and-palettes/",
+      "kind": "柔和主题",
+      "note": "16 色，灰蓝、暖金与柔和辅助色。最接近当前机制图的方向。"
+    },
+    {
+      "name": "Rosé Pine",
+      "url": "https://rosepinetheme.com/palette/",
+      "kind": "柔和主题",
+      "note": "三个主题；Dawn 适合浅背景。本页对填充做了加白处理。"
+    },
+    {
+      "name": "Catppuccin",
+      "url": "https://catppuccin.com/palette/",
+      "kind": "粉彩主题",
+      "note": "四套主题，Latte 为浅色版。部分强调色较鲜艳，需要再按用途调浅。"
+    }
+  ]
+}

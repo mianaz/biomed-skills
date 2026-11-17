@@ -1,0 +1,48 @@
+{
+  "template": "native/medbio-36",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Natural logarithms were labeled log10; fixed five-row category blocks could misassign shortened results.",
+  "native_controls": "Correct log10 values, named ontologies and native facets with height following current term counts.",
+  "data_basis": "Original: saved source result table. Replacement and stress: modified demonstrations, not additional study results.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        107.24444444444444,
+        216.25277777777777
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        107.24444444444444,
+        216.25277777777777
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        107.24444444444444,
+        196.4972222222222
+      ],
+      "min_text_pt": 11.5,
+      "scientific_checks": 4,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

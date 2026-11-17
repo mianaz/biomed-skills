@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" stroke="#3D5963" stroke-linejoin="round" stroke-linecap="round">
+<g id="dag-context-membrane" data-part="membrane"><rect x="14" y="100" width="132" height="36" rx="6" fill="#B3D7CC" stroke-width="2.5"/><path d="M18 108 L142 108 M18 128 L142 128" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+<g id="dag-acyl-tails" data-part="acyl-tails"><path d="M68 73 C66 92 60 109 62 131 C63 135 65 138 69 141 M92 73 C95 91 101 109 99 129 C98 135 96 138 92 141" fill="none" stroke-width="8"/><path d="M68 73 C66 92 60 109 62 131 C63 135 65 138 69 141 M92 73 C95 91 101 109 99 129 C98 135 96 138 92 141" fill="none" stroke="#69ADB5" stroke-width="4.5"/></g>
+<g id="dag-glycerol" data-part="glycerol-backbone"><path d="M80 51 L80 75 M80 59 L68 70 M80 59 L92 70" fill="none" stroke-width="6"/><path d="M80 51 L80 75 M80 59 L68 70 M80 59 L92 70" fill="none" stroke="#69ADB5" stroke-width="3"/></g>
+<g id="dag-headgroup" data-part="diacylglycerol-headgroup"><circle cx="80" cy="43" r="10" fill="#E4BE78" stroke-width="2.5"/></g>
+</svg>

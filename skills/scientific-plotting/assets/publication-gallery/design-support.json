@@ -1,0 +1,279 @@
+{
+  "cns-20261016/D09-p03": {
+    "designs": [
+      "independent"
+    ],
+    "basis": "R and Python draw separate per-group summaries and observation marks without cross-group links. Supply independent observations and externally computed statistics; example display estimates do not establish source independence.",
+    "sources": [
+      "panels/D09-p03/adapt-data/schema.json",
+      "panels/D09-p03/R/adapt.R",
+      "panels/D09-p03/python/adapt.py"
+    ]
+  },
+  "cns-20261016/D13-p02": {
+    "designs": [
+      "independent"
+    ],
+    "basis": "Both adapters draw per-group observation marks with supplied means and SD intervals, without connecting observations across groups. Compute summaries from independent input units.",
+    "sources": [
+      "panels/D13-p02/adapt-data/schema.json",
+      "panels/D13-p02/R/adapt.R",
+      "panels/D13-p02/python/adapt.py"
+    ]
+  },
+  "cns-20261016/D06-p08": {
+    "designs": [
+      "independent"
+    ],
+    "basis": "Both adapters draw condition-coded observation marks and supplied intervals without matched-unit lines. Supply independent input units and their valid summaries.",
+    "sources": [
+      "panels/D06-p08/adapt-data/schema.json",
+      "panels/D06-p08/R/adapt.R",
+      "panels/D06-p08/python/adapt.py"
+    ]
+  },
+  "cns-20261016/D17-p05": {
+    "designs": [
+      "independent"
+    ],
+    "basis": "Both adapters keep separate group survival step curves and censor ticks within each panel. Supply curves fitted upstream for independent cohorts; the adapter does not infer independence or fit survival models.",
+    "sources": [
+      "panels/D17-p05/adapt-data/schema.json",
+      "panels/D17-p05/R/adapt.R",
+      "panels/D17-p05/python/adapt.py"
+    ]
+  },
+  "cns-20261021/P034-F4-p8-J": {
+    "designs": [
+      "independent"
+    ],
+    "basis": "Both adapters draw per-facet group points and supplied intervals, with no unit IDs or matched connections. Paired in the chart title refers to facets, not paired experimental units.",
+    "sources": [
+      "panels/P034-F4-p8-J/adapt-data/schema.json",
+      "panels/P034-F4-p8-J/R/adapt.R",
+      "panels/P034-F4-p8-J/python/adapt.py"
+    ]
+  },
+  "cns-20261021/D33-p05": {
+    "designs": [
+      "independent"
+    ],
+    "basis": "Both adapters draw per-cancer supplied box summaries and unconnected observation marks. Supply independent input units and recompute the summaries upstream.",
+    "sources": [
+      "panels/D33-p05/adapt-data/schema.json",
+      "panels/D33-p05/R/adapt.R",
+      "panels/D33-p05/python/adapt.py"
+    ]
+  },
+  "cns-20261021/D11-p07": {
+    "designs": [
+      "independent"
+    ],
+    "basis": "Both adapters draw facet-by-group supplied boxes and unconnected points. Supply independent input units and their valid group summaries.",
+    "sources": [
+      "panels/D11-p07/adapt-data/schema.json",
+      "panels/D11-p07/R/adapt.R",
+      "panels/D11-p07/python/adapt.py"
+    ]
+  },
+  "cns-20261021/P033-F1-p4-G": {
+    "designs": [
+      "independent"
+    ],
+    "basis": "Both adapters draw group-specific supplied violin profiles, box summaries and unconnected observation marks. Compute these profiles from independent input units.",
+    "sources": [
+      "panels/P033-F1-p4-G/adapt-data/schema.json",
+      "panels/P033-F1-p4-G/R/adapt.R",
+      "panels/P033-F1-p4-G/python/adapt.py"
+    ]
+  },
+  "cns-20261021/P018-F5-p11-C": {
+    "designs": [
+      "paired"
+    ],
+    "task": "group-comparison",
+    "basis": "Both adapters connect category endpoints within sample. Each replacement sample ID must identify the same experimental unit across conditions; source example IDs are display keys.",
+    "sources": [
+      "panels/P018-F5-p11-C/adapt-data/schema.json",
+      "panels/P018-F5-p11-C/R/adapt.R",
+      "panels/P018-F5-p11-C/python/adapt.py"
+    ]
+  },
+  "cns-20261021/P018-F5-p11-D": {
+    "designs": [
+      "paired"
+    ],
+    "task": "group-comparison",
+    "basis": "Both adapters connect condition endpoints within series_id. Each replacement series_id must identify the same experimental unit across conditions; compute paired inference upstream.",
+    "sources": [
+      "panels/P018-F5-p11-D/adapt-data/schema.json",
+      "panels/P018-F5-p11-D/R/adapt.R",
+      "panels/P018-F5-p11-D/python/adapt.py"
+    ]
+  },
+  "cns-20261021/P126-F7-p9-IJ": {
+    "designs": [
+      "paired"
+    ],
+    "basis": "The composite contains independent group marks in panel I and matched endpoint segments in panel J. Paired tables retain link_id with value_a/value_b; supply the mixed design and real unit links.",
+    "sources": [
+      "panels/P126-F7-p9-IJ/adapt-data/schema.json",
+      "panels/P126-F7-p9-IJ/R/adapt.R",
+      "panels/P126-F7-p9-IJ/python/adapt.py"
+    ]
+  },
+  "cns-20261021/P022-F4-p9-C": {
+    "designs": [
+      "repeated"
+    ],
+    "basis": "Both adapters connect numeric days within trace_key and genotype/treatment. Replacement trace_key values must identify repeatedly measured experimental units; image-derived example traces do not establish biological replication.",
+    "sources": [
+      "panels/P022-F4-p9-C/adapt-data/schema.json",
+      "panels/P022-F4-p9-C/R/adapt.R",
+      "panels/P022-F4-p9-C/python/adapt.py"
+    ]
+  },
+  "cns-20261021/P022-F5-p10-B": {
+    "designs": [
+      "repeated"
+    ],
+    "basis": "Both adapters connect numeric days within series_id and treatment group. Replacement series_id values must identify repeatedly measured experimental units; compute repeated-measure inference upstream.",
+    "sources": [
+      "panels/P022-F5-p10-B/adapt-data/schema.json",
+      "panels/P022-F5-p10-B/R/adapt.R",
+      "panels/P022-F5-p10-B/python/adapt.py"
+    ]
+  },
+  "cns-manual-20261025/P095-F2-a": {
+    "task": "genomic",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays chromosome-ordered GWAS positions and supplied significance values.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-manual-20261025/P044-F4-D": {
+    "task": "prediction",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays supplied ROC and precision-recall curve coordinates and summary annotations.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P081-F4-d": {
+    "task": "matrix",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays gene-by-cluster expression values with linked annotation strips.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P091-F2-e": {
+    "task": "distribution",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays relative spectral intensity across mass-to-charge positions, with supplied ion annotations.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P091-F3-d": {
+    "task": "genomic",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays supplied enhancer ranks and H3K27ac signals; side-by-side plots do not establish paired experimental units.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P091-F3-m": {
+    "task": "genomic",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays supplied signal profiles, loci and feature coordinates across genomic intervals.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P021-F5-b": {
+    "task": "embedding",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays supplied embedding coordinates colored by feature expression.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P028-S2-A": {
+    "task": "association",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays supplied quality scores against a resolution parameter; it is not a time series.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P098-F5-k": {
+    "task": "spatial",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays normalized fluorescence along supplied position coordinates.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P112-F5-k": {
+    "task": "group-comparison",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays visible group marks and supplied mean/interval summaries; experimental independence is unreviewed.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  },
+  "cns-corrected-20261025/P112-F5-c": {
+    "task": "distribution",
+    "designs": [
+      "unspecified"
+    ],
+    "basis": "Displays visible group marks and supplied five-number summaries; experimental independence is unreviewed.",
+    "sources": [
+      "adapt-data/schema.json",
+      "R/adapt.R",
+      "python/adapt.py"
+    ]
+  }
+}

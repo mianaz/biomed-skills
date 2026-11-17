@@ -1,0 +1,61 @@
+{
+  "template": "worked/independent",
+  "date": "2026-11-05",
+  "data_basis": "synthetic",
+  "implementation": "examples/native-reference-cases.R",
+  "supersedes": "worked/independent-legacy-20261105",
+  "scientific_review": "complete",
+  "visual_review": "complete",
+  "native_editability": "complete",
+  "tested_cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        55.73888888888889,
+        67.73333333333332
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "bars_match_means": true,
+        "sd_endpoints_match": true,
+        "all_units_drawn": true,
+        "sample_markers_separated": true,
+        "primary_labels_visible": true,
+        "named_comparisons_match": true
+      }
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        55.73888888888889,
+        68.43888888888888
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "bars_match_means": true,
+        "sd_endpoints_match": true,
+        "all_units_drawn": true,
+        "sample_markers_separated": true,
+        "primary_labels_visible": true,
+        "named_comparisons_match": true
+      }
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        67.73333333333332,
+        67.73333333333332
+      ],
+      "mechanical": "pass",
+      "scientific": {
+        "bars_match_means": true,
+        "sd_endpoints_match": true,
+        "all_units_drawn": true,
+        "sample_markers_separated": true,
+        "primary_labels_visible": true,
+        "named_comparisons_match": true
+      }
+    }
+  ],
+  "unresolved_items": []
+}

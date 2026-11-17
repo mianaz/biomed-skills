@@ -1,0 +1,2 @@
+"contrast","unit","independent_pairs","mean_change","ci_lower","ci_upper","confidence_level","statistic","df","p_value","method","family_size"
+"treatment minus control","percentage points",6,-7,-10.9266286139606,-3.07337138603935,0.95,-4.58257569495584,5,0.00593354451759226,"paired t test via donor differences",1

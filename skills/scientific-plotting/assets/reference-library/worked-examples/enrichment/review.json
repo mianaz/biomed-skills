@@ -1,0 +1,47 @@
+{
+  "template": "worked/enrichment",
+  "date": "2026-11-05",
+  "scientific_review": true,
+  "visual_review": true,
+  "native_editability": true,
+  "retirement_reason": "Fixed full canvas was oversized for short terms and rigid for long labels.",
+  "native_controls": "Native term labels and plot measurement; height follows term count and transformation is explicit.",
+  "cases": [
+    {
+      "version": "original",
+      "placed_mm": [
+        75.14166666666667,
+        56.44444444444444
+      ],
+      "min_text_pt": 11.199,
+      "scientific_checks": 3,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "replacement",
+      "placed_mm": [
+        80.7861111111111,
+        56.44444444444444
+      ],
+      "min_text_pt": 11.199,
+      "scientific_checks": 3,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    },
+    {
+      "version": "stress",
+      "placed_mm": [
+        97.71944444444443,
+        56.44444444444444
+      ],
+      "min_text_pt": 11.199,
+      "scientific_checks": 3,
+      "scientific_passed": true,
+      "visual_review": "complete",
+      "native_editability": "reopened"
+    }
+  ]
+}

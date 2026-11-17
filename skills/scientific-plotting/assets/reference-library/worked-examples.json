@@ -1,0 +1,1941 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "key": "worked/independent",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/independent",
+      "title": "Independent",
+      "task": "group-comparison",
+      "chart": "mean bars error bars sample points",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "unit",
+            "group",
+            "value"
+          ],
+          "row_unit": "One biological unit"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Native implementation; original, replacement and changed-range/order/shape cases executed; measured exports and final renders reviewed on 2026-11-05.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Unequal n, renamed/reordered groups, changed value range and a three-group declared comparison plan; all sample markers remain separated.",
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "independent",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "independent",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/independent/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "case": "original",
+            "width_mm": 55.74,
+            "height_mm": 67.73,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "case": "replacement",
+            "width_mm": 55.74,
+            "height_mm": 68.44,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "case": "stress",
+            "width_mm": 67.73,
+            "height_mm": 67.73,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          16,
+          15
+        ]
+      },
+      "description": "Synthetic demonstration data. Independent units; mean bars, SD and all sample points. n per group: Control = 8; Drug = 8 Two-sided Welch tests; Holm correction across the supplied comparison plan. All primary adjusted P values are shown. Estimates and nominal 95% CIs are group2 minus group1. Input rows: 16",
+      "license": "First-party example; package license applies.",
+      "implementation_version": "2026-11-05-native",
+      "supersedes": "worked/independent-legacy-20261105",
+      "comparison_plan": {
+        "default": "The single contrast for two groups; explicit group1/group2 plan required for more groups.",
+        "optional_argument": "COMPARISONS.csv",
+        "columns": [
+          "group1",
+          "group2"
+        ]
+      }
+    },
+    {
+      "key": "worked/paired",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/paired",
+      "title": "Paired",
+      "task": "group-comparison",
+      "chart": "paired",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "paired",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "unit",
+            "condition",
+            "value"
+          ],
+          "row_unit": "One unit at one of two visits"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "paired",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "paired",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/paired/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 51.50555555555555,
+            "height_mm": 67.02777777777777,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 54.68055555555556,
+            "height_mm": 70.90833333333333,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 53.62222222222222,
+            "height_mm": 76.90555555555555,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native discrete positions and ID dodge; keyed paired test and numeric labels."
+      },
+      "description": "Synthetic demonstration data. 6 matched units; native dodge preserves within-unit lines. Two-sided paired t test; one planned contrast; effect and nominal 95% CI are group2 minus group1. Input rows: 12",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/paired-legacy-20261105",
+      "adaptation_note": "Native discrete positions and ID dodge; keyed paired test and numeric labels."
+    },
+    {
+      "key": "worked/repeated",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/repeated",
+      "title": "Repeated",
+      "task": "time-course",
+      "chart": "repeated",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "repeated",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "time",
+            "unit",
+            "group",
+            "value"
+          ],
+          "row_unit": "One unit at one numeric visit time"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "repeated",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "repeated",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/repeated/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 89.60555555555555,
+            "height_mm": 71.61388888888888,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 92.78055555555555,
+            "height_mm": 71.61388888888888,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 93.83888888888889,
+            "height_mm": 75.84722222222223,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native facets, gap-aware unit segments, shared scales and measured canvas; preserve numeric time."
+      },
+      "description": "Synthetic demonstration data. Descriptive repeated trajectories; actual time spacing, verified unit IDs and breaks at explicitly missing visits. Facets share scales. Input rows: 24",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/repeated-legacy-20261105",
+      "adaptation_note": "Native facets, gap-aware unit segments, shared scales and measured canvas; preserve numeric time."
+    },
+    {
+      "key": "worked/independent-time",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/independent-time",
+      "title": "Independent Time",
+      "task": "time-course",
+      "chart": "independent-time",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "time",
+            "unit",
+            "group",
+            "value"
+          ],
+          "row_unit": "One distinct unit sampled at one time"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "independent-time",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "independent-time",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/independent-time/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 82.55,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 86.43055555555556,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 110.77222222222221,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native lineranges, numeric ticks and panel measurement; preserve group/time means and SD."
+      },
+      "description": "Synthetic demonstration data. Descriptive means and SD of different independent units at each time. Native numeric ticks preserve actual time spacing; n is saved per group and time. Input rows: 24",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/independent-time-legacy-20261105",
+      "adaptation_note": "Native lineranges, numeric ticks and panel measurement; preserve group/time means and SD."
+    },
+    {
+      "key": "worked/factorial",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/factorial",
+      "title": "Factorial",
+      "task": "group-comparison",
+      "chart": "factorial grouped mean bars error bars sample points",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "genotype",
+            "treatment",
+            "unit",
+            "value"
+          ],
+          "row_unit": "One unit in one genotype-treatment combination"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "factorial",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "factorial",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/factorial/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 77.61111111111111,
+            "height_mm": 63.14722222222221,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 77.96388888888889,
+            "height_mm": 63.14722222222221,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 82.19722222222222,
+            "height_mm": 75.84722222222223,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native grouped summaries, points and zero baseline; panel size follows factor counts."
+      },
+      "description": "Synthetic demonstration data. Descriptive factorial display of independent units; bars are means, error bars are SD, points are units. No interaction or pairwise inference is added. Input rows: 20",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/factorial-legacy-20261105",
+      "adaptation_note": "Native grouped summaries, points and zero baseline; panel size follows factor counts."
+    },
+    {
+      "key": "worked/dose-response",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/dose-response",
+      "title": "Dose Response",
+      "task": "dose-response",
+      "chart": "dose-response",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "replicate",
+            "dose",
+            "response"
+          ],
+          "row_unit": "One technical measurement in a single assay"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "dose-response",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "dose-response",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/dose-response/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 62.794444444444444,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 60.67777777777778,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 60.67777777777778,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native log ticks and short-number labels; original eligible-model selection is preserved."
+      },
+      "description": "Synthetic demonstration data. Technical measurements from one synthetic assay; 4PL selected by minimum AICc among eligible fits. 95% model confidence band; native log ticks follow the tested range. Input rows: 24",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/dose-response-legacy-20261105",
+      "adaptation_note": "Native log ticks and short-number labels; original eligible-model selection is preserved."
+    },
+    {
+      "key": "worked/distribution",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/distribution",
+      "title": "Distribution",
+      "task": "distribution",
+      "chart": "boxplot with individual observations",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "unit",
+            "group",
+            "value"
+          ],
+          "row_unit": "One biological unit"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "distribution",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "distribution",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/distribution/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 54.68055555555556,
+            "height_mm": 67.73333333333332,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 51.50555555555555,
+            "height_mm": 68.43888888888888,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 67.73333333333332,
+            "height_mm": 84.66666666666667,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native ID dodge and a panel that grows with group count while preserving height."
+      },
+      "description": "Synthetic demonstration data. Descriptive independent-unit distributions; boxes show median and quartiles, whiskers extend to 1.5 IQR, and all units are shown with native ID dodge. Input rows: 16",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/distribution-legacy-20261105",
+      "adaptation_note": "Native ID dodge and a panel that grows with group count while preserving height."
+    },
+    {
+      "key": "worked/forest",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/forest",
+      "title": "Forest",
+      "task": "effect-estimates",
+      "chart": "forest plot",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "contrast",
+            "estimate",
+            "lower",
+            "upper"
+          ],
+          "row_unit": "One contrast with supplied interval endpoints"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Native implementation; original, replacement and changed-range/order/shape cases executed; measured exports and final renders reviewed on 2026-11-05.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Changed estimates and intervals, long labels and an odds-ratio range from 0.005 to 600.",
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "forest",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "forest",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/forest/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "case": "original",
+            "width_mm": 68.44,
+            "height_mm": 50.45,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "case": "replacement",
+            "width_mm": 77.96,
+            "height_mm": 50.45,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "case": "stress",
+            "width_mm": 100.89,
+            "height_mm": 50.45,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          3,
+          3
+        ]
+      },
+      "description": "Synthetic demonstration data. Supplied odds ratios and 95% confidence interval endpoints; log scale with native ticks; reference value is 1. Input rows: 3",
+      "license": "First-party example; package license applies.",
+      "implementation_version": "2026-11-05-native",
+      "supersedes": "worked/forest-legacy-20261105"
+    },
+    {
+      "key": "worked/survival",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/survival",
+      "title": "Survival",
+      "task": "survival",
+      "chart": "survival",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "unit",
+            "group",
+            "time",
+            "event"
+          ],
+          "row_unit": "One subject with follow-up and event indicator"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "survival",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "survival",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/survival/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 87.1361111111111,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 87.84166666666665,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 111.125,
+            "height_mm": 65.26388888888889,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native survminer curves, confidence steps and vector censor symbols; preserve survfit estimates."
+      },
+      "description": "Synthetic demonstration data. One independent subject per row; native survminer Kaplan–Meier curves, 95% log-log confidence limits and censor marks. Risk counts and estimates are saved. Input rows: 24",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/survival-legacy-20261105",
+      "adaptation_note": "Native survminer curves, confidence steps and vector censor symbols; preserve survfit estimates."
+    },
+    {
+      "key": "worked/composition",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/composition",
+      "title": "Composition",
+      "task": "composition",
+      "chart": "composition",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "sample",
+            "category",
+            "group",
+            "count"
+          ],
+          "row_unit": "One sample-category count"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "composition",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "composition",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/composition/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 92.78055555555555,
+            "height_mm": 73.73055555555555,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 92.78055555555555,
+            "height_mm": 73.73055555555555,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "width_mm": 112.5361111111111,
+            "height_mm": 93.13333333333333,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native position_fill and proportional facets; named sample totals remain saved."
+      },
+      "description": "Synthetic demonstration data. Descriptive per-sample composition. Native position_fill uses each sample total as denominator; group facets have space proportional to sample counts. Input rows: 18",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/composition-legacy-20261105",
+      "adaptation_note": "Native position_fill and proportional facets; named sample totals remain saved."
+    },
+    {
+      "key": "worked/heatmap",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/heatmap",
+      "title": "Heatmap",
+      "task": "matrix",
+      "chart": "ComplexHeatmap annotated matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "matrix",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "feature",
+            "sample",
+            "group",
+            "value"
+          ],
+          "row_unit": "One feature-sample measurement"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Native implementation; original, replacement and changed-range/order/shape cases executed; measured exports and final renders reviewed on 2026-11-05.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Changed values and group labels; 5 x 6 and 9 x 4 matrices retain 5 mm square tiles.",
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "heatmap",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "heatmap",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/heatmap/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "case": "original",
+            "width_mm": 75.14,
+            "height_mm": 46.57,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "case": "replacement",
+            "width_mm": 75.85,
+            "height_mm": 46.57,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "case": "stress",
+            "width_mm": 72.67,
+            "height_mm": 66.67,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          30,
+          30
+        ]
+      },
+      "description": "Synthetic demonstration data. 5 features x 6 samples; values standardized within feature using the sample SD; alphabetical order, no clustering; 5 mm square tiles and native right-side legends. Input rows: 30",
+      "license": "First-party example; package license applies.",
+      "implementation_version": "2026-11-05-native",
+      "supersedes": "worked/heatmap-legacy-20261105"
+    },
+    {
+      "key": "worked/enrichment",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/enrichment",
+      "title": "Enrichment",
+      "task": "enrichment",
+      "chart": "horizontal enrichment bars",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "term",
+            "count",
+            "padj"
+          ],
+          "row_unit": "One term with supplied adjusted P value and count"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original, replacement and stress data executed; scientific tables, effective typography, exports and saved renders reviewed.",
+      "review": {
+        "date": "2026-11-05",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "native_controls": true,
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/native-reference-cases.R",
+      "case": "enrichment",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/native-reference-cases.R",
+        "enrichment",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/enrichment/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 75.14166666666667,
+            "height_mm": 56.44444444444444,
+            "min_text_pt": 11.199,
+            "passed": true
+          },
+          {
+            "width_mm": 80.7861111111111,
+            "height_mm": 56.44444444444444,
+            "min_text_pt": 11.199,
+            "passed": true
+          },
+          {
+            "width_mm": 97.71944444444443,
+            "height_mm": 56.44444444444444,
+            "min_text_pt": 11.199,
+            "passed": true
+          }
+        ],
+        "native_controls": "Native term labels and plot measurement; height follows term count and transformation is explicit."
+      },
+      "description": "Synthetic demonstration data. Supplied adjusted P values shown as minus log10; term order follows input. Counts and unrounded source values are retained; no new tests are computed. Input rows: 4",
+      "license": "First-party example; package license applies.",
+      "display_status": "Native implementation · replacement tested",
+      "implementation_version": "2026-11-05-native-batch2",
+      "supersedes": "worked/enrichment-legacy-20261105",
+      "adaptation_note": "Native term labels and plot measurement; height follows term count and transformation is explicit."
+    },
+    {
+      "key": "worked/nested",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/worked-examples/nested",
+      "title": "Nested measurements, biological-unit comparison",
+      "task": "group-comparison",
+      "chart": "mean bars SD biological-unit sample points",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "nested"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "measurements.csv",
+          "columns": [
+            "unit",
+            "group",
+            "subsample",
+            "observation",
+            "value"
+          ],
+          "row_unit": "One measurement within a subsample within an independent biological unit"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "reviewed",
+      "review_note": "Original and unequal-count/renamed replacement executed and visually inspected; extra measurements within one subsample preserve unit means and inference. Export measurements checked on 2026-11-16.",
+      "review": {
+        "date": "2026-11-16",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Unequal biological n and technical counts, changed scale and longer group labels; repeated technical measurements leave biological n and estimates unchanged.",
+        "verification_cases": 3
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party teaching measurements; source rows are not biological replicates.",
+      "script": "examples/nested-replicates.R",
+      "case": "nested",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/nested-replicates.R",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/worked-examples/nested/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "case": "original",
+            "width_mm": 57.85555555555555,
+            "height_mm": 71.61388888888888,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "case": "replacement",
+            "width_mm": 57.85555555555555,
+            "height_mm": 83.96111111111111,
+            "min_text_pt": 11.5,
+            "passed": true
+          },
+          {
+            "case": "expanded",
+            "width_mm": 57.85555555555555,
+            "height_mm": 71.61388888888888,
+            "min_text_pt": 11.5,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          383,
+          274,
+          405
+        ]
+      },
+      "description": "Two independent groups. Average measurements within each subsample, then give subsamples equal weight within each biological unit. Reuse the native mean/SD/sample-point renderer and two-sided Welch comparison at unit level. Raw, subsample and unit tables retain linking IDs. Adapt the outcome label to the actual study.",
+      "license": "First-party example; package license applies.",
+      "implementation_version": "2026-11-16-nested"
+    }
+  ],
+  "superseded_records": [
+    {
+      "key": "worked/independent-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-20261105/independent",
+      "title": "Independent (retired implementation)",
+      "task": "group-comparison",
+      "chart": "mean bars error bars sample points",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "unit",
+            "group",
+            "value"
+          ],
+          "row_unit": "One biological unit"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Unequal n and renamed groups; explicit contrast direction"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-20261105.R",
+      "case": "independent",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-20261105.R",
+        "independent",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-20261105/independent/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 66.32,
+            "height_mm": 59.97,
+            "min_text_pt": 12.06,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          16,
+          15
+        ]
+      },
+      "description": "Synthetic demonstration data. Independent units; bars show means, error bars show SD, points show units. Two-sided Welch test for the two-group contrast; one comparison. Input rows: 16",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/independent",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Data-unit P-bracket offsets and fixed upper padding; superseded by native scale training, automatic annotation lanes and declared contrasts."
+    },
+    {
+      "key": "worked/forest-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-20261105/forest",
+      "title": "Forest (retired implementation)",
+      "task": "effect-estimates",
+      "chart": "forest plot",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "contrast",
+            "estimate",
+            "lower",
+            "upper"
+          ],
+          "row_unit": "One contrast with supplied interval endpoints"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "All estimates and endpoints changed together; one label lengthened"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-20261105.R",
+      "case": "forest",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-20261105.R",
+        "forest",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-20261105/forest/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 91.72,
+            "height_mm": 73.73,
+            "min_text_pt": 12.04,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          3,
+          3
+        ]
+      },
+      "description": "Synthetic demonstration data. Supplied odds ratios and 95% confidence intervals; the reference line is 1. Input rows: 3",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/forest",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Fixed log tick values and fixed full canvas; superseded by native ticks, labels and measured panel layout."
+    },
+    {
+      "key": "worked/heatmap-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-20261105/heatmap",
+      "title": "Heatmap (retired implementation)",
+      "task": "matrix",
+      "chart": "ComplexHeatmap annotated matrix",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "matrix",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "feature",
+            "sample",
+            "group",
+            "value"
+          ],
+          "row_unit": "One feature-sample measurement"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "One cell changed after global rescaling; groups renamed"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-20261105.R",
+      "case": "heatmap",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-20261105.R",
+        "heatmap",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-20261105/heatmap/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 93.84,
+            "height_mm": 93.84,
+            "min_text_pt": 11.02,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          30,
+          30
+        ]
+      },
+      "description": "Synthetic demonstration data. Feature-by-sample values standardized within each feature; sample annotations retain groups. Row order is alphabetical; clustering is disabled. Input rows: 30",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/heatmap",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Fixed 42 x 42 mm body gives rectangular tiles for non-square matrices; bottom keys and a fixed 94 mm canvas superseded by square tiles, packed native right-side keys and measured layout."
+    },
+    {
+      "key": "worked/paired-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/paired",
+      "title": "Paired (retired implementation)",
+      "task": "group-comparison",
+      "chart": "paired",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "paired",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "unit",
+            "condition",
+            "value"
+          ],
+          "row_unit": "One unit at one of two visits"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Visit labels and values changed; six IDs retained"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "paired",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "paired",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/paired/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 75.85,
+            "height_mm": 73.73,
+            "min_text_pt": 12.02,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          12,
+          12
+        ]
+      },
+      "description": "Synthetic demonstration data. Matched units at two visits; lines connect the same unit ID. Input rows: 12",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/paired",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Sample offsets and a two-position numeric axis were implemented by hand."
+    },
+    {
+      "key": "worked/repeated-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/repeated",
+      "title": "Repeated (retired implementation)",
+      "task": "time-course",
+      "chart": "repeated",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "repeated",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "time",
+            "unit",
+            "group",
+            "value"
+          ],
+          "row_unit": "One unit at one numeric visit time"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "A second missing visit added; segments preserve gaps"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "repeated",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "repeated",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/repeated/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 101.95,
+            "height_mm": 73.73,
+            "min_text_pt": 10.29,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          24,
+          24
+        ]
+      },
+      "description": "Synthetic demonstration data. Repeated observations; lines connect visits within unit ID and break at missing visits. Facets show groups. Input rows: 24",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/repeated",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Fixed wide canvas and top-legend styling limited compact reuse."
+    },
+    {
+      "key": "worked/independent-time-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/independent-time",
+      "title": "Independent Time (retired implementation)",
+      "task": "time-course",
+      "chart": "independent-time",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "time",
+            "unit",
+            "group",
+            "value"
+          ],
+          "row_unit": "One distinct unit sampled at one time"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Time 4 changed to 5; separate unit IDs retained"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "independent-time",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "independent-time",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/independent-time/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 75.85,
+            "height_mm": 73.73,
+            "min_text_pt": 11.02,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          24,
+          24
+        ]
+      },
+      "description": "Synthetic demonstration data. Different units at each time; points show group means and error bars show SD. Numeric time spacing is retained. Input rows: 24",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/independent-time",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Error-bar caps used a fixed width in time units; canvas was fixed."
+    },
+    {
+      "key": "worked/factorial-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/factorial",
+      "title": "Factorial (retired implementation)",
+      "task": "group-comparison",
+      "chart": "factorial grouped mean bars error bars sample points",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "genotype",
+            "treatment",
+            "unit",
+            "value"
+          ],
+          "row_unit": "One unit in one genotype-treatment combination"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Treatment labels and values changed"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "factorial",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "factorial",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/factorial/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 85.72,
+            "height_mm": 73.73,
+            "min_text_pt": 11.04,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          20,
+          20
+        ]
+      },
+      "description": "Synthetic demonstration data. Independent units across two factors; bars show means, error bars show SD and points show units. Input rows: 20",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/factorial",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Fixed full canvas and a top legend required manual layout changes."
+    },
+    {
+      "key": "worked/dose-response-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/dose-response",
+      "title": "Dose Response (retired implementation)",
+      "task": "dose-response",
+      "chart": "dose-response",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "replicate",
+            "dose",
+            "response"
+          ],
+          "row_unit": "One technical measurement in a single assay"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Response values changed; models refitted over the measured range"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "dose-response",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "dose-response",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/dose-response/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 75.85,
+            "height_mm": 73.73,
+            "min_text_pt": 12.02,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          24,
+          24
+        ]
+      },
+      "description": "Synthetic demonstration data. Synthetic technical measurements from one assay; selected dose-response fit and 95% model confidence band. Model comparisons and conditional parameters are saved. Input rows: 24",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/dose-response",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Log-axis ticks and labels were fixed to the original dose range."
+    },
+    {
+      "key": "worked/distribution-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/distribution",
+      "title": "Distribution (retired implementation)",
+      "task": "distribution",
+      "chart": "boxplot with individual observations",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "unit",
+            "group",
+            "value"
+          ],
+          "row_unit": "One biological unit"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Group labels and the response distribution changed"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "distribution",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "distribution",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/distribution/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 75.85,
+            "height_mm": 73.73,
+            "min_text_pt": 12.02,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          16,
+          16
+        ]
+      },
+      "description": "Synthetic demonstration data. Independent units; boxes show median and quartiles, whiskers extend to 1.5 IQR and points show all units. Input rows: 16",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/distribution",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Fixed full canvas and point jitter were tied to the small original fixture."
+    },
+    {
+      "key": "worked/survival-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/survival",
+      "title": "Survival (retired implementation)",
+      "task": "survival",
+      "chart": "survival",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "unit",
+            "group",
+            "time",
+            "event"
+          ],
+          "row_unit": "One subject with follow-up and event indicator"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Follow-up rescaled and one event changed to censoring"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "survival",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "survival",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/survival/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 75.85,
+            "height_mm": 77.96,
+            "min_text_pt": 11.02,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          24,
+          24
+        ]
+      },
+      "description": "Synthetic demonstration data. One row per subject; Kaplan-Meier estimates with 95% log-log confidence intervals and censor marks. Risk counts and full estimates are saved. Input rows: 24",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/survival",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Confidence-step geometry was reconstructed through duplicated rows."
+    },
+    {
+      "key": "worked/composition-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/composition",
+      "title": "Composition (retired implementation)",
+      "task": "composition",
+      "chart": "composition",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "independent",
+        "unspecified"
+      ],
+      "input_kind": "observations",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "sample",
+            "category",
+            "group",
+            "count"
+          ],
+          "row_unit": "One sample-category count"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Counts changed; denominators recomputed within sample"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "composition",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "composition",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/composition/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 89.96,
+            "height_mm": 73.73,
+            "min_text_pt": 10.29,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          18,
+          18
+        ]
+      },
+      "description": "Synthetic demonstration data. Each bar is one sample; segment fractions use that sample’s total count as denominator. Input rows: 18",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/composition",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Fixed full canvas and top legends constrained group/category changes."
+    },
+    {
+      "key": "worked/enrichment-legacy-20261105",
+      "collection": "Worked example",
+      "library": "bundled",
+      "directory": "assets/reference-library/retired-batch2-20261105/enrichment",
+      "title": "Enrichment (retired implementation)",
+      "task": "enrichment",
+      "chart": "horizontal enrichment bars",
+      "languages": [
+        "R"
+      ],
+      "designs": [
+        "supplied-results",
+        "unspecified"
+      ],
+      "input_kind": "estimates",
+      "inputs": [
+        {
+          "file": "input.csv",
+          "columns": [
+            "term",
+            "count",
+            "padj"
+          ],
+          "row_unit": "One term with supplied adjusted P value and count"
+        }
+      ],
+      "contract_reviewed": true,
+      "status": "superseded",
+      "review_note": "Example and replacement executed; saved renders inspected.",
+      "review": {
+        "date": "2026-10-26",
+        "example": true,
+        "replacement": true,
+        "visual": true,
+        "replacement_case": "Adjusted P values and a long term label changed"
+      },
+      "source_evidence": {},
+      "data_basis": "Synthetic first-party demonstration data; replace with the current study inputs.",
+      "script": "examples/reference-cases-legacy-batch2-20261105.R",
+      "case": "enrichment",
+      "command": [
+        "Rscript",
+        "--vanilla",
+        "examples/reference-cases-legacy-batch2-20261105.R",
+        "enrichment",
+        "INPUT.csv",
+        "OUTPUT_DIR"
+      ],
+      "preview": "assets/reference-library/retired-batch2-20261105/enrichment/preview.png",
+      "layout": {
+        "tested_placements": [
+          {
+            "width_mm": 107.95,
+            "height_mm": 75.85,
+            "min_text_pt": 11.2,
+            "passed": true
+          }
+        ],
+        "rows_tested": [
+          4,
+          4
+        ]
+      },
+      "description": "Synthetic demonstration data. Supplied adjusted P values displayed as minus log10. Term counts and complete source values are saved. Input rows: 4",
+      "license": "First-party example; package license applies.",
+      "successor": "worked/enrichment",
+      "retired_on": "2026-11-05",
+      "retirement_reason": "Fixed full canvas was oversized for short terms and rigid for long labels."
+    }
+  ]
+}

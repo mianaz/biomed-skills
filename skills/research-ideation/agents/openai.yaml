@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Ideation"
+  short_description: "Develop interesting questions and informative first tests"
+  default_prompt: "Use $research-ideation to develop promising ideas from these observations and compare their scientific value and feasible first tests."

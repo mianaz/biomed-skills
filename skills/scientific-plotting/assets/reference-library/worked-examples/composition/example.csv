@@ -1,0 +1,19 @@
+"sample","category","group","count"
+"S1","Type A","Control",14
+"S2","Type A","Control",17
+"S3","Type A","Control",15
+"S4","Type A","Drug",9
+"S5","Type A","Drug",8
+"S6","Type A","Drug",10
+"S1","Type B","Control",5
+"S2","Type B","Control",3
+"S3","Type B","Control",5
+"S4","Type B","Drug",9
+"S5","Type B","Drug",12
+"S6","Type B","Drug",10
+"S1","Type C","Control",1
+"S2","Type C","Control",2
+"S3","Type C","Control",0
+"S4","Type C","Drug",2
+"S5","Type C","Drug",0
+"S6","Type C","Drug",1
